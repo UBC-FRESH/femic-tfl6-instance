@@ -44,3 +44,13 @@
   `planning/source_inventory.md`; and
 - kept the runtime AOI boundary undecided pending cross-check against the FSP
   document and separate LU boundary payload.
+
+## 2026-06-23 - Inspected the BCGW landscape-unit clip payload
+
+- inventoried `data/source/nicf_fsp/bcgw_lu_clip_2026_06.zip`;
+- found one BCGW `RMP_LU_SVW_polygon` shapefile family with `27` valid EPSG:3005
+  landscape-unit polygons;
+- recorded LU names, CRS, bounds, validity, measured areas, and overlap with
+  the `NICF_FDU_2024` AOI candidate in `planning/source_inventory.md`; and
+- kept the relevant-LU decision open because the inspected spatial payloads show
+  six FDU/LU overlaps, while the project note expected three relevant LUs.

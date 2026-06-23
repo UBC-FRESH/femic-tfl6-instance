@@ -65,3 +65,98 @@ Interpretation:
 - Do not extract or wire this layer into `config/run_profile.nicffsp.yaml` until
   the accepted runtime boundary convention is decided: either a dissolved FSP
   AOI, selected FDU/LU features, or a preserved multi-feature FDU boundary.
+
+## BCGW Landscape Unit Clip Zip Inventory
+
+Inspection date: 2026-06-23
+
+Source:
+`data/source/nicf_fsp/bcgw_lu_clip_2026_06.zip`
+
+Order notes:
+
+- Order ID: `2572861`
+- Order date: `20260623`
+- Feature type: `Landscape Units of British Columbia - Current`
+- Source directory noted by order file: `RMP_LU_SVW`
+
+Zip contents:
+
+| Path in zip | Size bytes | Notes |
+| --- | ---: | --- |
+| `RMP_LANDSCAPE_UNIT_SVW/RMP_LU_SVW_polygon.cpg` | 5 | Encoding metadata |
+| `RMP_LANDSCAPE_UNIT_SVW/RMP_LU_SVW_polygon.dbf` | 25774 | Attribute table |
+| `RMP_LANDSCAPE_UNIT_SVW/RMP_LU_SVW_polygon.prj` | 489 | Projection metadata |
+| `RMP_LANDSCAPE_UNIT_SVW/RMP_LU_SVW_polygon.shp` | 2122796 | Polygon geometry |
+| `RMP_LANDSCAPE_UNIT_SVW/RMP_LU_SVW_polygon.shx` | 316 | Shape index |
+| `Contents of Order.txt` | 303 | DataBC order summary |
+| `README.txt` | 426 | DataBC download/licence notice |
+| `licence.txt` | 275 | BC Data Catalogue licence notice |
+| `WHSE_LAND_USE_PLANNING.RMP_LANDSCAPE_UNIT_SVW_metadata.json` | 9494 | BCGW metadata |
+| `WHSE_LAND_USE_PLANNING.RMP_LANDSCAPE_UNIT_SVW_metadata.html` | 15194 | BCGW metadata |
+
+Layer summary:
+
+- Candidate layer: `RMP_LANDSCAPE_UNIT_SVW/RMP_LU_SVW_polygon.shp`
+- Feature count: `27`
+- Geometry type: `Polygon`
+- CRS: `EPSG:3005`
+- Bounds: `(778342.188, 528411.500, 990334.625, 680314.312)`
+- Geometry validity: `27` valid, `0` invalid
+- Total measured area in EPSG:3005: `1489608.005 ha`
+
+Landscape unit names and measured area:
+
+| LU name | Biodiversity emphasis | Area ha |
+| --- | --- | ---: |
+| Artlish | Intermediate | 16207.928 |
+| Bonanza | Intermediate | 45710.608 |
+| Brooks | Low | 38203.204 |
+| Broughton | Low | 87908.649 |
+| Eliza | Low | 56765.240 |
+| Gilford | Low | 92764.025 |
+| Holberg | Low | 45020.737 |
+| Kaouk | Intermediate | 29656.299 |
+| Kashutl | Low | 91834.101 |
+| Keogh | Low | 64281.620 |
+| Klaskish | High | 28848.336 |
+| Lower Nimpkish | Low | 82079.594 |
+| Mahatta | Low | 59062.085 |
+| Malcolm | Low | 41731.272 |
+| Marble | Intermediate | 56286.499 |
+| Nahwitti | Intermediate | 43172.007 |
+| Nasparti | Low | 21213.956 |
+| Neroutsos | Low | 31079.820 |
+| Nigei | Low | 46468.310 |
+| San Josef | Intermediate | 195967.476 |
+| Shushartie | High | 20285.114 |
+| Tahsish | Intermediate | 28772.463 |
+| Tsitika | High | 35910.103 |
+| Tsulquate | Intermediate | 25638.715 |
+| Upper Nimpkish | Intermediate | 120083.281 |
+| Walker | NA | 64856.499 |
+| Zeballos | Low | 19800.065 |
+
+Overlap with the `NICF_FDU_2024` AOI candidate:
+
+| FDU candidate name | Matching BCGW LU | FDU candidate area ha | Full LU area ha | Difference ha |
+| --- | --- | ---: | ---: | ---: |
+| Holberg | Holberg | 41649.362 | 45020.737 | 3371.375 |
+| Keogh | Keogh | 50693.492 | 64281.620 | 13588.129 |
+| Marble | Marble | 55455.538 | 56286.499 | 830.961 |
+| Nahwitti | Nahwitti | 17477.455 | 43172.007 | 25694.552 |
+| Shushartie | Shushartie | 15681.191 | 20285.114 | 4603.923 |
+| Tsulquate | Tsulquate | 23205.472 | 25638.715 | 2433.244 |
+
+Interpretation:
+
+- The LU zip is a broader BCGW landscape-unit clip with `27` full LU features,
+  not a narrow three-LU package.
+- The six `NICF_FDU_2024` features align by name with six full BCGW LU records:
+  Holberg, Keogh, Marble, Nahwitti, Shushartie, and Tsulquate.
+- Each FDU candidate feature is equal to or smaller than its corresponding full
+  BCGW LU, so `NICF_FDU_2024` appears to be a clipped FDU/AOI surface derived
+  from LU boundaries rather than the full LU boundary layer.
+- The initial project note mentions three relevant LUs, but the inspected
+  spatial payloads currently expose six named FDU/LU overlaps. Do not close the
+  relevant-LU decision until the FSP PDF is checked against these layer names.

@@ -38,8 +38,8 @@
 1. Continue `P1.2` / `#1`: cross-check the `NICF_FDU_2024` AOI candidate
    against the FSP document and the LU boundary evidence before accepting a
    runtime AOI convention.
-2. Continue `P1.2` / `#1`: inspect
-   `data/source/nicf_fsp/bcgw_lu_clip_2026_06.zip` and confirm the LU boundary
-   names and CRS.
+2. Continue `P1.2` / `#1`: cross-check the FSP PDF against the six FDU/LU
+   overlaps found in the source layers and resolve the initial three-LU
+   expectation before accepting relevant LU boundaries.
 3. Defer `P1.3` / `#3` and `P1.4` / `#2` implementation until the accepted AOI
    and LU source paths are recorded.
