@@ -58,6 +58,22 @@ Accepted target paths for the source archives:
 - `external/femic-public-data/data/bc/vri/2025/VEG_COMP_LYR_R1_POLY_2025.gdb.zip`
 - `external/femic-public-data/data/bc/vri/2025/VEG_COMP_VDYP7_INPUT_POLY_AND_LAYER_2025.gdb.zip`
 
+## Materialization Snapshot
+
+Materialization date: 2026-06-23.
+
+Public-data commit: `348d9b60529e3a0160672048fc33e4083f2128fb`.
+
+| Package | Size bytes | Annex key checksum | Zip entries | Zip root | CRC test |
+| --- | ---: | --- | ---: | --- | --- |
+| `VEG_COMP_LYR_R1_POLY_2025.gdb.zip` | `4168172794` | `MD5E-s4168172794--8d53ec1653390dcd1f035d8c011af9e0.gdb.zip` | `46` | `VEG_COMP_LYR_R1_POLY_2025.gdb` | passed |
+| `VEG_COMP_VDYP7_INPUT_POLY_AND_LAYER_2025.gdb.zip` | `403304406` | `MD5E-s403304406--48cbbb4577aa0ae52a71d9470d4a4205.gdb.zip` | `48` | `VEG_COMP_VDYP7_INPUT_POLY_AND_LAYER_2025.gdb` | passed |
+
+`git annex whereis` reports one local copy for each archive in the current
+public-data checkout. Arbutus/publication status remains open until the next
+publication check records whether these annex keys are available from the
+public remote.
+
 If downstream FEMIC code requires extracted geodatabases instead of zip inputs,
 the extracted directories should stay under the same vintage directory:
 
@@ -70,8 +86,8 @@ the extracted directories should stay under the same vintage directory:
 
 - official 2025 R1 and VDYP7 package metadata is recorded; (complete)
 - both source archives are materialized under the accepted public-data
-  convention or an explicitly documented successor convention;
-- file size and checksum metadata is recorded for both packages;
+  convention or an explicitly documented successor convention; (complete)
+- file size and checksum metadata is recorded for both packages; (complete)
 - a read smoke records geodatabase/layer names, feature counts or equivalent
   read evidence, CRS, and any extraction/runtime path decision;
 - DataLad/git-annex publication status is recorded so a fresh environment can

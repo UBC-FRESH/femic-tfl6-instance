@@ -38,7 +38,7 @@
     and model-design boundaries are accepted.
 - [ ] P1.5 Materialize 2025 VRI source datasets for NICF base inventory (`#5`).
   - [x] P1.5a Record official 2025 R1 and VDYP7 polygon/layer package metadata.
-  - [ ] P1.5b Materialize the 2025 provincial source packages under the
+  - [x] P1.5b Materialize the 2025 provincial source packages under the
     accepted `external/femic-public-data/data/bc/vri/2025/` convention.
   - [ ] P1.5c Record file size, checksum, read-smoke, CRS, and layer-name
     evidence for both materialized packages.
@@ -47,11 +47,11 @@
 
 ## Current Next Steps
 
-1. Continue `P1.5` / `#5`: materialize and verify the two 2025 source packages
-   under the accepted `external/femic-public-data/data/bc/vri/2025/` path.
-2. Continue `P1.5` / `#5`: record file size, checksum, read-smoke, CRS,
-   layer-name evidence, and DataLad/git-annex/publication status for both
-   materialized packages.
+1. Continue `P1.5` / `#5`: run full geodatabase read smoke for the two 2025
+   source packages and record layer names, feature-count evidence, CRS, and any
+   extraction/runtime path decision.
+2. Continue `P1.5` / `#5`: record DataLad/git-annex public-remote publication
+   status for both materialized packages.
 3. Resume `P1.4` / `#2`: open the cedar, expansion, and runtime-package
    follow-on design issues after the 2025 source-data dependency is queued and
    the materialization boundary is explicit.

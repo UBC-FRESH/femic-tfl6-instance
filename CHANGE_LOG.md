@@ -191,3 +191,14 @@
 - marked `P1.5a` complete in the roadmap; and
 - kept package size, checksum, read-smoke, and public-data publication status
   open until the archives are actually materialized.
+
+## 2026-06-23 - Materialized the 2025 VRI source archives
+
+- downloaded the 2025 R1 and VDYP7 polygon/layer source archives into
+  `external/femic-public-data/data/bc/vri/2025/`;
+- validated both archives with a zip CRC pass before accepting them as
+  materialized local sources;
+- annex-added and pushed the public-data commit
+  `348d9b60529e3a0160672048fc33e4083f2128fb`; and
+- marked `P1.5b` complete while leaving geodatabase read-smoke, CRS, and
+  public-remote publication evidence open.
