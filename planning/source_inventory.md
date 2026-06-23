@@ -160,3 +160,65 @@ Interpretation:
 - The initial project note mentions three relevant LUs, but the inspected
   spatial payloads currently expose six named FDU/LU overlaps. Do not close the
   relevant-LU decision until the FSP PDF is checked against these layer names.
+
+## FSP PDF Cross-Check
+
+Inspection date: 2026-06-23
+
+Source:
+`data/source/nicf_fsp/nicf_forest_stewardship_plan_2020.pdf`
+
+Text extraction:
+
+- Tool: `pypdf`
+- Page count: `29`
+- Search terms: `FDU`, `Forest Development Unit`, `Holberg`, `Keogh`,
+  `Marble`, `Nahwitti`, `Shushartie`, `Tsulquate`, `K3Z`
+
+Key PDF evidence:
+
+| PDF page | Evidence |
+| ---: | --- |
+| 8 | The FSP applies to Community Forest Agreement `K3Z` and says there are three proposed FDUs. It also says FDUs are meant to follow Landscape Unit boundaries where they overlap the tenure boundary and form a logical planning area. |
+| 9 | The FSP lists the three proposed FDUs as `FDU 1 - Holberg Landscape Unit`, `FDU 2 - Keogh Landscape Unit`, and `FDU 3 - Marble Landscape Unit`. |
+| 13 | Enhanced Forestry Zone applicability is stated for `FDU 1 (Holberg)` and `FDU 2 (Keogh)`. |
+| 14 | Old-growth/objective text references `FDU 3 (Marble)` and draft OGMAs for Holberg and Keogh. |
+| 15 | Marble LU OGMAs are referenced as applying within the FSP. |
+| 22 | Community watershed text references `FDU #1 (Holberg Landscape Unit)`. |
+
+PDF term counts:
+
+| Term | Count |
+| --- | ---: |
+| `FDU` | 43 |
+| `Forest Development Unit` | 1 |
+| `Holberg` | 6 |
+| `Keogh` | 5 |
+| `Marble` | 10 |
+| `Nahwitti` | 0 |
+| `Shushartie` | 0 |
+| `Tsulquate` | 0 |
+| `K3Z` | 1 |
+
+Interpretation:
+
+- The 2020 FSP PDF supports the initial project-note expectation that the FSP
+  references three relevant LUs: Holberg, Keogh, and Marble.
+- The 2024 amendment spatial payload contains six FDU/LU labels:
+  Holberg, Keogh, Marble, Nahwitti, Shushartie, and Tsulquate.
+- The additional 2024 amendment names (`Nahwitti`, `Shushartie`, `Tsulquate`)
+  do not appear in the 2020 PDF text extracted with `pypdf`.
+- Treat this as a source-version decision, not a GIS error:
+  - the 2020 FSP document describes a three-FDU scope;
+  - the 2024 amendment spatial payload appears to define a six-FDU candidate
+    surface; and
+  - the model runtime AOI should not be accepted until the project decides
+    whether the teaching instance follows the 2020 FSP text, the 2024 amendment
+    spatial payload, or a documented subset/dissolve of the amendment payload.
+
+Current source-boundary status:
+
+- Relevant LUs referenced by the 2020 FSP: Holberg, Keogh, Marble.
+- Broader FDU names present in the 2024 amendment spatial payload:
+  Holberg, Keogh, Marble, Nahwitti, Shushartie, Tsulquate.
+- Accepted runtime AOI: not yet decided.

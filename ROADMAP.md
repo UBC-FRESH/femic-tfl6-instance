@@ -12,7 +12,7 @@
   - [x] P1.2a Unzip and inspect the NICF FSP amendment spatial payload.
   - [ ] P1.2b Identify the authoritative AOI layer, geometry type, CRS, and
     expected area.
-  - [ ] P1.2c Inspect the LU clip payload and identify the three relevant LU
+  - [x] P1.2c Inspect the LU clip payload and identify the three relevant LU
     boundaries referenced by the FSP.
   - [ ] P1.2d Decide which extracted layers become tracked canonical source
     files and which remain regenerated scratch.
@@ -35,11 +35,10 @@
 
 ## Current Next Steps
 
-1. Continue `P1.2` / `#1`: cross-check the `NICF_FDU_2024` AOI candidate
-   against the FSP document and the LU boundary evidence before accepting a
-   runtime AOI convention.
-2. Continue `P1.2` / `#1`: cross-check the FSP PDF against the six FDU/LU
-   overlaps found in the source layers and resolve the initial three-LU
-   expectation before accepting relevant LU boundaries.
+1. Continue `P1.2` / `#1`: resolve the source-version decision between the
+   2020 FSP three-FDU scope and the 2024 amendment six-FDU spatial payload
+   before accepting a runtime AOI convention.
+2. Continue `P1.2` / `#1`: decide which extracted source layer(s) become
+   canonical tracked inputs after the AOI convention is accepted.
 3. Defer `P1.3` / `#3` and `P1.4` / `#2` implementation until the accepted AOI
    and LU source paths are recorded.

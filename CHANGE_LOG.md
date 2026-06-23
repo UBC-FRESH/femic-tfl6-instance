@@ -54,3 +54,14 @@
   the `NICF_FDU_2024` AOI candidate in `planning/source_inventory.md`; and
 - kept the relevant-LU decision open because the inspected spatial payloads show
   six FDU/LU overlaps, while the project note expected three relevant LUs.
+
+## 2026-06-23 - Cross-checked the FSP PDF against the FDU/LU names
+
+- extracted text from `data/source/nicf_fsp/nicf_forest_stewardship_plan_2020.pdf`;
+- confirmed the 2020 FSP text identifies three proposed FDUs: Holberg, Keogh,
+  and Marble;
+- recorded that the additional 2024 amendment spatial names (`Nahwitti`,
+  `Shushartie`, and `Tsulquate`) do not appear in the extracted 2020 FSP text;
+  and
+- kept the accepted runtime AOI undecided as a source-version choice between
+  the 2020 FSP text and the 2024 amendment spatial payload.
