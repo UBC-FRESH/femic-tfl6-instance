@@ -3,13 +3,17 @@ selection:
   tsa:
     - "nicffsp"
 
-  # Custom-boundary mode (uncomment and set these fields to override
-  # selection.tsa FMU/code mode):
-  # Boundary paths remain pending until the source zip is inspected and the
-  # authoritative AOI layer is extracted into a stable tracked path.
-  # boundary_path: "data/source/nicf_fsp/aoi/nicf_fsp_aoi.shp"
-  # boundary_layer: null
-  # boundary_code: "nicffsp"
+  # Custom-boundary mode for the accepted FSP AOI.
+  boundary_path: "data/source/nicf_fsp/aoi/nicf_fsp_aoi.shp"
+  boundary_layer: null
+  boundary_code: "nicffsp"
+
+  # Source context paths tracked for P1.2 provenance. FEMIC currently consumes
+  # boundary_path directly; LU reference context is carried here for downstream
+  # NICF adaptation work.
+  source_context:
+    lu_reference_path: "data/source/nicf_fsp/lu_reference/nicf_lu_reference.shp"
+    fsp_pdf_path: "data/source/nicf_fsp/nicf_forest_stewardship_plan_2020.pdf"
 
   # Optional strata labels for targeted runs (informational in current flow).
   strata:

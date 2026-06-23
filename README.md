@@ -35,6 +35,12 @@ Initial source files are tracked under `data/source/nicf_fsp/`:
 See `planning/source_inventory.md` for original filenames, hashes, and the
 first interpretation boundary.
 
+Accepted extracted source paths:
+
+- AOI boundary: `data/source/nicf_fsp/aoi/nicf_fsp_aoi.shp`
+- LU reference context:
+  `data/source/nicf_fsp/lu_reference/nicf_lu_reference.shp`
+
 ## Workflow
 
 This repository uses the same control-surface pattern as recent FRESH agent-led
@@ -55,7 +61,5 @@ The initial scaffold is present but not yet accepted as runnable:
 femic instance validate-spec --spec config/rebuild.spec.yaml
 ```
 
-Case preflight and rebuild commands should wait until the AOI zip is inspected,
-the boundary layer is extracted into a stable tracked path, and
-`config/run_profile.nicffsp.yaml` is updated from placeholder to real source
-paths.
+Case preflight is ready for source-path validation. Full rebuild commands
+should wait until the K3Z-to-NICF adaptation contract is accepted under Phase 1.

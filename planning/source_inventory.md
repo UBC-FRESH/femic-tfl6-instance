@@ -4,15 +4,14 @@
 
 | Tracked path | Original uploaded filename | SHA-256 | Notes |
 | --- | --- | --- | --- |
-| `data/source/nicf_fsp/nicf_fsp_amendment_3_spatial.zip` | `NICF FSP amend #3 spatial.zip` | `de3776cda77d056390ffdee03aed6e3a914501a4c2c8adc34ba8481e02bbabcc` | Candidate source for the Forest Stewardship Plan amendment AOI. Contents still need layer-level inspection. |
-| `data/source/nicf_fsp/bcgw_lu_clip_2026_06.zip` | `BCGW_LU_Clip_06-2026.zip` | `03477133df626104a60e07699fdb6025a712af1a0a6a710ca5958d44792c0a47` | Candidate source for the Landscape Unit boundaries referenced by the FSP. Contents still need layer-level inspection. |
+| `data/source/nicf_fsp/nicf_fsp_amendment_3_spatial.zip` | `NICF FSP amend #3 spatial.zip` | `de3776cda77d056390ffdee03aed6e3a914501a4c2c8adc34ba8481e02bbabcc` | Raw provenance for the accepted FSP AOI extraction. |
+| `data/source/nicf_fsp/bcgw_lu_clip_2026_06.zip` | `BCGW_LU_Clip_06-2026.zip` | `03477133df626104a60e07699fdb6025a712af1a0a6a710ca5958d44792c0a47` | Raw provenance for the accepted LU reference extraction. |
 | `data/source/nicf_fsp/nicf_forest_stewardship_plan_2020.pdf` | `NICF-Forest-Stewardship-Plan-2020-2.pdf` | `9bccd37a9666b4b1262f54afcb152bbbe9ec0475435cdc53434656194bdc3895` | FSP document used to interpret AOI/LU context and management constraints. |
 
 ## Interpretation Boundary
 
-These files are raw source payloads only. The next task is to inspect the zip
-contents, identify authoritative layers, record CRS and geometry properties,
-and extract canonical source layers into stable lowercase paths.
+These files are raw source payloads only. The accepted extracted source layers
+are tracked separately under stable lowercase paths.
 
 Do not point FEMIC runtime config at zip payloads as if they were ready-to-use
 case inputs.
@@ -60,11 +59,9 @@ Interpretation:
 
 - This zip contains a single shapefile family, but that shapefile is not a
   single dissolved AOI polygon. It is a six-feature FDU/LU-style layer.
-- Treat `NICF_FDU_2024.shp` as the current authoritative AOI candidate only,
-  pending cross-check against the FSP document and the separate LU boundary zip.
-- Do not extract or wire this layer into `config/run_profile.nicffsp.yaml` until
-  the accepted runtime boundary convention is decided: either a dissolved FSP
-  AOI, selected FDU/LU features, or a preserved multi-feature FDU boundary.
+- Treat `NICF_FDU_2024.shp` as the raw amendment source for the accepted
+  three-FDU FSP AOI extraction documented below.
+- Do not point runtime config directly at the raw zip payload.
 
 ## BCGW Landscape Unit Clip Zip Inventory
 
@@ -265,8 +262,7 @@ Rationale:
 
 Open normalization work:
 
-- Update `config/run_profile.nicffsp.yaml` with the accepted AOI and LU
-  reference paths.
+- Source-path wiring is recorded in `config/run_profile.nicffsp.yaml`.
 
 ## Canonical Extracted AOI Source
 
@@ -302,8 +298,8 @@ Interpretation:
   path for the bootstrap NICF FSP AOI.
 - The original zip remains tracked as raw provenance for all six amendment
   features.
-- `config/run_profile.nicffsp.yaml` is not updated yet; runtime config wiring
-  should happen after the LU reference-context decision is recorded.
+- `config/run_profile.nicffsp.yaml` now points `selection.boundary_path` at this
+  accepted AOI source path.
 
 ## Canonical Extracted LU Reference Source
 
@@ -347,5 +343,7 @@ Interpretation:
   path for LU reference context in the bootstrap NICF FSP instance.
 - The raw BCGW LU zip remains tracked as provenance for the broader 27-feature
   clip.
-- `config/run_profile.nicffsp.yaml` is not updated yet; runtime config wiring is
-  the next bounded `P1.2` move.
+- `config/run_profile.nicffsp.yaml` records this source as
+  `selection.source_context.lu_reference_path`; the current FEMIC runtime
+  consumes `selection.boundary_path` directly and carries LU reference context
+  for downstream NICF adaptation work.

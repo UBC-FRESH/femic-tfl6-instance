@@ -8,7 +8,7 @@
     `AGENTS.md`, `ROADMAP.md`, `CHANGE_LOG.md`, and `planning/`.
   - [x] P1.1c Add the uploaded AOI, LU, and FSP source payloads under stable
     lowercase tracked paths.
-- [ ] P1.2 Inspect and normalize source payloads (`#1`).
+- [x] P1.2 Inspect and normalize source payloads (`#1`).
   - [x] P1.2a Unzip and inspect the NICF FSP amendment spatial payload.
   - [x] P1.2b Identify the authoritative AOI layer, geometry type, CRS, and
     expected area.
@@ -35,9 +35,7 @@
 
 ## Current Next Steps
 
-1. Continue `P1.2` / `#1`: update `config/run_profile.nicffsp.yaml` with the
-   accepted canonical AOI path
-   `data/source/nicf_fsp/aoi/nicf_fsp_aoi.shp` and LU reference path
-   `data/source/nicf_fsp/lu_reference/nicf_lu_reference.shp`.
-2. Defer `P1.3` / `#3` and `P1.4` / `#2` implementation until the P1.2
-   run-profile source-path wiring is recorded.
+1. Start `P1.3` / `#3`: compare the K3Z config, model-input bundle, docs, and
+   Patchworks package structure against the accepted NICF FSP source boundary.
+2. Keep `P1.4` / `#2` deferred until the K3Z-to-NICF adaptation contract
+   identifies which follow-on issue bodies need the source-boundary terms.

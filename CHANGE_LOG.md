@@ -110,3 +110,14 @@
   features with total measured area `165588.857 ha`; and
 - marked `P1.2d` complete while leaving run-profile source-path wiring as the
   next bounded `P1.2` move.
+
+## 2026-06-23 - Wired the NICF run profile to accepted source paths
+
+- updated `config/run_profile.nicffsp.yaml` so `selection.boundary_path` points
+  at `data/source/nicf_fsp/aoi/nicf_fsp_aoi.shp`;
+- recorded the LU reference source at
+  `selection.source_context.lu_reference_path` as
+  `data/source/nicf_fsp/lu_reference/nicf_lu_reference.shp`;
+- kept raw zip payloads out of runtime source-path wiring; and
+- marked `P1.2` complete in the roadmap, leaving `P1.3` as the next active
+  Phase 1 task.
