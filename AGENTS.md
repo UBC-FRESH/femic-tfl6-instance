@@ -45,8 +45,41 @@ This repo uses an agent-assisted roadmap and GitHub issue workflow, modeled on
   roadmap.
 - Before non-trivial work, update or confirm the roadmap entry that governs it.
 - Use GitHub issues with `gh` in tandem with the roadmap.
+- Map every roadmap phase to one GitHub parent issue in this instance repo.
+- Map every roadmap task to one linked child issue under that phase parent.
+- Keep lightweight subtasks as checklist items in the task child issue body.
+- Create third-level implementation issues only when a task is too large to
+  manage as one child issue; do not use more than three issue levels:
+  phase parent, task child, implementation subtask.
+- Record issue numbers beside roadmap phases and tasks as soon as they exist.
 - Keep roadmap, changelog, commits, and issue comments synchronized as task
   state changes.
+
+## Strict Development Workflow
+
+Use this workflow for active development from each phase boundary onward:
+
+- One active roadmap phase should correspond to one GitHub parent issue and one
+  feature branch unless the maintainer explicitly approves a parallel lane.
+- Create or activate the phase parent issue before starting phase work.
+- Create child issues for roadmap tasks under the parent issue before
+  implementing those tasks.
+- Link child issues from the parent issue body, and add a backlink comment from
+  each child issue to the parent.
+- Work child issues one at a time where practical, in roadmap order.
+- Before closing a child issue, update every issue-body checklist item to
+  checked, or rewrite the body to make superseded/deferred items explicit.
+- Close a child issue only after its repo changes, documentation, checklist
+  state, validation, and issue comment trail are complete.
+- Keep `ROADMAP.md`, `CHANGE_LOG.md`, planning notes, commits, PRs, and issue
+  comments synchronized when status changes.
+- Open a PR from the phase branch back to `main` when the parent issue's child
+  issues are complete or explicitly deferred.
+- Close the parent phase issue only after the phase PR has merged back to
+  `main`, or after all child work is explicitly deferred with a recorded
+  rationale.
+- Do not open implementation work for the next phase until the current phase
+  parent issue is closed or the maintainer explicitly approves a parallel lane.
 
 ## FEMIC/Patchworks Guardrails
 

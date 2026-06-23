@@ -26,3 +26,11 @@
 - added child-issue backlinks to `#4`; and
 - updated the roadmap so Phase 1 follows the modelwright parent/child issue
   workflow.
+
+## 2026-06-23 - Hardened the agent issue-workflow contract
+
+- amended `AGENTS.md` so future roadmap phase expansions must use one GitHub
+  parent issue per phase and one linked child issue per phase task;
+- documented the child backlink, issue-body checklist, closure, and PR/merge
+  rules; and
+- recorded that parallel phase lanes require explicit maintainer approval.
