@@ -98,3 +98,15 @@
   features with total measured area `147798.392 ha`; and
 - kept the original amendment zip as raw provenance for all six amendment
   features.
+
+## 2026-06-23 - Extracted the canonical LU reference context
+
+- decided that the full 27-feature BCGW LU payload remains raw provenance while
+  the canonical LU reference context is the FSP-relevant Holberg, Keogh, and
+  Marble subset;
+- extracted that subset to
+  `data/source/nicf_fsp/lu_reference/nicf_lu_reference.*`;
+- verified the LU reference layer reads as three valid EPSG:3005 polygon
+  features with total measured area `165588.857 ha`; and
+- marked `P1.2d` complete while leaving run-profile source-path wiring as the
+  next bounded `P1.2` move.

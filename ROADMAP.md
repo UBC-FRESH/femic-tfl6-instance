@@ -14,7 +14,7 @@
     expected area.
   - [x] P1.2c Inspect the LU clip payload and identify the three relevant LU
     boundaries referenced by the FSP.
-  - [ ] P1.2d Decide which extracted layers become tracked canonical source
+  - [x] P1.2d Decide which extracted layers become tracked canonical source
     files and which remain regenerated scratch.
 - [ ] P1.3 Define the first K3Z-to-NICF adaptation contract (`#3`).
   - [ ] P1.3a Compare K3Z config, model-input bundle, docs, and Patchworks
@@ -35,13 +35,9 @@
 
 ## Current Next Steps
 
-1. Continue `P1.2` / `#1`: keep the canonical FSP AOI anchored to the provided
-   amendment spatial boundary filtered to FDU 1 Holberg, FDU 2 Keogh, and
-   FDU 3 Marble.
-2. Continue `P1.2` / `#1`: decide whether the 27-feature BCGW LU layer should
-   also be extracted as canonical reference context or remain raw payload plus
-   documented evidence.
-3. Continue `P1.2` / `#1`: update `config/run_profile.nicffsp.yaml` after the
-   LU reference-context decision is recorded.
-4. Defer `P1.3` / `#3` and `P1.4` / `#2` implementation until the accepted AOI
-   and LU source paths are recorded.
+1. Continue `P1.2` / `#1`: update `config/run_profile.nicffsp.yaml` with the
+   accepted canonical AOI path
+   `data/source/nicf_fsp/aoi/nicf_fsp_aoi.shp` and LU reference path
+   `data/source/nicf_fsp/lu_reference/nicf_lu_reference.shp`.
+2. Defer `P1.3` / `#3` and `P1.4` / `#2` implementation until the P1.2
+   run-profile source-path wiring is recorded.

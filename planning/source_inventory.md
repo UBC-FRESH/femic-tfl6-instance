@@ -152,14 +152,13 @@ Interpretation:
 
 - The LU zip is a broader BCGW landscape-unit clip with `27` full LU features,
   not a narrow three-LU package.
-- The six `NICF_FDU_2024` features align by name with six full BCGW LU records:
-  Holberg, Keogh, Marble, Nahwitti, Shushartie, and Tsulquate.
-- Each FDU candidate feature is equal to or smaller than its corresponding full
-  BCGW LU, so `NICF_FDU_2024` appears to be a clipped FDU/AOI surface derived
-  from LU boundaries rather than the full LU boundary layer.
-- The initial project note mentions three relevant LUs, but the inspected
-  spatial payloads currently expose six named FDU/LU overlaps. Do not close the
-  relevant-LU decision until the FSP PDF is checked against these layer names.
+- The canonical LU reference context for this instance is the three BCGW LU
+  records named by the FSP: Holberg, Keogh, and Marble.
+- The remaining 24 BCGW LU records stay in the raw zip as provenance/context,
+  not as tracked canonical runtime inputs.
+- Each canonical FSP AOI feature is equal to or smaller than its corresponding
+  full BCGW LU, so the AOI surface should be treated as the modelling boundary
+  and the LU reference subset as context for FSP interpretation.
 
 ## FSP PDF Cross-Check
 
@@ -208,13 +207,9 @@ Interpretation:
   Holberg, Keogh, Marble, Nahwitti, Shushartie, and Tsulquate.
 - The additional 2024 amendment names (`Nahwitti`, `Shushartie`, `Tsulquate`)
   do not appear in the 2020 PDF text extracted with `pypdf`.
-- Treat this as a source-version decision, not a GIS error:
-  - the 2020 FSP document describes a three-FDU scope;
-  - the 2024 amendment spatial payload appears to define a six-FDU candidate
-    surface; and
-  - the model runtime AOI should not be accepted until the project decides
-    whether the teaching instance follows the 2020 FSP text, the 2024 amendment
-    spatial payload, or a documented subset/dissolve of the amendment payload.
+- Project clarification resolves the modelling boundary as the provided
+  amendment spatial boundary filtered to FDU 1 Holberg, FDU 2 Keogh, and
+  FDU 3 Marble.
 
 Current source-boundary status:
 
@@ -270,10 +265,8 @@ Rationale:
 
 Open normalization work:
 
-- Decide whether the full 27-feature BCGW LU layer should also be extracted as
-  canonical reference context, or remain raw payload plus documented evidence.
-- Update `config/run_profile.nicffsp.yaml` only after the accepted extracted
-  AOI path exists.
+- Update `config/run_profile.nicffsp.yaml` with the accepted AOI and LU
+  reference paths.
 
 ## Canonical Extracted AOI Source
 
@@ -311,3 +304,48 @@ Interpretation:
   features.
 - `config/run_profile.nicffsp.yaml` is not updated yet; runtime config wiring
   should happen after the LU reference-context decision is recorded.
+
+## Canonical Extracted LU Reference Source
+
+Extraction date: 2026-06-23
+
+Decision:
+
+- Track only the three FSP-relevant BCGW LU records as canonical reference
+  context: Holberg, Keogh, and Marble.
+- Keep the full 27-feature BCGW LU zip as raw provenance/context.
+- Do not use the LU reference layer as the runtime AOI; the runtime AOI remains
+  `data/source/nicf_fsp/aoi/nicf_fsp_aoi.shp`.
+
+Accepted tracked source path:
+`data/source/nicf_fsp/lu_reference/nicf_lu_reference.shp`
+
+Extracted shapefile family:
+
+| Tracked path | SHA-256 |
+| --- | --- |
+| `data/source/nicf_fsp/lu_reference/nicf_lu_reference.cpg` | `3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824` |
+| `data/source/nicf_fsp/lu_reference/nicf_lu_reference.dbf` | `1faa1c616eec6da8b7bdcdf0f97281e38f1b78eaacaedf65d6aaf20b3ecb2a16` |
+| `data/source/nicf_fsp/lu_reference/nicf_lu_reference.prj` | `4dc6a252b4e1e9468f9489c04fc559230f6d8b3f6ad8a79f02ba365a593636f5` |
+| `data/source/nicf_fsp/lu_reference/nicf_lu_reference.shp` | `580e33fd55390b93dc48d4b53fcd22df0fa11b6a03614bbf43d8ac5bc603d7ad` |
+| `data/source/nicf_fsp/lu_reference/nicf_lu_reference.shx` | `0e098fb581d3c4337fd8d17f361007e92789a1294b292310867b181a2536d630` |
+
+Verification:
+
+- Read path: `data/source/nicf_fsp/lu_reference/nicf_lu_reference.shp`
+- Feature count: `3`
+- Geometry type: `Polygon`
+- CRS: `EPSG:3005`
+- Bounds: `(849931.438, 580387.813, 928536.312, 641215.125)`
+- Geometry validity: `3` valid, `0` invalid
+- Total measured area in EPSG:3005: `165588.857 ha`
+- Feature names: Holberg, Keogh, Marble
+
+Interpretation:
+
+- This extracted lowercase shapefile family is the accepted canonical source
+  path for LU reference context in the bootstrap NICF FSP instance.
+- The raw BCGW LU zip remains tracked as provenance for the broader 27-feature
+  clip.
+- `config/run_profile.nicffsp.yaml` is not updated yet; runtime config wiring is
+  the next bounded `P1.2` move.
