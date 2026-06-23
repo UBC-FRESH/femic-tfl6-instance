@@ -34,3 +34,13 @@
 - documented the child backlink, issue-body checklist, closure, and PR/merge
   rules; and
 - recorded that parallel phase lanes require explicit maintainer approval.
+
+## 2026-06-23 - Inspected the NICF FSP amendment spatial payload
+
+- inventoried `data/source/nicf_fsp/nicf_fsp_amendment_3_spatial.zip`;
+- found one shapefile family, `NICF_FDU_2024`, with six valid EPSG:3005 polygon
+  features labeled as FDU/LU records;
+- recorded feature labels, CRS, bounds, geometry validity, and measured areas in
+  `planning/source_inventory.md`; and
+- kept the runtime AOI boundary undecided pending cross-check against the FSP
+  document and separate LU boundary payload.

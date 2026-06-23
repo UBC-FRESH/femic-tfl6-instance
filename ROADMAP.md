@@ -9,7 +9,7 @@
   - [x] P1.1c Add the uploaded AOI, LU, and FSP source payloads under stable
     lowercase tracked paths.
 - [ ] P1.2 Inspect and normalize source payloads (`#1`).
-  - [ ] P1.2a Unzip and inspect the NICF FSP amendment spatial payload.
+  - [x] P1.2a Unzip and inspect the NICF FSP amendment spatial payload.
   - [ ] P1.2b Identify the authoritative AOI layer, geometry type, CRS, and
     expected area.
   - [ ] P1.2c Inspect the LU clip payload and identify the three relevant LU
@@ -35,9 +35,9 @@
 
 ## Current Next Steps
 
-1. Work `P1.2` / `#1`: inspect
-   `data/source/nicf_fsp/nicf_fsp_amendment_3_spatial.zip` and record
-   the layer inventory in `planning/source_inventory.md`.
+1. Continue `P1.2` / `#1`: cross-check the `NICF_FDU_2024` AOI candidate
+   against the FSP document and the LU boundary evidence before accepting a
+   runtime AOI convention.
 2. Continue `P1.2` / `#1`: inspect
    `data/source/nicf_fsp/bcgw_lu_clip_2026_06.zip` and confirm the LU boundary
    names and CRS.
