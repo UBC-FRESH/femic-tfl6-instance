@@ -16,14 +16,14 @@
     boundaries referenced by the FSP.
   - [ ] P1.2d Decide which extracted layers become tracked canonical source
     files and which remain regenerated scratch.
-- [ ] P1.3 Define the first K3Z-to-NICF adaptation contract (`#1`).
+- [ ] P1.3 Define the first K3Z-to-NICF adaptation contract (`#3`).
   - [ ] P1.3a Compare K3Z config, model-input bundle, docs, and Patchworks
     package structure against the NICF FSP requirements.
   - [ ] P1.3b Define the first `run_profile.nicffsp.yaml` boundary after AOI
     extraction.
   - [ ] P1.3c Identify which K3Z teaching assumptions can carry forward and
     which need explicit FRST 558 review.
-- [ ] P1.4 Split model-design work into follow-on issues.
+- [ ] P1.4 Split model-design work into follow-on issues (`#2`).
   - [ ] P1.4a Open a cedar-signal design issue covering Cw cultural reserve,
     utility-pole-grade products, treatments, yield curves, accounts, and
     reporting outputs.
@@ -35,9 +35,11 @@
 
 ## Current Next Steps
 
-1. Inspect `data/source/nicf_fsp/nicf_fsp_amendment_3_spatial.zip` and record
+1. Work `P1.2` / `#1`: inspect
+   `data/source/nicf_fsp/nicf_fsp_amendment_3_spatial.zip` and record
    the layer inventory in `planning/source_inventory.md`.
-2. Inspect `data/source/nicf_fsp/bcgw_lu_clip_2026_06.zip` and confirm the LU
-   boundary names and CRS.
-3. Update `config/run_profile.nicffsp.yaml` only after the authoritative AOI
-   boundary has been extracted into a stable path.
+2. Continue `P1.2` / `#1`: inspect
+   `data/source/nicf_fsp/bcgw_lu_clip_2026_06.zip` and confirm the LU boundary
+   names and CRS.
+3. Defer `P1.3` / `#3` and `P1.4` / `#2` implementation until the accepted AOI
+   and LU source paths are recorded.
