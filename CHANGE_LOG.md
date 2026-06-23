@@ -65,3 +65,13 @@
   and
 - kept the accepted runtime AOI undecided as a source-version choice between
   the 2020 FSP text and the 2024 amendment spatial payload.
+
+## 2026-06-23 - Accepted the 2024 amendment FDU layer as bootstrap AOI source
+
+- recorded `NICF_FDU_2024.shp` as the accepted bootstrap AOI source because the
+  project request identifies the amendment spatial payload as the new AOI;
+- preserved six FDU/LU features as canonical source semantics rather than
+  treating a dissolved AOI polygon as source truth;
+- kept the 2020 FSP three-FDU evidence as historical/context evidence; and
+- left canonical extraction and runtime config wiring for a later bounded
+  `P1.2` slice.

@@ -221,4 +221,57 @@ Current source-boundary status:
 - Relevant LUs referenced by the 2020 FSP: Holberg, Keogh, Marble.
 - Broader FDU names present in the 2024 amendment spatial payload:
   Holberg, Keogh, Marble, Nahwitti, Shushartie, Tsulquate.
-- Accepted runtime AOI: not yet decided.
+- Accepted runtime AOI: see bootstrap AOI convention below.
+
+## Bootstrap AOI Convention
+
+Decision date: 2026-06-23
+
+Decision:
+
+- Use `NICF_FDU_2024.shp` from
+  `data/source/nicf_fsp/nicf_fsp_amendment_3_spatial.zip` as the accepted
+  bootstrap AOI source for the NICF FSP teaching instance.
+- Preserve the six FDU/LU features as the canonical source geometry semantics:
+  Holberg, Keogh, Marble, Nahwitti, Shushartie, and Tsulquate.
+- Treat a dissolved whole-AOI polygon as a generated runtime helper only, not
+  as the canonical source record.
+- Treat the 2020 FSP PDF three-FDU scope as historical/context evidence for the
+  original FSP, not as the current modelling boundary, because the project
+  request explicitly identifies the 2024 amendment spatial payload as the AOI
+  for the new teaching instance.
+
+Accepted source candidate:
+
+| Field | Value |
+| --- | --- |
+| Raw payload | `data/source/nicf_fsp/nicf_fsp_amendment_3_spatial.zip` |
+| Path in zip | `NICF FSP Shapefiles/NICF_FDU_2024.shp` |
+| Canonical feature semantics | Six preserved FDU/LU polygons |
+| CRS | `EPSG:3005` |
+| Geometry type | `Polygon` |
+| Feature count | `6` |
+| Total measured area | `204162.510 ha` |
+| Bounds | `(849931.438, 580387.812, 928536.312, 653037.313)` |
+
+Rationale:
+
+- The bootstrap project note says to scale up to the new AOI uploaded as the
+  amendment spatial payload.
+- The amendment payload is newer than the 2020 FSP PDF and explicitly carries
+  `2024` in the shapefile name.
+- The six amendment features are internally consistent with the broader BCGW LU
+  layer: each overlaps a same-named BCGW LU and is equal to or smaller than the
+  full LU.
+- Preserving FDU/LU feature identity keeps the teaching model able to report and
+  reason at the FDU/LU level while still allowing a dissolved whole-AOI runtime
+  boundary to be generated later if needed.
+
+Open normalization work:
+
+- Extract the accepted shapefile family into a stable lowercase tracked source
+  path.
+- Decide whether the full 27-feature BCGW LU layer should also be extracted as
+  canonical reference context, or remain raw payload plus documented evidence.
+- Update `config/run_profile.nicffsp.yaml` only after the accepted extracted
+  AOI path exists.

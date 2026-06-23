@@ -10,7 +10,7 @@
     lowercase tracked paths.
 - [ ] P1.2 Inspect and normalize source payloads (`#1`).
   - [x] P1.2a Unzip and inspect the NICF FSP amendment spatial payload.
-  - [ ] P1.2b Identify the authoritative AOI layer, geometry type, CRS, and
+  - [x] P1.2b Identify the authoritative AOI layer, geometry type, CRS, and
     expected area.
   - [x] P1.2c Inspect the LU clip payload and identify the three relevant LU
     boundaries referenced by the FSP.
@@ -35,10 +35,10 @@
 
 ## Current Next Steps
 
-1. Continue `P1.2` / `#1`: resolve the source-version decision between the
-   2020 FSP three-FDU scope and the 2024 amendment six-FDU spatial payload
-   before accepting a runtime AOI convention.
-2. Continue `P1.2` / `#1`: decide which extracted source layer(s) become
-   canonical tracked inputs after the AOI convention is accepted.
+1. Continue `P1.2` / `#1`: extract the accepted `NICF_FDU_2024` shapefile
+   family into a stable lowercase tracked source path.
+2. Continue `P1.2` / `#1`: decide whether the 27-feature BCGW LU layer should
+   also be extracted as canonical reference context or remain raw payload plus
+   documented evidence.
 3. Defer `P1.3` / `#3` and `P1.4` / `#2` implementation until the accepted AOI
    and LU source paths are recorded.
