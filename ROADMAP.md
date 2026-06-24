@@ -94,7 +94,7 @@ starts.
 
 - [ ] P2.1 Resolve and materialize public/reference source layers needed by the
   TFL 6 THLB skeleton (`#16`).
-- [ ] P2.1a Design operability netdown proxy and sensitivity lane (`#20`).
+- [x] P2.1a Design operability netdown proxy and sensitivity lane (`#20`).
 - [ ] P2.2 Profile accepted 2025 R1 and VDYP7 fields for non-forest,
   non-productive, deciduous-leading, productivity, and join-key assumptions.
 - [ ] P2.3 Define reviewed current-AOI source-layer recipe contracts under the
@@ -196,16 +196,14 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 
 ## Current Next Steps
 
-1. Continue P2.1a / `#20`: finish the operability netdown proxy and
-   sensitivity design before source-materialization planning treats
-   operability as resolved. `planning/tfl6_operability_netdown_proxy.md`
-   now records MP9/MP10 evidence, VRI/VDYP proxy candidates, and DEM discovery
-   results. LidarBC/open LiDAR is the preferred future slope source if AOI
-   tile coverage/materialization is practical; CDED 1:250,000 is only a coarse
-   smoke-test/fallback raster. The base-case-versus-sensitivity parameter
-   table and later DEM materialization-plan requirements are now drafted. The
-   next bounded move should review/close P2.1a or make targeted edits requested
-   by the maintainer; do not start source downloads until P2.1a is accepted.
+1. Continue P2.1 / `#16`: draft the source-materialization plan before any
+   source downloads. List which accepted candidates are safe to clip first
+   (FWA streams/lakes/wetlands, approved UWR/WHA, current legal OGMA, current
+   non-legal OGMA for review, recreation features, LU, BEC, DRA roads) and
+   which items stay fallback/review-only for now (operability proxy/DEM slope,
+   shoreline precision, RMZ schema, cultural heritage, future roads). P2.1a
+   operability design is complete, but DEM materialization remains a later
+   planned dependency rather than an immediate download.
 2. Keep P2.2 field profiling queued until the accepted local R1/VDYP7
    dependency rows from P2.1 are ready for review or the maintainer explicitly
    approves a parallel field-mapping slice.

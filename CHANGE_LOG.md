@@ -703,3 +703,17 @@
 - performed no source download, DEM materialization, slope derivation, zonal
   statistics, recipe YAML creation, THLB execution, model-input generation, or
   Patchworks runtime work.
+
+## 2026-06-24 - Closed P2.1a operability design lane
+
+- audited P2.1a acceptance against `planning/tfl6_operability_netdown_proxy.md`,
+  `planning/tfl6_source_layer_dependency_inventory.md`, `ROADMAP.md`, and issue
+  comments;
+- marked P2.1a complete in `ROADMAP.md`;
+- moved Current Next Steps back to P2.1 source-materialization planning, with
+  operability proxy/DEM slope kept as a later reviewed dependency rather than
+  an immediate download;
+- closed GitHub issue `#20` after posting a final closeout comment; and
+- performed no source download, DEM materialization, slope derivation, zonal
+  statistics, recipe YAML creation, THLB execution, model-input generation, or
+  Patchworks runtime work.
