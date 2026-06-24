@@ -470,3 +470,16 @@
 - kept follow-on implementation issues `#8`, `#9`, and `#10` idle until P1.8
   places them into the planned phase structure or the maintainer explicitly
   approves a parallel lane.
+
+## 2026-06-23 - Drafted proposed Phase 2 through Phase 5 roadmap sections
+
+- completed P1.8a by adding proposed Phase 2 through Phase 5 sections to
+  `ROADMAP.md`;
+- proposed Phase 2 for reviewed source layers and THLB netdown;
+- proposed Phase 3 for model-design assumptions, including cedar design `#8`
+  and expansion design `#9`;
+- proposed Phase 4 for model inputs and Patchworks runtime-package build/QA,
+  including runtime follow-on `#10`;
+- proposed Phase 5 for publication, teaching docs, and release QA; and
+- kept P1.8 open for parent phase issue creation, child task issue creation,
+  and final dependency/placement synchronization.
