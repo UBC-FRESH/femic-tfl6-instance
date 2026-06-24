@@ -207,9 +207,11 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    semantics are still unaccepted. Recreation polygons, trails, site points,
    and details/closures are materialized for review under
    `data/source/tfl_6/recreation/`, with recreation buffer/status/class
-   semantics still unaccepted. Keep the next pass bounded to another
-   safe-to-clip source family, preferably LU/BEC strata, and continue recording
-   provenance, read-smoke evidence, and recipe-readiness caveats.
+   semantics still unaccepted. LU/BEC strata are materialized for review under
+   `data/source/tfl_6/strata/`, with RMZ/Table 16 semantics still blocked.
+   Keep the next pass bounded to another safe-to-clip source family, preferably
+   DRA existing roads, and continue recording provenance, read-smoke evidence,
+   and recipe-readiness caveats.
 2. Keep P2.2 field profiling queued until the accepted local R1/VDYP7
    dependency rows from P2.1 are ready for review or the maintainer explicitly
    approves a parallel field-mapping slice.

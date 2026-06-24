@@ -829,3 +829,24 @@
   safe-to-clip source family, preferably LU/BEC strata; and
 - accepted no recreation netdown semantics, created no recipe YAML, ran no THLB
   netdown, generated no model inputs, and performed no Patchworks runtime work.
+
+## 2026-06-24 - Materialized LU/BEC strata sources for review
+
+- materialized public landscape-unit and BEC strata candidates clipped to the
+  accepted TFL 6 AOI;
+- wrote curated review artifacts under `data/source/tfl_6/strata/`;
+- recorded provenance, source authority, transient fetch details, clipped
+  feature counts, area summaries, LU names, BEC labels, rule-critical fields,
+  date summaries, SHA-256 hashes, and read-smoke evidence in
+  `data/source/tfl_6/strata/strata_source_manifest.json`;
+- recorded `13` clipped landscape-unit features and `107` clipped BEC features,
+  both summing to `217042.719 ha` because they partition the accepted AOI;
+- preserved the review-only boundary: LU/BEC can support OGMA, RMZ, and Table
+  16 review, but neither layer is a netdown by itself, and RMZ/Table 16
+  executable semantics remain blocked;
+- updated `planning/tfl6_source_layer_dependency_inventory.md` and
+  `ROADMAP.md` so the next P2.1 materialization pass remains bounded to another
+  safe-to-clip source family, preferably DRA existing roads; and
+- accepted no RMZ or Table 16 netdown semantics, created no recipe YAML, ran no
+  THLB netdown, generated no model inputs, and performed no Patchworks runtime
+  work.

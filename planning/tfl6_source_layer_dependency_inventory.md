@@ -52,7 +52,7 @@ reviewed aspatial or proxy treatment instead of public geometry.
 | `tfl6_nd_150` | `cultural_heritage_proxy` | Sensitive/local TUS/CMT data not expected as public source; MP10 Table 15 supports EFZ plus 1 km ocean-proximity proxy/aspatial treatment | Aspatial/proxy deduction | Reviewed fallback accepted; no sensitive public geometry search | Do not seek sensitive TUS/CMT geometry; use MP10 Table 15 / adjusted benchmark deduction unless a reviewed EFZ plus 1 km ocean-proximity proxy is explicitly implemented later. |
 | `tfl6_nd_160` | prior-step checkpoint | MP10 Table 4 | Report-only total operable reductions checkpoint | No source needed | Keep as validation row only. |
 | `tfl6_nd_170` | prior-step checkpoint | MP10 Table 4 | Report-only reduced landbase checkpoint | No source needed | Keep as validation row only. |
-| `tfl6_nd_180` | `rmz_lu_bec_strata` | Landscape units `WHSE_LAND_USE_PLANNING.RMP_LANDSCAPE_UNIT_SVW`; BEC `WHSE_FOREST_VEGETATION.BEC_BIOGEOCLIMATIC_POLY`; RMZ public geometry unresolved, with Strategic Land and Resource Plans `WHSE_LAND_USE_PLANNING.RMP_STRGC_LAND_RSRCE_PLAN_SVW` as a review clue only | Stand-level retention percent-by-stratum | LU/BEC candidates identified; RMZ geometry/schema unresolved; Table 16 percent-by-stratum fallback accepted | Materialize/clip LU and BEC candidates only when source-materialization begins; use reviewed Table 16 aspatial/percent-by-stratum fallback until RMZ geometry/schema is accepted. |
+| `tfl6_nd_180` | `rmz_lu_bec_strata` | Landscape units `WHSE_LAND_USE_PLANNING.RMP_LANDSCAPE_UNIT_SVW`; BEC `WHSE_FOREST_VEGETATION.BEC_BIOGEOCLIMATIC_POLY`; RMZ public geometry unresolved, with Strategic Land and Resource Plans `WHSE_LAND_USE_PLANNING.RMP_STRGC_LAND_RSRCE_PLAN_SVW` as a review clue only | Stand-level retention percent-by-stratum | LU/BEC materialized for review; RMZ geometry/schema unresolved; Table 16 percent-by-stratum fallback accepted | Review LU/BEC clipped strata and keep RMZ/Table 16 executable semantics blocked until RMZ schema or fallback treatment is accepted. |
 | `tfl6_nd_190` | prior-step checkpoint | MP10 Table 4 / adjusted targets | Report-only current THLB checkpoint | No source needed | Keep as validation row only. |
 | `tfl6_nd_200` | `future_roads_allowance` | MP10 Table 17 aspatial future-road assumption | Long-term landbase context only | Fallback/context only | Keep out of current THLB lane unless long-term scenario work is explicitly opened. |
 | `tfl6_nd_210` | prior-step checkpoint | MP10 Table 4 / adjusted targets | Report-only long-term landbase checkpoint | No source needed | Keep as validation row only. |
@@ -677,6 +677,77 @@ Recipe boundary:
   recipe-readiness review.
 - The details/closures layer is attribution/context only unless a later
   reviewed join or geometry rule accepts it for executable use.
+
+## First LU/BEC Strata Materialization Pass
+
+This pass materialized the landscape-unit and BEC public strata candidates for
+source review only. It did not accept RMZ or Table 16 retention semantics,
+create recipe YAML, or run THLB netdown.
+
+Command used:
+
+```powershell
+..\..\.venv\Scripts\python.exe -m femic data bcdc-fetch `
+  'WHSE_LAND_USE_PLANNING.RMP_LANDSCAPE_UNIT_SVW' `
+  'WHSE_FOREST_VEGETATION.BEC_BIOGEOCLIMATIC_POLY' `
+  --bbox '841375.750,580345.507,928480.824,639356.277' `
+  --output-format gpkg `
+  --download-root runtime\bcdc_fetch\p2_1_strata `
+  --manifest-path runtime\logs\p2_1_strata_bcdc_fetch_manifest.json
+```
+
+Notes:
+
+- The bbox fetch returned `17` raw landscape-unit features and `146` raw BEC
+  features.
+- Runtime WFS outputs were used as transient cache only. Both layers were
+  clipped to the exact TFL 6 AOI, written to curated source paths, read-smoked,
+  and then removed from `runtime/`.
+- Curated output manifest:
+  `data/source/tfl_6/strata/strata_source_manifest.json`.
+- Both curated layers sum to the accepted TFL 6 AOI area because they partition
+  the AOI rather than remove landbase by themselves.
+
+| Source ID | Curated output | Raw bbox features | TFL 6 clipped features | Metric | Status |
+| --- | --- | ---: | ---: | ---: | --- |
+| `landscape_units_tfl6` | `data/source/tfl_6/strata/landscape_units_tfl6.gpkg`, layer `landscape_units_tfl6` | `17` | `13` | `217042.719 ha` polygon area | materialized for review |
+| `bec_tfl6` | `data/source/tfl_6/strata/bec_tfl6.gpkg`, layer `bec_tfl6` | `146` | `107` | `217042.719 ha` polygon area | materialized for review |
+
+Read-smoke and QA:
+
+- both curated outputs read successfully with geopandas;
+- both outputs are EPSG:3005;
+- both outputs read back as multipolygon geometries;
+- all curated output geometries are valid after clipping;
+- output bounds are inside the accepted TFL 6 AOI bbox; and
+- each output has a SHA-256 hash recorded in
+  `data/source/tfl_6/strata/strata_source_manifest.json`.
+
+Rule-critical field notes:
+
+- clipped landscape units include `San Josef`, `Nahwitti`, `Lower Nimpkish`,
+  `Marble`, `Neroutsos`, `Mahatta`, `Klaskish`, `Tahsish`, `Holberg`,
+  `Tsulquate`, `Keogh`, `Nasparti`, and `Kashutl`;
+- landscape-unit fields retain `LANDSCAPE_UNIT_ID`,
+  `LANDSCAPE_UNIT_PROVID`, `LANDSCAPE_UNIT_NUMBER`,
+  `LANDSCAPE_UNIT_NAME`, `BIODIVERSITY_EMPHASIS_OPTION`,
+  `ORIGINAL_DECISION_DATE`, `LAST_AMENDMENT_DATE`,
+  `ENABLING_DOCUMENT_TITLE`, and `FEATURE_AREA_SQM`;
+- clipped BEC labels include `MH  mm 1`, `CWH vm 2`, `CWH vm 4`, `MH  mmp`,
+  `CWH vm 3`, `CWH vh 2`, and `CWH vm 1`; and
+- BEC fields retain `ZONE`, `SUBZONE`, `VARIANT`, `PHASE`,
+  `NATURAL_DISTURBANCE`, `MAP_LABEL`, `BGC_LABEL`, `ZONE_NAME`,
+  `SUBZONE_NAME`, `VARIANT_NAME`, `NATURAL_DISTURBANCE_NAME`, and
+  `FEATURE_AREA_SQM`.
+
+Recipe boundary:
+
+- These layers are source-review artifacts only.
+- LU/BEC can support OGMA, RMZ, and Table 16 review, but neither layer is a
+  netdown by itself.
+- RMZ geometry/schema remains unresolved, and Table 16 percent-by-stratum
+  execution remains blocked until a later recipe-readiness review accepts an
+  RMZ source or an explicit fallback treatment.
 
 ## Non-Goals
 

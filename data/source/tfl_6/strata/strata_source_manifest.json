@@ -1,0 +1,327 @@
+{
+  "generated_utc": "2026-06-24T18:48:30.609309+00:00",
+  "plan_status": "materialized_for_review",
+  "non_goals": [
+    "No THLB recipe semantics accepted.",
+    "No recipe YAML created.",
+    "No THLB netdown executed.",
+    "No model-input or Patchworks runtime work performed."
+  ],
+  "aoi": {
+    "path": "data\\source\\tfl_6\\aoi\\tfl_6_boundary.gpkg",
+    "layer": "tfl_6_boundary",
+    "crs": "EPSG:3005",
+    "feature_count": 182,
+    "union_area_ha": 217042.71895028095,
+    "bounds": [
+      841375.75,
+      580345.5069999993,
+      928480.8239999991,
+      639356.2770000007
+    ],
+    "invalid_geometries_repaired": 0
+  },
+  "layers": [
+    {
+      "source_id": "landscape_units_tfl6",
+      "dependency_rows": [
+        "tfl6_nd_180",
+        "tfl6_nd_100",
+        "tfl6_nd_110"
+      ],
+      "status": "materialized_for_review",
+      "bcdc_title": "Landscape Units of British Columbia - Current",
+      "package_name": "landscape-units-of-british-columbia-current",
+      "dataset_page_url": "https://catalogue.data.gov.bc.ca/dataset/landscape-units-of-british-columbia-current",
+      "object_name": "WHSE_LAND_USE_PLANNING.RMP_LANDSCAPE_UNIT_SVW",
+      "organization": "Land Use Policy, Planning and Ecosystems Division",
+      "licence": "Open Government Licence - British Columbia",
+      "access_method": "OpenMaps WFS bbox fetch via femic data bcdc-fetch, exact AOI clip via geopandas",
+      "fetch_query": "WHSE_LAND_USE_PLANNING.RMP_LANDSCAPE_UNIT_SVW",
+      "raw_layer": "WHSE_LAND_USE_PLANNING_RMP_LANDSCAPE_UNIT_SVW",
+      "raw_feature_count": 17,
+      "invalid_raw_geometries_repaired": 0,
+      "output_path": "data\\source\\tfl_6\\strata\\landscape_units_tfl6.gpkg",
+      "output_layer": "landscape_units_tfl6",
+      "output_format": "GPKG",
+      "output_crs": "EPSG:3005",
+      "output_geometry_types": {
+        "MultiPolygon": 13
+      },
+      "output_feature_count": 13,
+      "output_bounds": [
+        841375.75,
+        580345.5069999993,
+        928480.8239999991,
+        639356.2770000007
+      ],
+      "output_metric_name": "area_ha",
+      "output_metric_value": 217042.71895028042,
+      "invalid_output_geometries_repaired": 0,
+      "field_count": 19,
+      "fields": [
+        "LANDSCAPE_UNIT_ID",
+        "LANDSCAPE_UNIT_PROVID",
+        "LANDSCAPE_UNIT_NUMBER",
+        "LANDSCAPE_UNIT_NAME",
+        "BIODIVERSITY_EMPHASIS_OPTION",
+        "BEO_SUB_TYPE_APPLICABLE",
+        "ORIGINAL_DECISION_DATE",
+        "LAST_AMENDMENT_DATE",
+        "GIS_CHANGE_DATE",
+        "GIS_CHANGE_PERSON",
+        "CHANGE_REASON",
+        "INITIATOR_OF_CHANGE",
+        "ENABLING_DOCUMENT_TITLE",
+        "ENABLING_DOCUMENT_URL",
+        "FEATURE_CODE",
+        "FEATURE_AREA_SQM",
+        "FEATURE_LENGTH_M",
+        "OBJECTID",
+        "SE_ANNO_CAD_DATA"
+      ],
+      "rule_hint_fields_present": [
+        "LANDSCAPE_UNIT_ID",
+        "LANDSCAPE_UNIT_PROVID",
+        "LANDSCAPE_UNIT_NUMBER",
+        "LANDSCAPE_UNIT_NAME",
+        "BIODIVERSITY_EMPHASIS_OPTION",
+        "ORIGINAL_DECISION_DATE",
+        "LAST_AMENDMENT_DATE",
+        "ENABLING_DOCUMENT_TITLE",
+        "FEATURE_AREA_SQM"
+      ],
+      "rule_hint_value_counts": {
+        "LANDSCAPE_UNIT_ID": {
+          "1627": 1,
+          "1630": 1,
+          "1649": 1,
+          "1650": 1,
+          "1651": 1,
+          "1657": 1,
+          "1672": 1,
+          "1674": 1,
+          "1641": 1,
+          "1638": 1,
+          "1640": 1,
+          "1677": 1,
+          "1678": 1
+        },
+        "LANDSCAPE_UNIT_PROVID": {
+          "1101": 1,
+          "911": 1,
+          "789": 1,
+          "822": 1,
+          "937": 1,
+          "816": 1,
+          "683": 1,
+          "1246": 1,
+          "556": 1,
+          "1315": 1,
+          "242": 1,
+          "922": 1,
+          "634": 1
+        },
+        "LANDSCAPE_UNIT_NUMBER": {
+          "<NA>": 13
+        },
+        "LANDSCAPE_UNIT_NAME": {
+          "San Josef": 1,
+          "Nahwitti": 1,
+          "Lower Nimpkish": 1,
+          "Marble": 1,
+          "Neroutsos": 1,
+          "Mahatta": 1,
+          "Klaskish": 1,
+          "Tahsish": 1,
+          "Holberg": 1,
+          "Tsulquate": 1,
+          "Keogh": 1,
+          "Nasparti": 1,
+          "Kashutl": 1
+        },
+        "BIODIVERSITY_EMPHASIS_OPTION": {
+          "Low": 7,
+          "Intermediate": 5,
+          "High": 1
+        },
+        "ORIGINAL_DECISION_DATE": {
+          "<NA>": 13
+        },
+        "LAST_AMENDMENT_DATE": {
+          "<NA>": 13
+        },
+        "ENABLING_DOCUMENT_TITLE": {
+          "<NA>": 13
+        }
+      },
+      "date_field_summaries": {
+        "ORIGINAL_DECISION_DATE": {
+          "non_null": 0,
+          "parseable": 0
+        },
+        "LAST_AMENDMENT_DATE": {
+          "non_null": 0,
+          "parseable": 0
+        }
+      },
+      "feature_area_sqm_source_field_sum": 7732574094.8009,
+      "feature_area_sqm_note": "source FEATURE_AREA_SQM values are source-feature attributes and may not equal clipped AOI area after intersection",
+      "sha256": "761ff07b97da8603d8c0de051da033c344616942cf821359f9516aa7c4a38f07",
+      "read_smoke": "geopandas read_file succeeded after write",
+      "review_required_before_recipe": true,
+      "review_notes": "Materialized for source review only; LU use for OGMA/RMZ/BEC stratification remains unaccepted until recipe-readiness review.",
+      "raw_runtime_path_used_for_materialization": "runtime\\bcdc_fetch\\p2_1_strata\\WHSE_LAND_USE_PLANNING_RMP_LANDSCAPE_UNIT_SVW\\WHSE_LAND_USE_PLANNING_RMP_LANDSCAPE_UNIT_SVW.gpkg",
+      "raw_runtime_artifact_retained": false,
+      "fetch_command_note": "Fetched to transient runtime cache with femic data bcdc-fetch, then clipped to exact TFL 6 AOI; runtime cache removed after curated outputs were written and read-smoked."
+    },
+    {
+      "source_id": "bec_tfl6",
+      "dependency_rows": [
+        "tfl6_nd_180"
+      ],
+      "status": "materialized_for_review",
+      "bcdc_title": "BEC Map",
+      "package_name": "bec-map",
+      "dataset_page_url": "https://catalogue.data.gov.bc.ca/dataset/bec-map",
+      "object_name": "WHSE_FOREST_VEGETATION.BEC_BIOGEOCLIMATIC_POLY",
+      "organization": "BC Data Catalogue / Ministry of Forests",
+      "licence": "Open Government Licence - British Columbia",
+      "access_method": "OpenMaps WFS bbox fetch via femic data bcdc-fetch, exact AOI clip via geopandas",
+      "fetch_query": "WHSE_FOREST_VEGETATION.BEC_BIOGEOCLIMATIC_POLY",
+      "raw_layer": "WHSE_FOREST_VEGETATION_BEC_BIOGEOCLIMATIC_POLY",
+      "raw_feature_count": 146,
+      "invalid_raw_geometries_repaired": 0,
+      "output_path": "data\\source\\tfl_6\\strata\\bec_tfl6.gpkg",
+      "output_layer": "bec_tfl6",
+      "output_format": "GPKG",
+      "output_crs": "EPSG:3005",
+      "output_geometry_types": {
+        "MultiPolygon": 107
+      },
+      "output_feature_count": 107,
+      "output_bounds": [
+        841375.75,
+        580345.5069999993,
+        928480.8239999991,
+        639356.2770000007
+      ],
+      "output_metric_name": "area_ha",
+      "output_metric_value": 217042.71895028057,
+      "invalid_output_geometries_repaired": 0,
+      "field_count": 19,
+      "fields": [
+        "FEATURE_CLASS_SKEY",
+        "ZONE",
+        "SUBZONE",
+        "VARIANT",
+        "PHASE",
+        "NATURAL_DISTURBANCE",
+        "MAP_LABEL",
+        "BGC_LABEL",
+        "ZONE_NAME",
+        "SUBZONE_NAME",
+        "VARIANT_NAME",
+        "PHASE_NAME",
+        "NATURAL_DISTURBANCE_NAME",
+        "FEATURE_AREA_SQM",
+        "FEATURE_LENGTH_M",
+        "FEATURE_AREA",
+        "FEATURE_LENGTH",
+        "OBJECTID",
+        "SE_ANNO_CAD_DATA"
+      ],
+      "rule_hint_fields_present": [
+        "ZONE",
+        "SUBZONE",
+        "VARIANT",
+        "PHASE",
+        "NATURAL_DISTURBANCE",
+        "MAP_LABEL",
+        "BGC_LABEL",
+        "ZONE_NAME",
+        "SUBZONE_NAME",
+        "VARIANT_NAME",
+        "NATURAL_DISTURBANCE_NAME",
+        "FEATURE_AREA_SQM"
+      ],
+      "rule_hint_value_counts": {
+        "ZONE": {
+          "MH": 59,
+          "CWH": 48
+        },
+        "SUBZONE": {
+          "vm": 47,
+          "mm": 38,
+          "mmp": 21,
+          "vh": 1
+        },
+        "VARIANT": {
+          "1": 39,
+          "2": 23,
+          "4": 21,
+          "<NA>": 21,
+          "3": 3
+        },
+        "PHASE": {
+          "<NA>": 107
+        },
+        "NATURAL_DISTURBANCE": {
+          "NDT1": 86,
+          "NDT5": 21
+        },
+        "MAP_LABEL": {
+          "MHmm1": 38,
+          "CWHvm2": 22,
+          "CWHvm4": 21,
+          "MHmmp": 21,
+          "CWHvm3": 3,
+          "CWHvh2": 1,
+          "CWHvm1": 1
+        },
+        "BGC_LABEL": {
+          "MH  mm 1": 38,
+          "CWH vm 2": 22,
+          "CWH vm 4": 21,
+          "MH  mmp": 21,
+          "CWH vm 3": 3,
+          "CWH vh 2": 1,
+          "CWH vm 1": 1
+        },
+        "ZONE_NAME": {
+          "Mountain Hemlock": 59,
+          "Coastal Western Hemlock": 48
+        },
+        "SUBZONE_NAME": {
+          "Very Wet Maritime": 47,
+          "Moist Maritime": 38,
+          "Moist Maritime Parkland": 21,
+          "Very Wet Hypermaritime": 1
+        },
+        "VARIANT_NAME": {
+          "Windward": 38,
+          "Montane": 22,
+          "Northern Montane": 21,
+          " ": 21,
+          "Northern Submontane": 3,
+          "Central": 1,
+          "Submontane": 1
+        },
+        "NATURAL_DISTURBANCE_NAME": {
+          "Ecosystems with rare stand-initiating events": 86,
+          "Alpine Tundra and Subalpine Parkland ecosystems": 21
+        }
+      },
+      "date_field_summaries": {},
+      "feature_area_sqm_source_field_sum": 85735362892.58873,
+      "feature_area_sqm_note": "source FEATURE_AREA_SQM values are source-feature attributes and may not equal clipped AOI area after intersection",
+      "sha256": "2a52772eb411baae4e535d8c12a04edf66538e8f731191fff53f24e67c01ed5f",
+      "read_smoke": "geopandas read_file succeeded after write",
+      "review_required_before_recipe": true,
+      "review_notes": "Materialized for source review only; BEC use for Table 16/RMZ/old-seral strata remains unaccepted until recipe-readiness review.",
+      "raw_runtime_path_used_for_materialization": "runtime\\bcdc_fetch\\p2_1_strata\\WHSE_FOREST_VEGETATION_BEC_BIOGEOCLIMATIC_POLY\\WHSE_FOREST_VEGETATION_BEC_BIOGEOCLIMATIC_POLY.gpkg",
+      "raw_runtime_artifact_retained": false,
+      "fetch_command_note": "Fetched to transient runtime cache with femic data bcdc-fetch, then clipped to exact TFL 6 AOI; runtime cache removed after curated outputs were written and read-smoked."
+    }
+  ]
+}
