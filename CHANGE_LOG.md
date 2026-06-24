@@ -545,3 +545,15 @@
   first task; and
 - corrected `ROADMAP.md` Current Next Steps so Phase 1 closeout comes before
   P2.1 `#16`.
+
+## 2026-06-23 - Started P2.1 source-layer dependency inventory
+
+- created `feature/p2-source-layer-thlb-inputs` from merged instance `main`;
+- added `planning/tfl6_source_layer_dependency_inventory.md` as the first P2.1
+  dependency-resolution surface;
+- separated accepted local TFL 6 AOI/VRI/VDYP inputs from R1/VDYP field-mapping
+  blockers, missing public/reference spatial layers, and fallback-only rows;
+- updated `ROADMAP.md` Current Next Steps to continue P2.1 authority/source
+  resolution before downloads, recipe YAML, or THLB execution; and
+- performed no source downloads, recipe execution, model-input generation, or
+  Patchworks runtime work.

@@ -195,12 +195,14 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 
 ## Current Next Steps
 
-1. Complete Phase 1 closeout: confirm Phase 1 parent `#4`, closed P1.8 gate
-   `#11`, parent FEMIC issue `UBC-FRESH/femic#199`, and parent PR
-   `UBC-FRESH/femic#200` are synchronized before starting Phase 2 work.
-2. After Phase 1 closeout, start Phase 2 with P2.1 / `#16`: resolve and
-   materialize the TFL 6 THLB source layers needed by the first executable
-   netdown lane.
+1. Continue P2.1 / `#16`: resolve public/reference authorities for missing
+   source rows in `planning/tfl6_source_layer_dependency_inventory.md`,
+   starting with roads, operability, hydrology/wetlands/shoreline, legal
+   overlays, recreation features, LU/RMZ/BEC strata, and historical/fallback
+   rows.
+2. Keep P2.2 field profiling queued until the accepted local R1/VDYP7
+   dependency rows from P2.1 are ready for review or the maintainer explicitly
+   approves a parallel field-mapping slice.
 3. Keep Phase 3 design issues `#8` and `#9` idle until Phase 2 source-layer and
    THLB dependencies are accepted or the maintainer explicitly approves a
    narrower parallel design slice.
