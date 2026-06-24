@@ -133,6 +133,12 @@ For future FEMIC recipe skeletons, keep three separate area stories visible:
 Do not compare a current 2025 reconstructed TFL 6 THLB directly against the
 MP10 THLB until the boundary/date/source difference is explicitly reconciled.
 
+Post-2011 boundary-change evidence is recorded in
+`planning/tfl6_instrument_boundary_reconciliation.md`. The leading hypothesis
+is that Instrument 101, effective January 1, 2015, added TFL 39 Block 4 lands
+to TFL 6 and explains most or all of the difference between the `171441 ha`
+MP10 historical GLB and the `217042.718950 ha` current FADM-derived AOI.
+
 ## P1.7c/P1.7d Handoff
 
 P1.7c should now classify each row above into:

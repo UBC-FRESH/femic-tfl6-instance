@@ -11,13 +11,13 @@
   },
   "corpus_root": "reference/",
   "extracted_text_root": "reference/extracted_text/",
-  "document_count": 18,
-  "pdf_count": 17,
+  "document_count": 19,
+  "pdf_count": 18,
   "image_count": 1,
   "document_type_counts": {
     "annual_report": 3,
     "chief_forester_aac_rationale": 1,
-    "instrument": 1,
+    "instrument": 2,
     "licence_map": 4,
     "management_plan_10": 1,
     "management_plan_10_analysis_report": 1,
@@ -27,62 +27,62 @@
     "map_image": 1
   },
   "keyword_totals": {
-    "aac": 340,
-    "allowable annual cut": 37,
-    "analysis report": 4,
-    "annual report": 291,
-    "appendix": 488,
-    "archaeological": 62,
-    "balsam": 29,
-    "canadian forest products": 1,
-    "canfor": 6,
-    "cedar": 300,
-    "chief forester": 58,
-    "community watershed": 12,
-    "cultural": 172,
-    "cypress": 75,
-    "economic operability": 8,
-    "environmentally sensitive": 5,
-    "esa": 10,
-    "forest cover": 86,
-    "forest estate": 5,
-    "hemlock": 228,
-    "information package": 415,
-    "inoperable": 36,
-    "instrument": 30,
-    "land base": 165,
+    "tfl 6": 1738,
+    "wfp": 800,
     "licence": 637,
-    "license": 127,
+    "timber supply analysis": 623,
+    "appendix": 488,
+    "site index": 447,
+    "tree farm licence": 416,
+    "information package": 415,
+    "aac": 340,
+    "thlb": 323,
+    "cedar": 300,
+    "annual report": 291,
     "management plan": 272,
-    "ministry of forests": 113,
-    "non-productive": 35,
+    "riparian": 266,
+    "hemlock": 228,
+    "western forest products": 214,
+    "operable": 173,
+    "cultural": 172,
+    "land base": 165,
     "ogma": 165,
     "old growth": 138,
-    "old-growth": 27,
-    "operable": 173,
-    "productive forest": 84,
-    "rationale": 50,
-    "redcedar": 13,
-    "riparian": 266,
+    "license": 127,
     "schedule": 118,
-    "site index": 447,
-    "terrain stability": 53,
-    "tfl 6": 1738,
-    "thlb": 323,
-    "timber harvesting land base": 53,
-    "timber supply analysis": 623,
-    "tipsy": 94,
-    "tree farm licence": 416,
-    "tree farm license": 2,
-    "unstable terrain": 19,
-    "vdyp": 76,
-    "visual quality": 88,
+    "ministry of forests": 113,
     "vqo": 98,
-    "western forest products": 214,
-    "western redcedar": 10,
-    "wfp": 800,
+    "tipsy": 94,
+    "visual quality": 88,
+    "forest cover": 86,
+    "productive forest": 84,
+    "vdyp": 76,
+    "cypress": 75,
+    "archaeological": 62,
+    "chief forester": 58,
+    "terrain stability": 53,
+    "timber harvesting land base": 53,
+    "rationale": 50,
+    "yield curve": 39,
+    "allowable annual cut": 37,
+    "inoperable": 36,
     "wildlife tree": 36,
-    "yield curve": 39
+    "non-productive": 35,
+    "instrument": 30,
+    "balsam": 29,
+    "old-growth": 27,
+    "unstable terrain": 19,
+    "redcedar": 13,
+    "community watershed": 12,
+    "esa": 10,
+    "western redcedar": 10,
+    "economic operability": 8,
+    "canfor": 6,
+    "environmentally sensitive": 5,
+    "forest estate": 5,
+    "analysis report": 4,
+    "tree farm license": 2,
+    "canadian forest products": 1
   },
   "documents": [
     {
@@ -4228,6 +4228,96 @@
         }
       ],
       "first_2500_chars": "--- page 1 --- --- page 2 ---"
+    },
+    {
+      "file_name": "tfl-06-inst-101-january-1-2015.pdf",
+      "path": "reference/tfl-06-inst-101-january-1-2015.pdf",
+      "media_type": "application/pdf",
+      "bytes": 3509249,
+      "sha256": "2871928f223af79a1254708ed273963ef4aeff2fab0d1f825ac95a5fb3e28090",
+      "document_type": "instrument",
+      "title_candidates": [
+        "TFL 6 Instrument 101",
+        "Amendment in the Matter of Tree Farm Licence Number 6 Instrument Number 101"
+      ],
+      "date_candidates": [
+        "Jan 1, 2015"
+      ],
+      "source_page_url": "https://www2.gov.bc.ca/gov/content/industry/forestry/forest-tenures/timber-harvesting-rights/tfl/tfl-6",
+      "source_page_last_observed": "2026-06-23",
+      "source_page_reported_last_updated": "2025-02-25",
+      "source_page_label": "Instrument 101- Jan 1, 2015 (PDF, 3.3MB)",
+      "source_page_date": "2015-01-01",
+      "source_url": "https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/forestry/timber-tenures/tree-farm-licence/instruments/tfl-06-inst-101-january-1-2015.pdf",
+      "pdf": {
+        "page_count": 4,
+        "encrypted": false,
+        "metadata": {
+          "Author": "",
+          "CreationDate": "D:20150113145258-08'00'",
+          "Creator": "Hewlett-Packard MFP",
+          "ModDate": "D:20150113145258-08'00'",
+          "Producer": ""
+        }
+      },
+      "text_extraction": {
+        "status": "image_only_no_searchable_text",
+        "text_path": "reference/extracted_text/tfl-06-inst-101-january-1-2015.txt",
+        "text_chars": 0,
+        "method": "pypdf",
+        "notes": "PDF pages are scanned/image-backed; pypdf extracted only page markers and no searchable document text."
+      },
+      "image_extraction": {
+        "status": "ok",
+        "image_paths": [
+          "reference/extracted_images/tfl-06-inst-101-january-1-2015_page_01_image_01.jpg",
+          "reference/extracted_images/tfl-06-inst-101-january-1-2015_page_02_image_01.jpg",
+          "reference/extracted_images/tfl-06-inst-101-january-1-2015_page_03_image_01.jpg",
+          "reference/extracted_images/tfl-06-inst-101-january-1-2015_page_04_image_01.jpg"
+        ],
+        "notes": "Embedded page images extracted with pypdf for visual review and later OCR."
+      },
+      "content_flags": [
+        "tenure_boundary_candidate",
+        "instrument_candidate",
+        "boundary_reconciliation_candidate"
+      ],
+      "keyword_counts": {},
+      "page_index": [],
+      "first_2500_chars": "",
+      "boundary_reconciliation_evidence": {
+        "status": "strong_post_2011_additional_area_evidence",
+        "summary": "Instrument 101 amends TFL 6 effective Jan 1, 2015 by adding the area known as Block 4 of Tree Farm Licence 39 and all lands shown on the attached map labelled TFL 6 Instrument 101. The attached map labels two TFL 6 addition areas: 44,612 ha +/- and 2,096 ha +/-.",
+        "visually_reviewed_pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "candidate_area_ha": [
+          44612,
+          2096
+        ],
+        "candidate_area_total_ha": 46708,
+        "listed_timber_licences": [
+          "T0223",
+          "T0230",
+          "T0237",
+          "T0242",
+          "T0251",
+          "T0256",
+          "T0260",
+          "T0262",
+          "T0270",
+          "T0274",
+          "T0281",
+          "T0288"
+        ],
+        "notes": [
+          "The current P1.6 FADM AOI exceeds the MP10 Table 4 historical GLB by about 45601.719 ha.",
+          "The instrument map addition labels total about 46708 ha, which is close enough to explain most or all of the historical/current AOI delta once exclusions, parcel treatment, and boundary vintage differences are reconciled."
+        ]
+      }
     },
     {
       "file_name": "tfl-06-lic-03-january-01-1980-map-1-of-1.pdf",
@@ -14873,5 +14963,18 @@
       ],
       "first_2500_chars": "--- page 1 --- Appendix XX High Conservation Value Forest – North Vancouver Island --- page 2 --- High Conservation Value Forests North Vancouver Island Region July 2000 Appendix Documents have not been included. Refer to www.westernforest.com for complete Report Version 1.1 --- page 3 --- WFP HCV Forest Report i Version 1.1 – July 2000 Table of Contents 1.0 INTRODUCTION ............................................................................................................... ... 1 2.0 HCV FORESTS CONSULTATION ....................................................................................... 2 2.1 HISTORICAL CONSULTATION ................................................................................................... 3 2.2 PRESENT AND FUTURE CONSULTATION ................................................................................... 3 3.0 HCV FORESTS ATTRIBUTE ASSESSMENT...................................................................... 4 3.1 HCV F ORESTS DEFINED......................................................................................................... 4 3.2 F OREST AREAS CONTAINING GLOBALLY, REGIONALLY OR NATIONALLY SIGNIFICANT… ................ 4 3.3 F OREST AREAS THAT CONTAIN RARE, THREATENED OR ENDANGERED ECOSYSTEMS… ............... 5 3.4 F OREST AREAS THAT PROVIDE BASIC SERVICES OF NATURE IN CRITICAL SITUATIONS…............... 6 3.5 F OREST AREAS FUNDAMENTAL TO THE NEEDS OF COMMUNITIES AND CULTURAL IDENTITY… ....... 7 4.0 HCV FORESTS MANAGEMENT STRATEGIES.................................................................. 8 5.0 HCV FORESTS ADAPTIVE MANAGEMENT....................................................................... 9 6.0 HCV FORESTS MONITORING .......................................................................................... 10 --- page 4 --- WFP HCV Forest Report 1 Version 1.1 – July 2000 4.0 Introduction The Forest Stewardship Council (FSC) certification assessment of Western Forest Products’ operations within the North Vancouver Island Region (NVIR) will include consideration of Principle 9 —Maintenance of High Conservation Value Forests. Principle 9 was revised in January 1999 by the membership of the FSC. Which adopted language developed by the Principle 9 Working Group at Chetumal, Mexico in September 1998. The revisions addressed concerns expressed by forest managers, certifiers, conservation groups and other forest stakeholders regarding the ecological, economic and social complexity associa"
     }
-  ]
+  ],
+  "updated_utc": "2026-06-24T04:55:31Z",
+  "post_2011_instrument_scrape": {
+    "source_page_url": "https://www2.gov.bc.ca/gov/content/industry/forestry/forest-tenures/timber-harvesting-rights/tfl/tfl-6",
+    "observed_utc": "2026-06-24T04:55:31Z",
+    "filter": "Instrument links with displayed source-page date year >= 2011",
+    "matched_count": 1,
+    "matched_files": [
+      "tfl-06-inst-101-january-1-2015.pdf"
+    ],
+    "notes": [
+      "Instrument 101 is strong evidence of a 2015 TFL 6 additional-area amendment."
+    ]
+  }
 }

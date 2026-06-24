@@ -318,3 +318,21 @@
 - recorded per-step input-layer and GIS overlay/readiness notes; and
 - kept recipe YAML creation and netdown execution blocked pending P1.7c
   adaptation review and P1.7d skeleton drafting.
+
+## 2026-06-23 - Scraped post-2011 TFL 6 instrument evidence
+
+- scraped the Province of British Columbia TFL 6 page for instrument links with
+  displayed dates from 2011 onward;
+- retained `reference/tfl-06-inst-101-january-1-2015.pdf` as the relevant
+  post-2011 instrument document;
+- excluded Instrument 10 after visual review confirmed it is a 1957 amendment
+  despite the misleading current source-page date label;
+- extracted page images under `reference/extracted_images/` because the
+  retained PDF is an image-backed scan with no useful searchable text layer;
+- updated `reference/tfl6_reference_index.json` and
+  `reference/tfl6_reference_index.md` with instrument metadata and
+  boundary-reconciliation evidence;
+- added `planning/tfl6_instrument_boundary_reconciliation.md`; and
+- recorded Instrument 101 as strong evidence that Jan. 1, 2015 additions from
+  TFL 39 Block 4 plausibly explain most or all of the gap between the `171441
+  ha` MP10 historical GLB and the `217042.718950 ha` current FADM-derived AOI.
