@@ -269,3 +269,17 @@
 - verified `26959` valid EPSG:3005 MultiPolygon features with
   `217042.718950 ha` clipped area; and
 - identified `feature_id` as the preferred VDYP join-key candidate for `P1.6c`.
+
+## 2026-06-23 - Filtered the 2025 VDYP7 tables to TFL 6
+
+- filtered `VEG_COMP_VDYP7_INPUT_POLY` and `VEG_COMP_VDYP7_INPUT_LAYER` to the
+  `26959` clipped TFL 6 R1 feature IDs;
+- wrote `data/input/tfl_6/vdyp7_input_poly_2025_tfl6.parquet`,
+  `data/input/tfl_6/vdyp7_input_layer_2025_tfl6.parquet`, and
+  `data/input/tfl_6/vdyp7_input_2025_tfl6_filter_manifest.json`;
+- retained `26833` VDYP7 polygon rows and `25585` VDYP7 layer rows;
+- verified that retained VDYP7 polygon rows have no feature IDs outside the
+  clipped R1 set and that retained VDYP7 layer rows have no feature IDs outside
+  the retained VDYP7 polygon table; and
+- recorded missing R1-to-VDYP diagnostics for downstream inventory and THLB
+  recipe work.

@@ -152,6 +152,56 @@ VDYP join-key handoff:
 - `polygon_id`: `26959` non-null, `26955` unique
 - preferred VDYP join-key candidate for `P1.6c`: `feature_id`
 
+## Materialized 2025 VDYP7 Filters
+
+`P1.6c` materialized the TFL 6-filtered VDYP7 polygon and layer tables.
+
+Outputs:
+
+- polygon table: `data/input/tfl_6/vdyp7_input_poly_2025_tfl6.parquet`
+- layer table: `data/input/tfl_6/vdyp7_input_layer_2025_tfl6.parquet`
+- filter manifest:
+  `data/input/tfl_6/vdyp7_input_2025_tfl6_filter_manifest.json`
+
+Source and method:
+
+- source archive:
+  `external/femic-public-data/data/bc/vri/2025/VEG_COMP_VDYP7_INPUT_POLY_AND_LAYER_2025.gdb.zip`
+- source tables:
+  - `VEG_COMP_VDYP7_INPUT_POLY`
+  - `VEG_COMP_VDYP7_INPUT_LAYER`
+- filter key: `FEATURE_ID`, normalized to `feature_id` in the Parquet outputs
+- filter set: the `26959` unique feature IDs from
+  `data/input/tfl_6/vri_2025_r1_poly_tfl6.gpkg`
+- method: chunked full-table scan with retained rows written to compressed
+  Parquet
+
+QA:
+
+- VDYP7 polygon source rows scanned: `7104182`
+- VDYP7 polygon retained rows: `26833`
+- VDYP7 polygon retained unique feature IDs: `26833`
+- VDYP7 polygon feature IDs outside clipped R1: `0`
+- VDYP7 polygon duplicate retained feature IDs: `0`
+- clipped R1 feature IDs without a VDYP7 polygon row: `126`
+- VDYP7 layer source rows scanned: `7608054`
+- VDYP7 layer retained rows: `25585`
+- VDYP7 layer retained unique feature IDs: `25356`
+- VDYP7 layer feature IDs outside clipped R1: `0`
+- VDYP7 layer feature IDs outside retained VDYP7 polygon table: `0`
+- retained VDYP7 polygon feature IDs without a VDYP7 layer row: `1477`
+- VDYP7 layer rows per feature ID: minimum `1`, maximum `2`
+- VDYP7 layer-level code counts:
+  - `1`: `25082`
+  - `2`: `229`
+  - null: `274`
+
+Missing VDYP rows are retained as an explicit diagnostic for downstream
+inventory/THLB recipe work. They are not a referential-integrity failure for
+the retained rows because every retained VDYP7 polygon row belongs to the TFL
+6 R1 feature-id set, and every retained VDYP7 layer row belongs to a retained
+VDYP7 polygon feature.
+
 ## Validation Requirements
 
 The `#6` implementation should record:
@@ -160,13 +210,15 @@ The `#6` implementation should record:
   filter;
 - clipped R1 feature count, CRS, bounds, total area, and geometry validity;
   (complete for R1 clip)
-- the exact feature-id field used to link R1 to the VDYP7 tables; (candidate:
+- the exact feature-id field used to link R1 to the VDYP7 tables; (complete:
   `feature_id`)
-- row counts for the filtered VDYP7 polygon and layer tables;
+- row counts for the filtered VDYP7 polygon and layer tables; (complete)
 - key-integrity checks:
   - every retained VDYP7 polygon row belongs to a retained TFL 6 R1 feature;
+    (complete)
   - every retained VDYP7 layer row belongs to a retained VDYP7 polygon feature;
-  - no duplicate records violate the expected source table keys;
+    (complete)
+  - no duplicate records violate the expected source table keys; (complete)
 - whether clipped outputs are tracked directly in the instance repo or moved to
   `external/femic-public-data` if they are too large for normal git.
 

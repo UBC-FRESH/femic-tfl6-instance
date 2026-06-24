@@ -49,7 +49,7 @@
     `WHSE_ADMIN_BOUNDARIES.FADM_TFL`.
   - [x] P1.6b Clip the 2025 VRI R1 polygon source to TFL 6 and record geometry
     QA.
-  - [ ] P1.6c Filter the 2025 VDYP7 polygon and layer tables to the TFL 6
+  - [x] P1.6c Filter the 2025 VDYP7 polygon and layer tables to the TFL 6
     feature-id set and verify key integrity.
   - [ ] P1.6d Record the accepted TFL 6 input-layer manifest and mark the
     original FDU 1/2/3 AOI as superseded for active model extraction.
@@ -66,8 +66,9 @@
 
 ## Current Next Steps
 
-1. Start `P1.6c` / `#6`: filter the 2025 VDYP7 polygon and layer tables to the
-   clipped TFL 6 `feature_id` set and verify key integrity.
+1. Start `P1.6d` / `#6`: record the accepted TFL 6 input-layer manifest,
+   including the boundary, clipped R1 polygon layer, filtered VDYP7 polygon
+   table, and filtered VDYP7 layer table.
 2. Continue `P1.5` / `#5`: record public-data remote publication status for
    the provincial 2025 VRI source archives.
 3. Start `P1.7` / `#7`: review the 2011 TFL 6 management plan and information
