@@ -53,7 +53,7 @@
     feature-id set and verify key integrity.
   - [x] P1.6d Record the accepted TFL 6 input-layer manifest and mark the
     original FDU 1/2/3 AOI as superseded for active model extraction.
-- [ ] P1.7 Plan TFL 6 source-layer and THLB netdown recipes from 2011 documents
+- [x] P1.7 Plan TFL 6 source-layer and THLB netdown recipes from 2011 documents
   (`#7`).
   - [x] P1.7a Add/verify local source copies of the TFL 6 Management Plan 10 and
     information package PDFs, plus the broader TFL 6 reference corpus index.
@@ -71,16 +71,14 @@
     `planning/tfl6_adjusted_thlb_benchmarks.json`.
   - [x] P1.7c Separate TSA29 workflow carry-forward assumptions from
     TFL/general-FMU adaptation gaps.
-  - [ ] P1.7d Draft source-layer and THLB netdown recipe skeletons or planning
+  - [x] P1.7d Draft source-layer and THLB netdown recipe skeletons or planning
     tables without executing recipes.
 
 ## Current Next Steps
 
-1. Start `P1.7d` / `#7`: draft non-executable source-layer and THLB netdown
-   recipe skeleton planning tables from
-   `planning/tfl6_recipe_adaptation_contract.md`, keeping missing-source and
-   fallback rows blocked from execution.
-2. Continue `P1.5` / `#5`: record public-data remote publication status for
+1. Continue `P1.5c` / `#5`: record file size, checksum, read-smoke, CRS, and
+   layer-name evidence for the provincial 2025 VRI source packages.
+2. Continue `P1.5d` / `#5`: record public-data remote publication status for
    the provincial 2025 VRI source archives.
 3. Continue `P1.4` / `#2`: split the cedar-signal, expansion-candidate, and
    Patchworks runtime-package design lanes into their own follow-on issues.

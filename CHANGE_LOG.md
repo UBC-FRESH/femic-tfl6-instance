@@ -370,3 +370,15 @@
 - classified Instrument 101 and adjusted current-AOI benchmark tables as
   validation context, not recipe inputs; and
 - marked P1.7c complete without creating recipe YAML or running THLB netdown.
+
+## 2026-06-23 - Drafted TFL 6 recipe skeleton planning tables
+
+- added `planning/tfl6_recipe_skeletons.md` as the P1.7d non-executable
+  skeleton surface;
+- proposed future TFL/general-FMU recipe destinations under `config/tfl6/`
+  while keeping the current `config/tsr/` paths as TSA29 pattern references;
+- listed source-layer candidates and acquisition strategies where known;
+- drafted the ordered THLB netdown skeleton table with source IDs, execution
+  classes, blocked-execution status, and validation targets;
+- kept all missing-source and fallback rows blocked from execution; and
+- marked P1.7 complete without creating recipe YAML or running THLB netdown.

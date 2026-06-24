@@ -160,4 +160,5 @@ P1.7c classified each row above into:
 - context/reference target only.
 
 P1.7d should draft non-executable recipe skeletons from this table and
-`planning/tfl6_recipe_adaptation_contract.md`.
+`planning/tfl6_recipe_adaptation_contract.md`. The resulting P1.7d skeleton
+planning tables are recorded in `planning/tfl6_recipe_skeletons.md`.

@@ -81,7 +81,7 @@ Planned planning outputs:
 - `planning/tfl6_2011_document_review.md`
 - `planning/tfl6_thlb_netdown_steps.md`
 - `planning/tfl6_recipe_adaptation_contract.md`
-- `planning/tfl6_source_layer_candidates.md`
+- `planning/tfl6_recipe_skeletons.md`
 
 Possible later recipe/config outputs:
 
@@ -165,6 +165,16 @@ That note classifies each ordered netdown row as TSA29 carry-forward,
 TFL/general-FMU adaptation, missing-source work, aspatial fallback candidate, or
 reference target only. It also records that Instrument 101 and the adjusted
 current-AOI benchmark tables are validation context, not recipe inputs.
+
+## Skeleton Planning Tables
+
+The P1.7d non-executable skeleton planning tables are recorded in
+`planning/tfl6_recipe_skeletons.md`.
+
+That note proposes future TFL/general-FMU recipe destinations under
+`config/tfl6/`, lists source-layer candidates and acquisition strategies where
+known, drafts the ordered THLB netdown skeleton table, and keeps all
+missing-source and fallback rows blocked from execution.
 
 ## Non-Goals
 

@@ -90,7 +90,8 @@ Use these benchmark surfaces in P1.7d:
 
 ## P1.7d Handoff
 
-P1.7d should draft non-executable recipe skeletons in this order:
+P1.7d drafted the non-executable skeleton planning tables in
+`planning/tfl6_recipe_skeletons.md` using this order:
 
 1. Source-layer candidate skeleton for accepted current-AOI inventory fields.
 2. THLB netdown skeleton table preserving MP10 order, with unresolved source
@@ -99,5 +100,5 @@ P1.7d should draft non-executable recipe skeletons in this order:
    current-AOI targets.
 4. Explicit blocked-execution notes for all missing-source and fallback rows.
 
-P1.7d should not run recipes, materialize new source layers, or start
-Patchworks runtime-package work.
+P1.7d did not run recipes, materialize new source layers, or start Patchworks
+runtime-package work.
