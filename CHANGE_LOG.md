@@ -557,3 +557,19 @@
   resolution before downloads, recipe YAML, or THLB execution; and
 - performed no source downloads, recipe execution, model-input generation, or
   Patchworks runtime work.
+
+## 2026-06-23 - Resolved first roads/operability source candidates
+
+- ran a metadata-only FEMIC BCDC resolver pass for TFL 6 roads and operability
+  candidate layers;
+- recorded Digital Road Atlas MPAR
+  `WHSE_BASEMAPPING.DRA_DGTL_ROAD_ATLAS_MPAR_SP` as the first public authority
+  candidate for current existing-road geometry;
+- recorded 2025 CEF Integrated Roads as a secondary/reference candidate, not
+  the accepted road authority;
+- recorded that no public TFL 6-specific operability geometry was accepted from
+  the first resolver pass, so operability remains a local-evidence/proxy
+  decision; and
+- updated `ROADMAP.md` Current Next Steps to move the next P2.1 resolver slice
+  to hydrology/wetlands/shoreline and legal overlays before source
+  materialization.

@@ -196,10 +196,12 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 ## Current Next Steps
 
 1. Continue P2.1 / `#16`: resolve public/reference authorities for missing
-   source rows in `planning/tfl6_source_layer_dependency_inventory.md`,
-   starting with roads, operability, hydrology/wetlands/shoreline, legal
-   overlays, recreation features, LU/RMZ/BEC strata, and historical/fallback
-   rows.
+   source rows in `planning/tfl6_source_layer_dependency_inventory.md`. Roads
+   now have DRA MPAR as the first public authority candidate, while
+   operability remains unresolved and likely needs local evidence or a reviewed
+   teaching proxy. The next bounded resolver slice should cover
+   hydrology/wetlands/shoreline and legal overlays before any source
+   materialization.
 2. Keep P2.2 field profiling queued until the accepted local R1/VDYP7
    dependency rows from P2.1 are ready for review or the maintainer explicitly
    approves a parallel field-mapping slice.
