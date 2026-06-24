@@ -74,10 +74,135 @@
     TFL/general-FMU adaptation gaps.
   - [x] P1.7d Draft source-layer and THLB netdown recipe skeletons or planning
     tables without executing recipes.
+- [x] P1.8 Plan next roadmap phases and issue tree (`#11`).
+  - [x] P1.8a Draft proposed Phase 2 through at least Phase 5 sections in this
+    roadmap.
+  - [x] P1.8b Create one GitHub parent issue per proposed phase.
+  - [x] P1.8c Create linked child task issues for the first executable tasks in
+    each proposed phase.
+  - [x] P1.8d Record dependency order across source-layer/THLB work, cedar
+    design, expansion design, model-input generation, Patchworks runtime build,
+    QA/publication, and teaching docs.
+  - [x] P1.8e Place existing follow-on issues `#8`, `#9`, and `#10` into the
+    planned phase structure or explicitly defer them.
+
+## Proposed Phase 2: Reviewed Source Layers and THLB Netdown (`#12`)
+
+Goal: turn the TFL 6 source-layer and THLB planning surfaces into reviewed,
+executable FEMIC source-layer and netdown recipes before model-input generation
+starts.
+
+- [ ] P2.1 Resolve and materialize public/reference source layers needed by the
+  TFL 6 THLB skeleton (`#16`).
+- [ ] P2.2 Profile accepted 2025 R1 and VDYP7 fields for non-forest,
+  non-productive, deciduous-leading, productivity, and join-key assumptions.
+- [ ] P2.3 Define reviewed current-AOI source-layer recipe contracts under the
+  future TFL/general-FMU recipe path.
+- [ ] P2.4 Implement and smoke-test the first executable THLB netdown recipe
+  lane against the accepted TFL 6 input surfaces.
+- [ ] P2.5 Compare GLB/AFLB/LHLB/THLB milestones against the adjusted current-AOI
+  benchmark targets and record accepted teaching tolerances.
+
+## Proposed Phase 3: Model Design Assumptions (`#13`)
+
+Goal: define the reviewed model-design assumptions that depend on the accepted
+source-layer and THLB surfaces, without compiling a Patchworks package.
+
+- [ ] P3.1 Complete cedar-signal design (`#8`) for Cw cultural reserve,
+  utility-pole-grade products, treatments, yield implications, accounts, and
+  reporting outputs.
+- [ ] P3.2 Complete expansion candidate-area design (`#9`) for unallocated
+  candidate pools, productivity screening, and AAC uplift constraints.
+- [ ] P3.3 Define yield-source, treatment, seral/objective, and account/report
+  assumptions that must exist before model-input bundle generation.
+- [ ] P3.4 Update the TFL 6 run-profile/model-input contract with reviewed
+  design decisions and explicit rejected/deferred assumptions.
+
+## Proposed Phase 4: Model Inputs and Patchworks Runtime Package (`#14`)
+
+Goal: generate, inspect, and QA the first runnable TFL 6 Patchworks teaching
+package only after the reviewed source-layer, THLB, and model-design contracts
+exist.
+
+- [ ] P4.1 Build the reviewed model-input bundle from accepted TFL 6 source
+  layers, THLB outputs, and model-design assumptions (`#17`).
+- [ ] P4.2 Generate ForestModel/XML and inspect the semantics that affect
+  Patchworks treatment eligibility, curve provenance, products, accounts, and
+  targets.
+- [ ] P4.3 Execute Matrix Builder and QA tracks, features, accounts,
+  protoaccounts, products, targets, and reports.
+- [ ] P4.4 Complete Patchworks runtime-package build/QA (`#10`) with
+  representative launch and scenario-smoke checks.
+
+## Proposed Phase 5: Publication, Teaching Docs, and Release QA (`#15`)
+
+Goal: make the teaching instance reproducible and usable by students/instructors
+after the runtime package has passed direct artifact and launch smoke checks.
+
+- [ ] P5.1 Decide which compact runtime artifacts are tracked, annexed,
+  published, or regenerated (`#18`).
+- [ ] P5.2 Publish required data/runtime artifacts through the accepted FEMIC
+  public-data workflow and prove fresh-environment materialization.
+- [ ] P5.3 Write teaching workflow docs, quickstart instructions, validation
+  notes, and known-limitations notes.
+- [ ] P5.4 Run final release QA across source materialization, instance rebuild,
+  Patchworks launch smoke, and documentation checks.
+
+## Dependency Order
+
+The next phases must proceed in this order unless the maintainer explicitly
+approves a narrower independent slice:
+
+1. **Source-layer and THLB foundation**: Phase 2 (`#12`) resolves/materializes
+   source layers, profiles accepted 2025 VRI and VDYP7 fields, defines reviewed
+   source-layer recipe contracts, executes the first THLB netdown lane, and
+   records GLB/AFLB/LHLB/THLB benchmark tolerances before any model-input
+   generation starts.
+2. **Model-design assumptions**: Phase 3 (`#13`) depends on the accepted Phase 2
+   source-layer/THLB contracts. Cedar design (`#8`) and expansion candidate-area
+   design (`#9`) belong in this phase because they decide modeling semantics,
+   treatment/product/account/reporting behavior, and AAC-uplift assumptions
+   rather than source extraction mechanics.
+3. **Model-input generation**: Phase 4 (`#14`) starts only after Phase 2 source
+   and THLB outputs plus Phase 3 model-design assumptions are reviewed. P4.1
+   (`#17`) builds the model-input bundle from those accepted contracts.
+4. **Patchworks runtime build and QA**: ForestModel/XML generation, Matrix
+   Builder execution, runtime-package assembly, and runtime-package QA remain
+   Phase 4 work after P4.1. Runtime-package follow-on `#10` is downstream of
+   accepted source layers, THLB outputs, cedar design, expansion design, and
+   model-input bundle construction.
+5. **Publication and teaching release**: Phase 5 (`#15`) starts after the
+   runtime package passes direct artifact and launch smoke. P5.1 (`#18`) first
+   decides artifact publication policy, then later Phase 5 tasks publish
+   materializable artifacts, write teaching docs, and run final release QA.
+
+Guardrail: source extraction, THLB execution, cedar/expansion implementation,
+model-input generation, XML/Matrix Builder work, runtime packaging,
+publication, and teaching documentation should not be bundled into one
+"next slice" unless the maintainer explicitly broadens scope.
+
+## Follow-on Issue Placement
+
+The Phase 1 follow-on issues are placed into the future roadmap as follows:
+
+- Cedar-signal design `#8` is Phase 3 model-design work and is listed as P3.1
+  under Phase 3 parent `#13`.
+- Expansion candidate-area design `#9` is Phase 3 model-design work and is
+  listed as P3.2 under Phase 3 parent `#13`.
+- Patchworks runtime-package build/QA `#10` is Phase 4 runtime-package work and
+  is listed as P4.4 under Phase 4 parent `#14`, downstream of P4.1 model-input
+  bundle construction `#17`.
 
 ## Current Next Steps
 
-1. Keep Phase 1 parent `#4` open until the parent FEMIC PR is merged.
-2. Start follow-on implementation only through the split design/build issues:
-   cedar signals `#8`, expansion candidate areas `#9`, and Patchworks runtime
-   package `#10`.
+1. Complete Phase 1 closeout: confirm Phase 1 parent `#4`, closed P1.8 gate
+   `#11`, parent FEMIC issue `UBC-FRESH/femic#199`, and parent PR
+   `UBC-FRESH/femic#200` are synchronized before starting Phase 2 work.
+2. After Phase 1 closeout, start Phase 2 with P2.1 / `#16`: resolve and
+   materialize the TFL 6 THLB source layers needed by the first executable
+   netdown lane.
+3. Keep Phase 3 design issues `#8` and `#9` idle until Phase 2 source-layer and
+   THLB dependencies are accepted or the maintainer explicitly approves a
+   narrower parallel design slice.
+4. Keep Phase 4 runtime issue `#10` idle until Phase 2, Phase 3, and P4.1
+   prerequisites are accepted.

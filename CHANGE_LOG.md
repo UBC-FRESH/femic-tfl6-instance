@@ -456,3 +456,92 @@
 - kept XML generation, Matrix Builder execution, and Patchworks launch out of
   the issue split; and
 - marked P1.4 complete in `ROADMAP.md`.
+
+## 2026-06-23 - Added P1.8 next-phase planning gate
+
+- opened `#11` as the P1.8 roadmap phase-planning gate;
+- added P1.8 to `ROADMAP.md` before Phase 1 closeout;
+- required proposed Phase 2 through at least Phase 5 roadmap sections, one
+  parent issue per proposed phase, and linked child task issues for first
+  executable tasks;
+- required explicit dependency ordering across source-layer/THLB work, cedar
+  design, expansion design, model-input generation, Patchworks runtime build,
+  QA/publication, and teaching docs; and
+- kept follow-on implementation issues `#8`, `#9`, and `#10` idle until P1.8
+  places them into the planned phase structure or the maintainer explicitly
+  approves a parallel lane.
+
+## 2026-06-23 - Drafted proposed Phase 2 through Phase 5 roadmap sections
+
+- completed P1.8a by adding proposed Phase 2 through Phase 5 sections to
+  `ROADMAP.md`;
+- proposed Phase 2 for reviewed source layers and THLB netdown;
+- proposed Phase 3 for model-design assumptions, including cedar design `#8`
+  and expansion design `#9`;
+- proposed Phase 4 for model inputs and Patchworks runtime-package build/QA,
+  including runtime follow-on `#10`;
+- proposed Phase 5 for publication, teaching docs, and release QA; and
+- kept P1.8 open for parent phase issue creation, child task issue creation,
+  and final dependency/placement synchronization.
+
+## 2026-06-23 - Created Phase 2 through Phase 5 parent issues
+
+- completed P1.8b by opening one GitHub parent issue per proposed future phase:
+  Phase 2 `#12`, Phase 3 `#13`, Phase 4 `#14`, and Phase 5 `#15`;
+- updated `ROADMAP.md` so each proposed phase heading references its parent
+  issue number;
+- moved Current Next Steps to P1.8c child task issue creation and P1.8d
+  dependency-order recording; and
+- kept implementation follow-on issues `#8`, `#9`, and `#10` idle until P1.8
+  links the full phase/child issue tree.
+
+## 2026-06-23 - Created first future-phase child issues
+
+- completed P1.8c by creating/linking first executable child task issues under
+  each proposed future phase;
+- opened P2.1 `#16` for resolving and materializing TFL 6 THLB source layers;
+- reused existing cedar design issue `#8` as the first Phase 3 child task
+  under Phase 3 parent `#13`;
+- opened P4.1 `#17` for building the reviewed TFL 6 model-input bundle after
+  Phase 2 and Phase 3 prerequisites are ready;
+- opened P5.1 `#18` for deciding runtime artifact publication policy; and
+- kept implementation follow-on issues `#8`, `#9`, and `#10` idle until P1.8d
+  and P1.8e finish dependency-order and placement synchronization.
+
+## 2026-06-23 - Recorded future-phase dependency order
+
+- completed P1.8d by adding an explicit `Dependency Order` section to
+  `ROADMAP.md`;
+- recorded that Phase 2 source-layer/THLB work must precede Phase 3
+  model-design assumptions, Phase 4 model-input/runtime-package work, and
+  Phase 5 publication/teaching release work;
+- recorded that cedar design `#8` and expansion design `#9` belong in the
+  model-design dependency layer, while runtime-package follow-on `#10` is
+  downstream of accepted inputs, THLB outputs, model design, and model-input
+  bundle construction; and
+- kept P1.8 open for P1.8e placement/defer synchronization of `#8`, `#9`, and
+  `#10`.
+
+## 2026-06-23 - Placed Phase 1 follow-on issues in future phases
+
+- completed P1.8e by placing existing follow-on issues `#8`, `#9`, and `#10`
+  into the future phase structure instead of leaving them as unsequenced work;
+- placed cedar-signal design `#8` and expansion candidate-area design `#9`
+  under Phase 3 parent `#13`;
+- placed Patchworks runtime-package build/QA `#10` under Phase 4 parent `#14`,
+  downstream of model-input bundle task `#17`;
+- added a `Follow-on Issue Placement` section to `ROADMAP.md`;
+- marked P1.8 complete in `ROADMAP.md`; and
+- moved Current Next Steps to P2.1 `#16` while keeping Phase 3 and Phase 4
+  implementation lanes idle until their dependencies are accepted or explicitly
+  narrowed.
+
+## 2026-06-23 - Tightened phase closeout workflow contract
+
+- amended `AGENTS.md` to make phase closeout the required next slice after the
+  final child issue or phase gate completes;
+- clarified that agents must reconcile the phase parent issue, PR state,
+  roadmap, changelog, and issue comments before advancing to the next phase's
+  first task; and
+- corrected `ROADMAP.md` Current Next Steps so Phase 1 closeout comes before
+  P2.1 `#16`.
