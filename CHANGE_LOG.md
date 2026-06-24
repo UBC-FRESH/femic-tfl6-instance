@@ -456,3 +456,17 @@
 - kept XML generation, Matrix Builder execution, and Patchworks launch out of
   the issue split; and
 - marked P1.4 complete in `ROADMAP.md`.
+
+## 2026-06-23 - Added P1.8 next-phase planning gate
+
+- opened `#11` as the P1.8 roadmap phase-planning gate;
+- added P1.8 to `ROADMAP.md` before Phase 1 closeout;
+- required proposed Phase 2 through at least Phase 5 roadmap sections, one
+  parent issue per proposed phase, and linked child task issues for first
+  executable tasks;
+- required explicit dependency ordering across source-layer/THLB work, cedar
+  design, expansion design, model-input generation, Patchworks runtime build,
+  QA/publication, and teaching docs; and
+- kept follow-on implementation issues `#8`, `#9`, and `#10` idle until P1.8
+  places them into the planned phase structure or the maintainer explicitly
+  approves a parallel lane.

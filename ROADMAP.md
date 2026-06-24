@@ -74,10 +74,23 @@
     TFL/general-FMU adaptation gaps.
   - [x] P1.7d Draft source-layer and THLB netdown recipe skeletons or planning
     tables without executing recipes.
+- [ ] P1.8 Plan next roadmap phases and issue tree (`#11`).
+  - [ ] P1.8a Draft proposed Phase 2 through at least Phase 5 sections in this
+    roadmap.
+  - [ ] P1.8b Create one GitHub parent issue per proposed phase.
+  - [ ] P1.8c Create linked child task issues for the first executable tasks in
+    each proposed phase.
+  - [ ] P1.8d Record dependency order across source-layer/THLB work, cedar
+    design, expansion design, model-input generation, Patchworks runtime build,
+    QA/publication, and teaching docs.
+  - [ ] P1.8e Place existing follow-on issues `#8`, `#9`, and `#10` into the
+    planned phase structure or explicitly defer them.
 
 ## Current Next Steps
 
-1. Keep Phase 1 parent `#4` open until the parent FEMIC PR is merged.
-2. Start follow-on implementation only through the split design/build issues:
-   cedar signals `#8`, expansion candidate areas `#9`, and Patchworks runtime
-   package `#10`.
+1. Continue `P1.8` / `#11`: plan Phase 2 through at least Phase 5, create the
+   parent/child issue tree, and define the dependency order before starting
+   follow-on implementation.
+2. Keep follow-on implementation issues `#8`, `#9`, and `#10` open but idle
+   until P1.8 places them into the planned phase structure or the maintainer
+   explicitly approves a parallel lane.
