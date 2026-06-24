@@ -295,3 +295,15 @@
 - marked `P1.6` complete in the roadmap; and
 - unblocked reviewed source-layer and THLB netdown recipe planning under `#7`
   without starting recipe execution or Patchworks runtime-package work.
+
+## 2026-06-23 - Reviewed 2011 TFL 6 documents for recipe planning
+
+- added `planning/tfl6_2011_document_review.md` as the first reviewed P1.7b
+  extraction note;
+- anchored the land-base review to the 2011 information package Section 6 and
+  Tables 4-17;
+- recorded first-pass source-layer, THLB netdown, yield, visual, old-seral,
+  steep-terrain, and minimum-harvest assumption candidates;
+- noted the MP10 historical Table 4 total landbase/THLB benchmarks separately
+  from the current P1.6 2025 TFL 6 input-layer surface; and
+- marked P1.7b complete without creating or executing recipe YAML.

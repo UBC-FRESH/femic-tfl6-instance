@@ -78,6 +78,7 @@ after the source assumptions are accepted.
 
 Planned planning outputs:
 
+- `planning/tfl6_2011_document_review.md`
 - `planning/tfl6_source_layer_candidates.md`
 - `planning/tfl6_thlb_netdown_steps.md`
 
@@ -125,6 +126,23 @@ Accepted input manifest:
 Reviewed source-layer and THLB netdown recipe planning can now start under
 `#7`. Recipe execution remains out of scope until reviewed assumptions and
 recipe surfaces exist.
+
+## P1.7b Review Snapshot
+
+The first reviewed document-mining pass is recorded in
+`planning/tfl6_2011_document_review.md`.
+
+That note anchors the first extraction pass to the 2011 information package,
+management plan, analysis report, and Chief Forester AAC rationale. The
+information package is the primary source for source-layer and THLB planning:
+Section 6 / Tables 4-17 define the land-base netdown sequence, Section 8 /
+Tables 23-29 define yield assumptions, and Section 10 / Tables 31-35 define
+visual, old-seral, steep-terrain, minimum-harvest, and initial-harvest
+modelling assumptions.
+
+P1.7c and P1.7d should now split the documented candidates into reusable TSA29
+workflow patterns, TFL/general-FMU adaptation gaps, and non-executable recipe
+skeletons.
 
 ## Non-Goals
 

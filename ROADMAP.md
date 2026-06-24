@@ -57,7 +57,7 @@
   (`#7`).
   - [x] P1.7a Add/verify local source copies of the TFL 6 Management Plan 10 and
     information package PDFs, plus the broader TFL 6 reference corpus index.
-  - [ ] P1.7b Review the 2011 documents for land-base, source-layer, yield, and
+  - [x] P1.7b Review the 2011 documents for land-base, source-layer, yield, and
     THLB netdown assumptions.
   - [ ] P1.7c Separate TSA29 workflow carry-forward assumptions from
     TFL/general-FMU adaptation gaps.
@@ -66,9 +66,8 @@
 
 ## Current Next Steps
 
-1. Start `P1.7b` / `#7`: review the 2011 TFL 6 management plan and
-   information package for land-base, source-layer, yield, and THLB netdown
-   assumptions now that the TFL 6 input layers are accepted.
+1. Start `P1.7c` / `#7`: separate TSA29 workflow carry-forward patterns from
+   TFL/general-FMU adaptation gaps before drafting recipe skeletons.
 2. Continue `P1.5` / `#5`: record public-data remote publication status for
    the provincial 2025 VRI source archives.
 3. Continue `P1.4` / `#2`: split the cedar-signal, expansion-candidate, and
