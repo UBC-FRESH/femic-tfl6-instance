@@ -31,9 +31,9 @@
   - [x] P1.4a Open a cedar-signal design issue covering Cw cultural reserve,
     utility-pole-grade products, treatments, yield curves, accounts, and
     reporting outputs (`#8`).
-  - [ ] P1.4b Open a K3Z expansion candidate-area issue covering unallocated
+  - [x] P1.4b Open a K3Z expansion candidate-area issue covering unallocated
     candidate-area pool construction, productivity screening, and AAC uplift
-    constraints.
+    constraints (`#9`).
   - [ ] P1.4c Open a Patchworks runtime-package issue once source normalization
     and model-design boundaries are accepted.
 - [x] P1.5 Materialize 2025 VRI source datasets for NICF base inventory (`#5`).
@@ -77,8 +77,5 @@
 
 ## Current Next Steps
 
-1. Continue `P1.4b` / `#2`: open a K3Z expansion candidate-area issue covering
-   unallocated candidate-area pool construction, productivity screening, and
-   AAC uplift constraints.
-2. Continue `P1.4c` / `#2`: open a Patchworks runtime-package issue once
+1. Continue `P1.4c` / `#2`: open a Patchworks runtime-package issue once
    source normalization and model-design boundaries are accepted.

@@ -433,3 +433,13 @@
 - kept model-input bundle generation and Patchworks runtime-package compilation
   out of the issue scope; and
 - updated `ROADMAP.md` so P1.4a is complete and P1.4b is the next Phase 1 edge.
+
+## 2026-06-23 - Opened expansion candidate-area design follow-on issue
+
+- opened `#9` as the P1.4b expansion candidate-area design follow-on issue;
+- scoped `#9` to unallocated candidate-area pool semantics, K3Z carry-forward
+  review, source-derived productivity screening, AAC uplift constraints, and
+  dependency boundaries;
+- kept candidate-area geometry, THLB/model-input edits, and Patchworks runtime
+  compilation out of the issue scope; and
+- updated `ROADMAP.md` so P1.4b is complete and P1.4c is the next Phase 1 edge.
