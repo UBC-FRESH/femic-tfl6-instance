@@ -43,7 +43,8 @@
   - [x] P1.5c Record file size, checksum, read-smoke, CRS, and layer-name
     evidence for both materialized packages.
   - [ ] P1.5d Record DataLad/git-annex/public-data publication status and the
-    downstream extraction handoff to the accepted active AOI issue.
+    downstream extraction handoff to the accepted active AOI issue, then publish
+    any missing remote keys before closing P1.5.
 - [x] P1.6 Pivot active AOI to TFL 6 and clip 2025 VRI inputs (`#6`).
   - [x] P1.6a Fetch and normalize the authoritative TFL 6 boundary from
     `WHSE_ADMIN_BOUNDARIES.FADM_TFL`.
@@ -76,7 +77,8 @@
 
 ## Current Next Steps
 
-1. Continue `P1.5d` / `#5`: record public-data remote publication status for
-   the provincial 2025 VRI source archives.
+1. Continue `P1.5d` / `#5`: copy the two missing 2025 VRI archive annex keys to
+   `arbutus-s3`, push the resulting `git-annex` publication state, and record a
+   public-read materialization smoke.
 2. Continue `P1.4` / `#2`: split the cedar-signal, expansion-candidate, and
    Patchworks runtime-package design lanes into their own follow-on issues.

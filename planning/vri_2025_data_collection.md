@@ -114,6 +114,42 @@ The accepted downstream TFL 6 AOI extraction is already recorded under `#6` and
 uses the same source archives. `P1.5` still needs public-data remote
 publication status before the source-data collection task can close.
 
+## Public-Data Publication Status
+
+Publication audit date: 2026-06-23.
+
+The `arbutus-s3` special remote is configured for public FEMIC public-data
+reads:
+
+- remote type: S3
+- bucket: `ubc-fresh-femic-public-data`
+- endpoint: `object-arbutus.cloud.computecanada.ca`
+- public URL:
+  `https://object-arbutus.cloud.computecanada.ca/ubc-fresh-femic-public-data`
+- `public: yes`
+- remote annex keys reported by `git annex info arbutus-s3`: `423`
+- remote annex size reported by `git annex info arbutus-s3`: `24.12 gigabytes`
+
+The two 2025 VRI archive keys are not yet present on `arbutus-s3`.
+
+Evidence:
+
+- `git annex whereis` reports only the local checkout copy for each archive.
+- `git annex find --not --in arbutus-s3` returns both 2025 VRI archive paths.
+- `git annex find --in arbutus-s3` returns no 2025 VRI archive paths.
+
+Unpublished archive paths:
+
+- `data/bc/vri/2025/VEG_COMP_LYR_R1_POLY_2025.gdb.zip`
+- `data/bc/vri/2025/VEG_COMP_VDYP7_INPUT_POLY_AND_LAYER_2025.gdb.zip`
+
+This means the current local checkout can read and use the source archives, but
+a fresh environment cannot yet be expected to materialize these two files from
+the normal public-data remote. Closing `P1.5` should wait until the two annex
+keys are copied to `arbutus-s3`, the `git-annex` branch publication state is
+pushed, and a fresh no-credentials materialization smoke succeeds or an
+equivalent reviewed public-read proof is recorded.
+
 ## Acceptance Boundary
 
 `P1.5` is complete when:
@@ -125,9 +161,10 @@ publication status before the source-data collection task can close.
 - a read smoke records geodatabase/layer names, feature counts or equivalent
   read evidence, CRS, and any extraction/runtime path decision; (complete)
 - DataLad/git-annex publication status is recorded so a fresh environment can
-  materialize the same files; and
+  materialize the same files; (status recorded; remote publication incomplete)
 - the downstream active-AOI extraction handoff is documented; the earlier FDU
-  1/2/3 cookie-cutter boundary is superseded by the TFL 6 pivot in `#6`.
+  1/2/3 cookie-cutter boundary is superseded by the TFL 6 pivot in `#6`;
+  (complete)
 
 No model-input bundle, Patchworks runtime package, or cedar/expansion design
 work should start inside this data-collection task.

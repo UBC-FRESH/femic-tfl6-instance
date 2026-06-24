@@ -395,3 +395,16 @@
   and
 - marked P1.5c complete while leaving public-data remote publication status
   open for P1.5d.
+
+## 2026-06-23 - Audited 2025 VRI public-data publication status
+
+- updated `planning/vri_2025_data_collection.md` with the `arbutus-s3`
+  publication audit for the 2025 VRI source archives;
+- confirmed the public-data special remote is configured with `public: yes` and
+  the expected public URL;
+- confirmed both 2025 VRI archive keys are still local-only and are returned by
+  `git annex find --not --in arbutus-s3`;
+- recorded that a fresh environment cannot yet be expected to materialize these
+  two archives through the normal public-data workflow; and
+- left P1.5 open for remote key copy, `git-annex` publication-state push, and
+  public-read materialization smoke.
