@@ -36,7 +36,7 @@ reviewed aspatial or proxy treatment instead of public geometry.
 | --- | --- | --- | --- | --- | --- |
 | `tfl6_nd_000` | `tfl6_aoi_current` | FADM TFL boundary, `WHSE_ADMIN_BOUNDARIES.FADM_TFL`, `FOREST_FILE_ID='TFL6'` | Active AOI universe | Accepted local | Use as report/input boundary. |
 | `tfl6_nd_010` | `non_forest_attribute_map` from `vri_2025_r1_tfl6` | Accepted 2025 VRI R1 fields | Attribute exclusion for MP10 non-forest classes | Field mapping blocker | P2.2 profile R1 fields and map BCLCS/non-vegetated/water/wetland/brush classes. |
-| `tfl6_nd_020` | `existing_roads` | Primary candidate: Digital Road Atlas MPAR, `WHSE_BASEMAPPING.DRA_DGTL_ROAD_ATLAS_MPAR_SP`; secondary review candidate: 2025 CEF Integrated Roads archive | Existing-road line/polygon overlay and buffer exclusion | Public authority candidate identified; materialization/rule review still open | Use DRA MPAR as first materialization target, review whether the full-province GDB or bbox WFS path is preferred, and keep future-road allowance separate. |
+| `tfl6_nd_020` | `existing_roads` | Primary candidate: Digital Road Atlas MPAR, `WHSE_BASEMAPPING.DRA_DGTL_ROAD_ATLAS_MPAR_SP`; secondary review candidate: 2025 CEF Integrated Roads archive | Existing-road line/polygon overlay and buffer exclusion | DRA MPAR materialized for review; road-width/class filtering still open | Review clipped road class/surface/type/name fields and decide MP10 existing-road width/buffer classes. Keep future-road allowance separate. |
 | `tfl6_nd_030` | prior-step checkpoint | MP10 Table 4 | Report-only total forested checkpoint | No source needed | Keep as validation row only. |
 | `tfl6_nd_040` | `non_productive_attribute_map` from `vri_2025_r1_tfl6` and/or `vdyp7_2025_poly_tfl6` | Accepted 2025 VRI R1/VDYP7 fields | Attribute/productivity exclusion | Field mapping blocker | P2.2 profile productivity/ecosite/descriptive fields for CP, MH, MH1, S7, S8, PG5-style classes. |
 | `tfl6_nd_050` | prior-step checkpoint | MP10 Table 4 / adjusted targets | Report-only productive/AFLB checkpoint | No source needed | Keep as validation row only. |
@@ -748,6 +748,73 @@ Recipe boundary:
 - RMZ geometry/schema remains unresolved, and Table 16 percent-by-stratum
   execution remains blocked until a later recipe-readiness review accepts an
   RMZ source or an explicit fallback treatment.
+
+## First DRA Roads Materialization Pass
+
+This pass materialized the Digital Road Atlas MPAR public road-line candidate
+for source review only. It did not accept existing-road class filters,
+road-width buffers, future-road allowance treatment, recipe YAML, or THLB
+netdown execution.
+
+Command used:
+
+```powershell
+..\..\.venv\Scripts\python.exe -m femic data bcdc-fetch `
+  'WHSE_BASEMAPPING.DRA_DGTL_ROAD_ATLAS_MPAR_SP' `
+  --bbox '841375.750,580345.507,928480.824,639356.277' `
+  --output-format gpkg `
+  --download-root runtime\bcdc_fetch\p2_1_roads `
+  --manifest-path runtime\logs\p2_1_roads_bcdc_fetch_manifest.json
+```
+
+Notes:
+
+- The bbox fetch returned `18825` raw DRA MPAR features. FEMIC paged the WFS
+  response because the bbox result exceeded one request page.
+- Runtime WFS outputs were used as transient cache only. The layer was clipped
+  to the exact TFL 6 AOI, written to a curated source path, read-smoked, and
+  then removed from `runtime/`.
+- Curated output manifest:
+  `data/source/tfl_6/roads/roads_source_manifest.json`.
+
+| Source ID | Curated output | Raw bbox features | TFL 6 clipped features | Metric | Status |
+| --- | --- | ---: | ---: | ---: | --- |
+| `dra_roads_tfl6` | `data/source/tfl_6/roads/dra_roads_tfl6.gpkg`, layer `dra_roads_tfl6` | `18825` | `10706` | `4255862.907 m` line length | materialized for review |
+
+Read-smoke and QA:
+
+- the curated output read successfully with geopandas;
+- output CRS is EPSG:3005;
+- output reads back as multiline geometry;
+- all curated output geometries are valid after clipping;
+- output bounds are inside the accepted TFL 6 AOI bbox; and
+- the output has a SHA-256 hash recorded in
+  `data/source/tfl_6/roads/roads_source_manifest.json`.
+
+Rule-critical field notes:
+
+- clipped DRA fields retain `DIGITAL_ROAD_ATLAS_LINE_ID`, `FEATURE_TYPE`,
+  `HIGHWAY_ROUTE_NUMBER`, `ROAD_NAME_FULL`, `ROAD_NAME_ALIAS1`,
+  `ROAD_NAME_ALIAS2`, `ROAD_SURFACE`, `ROAD_CLASS`, `NUMBER_OF_LANES`,
+  `DATA_CAPTURE_DATE`, `SEGMENT_LENGTH_2D`, `SEGMENT_LENGTH_3D`, and
+  `FEATURE_LENGTH_M`;
+- clipped `ROAD_CLASS` values are dominated by `unclassified` and `resource`,
+  with smaller `local`, `highway`, `collector`, `trail`, `service`,
+  `recreation`, `yield`, `driveway`, and `water` classes;
+- clipped `ROAD_SURFACE` values are dominated by `rough` and `loose`, with
+  smaller `unknown`, `paved`, `overgrown`, and `boat` classes; and
+- clipped `FEATURE_TYPE` values are dominated by `Road`, with smaller `Trail`,
+  `Bridge`, and `Virtual` records.
+
+Recipe boundary:
+
+- This layer is a source-review artifact only.
+- Existing-road class filtering, road-width/buffer rules, overlap order, and
+  treatment of trails/bridges/virtual records remain unaccepted until
+  recipe-readiness review.
+- Future-road allowance remains a separate MP10 Table 17 aspatial/context row
+  and must not be mixed into the current existing-road overlay without a later
+  scenario decision.
 
 ## Non-Goals
 

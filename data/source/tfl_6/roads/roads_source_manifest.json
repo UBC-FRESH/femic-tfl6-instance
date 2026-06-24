@@ -1,0 +1,253 @@
+{
+  "generated_utc": "2026-06-24T18:53:27.884204+00:00",
+  "plan_status": "materialized_for_review",
+  "non_goals": [
+    "No THLB recipe semantics accepted.",
+    "No recipe YAML created.",
+    "No THLB netdown executed.",
+    "No model-input or Patchworks runtime work performed."
+  ],
+  "aoi": {
+    "path": "data\\source\\tfl_6\\aoi\\tfl_6_boundary.gpkg",
+    "layer": "tfl_6_boundary",
+    "crs": "EPSG:3005",
+    "feature_count": 182,
+    "union_area_ha": 217042.71895028095,
+    "bounds": [
+      841375.75,
+      580345.5069999993,
+      928480.8239999991,
+      639356.2770000007
+    ],
+    "invalid_geometries_repaired": 0
+  },
+  "layers": [
+    {
+      "source_id": "dra_roads_tfl6",
+      "dependency_rows": [
+        "tfl6_nd_020"
+      ],
+      "status": "materialized_for_review",
+      "bcdc_title": "Digital Road Atlas (DRA) - Master Partially-Attributed Roads",
+      "package_name": "digital-road-atlas-dra-master-partially-attributed-roads",
+      "dataset_page_url": "https://catalogue.data.gov.bc.ca/dataset/digital-road-atlas-dra-master-partially-attributed-roads",
+      "object_name": "WHSE_BASEMAPPING.DRA_DGTL_ROAD_ATLAS_MPAR_SP",
+      "organization": "GeoBC Branch",
+      "licence": "Open Government Licence - British Columbia",
+      "access_method": "OpenMaps WFS bbox fetch via femic data bcdc-fetch, exact AOI clip via geopandas",
+      "fetch_query": "WHSE_BASEMAPPING.DRA_DGTL_ROAD_ATLAS_MPAR_SP",
+      "raw_layer": "WHSE_BASEMAPPING_DRA_DGTL_ROAD_ATLAS_MPAR_SP",
+      "raw_feature_count": 18825,
+      "wfs_paging_note": "femic data bcdc-fetch paged the WFS response because the bbox result exceeded one request page",
+      "invalid_raw_geometries_repaired": 0,
+      "output_path": "data\\source\\tfl_6\\roads\\dra_roads_tfl6.gpkg",
+      "output_layer": "dra_roads_tfl6",
+      "output_format": "GPKG",
+      "output_crs": "EPSG:3005",
+      "output_geometry_types": {
+        "MultiLineString": 10706
+      },
+      "output_feature_count": 10706,
+      "output_bounds": [
+        842687.2,
+        580480.3743107768,
+        928471.8163321125,
+        639344.677915756
+      ],
+      "output_metric_name": "length_m",
+      "output_metric_value": 4255862.907194935,
+      "invalid_output_geometries_repaired": 0,
+      "field_count": 19,
+      "fields": [
+        "DIGITAL_ROAD_ATLAS_LINE_ID",
+        "FEATURE_TYPE",
+        "HIGHWAY_EXIT_NUMBER",
+        "HIGHWAY_ROUTE_NUMBER",
+        "SEGMENT_LENGTH_2D",
+        "SEGMENT_LENGTH_3D",
+        "ROAD_NAME_ALIAS1",
+        "ROAD_NAME_ALIAS2",
+        "ROAD_NAME_ALIAS3",
+        "ROAD_NAME_ALIAS4",
+        "ROAD_NAME_FULL",
+        "ROAD_SURFACE",
+        "ROAD_CLASS",
+        "NUMBER_OF_LANES",
+        "DATA_CAPTURE_DATE",
+        "FEATURE_CODE",
+        "OBJECTID",
+        "SE_ANNO_CAD_DATA",
+        "FEATURE_LENGTH_M"
+      ],
+      "rule_hint_fields_present": [
+        "DIGITAL_ROAD_ATLAS_LINE_ID",
+        "FEATURE_TYPE",
+        "HIGHWAY_ROUTE_NUMBER",
+        "ROAD_NAME_FULL",
+        "ROAD_NAME_ALIAS1",
+        "ROAD_NAME_ALIAS2",
+        "ROAD_SURFACE",
+        "ROAD_CLASS",
+        "NUMBER_OF_LANES",
+        "DATA_CAPTURE_DATE",
+        "SEGMENT_LENGTH_2D",
+        "SEGMENT_LENGTH_3D",
+        "FEATURE_LENGTH_M"
+      ],
+      "rule_hint_value_counts": {
+        "DIGITAL_ROAD_ATLAS_LINE_ID": {
+          "1820758": 2,
+          "2061134": 2,
+          "2061135": 2,
+          "1822125": 2,
+          "1822268": 2,
+          "1822210": 2,
+          "1822119": 2,
+          "1822200": 2,
+          "1820756": 2,
+          "1822195": 2,
+          "1822194": 2,
+          "1820672": 2,
+          "1820755": 2,
+          "1820783": 2,
+          "1820700": 2,
+          "1820781": 2,
+          "1820780": 2,
+          "1820782": 2,
+          "1820779": 2,
+          "1820695": 2,
+          "1820778": 2,
+          "1820777": 2,
+          "1820699": 2,
+          "1820788": 2,
+          "1820789": 2,
+          "1820793": 2,
+          "1820787": 2,
+          "1820702": 2,
+          "1820696": 2,
+          "1820752": 2,
+          "1820852": 2,
+          "1820866": 2,
+          "1820718": 2,
+          "1820851": 2,
+          "1820853": 2,
+          "1820719": 2,
+          "1820850": 2,
+          "1820854": 2,
+          "1820859": 2,
+          "1820754": 2
+        },
+        "FEATURE_TYPE": {
+          "Road": 10678,
+          "Trail": 21,
+          "Bridge": 6,
+          "Virtual": 1
+        },
+        "HIGHWAY_ROUTE_NUMBER": {
+          "<NA>": 10612,
+          "30": 49,
+          "19": 45
+        },
+        "ROAD_NAME_FULL": {
+          "<NA>": 10248,
+          "Rupert Main": 63,
+          "Hwy 30": 46,
+          "Island Hwy": 43,
+          "Winter Harbour Rd": 35,
+          "Holberg Rd": 33,
+          "unsigned": 27,
+          "industrial access": 15,
+          "Beaver Lake Trail": 12,
+          "Hardy Way": 11,
+          "SW Main Rd": 10,
+          "turning lane": 8,
+          "Stranby Main FSR": 8,
+          "Fisherman Main FSR": 8,
+          "Restless FSR": 8,
+          "campground access": 7,
+          "Marble River Rest Area": 7,
+          "San Josef Mainline": 7,
+          "Ledge Point Mainline": 6,
+          "Northeast Main": 6,
+          "Marine Dr": 5,
+          "Alice Lake Mainline": 5,
+          "South Mainline": 5,
+          "Sunnyview Trailer Crt": 5,
+          "Hoyalas Business Prom": 5,
+          "Cabin Mainline": 4,
+          "Lady Ellen FSR": 4,
+          "Port Alice FSR": 4,
+          "Holberg Hts": 4,
+          "Seaview Dr": 4,
+          "Klaskino Main FSR": 4,
+          "Stranby West Main FSR": 3,
+          "Coal Harbour Rd": 3,
+          "Cluxewe Beach Trail": 2,
+          "golf course access": 2,
+          "Sara Lake Bridge": 2,
+          "Marble Mainline": 2,
+          "Cookhouse Way": 2,
+          "private driveway": 2,
+          "School House Rd": 2
+        },
+        "ROAD_NAME_ALIAS1": {
+          "<NA>": 10607,
+          "Port Alice Hwy": 46,
+          "Hwy 19": 45,
+          "Northeast Main": 5,
+          "Hwy 30": 3
+        },
+        "ROAD_NAME_ALIAS2": {
+          "<NA>": 10701,
+          "Port Alice Hwy": 3,
+          "Island Hwy": 2
+        },
+        "ROAD_SURFACE": {
+          "rough": 6906,
+          "loose": 3183,
+          "unknown": 342,
+          "paved": 271,
+          "overgrown": 3,
+          "boat": 1
+        },
+        "ROAD_CLASS": {
+          "unclassified": 6758,
+          "resource": 3609,
+          "local": 139,
+          "highway": 94,
+          "collector": 34,
+          "trail": 21,
+          "service": 20,
+          "recreation": 18,
+          "yield": 8,
+          "driveway": 4,
+          "water": 1
+        },
+        "NUMBER_OF_LANES": {
+          "1": 7773,
+          "2": 2933
+        },
+        "DATA_CAPTURE_DATE": {
+          "<NA>": 10706
+        }
+      },
+      "date_field_summaries": {
+        "DATA_CAPTURE_DATE": {
+          "non_null": 0,
+          "parseable": 0
+        }
+      },
+      "source_segment_length_2d_sum": 4434718.525,
+      "source_segment_length_3d_sum": 0.0,
+      "source_feature_length_m_sum": 4434718.5373,
+      "source_length_note": "source length attributes are source-feature attributes and may not equal clipped AOI geometry length after intersection",
+      "sha256": "32626205ca3de21cd0081361eb28bb11009fb767579a6ea921b377c60aa027e2",
+      "read_smoke": "geopandas read_file succeeded after write",
+      "review_required_before_recipe": true,
+      "review_notes": "Materialized for source review only; DRA road class/status/surface filtering, road-width buffers, and future-road assumptions remain unaccepted.",
+      "raw_runtime_path_used_for_materialization": "runtime\\bcdc_fetch\\p2_1_roads\\WHSE_BASEMAPPING_DRA_DGTL_ROAD_ATLAS_MPAR_SP\\WHSE_BASEMAPPING_DRA_DGTL_ROAD_ATLAS_MPAR_SP.gpkg",
+      "raw_runtime_artifact_retained": false,
+      "fetch_command_note": "Fetched to transient runtime cache with femic data bcdc-fetch, then clipped to exact TFL 6 AOI; runtime cache removed after curated outputs were written and read-smoked."
+    }
+  ]
+}

@@ -850,3 +850,24 @@
 - accepted no RMZ or Table 16 netdown semantics, created no recipe YAML, ran no
   THLB netdown, generated no model inputs, and performed no Patchworks runtime
   work.
+
+## 2026-06-24 - Materialized DRA existing-road source for review
+
+- materialized the Digital Road Atlas MPAR public road-line candidate clipped
+  to the accepted TFL 6 AOI;
+- wrote the curated review artifact under `data/source/tfl_6/roads/`;
+- recorded provenance, source authority, transient fetch details, WFS paging,
+  clipped feature count, line-length summary, road class/surface/type fields,
+  date summaries, SHA-256 hash, and read-smoke evidence in
+  `data/source/tfl_6/roads/roads_source_manifest.json`;
+- recorded `10706` clipped DRA road features with `4255862.907 m` clipped
+  geometry length;
+- preserved the review-only boundary: road class filtering, road-width/buffer
+  rules, overlap order, and treatment of trails/bridges/virtual records remain
+  unaccepted;
+- preserved the future-road boundary: MP10 Table 17 future-road allowance stays
+  separate from the current existing-road overlay unless a later scenario
+  decision accepts it; and
+- updated `planning/tfl6_source_layer_dependency_inventory.md` and
+  `ROADMAP.md` so the next P2.1 slice is a source-materialization
+  closeout/review pass rather than another download.

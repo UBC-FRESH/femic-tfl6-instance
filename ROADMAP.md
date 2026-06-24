@@ -209,9 +209,12 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    `data/source/tfl_6/recreation/`, with recreation buffer/status/class
    semantics still unaccepted. LU/BEC strata are materialized for review under
    `data/source/tfl_6/strata/`, with RMZ/Table 16 semantics still blocked.
-   Keep the next pass bounded to another safe-to-clip source family, preferably
-   DRA existing roads, and continue recording provenance, read-smoke evidence,
-   and recipe-readiness caveats.
+   DRA existing roads are materialized for review under
+   `data/source/tfl_6/roads/`, with road-width/class/buffer semantics still
+   unaccepted. The next bounded P2.1 slice should be a source-materialization
+   closeout/review pass: reconcile the materialized manifests, confirm the
+   remaining rows are review/fallback-only or blocked, and decide whether P2.1
+   can close or needs targeted follow-up issues before P2.2 field profiling.
 2. Keep P2.2 field profiling queued until the accepted local R1/VDYP7
    dependency rows from P2.1 are ready for review or the maintainer explicitly
    approves a parallel field-mapping slice.
