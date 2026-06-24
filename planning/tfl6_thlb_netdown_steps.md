@@ -146,9 +146,12 @@ Provisional scaled current-AOI validation targets are recorded in
 early validation targets until spatial current-AOI recipe outputs supersede
 them.
 
+The P1.7c adaptation classification is recorded in
+`planning/tfl6_recipe_adaptation_contract.md`.
+
 ## P1.7c/P1.7d Handoff
 
-P1.7c should now classify each row above into:
+P1.7c classified each row above into:
 
 - TSA29 workflow pattern that carries forward directly;
 - TFL/general-FMU adaptation needed before recipe YAML;
@@ -156,5 +159,5 @@ P1.7c should now classify each row above into:
 - reviewed aspatial fallback candidate; or
 - context/reference target only.
 
-P1.7d should draft non-executable recipe skeletons from this table only after
-that adaptation contract is written.
+P1.7d should draft non-executable recipe skeletons from this table and
+`planning/tfl6_recipe_adaptation_contract.md`.

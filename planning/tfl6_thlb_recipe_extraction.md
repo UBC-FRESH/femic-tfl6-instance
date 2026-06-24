@@ -80,6 +80,7 @@ Planned planning outputs:
 
 - `planning/tfl6_2011_document_review.md`
 - `planning/tfl6_thlb_netdown_steps.md`
+- `planning/tfl6_recipe_adaptation_contract.md`
 - `planning/tfl6_source_layer_candidates.md`
 
 Possible later recipe/config outputs:
@@ -154,6 +155,16 @@ stage mapping onto `GLB -> AFLB`, `AFLB -> LHLB`, and `LHLB -> THLB`. The stage
 labels are review metadata, not source wording, because the TFL 6 information
 package uses `Total Landbase`, `Total Productive`, `Total Operable`,
 `Current THLB`, and `Long-term Landbase` rather than the TSA29 ladder names.
+
+## Adaptation Contract
+
+The P1.7c adaptation contract is recorded in
+`planning/tfl6_recipe_adaptation_contract.md`.
+
+That note classifies each ordered netdown row as TSA29 carry-forward,
+TFL/general-FMU adaptation, missing-source work, aspatial fallback candidate, or
+reference target only. It also records that Instrument 101 and the adjusted
+current-AOI benchmark tables are validation context, not recipe inputs.
 
 ## Non-Goals
 

@@ -358,3 +358,15 @@
   changes; and
 - recorded a possible K3Z/community-forest carve-out as an unverified candidate
   only, not as accepted boundary evidence.
+
+## 2026-06-23 - Added TFL 6 recipe adaptation contract
+
+- added `planning/tfl6_recipe_adaptation_contract.md` as the P1.7c
+  classification surface;
+- classified each MP10 Table 4 netdown row as TSA29 carry-forward,
+  TFL/general-FMU adaptation, missing-source work, aspatial fallback candidate,
+  or reference target only;
+- recorded source-layer priority for P1.7d skeleton drafting;
+- classified Instrument 101 and adjusted current-AOI benchmark tables as
+  validation context, not recipe inputs; and
+- marked P1.7c complete without creating recipe YAML or running THLB netdown.
