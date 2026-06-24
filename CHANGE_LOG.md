@@ -443,3 +443,16 @@
 - kept candidate-area geometry, THLB/model-input edits, and Patchworks runtime
   compilation out of the issue scope; and
 - updated `ROADMAP.md` so P1.4b is complete and P1.4c is the next Phase 1 edge.
+
+## 2026-06-23 - Opened Patchworks runtime-package follow-on issue
+
+- opened `#10` as the P1.4c Patchworks runtime-package build/QA follow-on
+  issue;
+- scoped `#10` to runtime-package prerequisites, ForestModel/XML generation
+  boundaries, Matrix Builder expectations, tracks/features/accounts QA,
+  representative Patchworks launch smoke, and artifact policy;
+- linked runtime-package work to dependencies on accepted TFL 6 inputs, source
+  and THLB recipe planning, cedar design `#8`, and expansion design `#9`;
+- kept XML generation, Matrix Builder execution, and Patchworks launch out of
+  the issue split; and
+- marked P1.4 complete in `ROADMAP.md`.

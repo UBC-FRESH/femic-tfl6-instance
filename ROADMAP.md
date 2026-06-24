@@ -27,15 +27,15 @@
     before Patchworks runtime-package work.
   - [x] P1.3e Record the accepted adaptation boundary and keep implementation
     in follow-on tasks.
-- [ ] P1.4 Split model-design work into follow-on issues (`#2`).
+- [x] P1.4 Split model-design work into follow-on issues (`#2`).
   - [x] P1.4a Open a cedar-signal design issue covering Cw cultural reserve,
     utility-pole-grade products, treatments, yield curves, accounts, and
     reporting outputs (`#8`).
   - [x] P1.4b Open a K3Z expansion candidate-area issue covering unallocated
     candidate-area pool construction, productivity screening, and AAC uplift
     constraints (`#9`).
-  - [ ] P1.4c Open a Patchworks runtime-package issue once source normalization
-    and model-design boundaries are accepted.
+  - [x] P1.4c Open a Patchworks runtime-package issue once source normalization
+    and model-design boundaries are accepted (`#10`).
 - [x] P1.5 Materialize 2025 VRI source datasets for NICF base inventory (`#5`).
   - [x] P1.5a Record official 2025 R1 and VDYP7 polygon/layer package metadata.
   - [x] P1.5b Materialize the 2025 provincial source packages under the
@@ -77,5 +77,7 @@
 
 ## Current Next Steps
 
-1. Continue `P1.4c` / `#2`: open a Patchworks runtime-package issue once
-   source normalization and model-design boundaries are accepted.
+1. Keep Phase 1 parent `#4` open until the parent FEMIC PR is merged.
+2. Start follow-on implementation only through the split design/build issues:
+   cedar signals `#8`, expansion candidate areas `#9`, and Patchworks runtime
+   package `#10`.
