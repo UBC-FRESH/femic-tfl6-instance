@@ -336,3 +336,15 @@
 - recorded Instrument 101 as strong evidence that Jan. 1, 2015 additions from
   TFL 39 Block 4 plausibly explain most or all of the gap between the `171441
   ha` MP10 historical GLB and the `217042.718950 ha` current FADM-derived AOI.
+
+## 2026-06-23 - Added scaled current-AOI THLB benchmarks
+
+- added `planning/tfl6_adjusted_thlb_benchmarks.md` and
+  `planning/tfl6_adjusted_thlb_benchmarks.json`;
+- scaled the 2011 MP10 Table 4 netdown values by
+  `217042.718950 / 171441 = 1.265990742879`;
+- recorded provisional current-AOI validation targets, including `186175.333
+  ha` productive forest, `170428.940 ha` operable landbase, `136487.728 ha`
+  current THLB, and `134598.870 ha` long-term landbase; and
+- kept the scaled targets explicitly non-authoritative until spatial current
+  AOI recipe outputs supersede them.

@@ -139,6 +139,13 @@ is that Instrument 101, effective January 1, 2015, added TFL 39 Block 4 lands
 to TFL 6 and explains most or all of the difference between the `171441 ha`
 MP10 historical GLB and the `217042.718950 ha` current FADM-derived AOI.
 
+Provisional scaled current-AOI validation targets are recorded in
+`planning/tfl6_adjusted_thlb_benchmarks.md` and
+`planning/tfl6_adjusted_thlb_benchmarks.json`. These uniformly scale MP10 Table
+4 by the current-AOI/MP10-GLB factor and should be used only as approximate
+early validation targets until spatial current-AOI recipe outputs supersede
+them.
+
 ## P1.7c/P1.7d Handoff
 
 P1.7c should now classify each row above into:

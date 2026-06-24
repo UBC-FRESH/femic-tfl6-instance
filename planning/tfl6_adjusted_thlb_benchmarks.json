@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "title": "TFL 6 scaled approximate THLB benchmarks",
+  "created_utc": "2026-06-24T05:00:22Z",
+  "purpose": "Approximate current-AOI validation targets produced by scaling 2011 MP10 Table 4 values to the accepted current FADM-derived TFL 6 AOI.",
+  "status": "approximate_non_authoritative_validation_targets",
+  "source_benchmark": {
+    "name": "MP10 Table 4 historical GLB",
+    "area_ha": 171441
+  },
+  "target_aoi": {
+    "name": "P1.6 current FADM-derived TFL 6 AOI",
+    "area_ha": 217042.71895
+  },
+  "scale_factor": 1.2659907428794746,
+  "instrument_101_context": {
+    "addition_area_labels_ha": [
+      44612,
+      2096
+    ],
+    "addition_area_total_ha": 46708,
+    "interpretation": "Instrument 101 explains most or all of the current-vs-MP10 AOI delta; scaling uses the accepted current FADM AOI rather than the rounded map addition total.",
+    "planning_note": "planning/tfl6_instrument_boundary_reconciliation.md"
+  },
+  "caveats": [
+    "These values are provisional validation targets, not accepted reconstructed THLB outputs.",
+    "Uniform scaling assumes the 2015 addition areas have similar netdown proportions to the 2011 MP10 landbase.",
+    "Spatial recipe outputs should eventually replace these scaled targets when current-AOI source layers are resolved."
+  ],
+  "benchmarks": [
+    {
+      "step_id": "tfl6_nd_000",
+      "mp10_row": "Total landbase",
+      "femic_stage": "reference_target / GLB",
+      "mp10_reduction_ha": 0,
+      "mp10_cumulative_ha": 171441,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 0.0,
+      "scaled_cumulative_ha": 217042.719,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_010",
+      "mp10_row": "Less non-forest",
+      "femic_stage": "glb_to_aflb",
+      "mp10_reduction_ha": 13483,
+      "mp10_cumulative_ha": 157958,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 17069.353,
+      "scaled_cumulative_ha": 199973.366,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_020",
+      "mp10_row": "Less existing roads",
+      "femic_stage": "glb_to_aflb",
+      "mp10_reduction_ha": 3935,
+      "mp10_cumulative_ha": 154023,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 4981.674,
+      "scaled_cumulative_ha": 194991.692,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_030",
+      "mp10_row": "Total forested",
+      "femic_stage": "reference_target",
+      "mp10_reduction_ha": 0,
+      "mp10_cumulative_ha": 154023,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 0.0,
+      "scaled_cumulative_ha": 194991.692,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_040",
+      "mp10_row": "Less non-productive forest",
+      "femic_stage": "glb_to_aflb",
+      "mp10_reduction_ha": 6964,
+      "mp10_cumulative_ha": 147059,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 8816.36,
+      "scaled_cumulative_ha": 186175.333,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_050",
+      "mp10_row": "Total productive forest",
+      "femic_stage": "reference_target / AFLB",
+      "mp10_reduction_ha": 0,
+      "mp10_cumulative_ha": 147059,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 0.0,
+      "scaled_cumulative_ha": 186175.333,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_060",
+      "mp10_row": "Less inoperable, including uneconomic",
+      "femic_stage": "aflb_to_lhlb",
+      "mp10_reduction_ha": 12438,
+      "mp10_cumulative_ha": 134621,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 15746.393,
+      "scaled_cumulative_ha": 170428.94,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_070",
+      "mp10_row": "Total operable",
+      "femic_stage": "reference_target / LHLB",
+      "mp10_reduction_ha": 0,
+      "mp10_cumulative_ha": 134621,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 0.0,
+      "scaled_cumulative_ha": 170428.94,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_080",
+      "mp10_row": "Riparian management",
+      "femic_stage": "lhlb_to_thlb",
+      "mp10_reduction_ha": 10632,
+      "mp10_cumulative_ha": 123989,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 13460.014,
+      "scaled_cumulative_ha": 156968.926,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_090",
+      "mp10_row": "Ungulate winter ranges",
+      "femic_stage": "lhlb_to_thlb",
+      "mp10_reduction_ha": 1313,
+      "mp10_cumulative_ha": 122676,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 1662.246,
+      "scaled_cumulative_ha": 155306.68,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_100",
+      "mp10_row": "Established OGMAs",
+      "femic_stage": "lhlb_to_thlb",
+      "mp10_reduction_ha": 3750,
+      "mp10_cumulative_ha": 118926,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 4747.465,
+      "scaled_cumulative_ha": 150559.215,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_110",
+      "mp10_row": "Draft OGMAs",
+      "femic_stage": "lhlb_to_thlb",
+      "mp10_reduction_ha": 3469,
+      "mp10_cumulative_ha": 115457,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 4391.722,
+      "scaled_cumulative_ha": 146167.493,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_120",
+      "mp10_row": "Wildlife habitat areas",
+      "femic_stage": "lhlb_to_thlb",
+      "mp10_reduction_ha": 3,
+      "mp10_cumulative_ha": 115454,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 3.798,
+      "scaled_cumulative_ha": 146163.695,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_130",
+      "mp10_row": "Recreation sites and trails",
+      "femic_stage": "lhlb_to_thlb",
+      "mp10_reduction_ha": 50,
+      "mp10_cumulative_ha": 115404,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 63.3,
+      "scaled_cumulative_ha": 146100.396,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_140",
+      "mp10_row": "Deciduous-leading forest",
+      "femic_stage": "lhlb_to_thlb",
+      "mp10_reduction_ha": 1774,
+      "mp10_cumulative_ha": 113630,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 2245.868,
+      "scaled_cumulative_ha": 143854.528,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_150",
+      "mp10_row": "Cultural heritage resources",
+      "femic_stage": "lhlb_to_thlb",
+      "mp10_reduction_ha": 132,
+      "mp10_cumulative_ha": 113498,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 167.111,
+      "scaled_cumulative_ha": 143687.417,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_160",
+      "mp10_row": "Total operable reductions",
+      "femic_stage": "reference_target",
+      "mp10_reduction_ha": 21124,
+      "mp10_cumulative_ha": 113497,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 26742.788,
+      "scaled_cumulative_ha": 143686.151,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_170",
+      "mp10_row": "Reduced landbase",
+      "femic_stage": "reference_target",
+      "mp10_reduction_ha": 0,
+      "mp10_cumulative_ha": 113497,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 0.0,
+      "scaled_cumulative_ha": 143686.151,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_180",
+      "mp10_row": "Less allowance for stand-level retention",
+      "femic_stage": "lhlb_to_thlb",
+      "mp10_reduction_ha": 5686,
+      "mp10_cumulative_ha": 107811,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 7198.423,
+      "scaled_cumulative_ha": 136487.728,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_190",
+      "mp10_row": "Current THLB",
+      "femic_stage": "reference_target / THLB",
+      "mp10_reduction_ha": 0,
+      "mp10_cumulative_ha": 107811,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 0.0,
+      "scaled_cumulative_ha": 136487.728,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_200",
+      "mp10_row": "Less future roads",
+      "femic_stage": "context / long_term_adjustment",
+      "mp10_reduction_ha": 1491,
+      "mp10_cumulative_ha": 106319,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 1887.592,
+      "scaled_cumulative_ha": 134598.87,
+      "status": "approximate_scaled_validation_benchmark"
+    },
+    {
+      "step_id": "tfl6_nd_210",
+      "mp10_row": "Long-term landbase",
+      "femic_stage": "reference_target",
+      "mp10_reduction_ha": 0,
+      "mp10_cumulative_ha": 106319,
+      "scale_factor": 1.2659907428794746,
+      "scaled_reduction_ha": 0.0,
+      "scaled_cumulative_ha": 134598.87,
+      "status": "approximate_scaled_validation_benchmark"
+    }
+  ]
+}

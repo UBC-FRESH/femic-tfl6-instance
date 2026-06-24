@@ -66,6 +66,9 @@
   - [x] P1.7b2 Scrape post-2011 TFL 6 instrument links and record boundary
     reconciliation evidence in
     `planning/tfl6_instrument_boundary_reconciliation.md`.
+  - [x] P1.7b3 Scale MP10 Table 4 values to provisional current-AOI validation
+    targets in `planning/tfl6_adjusted_thlb_benchmarks.md` and
+    `planning/tfl6_adjusted_thlb_benchmarks.json`.
   - [ ] P1.7c Separate TSA29 workflow carry-forward assumptions from
     TFL/general-FMU adaptation gaps.
   - [ ] P1.7d Draft source-layer and THLB netdown recipe skeletons or planning
@@ -76,7 +79,8 @@
 1. Start `P1.7c` / `#7`: separate TSA29 workflow carry-forward patterns from
    TFL/general-FMU adaptation gaps in
    `planning/tfl6_thlb_netdown_steps.md` and classify the Instrument 101
-   boundary-vintage evidence before drafting recipe skeletons.
+   boundary-vintage evidence and adjusted benchmark targets before drafting
+   recipe skeletons.
 2. Continue `P1.5` / `#5`: record public-data remote publication status for
    the provincial 2025 VRI source archives.
 3. Continue `P1.4` / `#2`: split the cedar-signal, expansion-candidate, and

@@ -103,6 +103,9 @@ benchmark, P1.7c should classify the boundary-vintage issue explicitly:
 - P1.6 FADM remains the current active AOI;
 - Instrument 101 is the leading documented explanation for the boundary-area
   increase; and
+- `planning/tfl6_adjusted_thlb_benchmarks.md` and
+  `planning/tfl6_adjusted_thlb_benchmarks.json` provide provisional scaled
+  current-AOI validation targets; and
 - a later geometry-reconciliation task should decide whether to model the 2011
   historical AOI, the current post-2015 AOI, or both as separate benchmark
   contexts.
