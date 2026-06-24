@@ -686,3 +686,20 @@
 - performed no DEM download, raster clipping, slope derivation, zonal
   statistics, recipe YAML creation, THLB execution, model-input generation, or
   Patchworks runtime work.
+
+## 2026-06-24 - Drafted P2.1a operability parameter contract
+
+- added a base-case-versus-sensitivity parameter table to
+  `planning/tfl6_operability_netdown_proxy.md`;
+- separated base-case design stance from student-tunable sensitivity knobs for
+  height class, species group, stocking/open-stand signal, volume threshold,
+  slope threshold, proportion-of-stand slope threshold, heli inclusion,
+  marginal economic classes, and road/access pressure;
+- added later DEM materialization-plan requirements covering LidarBC tile-index
+  selection, AOI buffering, tile count/volume estimates, public-data suitability,
+  CDED smoke-test sequencing, canonical paths, and QA checks;
+- updated `ROADMAP.md` Current Next Steps so P2.1a is now ready for maintainer
+  review/closeout or targeted edits before any source downloads start; and
+- performed no source download, DEM materialization, slope derivation, zonal
+  statistics, recipe YAML creation, THLB execution, model-input generation, or
+  Patchworks runtime work.

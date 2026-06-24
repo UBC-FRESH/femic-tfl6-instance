@@ -186,6 +186,36 @@ This matches the TSR pattern where THLB netdown and timber-supply sensitivity
 analysis commonly tests landbase, operability, volume, and minimum-harvest
 assumptions rather than locking all uncertainty into one base-case surface.
 
+## Base-Case Versus Sensitivity Parameters
+
+This table defines the first design boundary between base-case teaching-model
+assumptions and student-tunable sensitivity inputs. The default values are not
+yet executable recipe parameters; they are the contract that a later recipe
+implementation should translate into reviewed config.
+
+| Parameter | Base-case design stance | Student sensitivity knob | Evidence / rationale | Implementation status |
+| --- | --- | --- | --- | --- |
+| Historical operability geometry | Use recovered 1999 WFP/TFL operability geometry if a reviewed local copy is found; otherwise use the proxy lane below. | Compare proxy-derived THLB against any recovered historical geometry, if supplied later. | MP9/MP10 both identify a 1999 operability reclassification approved by the district. | Preferred source, but not currently materialized. |
+| Benchmark calibration | Calibrate the proxy so total operability removal is checked against MP10 Table 8 and the adjusted current-AOI benchmark. | Test relaxed/tighter calibration tolerances around the adjusted benchmark. | MP10 Table 8 provides `12,438 ha` historical operability removal; adjusted current-AOI targets provide teaching validation context. | Planning only; no calibration code yet. |
+| Minimum height class | Treat mature height classes `1` and `2` as strong economic-inoperability candidates. Treat height class `3` as conditional on species, stocking/open signal, volume, and slope/access. | Vary the minimum accepted height class or decide whether height class `3` is retained, marginal, or excluded under different species groups. | MP9 identifies mature height classes `1` and `2` as economically inoperable and uses height class `3` in both economic and operable classes. | Requires P2.2 field profiling of VRI height-class fields. |
+| Species group | Use preferred coastal operability species groups from MP9: cedar/cypress/Douglas-fir/spruce as stronger economic signals; hemlock/balsam height class `3` as conditional; pine-dominant as inoperability candidate; deciduous based on local/proxy judgment. | Toggle hemlock/balsam height class `3`, pine-dominant, and deciduous-leading handling between retained, marginal, and excluded. | MP9 yarding-system constraints explicitly reference these species groups. MP10 economic-access uncertainty highlights low-valued hembal. | Requires P2.2 species-code grouping. |
+| Stocking/open-stand signal | Treat stocking class `3` / open-stand proxy as a marginal or exclusion signal only when paired with lower height, low volume, or lower-value species. | Vary whether stocking/open signal is used as a hard exclusion or a marginal penalty. | MP9 excludes selected stocking class `3` combinations and pure hemlock/balsam height class `3` stocking class `3` open stands. | Requires review of `line_4_classes_indexes` and any usable VRI crown-closure fields. |
+| Volume threshold | Use volume per hectare as a calibration and economic-access proxy, not a standalone hard rule in the first design. | Vary minimum volume per hectare by inferred harvest system or species group. | MP10 says economic access was based broadly on inventory information, and minimum harvest criteria often include volume per hectare. | Requires P2.2 profiling of R1/VDYP volume fields. |
+| Slope threshold | Preserve MP10's `30%` slope split as the first ground-versus-cable threshold for conventionally operable stands. | Vary slope cutoff `X` in rules such as `p_slope_ge_X >= Y`; candidate `X` values include `30%` for ground/cable split and a higher threshold for high-cost/heli pressure. | MP10 assigns conventionally operable `0-30%` slopes to ground-based systems and steeper conventional slopes to cable. | Requires DEM materialization and zonal statistics. |
+| Proportion-of-stand slope threshold | Use stand-level slope proportions, not a single max/mean slope, when classifying steepness pressure. First implementation should expose the threshold `Y` instead of hard-coding it. | Vary `Y` in rules such as "at least `Y` proportion of pixels have slope >= `X%`." | This avoids overreacting to tiny steep inclusions while still allowing students to test steepness assumptions. | Requires DEM-derived percent-slope raster and zonal statistics. |
+| Heli inclusion | Keep heli-operable stands in the base-case design as a distinct high-cost harvest-system lane, not an automatic exclusion. | Test no-heli, heli-included-with-constraint, or relaxed-heli scenarios. | MP10 includes `5,400 ha` heli operable land, constrains heli volume, and separately tests excluding heli landbase. | Requires future model/runtime scenario design; do not execute in P2.1a. |
+| Marginal economic classes | Treat `Ocm`/`Ohm` semantics as base-case exclusion/calibration candidates, but document them separately from physically inoperable `I`. | Include, exclude, or partially discount marginal economic stands under different market/economic-access scenarios. | MP10 separates physical inoperability from economically marginal conventional and heli classes. | Planning only; no executable class assignment yet. |
+| Road/access pressure | Do not include road-distance/access as a hard base-case parameter until DRA roads and any access-cost assumptions are materialized and reviewed. | Later sensitivity can test distance-to-road/access thresholds after road materialization. | MP9 physical inoperability includes extreme terrain/distance/access constraints, but current public road source is not materialized yet. | Defer to P2.1 source materialization and later recipe design. |
+
+First implementation should keep the base-case proxy transparent:
+
+1. classify candidate marginal/economic-inoperable stands from VRI/VDYP
+   signals;
+2. classify slope/yarding pressure from DEM-derived stand metrics;
+3. compare total removal against the adjusted MP10 Table 8 target; and
+4. report residual mismatch rather than hiding it with an unexplained area
+   plug.
+
 ## DEM and Slope Workflow
 
 A later implementation issue should use FEMIC's data-layer discovery functions
@@ -276,10 +306,31 @@ Current DEM decision:
   TFL 6, estimate tile count/volume, and decide whether to materialize LiDAR
   tiles directly or first prove the slope workflow on a coarse CDED subset.
 
+## Later DEM Materialization Plan Requirements
+
+A later DEM materialization issue should answer these questions before any
+download begins:
+
+1. Which LidarBC index or grid layer is the authoritative tile-selection
+   surface for TFL 6?
+2. Which tiles intersect the TFL 6 AOI plus any necessary processing buffer?
+3. What are the estimated tile count, total download size, working-disk
+   footprint, and expected derived raster size?
+4. Are the relevant tiles available as open/public artifacts suitable for a
+   teaching instance public-data lane?
+5. Should the first implementation prove the slope/zonal-stat pipeline on a
+   coarse CDED subset before LiDAR tile materialization?
+6. What canonical tracked/annexed paths should hold raw DEM tiles, clipped DEM,
+   slope raster, and stand-level zonal-stat tables?
+7. Which QA checks are required: CRS, pixel size, nodata handling, AOI coverage,
+   slope-unit check, zonal-stat row count keyed to `feature_id`, and spot checks
+   against visible terrain?
+
+Until those questions are answered, P2.1a accepts only the design requirement
+for DEM-derived slope metrics, not any DEM source artifact.
+
 ## Open Decisions
 
-- Whether the first executable base-case proxy should be a calibrated marginal
-  removal, an explicit rule-only removal, or a hybrid.
 - How to parse `line_4_classes_indexes` into a defensible stocking/open-stand
   signal.
 - How to express the MP9 "near better operability types" concept. Possible
