@@ -669,3 +669,20 @@
   the public teaching source lane; and
 - performed no OGMA download, clipping, recipe YAML creation, THLB execution,
   model-input generation, or Patchworks runtime work.
+
+## 2026-06-24 - Recorded P2.1a DEM discovery for operability slope proxy
+
+- ran metadata-only FEMIC BCDC resolver passes for DEM, LiDAR, CDED, TRIM
+  contour, elevation, and slope-raster candidates;
+- recorded LidarBC/open LiDAR as the preferred future high-resolution source
+  route for a defensible TFL 6 stand-level slope surface, subject to AOI tile
+  coverage and materialization planning;
+- recorded CDED 1:250,000 as a coarse fallback or raster-pipeline smoke-test
+  source, not the preferred operability proxy surface;
+- recorded RESULTS openings slope/aspect/elevation as an attribute clue only,
+  not a continuous DEM substitute;
+- recorded that no useful ready-made public provincial slope-raster candidate
+  was found by the resolver queries; and
+- performed no DEM download, raster clipping, slope derivation, zonal
+  statistics, recipe YAML creation, THLB execution, model-input generation, or
+  Patchworks runtime work.

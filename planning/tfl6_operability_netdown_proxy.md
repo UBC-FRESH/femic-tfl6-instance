@@ -210,6 +210,72 @@ to resolve and materialize an appropriate DEM source. The intended workflow is:
 
 No DEM or slope artifact is accepted by this planning note.
 
+## DEM Discovery Evidence
+
+This P2.1a resolver slice was metadata-only. It did not download DEM data,
+clip rasters, build slope rasters, or compute zonal statistics.
+
+Commands:
+
+```powershell
+..\..\.venv\Scripts\python.exe -m femic data bcdc-resolve `
+  'Digital Elevation Model' `
+  'BC DEM' `
+  'TRIM DEM' `
+  'CDEM' `
+  'Canadian Digital Elevation Model' `
+  'Provincial Digital Elevation Model' `
+  'LiDAR DEM' `
+  'BC elevation raster' `
+  'Terrain Resource Information Management DEM' `
+  'Forest Analysis Inventory DEM slope' `
+  --limit 10 `
+  --summary-csv runtime\logs\p2_1a_dem_bcdc_summary.csv `
+  --manifest-path runtime\logs\p2_1a_dem_bcdc_manifest.json
+
+..\..\.venv\Scripts\python.exe -m femic data bcdc-resolve `
+  'DEM 1:20,000 British Columbia' `
+  'CDED 1:50,000 British Columbia' `
+  'CDED 1:250,000 British Columbia' `
+  'BC geographic warehouse elevation' `
+  'BC DEM raster' `
+  'TRIM elevation' `
+  'TRIM contours' `
+  'elevation contours British Columbia' `
+  'digital terrain model British Columbia' `
+  'bare earth DEM British Columbia' `
+  'slope raster British Columbia' `
+  'LidarBC DEM' `
+  --limit 10 `
+  --summary-csv runtime\logs\p2_1a_dem_targeted_bcdc_summary.csv `
+  --manifest-path runtime\logs\p2_1a_dem_targeted_bcdc_manifest.json
+```
+
+Resolver findings:
+
+| Candidate | Dataset / object | Access evidence | Use decision |
+| --- | --- | --- | --- |
+| LidarBC / open LiDAR | `LiDAR`; `LidarBC - Open LiDAR Data Portal`; open LiDAR data portal, open LiDAR data index, and map grid resources | Resolver returned direct application/index resources. The generic `LiDAR` catalogue record is under the Open Government Licence - British Columbia; the portal/index record is application-mediated rather than a simple stable raster URL. | Primary high-resolution discovery route for a future slope raster, subject to coverage and tile/materialization review for the TFL 6 AOI. Use only after a bounded materialization plan identifies the needed AOI tiles and storage convention. |
+| CDED DEM | `Digital Elevation Model for British Columbia - CDED - 1:250,000`; zipped DEM CDED files by map letterblock | Resolver returned a direct public zip root under `https://pub.data.gov.bc.ca/datasets/175624/`; Open Government Licence - British Columbia. | Coarse fallback or smoke-test DEM only. It is likely too coarse for defensible stand-level yarding/slope-bin classification, but it may be useful to prove the raster-processing pipeline before LiDAR tile materialization. |
+| RESULTS slope/aspect/elevation | `WHSE_FOREST_VEGETATION.RSLT_OPEN_SLOPE_ASPCT_ELEV_SVW` | Resolver returned a WFS-queryable BCGW service candidate for opening-level slope/aspect/elevation attributes. | Attribute clue only. It is not a continuous DEM and should not replace stand-level slope zonal statistics, but it may be useful later for comparing derived slope bins against reported opening-level terrain attributes. |
+| TRIM contour lines/points | `WHSE_BASEMAPPING.TRIM_CONTOUR_LINES`; `WHSE_BASEMAPPING.TRIM_CONTOUR_POINTS` | Resolver found WFS-queryable TRIM contour surfaces, but access metadata is government/access-only. | Not the first public teaching route. Contours are also an inferior path for raster slope when DEM/LiDAR sources are available. |
+| Ready-made provincial slope raster | No useful public candidate found by the resolver queries. | The targeted slope-raster queries returned no accepted slope-raster source. | Build slope from an accepted DEM rather than relying on a discovered slope raster. |
+
+Current DEM decision:
+
+- Treat LidarBC/open LiDAR as the preferred future source for a defensible
+  stand-level slope surface, if TFL 6 coverage and tile materialization are
+  practical.
+- Treat CDED 1:250,000 as a coarse fallback/smoke-test raster, not as the
+  preferred teaching-model operability source.
+- Do not use RESULTS opening slope/aspect/elevation as a DEM substitute.
+- Do not use TRIM contours as the first route unless later DEM materialization
+  is blocked.
+- The next implementation slice for DEM work should be a materialization plan,
+  not a download: identify the LidarBC index/grid source, intersect it with
+  TFL 6, estimate tile count/volume, and decide whether to materialize LiDAR
+  tiles directly or first prove the slope workflow on a coarse CDED subset.
+
 ## Open Decisions
 
 - Whether the first executable base-case proxy should be a calibrated marginal

@@ -199,10 +199,12 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 1. Continue P2.1a / `#20`: finish the operability netdown proxy and
    sensitivity design before source-materialization planning treats
    operability as resolved. `planning/tfl6_operability_netdown_proxy.md`
-   records the MP9/MP10 evidence that operability can be approximated from
-   VRI/VDYP inventory clues plus a future DEM-derived slope surface, while
-   keeping the MP10 Table 8 / adjusted benchmark as calibration context rather
-   than a permanently locked aspatial fallback.
+   now records MP9/MP10 evidence, VRI/VDYP proxy candidates, and DEM discovery
+   results. LidarBC/open LiDAR is the preferred future slope source if AOI
+   tile coverage/materialization is practical; CDED 1:250,000 is only a coarse
+   smoke-test/fallback raster. The next bounded P2.1a move should draft the
+   base-case-versus-sensitivity parameter table and identify the later DEM
+   materialization-plan requirements, without downloading DEM data.
 2. Keep P2.2 field profiling queued until the accepted local R1/VDYP7
    dependency rows from P2.1 are ready for review or the maintainer explicitly
    approves a parallel field-mapping slice.
