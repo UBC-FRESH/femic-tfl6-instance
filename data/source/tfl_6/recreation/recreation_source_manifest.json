@@ -1,0 +1,672 @@
+{
+  "generated_utc": "2026-06-24T18:43:59.557857+00:00",
+  "plan_status": "materialized_for_review",
+  "non_goals": [
+    "No THLB recipe semantics accepted.",
+    "No recipe YAML created.",
+    "No THLB netdown executed.",
+    "No model-input or Patchworks runtime work performed."
+  ],
+  "aoi": {
+    "path": "data\\source\\tfl_6\\aoi\\tfl_6_boundary.gpkg",
+    "layer": "tfl_6_boundary",
+    "crs": "EPSG:3005",
+    "feature_count": 182,
+    "union_area_ha": 217042.71895028095,
+    "bounds": [
+      841375.75,
+      580345.5069999993,
+      928480.8239999991,
+      639356.2770000007
+    ],
+    "invalid_geometries_repaired": 0
+  },
+  "layers": [
+    {
+      "source_id": "recreation_polygons_tfl6",
+      "dependency_rows": [
+        "tfl6_nd_130"
+      ],
+      "status": "materialized_for_review",
+      "bcdc_title": "Recreation Polygons",
+      "package_name": "recreation-polygons",
+      "dataset_page_url": "https://catalogue.data.gov.bc.ca/dataset/recreation-polygons",
+      "object_name": "WHSE_FOREST_TENURE.FTEN_RECREATION_POLY_SVW",
+      "organization": "Recreation Sites and Trails BC",
+      "licence": "Open Government Licence - British Columbia",
+      "access_method": "OpenMaps WFS bbox fetch via femic data bcdc-fetch, exact AOI clip/filter via geopandas",
+      "fetch_query": "WHSE_FOREST_TENURE.FTEN_RECREATION_POLY_SVW",
+      "raw_layer": "WHSE_FOREST_TENURE_FTEN_RECREATION_POLY_SVW",
+      "raw_feature_count": 50,
+      "invalid_raw_geometries_repaired": 0,
+      "clip_method": "intersection",
+      "output_path": "data\\source\\tfl_6\\recreation\\recreation_polygons_tfl6.gpkg",
+      "output_layer": "recreation_polygons_tfl6",
+      "output_format": "GPKG",
+      "output_crs": "EPSG:3005",
+      "output_geometry_types": {
+        "MultiPolygon": 26
+      },
+      "output_feature_count": 26,
+      "output_bounds": [
+        842795.1215536253,
+        588077.64,
+        917808.102,
+        621549.015
+      ],
+      "output_metric_name": "area_ha",
+      "output_metric_value": 187.86809993351304,
+      "invalid_output_geometries_repaired": 0,
+      "field_count": 28,
+      "fields": [
+        "RMF_SKEY",
+        "FOREST_FILE_ID",
+        "SECTION_ID",
+        "RECREATION_MAP_FEATURE_CODE",
+        "PROJECT_TYPE",
+        "RETIREMENT_DATE",
+        "AMENDMENT_ID",
+        "MAP_LABEL",
+        "PROJECT_NAME",
+        "RECREATION_FEATURE_CODE",
+        "RESOURCE_FEATURE_IND",
+        "ARCH_IMPACT_ASSESS_IND",
+        "SITE_LOCATION",
+        "PROJECT_ESTABLISHED_DATE",
+        "RECREATION_VIEW_IND",
+        "RECREATION_DISTRICT_CODE",
+        "DEFINED_CAMPSITES",
+        "LIFE_CYCLE_STATUS_CODE",
+        "FILE_STATUS_CODE",
+        "GEOGRAPHIC_DISTRICT_CODE",
+        "GEOGRAPHIC_DISTRICT_NAME",
+        "FEATURE_CLASS_SKEY",
+        "FEATURE_AREA",
+        "FEATURE_PERIMETER",
+        "FEATURE_AREA_SQM",
+        "FEATURE_LENGTH_M",
+        "OBJECTID",
+        "SE_ANNO_CAD_DATA"
+      ],
+      "rule_hint_fields_present": [
+        "FOREST_FILE_ID",
+        "SECTION_ID",
+        "PROJECT_NAME",
+        "PROJECT_TYPE",
+        "MAP_LABEL",
+        "RECREATION_FEATURE_CODE",
+        "RESOURCE_FEATURE_IND",
+        "LIFE_CYCLE_STATUS_CODE",
+        "FILE_STATUS_CODE",
+        "RETIREMENT_DATE",
+        "PROJECT_ESTABLISHED_DATE",
+        "FEATURE_AREA_SQM",
+        "FEATURE_LENGTH_M"
+      ],
+      "rule_hint_value_counts": {
+        "FOREST_FILE_ID": {
+          "REC3242": 1,
+          "REC3241": 1,
+          "REC16077": 1,
+          "REC3205": 1,
+          "REC3206": 1,
+          "REC31943": 1,
+          "REC3204": 1,
+          "REC240655": 1,
+          "REC16046": 1,
+          "REC16044": 1,
+          "REC3201": 1,
+          "REC260698": 1,
+          "REC3199": 1,
+          "REC3198": 1,
+          "REC136169": 1,
+          "REC160460": 1,
+          "REC106896": 1,
+          "REC0278": 1,
+          "REC258332": 1,
+          "REC0301": 1
+        },
+        "SECTION_ID": {
+          "<NA>": 26
+        },
+        "PROJECT_NAME": {
+          "REAPPEARING RIVER": 1,
+          "VANISHING RIVER": 1,
+          "Clint Beek (Keogh Lake)": 1,
+          "MAHATTA RIVER": 1,
+          "O'Connell Lake": 1,
+          "Neroutsos Inlet": 1,
+          "Spruce Bay": 1,
+          "River To Nowhere": 1,
+          "Eternal Fountain": 1,
+          "Devils Bath": 1,
+          "Kathleen Lake": 1,
+          "Merry Widow Mtn Trail Parking": 1,
+          "Three Isle Lake": 1,
+          "Maynard Lake": 1,
+          "Mahatta Creek": 1,
+          "Quatsino Caves Beach": 1,
+          "Hunt Islets": 1,
+          "GRANT BAY": 1,
+          "Undercover Cove": 1,
+          "SPENCER COVE": 1
+        },
+        "PROJECT_TYPE": {
+          "Recreation Site": 19,
+          "Recreation Reserve": 5,
+          "Interpretative Forest": 2
+        },
+        "MAP_LABEL": {
+          "REC3242 ": 1,
+          "REC3241 ": 1,
+          "REC16077 ": 1,
+          "REC3205 ": 1,
+          "REC3206 ": 1,
+          "REC31943 ": 1,
+          "REC3204 ": 1,
+          "REC240655 ": 1,
+          "REC16046 ": 1,
+          "REC16044 ": 1,
+          "REC3201 ": 1,
+          "REC260698 ": 1,
+          "REC3199 ": 1,
+          "REC3198 ": 1,
+          "REC136169 ": 1,
+          "REC160460 ": 1,
+          "REC106896 ": 1,
+          "REC0278 ": 1,
+          "REC258332 ": 1,
+          "REC0301 ": 1
+        },
+        "RECREATION_FEATURE_CODE": {
+          "<NA>": 22,
+          "L5": 4
+        },
+        "RESOURCE_FEATURE_IND": {
+          "N": 18,
+          "Y": 8
+        },
+        "LIFE_CYCLE_STATUS_CODE": {
+          "ACTIVE": 24,
+          "RETIRED": 2
+        },
+        "FILE_STATUS_CODE": {
+          "HI": 24,
+          "AR": 2
+        },
+        "RETIREMENT_DATE": {
+          "<NA>": 24,
+          "2019-07-09Z": 1,
+          "2022-05-12Z": 1
+        },
+        "PROJECT_ESTABLISHED_DATE": {
+          "<NA>": 12,
+          "2019-01-15Z": 7,
+          "2007-10-17Z": 5,
+          "2011-07-15Z": 1,
+          "1983-02-10Z": 1
+        }
+      },
+      "date_field_summaries": {
+        "RETIREMENT_DATE": {
+          "non_null": 2,
+          "parseable": 2,
+          "min": "2019-07-09",
+          "max": "2022-05-12"
+        },
+        "PROJECT_ESTABLISHED_DATE": {
+          "non_null": 14,
+          "parseable": 14,
+          "min": "1983-02-10",
+          "max": "2019-01-15"
+        }
+      },
+      "sha256": "1742afbdac19a2a29f081ac8f89c9330dcc5ad7736f18a8ebc5f3f1f6a232a09",
+      "read_smoke": "geopandas read_file succeeded after write",
+      "review_required_before_recipe": true,
+      "review_notes": "Materialized for source review only; polygon class selection and MP10 recreation netdown semantics remain unaccepted.",
+      "raw_runtime_path_used_for_materialization": "runtime\\bcdc_fetch\\p2_1_recreation\\WHSE_FOREST_TENURE_FTEN_RECREATION_POLY_SVW\\WHSE_FOREST_TENURE_FTEN_RECREATION_POLY_SVW.gpkg",
+      "raw_runtime_artifact_retained": false,
+      "fetch_command_note": "Fetched to transient runtime cache with femic data bcdc-fetch, then clipped/filtered to exact TFL 6 AOI; runtime cache removed after curated outputs were written and read-smoked."
+    },
+    {
+      "source_id": "recreation_trails_tfl6",
+      "dependency_rows": [
+        "tfl6_nd_130"
+      ],
+      "status": "materialized_for_review",
+      "bcdc_title": "Recreation Trails Subset - Information Purposes Only",
+      "package_name": "recreation-trails-subset-information-purposes-only",
+      "dataset_page_url": "https://catalogue.data.gov.bc.ca/dataset/recreation-trails-subset-information-purposes-only",
+      "object_name": "WHSE_FOREST_TENURE.FTEN_REC_TRAILS_SVW",
+      "organization": "Recreation Sites and Trails BC",
+      "licence": "Open Government Licence - British Columbia",
+      "access_method": "OpenMaps WFS bbox fetch via femic data bcdc-fetch, exact AOI clip/filter via geopandas",
+      "fetch_query": "WHSE_FOREST_TENURE.FTEN_REC_TRAILS_SVW",
+      "raw_layer": "WHSE_FOREST_TENURE_FTEN_REC_TRAILS_SVW",
+      "raw_feature_count": 3,
+      "invalid_raw_geometries_repaired": 0,
+      "clip_method": "intersection",
+      "output_path": "data\\source\\tfl_6\\recreation\\recreation_trails_tfl6.gpkg",
+      "output_layer": "recreation_trails_tfl6",
+      "output_format": "GPKG",
+      "output_crs": "EPSG:3005",
+      "output_geometry_types": {
+        "MultiLineString": 3
+      },
+      "output_feature_count": 3,
+      "output_bounds": [
+        844783.8917161569,
+        614624.7547500546,
+        914628.9943850224,
+        623455.1895595209
+      ],
+      "output_metric_name": "length_m",
+      "output_metric_value": 1737.284695068857,
+      "invalid_output_geometries_repaired": 0,
+      "field_count": 67,
+      "fields": [
+        "FOREST_FILE_ID",
+        "RETIREMENT_DATE",
+        "AMENDMENT_ID",
+        "SITE_LOCATION",
+        "PROJECT_NAME",
+        "OPERATOR_LEGAL_FIRST_NAME",
+        "OPERATOR_CLIENT_NAME",
+        "NUM_CAMP_SITES",
+        "RECREATION_MAINTAIN_STD_CODE",
+        "MAINTAIN_STD_DESC",
+        "DRIVING_DIRECTIONS",
+        "CLOSURE_DESCRIPTION",
+        "PROJECT_DESCRIPTION",
+        "RECREATION_FEATURE_CODE",
+        "RESOURCE_FEATURE_IND",
+        "RIGHT_OF_WAY",
+        "ARCH_IMPACT_ASSESS_IND",
+        "ACTIVITY1",
+        "ACTIVITY_DESC1",
+        "ACTIVITY2",
+        "ACTIVITY_DESC2",
+        "ACTIVITY3",
+        "ACTIVITY_DESC3",
+        "ACTIVITY4",
+        "ACTIVITY_DESC4",
+        "ACTIVITY5",
+        "ACTIVITY_DESC5",
+        "ACTIVITY6",
+        "ACTIVITY_DESC6",
+        "ACTIVITY7",
+        "ACTIVITY_DESC7",
+        "ACTIVITY8",
+        "ACTIVITY_DESC8",
+        "ACTIVITY9",
+        "ACTIVITY_DESC9",
+        "ACTIVITY10",
+        "ACTIVITY_DESC10",
+        "MORE_ACTIVITY_IND",
+        "ACCESS1",
+        "ACCESS_DESC1",
+        "SUB_ACCESS1",
+        "SUB_ACCESS_DESC1",
+        "ACCESS2",
+        "ACCESS_DESC2",
+        "SUB_ACCESS2",
+        "SUB_ACCESS_DESC2",
+        "MORE_ACCESS_IND",
+        "STRUCTURE1",
+        "STRUCTURE_DESC1",
+        "STRUCTURE2",
+        "STRUCTURE_DESC2",
+        "STRUCTURE3",
+        "STRUCTURE_DESC3",
+        "STRUCTURE4",
+        "STRUCTURE_DESC4",
+        "STRUCTURE5",
+        "STRUCTURE_DESC5",
+        "MORE_STRUCTURE_IND",
+        "LIFE_CYCLE_STATUS_CODE",
+        "FILE_STATUS_CODE",
+        "RECREATION_DISTRICT_CODE",
+        "REC_DISTRICT_CODE_DESC",
+        "FEATURE_CLASS_SKEY",
+        "FEATURE_LENGTH",
+        "FEATURE_LENGTH_M",
+        "OBJECTID",
+        "SE_ANNO_CAD_DATA"
+      ],
+      "rule_hint_fields_present": [
+        "FOREST_FILE_ID",
+        "PROJECT_NAME",
+        "RECREATION_FEATURE_CODE",
+        "RESOURCE_FEATURE_IND",
+        "LIFE_CYCLE_STATUS_CODE",
+        "FILE_STATUS_CODE",
+        "RETIREMENT_DATE",
+        "FEATURE_LENGTH_M"
+      ],
+      "rule_hint_value_counts": {
+        "FOREST_FILE_ID": {
+          "REC16079": 1,
+          "REC3202": 1,
+          "REC16078": 1
+        },
+        "PROJECT_NAME": {
+          "Hecht Beach": 1,
+          "Beaver Lake": 1,
+          "Cluxewe Beach Trail": 1
+        },
+        "RECREATION_FEATURE_CODE": {
+          "<NA>": 3
+        },
+        "RESOURCE_FEATURE_IND": {
+          "N": 3
+        },
+        "LIFE_CYCLE_STATUS_CODE": {
+          "ACTIVE": 3
+        },
+        "FILE_STATUS_CODE": {
+          "HI": 3
+        },
+        "RETIREMENT_DATE": {
+          "<NA>": 3
+        }
+      },
+      "date_field_summaries": {
+        "RETIREMENT_DATE": {
+          "non_null": 0,
+          "parseable": 0
+        }
+      },
+      "sha256": "5684890f0070707353a25afbb4231cca06919fdd01886266f3b228b92c22c0db",
+      "read_smoke": "geopandas read_file succeeded after write",
+      "review_required_before_recipe": true,
+      "review_notes": "Materialized for source review only; trail class selection and MP10 10 m buffer semantics remain unaccepted.",
+      "raw_runtime_path_used_for_materialization": "runtime\\bcdc_fetch\\p2_1_recreation\\WHSE_FOREST_TENURE_FTEN_REC_TRAILS_SVW\\WHSE_FOREST_TENURE_FTEN_REC_TRAILS_SVW.gpkg",
+      "raw_runtime_artifact_retained": false,
+      "fetch_command_note": "Fetched to transient runtime cache with femic data bcdc-fetch, then clipped/filtered to exact TFL 6 AOI; runtime cache removed after curated outputs were written and read-smoked."
+    },
+    {
+      "source_id": "recreation_site_points_tfl6",
+      "dependency_rows": [
+        "tfl6_nd_130"
+      ],
+      "status": "materialized_for_review",
+      "bcdc_title": "Recreation Sites Subset - Information Purposes Only",
+      "package_name": "recreation-sites-subset-information-purposes-only",
+      "dataset_page_url": "https://catalogue.data.gov.bc.ca/dataset/recreation-sites-subset-information-purposes-only",
+      "object_name": "WHSE_FOREST_TENURE.FTEN_REC_SITE_POINTS_SVW",
+      "organization": "Recreation Sites and Trails BC",
+      "licence": "Open Government Licence - British Columbia",
+      "access_method": "OpenMaps WFS bbox fetch via femic data bcdc-fetch, exact AOI clip/filter via geopandas",
+      "fetch_query": "WHSE_FOREST_TENURE.FTEN_REC_SITE_POINTS_SVW",
+      "raw_layer": "WHSE_FOREST_TENURE_FTEN_REC_SITE_POINTS_SVW",
+      "raw_feature_count": 15,
+      "invalid_raw_geometries_repaired": 0,
+      "clip_method": "within_or_intersects",
+      "output_path": "data\\source\\tfl_6\\recreation\\recreation_site_points_tfl6.gpkg",
+      "output_layer": "recreation_site_points_tfl6",
+      "output_format": "GPKG",
+      "output_crs": "EPSG:3005",
+      "output_geometry_types": {
+        "Point": 10
+      },
+      "output_feature_count": 10,
+      "output_bounds": [
+        877829.295,
+        593462.3831,
+        916872.9876,
+        621476.9243
+      ],
+      "output_metric_name": "count",
+      "output_metric_value": 10,
+      "invalid_output_geometries_repaired": 0,
+      "field_count": 60,
+      "fields": [
+        "FOREST_FILE_ID",
+        "FEATURE_CODE",
+        "SITE_LOCATION",
+        "PROJECT_NAME",
+        "OPERATOR_LEGAL_FIRST_NAME",
+        "OPERATOR_CLIENT_NAME",
+        "OPERATOR_BUSINESS_PHONE",
+        "OPERATOR_HOME_PHONE",
+        "NUM_CAMP_SITES",
+        "RECREATION_MAINTAIN_STD_CODE",
+        "MAINTAIN_STD_DESC",
+        "DRIVING_DIRECTIONS",
+        "CLOSURE_DESCRIPTION",
+        "PROJECT_DESCRIPTION",
+        "ACTIVITY1",
+        "ACTIVITY_DESC1",
+        "ACTIVITY2",
+        "ACTIVITY_DESC2",
+        "ACTIVITY3",
+        "ACTIVITY_DESC3",
+        "MORE_ACTIVITY_IND",
+        "ACCESS1",
+        "ACCESS_DESC1",
+        "SUB_ACCESS1",
+        "SUB_ACCESS_DESC1",
+        "ACCESS2",
+        "ACCESS_DESC2",
+        "SUB_ACCESS2",
+        "SUB_ACCESS_DESC2",
+        "ACCESS3",
+        "ACCESS_DESC3",
+        "SUB_ACCESS3",
+        "SUB_ACCESS_DESC3",
+        "MORE_ACCESS_IND",
+        "STRUCTURE1",
+        "STRUCTURE_DESC1",
+        "STRUCTURE2",
+        "STRUCTURE_DESC2",
+        "STRUCTURE3",
+        "STRUCTURE_DESC3",
+        "STRUCTURE4",
+        "STRUCTURE_DESC4",
+        "STRUCTURE5",
+        "STRUCTURE_DESC5",
+        "STRUCTURE6",
+        "STRUCTURE_DESC6",
+        "STRUCTURE7",
+        "STRUCTURE_DESC7",
+        "STRUCTURE8",
+        "STRUCTURE_DESC8",
+        "STRUCTURE9",
+        "STRUCTURE_DESC9",
+        "STRUCTURE10",
+        "STRUCTURE_DESC10",
+        "MORE_STRUCTURE_IND",
+        "PROJECT_ESTABLISHED_DATE",
+        "RECREATION_DISTRICT_CODE",
+        "REC_DISTRICT_CODE_DESC",
+        "OBJECTID",
+        "SE_ANNO_CAD_DATA"
+      ],
+      "rule_hint_fields_present": [
+        "FOREST_FILE_ID",
+        "PROJECT_NAME",
+        "FEATURE_CODE",
+        "PROJECT_ESTABLISHED_DATE"
+      ],
+      "rule_hint_value_counts": {
+        "FOREST_FILE_ID": {
+          "REC3206": 1,
+          "REC0242": 1,
+          "REC3204": 1,
+          "REC16046": 1,
+          "REC16081": 1,
+          "REC16044": 1,
+          "REC3201": 1,
+          "REC3199": 1,
+          "REC3198": 1,
+          "REC16077": 1
+        },
+        "PROJECT_NAME": {
+          "O'Connell Lake": 1,
+          "Marble River": 1,
+          "Spruce Bay": 1,
+          "Eternal Fountain": 1,
+          "Beaver Lake": 1,
+          "Devils Bath": 1,
+          "Kathleen Lake": 1,
+          "Three Isle Lake": 1,
+          "Maynard Lake": 1,
+          "Clint Beek (Keogh Lake)": 1
+        },
+        "FEATURE_CODE": {
+          "FI91300010": 10
+        },
+        "PROJECT_ESTABLISHED_DATE": {
+          "2019-01-15Z": 5,
+          "2007-10-17Z": 4,
+          "2011-07-15Z": 1
+        }
+      },
+      "date_field_summaries": {
+        "PROJECT_ESTABLISHED_DATE": {
+          "non_null": 10,
+          "parseable": 10,
+          "min": "2007-10-17",
+          "max": "2019-01-15"
+        }
+      },
+      "sha256": "4886f512e00607595e555cf2ac3017ae86124d9a14cc2c67162e86668f666c71",
+      "read_smoke": "geopandas read_file succeeded after write",
+      "review_required_before_recipe": true,
+      "review_notes": "Materialized for source review only; point-buffer rules and relation to polygon/trail features remain unaccepted.",
+      "raw_runtime_path_used_for_materialization": "runtime\\bcdc_fetch\\p2_1_recreation\\WHSE_FOREST_TENURE_FTEN_REC_SITE_POINTS_SVW\\WHSE_FOREST_TENURE_FTEN_REC_SITE_POINTS_SVW.gpkg",
+      "raw_runtime_artifact_retained": false,
+      "fetch_command_note": "Fetched to transient runtime cache with femic data bcdc-fetch, then clipped/filtered to exact TFL 6 AOI; runtime cache removed after curated outputs were written and read-smoked."
+    },
+    {
+      "source_id": "recreation_details_closures_tfl6",
+      "dependency_rows": [
+        "tfl6_nd_130"
+      ],
+      "status": "materialized_for_review",
+      "bcdc_title": "Recreation Sites, Reserves, and Interpretive Forests Details and Closures",
+      "package_name": "recreation-sites-reserves-and-interpretive-forests-details-and-closures",
+      "dataset_page_url": "https://catalogue.data.gov.bc.ca/dataset/recreation-sites-reserves-and-interpretive-forests-details-and-closures",
+      "object_name": "WHSE_FOREST_TENURE.FTEN_REC_DTAILS_CLOSURES_SV",
+      "organization": "Recreation Sites and Trails BC",
+      "licence": "Open Government Licence - British Columbia",
+      "access_method": "OpenMaps WFS bbox fetch via femic data bcdc-fetch, exact AOI clip/filter via geopandas",
+      "fetch_query": "WHSE_FOREST_TENURE.FTEN_REC_DTAILS_CLOSURES_SV",
+      "raw_layer": "WHSE_FOREST_TENURE_FTEN_REC_DTAILS_CLOSURES_SV",
+      "raw_feature_count": 18,
+      "invalid_raw_geometries_repaired": 0,
+      "clip_method": "within_or_intersects",
+      "output_path": "data\\source\\tfl_6\\recreation\\recreation_details_closures_tfl6.gpkg",
+      "output_layer": "recreation_details_closures_tfl6",
+      "output_format": "GPKG",
+      "output_crs": "EPSG:3005",
+      "output_geometry_types": {
+        "Point": 13
+      },
+      "output_feature_count": 13,
+      "output_bounds": [
+        845055.1465,
+        593462.3763,
+        916873.0613,
+        623275.32
+      ],
+      "output_metric_name": "count",
+      "output_metric_value": 13,
+      "invalid_output_geometries_repaired": 0,
+      "field_count": 19,
+      "fields": [
+        "FTEN_RPD_SYSID",
+        "FOREST_FILE_ID",
+        "PROJECT_NAME",
+        "PROJECT_TYPE",
+        "CLOSURE_IND",
+        "CLOSURE_DATE",
+        "CLOSURE_TYPE",
+        "SITE_LOCATION",
+        "DEFINED_CAMPSITES",
+        "RECREATION_DISTRICT_CODE",
+        "RECREATION_DISTRICT_NAME",
+        "ORG_UNIT_NAME",
+        "CLOSURE_COMMENT",
+        "SITE_DESCRIPTION",
+        "DRIVING_DIRECTIONS",
+        "LATITUDE",
+        "LONGITUDE",
+        "OBJECTID",
+        "SE_ANNO_CAD_DATA"
+      ],
+      "rule_hint_fields_present": [
+        "FOREST_FILE_ID",
+        "PROJECT_NAME",
+        "PROJECT_TYPE",
+        "CLOSURE_IND",
+        "CLOSURE_DATE",
+        "CLOSURE_TYPE"
+      ],
+      "rule_hint_value_counts": {
+        "FOREST_FILE_ID": {
+          "REC16081": 1,
+          "REC16078": 1,
+          "REC3206": 1,
+          "REC3204": 1,
+          "REC0242": 1,
+          "REC16046": 1,
+          "REC16079": 1,
+          "REC3198": 1,
+          "REC3199": 1,
+          "REC3202": 1,
+          "REC16077": 1,
+          "REC16044": 1,
+          "REC3201": 1
+        },
+        "PROJECT_NAME": {
+          "Beaver Lake": 2,
+          "Cluxewe Beach Trail": 1,
+          "O'Connell Lake": 1,
+          "Spruce Bay": 1,
+          "Marble River": 1,
+          "Eternal Fountain": 1,
+          "Hecht Beach": 1,
+          "Maynard Lake": 1,
+          "Three Isle Lake": 1,
+          "Clint Beek (Keogh Lake)": 1,
+          "Devils Bath": 1,
+          "Kathleen Lake": 1
+        },
+        "PROJECT_TYPE": {
+          "SIT - Recreation Site": 8,
+          "RTR - Recreation Trail Reserve": 3,
+          "IF - Interpretative Forest": 2
+        },
+        "CLOSURE_IND": {
+          "N": 11,
+          "Y": 2
+        },
+        "CLOSURE_DATE": {
+          "<NA>": 11,
+          "2026-05-05Z": 1,
+          "2025-05-15Z": 1
+        },
+        "CLOSURE_TYPE": {
+          "<NA>": 13
+        }
+      },
+      "date_field_summaries": {
+        "CLOSURE_DATE": {
+          "non_null": 2,
+          "parseable": 2,
+          "min": "2025-05-15",
+          "max": "2026-05-05"
+        }
+      },
+      "sha256": "9e45df7445b0c4d02b60a6b5fcf244dbfc21638f3dc5d6ecc03d7eb4488b55c4",
+      "read_smoke": "geopandas read_file succeeded after write",
+      "review_required_before_recipe": true,
+      "review_notes": "Materialized as recreation attribution/context only; closure/detail fields are not accepted as geometry replacement or executable netdown semantics.",
+      "raw_runtime_path_used_for_materialization": "runtime\\bcdc_fetch\\p2_1_recreation\\WHSE_FOREST_TENURE_FTEN_REC_DTAILS_CLOSURES_SV\\WHSE_FOREST_TENURE_FTEN_REC_DTAILS_CLOSURES_SV.gpkg",
+      "raw_runtime_artifact_retained": false,
+      "fetch_command_note": "Fetched to transient runtime cache with femic data bcdc-fetch, then clipped/filtered to exact TFL 6 AOI; runtime cache removed after curated outputs were written and read-smoked."
+    }
+  ]
+}

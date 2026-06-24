@@ -807,3 +807,25 @@
 - accepted no established-OGMA or draft-OGMA netdown semantics, created no
   recipe YAML, ran no THLB netdown, generated no model inputs, and performed no
   Patchworks runtime work.
+
+## 2026-06-24 - Materialized recreation sources for review
+
+- materialized public recreation polygons, recreation trails, recreation site
+  points, and recreation details/closures clipped or filtered to the accepted
+  TFL 6 AOI;
+- wrote curated review artifacts under `data/source/tfl_6/recreation/`;
+- recorded provenance, source authority, transient fetch details, clipped or
+  filtered feature counts, area/length/count summaries, rule-critical fields,
+  date summaries, SHA-256 hashes, and read-smoke evidence in
+  `data/source/tfl_6/recreation/recreation_source_manifest.json`;
+- recorded `26` clipped recreation polygon features with `187.868 ha`, `3`
+  clipped recreation trail features with `1737.285 m`, `10` filtered site
+  points, and `13` filtered details/closures points;
+- preserved the review-only boundary: recreation class selection,
+  retirement/status handling, point/line/polygon overlap order, and the MP10
+  10 m buffer rule remain unaccepted;
+- updated `planning/tfl6_source_layer_dependency_inventory.md` and
+  `ROADMAP.md` so the next P2.1 materialization pass remains bounded to another
+  safe-to-clip source family, preferably LU/BEC strata; and
+- accepted no recreation netdown semantics, created no recipe YAML, ran no THLB
+  netdown, generated no model inputs, and performed no Patchworks runtime work.

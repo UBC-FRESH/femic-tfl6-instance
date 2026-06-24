@@ -47,7 +47,7 @@ reviewed aspatial or proxy treatment instead of public geometry.
 | `tfl6_nd_100` | `ogma_established` | Legal current OGMA, `WHSE_LAND_USE_PLANNING.RMP_OGMA_LEGAL_CURRENT_SVW` | Established OGMA overlay exclusion | Current legal OGMA materialized for review; current-vs-2011 vintage risk remains | Review clipped legal OGMA IDs, areas, dates, landscape units/proxies, overlap treatment, and MP10 established-OGMA consistency before executable exclusion. |
 | `tfl6_nd_110` | `ogma_draft_2011` | Current non-legal OGMA, `WHSE_LAND_USE_PLANNING.RMP_OGMA_NON_LEGAL_CURRENT_SVW`, plus historical/local draft OGMA geometry if found | Draft OGMA overlay or benchmark-calibrated fallback | Current non-legal OGMA materialized for review as a proxy candidate only; current-vs-2011 draft-state risk remains high | Review clipped non-legal OGMA IDs, dates, areas, and MP10 Table 11 consistency. Do not automatically treat this tiny current non-legal intersection as the 2011 draft OGMA deduction. |
 | `tfl6_nd_120` | `wha_orders` | Approved WHA, `WHSE_WILDLIFE_MANAGEMENT.WCP_WILDLIFE_HABITAT_AREA_POLY` | WHA overlay exclusion for listed WHA IDs | Approved WHA materialized for review | Review clipped WHA IDs, areas, overlap treatment, and MP10 consistency before executable exclusion. |
-| `tfl6_nd_130` | `recreation_features` | Recreation polygons `WHSE_FOREST_TENURE.FTEN_RECREATION_POLY_SVW`, recreation trails `WHSE_FOREST_TENURE.FTEN_REC_TRAILS_SVW`, recreation site points `WHSE_FOREST_TENURE.FTEN_REC_SITE_POINTS_SVW`, plus details/closures `WHSE_FOREST_TENURE.FTEN_REC_DTAILS_CLOSURES_SV` as attribution context | Recreation feature overlay with 10 m buffer | Public authority candidates identified; geometry/rule review still open | Materialize/clip the point/line/polygon recreation feature set and decide which geometry classes receive the MP10 10 m buffer. |
+| `tfl6_nd_130` | `recreation_features` | Recreation polygons `WHSE_FOREST_TENURE.FTEN_RECREATION_POLY_SVW`, recreation trails `WHSE_FOREST_TENURE.FTEN_REC_TRAILS_SVW`, recreation site points `WHSE_FOREST_TENURE.FTEN_REC_SITE_POINTS_SVW`, plus details/closures `WHSE_FOREST_TENURE.FTEN_REC_DTAILS_CLOSURES_SV` as attribution context | Recreation feature overlay with 10 m buffer | Recreation polygons, trails, site points, and details/closures materialized for review; geometry/rule review still open | Review clipped feature IDs/classes/status fields and decide which geometry classes receive MP10 recreation netdown treatment or 10 m buffers before executable use. |
 | `tfl6_nd_140` | `deciduous_leading_signal` from `vri_2025_r1_tfl6` and/or `vdyp7_2025_layer_tfl6` | Accepted 2025 VRI R1/VDYP7 species fields | Deciduous-leading attribute exclusion | Field mapping blocker | P2.2 define leading-species rule and deciduous/conifer species-code handling. |
 | `tfl6_nd_150` | `cultural_heritage_proxy` | Sensitive/local TUS/CMT data not expected as public source; MP10 Table 15 supports EFZ plus 1 km ocean-proximity proxy/aspatial treatment | Aspatial/proxy deduction | Reviewed fallback accepted; no sensitive public geometry search | Do not seek sensitive TUS/CMT geometry; use MP10 Table 15 / adjusted benchmark deduction unless a reviewed EFZ plus 1 km ocean-proximity proxy is explicitly implemented later. |
 | `tfl6_nd_160` | prior-step checkpoint | MP10 Table 4 | Report-only total operable reductions checkpoint | No source needed | Keep as validation row only. |
@@ -359,7 +359,7 @@ for review, not automatically accepted as executable THLB recipe logic.
 | `recreation_polygons_tfl6` | Recreation Polygons, `WHSE_FOREST_TENURE.FTEN_RECREATION_POLY_SVW` | `data/source/tfl_6/recreation/recreation_polygons_tfl6.gpkg` | verify polygon geometry; clipped feature count/area; key recreation identifiers retained | decide which polygon classes receive MP10 recreation netdown treatment. |
 | `recreation_trails_tfl6` | Recreation Trails, `WHSE_FOREST_TENURE.FTEN_REC_TRAILS_SVW` | `data/source/tfl_6/recreation/recreation_trails_tfl6.gpkg` | verify line geometry; clipped feature count/length; trail identifiers retained | decide trail classes and whether the MP10 10 m buffer applies. |
 | `recreation_site_points_tfl6` | Recreation Sites, `WHSE_FOREST_TENURE.FTEN_REC_SITE_POINTS_SVW` | `data/source/tfl_6/recreation/recreation_site_points_tfl6.gpkg` | verify point geometry; clipped feature count; site identifiers retained | decide point-buffer rules and relation to polygon recreation features. |
-| `recreation_details_closures_tfl6` | Recreation details/closures, `WHSE_FOREST_TENURE.FTEN_REC_DTAILS_CLOSURES_SV` | `data/source/tfl_6/recreation/recreation_details_closures_tfl6.parquet` or `.gpkg` depending on geometry/service evidence | verify table/geometry type; row count; join keys to recreation points/trails/polygons if present | attribution/context only unless a joinable contract is reviewed. |
+| `recreation_details_closures_tfl6` | Recreation details/closures, `WHSE_FOREST_TENURE.FTEN_REC_DTAILS_CLOSURES_SV` | `data/source/tfl_6/recreation/recreation_details_closures_tfl6.gpkg` | verify point geometry; row count; join keys to recreation points/trails/polygons if present | attribution/context only unless a joinable contract is reviewed. |
 | `landscape_units_tfl6` | Landscape Units of British Columbia - Current, `WHSE_LAND_USE_PLANNING.RMP_LANDSCAPE_UNIT_SVW` | `data/source/tfl_6/strata/landscape_units_tfl6.gpkg` | verify Holberg, Keogh, Mahatta, Marble, Neroutsos, San Josef, or other intersecting LU names as applicable; clipped areas | use for OGMA/RMZ/BEC stratification review, not as a netdown by itself. |
 | `bec_tfl6` | BEC Map, `WHSE_FOREST_VEGETATION.BEC_BIOGEOCLIMATIC_POLY` | `data/source/tfl_6/strata/bec_tfl6.gpkg` | verify BEC zone/subzone/variant fields; clipped areas by BEC unit; valid polygons | use for Table 16 and old-seral strata review. |
 | `dra_roads_tfl6` | Digital Road Atlas MPAR, `WHSE_BASEMAPPING.DRA_DGTL_ROAD_ATLAS_MPAR_SP` | `data/source/tfl_6/roads/dra_roads_tfl6.gpkg` | verify line geometry; clipped feature count/length; road class/status fields retained | decide MP10 existing-road width/buffer classes and keep future roads separate. |
@@ -600,6 +600,83 @@ Recipe boundary:
 - Current non-legal OGMA remains a draft-OGMA proxy candidate only; the tiny
   clipped intersection should not be treated as the MP10 draft-OGMA row without
   explicit recipe-readiness review.
+
+## First Recreation Materialization Pass
+
+This pass materialized the public recreation geometry and attribution/context
+candidates for source review only. It did not accept recreation buffer rules,
+create recipe YAML, or run THLB netdown.
+
+Command used:
+
+```powershell
+..\..\.venv\Scripts\python.exe -m femic data bcdc-fetch `
+  'WHSE_FOREST_TENURE.FTEN_RECREATION_POLY_SVW' `
+  'WHSE_FOREST_TENURE.FTEN_REC_TRAILS_SVW' `
+  'WHSE_FOREST_TENURE.FTEN_REC_SITE_POINTS_SVW' `
+  'WHSE_FOREST_TENURE.FTEN_REC_DTAILS_CLOSURES_SV' `
+  --bbox '841375.750,580345.507,928480.824,639356.277' `
+  --output-format gpkg `
+  --download-root runtime\bcdc_fetch\p2_1_recreation `
+  --manifest-path runtime\logs\p2_1_recreation_bcdc_fetch_manifest.json
+```
+
+Notes:
+
+- The bbox fetch returned `50` raw recreation polygon features, `3` raw trail
+  features, `15` raw site-point features, and `18` raw details/closures
+  features.
+- Runtime WFS outputs were used as transient cache only. Polygon and line
+  layers were clipped to the exact TFL 6 AOI; point layers were filtered to
+  intersect the exact TFL 6 AOI. Curated outputs were written, read-smoked, and
+  the transient cache was removed from `runtime/`.
+- Curated output manifest:
+  `data/source/tfl_6/recreation/recreation_source_manifest.json`.
+
+| Source ID | Curated output | Raw bbox features | TFL 6 clipped/filtered features | Metric | Status |
+| --- | --- | ---: | ---: | ---: | --- |
+| `recreation_polygons_tfl6` | `data/source/tfl_6/recreation/recreation_polygons_tfl6.gpkg`, layer `recreation_polygons_tfl6` | `50` | `26` | `187.868 ha` polygon area | materialized for review |
+| `recreation_trails_tfl6` | `data/source/tfl_6/recreation/recreation_trails_tfl6.gpkg`, layer `recreation_trails_tfl6` | `3` | `3` | `1737.285 m` line length | materialized for review |
+| `recreation_site_points_tfl6` | `data/source/tfl_6/recreation/recreation_site_points_tfl6.gpkg`, layer `recreation_site_points_tfl6` | `15` | `10` | `10` points | materialized for review |
+| `recreation_details_closures_tfl6` | `data/source/tfl_6/recreation/recreation_details_closures_tfl6.gpkg`, layer `recreation_details_closures_tfl6` | `18` | `13` | `13` points | materialized for attribution/context review |
+
+Read-smoke and QA:
+
+- all four curated outputs read successfully with geopandas;
+- all outputs are EPSG:3005;
+- recreation polygons read back as multipolygon geometries;
+- recreation trails read back as multiline geometries;
+- site points and details/closures read back as point geometries;
+- all curated output geometries are valid after clipping/filtering;
+- output bounds are inside the accepted TFL 6 AOI bbox; and
+- each output has a SHA-256 hash recorded in
+  `data/source/tfl_6/recreation/recreation_source_manifest.json`.
+
+Rule-critical field notes:
+
+- polygon outputs retain `FOREST_FILE_ID`, `SECTION_ID`, `PROJECT_TYPE`,
+  `MAP_LABEL`, `PROJECT_NAME`, `RECREATION_FEATURE_CODE`,
+  `RESOURCE_FEATURE_IND`, `LIFE_CYCLE_STATUS_CODE`, `FILE_STATUS_CODE`,
+  `RETIREMENT_DATE`, `PROJECT_ESTABLISHED_DATE`, `FEATURE_AREA_SQM`, and
+  `FEATURE_LENGTH_M`;
+- trail outputs retain `FOREST_FILE_ID`, `PROJECT_NAME`,
+  `RECREATION_FEATURE_CODE`, `RESOURCE_FEATURE_IND`,
+  `LIFE_CYCLE_STATUS_CODE`, `FILE_STATUS_CODE`, and `FEATURE_LENGTH_M`;
+- site-point outputs retain `FOREST_FILE_ID`, `FEATURE_CODE`,
+  `PROJECT_NAME`, `PROJECT_ESTABLISHED_DATE`, and activity/access/structure
+  fields; and
+- details/closures outputs retain `FOREST_FILE_ID`, `PROJECT_NAME`,
+  `PROJECT_TYPE`, `CLOSURE_IND`, `CLOSURE_DATE`, `CLOSURE_TYPE`, and
+  descriptive/context fields.
+
+Recipe boundary:
+
+- These layers are source-review artifacts only.
+- Recreation class selection, retirement/status handling, point/line/polygon
+  overlap order, and the MP10 10 m buffer rule remain unaccepted until
+  recipe-readiness review.
+- The details/closures layer is attribution/context only unless a later
+  reviewed join or geometry rule accepts it for executable use.
 
 ## Non-Goals
 
