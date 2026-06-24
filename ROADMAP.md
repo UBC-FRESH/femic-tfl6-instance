@@ -74,7 +74,7 @@
     TFL/general-FMU adaptation gaps.
   - [x] P1.7d Draft source-layer and THLB netdown recipe skeletons or planning
     tables without executing recipes.
-- [ ] P1.8 Plan next roadmap phases and issue tree (`#11`).
+- [x] P1.8 Plan next roadmap phases and issue tree (`#11`).
   - [x] P1.8a Draft proposed Phase 2 through at least Phase 5 sections in this
     roadmap.
   - [x] P1.8b Create one GitHub parent issue per proposed phase.
@@ -83,7 +83,7 @@
   - [x] P1.8d Record dependency order across source-layer/THLB work, cedar
     design, expansion design, model-input generation, Patchworks runtime build,
     QA/publication, and teaching docs.
-  - [ ] P1.8e Place existing follow-on issues `#8`, `#9`, and `#10` into the
+  - [x] P1.8e Place existing follow-on issues `#8`, `#9`, and `#10` into the
     planned phase structure or explicitly defer them.
 
 ## Proposed Phase 2: Reviewed Source Layers and THLB Netdown (`#12`)
@@ -181,12 +181,24 @@ model-input generation, XML/Matrix Builder work, runtime packaging,
 publication, and teaching documentation should not be bundled into one
 "next slice" unless the maintainer explicitly broadens scope.
 
+## Follow-on Issue Placement
+
+The Phase 1 follow-on issues are placed into the future roadmap as follows:
+
+- Cedar-signal design `#8` is Phase 3 model-design work and is listed as P3.1
+  under Phase 3 parent `#13`.
+- Expansion candidate-area design `#9` is Phase 3 model-design work and is
+  listed as P3.2 under Phase 3 parent `#13`.
+- Patchworks runtime-package build/QA `#10` is Phase 4 runtime-package work and
+  is listed as P4.4 under Phase 4 parent `#14`, downstream of P4.1 model-input
+  bundle construction `#17`.
+
 ## Current Next Steps
 
-1. Continue `P1.8e` / `#11`: place existing follow-on issues `#8`, `#9`, and
-   `#10` into the planned phase structure or explicitly defer them.
-2. Synchronize P1.8 closeout state after `#8`, `#9`, and `#10` are placed or
-   explicitly deferred.
-3. Keep follow-on implementation issues `#8`, `#9`, and `#10` open but idle
-   until P1.8 places them into the planned phase structure or the maintainer
-   explicitly approves a parallel lane.
+1. Start Phase 2 with P2.1 / `#16`: resolve and materialize the TFL 6 THLB
+   source layers needed by the first executable netdown lane.
+2. Keep Phase 3 design issues `#8` and `#9` idle until Phase 2 source-layer and
+   THLB dependencies are accepted or the maintainer explicitly approves a
+   narrower parallel design slice.
+3. Keep Phase 4 runtime issue `#10` idle until Phase 2, Phase 3, and P4.1
+   prerequisites are accepted.

@@ -521,3 +521,17 @@
   bundle construction; and
 - kept P1.8 open for P1.8e placement/defer synchronization of `#8`, `#9`, and
   `#10`.
+
+## 2026-06-23 - Placed Phase 1 follow-on issues in future phases
+
+- completed P1.8e by placing existing follow-on issues `#8`, `#9`, and `#10`
+  into the future phase structure instead of leaving them as unsequenced work;
+- placed cedar-signal design `#8` and expansion candidate-area design `#9`
+  under Phase 3 parent `#13`;
+- placed Patchworks runtime-package build/QA `#10` under Phase 4 parent `#14`,
+  downstream of model-input bundle task `#17`;
+- added a `Follow-on Issue Placement` section to `ROADMAP.md`;
+- marked P1.8 complete in `ROADMAP.md`; and
+- moved Current Next Steps to P2.1 `#16` while keeping Phase 3 and Phase 4
+  implementation lanes idle until their dependencies are accepted or explicitly
+  narrowed.
