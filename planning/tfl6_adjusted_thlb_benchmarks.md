@@ -25,6 +25,12 @@ working benchmark strategy is to scale MP10 Table 4 to the accepted current
 FADM AOI. The scale factor uses the accepted current AOI area rather than the
 rounded Instrument 101 map-label addition total.
 
+This is intentionally good-enough benchmark logic for a teaching and learning
+instance. The remaining area mismatch may reflect smaller net-outs, parcel
+cleanup, boundary-vintage differences, or other post-MP10 tenure changes. A
+possible K3Z/community-forest carve-out is noted as an unverified candidate,
+not as an accepted fact.
+
 ## Scaled Benchmarks
 
 | Step ID | MP10 row / action | FEMIC stage | MP10 reduction ha | MP10 cumulative ha | Scaled reduction ha | Scaled cumulative ha |
@@ -69,3 +75,5 @@ rounded Instrument 101 map-label addition total.
   source layers and recipe skeletons are reviewed.
 - Keep the historical MP10 Table 4 values visible alongside these adjusted
   targets in reports.
+- Do not use these scaled values as final lock values for legal/accounting
+  reconciliation.

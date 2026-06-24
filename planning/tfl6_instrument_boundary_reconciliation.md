@@ -78,6 +78,14 @@ difference: the map-labelled additions exceed the observed AOI delta by about
 TFL 6 geometry against the instrument map, timber-licence parcels, and any
 post-2015 boundary cleanups or exclusions.
 
+For the teaching-instance build, this is close enough to use Instrument 101 as
+the working explanation for scaling MP10 Table 4 to current-AOI validation
+targets. The remaining difference may reflect smaller boundary edits, parcel
+exclusions, measurement/vintage differences, or other post-MP10 tenure changes.
+One unverified candidate to keep in mind is a possible later K3Z/community
+forest carve-out from TFL 6; do not treat that as established fact unless a
+source document or boundary overlay confirms it.
+
 ## Metadata Surfaces Updated
 
 Updated reference metadata:

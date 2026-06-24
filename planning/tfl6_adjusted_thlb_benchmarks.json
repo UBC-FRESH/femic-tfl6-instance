@@ -20,12 +20,17 @@
     ],
     "addition_area_total_ha": 46708,
     "interpretation": "Instrument 101 explains most or all of the current-vs-MP10 AOI delta; scaling uses the accepted current FADM AOI rather than the rounded map addition total.",
-    "planning_note": "planning/tfl6_instrument_boundary_reconciliation.md"
+    "planning_note": "planning/tfl6_instrument_boundary_reconciliation.md",
+    "residual_delta_interpretation": "Instrument 101 is close enough for teaching-instance benchmark scaling, but the residual area mismatch may reflect smaller net-outs, parcel cleanup, boundary-vintage differences, or other post-MP10 tenure changes.",
+    "unverified_residual_candidates": [
+      "possible K3Z/community-forest carve-out from TFL 6 after MP10 and before or around the current FADM boundary vintage"
+    ]
   },
   "caveats": [
     "These values are provisional validation targets, not accepted reconstructed THLB outputs.",
     "Uniform scaling assumes the 2015 addition areas have similar netdown proportions to the 2011 MP10 landbase.",
-    "Spatial recipe outputs should eventually replace these scaled targets when current-AOI source layers are resolved."
+    "Spatial recipe outputs should eventually replace these scaled targets when current-AOI source layers are resolved.",
+    "Do not use these scaled values as final lock values for legal/accounting reconciliation."
   ],
   "benchmarks": [
     {

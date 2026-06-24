@@ -348,3 +348,13 @@
   current THLB, and `134598.870 ha` long-term landbase; and
 - kept the scaled targets explicitly non-authoritative until spatial current
   AOI recipe outputs supersede them.
+
+## 2026-06-23 - Clarified adjusted benchmark residual-delta caveat
+
+- recorded that Instrument 101 is close enough to use as the working
+  explanation for current-AOI benchmark scaling in the teaching instance;
+- noted that the remaining GLB-area mismatch may reflect smaller net-outs,
+  parcel cleanup, boundary-vintage differences, or other post-MP10 tenure
+  changes; and
+- recorded a possible K3Z/community-forest carve-out as an unverified candidate
+  only, not as accepted boundary evidence.
