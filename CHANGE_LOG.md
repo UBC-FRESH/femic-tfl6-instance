@@ -283,3 +283,15 @@
   the retained VDYP7 polygon table; and
 - recorded missing R1-to-VDYP diagnostics for downstream inventory and THLB
   recipe work.
+
+## 2026-06-23 - Accepted the TFL 6 input-layer manifest
+
+- wrote `data/input/tfl_6/input_layers_manifest.json` as the accepted input
+  manifest for the active TFL 6 AOI;
+- recorded the accepted TFL 6 boundary, clipped 2025 R1 polygon layer,
+  filtered 2025 VDYP7 polygon table, and filtered 2025 VDYP7 layer table;
+- updated source-inventory and K3Z adaptation notes so the original FDU 1/2/3
+  AOI is historical provenance only, not the active model extraction boundary;
+- marked `P1.6` complete in the roadmap; and
+- unblocked reviewed source-layer and THLB netdown recipe planning under `#7`
+  without starting recipe execution or Patchworks runtime-package work.

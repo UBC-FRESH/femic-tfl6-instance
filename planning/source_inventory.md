@@ -277,9 +277,10 @@ Pivot status:
 - This FDU 1/2/3 source inventory remains valid provenance for the original
   NICF FSP bootstrap lane.
 - It is no longer the active model extraction AOI.
-- `P1.6` now governs the active TFL 6 AOI contract, and `P1.6a` will
-  materialize `data/source/tfl_6/aoi/tfl_6_boundary.gpkg` before the run
-  profile boundary path is switched.
+- `P1.6` accepted TFL 6 as the active AOI, materialized
+  `data/source/tfl_6/aoi/tfl_6_boundary.gpkg`, clipped the 2025 R1 inventory,
+  filtered the 2025 VDYP7 tables, and recorded
+  `data/input/tfl_6/input_layers_manifest.json`.
 
 Accepted tracked source path:
 `data/source/nicf_fsp/aoi/nicf_fsp_aoi.shp`
@@ -308,12 +309,12 @@ Verification:
 Interpretation:
 
 - This extracted lowercase shapefile family is the accepted canonical source
-  path for the pre-pivot bootstrap NICF FSP AOI.
+  path for the pre-pivot bootstrap NICF FSP AOI only.
 - The original zip remains tracked as raw provenance for all six amendment
   features.
-- `config/run_profile.nicffsp.yaml` still points `selection.boundary_path` at
-  this pre-pivot source path only as a temporary bootstrap path until the TFL 6
-  boundary is materialized under `P1.6a`.
+- `config/run_profile.nicffsp.yaml` now points `selection.boundary_path` at
+  `data/source/tfl_6/aoi/tfl_6_boundary.gpkg`; do not use this pre-pivot FDU
+  path as the active AOI for current model extraction.
 
 ## Canonical Extracted LU Reference Source
 
@@ -325,8 +326,8 @@ Decision:
   context: Holberg, Keogh, and Marble.
 - Keep the full 27-feature BCGW LU zip as raw provenance/context.
 - Do not use the LU reference layer as the runtime AOI. The pre-pivot bootstrap
-  AOI remains `data/source/nicf_fsp/aoi/nicf_fsp_aoi.shp` until `P1.6a`
-  materializes the active TFL 6 boundary.
+  AOI has been superseded by the active TFL 6 boundary materialized under
+  `P1.6a`.
 
 Accepted tracked source path:
 `data/source/nicf_fsp/lu_reference/nicf_lu_reference.shp`
@@ -362,6 +363,33 @@ Interpretation:
   `selection.source_context.lu_reference_path`; the current FEMIC runtime
   consumes `selection.boundary_path` directly and carries LU reference context
   as provenance while TFL 6 becomes the active extraction AOI.
+
+## Active TFL 6 Input Layer Set
+
+Acceptance date: 2026-06-23
+
+Governing issue: `#6`
+
+Accepted manifest:
+`data/input/tfl_6/input_layers_manifest.json`
+
+Accepted active model extraction inputs:
+
+| Role | Path |
+| --- | --- |
+| Active TFL 6 AOI boundary | `data/source/tfl_6/aoi/tfl_6_boundary.gpkg` |
+| TFL 6-clipped 2025 R1 polygon inventory | `data/input/tfl_6/vri_2025_r1_poly_tfl6.gpkg` |
+| TFL 6-filtered 2025 VDYP7 polygon table | `data/input/tfl_6/vdyp7_input_poly_2025_tfl6.parquet` |
+| TFL 6-filtered 2025 VDYP7 layer table | `data/input/tfl_6/vdyp7_input_layer_2025_tfl6.parquet` |
+
+Interpretation:
+
+- TFL 6 is the active AOI for current model extraction and recipe planning.
+- The FDU 1/2/3 AOI and Holberg/Keogh/Marble LU reference layers remain
+  historical provenance for the original NICF FSP bootstrap lane.
+- The active input manifest unblocks reviewed source-layer and THLB netdown
+  recipe planning under `#7`; it does not, by itself, authorize Patchworks
+  runtime-package construction.
 
 ## TFL 6 Management Plan 10 Information Package Reference
 

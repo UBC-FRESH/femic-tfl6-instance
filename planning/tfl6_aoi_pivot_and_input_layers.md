@@ -202,6 +202,32 @@ the retained rows because every retained VDYP7 polygon row belongs to the TFL
 6 R1 feature-id set, and every retained VDYP7 layer row belongs to a retained
 VDYP7 polygon feature.
 
+## Accepted Input-Layer Manifest
+
+`P1.6d` accepted the TFL 6 input-layer set for downstream source-layer and THLB
+recipe planning.
+
+Manifest:
+
+- `data/input/tfl_6/input_layers_manifest.json`
+
+Accepted active inputs:
+
+| Role | Accepted path | Key QA |
+| --- | --- | --- |
+| Active AOI boundary | `data/source/tfl_6/aoi/tfl_6_boundary.gpkg` | 182 EPSG:3005 features, `217042.718950 ha`, all valid |
+| Clipped R1 polygon inventory | `data/input/tfl_6/vri_2025_r1_poly_tfl6.gpkg` | `26959` EPSG:3005 MultiPolygon rows, all valid, `26959` unique `feature_id` values |
+| Filtered VDYP7 polygon table | `data/input/tfl_6/vdyp7_input_poly_2025_tfl6.parquet` | `26833` rows, `26833` unique `feature_id` values, no feature IDs outside clipped R1 |
+| Filtered VDYP7 layer table | `data/input/tfl_6/vdyp7_input_layer_2025_tfl6.parquet` | `25585` rows, `25356` unique `feature_id` values, no feature IDs outside retained VDYP7 polygon table |
+
+The active AOI is TFL 6. The original FDU 1/2/3 boundary remains tracked as
+historical bootstrap provenance only and must not be used as the active model
+extraction boundary unless a future task explicitly reopens that decision.
+
+This completes the `#6` input-layer acceptance dependency for `#7` planning.
+It does not authorize Patchworks runtime-package construction; that still needs
+reviewed source-layer/THLB assumptions and the P1.4 runtime-package issue lane.
+
 ## Validation Requirements
 
 The `#6` implementation should record:
@@ -220,11 +246,14 @@ The `#6` implementation should record:
     (complete)
   - no duplicate records violate the expected source table keys; (complete)
 - whether clipped outputs are tracked directly in the instance repo or moved to
-  `external/femic-public-data` if they are too large for normal git.
+  `external/femic-public-data` if they are too large for normal git. (complete:
+  currently tracked directly in the instance repo)
 
 ## Non-Goals
 
 - Do not delete the FDU 1/2/3 source files.
-- Do not start THLB netdown recipe extraction inside the clipping issue.
+- Do not start THLB netdown recipe extraction inside the clipping issue. The
+  accepted input manifest only unblocks reviewed recipe planning under `#7`.
 - Do not start Patchworks runtime-package compilation from these inputs until
-  the input-layer manifest has been accepted.
+  reviewed source-layer/THLB assumptions exist and the P1.4 runtime-package
+  issue lane is open.

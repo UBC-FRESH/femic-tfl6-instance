@@ -44,14 +44,14 @@
     evidence for both materialized packages.
   - [ ] P1.5d Record DataLad/git-annex/public-data publication status and the
     downstream extraction handoff to the accepted active AOI issue.
-- [ ] P1.6 Pivot active AOI to TFL 6 and clip 2025 VRI inputs (`#6`).
+- [x] P1.6 Pivot active AOI to TFL 6 and clip 2025 VRI inputs (`#6`).
   - [x] P1.6a Fetch and normalize the authoritative TFL 6 boundary from
     `WHSE_ADMIN_BOUNDARIES.FADM_TFL`.
   - [x] P1.6b Clip the 2025 VRI R1 polygon source to TFL 6 and record geometry
     QA.
   - [x] P1.6c Filter the 2025 VDYP7 polygon and layer tables to the TFL 6
     feature-id set and verify key integrity.
-  - [ ] P1.6d Record the accepted TFL 6 input-layer manifest and mark the
+  - [x] P1.6d Record the accepted TFL 6 input-layer manifest and mark the
     original FDU 1/2/3 AOI as superseded for active model extraction.
 - [ ] P1.7 Plan TFL 6 source-layer and THLB netdown recipes from 2011 documents
   (`#7`).
@@ -66,11 +66,10 @@
 
 ## Current Next Steps
 
-1. Start `P1.6d` / `#6`: record the accepted TFL 6 input-layer manifest,
-   including the boundary, clipped R1 polygon layer, filtered VDYP7 polygon
-   table, and filtered VDYP7 layer table.
+1. Start `P1.7b` / `#7`: review the 2011 TFL 6 management plan and
+   information package for land-base, source-layer, yield, and THLB netdown
+   assumptions now that the TFL 6 input layers are accepted.
 2. Continue `P1.5` / `#5`: record public-data remote publication status for
    the provincial 2025 VRI source archives.
-3. Start `P1.7` / `#7`: review the 2011 TFL 6 management plan and information
-   package for source-layer and THLB netdown recipe candidates after the TFL 6
-   input layers are accepted.
+3. Continue `P1.4` / `#2`: split the cedar-signal, expansion-candidate, and
+   Patchworks runtime-package design lanes into their own follow-on issues.

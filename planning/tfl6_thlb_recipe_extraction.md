@@ -111,13 +111,20 @@ The `#7` review should answer:
 
 ## Dependency
 
-Do not execute THLB recipe steps until `#6` has accepted:
+`#6` accepted the active TFL 6 input-layer dependency in `P1.6d`:
 
 - TFL 6 AOI boundary;
 - clipped 2025 R1 polygon input;
 - filtered 2025 VDYP7 polygon table;
 - filtered 2025 VDYP7 layer table; and
 - input-layer manifest.
+
+Accepted input manifest:
+`data/input/tfl_6/input_layers_manifest.json`
+
+Reviewed source-layer and THLB netdown recipe planning can now start under
+`#7`. Recipe execution remains out of scope until reviewed assumptions and
+recipe surfaces exist.
 
 ## Non-Goals
 

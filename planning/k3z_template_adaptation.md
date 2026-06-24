@@ -94,9 +94,9 @@ Observed K3Z template state:
 
 Observed NICF bootstrap state:
 
-- `run_profile.nicffsp.yaml` still uses the pre-pivot FSP AOI boundary path
-  `data/source/nicf_fsp/aoi/nicf_fsp_aoi.shp` as a temporary bootstrap path and
-  records LU reference context at
+- `run_profile.nicffsp.yaml` now uses the active TFL 6 boundary path
+  `data/source/tfl_6/aoi/tfl_6_boundary.gpkg`, layer `tfl_6_boundary`, and
+  records pre-pivot LU reference context at
   `data/source/nicf_fsp/lu_reference/nicf_lu_reference.shp`.
 - NICF does not yet have a compiled `data/model_input_bundle/`.
 - NICF does not yet have a `models/` Patchworks package.
@@ -141,7 +141,8 @@ Accepted first-boundary settings in `config/run_profile.nicffsp.yaml`:
 
 | Field | Accepted value | Rationale |
 | --- | --- | --- |
-| `selection.boundary_path` | `data/source/nicf_fsp/aoi/nicf_fsp_aoi.shp` | Historical pre-pivot FDU 1-3 bootstrap AOI from P1.2; `P1.6a` must materialize TFL 6 before this path is switched. |
+| `selection.boundary_path` | `data/source/tfl_6/aoi/tfl_6_boundary.gpkg` | Active TFL 6 AOI boundary accepted under P1.6. The P1.2 FDU 1-3 bootstrap AOI remains provenance only. |
+| `selection.boundary_layer` | `tfl_6_boundary` | GeoPackage layer for the active TFL 6 AOI boundary. |
 | `selection.boundary_code` | `nicffsp` | Case code for the custom-boundary lane. |
 | `selection.stratification.bec_grouping` | `subzone` | Carries forward the K3Z teaching-template structure and keeps the first AU design inspectable. |
 | `selection.stratification.species_combo_count` | `2` | Carries forward the K3Z two-species teaching simplification for the first bundle. |
@@ -237,9 +238,9 @@ start:
 
 | Surface | Minimum expected artifact | Purpose | Boundary |
 | --- | --- | --- | --- |
-| Bootstrap AOI boundary | `data/source/nicf_fsp/aoi/nicf_fsp_aoi.shp` | Defines the pre-pivot custom-boundary compile extent. | Complete from P1.2 as provenance; active TFL 6 boundary is governed by P1.6. |
+| Active AOI boundary | `data/source/tfl_6/aoi/tfl_6_boundary.gpkg` | Defines the current TFL 6 compile extent. | Complete from P1.6; pre-pivot FDU 1-3 boundary remains provenance only. |
 | LU/FDU reference context | `data/source/nicf_fsp/lu_reference/nicf_lu_reference.shp` plus FDU identifiers from AOI source | Supports FDU/LU reporting, objectives, and diagnostics. | Complete as source context; downstream tables must preserve FDU/LU attribution. |
-| Source-resolved inventory checkpoint | NICF AOI-clipped VRI/forest inventory checkpoint under `data/` | Provides the raw stand/polygon base for AU construction. | Must be generated from FEMIC source data, not copied from K3Z. |
+| Source-resolved inventory checkpoint | `data/input/tfl_6/input_layers_manifest.json` plus accepted TFL 6 R1/VDYP inputs | Provides the raw stand/polygon base for AU construction. | Accepted from P1.6 as the source-layer planning input surface; bundle contents must still be generated from FEMIC source data, not copied from K3Z. |
 | Stratification/AU diagnostics | selected-strata summary, AU summary, and missing-assignment/null-assignment reports under `runtime/logs/` or `evidence/` | Proves the first run-profile defaults produce inspectable AU families. | Required before accepting any first bundle. |
 | Model-input bundle tables | `data/model_input_bundle/au_table.csv`, `curve_table.csv`, and `curve_points_table.csv` | Pre-Patchworks handoff contract inherited structurally from K3Z. | Contents must be NICF-derived and pass row/key sanity checks. |
 | Managed-curve inputs | BatchTIPSY input/output or explicitly bracketed provisional managed-curve evidence | Supports `managed_curve_mode: tipsy`. | TIPSY rule content remains FRST 558 review-required before accepted teaching outputs. |

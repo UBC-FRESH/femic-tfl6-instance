@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-06-24T00:41:07.476940+00:00",
+  "governing_issue": "UBC-FRESH/femic-tfl6-instance#6",
+  "phase_task": "P1.6d",
+  "aoi": {
+    "name": "Tree Farm Licence 6",
+    "short_code": "tfl_6",
+    "status": "accepted_active_aoi",
+    "supersedes": {
+      "name": "NICF FSP FDU 1/2/3 bootstrap AOI",
+      "path": "data/source/nicf_fsp/aoi/nicf_fsp_aoi.shp",
+      "status": "historical_provenance_only"
+    }
+  },
+  "source_archives": {
+    "vri_r1_polygon_2025": {
+      "parent_repo_path": "external/femic-public-data/data/bc/vri/2025/VEG_COMP_LYR_R1_POLY_2025.gdb.zip",
+      "source_layer": "VEG_COMP_LYR_R1_POLY",
+      "reported_source_feature_count": 7154522
+    },
+    "vdyp7_input_poly_and_layer_2025": {
+      "parent_repo_path": "external/femic-public-data/data/bc/vri/2025/VEG_COMP_VDYP7_INPUT_POLY_AND_LAYER_2025.gdb.zip",
+      "sha256": "7aa76ad6fdfcf0f40b97092a7adeea9595b0ad9e6a68e28ee798faf8568ef68b",
+      "size_bytes": 403304406,
+      "source_tables": [
+        "VEG_COMP_VDYP7_INPUT_POLY",
+        "VEG_COMP_VDYP7_INPUT_LAYER"
+      ]
+    }
+  },
+  "accepted_layers": {
+    "tfl6_boundary": {
+      "role": "active_aoi_boundary",
+      "path": "data/source/tfl_6/aoi/tfl_6_boundary.gpkg",
+      "layer": "tfl_6_boundary",
+      "format": "GeoPackage",
+      "sha256": "b581b378f16ed168e918699b6abc34a38fda7c2aa13e27c944aa2eeb78561d42",
+      "size_bytes": 778240,
+      "crs": "EPSG:3005",
+      "feature_count": 182,
+      "valid_geometry_count": 182,
+      "invalid_geometry_count": 0,
+      "bounds": [
+        841375.75,
+        580345.507,
+        928480.824,
+        639356.277
+      ],
+      "union_area_ha": 217042.71895,
+      "source": "WHSE_ADMIN_BOUNDARIES.FADM_TFL where FOREST_FILE_ID = TFL6"
+    },
+    "vri_2025_r1_poly_tfl6": {
+      "role": "clipped_2025_vri_r1_polygon",
+      "path": "data/input/tfl_6/vri_2025_r1_poly_tfl6.gpkg",
+      "layer": "vri_2025_r1_poly_tfl6",
+      "format": "GeoPackage",
+      "qa_manifest": "data/input/tfl_6/vri_2025_r1_poly_tfl6_clip_manifest.json",
+      "sha256": "8146651b1a3d2c2edf7f433897f082e9016722116748d61056697e456b68f27c",
+      "size_bytes": 52469760,
+      "crs": "EPSG:3005",
+      "feature_count": 26959,
+      "unique_feature_ids": 26959,
+      "null_feature_id_count": 0,
+      "bounds": [
+        841375.75,
+        580345.507,
+        928480.824,
+        639356.277
+      ],
+      "area_ha": 217042.71895,
+      "valid_geometry_count": 26959,
+      "invalid_geometry_count": 0,
+      "clip_method": "bbox-read provincial R1 by TFL 6 bounds, then exact intersection with dissolved TFL 6 boundary"
+    },
+    "vdyp7_input_poly_2025_tfl6": {
+      "role": "filtered_2025_vdyp7_polygon_table",
+      "path": "data/input/tfl_6/vdyp7_input_poly_2025_tfl6.parquet",
+      "format": "Parquet",
+      "qa_manifest": "data/input/tfl_6/vdyp7_input_2025_tfl6_filter_manifest.json",
+      "sha256": "4f21a9b47b562e8f05f78f35a41b591b64fba2794af97206a6848868958f07e8",
+      "size_bytes": 592177,
+      "source_table": "VEG_COMP_VDYP7_INPUT_POLY",
+      "source_rows_scanned": 7104182,
+      "retained_rows": 26833,
+      "unique_feature_ids": 26833,
+      "null_feature_id_count": 0,
+      "duplicate_feature_id_count": 0,
+      "feature_ids_outside_r1_count": 0,
+      "r1_feature_ids_without_poly_row_count": 126
+    },
+    "vdyp7_input_layer_2025_tfl6": {
+      "role": "filtered_2025_vdyp7_layer_table",
+      "path": "data/input/tfl_6/vdyp7_input_layer_2025_tfl6.parquet",
+      "format": "Parquet",
+      "qa_manifest": "data/input/tfl_6/vdyp7_input_2025_tfl6_filter_manifest.json",
+      "sha256": "b09dcc4479ec6722a20c0eeb636d63fea543b40cbccca187cab2ca32fd847152",
+      "size_bytes": 920526,
+      "source_table": "VEG_COMP_VDYP7_INPUT_LAYER",
+      "source_rows_scanned": 7608054,
+      "retained_rows": 25585,
+      "unique_feature_ids": 25356,
+      "null_feature_id_count": 0,
+      "feature_ids_outside_r1_count": 0,
+      "feature_ids_outside_vdyp_poly_count": 0,
+      "vdyp_poly_feature_ids_without_layer_row_count": 1477,
+      "rows_per_feature_id_min": 1,
+      "rows_per_feature_id_max": 2,
+      "layer_level_code_counts": {
+        "1": 25082,
+        "nan": 274,
+        "2": 229
+      }
+    }
+  },
+  "join_contract": {
+    "primary_inventory_key": "feature_id",
+    "source_inventory_field": "feature_id",
+    "vdyp_source_field": "FEATURE_ID",
+    "normalized_output_field": "feature_id",
+    "r1_feature_ids": 26959,
+    "vdyp_poly_feature_ids": 26833,
+    "vdyp_layer_feature_ids": 25356,
+    "retained_vdyp_feature_ids_outside_r1": 0,
+    "retained_vdyp_layer_feature_ids_outside_poly": 0,
+    "known_diagnostics": [
+      "126 clipped R1 feature IDs have no retained VDYP7 polygon row.",
+      "1477 retained VDYP7 polygon feature IDs have no retained VDYP7 layer row."
+    ]
+  },
+  "acceptance": {
+    "ready_for_source_layer_recipe_planning": true,
+    "ready_for_thlb_recipe_planning": true,
+    "ready_for_patchworks_runtime_package": false,
+    "patchworks_runtime_package_blocker": "P1.7 source-layer/THLB recipe review and P1.4 runtime-package issue split are still open."
+  }
+}
