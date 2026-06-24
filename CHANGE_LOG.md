@@ -617,3 +617,24 @@
   it returned an unrelated North Coast riparian-management-zone dataset; and
 - updated `ROADMAP.md` Current Next Steps to point at historical/fallback
   decisions and source-materialization planning before any downloads.
+
+## 2026-06-24 - Recorded P2.1 historical fallback decisions
+
+- recorded provisional teaching fallback decisions for the remaining P2.1
+  historical/fallback rows without downloading or materializing source layers;
+- kept 1999 WFP operability as historical/local-source evidence only and
+  accepted MP10 Table 8 / adjusted benchmark as an aspatial fallback until
+  local operability geometry is found;
+- preserved the MP10 40 m ocean-shoreline rule while keeping coarse NTS
+  coastline as a teaching candidate requiring review;
+- kept current non-legal OGMA as a review clue only and accepted MP10 Table 11
+  / adjusted benchmark as the draft-OGMA fallback until historical geometry is
+  found;
+- accepted LU/BEC public candidates while keeping RMZ geometry/schema
+  unresolved and recording MP10 Table 16 as a reviewed percent-by-stratum
+  fallback;
+- recorded MP10 Table 15 cultural heritage as an aspatial/proxy fallback and
+  confirmed that sensitive TUS/CMT geometry should not be sought as public
+  input; and
+- updated `ROADMAP.md` Current Next Steps to point at a P2.1
+  source-materialization plan before any downloads or THLB execution.

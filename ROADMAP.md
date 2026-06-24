@@ -202,9 +202,10 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    OGMA now have first public authority candidates. Recreation features,
    landscape units, and BEC now also have first public authority candidates.
    Operability, shoreline rule choice, draft OGMA, RMZ schema, and cultural
-   heritage proxy handling remain unresolved review/fallback items. The next
-   bounded P2.1 slice should resolve those historical/fallback decisions or
-   draft the source-materialization plan before any download/materialization.
+   heritage proxy handling now have provisional teaching fallback decisions.
+   The next bounded P2.1 slice should draft the source-materialization plan:
+   list which accepted candidates are safe to clip first and which fallback or
+   review items must stay out of the download/materialization pass.
 2. Keep P2.2 field profiling queued until the accepted local R1/VDYP7
    dependency rows from P2.1 are ready for review or the maintainer explicitly
    approves a parallel field-mapping slice.

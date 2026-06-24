@@ -40,19 +40,19 @@ reviewed aspatial or proxy treatment instead of public geometry.
 | `tfl6_nd_030` | prior-step checkpoint | MP10 Table 4 | Report-only total forested checkpoint | No source needed | Keep as validation row only. |
 | `tfl6_nd_040` | `non_productive_attribute_map` from `vri_2025_r1_tfl6` and/or `vdyp7_2025_poly_tfl6` | Accepted 2025 VRI R1/VDYP7 fields | Attribute/productivity exclusion | Field mapping blocker | P2.2 profile productivity/ecosite/descriptive fields for CP, MH, MH1, S7, S8, PG5-style classes. |
 | `tfl6_nd_050` | prior-step checkpoint | MP10 Table 4 / adjusted targets | Report-only productive/AFLB checkpoint | No source needed | Keep as validation row only. |
-| `tfl6_nd_060` | `operability` | Historical WFP/TFL operability source if available; otherwise reviewed proxy; generic public `Operable and Inoperable Areas SIR` is not accepted for TFL 6 | Operability class exclusion for `I`, `Ocm`, `Ohm` semantics | No accepted public TFL 6 source found; proxy decision still open | Search the local/reference corpus for TFL 6 operability geometry or map evidence; otherwise record a reviewed teaching proxy or benchmark fallback. |
+| `tfl6_nd_060` | `operability` | Historical 1999 WFP/TFL physical and economic operability inventory if local geometry is found; generic public `Operable and Inoperable Areas SIR` is not accepted for TFL 6 | Operability class exclusion for `I`, `Ocm`, `Ohm` semantics | No accepted public geometry; reviewed aspatial benchmark fallback accepted for teaching until local geometry is found | Use MP10 Table 8 / adjusted benchmark deduction as the fallback validation target; do not execute spatial operability logic until local geometry/schema is accepted. |
 | `tfl6_nd_070` | prior-step checkpoint | MP10 Table 4 / adjusted targets | Report-only operable/LHLB checkpoint | No source needed | Keep as validation row only. |
-| `tfl6_nd_080` | `hydrography_streams`, `lakes_wetlands_shoreline` | Freshwater Atlas `WHSE_BASEMAPPING.FWA_STREAM_NETWORKS_SP`, `WHSE_BASEMAPPING.FWA_LAKES_POLY`, and `WHSE_BASEMAPPING.FWA_WETLANDS_POLY`; coarse shoreline candidate `WHSE_BASEMAPPING.NTS_BC_COASTLINE_POLYS_125M` | Riparian reserve/management overlay or fallback | Public hydro candidates identified; shoreline/rule review still open | Use FWA as first hydrology materialization target; review whether coarse NTS coastline is good enough for teaching or whether MP10 shoreline/ocean handling should remain a rule/fallback. |
+| `tfl6_nd_080` | `hydrography_streams`, `lakes_wetlands_shoreline` | Freshwater Atlas `WHSE_BASEMAPPING.FWA_STREAM_NETWORKS_SP`, `WHSE_BASEMAPPING.FWA_LAKES_POLY`, and `WHSE_BASEMAPPING.FWA_WETLANDS_POLY`; coarse shoreline candidate `WHSE_BASEMAPPING.NTS_BC_COASTLINE_POLYS_125M` | Riparian reserve/management overlay or fallback | Public hydro candidates identified; MP10 40 m ocean-shoreline rule accepted, but coarse NTS coastline still requires review before precision use | Use FWA as first hydrology materialization target; keep the MP10 40 m ocean-shoreline reserve as the teaching rule and review whether NTS coastline is adequate for approximate clipping. |
 | `tfl6_nd_090` | `uwr_orders` | Approved UWR, `WHSE_WILDLIFE_MANAGEMENT.WCP_UNGULATE_WINTER_RANGE_SP` | UWR overlay exclusion for `U-1-010` and small `U-1-011` overlap | Public authority candidate identified | Materialize/clip approved UWR and confirm listed IDs within current TFL 6 AOI. |
 | `tfl6_nd_100` | `ogma_established` | Legal current OGMA, `WHSE_LAND_USE_PLANNING.RMP_OGMA_LEGAL_CURRENT_SVW` | Established OGMA overlay exclusion | Public authority candidate identified; current-vs-2011 vintage risk | Materialize/clip current legal OGMAs and flag any mismatch against MP10 established OGMA assumptions. |
-| `tfl6_nd_110` | `ogma_draft_2011` | Historical/local draft OGMA geometry if available; current non-legal OGMA candidate `WHSE_LAND_USE_PLANNING.RMP_OGMA_NON_LEGAL_CURRENT_SVW` is only a review clue | Draft OGMA overlay or aspatial fallback | Missing historical source / fallback | Search reference/local corpus for 2011 draft OGMA geometry; do not substitute current non-legal OGMAs without review. |
+| `tfl6_nd_110` | `ogma_draft_2011` | Historical/local draft OGMA geometry if available; current non-legal OGMA candidate `WHSE_LAND_USE_PLANNING.RMP_OGMA_NON_LEGAL_CURRENT_SVW` is only a review clue | Draft OGMA overlay or aspatial fallback | Historical geometry missing; MP10 Table 11 aspatial fallback accepted until local draft geometry is found | Use MP10 Table 11 / adjusted benchmark deduction for draft OGMAs unless historical/local draft OGMA geometry is accepted; do not substitute current non-legal OGMAs automatically. |
 | `tfl6_nd_120` | `wha_orders` | Approved WHA, `WHSE_WILDLIFE_MANAGEMENT.WCP_WILDLIFE_HABITAT_AREA_POLY` | WHA overlay exclusion for listed WHA IDs | Public authority candidate identified | Materialize/clip approved WHA and confirm listed IDs/overlaps. |
 | `tfl6_nd_130` | `recreation_features` | Recreation polygons `WHSE_FOREST_TENURE.FTEN_RECREATION_POLY_SVW`, recreation trails `WHSE_FOREST_TENURE.FTEN_REC_TRAILS_SVW`, recreation site points `WHSE_FOREST_TENURE.FTEN_REC_SITE_POINTS_SVW`, plus details/closures `WHSE_FOREST_TENURE.FTEN_REC_DTAILS_CLOSURES_SV` as attribution context | Recreation feature overlay with 10 m buffer | Public authority candidates identified; geometry/rule review still open | Materialize/clip the point/line/polygon recreation feature set and decide which geometry classes receive the MP10 10 m buffer. |
 | `tfl6_nd_140` | `deciduous_leading_signal` from `vri_2025_r1_tfl6` and/or `vdyp7_2025_layer_tfl6` | Accepted 2025 VRI R1/VDYP7 species fields | Deciduous-leading attribute exclusion | Field mapping blocker | P2.2 define leading-species rule and deciduous/conifer species-code handling. |
-| `tfl6_nd_150` | `cultural_heritage_proxy` | Sensitive/local TUS/CMT data not expected as public source; possible EFZ/ocean-proximity proxy | Aspatial/proxy deduction | Fallback only | Do not seek sensitive public geometry; define reviewed teaching fallback. |
+| `tfl6_nd_150` | `cultural_heritage_proxy` | Sensitive/local TUS/CMT data not expected as public source; MP10 Table 15 supports EFZ plus 1 km ocean-proximity proxy/aspatial treatment | Aspatial/proxy deduction | Reviewed fallback accepted; no sensitive public geometry search | Do not seek sensitive TUS/CMT geometry; use MP10 Table 15 / adjusted benchmark deduction unless a reviewed EFZ plus 1 km ocean-proximity proxy is explicitly implemented later. |
 | `tfl6_nd_160` | prior-step checkpoint | MP10 Table 4 | Report-only total operable reductions checkpoint | No source needed | Keep as validation row only. |
 | `tfl6_nd_170` | prior-step checkpoint | MP10 Table 4 | Report-only reduced landbase checkpoint | No source needed | Keep as validation row only. |
-| `tfl6_nd_180` | `rmz_lu_bec_strata` | Landscape units `WHSE_LAND_USE_PLANNING.RMP_LANDSCAPE_UNIT_SVW`; BEC `WHSE_FOREST_VEGETATION.BEC_BIOGEOCLIMATIC_POLY`; RMZ public geometry unresolved, with Strategic Land and Resource Plans `WHSE_LAND_USE_PLANNING.RMP_STRGC_LAND_RSRCE_PLAN_SVW` as a review clue only | Stand-level retention percent-by-stratum | LU/BEC candidates identified; RMZ/schema review still open | Materialize/clip LU and BEC candidates, then resolve whether RMZ can be derived from public Strategic Land and Resource Plans, local MP evidence, or a reviewed Table 16 aspatial fallback. |
+| `tfl6_nd_180` | `rmz_lu_bec_strata` | Landscape units `WHSE_LAND_USE_PLANNING.RMP_LANDSCAPE_UNIT_SVW`; BEC `WHSE_FOREST_VEGETATION.BEC_BIOGEOCLIMATIC_POLY`; RMZ public geometry unresolved, with Strategic Land and Resource Plans `WHSE_LAND_USE_PLANNING.RMP_STRGC_LAND_RSRCE_PLAN_SVW` as a review clue only | Stand-level retention percent-by-stratum | LU/BEC candidates identified; RMZ geometry/schema unresolved; Table 16 percent-by-stratum fallback accepted | Materialize/clip LU and BEC candidates only when source-materialization begins; use reviewed Table 16 aspatial/percent-by-stratum fallback until RMZ geometry/schema is accepted. |
 | `tfl6_nd_190` | prior-step checkpoint | MP10 Table 4 / adjusted targets | Report-only current THLB checkpoint | No source needed | Keep as validation row only. |
 | `tfl6_nd_200` | `future_roads_allowance` | MP10 Table 17 aspatial future-road assumption | Long-term landbase context only | Fallback/context only | Keep out of current THLB lane unless long-term scenario work is explicitly opened. |
 | `tfl6_nd_210` | prior-step checkpoint | MP10 Table 4 / adjusted targets | Report-only long-term landbase checkpoint | No source needed | Keep as validation row only. |
@@ -231,15 +231,34 @@ Current decision:
   because it returned a North Coast riparian-management-zone dataset rather
   than TFL 6/Vancouver Island RMZ geometry.
 
+## Historical and Fallback Decision Pass
+
+This pass records provisional teaching-model decisions for rows where the
+original MP10 spatial sources have not been recovered. These decisions are not
+claims that the historical geometry exists locally or has been accepted.
+
+| Dependency | Decision | Rationale |
+| --- | --- | --- |
+| Operability | Use MP10 Table 8 / adjusted benchmark as an aspatial fallback until local 1999 WFP physical/economic operability geometry is found and reviewed. | Public resolver work found no accepted TFL 6-specific operability geometry. MP10 and older reference notes identify a 1999 WFP operability inventory and target classes, but no local executable geometry/schema has been accepted. |
+| Shoreline / ocean | Preserve the MP10 40 m ocean-shoreline reserve rule; keep NTS 1:250,000 coastline as a coarse teaching candidate requiring review. | FWA streams/lakes/wetlands are accepted first candidates, but shoreline discovery found only coarse NTS coastline and ShoreZone context layers. The rule is source-supported; precision geometry remains unresolved. |
+| Draft OGMAs | Use MP10 Table 11 / adjusted benchmark as an aspatial fallback unless historical/local 2011 draft OGMA geometry is found. | Current non-legal OGMA is a review clue only. MP10 draft OGMAs are historical planning state and should not be replaced automatically by current non-legal OGMAs. |
+| RMZ / Table 16 stand-level retention | Accept LU and BEC as public candidates, but use reviewed MP10 Table 16 percent-by-stratum/aspatial fallback until RMZ geometry/schema is accepted. | Public LU and BEC sources resolved cleanly. RMZ did not: Strategic Land and Resource Plans is only a review clue, and the TFL 6 RMZ query returned an unrelated dataset. |
+| Cultural heritage | Use MP10 Table 15 / adjusted benchmark as an aspatial fallback; do not seek sensitive TUS/CMT geometry. | MP10 supports a 1% incremental netdown where EFZ and 1 km ocean-proximity overlap. Sensitive cultural-source geometry is not expected as a public input for this teaching instance. |
+
+These fallback decisions are sufficient to move from resolver discovery to a
+source-materialization plan. They are not sufficient to execute the final THLB
+lane without later review of the resulting recipe behavior and benchmark
+tolerances.
+
 ## Priority for Next P2.1 Slice
 
-The next P2.1 slice should resolve public/reference authorities for the missing
-source rows in this order:
+The next P2.1 slice should move from authority discovery to materialization
+planning in this order:
 
-1. Historical/fallback rows: shoreline rule choice, draft OGMAs, operability,
-   and cultural heritage proxy/aspatial handling.
-2. Source-materialization plan: decide which accepted candidates are safe to
+1. Source-materialization plan: decide which accepted candidates are safe to
    clip first, and which need maintainer review before download/materialization.
+2. Recipe-readiness review: separate exact spatial overlays from accepted
+   aspatial/proxy fallbacks before any THLB execution.
 
 P2.2 should run in parallel only after maintainer approval, because the
 accepted local R1/VDYP7 field-mapping rows are separable from missing public
