@@ -4,8 +4,8 @@ This file is the working contract for AI coding agents in this repository.
 
 ## Project Purpose
 
-`femic-nicffsp-instance` is the standalone FEMIC deployment instance for the
-FRST 558 North Island Community Forest / Forest Stewardship Plan teaching case.
+`femic-tfl6-instance` is the standalone FEMIC deployment instance for the
+FRST 558 North Island / Tree Farm Licence 6 teaching case.
 The target runtime is Patchworks, using the existing K3Z teaching model as the
 closest style and structure reference.
 

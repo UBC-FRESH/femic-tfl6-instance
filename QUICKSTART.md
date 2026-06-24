@@ -1,4 +1,4 @@
-# NICF FSP FEMIC Instance Quickstart
+# TFL 6 FEMIC Instance Quickstart
 
 1. Validate CLI install:
    `femic --help`

@@ -1,0 +1,5208 @@
+--- page 1 ---
+September 2001 
+Final 
+ 
+ 
+Tree Farm Licence 6 
+Quatsino Sound – North Vancouver Island 
+ 
+Sustainable Forest Management Plan  
+ 
+ 
+ MANAGEMENT PLAN 9 
+ 
+ 
+ 
+ 
+November 1, 2001 to October 31, 2006 
+ 
+This Plan also serves as the Management Plan and Commitment for  
+Managed Forest 29 and 31 
+ 
+ 
+ 
+Approved – July 23, 2001
+The Environmental Management System covering forest 
+operations in TFL 6 is registered as conforming to ISO 
+14001 standards. This certification was achieved in April 
+2000 through the Canadian Quality Management Institute.  
+
+
+--- page 2 ---
+
+
+--- page 3 ---
+ 
+ 
+ 
+ 
+Tree Farm Licence 6 
+Management Plan 9 
+ 
+ 
+This Management Plan was prepared 
+by and under the supervision of 
+ 
+ 
+ 
+ 
+ 
+Mike Dietsch, R.P.F. 
+Regional Forester 
+ 
+ 
+And submitted on behalf of 
+Western Forest Products Limited by 
+ 
+ 
+ 
+ 
+ 
+W.E. Dumont, R.P.F. 
+Chief Forester 
+ 
+ 
+
+
+--- page 4 ---
+ 
+TFL 6 Management Plan Preparation 
+Component and Timeline Summary 
+ 
+Component 
+ 
+Date 
+• Licensee advertises for public comment 
+• Licensee makes current MP available for review 
+May 30/1998 
+• Licensee submits review strategy (if not in current MP) July 31/1998 
+• RM accepts or rejects review strategy. Sept 30/1998
+• RM sends pre-SMOOP assessment & guidelines  
+• Licensee submits comments from current MP review.  
+• Licensee prepares the SMOOP & objectives for employment & economic 
+opportunity (EEO) & refers them as per review strategy. 
+Sept 30/1998 
+To June 
+30/1999 
+• Licensee submits SMOOP & objectives for EEO, with comments from 
+referral, to the RM. 
+July 30/1999 
+• RM accepts or rejects SMOOP Aug 31/1999 
+• TS Forester sends notice with information requirements Sept 30/1999
+• Licensee submits Timber Supply Analysis Information Package to the 
+Timber Supply Forester 
+Nov 31/1999 
+• Timber Supply Forester accepts or rejects the Timber Supply Analysis 
+Information Package 
+June 
+13/2000 
+• Licensee submits a Timber Supply Analysis (TSA) to the Timber Supply 
+Forester. 
+Sept 8/2000 
+• Licensee submits a 20-year plan to the DM.  
+• Licensee submits draft MP & draft proposals for EEO to the RM. Oct 31/2000 
+• Licensee refers draft MP & draft proposals for EEO as per review strategy.  
+• Timber Supply Forester accepts or rejects TSA. Nov 30/2000 
+• District Manager accepts or rejects 20-year plan.  
+• RM provides comments on draft MP to Licensee. Dec 31/2000 
+• Licensee submits proposed MP & proposals for EEO to the Chief 
+Forester, with input received from the referrals. 
+May 1/2001 
+• Chief Forester approves or rejects MP. Oct 31/2001 
+  
+ 
+Revised April 2001
+
+--- page 5 ---
+ 
+TFL 6 – Sustainable Forest Management Plan  Page i 
+Table of Contents 
+1.0 INTRODUCTION ................................................................................................................... 1 
+1.1 PURPOSE............................................................................................................................... 1 
+1.2 DESCRIPTION OF THE TFL....................................................................................................... 1  
+1.3 HISTORY AND PROGRESS........................................................................................................ 4  
+1.4 LICENCE HOLDER AND ADMINISTRATION .................................................................................. 8  
+2.0 SUSTAINABLE FOREST MANAGEMENT PRINCIPLES ..................................................... 9 
+2.1 SUSTAINABLE FOREST MANAGEMENT POLICY .......................................................................... 9  
+2.2 LINKING WFP’S SUSTAINABLE FOREST MANAGEMENT PRINCIPLES  
+TO CRITERIA AND INDICATORS............................................................................................... 11  
+2.2.1 Hierarchy of SFM Levels ........................................................................................... 11  
+2.2.2 Sustainable Forest Management SFM system .......................................................... 12  
+2.3 WFP’S FOREST CERTIFICATION INITIATIVES ........................................................................... 13  
+3.0 FOREST MANAGEMENT INVENTORY AND PLANNING.................................................. 14 
+3.1 RESOURCE INVENTORIES ...................................................................................................... 14  
+3.1.1 Forest Cover ............................................................................................................. 15  
+3.1.2 Environmentally Sensitive Areas ............................................................................... 15 
+3.1.3 Operability................................................................................................................. 15  
+3.1.4 Recreation................................................................................................................. 15  
+3.1.5 Visual Landscape...................................................................................................... 17  
+3.1.6 Terrain Stability ......................................................................................................... 17  
+3.1.7 Ownership and other Tenures ................................................................................... 18 
+3.1.8 Archaeological Resource Potential............................................................................ 18  
+3.1.9 Ecosystem Mapping.................................................................................................. 18  
+3.1.10 Streams..................................................................................................................... 19  
+3.1.11 Wildlife ...................................................................................................................... 1 9 
+3.1.12 High Conservation Value Forests.............................................................................. 20  
+3.2 PLANNING LINKAGES - STRATEGIC AND OPERATIONAL PLANNING ............................................ 21 
+3.2.1 Regional Plans.......................................................................................................... 22  
+3.2.2 Landscape Unit Plans ............................................................................................... 23  
+3.2.3 Forest Development Plans ........................................................................................ 23  
+3.2.4 Stand Level Prescriptions.......................................................................................... 24 
+3.2.5 Adaptive Management .............................................................................................. 24  
+3.2.6 Ecosystem Based Management................................................................................ 25 
+4.0 SUSTAINABLE FOREST MANAGEMENT STRATEGY ..................................................... 26 
+4.1 ECONOMICALLY VIABLE FOREST MANAGEMENT...................................................................... 26  
+4.1.1 Multiple Benefits........................................................................................................ 26  
+4.1.1.1 Timber Supply ........................................................................................................................26 
+4.1.1.2 Harvest Methods ....................................................................................................................28 
+4.1.1.3 Employment ...........................................................................................................................29 
+4.1.1.4 Contractor Commitment .........................................................................................................30 
+4.1.1.5 Profitability..............................................................................................................................31 
+4.1.1.6 Non-Timber Forest Products..................................................................................................31 
+4.1.1.7 Minor Forest Products............................................................................................................33 
+4.1.1.8 Access Management..............................................................................................................34 
+4.1.1.9 Recreation..............................................................................................................................34 
+4.1.1.10 Research and Development .................................................................................................36 
+4.1.1.11 Contribution to Provincial Revenues ....................................................................................37 
+
+--- page 6 ---
+ 
+TFL 6 – Sustainable Forest Management Plan  Page ii 
+4.2 ENVIRONMENTALLY APPROPRIATE FOREST MANAGEMENT...................................................... 37 
+4.2.1 Conservation of Biological Diversity .......................................................................... 37  
+4.2.1.1 Ecological Diversity ................................................................................................................38 
+4.2.1.2 Species Diversity....................................................................................................................41 
+4.2.1.3 Genetic Diversity ....................................................................................................................43 
+4.2.2 Maintenance of Ecosystem Condition and Productivity ............................................. 44 
+4.2.2.1 Forest Health..........................................................................................................................44 
+4.2.2.2 Forest Ecosystem Resilience.................................................................................................47 
+4.2.2.3 Forest Ecosystem Productivity...............................................................................................49 
+4.2.3 Conservation of Soil and Water Resources............................................................... 51  
+4.2.3.1 Productive Area......................................................................................................................51 
+4.2.3.2 Water Quality..........................................................................................................................52 
+4.2.4 Contribution to Global Ecological Cycles................................................................... 53  
+4.2.4.1 Carbon Sequestration ............................................................................................................53 
+4.2.5 High Conservation Value Forests.............................................................................. 54  
+4.3 SOCIALLY BENEFICIAL FOREST MANAGEMENT........................................................................ 54  
+4.3.1 Responsibility for Sustainable Development.............................................................. 54  
+4.3.1.1 First Nations ...........................................................................................................................54 
+4.3.1.2 Communities ..........................................................................................................................56 
+4.3.1.3 Employment ...........................................................................................................................58 
+4.3.1.4 Compliance ............................................................................................................................59 
+4.3.1.5 Employee Relations ...............................................................................................................59 
+4.3.1.6 Safety .....................................................................................................................................60 
+5.0 SUSTAINABLE FOREST MANAGEMENT PLAN CONSULTATION.................................. 61 
+6.0 SUMMARY IMPACT ANALYSIS......................................................................................... 62  
+6.1 ECONOMIC ........................................................................................................................... 62  
+6.2 ENVIRONMENTAL .................................................................................................................. 63  
+6.3 SOCIAL ............................................................................................................................... .6 4 
+6.4 IMPACTS DUE TO IMPLEMENTATION OF MANAGEMENT PLAN 9 ................................................. 65 
+6.4.1 Harvest and Employment Levels............................................................................... 65  
+6.4.2 Non-Timber Values ................................................................................................... 65  
+6.4.3 General Impacts of Implementation........................................................................... 65  
+ 
+
+--- page 7 ---
+ 
+TFL 6 – Sustainable Forest Management Plan  Page iii 
+Tables 
+TABLE 1 TFL L ANDBASE STATUS................................................................................................2  
+TABLE 2 R ESOURCE INVENTORY STATUS ..................................................................................14  
+TABLE 3 R ECREATIONAL SITES AND TRAILS IN AND AROUND TFL 6: 1995 – 1999.......................16  
+TABLE 4 TFL 6 E COSYSTEM CLASSIFICATION SYSTEM ..............................................................18  
+TABLE 5 R ESOURCE MANAGEMENT ZONES AND REGIMES..........................................................22  
+TABLE 6 LU S AND BEOS FOR TFL LANDBASE ...........................................................................23  
+TABLE 7 C UT CONTROL PERFORMANCE 1950-1999 ..................................................................26  
+TABLE 8 D ISTRIBUTION OF LOGGING SYSTEMS ..........................................................................29  
+TABLE 9 D IRECT EMPLOYMENT 1995 - 2000.............................................................................29  
+TABLE 10 C OMPLIANCE WITH TIMBER HARVESTING CONTRACTING REGULATION ...........................30  
+TABLE 11 R ECREATION ACTIVITIES SUMMARY – ESTIMATED USER DAYS, TFL 6 1995-1999.........36  
+TABLE 12 R ED AND BLUE LISTED ECOSYSTEMS POTENTIALLY IN NVIR.........................................39  
+TABLE 13 R ED, BLUE LISTED AND REGIONALLY IMPORTANT MAMMALS AND BIRDS .........................42  
+TABLE 14 C OMMON INSECTS AND DISEASE FOUND IN TFL 6 ........................................................45  
+TABLE 15 F IVE-YEAR BASIC SILVICULTURE ACTIVITY GOALS (HA) FOR TFL 6..................................49  
+TABLE 16 F IVE-YEAR ENHANCED SILVICULTURE GOALS (HA)........................................................50  
+TABLE 17 A NNUAL DIRECT EMPLOYMENT 1995 – 2000 ...............................................................58  
+TABLE 18 I NDICATORS OF ECONOMICALLY VIABLE FOREST MANAGEMENT ....................................62  
+TABLE 19 I NDICATORS OF ENVIRONMENTALLY APPROPRIATE FOREST MANAGEMENT ....................63  
+TABLE 20 I NDICATORS OF SOCIALLY BENEFICIAL FOREST MANAGEMENT ......................................64  
+ 
+ 
+Figures 
+FIGURE 1 TFL 6........................................................................................................................ ..1 
+FIGURE 2 S TATUS MAP................................................................................................................3  
+FIGURE 3 C OMMUNITIES ..............................................................................................................4  
+FIGURE 4 F OREST MANAGEMENT CYCLE ......................................................................................5  
+FIGURE 5 T IMBER UTILIZATION .....................................................................................................8  
+FIGURE 6 M AJOR RECREATION SITES AND TRAILS.......................................................................17  
+FIGURE 7 U NGULATE WINTER RANGES.......................................................................................19  
+FIGURE 8 R ESOURCE MANAGEMENT ZONES OF TFL 6 ................................................................22  
+FIGURE 9 L ANDSCAPE UNITS OF TFL 6.......................................................................................23  
+FIGURE 10 T IMBER HARVESTING PROCESS...................................................................................28  
+FIGURE 11 T RAPLINES.................................................................................................................32  
+FIGURE 12 K NOWN AQUATIC LICENCES ........................................................................................33  
+FIGURE 13 P ROVINCIAL PARKS, RESERVES AND RECREATIONAL SITES ..........................................35  
+FIGURE 14 T REE IMPROVEMENT AND REFORESTATION CYCLE .......................................................44  
+FIGURE 15 D RINKING WATER SOURCES .......................................................................................52  
+FIGURE 16 F IRST NATIONS TERRITORIES......................................................................................55  
+FIGURE 17 F OREST OPERATIONS.................................................................................................58  
+ 
+ 
+
+--- page 8 ---
+ 
+TFL 6 – Sustainable Forest Management Plan  Page iv 
+Appendices 
+APPENDIX I  TFL A MENDMENTS 
+APPENDIX II  T IMBER SUPPLY INFORMATION PACKAGE 
+APPENDIX III  T IMBER SUPPLY ANALYSIS 
+APPENDIX IV  S ILVICULTURE PROJECT HISTORY 
+APPENDIX V  S ILVICULTURE PRESCRIPTION SAMPLE 
+APPENDIX VI  M ANAGED FOREST NO. 29 AND 31 
+APPENDIX VII  S AMPLE FIRE PREPAREDNESS PLAN 
+APPENDIX VIII  S TANDARD OPERATING PROCEDURES – ROAD DEACTIVATION 
+APPENDIX IX  F OREST RESEARCH PROJECTS 
+APPENDIX X  P UBLIC REVIEW PLAN – MP 9 
+APPENDIX XI  T RAILS AND RECREATION SITES 
+APPENDIX XII  N ORTH VANCOUVER ISLAND REGION VISITORS GUIDE 
+APPENDIX XIII  TFL 6 S ILVICULTURE STANDARDS 
+APPENDIX XIV  H ABITAT RESTORATION PLANS & KEOGH WATERSHED RESTORATION BROCHURE 
+APPENDIX XV  T WENTY-YEAR PLAN 
+APPENDIX XVI  ISO 14001  R EGISTERED ENVIRONMENTAL MANAGEMENT SYSTEM 
+APPENDIX XVII  P ROFILES OF MAIN COMMUNITIES 
+APPENDIX XVIII  D OMAN INDUSTRIES ANNUAL STATUTORY REPORT 
+APPENDIX XIX  W ESTERN SPIRIT AND ENVIRONMENT MATTERS 
+APPENDIX XX  H IGH CONSERVATION VALUE FOREST –  NORTH VANCOUVER ISLAND 
+APPENDIX XXI  H IGH CONSERVATION VALUE FOREST ATTRIBUTE MANAGEMENT STRATEGY 
+APPENDIX XXII  S TRATEGY OUTLINE FOR MANAGING WILDLIFE 
+APPENDIX XXIII  S TATEMENT OF MANAGEMENT OBJECTIVES, OPTIONS AND PROCEDURES 
+APPENDIX XXIV  S TATEMENT OF OBJECTIVES FOR EMPLOYMENT AND ECONOMIC OPPORTUNITY 
+ 
+ 
+A CD folio of all maps found in this Plan is enclosed 
+for larger scale review 
+
+--- page 9 ---
+ 
+TFL 6 – Sustainable Forest Management Plan  Page 1 
+1.0 INTRODUCTION 
+1.1 Purpose 
+The Tree Farm Licence (TFL) agreement requires the Licensee to submit for Ministry of 
+Forests (MoF) approval a Management Plan.  Revised every five years, the Management Plan 
+provides objectives, goals and strategies to guide management activities until the next 
+revision.  The Management Plan and associated Timber Supply Analysis are used by the MoF 
+Chief Forester to determine the Allowable Annual Cut (AAC).  The Management Plan provides 
+direction for the preparation of operational plans.  The Plan is focused on results and 
+outcomes so that the Licensee, Western Forest Products Limited (WFP) can evaluate 
+performance and continuously improve management practices.  The Plan contains 
+measurable parameters in the form of indicators that will monitor the achievement of 
+sustainable forest management objectives for the period November 1, 2001 to October 31, 
+2006.  It is also intended to form the foundation for Forest Stewardship Council and Canadian 
+Standards Association sustainable forestry certifications. It is expected that further 
+amendments may be proposed for this plan to fully address FSC and CSA requirements for 
+forest certification 
+1.2 Description of the TFL 
+The Quatsino Tree Farm Licence 6 (TFL 6) is located on northern Vancouver Island in the 
+vicinity of Quatsino Sound (Figure 1). The total area of the TFL is approximately 198,113 
+hectares of which 156,769 hectares is Crown land and 41,334 hectares are timber licences or 
+fee simple lands owned by WFP.  A detailed summary of the TFL land status and mature 
+timber volumes is in Table 1.  The timber harvesting landbase is 149,747 ha.  Figure 2 shows 
+the ownership associated with TFL 6.  The fee simple (private) lands and lands controlled by 
+the licensee are encompassed in 
+Managed Forests (MF) 29 and 
+31.  Maps and area summaries 
+for MF 29 and 31 are found in 
+Appendix VI.  The TFL is made 
+up of two geographically 
+separated management areas.  
+Block 1 is the largest 
+management unit and includes 
+watersheds that drain westward 
+into Quatsino Sound or the 
+Pacific Ocean between Quatsino 
+Sound and San Josef Bay.  Block 
+2 includes watersheds that drain 
+northeastward into Queen 
+Charlotte Strait between Fort 
+Rupert and Port McNeill plus 
+those that drain westward into the 
+Waukwaas watershed and Rupert 
+Arm. 
+ 
+Figure 1 – TFL 6 
+Port McNeill
+TFL 6
+Management Plan 9
+Vancouver
+Victoria
+Fraser     River
+05 0 1 0 0 1 5 0
+Scale in Kilometers
+
+--- page 10 ---
+ 
+TFL 6 – Sustainable Forest Management Plan  Page 2 
+Table 1 – TFL Landbase Status 
+TIMBER HARVESTING LAND BASE DETERMINATION FOR TFL 6  
+Classification Area  (ha) Mature Volume  (m³) 
+ Schedule A Schedule B Total Schedule A Schedule B Total 
+Total Area 41,344.4 156,768.9 198,113.3 15,623,738.4 48,786,233.6 64,409,972.0 
+ Less:  Non-Forest 1,864.1 10,291.0 12,155.1 0 0  
+ Less:  Non-Productive Forest 72.5 394.8  467.3 0 0  
+Total Productive Forest 39,407.8 146,083.1 185,490.9 15,623,738.4 48,786,233.6 64,409,972.0 
+Less Reductions to Total Productive Forest:       
+ Non-Commercial  (NP Br) 78.8 335.9  414.7 0 0 0 
+ Low Site 1,851.3 10,096.1 11,947.4 949,560.0 4,729,139.2 5,678,699.2 
+ Inoperable / Inaccessible (I, Oce, Ohe) 1,771.7 10,807.6 12,579.3 1,508,351.6 9,113,339.1 10,621,690.6 
+ Riparian Reserves 1,576.6 4,725.7 6,302.3 592,829.4 1,058,842.6 1,651,672.0 
+ Wildlife Habitat Reserves  (e.g. UWR) 402.9 1,273.9 1,676.8 360,263.7 986,753.4 1,347,017.1 
+ Recreational Areas 22.8 157.3  180.1 17,178.2 138,279.0 155,457.2 
+ Ecological Reserve 0.0 120.0  120.0 0 52,578.0 52,578.0 
+ Problem Forest Types  (Deciduous) 0.0 0.0    0.0 1 348.4 731.1 1,079.6 
+ Unclassified Roads, Trails and Landings 556.8 1,966.7 2,523.5 64,773.7 114,190.0 178,963.7 
+Total Reductions to Productive Forest 6,260.7 29,483.2 35,743.9 3,493,305.0 16,193852.4 19,687,211.4 
+ Less:  Volume Reductions       
+Total Reduced Land Base 33,147.1 116,599.9 149,747.0 12,130,433.4 32,592,381.2 44,722,814.6 
+ Less:  Not Sufficiently Restocked Areas 684.3 1,904.0 2,588.3 0 0 0 
+ Add:  Not Sufficiently Restocked Areas 684.3 1,904.0 2,588.3 0 0 0 
+Timber Harvesting Land Base 33,147.1 116,599.9 149,747.0 12,130,433.4 32,592,381.2 44,722,814.6 
+ Less:  Future Roads, Trails and Landings 756.4 2081.3 2,837.7 0 0 0 
+Total Long Term Land Base 32,390.7 114,518.6 146,909.3 12,130,433.4 32,592,381.2 44,722,814.6 
+1 Deciduous leading stands contribute to the timber harvesting landbase, but only their conifer volume is applied to timber supply 
+ 
+
+--- page 11 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 3 
+The topography within the TFL is variable.  Relatively low relief, undulating terrain 
+characterizes the easterly and westerly sections of the TFL.  The central and inland portions 
+of the TFL are characterized as mountainous and steep.  Numerous rivers and streams drain 
+the licence area.  Most streams support significant anadromous and resident fish populations.  
+Large animals, notably, Columbia black-tailed deer, cougars and black bears are abundant 
+throughout the licence area.  Numerous other large and small mammals, amphibians, fish and 
+birds can also be found.  These are identified in Appendix XXII. 
+Mabbott
+ Island
+Drake
+ Island
+Port
+Hardy
+Airpo rt
+95
+2
+7
+11 12
+1
+3
+6 5
+4
+10
+15
+11
+3
+4
+4
+4
+1
+4
+3
+1
+2
+2
+2
+2
+2
+1
+1
+4
+2 3
+3
+3
+1 4
+4
+2
+1
+3
+3
+2 1
+4
+1
+1
+1
+2
+1
+1
+10
+9
+3T06404
+4
+11 12
+Bk . 1
+Bk . 1
+7
+T0421
+T0670
+13
+T0699
+5
+T0693
+L. 14
+T0497
+T0660
+36
+4
+4
+4
+4
+9
+3
+3
+1
+T0501
+2
+2
+10
+10
+7
+7
+7
+2
+2
+3
+3
+3
+1
+1
+1
+1
+T0386
+5
+  L. 31 7
+1
+11
+T0497
+I.R. 4
+10
+I. R .  1 0
+I.R.
+11
+L. 2 67
+I. R .  1 4
+T0664
+3
+T0501
+T0526
+T0526
+9
+14
+8
+35
+T0399
+T0408
+5
+T0680
+T0428
+I.R.
+2
+L.51
+L.5 2L.
+75
+I.R .
+16
+L.
+74
+L.
+3
+I.R. 1 3
+L.
+30 5
+I. R .  8
+I.R. 9
+3 2
+5
+T0655
+6
+8
+8 9
+104
+21
+I. R .  1
+32
+5
+35
+28
+21
+20
+26
+35
+94
+31 5
+6
+189
+T0508
+1187
+188
+I. R .  7
+13 82
+1381
+I.R.
+6
+20 88
+20 90
+1128
+85
+66 I.R. 5
+T0514
+5
+8
+9
+2
+Bk.
+2
+Bk . 1
+T0530
+Bk . 5
+Bk. 5
+320
+T0530
+9
+8
+6
+L. 2
+S 1
+L. 1
+S 1
+M.C.
+5
+63
+6
+3
+2
+31
+6
+30
+I.R. 3
+I.R.
+10
+27
+18 3
+18 0 18 1
+182
+20 89L.6 7 9
+20 2
+71
+2
+1 5
+Bk. 1
+T0481
+4 3
+Parcel A
+2
+6
+T0475
+T0700
+T0457
+4
+1
+3
+3
+T0391
+T0365
+5
+2
+1
+Bk. 4
+187
+15 82
+3
+L.50
+T0599
+Bk. 1
+T0373
+TL
+TL
+TL
+TL
+MB
+T0445
+2
+T0440
+2
+T0464
+T0687
+T0470
+TL
+TL
+TL
+MB
+2137
+2
+7
+4
+T0693
+6
+3
+3T0391
+1
+4
+4
+3
+Bk. 1
+T0526
+3
+2 3 1 4
+T0365
+5
+4
+3
+T0373
+21
+8
+3
+2
+4
+T0680
+3
+3
+4
+1
+1
+1
+T0457T0440
+T0428
+T0445
+3
+2
+2
+2
+1
+2
+T0421
+4
+1
+4
+3
+1
+2
+2 7
+T0399
+6
+5
+3
+4
+6 95 7
+T0687
+4
+3
+T0464
+2
+1
+3
+2 1
+T0470
+4
+3 2
+5
+2
+1
+10
+9
+T0655
+7
+1
+3T0640
+5
+8
+2
+4
+6
+T0699
+T0497
+1
+2
+4
+Bk . 1
+1
+T0501
+2
+5
+3
+T0497
+4
+3
+T0501
+6
+Bk . 1 Bk . 5
+T0508 T0530
+4
+9
+10
+T0530
+9
+8
+7
+3
+6
+Bk. 410
+3
+1
+T0514
+5
+8
+9
+2
+1
+11
+66
+2
+1
+2
+T0526
+5
+1
+7
+1
+2
+T0475
+T0700
+5
+4
+1
+2
+T0599
+Bk. 1
+11 12
+T0408
+3
+1
+T0670
+T0664
+T0481
+Bk. 5
+T0386
+T0660
+L. 14
+8
+20 2221
+3
+28
+21
+16
+15
+16 18
+17 16 16
+4
+1314
+22 23
+7
+19
+Marble R.
+Prov. Park
+Quatsino
+Pr ov. Park
+Raft Cove
+Pr ov.
+Park
+Cape Scott
+Park
+Reserve
+FEDERAL AND
+PROVINCIAL
+PARKS
+20 90
+2137
+11 28
+2137
+DND
+Base
+12 96
+12 9 5
+129 4
+I.R .
+16
+I.R. 3
+I.R . 5
+I.R.
+6
+I. R .  7
+I. R .  8
+I.R. 9
+I.R. 1 0
+I. R .  1 0
+I.R . 18I.R . 18
+I.R.
+2
+I.R. 1 3
+I. R .  1 4
+I.R.
+11
+I.R.
+10
+I. R .  1
+I.R. 4
+32 94
+A
+35 36
+5 5
+31
+L.
+74
+L.
+3
+TL
+TL
+TL
+TL
+TL
+TL
+TL
+MB
+MB
+Loran
+BC Hydro
+Port Alice Municicpality
+Clesklagh
+Main
+Wanokana Main
+R 440
+Rupert Main
+R400
+Ru pe rt Main
+West   Main
+West Main
+700
+Port
+Hardy
+M
+ain
+Varney
+Main
+Port Hardy
+M
+ain
+W
+est
+M
+ain
+A.L. Mn
+South-East
+Main
+K 500
+Marine
+Drive
+Teeta Main
+Mahatta   M
+ainline
+B Main
+J Main
+B
+Main
+North
+Main
+Klaskino Main
+Klaskino
+Main
+Mahatta
+Koprino Mn
+ML Mn West Main
+ML Mn
+South
+Main
+Topknot Main
+SJ Mn
+Ronning M
+n
+San Josef Main
+SJ40
+Stranby
+Main NE M
+n
+60
+NE 60
+CH
+200
+Hushamu Main
+CH Main
+S. M
+n
+SE Mn
+Koprino Mn
+Port Alice
+Main
+M
+arine
+Drive
+Cayeghie
+M
+n
+Cay. Mn
+Mainline
+S 30
+Hath.
+Mn
+K Main
+I  Main
+K 10
+K   Main
+East
+Main
+I MainJ Main
+E. M
+ain
+T500
+West Main
+Victoria
+Lake
+M
+ain
+Condemned
+Bri dge
+Public RoadPublic Road
+Public
+Hwy
+Public Hwy
+Public  Hwy
+Public Hwy
+Public
+Hwy
+STATUS MAP
+W.F.P . TFL 6 Crown Land
+WFP Managed Forest  31
+WFP Managed Forest  29 
+WFP Crown Grants
+WFP Managed Forest  61
+WFP FL A19240
+Other Private Crown Grant
+First Nations I.R.’s
+WFP Tls outside TFL 6
+Other Private Timber Licences
+Other Public Lands
+Misc Non-WFP lands
+Government Highways
+Municipal Boundaries
+W.F.P. TFL 6 Timber Licences
+29 2
+44 9 391
+39 8 39 7
+396
+343 344
+2123
+2104
+1416
+2242 2243
+2244
+44 4 441
+195635
+20 85
+14 0
+819 153
+L/O
+   12 0027
+309
+138
+443
+445
+165
+2239
+40 522 38
+20 82- A
+1711
+2093
+2094
+211 7 11 88
+2092
+21 16
+2134
+39 9
+2115 21 05
+18 4 17 1
+20 34
+L. 6 7 7
+L.6 7 6  L.
+678
+M.C.
+129 4
+12 9 5
+12 96
+MC
+M.C.
+84 89
+81
+108
+90
+11 1
+10 6
+24 4
+84
+90
+11 1
+10 6
+24 4
+Golf
+Co urse
+DOH Gravel
+ReservesBC Hydro Sites
+Loran
+Site
+Nat ure
+Reserve
+Deactivat ed
+Mi ne Sit e
+Interfor
+Port
+Hardy
+Winter
+Harbour
+Holberg
+Coal
+Ha rb our
+Quatsino
+Jeune
+Landing
+Port
+Alice
+Pulp Mill
+Mahatta
+River
+Port
+McNeill
+10 24 6 81 0
+Scale in kilometres
+Quatsino Tree Farm Licence 6
+ 
+Figure 2 – Status Map 
+The forests of TFL 6 lie within the wetter maritime Coastal Western Hemlock biogeoclimatic 
+zone.  Annual precipitation levels reach 3,000 to 5,000 mm.  The climate is characterized by 
+mild, wet winters with daily mean minimum temperatures December to February of 0 to 2 
+degrees C.  Summers are generally cool and moist with mean daily maximum temperatures of 
+18 to 20 degrees C during July and August.  However, local climates within the TFL can be 
+significantly different due to topographic influences and the movement of low cloud and fog 
+from offshore onto northern Vancouver Island.  The dominant timber species is western 
+hemlock, which occurs in conifer stands mixed with varying amounts of amabilis fir and 
+western red cedar.  Lesser amounts of Sitka spruce, yellow cedar, Douglas fir, alder, shore 
+pine and mountain hemlock also occur. 
+There are seven communities within or adjacent to the licence area.  Their livelihood and 
+stability depends mostly or in part on the economic activities generated on the North Island.  
+These are the communities of Port McNeill, Port Alice, Port Hardy, Holberg, Coal Harbour, 
+Winter Harbour, and Quatsino as noted in Figure 3.  WFP harvesting operations in TFL 6 and 
+adjacent forest licences, and the associated dissolving pulp manufacturing facility in Port 
+Alice, are the major employment source for north Vancouver Island.  There is also economic 
+activity from other forest licensees, fish farming, commercial and recreational fishing and 
+expanding tourism.   
+
+--- page 12 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 4 
+Port McNeill and Port Hardy are connected to southern Vancouver Island by Highway 19.  
+Port Alice and Coal Harbour are served by paved roads connected to Highway 19.  Holberg 
+and Winter Harbour are served by a gravel road connected to Highway 19 south of Port 
+Hardy.  Quatsino is accessible by water from Coal Harbour.  This community currently does 
+not have nor does it desire road access. 
+Mabbott
+ Island
+Drake
+ Island
+Port
+Hardy
+Air po r t
+Mar ble R.
+Pr ov. Park
+Quatsino
+Pr ov. Park
+Raft Cove
+Prov.
+Park
+Cape Scott
+Park
+Reserve
+FEDERAL AND
+PROVINCIAL
+PARKS
+I. R .
+16
+I.R. 3
+I.R . 5
+I.R.
+6
+I.R. 7
+I. R .  8
+I.R . 9
+I.R . 1 0
+I.R . 1 0
+I.R . 1 8I.R . 1 8
+I. R .
+2
+I.R. 13
+I.R. 1 4
+I.R.
+11
+I. R .
+10
+I. R . 1
+I. R . 4
+Clesklagh
+Main
+Wanokana Main
+R 440
+Rupert Main
+R400
+Rupert Main
+West   Main
+West Main
+700
+Port
+Hardy
+Main
+Varney
+Main
+Port Hardy
+M
+ain
+W
+est
+M
+ain
+A.L. Mn
+South-East
+Main
+K 500
+Marine
+Drive
+Teeta Main
+Mahatta   M
+ainline
+B Main
+J Main
+B
+Main
+North
+Main
+Klaskino Main
+Klaskino
+Main
+Mahatta
+Koprino Mn
+ML Mn West Main
+ML Mn
+South
+Main
+Topknot Main
+SJ Mn
+Ronning M
+n
+San Josef Main
+SJ40
+Stranby
+Main NE M
+n
+60
+NE 60
+CH
+200
+Hushamu Main
+CH Main
+S. M
+n
+SE Mn
+Koprino Mn
+Port Alice
+Main
+M
+arine
+Drive
+Cayeghie
+M
+n
+Cay. Mn
+Mainline
+S 30
+Hath.
+Mn
+K Main
+I  Main
+K 10
+K   Main
+East
+Main
+I MainJ Main
+E. M
+ain
+T500
+West Main
+Victoria
+Lake
+M
+ain
+Con demn ed
+Bri dge
+Public RoadPublic Road
+Public
+Hwy
+Public Hwy
+Public  Hwy
+Public Hwy
+Public
+Hwy
+COMMUNITIES
+Winter
+Harbour
+Quatsino
+Port
+Alice
+Jeune
+Landing
+Port
+McNeill
+Port
+Hardy
+Coal
+Harbour
+Holberg
+10 24 6 81 0
+Scale in kilometres
+Quatsino Tree Farm Licence 6
+ 
+Figure 3 – Communities 
+1.3 History and Progress 
+TFL 6 is held and managed by Western Forest Products Limited (WFP).  Western Forest 
+Products Limited is a wholly owned subsidiary of Doman Industries Limited.  
+Block 1 is the original TFL 6 area granted to Western’s predecessor, British Columbia Pulp & 
+Paper Company Limited as Quatsino Forest Management Licence 6 on October 26, 1950.  
+Block 2 is the former Block 4 of Tree Farm Licence 25 which was granted to another 
+predecessor company, Alaska Pine and Cellulose Limited, on May 21, 1958.  On October 1, 
+1998 these two areas were consolidated into a new TFL 6 made up of Block 1 (former TFL 6) 
+and Block 2 (former TFL 25 Block 4).  Now in its fifth decade of operation, WFP and 
+predecessors have responsibly managed the licence for its long-term sustainability.  WFP is 
+proud of the efforts of our employees and contractors in helping to sustain this important 
+generator of employment and crown revenues.  Appendix I lists amendments to the licence 
+area that have occurred since 1950.  
+The following accomplishments indicate the licensee’s willingness and ability to manage more 
+than 198,000 hectares of lands and forests in Tree Farm Licence 6 in a spirit of co-operation 
+with government agencies, its employees and a multi-faceted public.  Although site specific 
+management cycles will vary considerably, Figure 4 illustrates a generalized Forest 
+Management Cycle. 
+
+--- page 13 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 5 
+ 
+Figure 4 – Forest Management Cycle 
+Biodiversity Conservation 
+• A detailed summary of biodiversity has been completed for TFL 6. 
+• WFP has worked with government over the last three years in establishing Landscape Unit 
+boundaries and draft biodiversity emphasis options within the TFL. 
+• Analysis of current seral stage distribution within the TFL has been completed to determine 
+the amount and biological significance of old growth remaining in the TFL. 
+• WFP is committed to working with government and stakeholders to complete biodiversity 
+planning as part of the Landscape Unit Planning process over the next two years.  
+• WFP has completed an initial assessment of the TFL and adjacent tenures for the 
+presence of High Conservation Value Forest attributes.   
+• Management strategies are being developed to maintain and where possible enhance High 
+Conservation Value Forest attributes (including biodiversity) within the TFL. 
+First Nations   
+• First Nations review of planning, harvesting and silviculture activities is in place. 
+• The development of First Nations silviculture work capacity has been supported by 
+coordinating training and the direct award of silviculture contracts for spacing, pruning, fire 
+suppression and mop-up, brushing and creek cleaning to members of the Quatsino First 
+Nation and the Kwakiutl First Nation.  Coordinating training and providing employment for 
+Tlatlasikwala First Nation members within the company planting program.  
+• The licensee remains committed to continue developing First Nations capacity in forest 
+
+--- page 14 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 6 
+management. 
+• The licensee supports a First Nations Coordinator and review of forest harvesting is 
+undertaken in conjunction with Forest Development Plans. 
+• A protocol is being developed with the three Bands whose territory covers the TFL in 
+respect of silviculture contracting and FRBC projects. 
+Communities and Employment 
+• Forestry and manufacturing jobs related to the TFL 6 timber harvest are critically important 
+to the communities of Port McNeill, Port Alice, Holberg, Winter Harbour, Coal Harbour and 
+Port Hardy.  Secondary jobs are also maintained in Campbell River and Courtenay as well 
+other Vancouver Island and southern coastal communities. In 1998, 968 direct person 
+years of employment were created by forest management in TFL 6.  Poor markets and high 
+inventories in 1998 resulted in the licensee achieving only 69% of the AAC.  Doman 
+Industries’ sawmills also experienced significant down time in 1998 and 1999.  
+Consequently, the current person days of employment are lower than historical averages.  
+In 1999, 1273 direct person years of employment were maintained when 96% of the AAC 
+was achieved. 
+• The Licensee has been a long time supporter of North Island communities.  Open Houses 
+are held each year to present logging and silvicultural plans, company staff are active on 
+community boards and in local government and the company has been a vital part of 
+community development including providing donations for local causes, sponsoring sports 
+teams, sponsoring community events, and developing infrastructure (arena, pool, curling 
+rink, golf course, track, etc.).  
+Recreation 
+• WFP maintains 15 trails and recreation sites on both private and public land within and 
+adjacent to the TFL.  Many of the sites are managed cooperatively with the Ministry of 
+Forests.  In 1999 there were more than 64,000 person-days of recreational use at these 
+sites. 
+• Staff participated in a FRBC study prepared by the Economic Planning Group for the 
+Regional District of Mount Waddington titled, “Northern Vancouver Island Forest Recreation 
+and Tourism Opportunities Study”. 
+• Each year hundreds of TFL visitors participate in guided tours to view harvesting and 
+forestry activities. 
+• The recreation inventory for TFL 6 was reviewed in 1999.  As there were no significant 
+changes in the recreational use of TFL lands, an update to the inventory was not necessary 
+for MP 9.  
+Timber Harvesting 
+• Over the last 49 years the licensee has harvested over 99% of the available Allowable 
+Annual Cut and has been at all times in compliance with the cut control regulations. 
+• Harvesting across the timber profile has been maintained. 
+• Non-conventional harvesting techniques such as long-line and helicopter logging have 
+been utilized. 
+• Compliance with contracting regulations has always been met. 
+Small Business Forest Enterprise Program 
+• In 1988, the Forest Act was amended and TFL volume was removed from TFL licensee 
+control for a small business logging program. Further amendments were made as a 
+consequence of Doman Industries assuming full control of WFP in 1988.  In 1995 an 
+agreement was reached between the Ministry of Forests and Western Forest Products 
+
+--- page 15 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 7 
+Limited, for WFP to relinquish a Forest Licence in the nearby Strathcona Timber Supply 
+Area and delete a small area from TFL 6.  In return WFP received the volume in TFL 6 that 
+had been allocated to the Small Business Forest Enterprise Program.  This agreement 
+simplified administration of TFL 6 and increased the employment security of WFP 
+employees and contractors.  There still remains some unharvested volume from this 
+program and this will be monitored by WFP during the term of MP 9.     
+• The program is allocated an annual volume of 13,242 m
+3 from the AAC of TFL 6.   
+• The Port McNeill Forest District manager is responsible for administering the program. 
+• Operating areas for the small business program are identified and are located in several 
+drainages.   
+• The majority of small business wood is sold through value added bid proposal timber sale 
+licences. 
+Basic Silviculture 
+• Reforestation has kept pace with harvesting since the TFL was granted in 1950. 
+• The licensee has logged about 73,000 ha.  Planting has been undertaken on 41,000 ha.    
+More than 38 million seedlings of 11 different species have been planted. Natural 
+regeneration occurs readily and has accounted for in excess of 32,000 ha of re-stocking. 
+• Tree improvement programs for Douglas Fir, western hemlock and Sitka spruce began in 
+1959, 1966 and 1969 respectively.  Today all of the Douglas fir and 80% of the western 
+hemlock and most of the red cedar seedlings planted are grown from seed orchard seeds.  
+No genetically modified seed or trees have been used for reforestation. 
+• The Company maintains a 3 million-tree seedling forest nursery in Saanich. 
+• There is currently no backlog of not satisfactorily restocked (NSR) area on the TFL. 
+• Appendix IV provides a history of silviculture projects completed. 
+Enhanced Silviculture  
+• More than 10,832 ha of second growth stands have been juvenile spaced to accelerate tree 
+size development by concentrating growth onto less trees. 
+• Fertilization to enhance forest productivity has occurred on more than 9,715 ha. 
+• 2,766 ha have been pruned to improve future wood quality. 
+Research  
+• The Company maintains several tree improvement and reforestation research sites 
+(Appendix IX) throughout TFL 6.  These are maintained in cooperation with the BC Forest 
+Service (BCFS), the Canadian Forestry Service (CFS) and/or other Licensees. 
+• WFP is a founding member and continues to be a strong supporter of the Salal Cedar 
+Hemlock Integrated Research Program.  
+• WFP also provides sites to the Forest Engineering Research Institute of Canada (FERIC) 
+and BCFS researchers for various tree improvement, silviculture, harvesting and road 
+building trials. 
+• The licensee’s predecessor established the Saanich Forestry Center in 1964 to provide 
+improved planting stock for reforestation.  In 1998 WFP’s original tree improvement 
+program was transferred from its Lost Lake location to the Saanich Forestry Centre.  Seed 
+orchards for western hemlock, western red cedar and Sitka spruce are maintained.  Yellow 
+cedar hedges are also maintained for steckling production.  WFP is a member of the 
+Northwest Hemlock Tree Improvement Cooperative Program (HEMTIC).  
+• WFP has established several minor trials within the licence area.  Some of the trials include 
+time of planting fertilization, variable spacing trials, juvenile spacing methods, herbicide 
+treatment, brush blankets, and drainage. 
+
+--- page 16 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 8 
+1.4 Licence Holder and Administration  
+Western Forest Products Limited is a wholly owned subsidiary of Doman Industries Limited 
+(Doman).  Doman is a coastal B.C. forest products company involved in timber harvesting, 
+saw milling, value-added lumber remanufacturing, dissolving sulphite pulp production and 
+kraft pulp production.  Doman’s nine saw mills have an annual lumber production capacity of 
+1.1 billion board feet.  Major markets include the U.S.A., Japan and Europe.  Doman also 
+owns one sulphite pulp mill at Port Alice, which has an annual production capacity of 160,000 
+air-dried metric tonnes (ADMT).  Doman has a kraft pulp mill at Woodfibre with an annual 
+production capacity of 240,000 ADMT.  Major markets for pulp include North America, Europe 
+and the Far East.    
+Western Forest Products Limited is responsible for timber harvesting and reforestation on 
+approximately 885,000 ha of Crown and private forest lands located in coastal British 
+Columbia.  WFP has an annual timber harvest of approximately 4.2 million cubic metres under 
+its tenures, which include three Tree Farm Licences, seven Forest Licences, 5 Managed 
+Forests and 125 Timber Licences.  The Company’s AAC together with log trading and other 
+log supply agreements provides for approximately 85% of the fibre requirements for the 
+Company’s manufacturing plants.  The remainder of the wood is purchased on the open 
+market. 
+WFP’s forest operations are organized into three regions.  North Vancouver Island Region, 
+with a regional office in Port McNeill, administers harvesting and reforestation activities in the 
+north end of Vancouver Island.  Mainland/Islands Region, with a regional office in Campbell 
+River, administers harvesting and reforestation activities in numerous north and central coast 
+operations as well as operations on the Queen Charlotte Islands, southern Vancouver Island 
+and the lower mainland coast.  Nootka Region, with a regional office in Gold River, 
+administers harvesting and reforestation activities on the central, west coast of Vancouver 
+Island.  WFP’s corporate head office is located in Vancouver.  Appendix XVIII contains a copy 
+of the Corporate Annual Statutory Report for 2000.  The company’s overall utilization of forest 
+products is illustrated in Figure 5. 
+ 
+Figure 5 – Timber Utilization 
+
+--- page 17 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 9 
+2.0 SUSTAINABLE FOREST MANAGEMENT PRINCIPLES 
+2.1 Sustainable Forest Management Policy  
+WFP’s forest management is guided by three overarching principles.  These are:  
+• Our operations must be economically viable.  Our company must operate in a financially 
+successful manner to meet shareholders expectations of a fair return on investment and 
+to meet social and environmental commitments;   
+• Our actions must be socially beneficial to local, regional and First Nation’s communities.  
+WFP is committed to respecting, understanding and supporting First Nations, community 
+and employee aspirations for stability and certainty;  
+• Our activities must be environmentally appropriate.  WFP is committed to the protection 
+of the environment and the sustainable development of the resources under our 
+stewardship through sound forestry and environmental management practices that meet 
+or exceed government standards. 
+• Under these principles, our company is committed to:  
+ 
+• Establishing harvest levels that balance the carrying capacity of forest ecosystems 
+with social, environmental, and economic considerations. 
+ 
+• Utilizing forest practices appropriate to maintaining, social, environmental, and 
+economic objectives 
+ 
+• Engaging a team of dedicated professional foresters and planners committed to 
+implementing and practicing sustainable forest management 
+ 
+• Continually enhancing our ability to plan and manage by promoting applied research 
+and using leading edge inventory and modeling systems. 
+ 
+• Planning for the long-term in an integrated manner to incorporate the full range of 
+forest values including soil, water, fish and wildlife, archaeological, scenic resources 
+and biological diversity. 
+ 
+• Maintaining a practical, registered management system to guide and direct 
+environmental aspects of company operations 
+ 
+• Performing regular, internal and external audits to ensure compliance with forest 
+practices legislation and the commitments made in this SFM statement. 
+ 
+• Committing to a level of compliance that meets or exceeds legal requirements and 
+satisfies public expectations 
+ 
+• Continuously improving all aspects of our forest practices though adaptive 
+management. 
+ 
+• Communicating our performance to stakeholders and the public on a regular basis 
+ 
+• Maintaining biological diversity and conservation objectives at regional, landscape 
+and stand levels. 
+ 
+• Sustaining, enhancing and protecting forest ecosystem functions. 
+ 
+• Maintaining soil productivity and water quality by harvesting with environmentally 
+appropriate systems. 
+ 
+• Researching habitat needs of fish and wildlife species and populations and 
+
+--- page 18 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 10 
+establishing a program for monitoring rare, threatened and endangered species 
+ 
+• Maintaining an active salmonid enhancement program to sustain or increase 
+salmonid populations through hatchery and habitat restoration programs. 
+ 
+• Implementing restoration programs to address issues arising from past practices. 
+ 
+• Promoting a representative protected areas system within and adjacent to company 
+forest tenures. 
+ 
+• Ensuring the economic health and sustainability of associated, resource-dependent 
+communities. 
+ 
+• Involving the public and stakeholders in meaningful consultation on all aspects of our 
+forest management. 
+ 
+• Encouraging public participation in identifying and assessing sustainable forest 
+management goals, objectives and measurable indicators. 
+ 
+• Cooperating and consulting with community resource boards and stakeholder groups 
+with resource management mandates.   
+ 
+• Managing operations to safeguard the health and safety of employees, contractors 
+and the public. 
+ 
+• Developing our human resources through continuous training and recognition of 
+employee contributions 
+ 
+• Maintaining and enhancing opportunities for public enjoyment of forests through an 
+open road policy as well as recreation site development and management. 
+ 
+• Respecting and recognizing First Nations traditional territories through consultation 
+and involvement in forest development planning 
+ 
+• Providing for First Nations’ participation in setting and achieving sustainable forest 
+management goals, objectives and measurable indicators.  
+ 
+• Establishing employment opportunities through cooperative ventures with First 
+Nations to increase the benefits of our operations to their economic and social well 
+being 
+ 
+• Supporting the fair and affordable settlement of aboriginal land claims through 
+negotiated treaties with involvement of all stakeholders 
+ 
+• Achieving a fair return to shareholders by operating in a financially successful manner 
+ 
+• Promptly regenerating all areas after harvest with ecologically appropriate species to 
+maintain and enhance forest growth 
+ 
+• Undertaking silviculture practices to enhance the value and volume of young forest 
+stands. 
+ 
+• We will maintain and further our competitive position in the global forest product 
+marketplace based on our long-standing commitment to innovation, research, 
+leadership and sustainable forest management. 
+
+--- page 19 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 11 
+2.2 Linking WFP’s Sustainable Forest Management Principles to Criteria and Indicators  
+2.2.1 Hierarchy of SFM Levels 
+WFP’s forest tenure Management Plans have been developed to implement in an effective 
+manner the company’s sustainable forest management (SFM) program and ensure 
+compatibility with the various forest certification schemes available to the licensee.  The plan 
+focuses on three main principles followed by a series of increasingly specific Criteria, 
+Elements, Objectives and Indicators. The following chart illustrates the concept using specific 
+examples that are used to monitor the effectiveness of meeting identified Principles, Criteria 
+and Indicators. 
+  
+PPrriinncciippllee  EEccoonnoommiicc  EEnnvviirroonnmmeennttaall  SSoocciiaall  
+CCrriitteerriiaa  
+Multiple  
+Benefits 
+Conservation of 
+Biological Diversity 
+Responsibility for 
+Sustainable 
+Development 
+EElleemmeenntt  Profitability Ecological Diversity Increase First 
+Nations involvement 
+in forest 
+management 
+OObbjjeeccttiivvee  Achieve a 
+reasonable return 
+on investment 
+Maintain a dynamic 
+distribution of 
+habitat over the 
+landscape 
+First Nations 
+silviculture 
+contracts  
+IInnddiiccaattoorr  
+ 
+ 
+Margin per cubic 
+metre 
+ 
+ 
+% of the Landscape 
+Unit reserved 
+ 
+ 
+% of silviculture 
+contracts to First 
+Nations 
+ 
+
+--- page 20 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 12 
+2.2.2 Sustainable Forest Management SFM system 
+Sustainable Forest Management is WFP’s commitment, as stated in its policies, management 
+plans and supported by our Environmental Management System and forest certification 
+efforts. Criteria and Indicators are identified and monitored through audits and annual 
+reporting. Results drive an adaptive management approach based on continuous 
+improvement. The following illustration below outlines the systems. 
+ 
+Environmental Social Economic 
+Sustainable Forest Management (SFM) System 
+SFM Statement 
+Criteria and Indicators 
+Env. Mgmt. System Certification 
+SFM Plans
+Implementation
+Monitoring
+
+--- page 21 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 13 
+2.3 WFP’s Forest Certification Initiatives 
+The stewardship principles are essential components in the Company’s objective to be 
+certified under the Forest Stewardship Council Principles and Criteria (FSC), Canada’s 
+National Sustainable Forest Management System Standard, CAN/CSA-Z809-96 (CSA) and 
+ISO 14001 Environmental Management System Standard (ISO).  Linkages between WFP’s 
+sustainable forest management approach and the principles, criteria and requirements of 
+FSC, CSA and ISO are embodied in this Management Plan and articulated in the Plan 
+objectives, strategies and performance targets.   
+Measurable performance targets are set and monitored as a means of meeting the Plan 
+objectives. Some targets will be established and reviewed annually while others will be set 
+and reviewed periodically. TFL 6 operations were certified to ISO 14001 standards in April 
+2000 by QMI, an ISO certifier.  Appendix XVI provides details of the ISO 14001 program.  TFL 
+6 operations along with other North Vancouver Island Region tenures were assessed by SGS 
+Forestry, an accredited certifier, against the Forest Stewardship Council’s Principles and 
+Criteria earlier in 2000.  A certification decision has not been reached at this time, and work 
+continues in addressing correction actionrequired that are outstanding from the 2000 
+assessment work.  As part of the CSA process in January 2001 a Community Advisory Group 
+was formed to help define local values, goals, indicators and objectives for TFL 6 and 
+adjacent company tenures.  As the work of the group is still in its infancy and values, goals, 
+indicators and objectives have not been developed yet.  It is expected that the information 
+attained from this local advisory group will be incorporated into the Management Plan as an 
+amendment along with changes required as a result of further FSC related requirements. 
+Depending on the level of FSC and CSA changes required, the company may consider a 
+separate plan as these initiatives cover both TFL 6 and other adjacent tenures. 
+ WFP will report on performance in achieving targets and Plan objectives.  The TFL annual 
+report will be one of the main reporting mechanisms used.  Others include corporate reports to 
+shareholders and audits (both external and internal). 
+ 
+
+--- page 22 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 14 
+3.0 FOREST MANAGEMENT INVENTORY AND PLANNING 
+3.1 Resource Inventories 
+Resource Inventories are maintained for the TFL land base for: forest cover, environmentally 
+sensitive areas (ESAs), operability, recreation features (including caves and karst), visual 
+landscape, terrain stability, ownership, archaeological resource potential, ecosystems, 
+streams, wildlife, and potential High Conservation Value Forests attributes.  Table 2 
+summarises the status of each inventory.  
+Table 2 – Resource Inventory Status 
+Item Status Within GIS MoF 
+Acceptance 
+Date 
+Plan 
+Timber Inventory Completed in 1970.  
+MoF planned audit deferred pending VRI. 
+Yes Yes -Site Index 
+by Nussbaum 
+18-April-97 
+Inventory revisions updated 
+annually.  Vegetation Resource 
+Inventory commenced in 1999.  
+Ecosystems Completed Lewis 1982-85.  Minor 
+revisions in 1998 
+Yes Used in MP 8  
+Terrain Stability Completed in 1995 and 1998 by Terence 
+Lewis et al. 
+Yes Yes   
+12-Apr-99 
+ 
+ESAs No longer used for planning.  New 
+inventories replace the need for this 
+classification. 
+No   
+Recreation Inventory Completed in 1990 by Neufeld Reeve 
+MacDougal Consultants  
+Yes Yes 
+2-July-91 
+Update to new standards to be 
+completed in 2001. 
+Recreation Analysis 
+(ROS) 
+Completed in 1990 by Neufeld Reeve 
+MacDougal Consultants  
+Yes Yes 
+2-July-91 
+Update to new standards to be 
+completed in 2001. 
+Visual Landscape 
+Inventory 
+Completed in 1994 by Neufeld Reeve 
+MacDougal Consultants  
+Yes Yes 
+18-Oct-95 
+Visual Mitigation strategy 
+conducted in 1998.  Upgrading of 
+Rec. and Visual Inventory to new 
+standards currently being done 
+by MoF as part of Regional Roll-
+up. 
+Wildlife Habitat Ongoing    UWR surveys, eagle nest 
+surveys, habitat modeling for 
+Marbled Murrelet, deer, elk, and 
+bear. 
+Stream Classification FDP process has updated to FPC 
+Riparian Classes for a large part of the 
+TFL - 1998 
+Yes  Stream Inventories will continue 
+to be updates through further 
+operational field sampling. 
+Karst Inventory Overview Completed 1979 – Paul Griffith   Inventory not released at the 
+request of the BC Speleological 
+Society.  Although, a 1:250,000 
+reconnaissance level inventory is 
+available for forest development 
+planning. 
+Archaeological Archaeological Overview Assessment 
+completed by I. R. Wilson of Port McNeill 
+Forest District in 1995.  
+Provincial 
+sites only 
+ Presently in discussions with 
+Quatsino First Nation to access 
+less sensitive information from 
+their traditional use survey. 
+Operability Completed by WFP in 1999. 
+ 
+Yes  Internal MoF 
+Memo 
+21-Feb-99 
+ 
+20-Year Plan Timber supply model spatially explicit Yes  20-Year Projection of modeled 
+harvest blocks submitted in 
+preparation for MP 9. 
+ 
+
+--- page 23 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 15 
+3.1.1 Forest Cover 
+The most recent field inventory was done between 1968 and 1970. Subsequently, this 
+inventory has been updated to account for the area harvested and regenerated as well as 
+other changes. This updated inventory was used for MP 8. Because of its age, it has no 
+formal letter of approval. However at the time it was done, methodology followed MoF policies 
+and procedures. 
+WFP has recently begun a new Vegetation Resource Inventory (VRI) project for TFL 6 that is 
+planned for completion in 2001. Funding for the VRI will come from WFP’s 5-year agreement 
+with Forest Renewal BC.  Preliminary discussions with the MoF Region have been undertaken 
+(May 11,1999).  Photo interpretation and quick plot ground samples were completed in 1999.  
+A more intensive ground survey program will be completed in 2000. 
+3.1.2 Environmentally Sensitive Areas 
+Areas assessed as sensitive or valuable for other resource values have been delineated 
+through inventories conducted before and since MP 8.  Management objectives reflecting the 
+presence of these areas are in other sections of this document, including terrain stability and 
+soil sensitivity, wildlife habitat, riparian and recreational reserves. 
+3.1.3 Operability 
+Recently 1:20,000 scale operability mapping has been updated for the TFL.  The terms of 
+reference for the new operability mapping were submitted to the Ministry of Forests in 
+February 1999 and approved by the Regional Manager in June 1999. A field review with 
+district staff was undertaken in October 1999 and final adjustments were made to the mapping 
+in November 1999.  Approximately 98% of operable forest types can be harvested with 
+conventional cable and ground based methods.  Helicopter or skyline systems will be utilized 
+to harvest the remaining 2% of the operable landbase.  Appendix XV illustrates the first 20 
+years of block sequencing used by the timber supply model to generate the “current 
+management” harvest flow in the timber supply analysis (Appendix III). 
+3.1.4 Recreation 
+The current recreation features inventory was completed in 1993.  The inventory consists 
+1:50,000 map sheets showing recreation feature classes, and a report describing the 
+recreation and biophysical features and a management classification.  This inventory has 
+classified and mapped the licence area into five Recreation Opportunity Spectrum Classes 
+based on access, feature significance and recreational use. 
+In 1995, WFP submitted a subzoning proposal to the Land Use Co-ordination Office for 
+Special Management Zone 2.  Part of the proposal outlined a West Coast recreation and 
+biodiversity reserve from Grant Bay to Cape Scott Park.  In 1996 and 1997 the outer West 
+Coast was evaluated for a potential trail route between Grant Bay and Cape Scott.  The 
+evaluation reaffirmed earlier work by the British Schools Exploration Society, to locate a trail 
+route connecting recreational and scenic values in the area but that there would be issues 
+with the trail route depending on the shape that recreational development would take.  In 
+1997/98, the route was further evaluated by an engineering consultant and a number of 
+challenges (stream and river crossings, treacherous terrain, inaccessible beaches on high and 
+storm tides, etc.) were identified.  Due to the significant construction cost estimates, the 
+program was not deemed feasible.  Also, the Cape Scott and proposed North Coast trails 
+provide ample amounts of remote hiking and other more accessible routes fill an important 
+
+--- page 24 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 16 
+demand niche.  WFP has therefore changed its philosophy on the recreation vision for the 
+area.  Future development will focus on providing high quality access routes to less hazardous 
+coastal features.  
+An analysis of the inventory was completed in 1999 for recreational planning over the life of 
+MP 8.  As there were no significant changes to the recreational use in the TFL, a re-inventory 
+was not deemed necessary.  Although updates to the Recreation Feature Inventory and the 
+Recreation Opportunity Spectrum are targeted to be completed to the new standards within 
+2001. 
+Since 1995, two new recreation sites and trails have been constructed in TFL 6.  Significant 
+upgrades have been made to eleven recreation sites and trails.  Total spending on recreation 
+sites since 1995 has exceeded $405,000.  Table 3 lists new and upgraded recreational sites 
+and trails completed from 1995 - 1999.  Figure 6 shows the location of the major recreation 
+sites. Appendix XI provides detailed sketches of developed facilities.  Appendix XII contains a 
+copy of the North Vancouver Island Region Visitors Guide.  
+Table 3 – Recreational Sites and Trails in and around TFL 6: 1995 – 1999 
+New Recreation Sites and Trails
+ Estimated Cost ($)  
+• Hecht Beach Trail  35,000 
+• Palmerston Recreation Area – toilets, campsites 25,000 
+Upgrades to existing Recreation Sites and Trails  
+• Beaver Lake Recreation Area – tables, firewood shelter 7,500 
+• Beaver Lake Trail – trail extension 30,000 
+• Lady Ellen Trail – trail maintenance 2,000 
+• Mahatta River Campsite – firewood shelter 1,500 
+• Marble River Campsite – toilets, firewood shelters,  
+Tables 
+10,000 
+• O’Connell Lake Recreation Area – toilet, fire rings,  
+ Campsites 
+3,000 
+• O’Connor Lake Recreation Area – tables, firewood 
+ Shelter, toilets 
+20,000 
+• Rupert Arm Recreation Area – new shelter 20,000 
+• San Josef Recreation Area – firewood shelter, toilets 15,000 
+• Spruce Bay Recreation Area – tables, toilets  12,000 
+• Spruce Bay Old Growth Trail – trail extension 31,000 
+
+--- page 25 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 17 
+Mabbott
+ Island
+Drake
+ Island
+Port
+Hardy
+Airport
+Marble R.
+Prov. Park
+Quatsino
+Prov. Park
+Raft Cove
+Pr ov.
+Park
+Cape Scott
+Park
+Reserve
+FEDERAL AND
+PROVINCIAL
+PARKS
+Clesklagh
+Main
+Wanokana Main
+R 440
+Rupert Main
+R400
+Rupert Main
+West   Main
+West Main
+700
+Port
+Hardy
+M
+ain
+Varney
+Main
+Port Hardy
+M
+ain
+W
+est
+M
+ain
+A.L. Mn
+South-East
+Main
+K 500
+Marine
+Drive
+Teeta Main
+Mahatta   M
+ainline
+B Main
+J Main
+B
+Main
+North
+Main
+Klaskino Main
+Klaskino
+Main
+Mahatta
+Koprino Mn
+ML Mn West Main
+ML Mn
+South
+Main
+Topknot Main
+SJ Mn
+Ronning M
+n
+San Josef Main
+SJ40
+Stranby
+Main NE M
+n
+60
+NE 60
+CH
+200
+Hushamu Main
+CH Main
+S. M
+n
+SE Mn
+Koprino Mn
+Port Alice
+Main
+M
+arine
+Drive
+Cayeghie
+M
+n
+Cay. Mn
+Mainline
+S 30
+Hath.
+Mn
+K Main
+I  Main
+K 10
+K   Main
+East
+Main
+I MainJ Main
+E. M
+ain
+T500
+West Main
+Victoria
+Lake
+M
+ain
+Cond emne d
+Bridge
+Public RoadPublic Road
+Public
+Hwy
+Public Hwy
+Public  Hwy
+Public Hwy
+Public
+Hwy
+Interfor
+Port
+Hardy
+Winter
+Harbour
+Holberg
+Coal
+Harbour
+Qu atsin o
+Jeune
+Landing
+Port
+Alice
+Pulp Mill
+Mahatta
+River
+Port
+McNeillGolf
+Course
+Recreation
+Site
+Recreation
+Site
+Abandoned
+Minesite
+Boat
+Launch
+Cluxewe
+Trail
+Lady
+Ellen
+Point
+Hecht
+Beach
+Trail
+Grant
+Bay
+Trail
+MAJOR RECREATION
+SITES AND TRAILS
+Provincial Parks
+Recreation Sites or Trails
+Boat
+Launch
+Boat
+Launch
+Brown’s
+Bridge
+Trail
+Arboretum
+SalmonSpawning
+Salmon
+Habitat
+Salmon
+Spawning
+Boat
+Launch
+Boat
+Launch
+Boat
+Launch
+O’Connell 
+    Lake 
+Palmerston
+Mahatta
+River
+Rupert
+Arm
+Spencer
+Cove
+San Josef
+River Swan
+Lake
+Spruce
+Bay
+Victoria
+Lake
+Neroutsos
+Lookout
+Beaver
+Lake
+O’Connor
+Lake
+Marble 
+ River 
+Lady Ellen
+    Trail
+Cluxewe
+ Beach
+  Trail
+  Beaver Lake
+Recreation Site
+O'Connor Lake
+Recreation Site
+10 24 6 81 0
+Scale in kilometres
+Quatsino Tree Farm Licence 6
+ 
+Figure 6 – Major Recreation Sites and Trails 
+3.1.5 Visual Landscape 
+The current visual landscape inventory was completed in 1992. Visual Quality Objective 
+Mitigation Strategy was completed in 1998.  In 1999 designated Scenic Areas within the TFL 
+were made known by the MoF.  Landscape sensitivity and interim visual quality classes for 
+management have been assigned within the scenic area to manage the visual values.  
+Generally the scenic area is made up of the land base visible from main road and marine 
+travel corridors.  Visual design techniques and alternative silviculture systems are used in the 
+design of cutblocks in visually sensitive areas.   
+Upgrading of Visual Landscape Inventory to new standards is currently being done by MoF as 
+part of the Regional Roll-up. 
+3.1.6 Terrain Stability 
+Terrain Stability Mapping (1:20,000 scale) was completed for the TFL in December 1996 by 
+Dr. Terry Lewis.  This terrain mapping has been used to identify areas where further 
+geotechnical analyses are needed to ensure appropriate management strategies are 
+implemented for soil conservation.  This mapping also provides guidance during the TFL 
+operability revisions.  Only under rare circumstances is road construction proposed in terrain 
+Class V areas.  On terrain Class IV (and V) areas, roads and harvesting will occur only after 
+further geotechnical analyses and careful planning including the review and approval by 
+government review agencies takes place. 
+
+--- page 26 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 18 
+3.1.7 Ownership and other Tenures 
+Ownership and land status have been updated for the TFL 6 area.  Since MP 8 three new 
+Class A provincial parks have been created within the TFL.  They are the Quatsino Provincial 
+Park (654 ha), Marble Provincial Park (1,512 ha), and the Misty Lake Provincial Park (55 ha).   
+3.1.8 Archaeological Resource Potential 
+An Archaeological Overview Assessment (AOA) for the Port McNeill Forest District including 
+TFL 6 was completed in 1995.  This overview identifies archaeological sites and resources 
+and indicates where past human activities are likely to have occurred.   The AOA is used in 
+planning.   Areas of high potential are subject to field reconnaissance and inventory followed 
+by further analyses to ensure the protection of special features.  The Quatsino First Nation 
+completed a Traditional Use Study for their traditional territory in 1998.  WFP is working on a 
+sharing agreement for the less sensitive information in the study.  A Traditional Use Study has 
+been completed for the traditional territories of the Kwakiutl and Tlatlasikwala First Nations as 
+part of the Galgalis Traditional Use Study.   
+3.1.9 Ecosystem Mapping 
+An ecological inventory and mapping project has been completed by Dr. T. Lewis.  The 
+system has been used as a basis for forest management activities and site productivity since 
+1985.  Table 4 provides a summary of the Ecosystems that Lewis has identified within TFL 6. 
+Table 4 – TFL 6 Ecosystem Classification System 
+Ecosystems of the Submontane 
+S1 Zonal Salal – Moss 
+   S1ch      - Red Cedar – Western Hemlock Phase 
+   S1ha      - Western Hemlock – Amabalis Fir Phase 
+S2 Red Cedar – Salal, Folisol over rock 
+   S2F      - Douglas Fir Phase 
+   S2P      - Pine Phase 
+S3 Alluvial Sitka Spruce – Sword Fern – Foam Flower 
+   S3B      - Beach Phase 
+S4 Alluvial Red Alder – Sitka Spruce – Herb 
+S5 Wet Alluvial Sitka Spruce – Red Cedar – Skunk Cabbage 
+S6 Red Cedar – Skunk Cabbage – Sphagnum  
+S7 Shore Pine – Red Cedar Swamp Forest 
+S8 Shore Pine Bog 
+S9 Treeless Sphagnum Bog 
+S10 Red Cedar – Western Hemlock – Salal, Folisol over water table 
+S11 Sweet Gale – Hardhack – Sedge Fens 
+S12 Limestone Holly Fern 
+   S12ch      - Red Cedar – Western Hemlock Phase 
+   S12F      - Douglas fir Phase 
+S13 Colluvial Salmonberry – Sword Fern 
+   S13L      - Limestone Phase 
+CP Yellow Cedar – Shore Pine Scrub Forest 
+Ecosystems of the Montane 
+M1 Montane Moss 
+   M1C      - Colluvial Phase 
+M2 Yellow Cedar – Western Hemlock – Salal 
+M3 Oakfern 
+M4 Wet Montane Skunk Cabbage – Marsh Marrigold 
+M5 Montane Devil’s Club 
+Sub-Alpine and Alpine Ecosystems 
+MH1 Closed Zonal Mountain Hemlock Forest 
+   MH1C      - Colluvial Phase 
+MH2 Mountain Hemlock – Rock Complex 
+P Mountain Hemlock Parkland 
+A Alpine 
+AT Avalanche Track Ecosystems 
+
+--- page 27 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 19 
+The use of the ecological information for estimation of site productivity was raised as an issue 
+in the approval of MP 8. A project was undertaken by J. S. Thrower in 1996 to assess the 
+validity of this approach. The report confirmed the approach used in MP 8. The average site 
+index Thrower obtained was 0.3 m higher than that used in MP 8. A letter approving the 
+Thrower report was received from A. Nussbaum of Research Branch on April 18,1997.  This 
+letter confirmed that this approach was suitable for use in MP 9. 
+3.1.10 Streams 
+A comprehensive riparian inventory has not been completed for the entire TFL.  However, 
+operational stream inventories have been conducted since 1988 and a Resource Inventory 
+Committee project is underway.  This mapping project will provide information on fish 
+distribution, fish habitat and habitat restoration opportunities.  These two sources will provide 
+a great deal of site specific survey information for operational use.  WFP intends to utilize this 
+detailed work in conjunction with GIS modelling to obtain an overall estimate of riparian 
+classes for the TFL.  Forest Practices Code riparian reserves will then be applied to all known 
+and predicted fish bearing streams.  This approach is outlined in detail in the Timber Supply 
+Analysis information package. 
+3.1.11 Wildlife 
+Until recently wildlife inventories were focused on specific species.  In the late 1970’s and 
+early 1980’s fourteen deer winter range areas totalling 2,040 ha were established in TFL 6 
+and removed from the timber 
+harvesting land base.  Under 
+the Forest Practices Code of 
+BC Act, Operational Planning 
+Regulation approximately 60% 
+(1,031 ha) of these sites were 
+grandparented (as of October 
+1998) as ungulate winter 
+ranges (UWR).  Objectives for 
+managing ungulate winter 
+ranges have been set by the 
+Forest District Manager and 
+designated environment 
+official.  By October 2003 
+boundaries for ungulate winter 
+ranges must be made 
+permanent.  WFP will work 
+with both the MoF and MOELP 
+to finalize ungulate winter 
+range boundaries and develop 
+management strategies for them.  In 1998 and 1999 the fourteen deer winter ranges 
+mentioned above as well as other potential wildlife habitat areas were evaluated to identify 
+and classify potential habitat for ungulates, Marbled Murrelets as well as several other 
+species.  Although many of the non-designated UWRs were shown to have low value for deer 
+they do contain some medium to higher value Marbled Murrelet habitat. These areas are 
+located in the Koprino River area and they or equivalent areas may be designated as Wildlife 
+Habitat Areas or Old Growth Management Areas that focus on Marbled Murrelet.  Figure 7 
+shows the location of ungulate winter ranges. 
+Figure 7 – Ungulate Winter Ranges 
+Mabbott
+ Island
+Drake
+ Island
+Port
+Hardy
+Air po r t
+Mar bl e R.
+Prov. Park
+Quatsino
+Prov. Park
+Raft Cove
+Prov.
+Park
+Cape Scott
+Park
+Reserve
+FEDERAL AND
+PROVINCIAL
+PARKS
+Clesklagh
+Main
+Wanokana Main
+R 440
+Rupert Main
+R400
+Rupert Main
+West   Main
+West Main
+700
+Port
+Hardy
+Main
+Varney
+Main
+Port Hardy
+M
+ain
+W
+est
+M
+ain
+A.L. Mn
+South-East
+Main
+K 500
+Marine
+Drive
+Teeta Main
+Mahatta   M
+ainline
+B Main
+J Main
+B
+Main
+North
+Main
+Klaskino Main
+Klaskino
+Main
+Mahatta
+Koprino Mn
+ML Mn West Main
+ML Mn
+South
+Main
+Topknot Main
+SJ Mn
+Ronning M
+n
+San Josef Main
+SJ40
+Stranby
+Main NE Mn
+60
+NE 60
+CH
+200
+Hushamu Main
+CH Main
+S. M
+n
+SE Mn
+Koprino Mn
+Port Alice
+Main
+M
+arine
+Drive
+Cayeghie
+Mn
+Cay. Mn
+Mainline
+S 30
+Hath.
+Mn
+K Main
+I  Main
+K 10
+K   Main
+East
+Main
+I MainJ Main
+E. M
+ain
+T500
+West Main
+Victoria
+Lake
+M
+ain
+Cond emned
+Bridge
+Public RoadPublic Road
+Public
+Hwy
+Public Hwy
+Public  Hwy
+Public Hwy
+Public
+Hwy
+Interfor
+Port
+Hardy
+Winter
+Harbour
+Holberg
+Coal
+Ha rbour
+Qu atsin o
+Jeune
+Landing
+Port
+Alice
+Pulp Mill
+Mahatta
+Ri ver
+Port
+McNeill
+14
+11
+10
+12
+13
+9
+4
+3
+2
+1
+8
+UNGULATE WINTER
+RANGES
+10 24 6 81 0
+Scale in kilometres
+Quatsino Tree Farm Licence 6
+
+--- page 28 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 20 
+As interest in wildlife broadened, so did inventory efforts.  D. Blood & Associates completed a 
+TFL 6 biodiversity overview in 1996 that has been used for management purposes.  The 
+overview provides a comprehensive inventory of flora and fauna that are likely found within 
+the licence area.  The overview identified four issues that need to be addressed to improve 
+the long-term biodiversity of the area.   
+1. Meeting landscape goals for old seral representativeness and protecting under 
+represented plant communities, 
+2. Maintained or recruiting habitat for species of conservation interest (red and blue 
+listed or regionally significant), 
+3. Protecting aquatic habitat for vulnerable fish stocks, and 
+4. Meeting landscape goals for connectivity through Forest Ecosystem Networks (FEN). 
+Issues 1 through 3 are addressed through current government forest policy and the 
+management of High Conservation Value Forests attributes as outlined within Appendix XX.  
+Current researchers suggest that connectivity in coastal forest may be of lesser importance 
+than originally thought but specific management strategies will be considered as Landscape 
+Unit Planning is implemented.  Blood also identified several measures required to protect fish 
+and wildlife habitats within the licence area.  These measures were considered and addressed 
+by Kremsater in the “Strategy Outline for Managing Wildlife” as part of the High Conservation 
+Value Forests report.   A listing of wildlife species and plant communities found in the 
+overview are found in Appendix XX.   
+In 2000, inventory work for Queen Charlotte (northern) goshawks (Accipiter gentilis laingi) was 
+initiated in conjunction with several other adjacent tenures.  Queen Charlotte goshawks are 
+red listed and subject to protection measures under the Identified Wildlife Management 
+Strategy.  To date, the preliminary work has identified one nest located near Nordstrom Point 
+within the TFL.  As no Wildlife Habitat Areas have been identified within the TFL, protection 
+measures will be established in consultation with MOELP, in areas where cutblocks are 
+proposed near known nest sites.  
+Field inventory work has started for Marbled Murrelets to validate a habitat suitability model 
+developed in 1999.  In 2000, detection surveys were conducted to determine the birds relative 
+use of identified habitat.  The results of this work are expected to be available in 2001. 
+An inventory of bald eagle nests is maintained for operational planning purposes.  A total of 
+177 eagle nests have been identified in the TFL. 
+3.1.12 High Conservation Value Forests 
+High Conservation Value Forests are defined as those forests that possess one or more of 
+the following attributes: 
+/g216/g32Forest areas containing globally, regionally or nationally significant: 
+• Concentrations of biodiversity values (e.g. endemism, endangered species refugia); 
+and/or 
+• Large landscape level forests, contained within, or containing the management unit, 
+where viable populations of most if not all naturally occurring species exist in natural 
+patterns of distribution and abundance 
+/g216/g32Forest areas that are in or contain, rare, threatened or endangered ecosystems 
+/g216/g32Forest areas that provide basic services of nature in critical situations (e.g. watershed 
+protection, erosion control) 
+/g216/g32Forest areas fundamental to meeting basic needs of communities (e.g. subsistence, 
+health) and/or critical to local communities’ traditional cultural identity (areas of cultural, 
+
+--- page 29 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 21 
+ecological, economic or religious significance identified in cooperation with such local 
+communities). 
+While the term High Conservation Value Forests (HCVF) is new, the concept behind it is not.  
+WFP has been engaged in various forms of public consultation over the past three decades 
+which have identified several attributes that are considered HCVF within the Licence area.  
+Many of the HCVF attributes identified thus far are included within the inventories discussed 
+earlier.  Other attributes that have not been specifically identified in current inventories (rare, 
+threatened, or endangered ecosystems or plants) can generally be flagged by correlating the 
+comprehensive ecosystem inventory completed by Lewis with the information provided by the 
+B. C. Conservation Data Centre. 
+During the term of the plan, WFP will identify and locate known HCVF attributes and develop 
+management strategies to provide for these attributes. The management strategies will be 
+incorporated into Landscape Unit and operational planning processes.  It is likely  the 
+management strategies will go beyond the current planning policies and processes guided by 
+the company’s scientific advisors.  It is expected that the process of developing local 
+definitions, mapping and management strategies will be ongoing and subject to continual 
+evolution as new information and new techniques are learned. 
+3.2 Planning Linkages - Strategic and Operational Planning 
+The hierarchy of plans governing activities on TFL 6 is as follows: Vancouver Island Summary 
+Land Use Plan (VISLUP) /g222 Landscape Unit (LU) Planning /g222 Management Plan 9, TFL 6 
+(and assumed Timber Supply Analysis) /g222 Operational Plans (Forest Development Plans, 
+Silviculture Prescriptions etc).  Strategies and objectives both within and between these 
+various plans must be consistent.  Generally, Higher Level Plans such as the VISLUP and LU 
+Plans allow for legally enforceable objectives to be established under the Forest Practices 
+Code.  These Higher Level Plan objectives give direction to subordinate plans that contain the 
+detail for implementation. 
+Linkages to WFP’s sustainable forest management (SFM) principles are made with both 
+strategic level and operational level plans.  SFM principles incorporate the Forest Practices 
+Code and Regulations, Forest Act and other related legislation as minimum standards. 
+
+--- page 30 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 22 
+3.2.1 Regional Plans 
+The Vancouver Island Summary Land Use 
+Plan is a Regional Plan, which covers the TFL 
+area.  Eight Resource Management Zones 
+(RMZs) have been established for the TFL 
+landbase.  Of the eight zones, two are 
+classified as Special Management Zones 
+(SMZs), two are classified as General 
+Management Zones  (GMZs), and four are 
+classified as Enhanced Management Zones 
+(EMZs).  General management regimes for 
+timber, biodiversity, cave karst, water, visual 
+quality, cultural heritage, fish, recreation, 
+access, wildlife and tourism have been 
+established for each zone.  These regimes 
+are based on the requirements for integrated 
+resource management and reflect pertinent 
+resource legislation and policy. 
+Table 5 summarizes the RMZs covering the TFL. 
+Table 5 – Resource Management Zones and Regimes 
+RMZ # RMZ Name TIM WAT FISH WL BIO VIS REC TOU C/K CULT 
+HER ACC 
+SMZ2 West Coast 
+Nahwitti 
+Lowlands 
+S G G S G S S S G G G 
+SMZ4 Koprino S G G S G G G G G G G 
+3 Nahwitti - 
+Tsulquate 
+G CW/G G G G G G G G G G 
+4 San Josef – 
+Koprino 
+E G G G G G G G G G G 
+5 Holberg E CW/G G G B G G G G G G 
+6 Keogh Cluxewe ES/ETH  G G B G G G G G G 
+7 Marble G/ES G G G G G G G G G G 
+8 Mahatta – 
+Neroutsos 
+E G G G B G G G G G G 
+Note:  Cave/Karst management is limited to those RMZs with known features or high probability of such occurrence. 
+TIM:  Timber; BIO Biodiversity; C/K Cave Karst; WAT Water; VIS Visual; CULT.HER Cultural Heritage; FISH Fish; 
+REC Recreation; ACC Access; WL Wildlife; TOU Tourism;  
+Regimes:  S–Special; G–General; B–Basic; H–Higher; E–Enhanced; ES–Enhanced Silviculture; ETH–Enhanced 
+Timber Harvesting; CW–Community Water 
+Some objectives have been made Higher Level Plans under the Forest Practices Code. 
+These objectives affect operational planning in SMZs and EMZs.  SMZs Higher Level Plan 
+objectives deal with cut block structure, size and silviculture systems, joint approval of Forest 
+Development Plans and visual quality management.  EMZs Higher Level Plan objectives deal 
+with Landscape Unit planning, cut block size and green-up, hydrology and reforestation 
+species selection. 
+Figure 8 – Resource Management Zones of 
+TFL 6 
+
+
+--- page 31 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 23 
+3.2.2 Landscape Unit Plans 
+In March 1999, the provincial government 
+released the Landscape Unit Planning 
+guide.  Also in early 1999 a Regional 
+Landscape Unit Planning Strategy was 
+developed for the Vancouver Region, 
+which focuses on the identification and 
+establishment of old growth management 
+areas (OGMAs) to meet biodiversity 
+objectives.  The strategy also deals with 
+the establishment of wildlife tree patches 
+(WTPs) and the protection of marbled 
+murrelet habitat.  Objectives for other 
+resources can also be developed through 
+LU Planning but are not mandatory. 
+Six landscape units cover the TFL landbase.  The boundaries of the LUs generally follow 
+those of the RMZs.  A high, intermediate or low Biodiversity Emphasis Option (BEO) has been 
+assigned to each LU based on a combination of factors including the amount of protected 
+area within the LU, percent of old forest, ecosystem complexity, sensitivity to development, 
+connectivity, forest productivity and timber operability.  WFP has begun the delineation of 
+OGMAs in some LUs in concert with MoF and MOELP.  The completion of this process should 
+take place in 2001.  WFP will continue to take a lead role in landscape unit planning for the 
+area covered by the Plan. 
+Table 6 shows the LUs and BEOs for TFL 6. 
+Table 6 – LUs and BEOs for TFL Landbase 
+LU Name BEO Total Area in  
+TFL 6 (ha) 
+Productive Area 
+(ha) 
+Holberg Low 33,500 31,859 
+Keogh Low 31,337 29,856 
+Mahatta Low 24,440 23,444 
+Marble Intermediate 23,649 18,347 
+Neroutsos Low 26,523 23,463 
+San Josef Intermediate 61,607 58,522 
+Under WFP’s environmental principle and the conservation of biological diversity, criteria and 
+indicators have been established to monitor the amount of the landscape unit reserved from 
+harvest which would include OGMAs, WTPs and other reserves. 
+3.2.3 Forest Development Plans 
+Forest Development Plans (FDPs) are required under the Forest Practices Code of BC Act 
+and the Operational Planning Regulation to direct forest management activities and practices.  
+Specifically FDPs show the location and orderly development of proposed harvesting and 
+road construction, maintenance and deactivation.  The FDP also includes information on 
+access management and the maintenance and protection of other resource values in the area 
+Figure 9 – Landscape Units of TFL 6 
+
+
+--- page 32 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 24 
+covered by the plan.  The FDP must be consistent with Higher Level Plans and made 
+available for review by resource agencies, First Nations and the public before approval is 
+considered by the Ministry of Forests.  FDPs are submitted either annually or every two years 
+and contain enough blocks to equal at least five years of annual harvest.  Several indicators 
+related to WFP’s SFM principles have been established which will be reported on in the Forest 
+Development Plan.  The list includes:  
+/g167/g32ha maintained as stand level reserves 
+/g167/g32# of accidental fires/ha burned 
+/g167/g32ha harvested by silviculture system 
+/g167/g32harvest system by volume 
+/g167/g32average opening size 
+/g167/g32km of road maintained 
+/g167/g32km of road deactivated 
+/g167/g32ha of coastal watershed assessment procedures (CWAPs) completed by year 
+/g167/g32records of meetings and correspondence with First Nations 
+/g167/g32# of archaeological impact assessments (AIAs) 
+/g167/g32# and types of contacts/meetings/consultations with communities. 
+3.2.4  Stand Level Prescriptions 
+A number of different plans and prescriptions detailing forest management activities are 
+prepared for review and approval by the MoF and other government agencies.  Silviculture 
+Prescriptions, Stand Management Prescriptions, Access Management Plans and Logging 
+Plans are referred to as operational plans under the Forest Practices Code of BC Act, 
+Operational Planning Regulation.  Deactivation prescriptions detail road deactivation activities 
+and are regulated by the FPC, Forest Road Regulation.  Appendix V includes an example of a 
+Silviculture Prescription. 
+Cutting and road construction authority is given by MoF through Cutting Permits and Road 
+Permits.  These permits are granted under the Forest Act. 
+Much of the content requirements for these plans, prescriptions and permit applications are 
+defined by legislation.  Policy guidelines and guidebooks also give direction in the 
+development of plans, prescriptions and permit applications. 
+3.2.5 Adaptive Management 
+Forestry plans must recognize limited knowledge and uncertainty.  For this reason, ecosystem 
+management plans are based upon adaptive management principles.  These include the 
+maintenance of ecosystems and habitats across a landscape, consideration of land 
+management impacts at both the stand and landscape levels and striking a balance between 
+timber and other resources.  As further knowledge is gained, management practices will adapt 
+and utilize the knowledge in the development of future management strategies.   
+
+--- page 33 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 25 
+3.2.6 Ecosystem Based Management 
+An ecosystem-based approach to planning and operations that protects cultural, social and 
+ecological values will be implemented.  The basis of this approach is a comprehensive 
+ecological classification (Section 3.1.9) that has been in place for almost 20 years in TFL 6, 
+and guides all forest management activities in the tenure.  The classification system is very 
+closely tied to the site ecology, sensitivity and productivity.  Detailed site specific prescriptions 
+are developed incorporating this information and all other resource values. Management 
+activities are implemented based on these prescriptions. 
+ 
+
+--- page 34 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 26 
+4.0 SUSTAINABLE FOREST MANAGEMENT STRATEGY 
+4.1 Economically Viable Forest Management Principle 
+4.1.1 Multiple Benefits Criteria 
+4.1.1.1 Timber Supply Element 
+Objective Indicator 
+Harvest AAC 
+ 
+ 
+Prevent timber loss 
+ 
+ 
+Efficient utilization 
+% achievement of AAC, 5 year cut control 
+estimated total value of timber produced 
+ 
+ha of non-recoverable losses due to wind, 
+fire 
+ 
+m
+3 of billable waste 
+WFP is committed to economically harvesting the licensee portion of the total 
+proposed TFL 6 AAC of 1,469,900 m3 in accordance with its SFM principles and the 
+FPC (Appendix III).  The licensee portion of the proposed AAC is 1,456,923 m3.  The 
+Small Business Forest Enterprise Program AAC is 13,242 m3.  The schedule “B” pro-
+rate is 0.777.  Table 7 shows the actual harvest to AAC performance since the 
+granting of the TFL in 1950. 
+Table 7 – Cut Control Performance 1950-1999 
+ 
+Period 
+Allowable Cut Available
+To Licensee 
+ 
+Chargeable Cut 
+1951-1960 4,168,156 4,242,856 
+1961-1965 3,652,867 3,937,601 
+1966-1970 5,703,003 5,749,372 
+1971-1972 2,619,304 1,862,800 
+1973-1977 6,250,735 5,915,767 
+1978-1979 2,361,622 2,544,317 
+1980-1984 6,321,622 6,618,305 
+1985-1989 6,462,600 6,944,146 
+1990-1994 5,906,900 6,941,356 
+1995-19992  6,536,720 6,233,305 
+Total 49,983,530 49,999,825 
+ 
+2 Includes Chargeable Cut before carry-forward adjustments to end of 1999. 
+Detailed assumptions used for MP 9 Timber Supply Review can be found in the TFL 6 
+Timber Supply Analysis package, Appendix II. 
+Harvesting will emphasize the maximum recovery of saw and pulp log grades.  Log 
+recovery will conform to the Vancouver Forest Region Close Utilization Standards as 
+a minimum.  These standards are: 
+ 
+
+--- page 35 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 27 
+ Old Growth Second Growth 
+Diameter breast height (cm) 17.5 12.5 
+Maximum stump height (cm) 30 30 
+Minimum top diameter (cm)  15 10 
+Minimum log length (m) 3 3 
+The company may exceed these minimum standards by recovering low-grade pulp 
+quality logs.  Generally, these logs are marginal Y grade specifications whose 
+utilization is optional.  Utilization is also kept high by the salvage of cedar shake and 
+shingle blocks and to a lesser extent cypress cants and spruce guitar blocks from 
+logged blocks. 
+Utilization levels will be monitored by conducting residue surveys to determine the 
+volume of avoidable and unavoidable fibre left on logged blocks.  Current MoF policy 
+for avoidable waste billing is 35 m3/ha for old growth and 10 m3/ha for second growth.  
+WFP’s goal is to be below these targets.  Waste survey results are submitted to the 
+MoF.  The MoF enters avoidable and unavoidable waste into the cut control record.  
+Where CWD requirements dictate, some previously “avoidable” waste may need to be 
+deemed “unavoidable”. 
+Merchantable deciduous (alder) volumes are minimal and should not be included in 
+the AAC.  The company will consider sales of deciduous volumes and conversion of 
+alder sites if the opportunity arises. 
+Salvage from stands damaged by blowdown, fire, pest or disease infestations will be 
+given a high priority.  Assessments of these stands will include the extent and degree 
+of damage, feasibility for harvest and relevant value with respect to biological 
+diversity. 
+As part of WFP’s SFM principles, three objectives have been established regarding 
+timber supply.  These are:  
+/g167/g32harvest the AAC 
+/g167/g32prevent timber loss 
+/g167/g32efficient utilization 
+Indicators have also been established to measure our success in achieving these 
+objectives.  The indicators for the AAC are % compliance with the cut control 
+regulation at the end of each cut control period and estimated total value of timber 
+produced.  The indicator for timber loss is to keep the number of ha of non-
+recoverable loss due to wind and fire to 30 ha or less on an annual basis.   An internal 
+tracking system has been implemented to monitor these issues.  With respect to 
+billable waste our indicator/objective is to have an average less than 20 m
+3/ha.  These 
+indicators will be monitored yearly in the TFL Annual Report. 
+The Timber Supply Analysis has been completed for review by the Chief Forester and 
+proposes, after allowances for non-recoverable losses, that the harvest level for Tree 
+Farm Licence 6 be reduced to 1,469,900 m3/year through the period 2001 – 2005. 
+This includes an optional, experimental commercial thinning partition of 3,000 m3/year 
+and a partition of 14,500 m3/year for economically marginal forest to be harvested 
+only if and when conditions permit. The basic harvest level of 1,452,400 m3/year is 
+consistent with a step down of harvest levels forecast five years ago during the 
+preparation of Management Plan 8. 
+Complan 3.0, a spatial harvest model, was used to simulate timber supply based on 
+
+--- page 36 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 28 
+current management practices in the licence area. The proposed harvest flow was 
+derived after ensuring sustainability of environmental values. Simulation of current 
+management practices maintained at least 30,000 ha of old forest and 83 million m3 
+of growing stock throughout the 250-year simulation horizon. In response to increased 
+emphasis on environmental values, the projected harvest levels have been and are 
+continuing below the unrestrained timber production potential of the Tree Farm 
+Licence. 
+Sensitivity analyses around the current management or “base case” simulation 
+suggest that timber supply is sensitive to land base withdrawals, adjacency and block 
+size policies, seral stage targets, minimum stem size at harvest, and inventory 
+changes. Further constraints would reduce flexibility and make impacts most likely 
+forty to fifty years into the future. 
+After 2060, gains from current and past silviculture efforts produce an abundance of 
+growing stock and facilitate a predicted “fall up” in harvest levels to a long term level 
+of 1,640,000 m
+3/year. 
+4.1.1.2 Harvest Methods  Element 
+Objective Indicator 
+Employ appropriate harvest 
+methods 
+Harvest system by volume 
+A variety of logging systems are being utilized in TFL 6.  The main conventional 
+systems being used are mobile grapple yarding and hoe forwarding.  Mobile highlead 
+towers and skyline systems are also used.  Line skidding has been used in the past.  
+Non-conventional harvesting is done mainly with helicopters.  Manual falling and log 
+length yarding are common to all of the above mentioned systems.  Figure 10 
+illustrates the typical timber harvesting process in TFL 6. 
+ 
+Figure 10 – Timber Harvesting Process 
+
+--- page 37 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 29 
+New operability lines have been established for the TFL delineating operable stand 
+types and anticipated logging system.  Marginal stand types such as pure hemlock 
+balsam height class 3 stands will be harvested only when they are economically 
+viable.  Over the planning period the anticipated split between conventional and aerial 
+logging systems will be approximately 98/2.  Table 8 outlines the historic use of 
+logging systems in TFL 6.  
+Table 8 – Distribution of Logging Systems 
+Percent of total production (approx.). 
+Logging Systems Historical 1990-94 1995-1999 
+Conventional cable and ground based 
+systems 100 100 98 
+Skyline systems* 0 0 1 
+Non-conventional systems: aerial and multi-
+span skylines 0 0 1 
+*Skyline system defined as a system utilizing lateral yarding and/or yarding distances over 300 meters. 
+WFP has experimented with mechanized falling and processing heads mounted on 
+tracked carriages.  This type of harvesting equipment may be utilized in patch 
+clearcutting or partial cutting systems in second growth or for commercial thinning 
+where conditions allow. 
+The indicator established to monitor appropriate harvest methods is the harvest 
+system by volume.  This information will be reported on an annual basis in the TFL 
+Annual Report. 
+4.1.1.3 Employment Element 
+Objective Indicator 
+Sustain Employment Levels  Total person-days and jobs/m 3 
+Tree Farm Licence 6 is a significant generator of employment in logging silviculture 
+and forest management.  Other employment is created as the logs produced in TFL 6 
+are processed in the Port Alice Pulp Mill and other Doman mills.  Table 9 summarizes 
+the average direct employment over the past five years as a consequence of 
+operations in TFL 6. 
+Table 9 – Direct Employment 1995 - 2000 
+Category Average Person 
+Days of Employment 
+Planning/Harvesting 81,090 
+Silviculture & Integrated Use 13,630 
+Administration 4,250 
+Subtotal 98,970 
+Manufacturing 102,725 
+Total 201,695 
+Over the planning period WFP intends to maintain employment levels through the 
+following strategies: 
+• Harvest 100 % of the AAC in each cut control period 
+• Meet or exceed contractor requirements as per Timber Harvesting 
+
+--- page 38 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 30 
+Contract and the Subcontract Regulation 
+• Where possible expand the silviculture and watershed restoration 
+programs through long term funding commitments from FRBC 
+• Maintain and where possible expand the minor forest products harvesting 
+program 
+• Work with First Nations to expand employment opportunities 
+Employment strategies hinge on the degree of decline of the AAC, no diminishment 
+with company tenure rights and continued or expanded funding from Forest Renewal 
+BC over the next 5 years. 
+4.1.1.4 Contractor Commitment Element 
+Objective Indicator 
+Maintain contractor commitments % of required contractor commitment 
+achieved 
+Under Part 14 of the TFL 6 contract, WFP is required to ensure the harvest of timber 
+equivalent to 50% of the harvest contributed by Crown lands be carried out by 
+contractors according to the Timber Harvesting Contract and Sub-Contract 
+Regulation.  Over the past five years WFP has performed in excess of requirements 
+as indicated in Table 10: 
+Table 10 – Compliance with Timber Harvesting Contracting Regulation 
+Year % Compliance  
+1995 133% 
+1996 153% 
+1997 133% 
+1998 140% 
+1999 121% 
+2000 115% 
+Currently the following contractors have replaceable contracts in TFL 6: 
+Full Phase Logging  Falling, Yard, Loading 
+A.H Jackson Corp.  G.L.M. Falling Limited 
+Koprino Logging Contractors Limited (incl. roads)  Leeson Lake Falling 
+557025 BC Ltd.  Quatsino Forest Company 
+  Ransom Creek Falling 
+Road Building
+  W.D. Moore Logging Company (incl. roads) 
+C&E Road Building Ltd.   
+D.D.H. Contracting Ltd.  Hauling
+ 
+Goodspeed Roadworks Ltd.  C.S.K. Hauling Ltd. 
+Holberg Contracting Ltd.  GCB Ventures Ltd. 
+J.F. Trucking Ltd.  Helgesen Logging Ltd. 
+Juthans Trucking Ltd.  Lefty’s Log Hauling 
+Koprino Contracting  MacLeod & Smith Log 
+Mike Jones Enterprises (road maintenance)  MiDon Contracting 
+North Island Rock Pro Inc.  Pt. Alice Salvage Ltd. 
+Poor Boy Enterprises  Steele Rock Hauling Ltd. 
+Port McNeill Enterprises  R & K Tyson Contracting Ltd. 
+Raft Cove Contracting   
+Stan Zwicker Contracting   
+531088 BC Ltd.   
+   
+
+--- page 39 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 31 
+An annual accounting of the contracting requirements and performance is in the TFL 
+6 Annual Report. 
+There are more than 100 other contracting firms working in TFL 6 as part of forest 
+operations.  Work performed includes cruising, cut block layout, tree planting special 
+forest products salvage and many other tasks. 
+4.1.1.5 Profitability Element 
+Objective Indicator 
+Achieve a reasonable return on investment Margin/m 3 
+WFP is committed to the maintenance of economically viable forestry and 
+manufacturing operations through the optimal utilization of timber values.  Through 
+the internal manufacture and trading of logs WFP will strive to maximize value 
+margins and provide a competitive return on investments to our shareholders. 
+Return on investment and log margin average will be reported in company financial 
+and annual reports respectively. 
+4.1.1.6 Non-Timber Forest Products Element 
+Objective Indicator 
+Encourage NTFP utilization Volumes and type of NTFP (m 3, kg, l) 
+WFP will plan for and utilize wherever possible all commercial non-timber forest 
+products while ensuring a high standard of management and environmental control to 
+ensure sustainability.  The main non-timber forest products harvested in TFL 6 are 
+yew bark, honey, and cedar oil.   
+Over the past five years roughly 7,500 kg of yew bark has been collected from 
+cutblocks approved for falling.  WFP collects $1.00/kg to cover some of the 
+administration costs.   
+The production of fireweed honey has increased over the past several years.  
+Commercial and personal use apiaries are commonly set up in recently harvested 
+areas throughout the TFL.  WFP does not collect any administration fees for the 
+collection of honey on lands managed by the company.  However, the company does 
+request hive location and production reports each year.  
+In 1998, a local First Nations entrepreneur purchased extraction equipment to 
+produce western red cedar oil.  Since the initial start up of the business the company 
+has diversified from producing only high quality cedar oil for export into the production 
+of cedar mulch, soap and candles.  Approximately 1850 litres of oil have been 
+extracted from cedar foliage collected from the TFL.   
+Chanterelles grow in many stand types throughout the TFL including pole sized 
+second growth.  Pine mushrooms are not as common as chanterelles but are found to 
+a lesser extent within the TFL.  Mushroom production has not been recorded.  Salal is 
+a common shrub growing in cutovers and open grown stands.  Salal is collected from 
+TFL lands for the floral industry but production is not currently recorded. 
+
+--- page 40 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 32 
+WFP staff are participating in various non-timber forest products forums and initiatives 
+regarding policy development and employment opportunities.  New employment 
+opportunities will be pursued in the TFL where sufficient revenue is generated to 
+offset administration costs, assessments and inventories indicate the activity is 
+sustainable, and the activity will not negatively impact other forest management 
+investments.  WFP will continue to report on non-timber forest product activities in 
+annual reports and other pertinent publications. 
+Designated trapping areas are illustrated in Figure 11.  The level of trapping within the 
+licence area is relatively low.  WFP cooperates with the licence holders through 
+notification, to minimize impacts on trapping resources, when development is 
+proposed within the licence area.  Maintenance of biodiversity in the TFL sustains 
+trapping habitat. 
+Mabbott
+ Island
+Drake
+ Is lan d
+Port
+Hardy
+Airpo rt
+Marble R.
+Prov. Park
+Quatsino
+Prov. Park
+Raft Cove
+Prov.
+Park
+Cape Scott
+Park
+Reserve
+FEDERAL AND
+PROVINCIAL
+PARKS
+Clesklagh
+Main
+Wanokana Main
+R 440
+Rupert Main
+R400
+Rupert Main
+West   Main
+West Main
+700
+Port
+Hardy
+M
+ain
+Va rn ey
+Main
+Port Hardy
+M
+ain
+W
+est
+M
+ain
+A.L. Mn
+South-East
+Main
+K 500
+Marine
+Drive
+Teeta Main
+Mahatta   M
+ainline
+B Main
+J Main
+B
+Main
+North
+Main
+Klaskino Main
+Klaskino
+Main
+Mahatta
+Koprino Mn
+ML Mn West Main
+ML Mn
+South
+Main
+Topknot Main
+SJ Mn
+Ronning M
+n
+San Josef Main
+SJ40
+Stranby
+Main NE M
+n
+60
+NE 60
+CH
+200
+Hushamu Main
+CH Main
+S. M
+n
+SE Mn
+Koprino Mn
+Port Alice
+Main
+M
+arine
+Drive
+Cayeghie
+M
+n
+Cay. Mn
+Mainline
+S 30
+Hath.
+Mn
+K Main
+I  Main
+K 10
+K   Main
+East
+Main
+I MainJ Main
+E. M
+ain
+T500
+West Main
+Victoria
+Lake
+M
+ain
+C on dem ned
+Bridge
+Public RoadPublic Road
+Public
+Hwy
+Public Hwy
+Public  Hwy
+Public Hwy
+Public
+Hwy
+Interfor
+Port
+Hardy
+Winter
+Harbour
+Holberg
+Coal
+Harbour
+Quatsino
+Jeune
+Landing
+Port
+Alice
+Pulp Mill
+Mahatta
+River
+Port
+McNeill
+TR0113T807
+TR0113T809
+TR0113T805
+T0113T823
+T0113T843
+T0113T824
+T0113T814
+T0113T822
+T0113T832
+T0113T814
+T0113T807
+T0113T826
+T0113T831
+T0113T830
+T0113T828
+T0113T829
+T0113T825
+TR0113T807
+TR0113T811
+TR0113T806
+TR0113T806
+TR0113T802
+TR0113T808
+TR0113T811
+TR0113T844
+TR0113T813
+Not Allocated
+Not Allocated
+Not Allocated
+T0113T833
+T0113T834
+TR0113T846
+TR0113T804
+T0113T827
+T0113T832
+TRAPLINES
+10 24 6 81 0
+Scale in kilometres
+Quatsino Tree Farm Licence 6
+ 
+Figure 11 - Traplines 
+The Quatsino Sound waterways provide various opportunities for aquaculture, tourism 
+and other commercial ventures related to the marine areas adjacent to TFL 6. 
+Ventures of this type are important to the economic diversification and development of 
+the North Island. WFP will cooperate with planning and development of aquatic 
+related economic development.  Figure 12 shows the location of known existing 
+aquatic licences. 
+
+--- page 41 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 33 
+Mabbott
+ Island
+Drake
+ Island
+Port
+Hardy
+Airport
+Marble R.
+Pr ov. Park
+Quatsino
+Pr ov. Park
+Raft Cove
+Prov.
+Park
+Cape Scott
+Park
+Reserve
+FEDERAL AND
+PROVINCIAL
+PARKS
+Clesklagh
+Main
+Wanokana Main
+R 440
+Rupert Main
+R400
+Rupert Main
+West   Main
+West Main
+700
+Port
+Hardy
+M
+ain
+Var ney
+Main
+Port Hardy
+M
+ain
+W
+est
+M
+ain
+A.L. Mn
+South-East
+Main
+K 500
+Marine
+Drive
+Teeta Main
+Mahatta   M
+ainline
+B Main
+J Main
+B
+Main
+North
+Main
+Klaskino Main
+Klaskino
+Main
+Mahatta
+Koprino Mn
+ML Mn West Main
+ML Mn
+South
+Main
+Topknot Main
+SJ Mn
+Ronning M
+n
+San Josef Main
+SJ40
+Stranby
+Main NE M
+n
+60
+NE 60
+CH
+200
+Hushamu Main
+CH Main
+S. M
+n
+SE Mn
+Koprino Mn
+Port Alice
+Main
+M
+arine
+Drive
+Cayeghie
+M
+n
+Cay. Mn
+Mainline
+S 30
+Hath.
+Mn
+K Main
+I  Main
+K 10
+K   Main
+East
+Main
+I MainJ Main
+E. M
+ain
+T500
+West Main
+Victoria
+Lake
+M
+ain
+Condemned
+Br idge
+Public RoadPublic Road
+Public
+Hwy
+Public Hwy
+Public  Hwy
+Public Hwy
+Public
+Hwy
+Interfor
+Port
+Hardy
+Winter
+Harbour
+Holberg
+Coal
+Harbour
+Qu atsino
+Jeune
+Landing
+Port
+Alice
+Pulp Mill
+Mahatta
+River
+Port
+McNeill1 Stoltz
+4 Stoltz
+6 Stoltz
+2 Stoltz
+3 Omega5 stoltz
+AQUATIC LICENCES
+10 24 6 81 0
+Scale in kilometres
+Quatsino Tree Farm Licence 6
+ 
+Figure 12 – Known Aquatic Licences 
+4.1.1.7 Minor Forest Products  Element 
+Objective Indicator 
+Encourage utilization of minor forest  
+products 
+Salvage volume 
+Estimated total value of 
+special forest products 
+WFP has an active minor forest products program to harvest minor forest products 
+from its tenures within TFL 6.  Established contractors salvage mainly western red 
+cedar shake and shingle blocks in cutblocks that have been surveyed for waste and 
+residue.  Minor amounts of yellow cedar and Sitka spruce blocks and yellow cedar 
+and Douglas fir cants are also produced.  On average 10,000 - 11,000 m
+3 of cedar 
+shake/shingle blocks are produced each year and 200 - 300 m3 of cants.  A log 
+salvage program began in 1995 to salvage low-grade logs left in old areas.  This 
+program produces approximately 500 – 1000 m3 per year  
+Culvert and buried logs from road deactivation activities produce roughly 5,000 m3 
+annually.  This volume is hauled to dryland sorts and scaled with regular production. 
+WFP will continue to encourage utilization of minor forest products and will report 
+volume produced and the estimated total value of special forest products in the 
+annual report. 
+ 
+
+--- page 42 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 34 
+4.1.1.8 Access Management Element 
+Objective Indicator 
+Provide for public access km of road maintained 
+A transportation system has been developed in the TFL over the past 45 years to 
+deliver logs by truck and by water to manufacturing facilities.  Roughly 2,500 km of 
+road has been built to date of which an estimated 800 km is currently maintained.   
+Since 1995 roads are constructed, maintained and deactivated as per the Forest Act 
+and the Forest Practices Code of BC Act, Forest Road Regulation. 
+Access management maps showing the current and planned status of roads will be 
+prepared and made available for public comment with the Forest Development Plan. 
+All road users assume certain obligations for the use of roads.  Road users assume 
+the risk of accident or injury.  Road users are also expected to cooperate with WFP 
+staff in reporting and suppressing fires, conforming to company and BC Forest 
+Service fire protection regulations, participate in Neighborhood watch programs, and 
+report wildlife violation and criminal activities. 
+Road status changes will be reported annually in the Annual Report. 
+4.1.1.9 Recreation  Element 
+Objective Indicator 
+Maintain recreation sites and features No. and type of recreation sites 
+maintained 
+User days by category 
+Recreation management in the TFL is based on a feature inventory and special 
+studies to evaluate future developments.  The main recreational use has been for 
+camping, hiking, fishing and hunting predominantly by local residents.  
+Recreation Reserves have been identified in the Grant Bay, Marble River, Spruce 
+Bay, and Topknot Beach areas, for several years.  The reserves have been 
+withdrawn from the timber harvesting land base signifying the high recreational values 
+associated with these areas.  For the Grant Bay, Marble River, and Spruce Bay 
+areas, recreation facilities have been developed.  However, there are currently no 
+developments at Topknot Beach.  Site developments are likely to be enhanced at 
+Grant Bay and established at Topknot Beach once road development reaches the 
+vicinity.  The Company will also continue to develop new recreation sites in 
+cooperation with the MoF when high valued features become accessible. 
+There are currently seven overnight campsites, five day-use picnic areas, and six 
+maintained trails within the vicinity of TFL 6.  Numerous other unimproved trails and 
+recreation sites also exist.  Established recreation sites are indicated on WFP visitors 
+guides of the North Island area, which are distributed free of charge, a copy of which 
+is found in Appendix XII.  There are several Provincial Parks within and adjacent to 
+TFL 6 (Figure 13).  WFP maintained roads on both Crown and private land provide 
+access to these areas. 
+
+--- page 43 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 35 
+Misty Lake
+Park
+North Vancouver Island Region
+Existing Parks
+Provincial Parks and Reserves
+WFP Tenures
+Regional District Parks 
+WFP Major Recreational Sites
+Marble River
+ParkQuatsino
+Park
+Raft Cove
+Park
+Brooks
+Peninsula
+Park
+Cape Scott
+Park
+Robson Bight
+Ecological
+Reserve
+Port
+McNeill
+Port
+Hardy
+Port Alice
+ 
+Figure 13 – Provincial Parks, Reserves and Recreational Sites 
+Over the past five years more than $360,000 have been spent on developing and 
+maintaining recreational opportunities in the TFL.  In 1999 there were an estimated 
+35,000 user days of recreation (Table 11).  The majority of the funding for site 
+development and maintenance has been born by the company.  However, the BC 
+Forest Service and Forest Renewal BC have contributed some funding towards this 
+work. New recreation site development and maintenance will be carried out in 
+partnership with the BC Forest Service.  The level of work performed is dependent on 
+funding available from the Company, the BC Forest Service and Forest Renewal BC. 
+During the planning period, WFP will estimate and report, via the annual report, use 
+days by activity category and any changes to the status of recreation facilities 
+managed within the TFL. 
+Visual aesthetics are an important component in harvest planning.  Known scenic 
+areas and associated management objectives have been identified for viewscapes 
+adjacent to waterways, travel corridors, communities and major recreation sites.  
+Harvest blocks in scenic areas will be designed to meet the recommended visual 
+quality objective for the area.  Visually effective greenup (VEG) will be determined on 
+a site-specific basis when new harvest blocks adjacent to previously harvested areas 
+are proposed.  For planning purposes VEG is assumed to be 5.7 meters for Block 1 
+and 4.1 meters for Block 2.  This difference in height is due to the difference in 
+topographic relief between the blocks. 
+
+--- page 44 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 36 
+ 
+Table 11 – Recreation Activities Summary – Estimated User Days, TFL 6 1995-1999 
+Usage Location/Activity 
+1995 1996 1997 1998 1999 Total 
+       
+Tourist/Recreation Site Maps 4,000 4,000 4,000 2,000 5,400 19,400 
+Beach Use 1,600 3,150 2,772 2,550 2,650 12,722 
+WFP Sites and Trails 10,700 10,350 11,600 13,900 11,100 57,650 
+Hunting 2,100 2,200 2,750 1,900 1,900 10,850 
+Fishing (Freshwater) 3,050 3,100 3,955 3,550 3,550 17,205 
+Fishing (Saltwater) 8,200 8,050 7,072 4,500 4,700 32,522 
+Firewood Cutting 3,325 3,625 3,534 1,930 2,030 14,444 
+Food Gathering 1,200 1,225 1,075 850 825 5,175 
+Kayaking 775 1,550 950 825 825 4,925 
+Whale Watching 1,020 1,020 1,020 1,050 1,010 5,120 
+Hiking and Caving 650 1,250 1,150 1,150 1,150 5,350 
+       
+TOTAL 36,620 39,520 39,878 34,205 35,140 185,363 
+4.1.1.10 Research and Development  Element 
+Objective Indicator 
+Support research and development $ invested in research 
+WFP’s research and development program will investigate and study new and 
+evolving techniques and prescriptions that maintain or improve the health and 
+productivity of forest ecosystems values while sustaining a high level of environmental 
+protection.  The company will continue to cooperate with the MoF, Canadian Forest 
+Service, FERIC, universities and other research specialists on various research 
+initiatives.  Project funding support is often provided for by government agencies such 
+as Forest Renewal BC. 
+Current research projects include: 
+• Continue participation in the Salal Cedar Hemlock Integrated Research 
+Program (SCHIRP) looking at the regeneration, growth dynamics and ecology 
+of salal dominated ecosystems. 
+• Continue selection breeding and testing of yellow cedar, Sitka spruce, western 
+red cedar and western hemlock to provide healthy, well-adapted, genetically 
+diverse superior trees for reforestation. 
+• Continue cooperative research on important wildlife species including Queen 
+Charlotte goshawk (MOELP), marbled murrelet (SFU), Roosevelt elk, black 
+tail deer, black bear, and bald eagle. 
+• Continue growth and yield research in line with the priorities established by the 
+Coastal Forest Productivity Council.  Particular emphasis will be placed on 
+obtaining data for species with identified information gaps and partial 
+harvesting systems. 
+
+--- page 45 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 37 
+• Alternate silviculture and harvesting systems will be investigated in 
+cooperation with research agencies such as FERIC.  Research topics will 
+include productivity, cost and impacts on non-timber resource values. 
+• Forest productivity and health of ecosystems will be investigated.  Fertilization 
+effects on western red cedar, balsam and western hemlock stands will 
+continue. 
+• Continue research into windthrow management including development of 
+better prediction models and mitigation techniques. 
+As part of WFP’s SFM principle an objective has been established regarding the 
+company’s support for research and development.  Activities and expenditures in 
+research and development will be reported in the annual report.  
+Appendix IX provides additional information on current WFP research projects. 
+4.1.1.11 Contribution to Provincial Revenues  Element 
+Objective Indicator 
+Contribute to provincial revenues Payment of fees 
+Timber harvest and associated forestry activities on TFL 6 contribute to provincial 
+revenues in a number of ways.  Stumpage and royalty payments for the TFL 6 
+harvest are significant.  For the period 1995-99 over $208.9 million has been paid.  Of 
+this total $32.7 million was super stumpage which goes to support Forest Renewal 
+BC and Forest Practices Code enforcement.  Other fees such as AAC rentals, fees 
+for Special Use Permits, licences of occupation, road use agreement, etc. amount to 
+more than $500,000 per year.  All of these charges and fees go to general revenue to 
+help pay for roads, hospitals, schools and services enjoyed by all British Columbians. 
+In order to fulfill their social responsibilities and meet with their SFM objectives, WFP 
+will pay all applicable fees related to its operations in TFL 6.  Payments will be 
+reported in the annual report.  
+4.2 Environmentally Appropriate Forest Management Principle 
+4.2.1 Conservation of Biological Diversity Criteria 
+Biological diversity (or biodiversity) is the diversity of plants, animals and other living 
+organisms in all their forms and levels of organization, and includes the diversity of genes, 
+species and ecosystems, as well as the evolutionary and functional processes that link them 
+(FPC, Biodiversity Guide book, September 1995).  An ecosystem management approach that 
+maintains suitable habitat conditions for native species will be used as a surrogate to 
+maintaining biodiversity.  Both coarse and fine filter approaches will be utilized to achieve 
+biodiversity objectives. 
+Coarse filter strategies include the maintenance of riparian habitats, areas of old growth and a 
+variety of patch sizes across a landscape.  At the stand level coarse filter strategies include 
+maintaining wildlife tree patches, snags, downed woody debris and deciduous trees. 
+
+--- page 46 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 38 
+Fine filter strategies deal with the identification and maintenance of habitats for known 
+sensitive plant and animal species.  Special consideration will be given to habitat 
+requirements for red and blue listed species. Measures, which may be used to achieve fine 
+filter strategies, include: 
+1) the creation of Wildlife Habitat Areas 
+2) establishment of Old Growth Management Areas in critical habitat zones 
+3) use of interim measures, as prescribed in the Identified Wildlife Management 
+Strategy to protect red and blue listed species and their habitats. 
+4) Further work to be completed as part of the biological rationale for the company’s 
+FSC certification program. 
+4.2.1.1 Ecological Diversity  Element 
+Objective Indicator 
+Maintain a dynamic distribution of 
+habitat over a landscape 
+Average opening size 
+% of landscape unit reserved 
+seral stage distribution (5 year basis) 
+patch size distribution - % of landbase 
+in patches > 200 ha (5 year basis) 
+$ invested and type of environmental 
+inventories and assessments 
+Timber harvesting landbase status 
+Through planning and forest management activities, WFP will strive to maintain a 
+variety of ecosystems across the landscape to preserve species through the provision 
+of suitable natural habitat.  In the early 1980’s a comprehensive ecological 
+classification of Tree Farm Licence 6 was undertaken by Terence Lewis (Table 4). 
+This ecological classification provides a solid basis for interpretation of forest ecology 
+and the response of ecosystems to management, and is a useful tool for predicting 
+the general location of rare species, plant communities and various habitats.  Using 
+GIS tools, ecosystem representation will be analyzed and tracked at the landscape 
+level.  
+In 1999 Dr. Lewis reviewed the Conservation Data Centre list of Red and Blue Listed 
+ecosystems.  Table 12 lists those ecosystems that are most likely to be located in 
+North Vancouver Island Region.  With the exception of two associations (CWHvm1 07 
+and CWHvm1 09), old seral stages of all ecosystem associations are well 
+represented within existing protected and constrained areas.  While Lewis has given 
+some indication on the presence of these associations in NVIR some further inventory 
+work may be required for the sensitive ecosystem associations so that their presence 
+is confirmed and management efforts can be measured.  Some ecosystem 
+associations may require the implementation of specific management strategies 
+(including possible restoration activities) to ensure that adequate amounts of these 
+areas are well represented into the future.   
+
+--- page 47 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 39 
+Table 12 – Red and Blue Listed Ecosystems Potentially in NVIR 
+PLANT COMMUNITY BEC UNIT PROV. 
+RANK1 
+PROV. 
+LIST 
+DISTRIBUTION  
+VERY WET HYPERMARITIME CWH 
+Picea sitchensis / 
+Maianthemum 
+dilatatum 
+CWHvh1/08  S2      RED   Limited to higher terraces on larger 
+rivers.   
+Alnus rubra / 
+Maianthemum 
+dilatatum 
+CWHvh1/10 S3      BLUE  Early seral community limited to active 
+floodplains of larger rivers; somewhat 
+similar to WFP’s S4 ecosystem. 
+Picea sitchensis / 
+Gaultheria shallon 
+CWHvh1/14 S3      BLUE  Very limited extent.  Dry, rocky, coastal 
+headlands within 100-200 metres of the 
+coast. 
+Picea sitchensis / 
+Kindbergia oregana 
+CWHvh1/15 S2S3    BLUE  Very limited extent on old, raised 
+beaches in close proximity to present-
+day sand/shingle beaches.  
+Picea sitchensis / 
+Malus fusca 
+CWHvh1/19 S2S3    BLUE  Very limited extent bordering small 
+minerotrophic (fen) wetlands 
+(S11ecosystems) on fluvial terraces.   
+VERY WET MARITIME CWH 
+Tsuga heterophylla - 
+Pinus contorta / 
+Cladina rangiferina 
+CWHvm1/02 S2S3    BLUE  Very limited extent on very thin-soiled 
+rock outcrops, usually in close proximity 
+to the east coast and inner coast of 
+Quatsino Sound, and on small offshore 
+islands.  Not operable.  This includes 
+WFP’s S2P ecosystem. 
+Tsuga heterophylla - 
+Thuja plicata / 
+Gaultheria shallon   
+CWHvm1/03 S2S3    BLUE Widespread but generally not extensive 
+ecosystem of rocky outcrop sites with 
+virtually continuous Folisol soils.  Partly 
+operable because of low volume, and 
+only when closely associated with 
+adjacent better sites/stands.   
+Thuja plicata – Tsuga 
+heterophylla / 
+Polystichum munitum 
+CWHvm1/04  S3?  BLUE  Limited to relatively well-drained 
+colluvial, limestone and raised beach 
+sites (inner, not outer coast), in places 
+with some Douglas-fir.  This includes 
+WFP’s mapped S3B, S12F and only a 
+minor component (est.5%) of mapped 
+S13  
+Abies amabilis – 
+Thuja plicata / Rubus   
+spectabilis 
+CWHvm1/07 S3      BLUE  On moist, rich sites of high fluvial 
+terraces, fluvial fans, gullies and 
+seepage sites; best expressed on high 
+terraces of larger rivers (but on older 
+surfaces and older soils than 
+CWHvm1/08). 
+Picea sitchensis / 
+Rubus spectabilis 
+CWHvm1/09 S2      RED   A later seral alluvial site on higher 
+terraces of major rivers; included with 
+WFP’s S3 ecosystem on Fp and Ft 
+terrain types.   
+Tsuga heterophylla - 
+Thuja plicata / 
+Gaultheria shallon   
+CWHvm2/03  S2S3    BLUE  Widespread but generally not extensive 
+ecosystem of rocky outcrop sites with 
+Folisol soils.    
+1 S2 - Imperiled 
+Imperiled provincially because such communities with old-growth or primary forest are extremely rare or 
+because of some factor(s) making them especially vulnerable to disturbance. 
+S3 – Rare or Uncommon 
+Provincially rare or uncommon in an old-growth / primary forest condition and susceptible to disturbance.  
+
+--- page 48 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 40 
+Within the TFL, areas in Varney, Spruce Bay, and Misty Lake have been identified as 
+having unique ecological values.  The 120 hectare Varney Gene Pool Reserve was 
+established by the company to protect one of the most northerly sites of Douglas fir 
+on Vancouver Island. The Spruce Bay genetic reserve encapsulates large old growth 
+Sitka spruce within the Spruce Bay Old Growth Reserve.  The unique giant black 
+stickle- back (fish) of Misty Lake are protected within the Misty Lake Ecological 
+Reserve and Provincial Park.  The park is being removed from the TFL and the other 
+areas are excluded from the harvesting land base. 
+A second component of ecosystem diversity is seral stage.  Currently more than 40% 
+of the timber harvesting landbase is covered with mature or old seral stages.  Over 
+time a trend toward a more balanced age class distribution will occur as a result of 
+harvesting.  Spatial modeling tools will be utilized to ensure the harvest pattern 
+maintains sufficient quantities of natural habitat at each seral stage across the 
+landscape.  Areas of old growth, as defined by the FPC Biodiversity Guidebook, will 
+be designated as Old Growth Management Areas (OGMAs) under Landscape Unit 
+Planning.  This process began in May 2000 in cooperation with the Ministry of Forests 
+and the Ministry of Environment, Lands and Parks.  It is anticipated that the process 
+of identifying OGMAs and their specific objectives will be completed in 2002 for the 
+Plan area.  
+A third component of ecosystem diversity is patch size.  Wind and to a much lesser 
+extent fire resulting from lightning strikes, are the main natural disturbance factors in 
+the forests of TFL 6.  Disturbance events have historically created a range of patch 
+sizes up 250 ha.  As per the FPC, Biodiversity Guidebook recommendation, 
+development will attempt to achieve a distribution of patch sizes across the landscape 
+of 30-40% in patches <40ha, 30-40% in patches 40-80 ha and 20-40% in patches 81-
+250 ha. 
+Protected areas adjacent to and within TFL 6 are mapped.  Other areas reserved 
+from harvest, as per the FPC, include riparian reserve zones on fish streams, 
+ungulate winter ranges and environmentally sensitive areas.  With respect to riparian 
+areas, road construction will be carefully monitored to reduce sediment where stream 
+crossings are required.  Timing windows will be observed for road construction 
+around fish streams.  Where required appropriate riparian management areas or 
+buffers will be established to maintain the integrity of riparian reserves. 
+SFM indicators for area reserved, seral stage distribution, patch size distribution and 
+environmental inventories and assessments have been established which will guide 
+planning and forest management activities.  These indicators will be reported on in 
+the management plan and other pertinent reports. 
+
+--- page 49 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 41 
+ 
+4.2.1.2 Species Diversity  Element 
+Objective Indicator 
+Maintain viable populations of native 
+species 
+# of known species classified as 
+threatened, endangered or vulnerable 
+(COSEWIC, CDC) 
+ha maintained as stand level reserves 
+cumulative ha of wildlife habitat reserves 
+% of area declared mixed species 
+regeneration 
+# trees planted by species 
+# salmon fry released 
+“A Strategy for Managing Wildlife” in TFL 6 (Appendix XXII) was developed by 
+consultant Laurie Kremsater in late 1999.  The wildlife strategy for North Vancouver 
+Island Region (NVIR) focuses on maintaining terrestrial forest dependent organisms 
+across the tenure.  To do this the Company will employ Kremsater’s three main 
+tactics.   
+1. Maintaining the amount, distribution and heterogeneity of habitat and landscape 
+elements important for biodiversity over time. 
+2. Ensuring representation of ecologically distinct habitat types across NVIR, to 
+maintain lesser known species and ecological functions. 
+3. Maintaining the distribution and abundance of known sensitive species in NVIR. 
+The first two tactics will combine to form a coarse filter, which should provide for the 
+majority of species whose needs are relatively unknown.  While maintaining a range 
+of suitable habitats across the landscape will provide for the majority of the species, 
+the final tactic will form a fine filter to provide for those species who’s needs are 
+relatively known and are not provided for under the coarse filter.  The fine filter would 
+provide for species on the provincial red and blue lists
+1 or species identified in the 
+Identified Wildlife Management Strategy as regionally important that warrant special 
+consideration (Table 13).  Particular attention will be given to old growth dependent 
+species.  While Kremsater and earlier work by Donald Blood (1996) have given some 
+indications on the presence of these species in North Vancouver Island Region 
+further inventory work is needed for many sensitive species so that a baseline can be 
+established to measure management efforts. 
+                                               
+ 
+1 Ministry of Environment classification.  Red-list includes species or subspecies considered to be extirpated , 
+endangered or threatened in BC.  Blue-list includes any indigenous species or subspecies considered to be 
+vulnerable in BC. 
+
+--- page 50 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 42 
+Table 13 – Red, blue listed and regionally important Mammals and Birds 
+Red-listed Species Habitat 
+Pacific water shrew Riparian areas and wetlands 
+Keen’s long-eared myotsis Caves and nearby old growth 
+Northern goshawk laingi Low to mid elevation mature to old growth 
+stands (nesting) 
+Marbled Murrelet Old growth with large branches greater than 
+15cm in diameter 
+Blue-listed Species Habitat 
+Ermine  Riparian areas with dense understory 
+Vancouver Island Wolverine High elevation stand types 
+Roosevelt Elk Low elevation old growth (winter) and young 
+second growth 
+Great blue heron Deciduous stand types, wetlands and estuaries
+Peregrine falcon pealei Rocky ledges with overhanging vegetation 
+(nesting) 
+White-tailed ptarmigan Generalist, uses a range of seral stages 
+Western screech owl Low elevation riparian areas (nesting) 
+Northern pygmy owl Low elevation, late seral stage stand types 
+(nesting) 
+Huttin’s vireo Low elevation, late seral stage stand types 
+(nesting) 
+Sandhill crane Wetlands, estuaries 
+Regionally Important Species 
+Black bear Generalist, uses a range of seral stages 
+Black-tail deer Generalist, uses a range of seral stages 
+Reforestation programs also impact on species diversity.  WFP will reforest with a 
+variety of ecologically appropriate native conifer species.  Native deciduous species 
+will also be retained within stands (minor component), riparian reserves and wildlife 
+tree patches.   
+Terrestrial ecosystem restoration activities funded by FRBC are beginning to be used 
+within the TFL.  In 1999 and 2000 a pilot program was completed within the Keogh 
+watershed of TFL 6.  This pilot has lead to an expansion of similar restoration 
+activities in the riparian areas of several other watersheds within the TFL.  The pilot 
+was designed by Vince Poulin to accelerate the recovery of forest characteristics 
+needed for the ecological restoration of riparian habitat, water quality and channel 
+stability.  Overstocked alder and conifer stands were spaced, topped, girdled and 
+several stems were modified (cavaties cut, openings and other wounds created) to 
+enhance the biodiversity of the area and create different types of snags for birds, bats 
+and small mammals to use.  At a number of locations trees were felled directly into 
+the river to create debris jams and redirect water to create suitable fish spawning and 
+rearing habitat. 
+
+--- page 51 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 43 
+Salmon enhancement programs contribute to the maintenance of salmon stocks.  
+WFP supports three salmon enhancement hatcheries within TFL 6.  They are located 
+on the Marble River, Colonial Creek, and Cordy Creek.  Over the history of salmon 
+enhancement projects within the TFL, WFP has released over 10,880,000 fry from 
+these facilities.  
+SFM principle indicators have been established to track numbers of known rare and 
+endangered species, ha of stand level reserves, cumulative ha of wildlife habitat 
+reserves, ha of mixed species regeneration, number of seedlings planted by species, 
+and number of salmon fry released.  Performance will be included in the annual 
+report.  
+4.2.1.3 Genetic Diversity  Element 
+Objective Indicator 
+Maintain the variation of genes within 
+species 
+% seed orchard seed used 
+A range of suitable habitats across the landscape will contribute to maintenance of 
+genetic diversity within plant and animal populations.  Special measures may be 
+needed in situations where research indicates that distinct local populations are 
+threatened through habitat loss.  Further study will be undertaken to quantify and 
+describe these issues. 
+Reforestation and tree improvement programs contribute to the maintenance of 
+genetic diversity for commercial conifer species.  Seed orchards are designed to 
+include a wide genetic base.  Figure 14 illustrates the company’s tree improvement 
+programs.  Wild seed collections are obtained from a large number of trees to ensure 
+a wide range of genes are incorporated in the reforested area. 
+A SFM principle indicator for maintaining the variation of genes is the percentage of 
+seed orchard seed used.  This indicator will be reported in the annual report and other 
+research publications. 
+
+--- page 52 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 44 
+ 
+Figure 14 – Tree Improvement and Reforestation Cycle 
+4.2.2 Maintenance of Ecosystem Condition and Productivity  Criteria 
+4.2.2.1 Forest Health  Element 
+Objective Indicator 
+Maintain forest health pest attack status 
+ha or # of weevil resistant spruce planting 
+stock planted in high hazard zones 
+# of accidental fires/ha burned 
+Forest health is a key element in the maintenance of ecosystem condition and 
+productivity.   WFP will maintain a forest health program that is designed to protect 
+the licence area from damage by insects, disease, abiotic factors and fire.  A 
+proactive strategy will be pursued in detection and control.  The goals of the program 
+are to: 
+• Minimize the loss of timber in operable merchantable stands; 
+• Maintain the forest productivity and health of immature stands by monitoring 
+insects and disease activity and implementing control action when needed; 
+• Salvage insect, disease, wind or fire damaged merchantable timber quickly; 
+• Minimize the time between felling, harvesting and processing of timber 
+The forests of TFL 6 have been relatively free of major insect or disease infestations.  
+There have been no major catastrophic outbreaks causing significant unsalvaged 
+
+--- page 53 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 45 
+mortality or volume losses.  The main active agents have been various defoliators and 
+bark beetles.  The last defoliator outbreak was in 1997/98 by western black-headed 
+budworm (Acleris gloverana) in many stands throughout the TFL. 
+Spruce weevil (Pissodes strobi) has severely infested Sitka spruce plantations to the 
+point where now the species is a very minor component in reforestation programs.  
+Work is underway to produce resistant planting stock and WFP will again utilize this 
+species on a larger scale when resistant seed or vegetative material is available.   
+Hemlock dwarf mistletoe is widespread throughout merchantable size mature stands.  
+Sanitation treatments of advanced regeneration are sometimes required to prevent 
+the spread in newly regenerated western hemlock stands.  Usually vigorously 
+growing, fully stocked stands are not impacted significantly by hemlock dwarf 
+mistletoe.   
+Root diseases sometimes result in small pockets of mortality.  Reforestation with less 
+susceptible species can be used in root rot pockets 
+Ambrosia beetle attack degrades value of logs in inventory or storage.  Keeping felled 
+and bucked inventories low and processing logs quickly is the best method of control.  
+Pheromone baited traps are sometimes used around dryland sort and booming 
+grounds to trap adult beetles. Table 14 lists common insects and diseases found in 
+TFL 6. 
+Table 14 – Common Insects and Disease found in TFL 6 
+Agent Occurrence Incidence Susceptible 
+Species
+2 
+Management 
+Risk 
+Root disease 
+Armillaria root rot Armillaria ostoyae Occasional Light Fd, Hw, Ba, 
+(Cw,Ss) 
+M 
+Annosus root rot Heterobasidion 
+annosum 
+Occasional Light Fd, Cw, 
+(Hw, Ba, 
+Ss) 
+L 
+Phellinus Root rot Phellinus weirii Infrequent Light Fd, Ba, 
+(Hw, Ss) 
+Cw 
+L 
+Stem/Branch Diseases 
+Hemlock Dwarf 
+Mistletoe 
+Arceuthobium 
+tsugense 
+Frequent Medium Hw, (Ba, 
+Ss) 
+L 
+Insects 
+Spruce terminal 
+weevil 
+Pissodes strobi Common Heavy Ss H 
+Western black-
+headed budworm 
+Acleris gloverana Periodic Light - 
+severe 
+Hw, Ss, Ba M 
+Ambrosia beetles Trypodendron 
+lineatum 
+Common Heavy (Hw, Ss, 
+Ba, Fd) 
+H 
+Detection of insect and disease activity normally occurs with the collection of 
+silviculture prescription field data and regeneration surveys.  Regular aerial 
+reconnaissance flights are also conducted to monitor health conditions.  Completed 
+silviculture prescriptions will include proposed actions for dealing with insects or 
+                                               
+ 
+2 Species are listed in order of susceptibility.  Brackets indicate species are equally susceptible. 
+
+--- page 54 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 46 
+diseases noted.  Any increased incidence of insect or disease activity observed 
+during the course of regular operations will be dealt with by a specific action plan.  
+WFP will seek assistance from specialists at the Canadian Forestry Service, MoF, 
+universities, and consultants, if required.  
+If specific control measures are warranted, such as spraying to control severe 
+defoliation outbreaks, a plan will be developed in consultation with the MoF, First 
+Nations and other shareholders.  Where control is required and biological insecticides 
+exist, they will be favoured over non-biological treatments. 
+Abiotic factors such as windthrow, snow press, drought and sunscald are also 
+considered in the forest health program.  Where there is evidence of historic 
+windthrow activity, assessments will be made during the block layout phase.  Blocks 
+will be designed with wind firm edges or treatments such as feathering or pruning will 
+be prescribed to reduce the risk of blow down in neighboring stands.  Where 
+significant amounts of blow down occur salvage operations will be implemented to 
+recover merchantable timber. 
+Species and seedlot selection combined with stocking control will be utilized to reduce 
+damage caused by snow press, drought or sunscald. 
+A third component in the forest health program is fire protection.  As the licence area 
+is situated on northern Vancouver Island in the wetter maritime zone, typically the fire 
+danger very rarely reaches extreme.  WFP will comply with regulations under the 
+Forest Act and Forest Practices Code Act relating to the prevention, detection and 
+suppression of fires. 
+A Fire Preparedness Plan will be submitted by April 1 each year to the MoF.  The plan 
+will outline proposed activities, key contacts, shut down criteria, suppression 
+equipment and company regulations with respect to fire prevention and suppression.  
+Fuel management planning will be incorporated into Forest Development Plans and 
+will include an analysis of anticipated fuel build-up over the five-year planning period 
+and strategies to reduce the build-up and mitigate risk.  A sample Fire Preparedness 
+Plan is found in Appendix VII. 
+SFM principle indicators have been established for forest health and include: pest 
+attack status, ha or number of weevil resistant spruce stock planted in the high hazard 
+zone, and the number of accidental fires and ha burned 
+Indicators will be reported on in the annual report, Forest Development Plan and other 
+pertinent reports. 
+
+--- page 55 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 47 
+ 
+4.2.2.2 Forest Ecosystem Resilience  Element 
+Objective Indicator 
+Maintain forest ecosystem resilience NSR balance 
+ha reforested 
+$ invested in basic forestry 
+% of area surveyed free growing 
+Average regeneration delay 
+The functionality of forest ecosystems is paramount in our harvest planning and 
+silviculture activities.  Prior to harvesting, an ecologically based silviculture 
+prescription (SP) specific to each cutblock is prepared by Company RPFs and 
+submitted to the District Manager for approval.  Incorporated into the SP are the 
+results of various assessments completed by Company staff and external 
+professionals.  Assessments that may be completed include: 
+/g167/g32terrain stability 
+/g167/g32visual impact 
+/g167/g32riparian 
+/g167/g32archaeological impact 
+/g167/g32gully 
+/g167/g32karst 
+/g167/g32windthrow 
+/g167/g32forest health   
+/g167/g32wildlife impact 
+Key elements of the SP in addition to the resource assessment recommendations 
+include: 
+• ecosystem classification for the area covered by the prescription 
+• the harvest method and hazard rating for soil compaction, erosion and 
+displacement 
+• the location of roads and plans for their future use 
+• a description of the silviculture system used and the purpose and function of 
+trees left standing 
+• a description of any known non-timber resource features and plans to protect 
+them 
+• the location of streams, wetlands and lakes and plans to protect them 
+• a reforestation plan which states the target number of healthy, well-spaced 
+trees by species that will be achieved in the free growing stand. 
+The implementation of the SP is linked to WFP's basic silviculture program, the goals 
+of which are: 
+• Establish a free growing stand of ecologically appropriate, well-spaced trees 
+within the prescribed period. 
+• Reforest all cutblocks within 3 years after harvest to comply with prescribed 
+regeneration delays. 
+• Manage regenerated cutblocks to target stocking standards 
+
+--- page 56 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 48 
+To achieve these goals the following activities will be undertaken as necessary: 
+• site preparation, planting, regeneration monitoring and surveys, brushing and 
+weeding 
+• replanting 
+• basic spacing if required for declaration of free growing 
+WFP’s basic silviculture program will conform to the FPC, Silviculture Practices 
+Regulation.  A description of the basic silviculture program is as follows: 
+Site preparation is not required for initial reforestation in most areas with the 
+exception of spot accumulations of yarding slash along roads.  However, in some 
+areas containing very heavy concentrations of cedar slash, broadcast site preparation 
+is required.  This is carried out using either prescribed burning or mechanical 
+methods.  Roadside accumulations that prevent planting to desired stocking densities 
+will be piled.  Piles may be burned or left as coarse woody debris and/or wildlife 
+habitat.  Roadside accumulations account for less than 1% of the reforestation area. 
+Planting is the main method of reforestation and is normally supplemented by natural 
+regeneration.  Local seed is utilized for planting stock.  To achieve desired stocking 
+density trees are planted in almost every cutblock.  The number of trees planted will 
+depend on the amount of advanced regeneration retained after harvesting, expected 
+natural seed in, brush hazard, ecosystem class and browse hazard.  Seedlings are 
+obtained from a number of container nurseries located on Vancouver Island including 
+WFP's nursery in Saanich.  Wherever available, “A” class improved seed is used.  
+Much of the Hw, Cw and Fd seed used is “A” class and produced at WFP’s localized 
+seed orchards in Saanich.  Yellow cedar stecklings are produced from rooted 
+cuttings.  Wild seed collections or purchases are made to address any deficiencies in 
+short-term seed supplies.  A ten year supply of seed is normally maintained in storage 
+for most species. 
+Mechanical site preparation and/or spot applications of herbicide may be required 
+prior to fill-planting. Herbicide applications are planned as per Pest Management 
+Plans or Pesticide Use Permits, which are discussed under brush, control.  
+Historically less than 4% of the reforestation area requires fill-planting. 
+Silviculture surveys are performed on all regenerating cutblocks to monitor progress 
+towards achieving free growing status.  Information collected includes species; total 
+number of stems and number that are well-spaced; brush species and distribution; 
+and qualitative remarks.  The results are used to prescribe follow-up silviculture 
+treatments if necessary.  Generally one survival survey and a minimum of one 
+regeneration survey are undertaken prior to a final free to grow assessment.  Survey 
+results are reported to the MoF via Major Licence Silviculture Information System 
+(MLSIS) reports. 
+An integrated pest management approach will be used when determining treatment 
+thresholds, and treatments for brush control.  The majority of TFL 6 is covered under 
+either a five year Pest Management Plan (Jeune Landing Operation) or Pesticide Use 
+Permits (Holberg Operation) which are approved by the MOELP.  These documents 
+specify when and how brush control treatments will be undertaken, consultation 
+protocols, environmental protection measures and monitoring.  The Company is 
+striving to reduce the amount of pesticides used.  Where feasible, alternatives to 
+herbicides are used to control brush.  Table 15 indicates the Five-Year Basic 
+Silviculture Goals (hectares) for TFL 6. 
+
+--- page 57 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 49 
+Silviculture Standards for TFL 6 are in Appendix XIII. 
+Table 15 – Five-year basic silviculture activity goals (ha) for TFL 6 
+Activity 
+Previous 
+5 Year 
+Avg. 
+2001 2002 2003 2004 2005 
+SP’s (Area Logged) 1450 1500 1500 1400 1400 1400 
+Site Preparation 30 30 25 25 25 25 
+Planting 1350 1300 1200 1200 1200 1200 
+Silvicultural Surveys 2120 3000 3000 2500 2500 2500 
+Brushing 1170 1000 850 800 700 700 
+Free Growing Surveys 3300 2000 1500 2000 1500 1500 
+There has been discussion on the requirements to retain coarse woody debris (CWD) 
+throughout the management area.  CWD retention levels could possibly be used as 
+an indicator of forest ecosystem resilience.  Over the life of this plan WFP will work 
+with government agencies to develop a strategy for the retention of CWD.  Where 
+necessary WFP will also evaluate the necessity to develop a recruitment plan for 
+CWD.   
+Performance on the indicators for the maintenance of forest ecosystem resilience will 
+be reported in the annual report.  
+4.2.2.3 Forest Ecosystem Productivity  Element 
+Objective Indicator 
+Maintain forest ecosystem productivity 
+ 
+ha harvested by silviculture system  
+# of growth and yield plots established 
+and maintained 
+km of fish habitat created/enhanced 
+ha of riparian restoration  
+$ invested in enhanced forestry 
+ha fertilized, spaced and pruned 
+Past harvesting in TFL 6 is providing a variety of patch sizes and shapes across the 
+landscape.  With the advent of the Forest Practices Code of BC Act (FPC) more 
+attention is being given to riparian protection, coarse woody debris and maintenance 
+of structural forest attributes important for biodiversity function. 
+Harvesting during the planning period will continue to be mainly in old growth forest 
+stands more than 120 years old.  Some 80-120 year old second growth of wind origin 
+is also being harvested where it fits in with the development of older stands or where 
+specific objectives at the landscape level dictate.  For example the creation of spring 
+forage around ungulate winter ranges may result in second growth harvest. 
+A variety of silvicultural systems are being utilized all of which are variations of 
+clearcutting or partial cutting as defined by the FPC, Operational Planning Regulation 
+(OPR).  The primary silviculture systems used to date in the TFL have been patch 
+clearcutting and patch clearcutting with reserves.  Other silviculture systems, which 
+have been utilized, include single tree and group selection.   Recently the retention 
+silviculture system, which maintains structural diversity over the cut block for a 
+
+--- page 58 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 50 
+minimum of one rotation is being utilized.  WFP is currently investigating alternate 
+harvesting systems and has begun a Retention Silviculture System Trial to analyze 
+the practicability of using this system within the Plan Area.  WFP remains committed 
+to using silviculture systems that maintain forest ecosystem productivity and function.  
+As discussed under the section Research and Development, WFP maintains 
+permanent growth and yield plots which are used to measure stand productivity.  New 
+plots will be established to monitor incremental silviculture treatments in line with 
+priorities of the Coastal Forest Productivity Council.   
+WFP has been very active in the creation and enhancement of fish habitat through 
+the placement of in-stream structures and construction of off-channel habitat.  These 
+programs have been funded through the FRBC Watershed Restoration Program.   
+Within TFL 6 over 20 km of streams have been enhanced over since 1996 and 
+several off-channel habitat projects have been undertaken.  These programs  
+contribute to the restoration, maintenance and enhancement of local fish populations.  
+As described in Section 4.2.1.2 terrestrial ecosystem restoration activities are 
+beginning to be used within the TFL.  These activities were designed to accelerate the 
+recovery of forest characteristics needed for the ecological restoration of riparian 
+habitat, water quality and channel stability and enhance the biodiversity of the area. 
+The expansion of this program to other watersheds within the TFL will take place with 
+available funding during the life of this plan. 
+Once the commitments and obligations of the SPs have been fulfilled, stands 
+are available for incremental silviculture treatments.  WFP will strive to optimize 
+the timber producing capacity of forest ecosystems while conserving other 
+resource values.  WFP currently has a multi-year agreement with Forest 
+Renewal BC to fund incremental silviculture activities such as backlog 
+brushing, backlog planting, juvenile spacing, pruning and fertilization.  A 
+Resource Management Plan has been developed and approved by FRBC and 
+the MoF which sets out goals related to volume and value gains to be made 
+through various incremental silviculture treatments as well as social outputs 
+such as training and employment.  Stand Management Prescriptions (SMPs) are 
+prepared and approved by Company RPFs, which give specific treatment 
+objectives, time frames, and address non-timber resources.  SMPs are reviewed 
+and approved by the MoF.  Table 16 outlines the planned five-year goals enhanced 
+silviculture goals based on continued FRBC funding at current levels. 
+Table 16 – Five-Year Enhanced Silviculture goals (ha) 
+Activity Previous 
+5 Year Average 
+2001 2002 2003 2004 2005 
+Juvenile Spacing 460 300 300 300 300 300 
+Pruning 475 450 450 350 350 350 
+Fertilization 1769 800 1200 800 1200 800 
+Six SFM indicators have been established to report on Forest Ecosystem Productivity.  
+WFP will report annually on the hectares harvested by silviculture system, number of 
+growth and yield plots monitored, the kilometers of fish habitat created/enhanced, 
+amount of riparian restoration, investments made on enhanced forestry, and amount 
+of ha fertilized, spaced and pruned each year.   
+
+--- page 59 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 51 
+4.2.3 Conservation of Soil and Water Resources Criteria 
+4.2.3.1 Productive Area  Element 
+Objective Indicator 
+Minimize permanent loss of productive 
+area 
+% permanent access within cutblocks 
+The total area of TFL 6 is approximately 198,000 ha.  Of this total, 185,500 ha are 
+considered productive.  Existing roads, trails and landings occupy roughly 2,500 ha or 
+1% of the productive land.  In 1999 a reclassification of the TFLs landbase was 
+completed that reflects the physical accessibility and an economic availability of the 
+land.  Lands classified as physically inaccessible would include lands where there is a 
+physical barrier or terrain constraint leaving accessibility virtually impossible mostly 
+due to environmental sensitivity.  Approximately 11,600 ha of productive area was 
+identified and were removed from the timber harvesting landbase due to physical 
+accessibility.  Approximately 950 hectares have been removed from the timber 
+harvesting landbase as economically unavailable under current conditions. 
+One of the primary goals of harvest planning is to minimize impacts on the net 
+productive landbase.  Permanent and temporary access structures are planned to 
+minimize the total amount of road required to safely and economically harvest the 
+timber.  For the period 1995-99 the percent of permanent access within conventional 
+cutblocks has averaged 4.6%. 
+Mainline and branch road prisms during this period have been on average 11 metres 
+wide.  Spur roads have averaged 9 meters.  Future roads are forecast to occupy 
+2,800 ha.  The following practices are undertaken to minimize the loss of productive 
+area. 
+• Sensitive road cut slopes and fill slopes are/or planted with trees and grass 
+seeded 
+• Temporary access structures and abandoned roads are debuilt wherever 
+possible 
+• Excess material generated by road building on slopes greater than 60% is 
+generally end hauled or keyed in to minimize side-casting 
+• Historically over steepened fill slopes are rehabilitated through side cast 
+pullback and planted with trees and grass seeded 
+Terrain stability assessments are completed where harvesting is proposed in areas of 
+moderate or high hazard for landslide initiation following timber harvesting or road 
+construction.  If harvesting proceeds in these areas the recommendations made by 
+terrain specialists are followed in plan development and implementation.  Rainfall 
+shutdown standard operating procedures are followed to ensure the safety of 
+personnel and reduce the risk of erosion and landslides. 
+One SFM principle indicator has been established to monitor impacts to the 
+productive forest landbase.  It is the % permanent access within cutblocks.  Results 
+will be in the annual report. 
+
+--- page 60 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 52 
+4.2.3.2 Water Quality  Element 
+Objective Indicator 
+Maintain water quality 
+ 
+km of road deactivated 
+ha in Riparian Management Areas (RRZ & 
+RMZ) 
+Ha of CWAPs completed by year 
+# of reportable spills to water 
+The watersheds in TFL 6 drain large catchment areas on northern Vancouver Island.  
+Many support populations of anadromous fish and some supply domestic drinking 
+water.  There are currently thirty-two identified drinking water locations in TFL 6. 
+Mabbott
+ Island
+Drake
+ Island
+Port
+Hardy
+Airport
+Marble R.
+Pr ov. Park
+Quatsino
+Pr ov. Park
+Raft Cove
+Pr ov.
+Park
+Cape Scott
+Park
+Reserve
+FEDERAL AND
+PROVINCIAL
+PARKS
+Clesklagh
+Main
+Wanokana Main
+R 440
+Rupert Main
+R400
+Rupert Main
+West   Main
+West Main
+700
+Port
+Hardy
+M
+ain
+Varney
+Main
+Port Hardy
+Main
+W
+est
+M
+ain
+A.L. Mn
+South-East
+Main
+K 500
+Marine
+Drive
+Teeta Main
+Mahatta   M
+ainline
+B Main
+J Main
+B
+Main
+North
+Main
+Klaskino Main
+Klaskino
+Main
+Mahatta
+Koprino Mn
+ML Mn West Main
+ML Mn
+South
+Main
+Topknot Main
+SJ Mn
+Ronning M
+n
+San Josef Main
+SJ40
+Stranby
+Main NE M
+n
+60
+NE 60
+CH
+200
+Hushamu Main
+CH Main
+S. M
+n
+SE Mn
+Koprino Mn
+Port Alice
+Main
+M
+arine
+Drive
+Cayeghie
+M
+n
+Cay. Mn
+Mainline
+S 30
+Hath.
+Mn
+K Main
+I  Main
+K 10
+K   Main
+East
+Main
+I MainJ Main
+E. M
+ain
+T500
+West Main
+Victoria
+Lake
+M
+ain
+Condemned
+Bridg e
+Public RoadPublic Road
+Public
+Hwy
+Public Hwy
+Public  Hwy
+Public Hwy
+Public
+Hwy
+Interfor
+Port
+Hardy
+Winter
+Harbour
+Holberg
+Coal
+Harbour
+Quatsino
+Jeune
+Landing
+Port
+Alice
+Pulp Mill
+Mahatta
+River
+Port
+McNeill
+Quatse
+Watershed
+1
+2
+74
+5
+6
+3
+8
+20
+21
+31
+22
+2329
+28
+32
+30
+24
+27
+25
+26
+14
+1013
+1
+1112
+16
+15
+18
+19
+17
+4
+8
+9
+2
+3
+76
+5
+DRINKING WATER
+SITES
+10 24 6 81 0
+Scale in kilometres
+Quatsino Tree Farm Licence 6
+ 
+Figure 15 – Drinking Water Sources 
+Within the TFL there is one designated, but unused, community watershed and one 
+non-designated watershed from which water is drawn for community use.  Calbick 
+Creek Community Watershed is located adjacent to the Quatsino First Nations 
+Reserve at Coal Harbour.  This watershed although designated under the FPC is not 
+used.  The community of Coal Harbour and the Quatsino First Nations draw their 
+water supply from Quatse Lake located north of the community.  Although this 
+watershed is not designated under the FPC, the Company manages it as if it were a 
+designated watershed.  
+Water quantity stations are established on Simpson Creek and San Josef River.  
+These stations are being maintained by Environment Canada – Water Survey of 
+Canada.  As well as contributing data to a larger study of streams on Vancouver 
+
+--- page 61 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 53 
+Island the stations will provide background data which will serve as a baseline to 
+measure the impact of future harvesting in the watersheds. 
+FPC riparian reserve zone and management zone provisions will be incorporated into 
+operational plans to protect water quality.  In addition, WFP has standard operating 
+procedures (SOP) designed to protect water quality and the environment in general.  
+These standards include formal procedures for activities and maintenance of 
+machinery in riparian management zones, application of herbicides for brush control 
+and block design and layout. Appendix VIII provides a sample SOP. 
+Road deactivation, road maintenance and watershed restoration projects funded by 
+FRBC are also key activities in the maintenance of water quality.  The focus of road 
+deactivation and maintenance is to maintain natural surface and ground water flow 
+patterns and to minimize risks posed by road related landslides or other mass 
+wastage events. Specific watershed restoration projects are directed at maintenance 
+and enhancement of fish habitat.  Appendix XIV provides project details and a 
+summary of the work completed in the Keogh River Watershed. 
+SFM principle indicators have been established for water quality.  They are: ha in  
+RMAs (RRZs and RMZs), km of deactivated road, ha of CWAPs completed, and 
+number of reportable petroleum spills to water.  Results will be reported in the annual 
+report and the Environmental Management System (for spills to water).  
+4.2.4 Contribution to Global Ecological Cycles Criteria 
+4.2.4.1 Carbon Sequestration  Element 
+Objective Indicator 
+Maintain carbon balance relative to 
+company operations 
+Fuel consumption/m3 
+Ha of NSR (current + backlog) 
+Carbon Sequestration refers to the provision of long-term storage of carbon in the 
+terrestrial biosphere, underground, or the oceans so that the buildup of carbon dioxide 
+(the principal greenhouse gas) concentration in the atmosphere is reduced or slowed. 
+In some cases, this is accomplished by maintaining or enhancing natural processes. 
+Global carbon cycles are not fully understood. However, it is believed that the global 
+carbon cycle is out of balance. The increased atmospheric CO
+2 level is making global 
+climatic change more likely.  There has also been a general belief that the burning of 
+fossil fuels contributes to increased atmospheric CO2 levels.  While the burning of 
+fossil fuel is necessary to carrying out forest management activities the levels of 
+consumption will be monitored relative to the production levels.   
+Establishment and maintenance of forests is an important aspect of the terrestrial 
+carbon sequestral. As forests grow they convert carbon dioxide in the air to carbon 
+stored in trees. Forests form a large terrestrial sink for carbon. Harvesting will be 
+followed by prompt reforestation. 
+The indicators for carbon sequestration will be monitored on an annual basis and 
+reported in the annual reports.  
+
+--- page 62 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 54 
+ 
+4.2.5 High Conservation Value Forests Criteria 
+The term "High Conservation Value Forest" or HCVF originates from Principle 9 of the Forest 
+Stewardship Council's ten Principles and Criteria.  Management of HCVF focuses on the 
+precautionary maintenance or enhancement of attributes such as significant concentrations of 
+biodiversity, ecosystems at risk, watersheds, unstable terrain, or fundamental economic or 
+cultural needs of local communities or First Nations. 
+Management of attributes identified as sensitive to forest management has been ongoing for 
+many years.  Management strategies for them have been described in previous plans or other 
+sections herein.  
+TFL 6 is part of a defined forest area for the purposes of certification under the Forest 
+Stewardship Council.  A summary paper entitled “Statement on High Conservation Value 
+Forests of North Vancouver Island Region” was drafted in 1999 and submitted to the public, 
+stakeholders, and First Nations for review and input.  From the feedback received a more 
+comprehensive document entitled “High Conservation Forests North Vancouver Island 
+Region” was developed and circulated for further input. The most recent version of the 
+strategy can be found in Appendix XX.  Within this strategy, proposed HCVF attributes are 
+identified and strategies specifically developed for the management and monitoring of them. 
+The Licensee has enlisted the services of a team of specialists (biologists & ecologists) to 
+review this strategy and refine the approach taken on High Conservation Value Forests.  It is 
+expected that this review will result in an updating of the related appendices.  This review and 
+updating is expected to be completed by the end of 2001.  This strategy is subject to continual 
+review and updating as new information is learned, consultation continues, and society’s 
+values change over time. 
+4.3 Socially Beneficial Forest Management Principle 
+4.3.1 Responsibility for Sustainable Development Criteria 
+4.3.1.1 First Nations  Element 
+Objective Indicator 
+Provide opportunities for consultation 
+on forest management 
+Increase First Nations involvement in 
+forest management 
+ 
+Protect First Nations cultural  
+features 
+records of meetings and correspondence
+ 
+% silviculture contracts to First Nations 
+other person-days employment to First 
+Nations and/or joint ventures 
+# of AIAs 
+The Quatsino, Kwakiutl, and Tlatlasikwala First Nations traditional territories cover 
+much of the TFL 6 land base as shown in Figure 16. 
+The Quatsino First Nation traditional territory covers about 85% of TFL 6 and includes 
+all waters that flow into Quatsino Sound. The communities of Port Alice, Holberg, 
+
+--- page 63 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 55 
+Coal Harbour, Quatsino and Winter Harbour all lie within the boundaries of the 
+Territory.  Coal Harbour Reserve, a community of approximately 342 residents 
+located outside Port Hardy, is the main community of the Quatsino First Nations. 
+The Kwakiutl First Nations traditional territory runs from Port McNeill to Port Hardy 
+and contains all lands draining into Queen Charlotte Strait.  The communities of Port 
+Hardy and Port McNeill lie within the boundaries of the territory. Fort Rupert, the main 
+community of the Kwakiutl (located near the Port Hardy Airport) has a population of 
+roughly 326.  An additional 265 band members live off of the reserve. 
+The Tlatlasikwala First Nations traditional territory covers the northern tip of 
+Vancouver Island including several adjacent islands and all lands draining into the 
+San Josef River.  The band is currently in the process of relocating to Bull Harbour 
+north of Port Hardy.  Currently the 41 band members residences are split between 
+Port Hardy and Whe-la-la-u Reserve in Alert Bay.  
+Mabbott
+ Island
+Drake
+ Island
+Port
+Hardy
+Airport
+Mar ble R.
+Pr ov. Park
+Quatsino
+Pr ov. Park
+Raft Cove
+Pr ov.
+Park
+Cape Scott
+Park
+Reserve
+FEDERAL AND
+PROVINCIAL
+PARKS
+Clesklagh
+Main
+Wanokana Main
+R 440
+Rupert Main
+R400
+Rupert Main
+West   Main
+West Main
+700
+Port
+Hardy
+M
+ain
+Varney
+Main
+Port Hardy
+M
+ain
+W
+est
+M
+ain
+A.L. Mn
+South-East
+Main
+K 500
+Marine
+Drive
+Teeta Main
+Mahatta   Mainline
+B M
+ain
+J M
+ain
+B
+Main
+North
+Main
+Klaskino Main
+Klaskino
+Main
+M
+ahatta
+Koprino Mn
+ML Mn West Main
+ML Mn
+South
+Main
+Topknot Main
+SJ Mn
+Ronning M
+n
+San Josef Main
+SJ40
+Stranby
+M
+ain
+NE Mn
+60
+NE 60
+CH
+200
+Hushamu Main
+CH Main
+S. Mn
+SE Mn
+Koprino Mn
+Port Alice
+Main
+Marine
+Drive
+Cayeghie
+M
+n
+Cay. Mn
+Mainline
+S 30
+Hath.
+Mn
+K Main
+I  Main
+K 10
+K   M
+ain
+East Main
+I MainJ Main
+E. M
+ain
+T500
+West Main
+Victoria
+Lake
+M
+ain
+Condemned
+Br idge
+Public RoadPublic Road
+Public
+Hwy
+Public Hwy
+Public  Hwy
+Public Hwy
+Public
+Hwy
+Interfor
+Port
+Hardy
+Winter
+Harbour
+Holberg
+Coal
+Harbour
+Quatsino
+Jeune
+Landing
+Port
+Alice
+Pulp Mill
+Mahatta
+River
+Port
+McNeill
+Kyoquot
+Namgis
+Tlatlasikwala
+Quatsino
+First Nation
+Traditional Territories
+1024 6 81 0
+Scale in kilometres
+Quatsino Tree Farm Licence 6
+ 
+Figure 16 – First Nations Territories 
+WFP is committed to maintaining a meaningful and respectful relationship with First 
+Nations.  The TFL Management Plan and Forest Development Plans (FDP) are 
+referred to the First Nations leadership for review and comment.  WFP planners meet 
+with Band Councils to review the draft plans and address concerns brought forward 
+by the Bands.  Development plans are adjusted to respect First Nations cultural and 
+heritage resources. 
+An archaeological overview assessment of the TFL was completed as part of the Port 
+McNeill Forest District overview assessment.  This assessment was quite coarse in 
+scale, however it identified some potentially significant areas.  Areas with high 
+potential, areas that are adjacent to those areas with high potential, and areas 
+
+--- page 64 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 56 
+identified in the field as having trees that have potentially been culturally modified, are 
+surveyed by an archaeological consultant and where possible a member of the First 
+Nations involved, to produce an archaeological impact assessment (AIA).  The AIA is 
+sent to the First Nations band involved for review and comment. 
+WFP has implemented a policy of First Nations consultation and involvement in 
+harvesting and silviculture activities.  WFP has encouraged the Quatsino Band’s 
+development of logging and silviculture capability.  The Band holds a 30,000 m
+3 
+renewable logging contract and receives direct awarded silviculture contracts.  WFP 
+has agreed to support a Forestry Coordinator for the Quatsino Band and currently 
+supports one for the Kwakiutl Band.  WFP also encouraged the development on a 
+Kwakiutl silviculture crew.  WFP has also provides training in logging for Kwakiutl 
+Band members, and a few of WFP’s permanent employees have come out of this 
+training initiative.  WFP has established an agreement with FRBC that allows projects 
+to be directly awarded to local First Nations contractors wherever possible, provided 
+the bids are within the range of historic, open-tendered projects of a similar nature in 
+the North Vancouver Island Region.  Target groups for enhanced silviculture projects 
+are First Nation companies operating within their traditional territories.  The goal is to 
+provide full employment for those crews in a variety of silviculture activities in addition 
+to providing training opportunities for new people.  Over the last five years, First 
+Nations employment was approximately 2,050 person days per year for silviculture 
+contracting in TFL 6. 
+Western Forest Products provides timber to First Nations groups for a range of 
+traditional uses, including canoes, drum logs, totem poles, and big houses. 
+First Nations indicators will be monitored through a combination of annual reports and 
+Forest Development Plans. 
+4.3.1.2 Communities  Element 
+Objective Indicator 
+Conduct effective consultation with 
+communities 
+Maintain and enhance community 
+stability 
+# and types of 
+contacts/meetings/consultation 
+$ invested in public projects 
+$ spent on forest education program  
+WFP is one of the founding members and is an equal partner in the North Island 
+Discovery Center.  The center provides forestry and tourist information to all people 
+who visit.  In conjunction with the center WFP offers the public free forestry tours of 
+forestry and logging operations within TFL 6.  Many special tours are also conducted 
+on request. Approximately 300 people participate in the tours each year. 
+For several years, the company has also been providing a forestry program for 
+several schools in the Victoria Area at our Lost Lake Seed Orchard and now our 
+Saanich Forestry Center.  Forestry and logging tours are given to several local school 
+classes.  Programs and presentations are given on an annual basis at several 
+schools within the local communities.  The school programs have been very 
+enthusiastically received. 
+
+--- page 65 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 57 
+Visitor guide maps of the North Vancouver Island Region are popular.  Approximately 
+5,400 copies were distributed in 1999.  Appendix XII is a copy of the Visitor Guide. 
+The Company is dedicated to supporting local businesses and contractors.  
+Businesses in the North Vancouver Island Region rely heavily on trade generated by 
+local forestry operations. 
+The communities of the North Vancouver Island Region benefit from Western Forest 
+Products support of many events and recreational activities.  Financial support and in-
+kind contributions are provided for: Local Chamber of Commerces, Port McNeill 
+Museum, Seven Hills and Port Alice Golf Courses, Tri-Port Raceway, Seven Mile 
+Motorcross Track, Holberg Volunteer Fire Department, Port Alice Volunteer Fire 
+Department, Port McNeill Volunteer Fire Department, Holberg First Responders, 
+Mount Waddington Regional Fall Fair, National Forest Week, several Logger’s Sports 
+Days, several local sports teams, and several other local events and groups.  WFP 
+also has a long history in the development of community infrastructure (arena, track, 
+pool, etc.) 
+Western Forest Products’ employees are very active in their communities.  In the last 
+five years, employees have continued to be members of many local groups including: 
+• Local Government and Committees 
+• Mount Waddington Community Resource Board 
+• Special Management Zone Working Group 
+• Local Harbour Commissions 
+• North Vancouver Island Salmonid Enhancement Association 
+• North Island Tourism Initiative 
+• Canadian Institute of Forestry (Pacific Section) 
+• Employee Family Assistance Program 
+• Community Action Network 
+• Mount Waddington Community Health Council 
+• Volunteer Fire Departments 
+• British Columbia Ambulance Service, and the Provincial Emergency Program. 
+Figure 17 shows the location of operations and communities. Appendix XVII provides 
+a profile of the main communities located within TFL 6. 
+
+--- page 66 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 58 
+Mabbott
+ Island
+Drake
+ Island
+Port
+Hardy
+Air po rt
+Mar ble R.
+Prov. Park
+Quatsino
+Prov. Park
+Raft Cove
+Pr ov.
+Pa rk
+Cape Scott
+Park
+Reserve
+FEDERAL AND
+PROVINCIAL
+PARKS
+Clesklagh
+Main
+Wanokana Main
+R 440
+Rupert Main
+R400
+Ruper t Main
+West   Main
+West Main
+700
+Port
+Hardy
+M
+ain
+Varney
+Main
+Port Hardy
+M
+ain
+W
+est
+M
+ain
+A.L. M
+n
+South-East
+Main
+K 500
+Marine
+Drive
+Teeta Main
+Mahatta   M
+ainline
+B Main
+J Main
+B
+Main
+North
+Main
+Klask ino Main
+Klaskino
+Main
+Mahatta
+Koprino Mn
+ML Mn West Main
+ML Mn
+South
+Main
+Topknot Main
+SJ Mn
+Ronning M
+n
+San Josef Main
+SJ40
+Stranby
+Main NE M
+n
+60
+NE 60
+CH
+200
+Hushamu Main
+CH Main
+S. M
+n
+SE Mn
+Koprino Mn
+Port Alice
+Main
+M
+arine
+Drive
+Cayeghie
+M
+n
+Cay. Mn
+Mainline
+S 30
+Hath.
+Mn
+K M
+ain
+I  Main
+K 10
+K   Main
+East
+Main
+I MainJ Main
+E. M
+ain
+T500
+West M
+ain
+Victoria
+Lake
+M
+ain
+Condemned
+Bridg e
+Public RoadPublic Road
+P
+ublic
+Hwy
+Public Hwy
+Public  Hwy
+Public Hwy
+Public
+Hwy
+Int erfor
+Port
+Hardy
+Winter
+Ha rb our
+Holberg
+Coal
+Harbour
+Quatsino
+Jeune
+Landing
+Port
+Alice
+Pulp Mill
+Mahatta
+River
+Port
+McNeill
+Jeunte Landing
+Mahatta
+Holberg
+Coal Harbour
+(PMc)
+Port McNeill
+Rupert Inlet
+(PMc)
+OPERATIONS
+10 24 6 81 0
+Scale in kilometres
+Quatsino Tree Farm Licence 6
+ 
+Figure 17 – Forest Operations 
+Indicators related to communities will be reported annually within TFL annual reports.  
+4.3.1.3 Employment Element 
+Objective Indicator 
+Sustain employment levels Total Person-days and $/m 3 
+Tree Farm Licence 6 is a significant generator of employment in logging, silviculture 
+and forest management.  Other employment is created as the logs produced in TFL 6 
+are processed in the Port Alice Pulp Mill and other Doman mills.  Table 17 
+summarizes the average annual direct employment over the past five years as a 
+consequence of operations in TFL 6. 
+Table 17 – Annual Direct Employment 1995 – 2000 
+Category Average Annual Person 
+Days of Employment 
+Planning/Harvesting 81,090 
+Silviculture & Integrated Use 13,630 
+Administration 4,250 
+Subtotal 98,970 
+Manufacturing 102,725 
+Total 201,695 
+Over the planning period WFP intends to maintain employment levels through the 
+following strategies: 
+• Harvest 100% of the AAC in each cut control period 
+• Meet or exceed contractor requirement as per Timber Harvesting Contract and 
+Subcontract Regulation 
+• Where possible expand the silviculture and watershed restoration programs 
+through long term funding commitments from FRBC 
+• Maintain and where possible expand minor forest products harvesting 
+
+--- page 67 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 59 
+program 
+• Work with First Nations to expand employment opportunities 
+Employment strategies hinge on the degree of decline of the AAC, no diminishment 
+with company tenure rights and continued or expanded funding from Forest Renewal 
+BC over the next 5 years.   
+Employment levels will be reported on an annual basis within TFL annual reports. 
+4.3.1.4 Compliance  Element 
+Objective Indicator 
+Provide adequate training 
+Achieve compliance with all legislation 
+and regulations 
+# of training hours 
+% compliance 
+Forestry activities in TFL 6 are focused on sustainable development and 
+environmental protection.  Legislation, regulations, policy and guidebooks provide 
+standards for forest practices.  WFP's objective is to achieve full compliance with all 
+legislation and regulations. 
+WFP has developed a series of Standard Operating Procedures (SOPs).  These 
+SOPs guide each of our staff, employees and contractors.   These SOPs and 
+associated training programs assist WFP's operations to achieve a consistent and 
+high level of responsible forest stewardship. 
+The SOPs are a key element of WFP's environmental management system.  The 
+SOPs set minimum standards for specific forest management activities.  Progress 
+and performance will be assessed through internal and external audits of each 
+operation. 
+Percent compliance with rules and regulations will be monitored.  Contraventions will 
+be investigated and, if required, controls and policy changes put in place to prevent 
+reoccurrence. 
+Compliance indicators will be reported on an annual basis within TFL annual reports. 
+4.3.1.5 Employee Relations Element 
+Objective Indicator 
+Provide adequate training 
+Provide regular communication to 
+employees and contractors 
+# of training hours 
+WFP Western Spirit and Environment 
+Matters Newsletter circulation 
+Maintaining good relations with WFP's employees, contractors and their employees is 
+an important element of WFP's Sustainable Forest Management Program.  The 
+objective is to provide adequate training and regular communication to workers and 
+contractors.  The employees are trained in sustainable forestry practices and through 
+regular communication the employees are informed of new practices.  Existing 
+
+--- page 68 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 60 
+practices are reviewed and updated as required.  Training hours will be reported 
+annually within TFL annual reports. 
+WFP's Western Spirit and Environment Matters Newsletters (samples in Appendix 
+XIX), quarterly publications are circulated to employees.  Training records and training 
+needs for all employees are maintained at WFP's Regional Office.  The 
+Environmental Committees in each operation meet quarterly to review their 
+environmental management program. 
+4.3.1.6 Safety  Element 
+Objective Indicator 
+Provide a safe working environment # of lost time accidents 
+Western Forest Products recognizes the necessity of establishing and maintaining a 
+safe working environment for all employees, contractors and their employees.  Safety 
+has always been and always will be an important aspect of all operations.  Each 
+operation's safety program includes the following: 
+• Monthly meeting of safety committees 
+• Develop safe work practices for each activity 
+• Provide training in safe work procedures 
+• Communicate safety to all workers on a regular basis 
+• Reporting of dangerous conditions and incidents 
+ 
+Safety performance of the company is monitored on a monthly and annual basis. 
+
+--- page 69 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 61 
+5.0 Sustainable Forest Management Plan Consultation 
+The preparation of Management Plan 9 for TFL 6 has followed the old TFL Management Plan 
+process.  The process laid out a 30 month time line leading up to the approval of a new plan 
+and included the following: a public review of the current plan, submission of a review strategy 
+for the new plan, a Statement of Management, Options, Objectives and Procedures 
+(SMOOP)(Appendix XXIII), an Employment and Economic Opportunity report (EEO)(Appendix 
+XXIV), an information package, a timber supply analysis and 20 year projection, and a draft 
+MP.  This process was initiated for TFL 6 in July 1998 following direction from the MoF 
+Vancouver Region calling for a public review of the current plan. 
+WFP developed a public and stakeholder review strategy for MP 9 late in 1998 and carried out 
+the public review of the current plan in August and September of 1998.  Advertisements were 
+placed in local newspapers and on the Company website inviting comments on current 
+performance under MP 8 and suggestions for consideration.  In addition, letters were sent to 
+250 stakeholders advising them of the review and an invitation to comment. 
+MP 8 was on review in Port McNeill (WFP and MoF), Port Alice, Holberg, Nanaimo (MoF), 
+Victoria (MoF) and Vancouver (WFP, Head Office) from July 26, 1998 to September 30, 1998.  
+Seven responses were received on the Statement of Management Objectives, Options and 
+Procedures (SMOOP). Generally responses were very favourable and highlighted the 
+company’s history and strong community ties.  One local resident was concerned with road 
+deactivation limiting access into areas for honey collection.  The resident was satisfied that 
+several opportunities would still exist for honey collection.  Other comments were related to 
+optimizing the value of the wood produced, forest management activities above Port Alice and 
+windthrow management.  There were no significant changes required to the SMOOP.  
+A revised MP 9 stakeholder and public review strategy was submitted with the Draft MP as 
+part of Appendix X.  Open houses were held in Port McNeill, Port Alice, Holberg and Port 
+Hardy.  WFP staff also met with municipal councils in the above-mentioned communities and 
+with the three First Nations whose traditional territory encompasses TFL 6.  A summary report 
+was prepared and is appended to the proposed MP in Appendix X. A total of 163 persons 
+attended the 13 sessions. A total of 14 written comments were received as well as the 
+Regional Manager’s comments. 
+
+--- page 70 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 62 
+6.0 SUMMARY IMPACT ANALYSIS 
+Economic, environmental and social impacts will be monitored using indicators developed to 
+measure WFP forest management activities.  These indicators will be reported on an annual 
+basis in the TFL Annual Report.  If significant negative impacts become apparent, where 
+appropriate, WFP will develop specific management strategies to mitigate the effects of the 
+company’s forest management activities. 
+6.1 Economic 
+One of WFP's primary principles is to be an economically viable forest products company 
+which can compete in world markets.  This will be achieved by: 
+• economically harvesting the licensee portion of the proposed AAC   
+• achieving production and administration efficiencies  
+• through optimal log allocations and utilization, WFP intends to improve product 
+values and enhance lumber recoveries 
+Independent certification of forest operations will provide assurances that operations are being 
+conducted in a sustainable manner.   
+Table 18 summarizes the Criteria, Elements, Objectives and Indicators that will be used to 
+measure WFP’s performance in practising Economically Viable Forest Management. 
+Table 18 – Indicators of Economically Viable Forest Management 
+Criteria – Multiple Benefits 
+Element Objective Indicator 
+% achievement of AAC, 5 year cut control 
+Harvest AAC 
+estimated total value of timber produced 
+Prevent timber loss ha of non-recoverable losses due to wind, fire 
+Timber Supply 
+Efficient utilization m 3 of billable waste 
+Harvest Methods Employ appropriate harvest 
+methods harvest system by volume 
+Contractor Commitment maintain contractor commitmen ts % of required contractor commitment achieved 
+Profitability achieve a reasonable return on 
+investment margin/m3  
+Non-Timber Forest Products encourage NTFP utilization volume by type of NTFP (m 3, kg) 
+Special Forest Products encourage utilization of special 
+forest products estimated total value of special forest products 
+Access Management provide for public access km of road maintained 
+# and type of recreation sites maintained Recreation maintain recreation sites and 
+Features user days by category 
+Research and Development support research and development $ invested in research 
+Contribution to Provincial 
+Revenues contribute to provincial revenues payment of fees 
+ 
+
+--- page 71 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 63 
+6.2 Environmental 
+Environmentally appropriate forest management is another key principle in WFP's Sustainable 
+Forest Management Policy.  WFP is committed to the protection of the environment and the 
+sustainable development of the resources under our stewardship.  This will be achieved by 
+implementing several forestry and environmental management practices that meet or exceed 
+government standards.  Management practices will continue to be evaluated and adopted in 
+response to new information and experience. 
+It is anticipated that implementation of new environmentally appropriate management 
+practices may have a negative impact on the AAC.  However, this impact may be overcome 
+by implementing intensive forest management in those areas where it is ecologically 
+appropriate. 
+Table 19 summarizes the Criteria, Elements, Objectives and Indicators that will be used to 
+measure WFP’s performance in practising Environmentally Appropriate Forest Management. 
+Table 19 – Indicators of Environmentally Appropriate Forest Management 
+Criteria – Conservation of Biological Diversity 
+Element Objective Indicator 
+average opening size (ha) 
+% of defined area reserved 
+seral stage distribution (5 year basis) 
+patch size distribution - % of landbase in patches 
+> 200 ha (5 year basis)
+$ invested and type of environmental inventories 
+and assessments 
+Ecological Diversity maintain a dynamic distribution of a 
+habitat over a landscape 
+THLB Status 
+# of known species classified as threatened, 
+endangered or vulnerable (COSEWIC & CDC) 
+ha maintained as stand level reserves 
+cumulative ha of wildlife habitat reserves 
+% of area declared as mixed species regeneration
+# planted by species 
+Species Diversity maintain viable populations of native 
+species 
+# fry released by species 
+Genetic Diversity maintain the variation of genes 
+within species 
+% seed orchard seed used 
+Criteria – Maintenance of Ecosystem Condition and Productivity 
+Element Objective Indicator 
+pest attack status 
+ha or # of weevil resistant spruce planting stock in 
+high hazard zones 
+Forest Health maintain forest health 
+# of accidental fires/ha burned 
+NSR balance 
+% of surveyed area free growing 
+average regeneration delay 
+ha reforested 
+Forest Ecosystem 
+Resilience 
+maintain forest ecosystem 
+Resilience 
+$ invested in basic forestry 
+
+--- page 72 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 64 
+# of growth and yield plots monitored 
+km of fish habitat created/enhanced 
+$ invested in enhanced forestry 
+ha of riparian restoration 
+ha fertilized, spaced and pruned 
+Forest Ecosystem 
+Productivity 
+maintain forest ecosystem 
+productivity 
+ha harvested by silviculture system 
+Criteria – Conservation of Soil and Water Resources 
+Element Objective Indicator 
+Productive Area minimize permanent loss of 
+productive area 
+% permanent access within cutblocks 
+km of road deactivated 
+ha in Riparian Management Areas (RRZ & RMZ) 
+Ha of CWAPs completed by year 
+Water Quality maintain water quality 
+# of reportable spills to water 
+Criteria – Contribution to Global Ecological Cycles High Conservation Value Forests 
+Element Objective Indicator 
+ha of NSR (current + backlog) Carbon Sequestration maintain carbon balance relative to 
+company operations fuel consumption/m3 
+6.3 Social 
+WFP is committed to respecting, understanding and supporting First Nations, community and 
+employee aspirations for stability and certainty.  An economically viable company translates 
+into stable employment for employees and promotes community stability.  Continuation of 
+environmentally appropriate management practices will ensure long-term sustainable socially 
+beneficial operations.  
+Table 20 summarizes the Criteria, Elements, Objectives and Indicators that will be used to 
+measure WFP’s performance in practising Socially Beneficial Forest Management. 
+Table 20 – Indicators of Socially Beneficial Forest Management 
+Criteria – Responsibility for Sustainable Development 
+Element Ob jective Indicato r
+provide meaningful consultation on 
+forest management
+records of meetings and correspondence 
+% silviculture contracts to First Nations increase First Nation involvement in 
+forest management other person-days employment to First Nations 
+and/or joint venture 
+First Nations 
+protect First Nations cultural features # of AIAs 
+conduct effective consultation with 
+communities
+# and types of contacts/meetings/consultations 
+$ invested in project projects 
+Communities 
+maintain and enhance community 
+stability $ spent of forest education programs 
+Employment Sustain employment levels total person days and jobs/ m 3 
+provide adequate training # of training hours  Compliance 
+achieve compliance with all 
+legislation and regulations
+% compliance 
+provide adequate training # of training hours Employee Relations 
+provide regular communication to 
+employees and contractors 
+WFP Western Spirit and Environmental Matters 
+Newsletter circulation 
+Safety provide a safe working environment # of lost time accidents 
+
+--- page 73 ---
+ 
+TFL 6 - Sustainable Forest Management Plan  Page 65 
+6.4 Impacts Due to Implementation of Management Plan 9 
+6.4.1 Harvest and Employment Levels 
+The Timber Supply Analysis (Appendix III) for MP 9 proposes an Allowable Annual Cut of 
+1,459,000 m3.  This proposed harvest level is 2% less than the MP 8, which was 1,489,000 
+m3.  This decrease is in line with the proposed step down that was outlined within MP 8.   
+Due to the increased complexity of forest management activities and the small decrease in 
+AAC, there are no significant changes anticipated to the employment levels as a result of 
+implementation of this plan. 
+6.4.2 Non-Timber Values 
+ 
+Management Plan 9 is the first plan to fully incorporate the results of implementation of the 
+Forest Practices Code.  MP 9 is also the first plan that has been designed to be in draft 
+compliance with both FSC and CSA certification systems.  While non-timber values were 
+mentioned in previous MPs, MP 9 has taken a more comprehensive approach. These values 
+include wildlife, streams, recreation, visual quality, biological diversity, non-timber forest 
+products, soil, cultural, social, and high conservation value forests.  MP 9 has also outlined in 
+detail how each of these values will be monitored.   
+6.4.3 General Impacts of Implementation 
+WFP believes that the implementation of this plan will aid in giving the company greater 
+economic stability.  With greater economic stability, more economic opportunities would be 
+available for the communities that are directly tied to the operations within TFL 6.  
+It is not anticipated that the implementation of this plan will have any further negative impacts 
+over the current plan. 

@@ -1,0 +1,2623 @@
+--- page 1 ---
+ 
+TFL 6 Management Plan #10                                                                                                 Page 156  
+Appendix B: Timber Supply Analysis 
+ 
+
+--- page 2 ---
+
+
+--- page 3 ---
+
+
+--- page 4 ---
+
+
+--- page 5 ---
+ 
+
+--- page 6 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis   Page i 
+Executive Summary 
+This analysis examines timber supply projections for Tree Farm Licence 6 located on northern 
+Vancouver Island. 
+Woodstock, a pseudo-spatial harvest model, was used to model current management practices 
+for protection and maintenance of ecological values and to estimate the residual timber potential 
+through the year 2258. 
+After allowances for non-recoverable losses, the modelling of current management practice as 
+set out in the associated Information Package suggests an AAC of 1,160,000 m3/year (a 
+reduction of 7.6%).  This represents a reasonable harvest level that accommodates ecological 
+and social concerns in the short and longer terms.  The modelling suggests that a minimum of 
+24,100 ha (16%) of productive forest area will be maintained in old forests (>250 years old) and 
+a minimum of 34,000,000 m3 of growing stock will be maintained on the timber harvesting 
+landbase throughout the 250-year planning horizon.  These forests are expected to contribute 
+significantly to biodiversity conservation and complement protected areas within and adjacent to 
+the Tree Farm Licence. 
+  
+
+--- page 7 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis   Page ii 
+ 
+ 
+This page intentionally left blank. 
+
+--- page 8 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis   Page iii 
+TABLE OF CONTENTS 
+ 
+EXECUTIVE SUMMARY ...................................................................................................................................... I 
+1.0 INTRODUCTION ........................................................................................................................................ 1 
+1.1 BACKGROUND ...................................................................................................................................... 1 
+1.2 OBJECTIVE ........................................................................................................................................... 1 
+1.3 TIMBER SUPPLY MODEL ........................................................................................................................ 1 
+2.0 BASE CASE (OR CURRENT MANAGEMENT OPTION) ......................................................................... 3 
+2.1 WESTERN RED CEDAR AND YELLOW CEDAR PROJECTIONS .................................................................. 11 
+3.0 ALTERNATE HARVEST FLOWS ............................................................................................................ 13 
+3.1 MAINTAIN CURRENT AAC .................................................................................................................... 13 
+3.2 NON-DECLINING EVEN FLOW ................................................................................................................ 15 
+4.0 SENSITIVITY ANALYSES ....................................................................................................................... 16 
+4.1 NO HARVESTING ON UNSTABLE TERRAIN OR BY HELICOPTER ................................................................. 17 
+4.2 NATURAL STANDS YIELDS OVERESTIMATED BY 10% ............................................................................. 19 
+4.3 NATURAL STANDS YIELDS UNDERESTIMATED BY 10% ........................................................................... 21 
+4.4 MANAGED STANDS YIELDS OVERESTIMATED BY 10% ............................................................................ 23 
+4.5 MANAGED STANDS YIELDS UNDERESTIMATED BY 10% .......................................................................... 25 
+4.6 USE SIBEC SITE INDEX ESTIMATES ..................................................................................................... 26 
+4.7 EXCLUDE FUTURE FERTILIZATION ......................................................................................................... 29 
+4.8 LESS PLANTING OF WESTERN HEMLOCK ............................................................................................... 30 
+4.9 REMOVE HELI VOLUME CONSTRAINT..................................................................................................... 33 
+4.10 EXCLUDE HELI OPERABLE LANDBASE ................................................................................................... 35 
+4.11 REDUCE THE PERCENT DISTURBED WITHIN EACH VQO POLYGON .......................................................... 37 
+4.12 VILUP ORDER OBJECTIVE #16 ........................................................................................................... 39 
+4.13 INCREASE MINIMUM HARVEST DBH CRITERIA ....................................................................................... 41 
+4.14 SUMMARY OF SENSITIVITY IMPACTS ..................................................................................................... 43 
+5.0 ANALYSIS SUMMARY AND PROPOSED AAC ..................................................................................... 45 
+5.1 CHANGES SINCE MP #9 ...................................................................................................................... 45 
+5.2 MP #10 BASE CASE INITIAL HARVEST ................................................................................................. 45 
+5.3 ECONOMIC ACCESS ............................................................................................................................ 45 
+5.4 SENSITIVITY ANALYSES ....................................................................................................................... 47 
+5.5 CONCLUSIONS AND RECOMMENDATIONS ............................................................................................. 48 
+ 
+ 
+
+--- page 9 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis   Page iv 
+List of Tables 
+ 
+TABLE 1 - BASE CASE HARVEST LEVELS ................................ ................................ ............................. 4 
+TABLE 2 - HARVEST LEVELS WITH MAINTAINING CURRENT AAC................................ ............................13 
+TABLE 3 – HARVEST LEVELS WITH NON-DECLINING EVEN FLOW ................................ ...........................15 
+TABLE 4 – CURRENT MANAGEMENT SENSITIVITY ANALYSES ................................ ............................... 16 
+TABLE 5 – UNSTABLE AND HELI OPERABLE LAND WITHIN TFL 6 ................................ ............................17 
+TABLE 6 – HARVEST LEVELS WITH UNSTABLE AND HELI OPERABLE LANDS REMOVED .............................17 
+TABLE 7 – HARVEST LEVELS WITH DECREASED NATURAL STANDS YIELDS ................................ .............19 
+TABLE 8 – HARVEST LEVELS WITH INCREASED NATURAL STANDS YIELDS ................................ ..............21 
+TABLE 9 – HARVEST LEVELS WITH DECREASED MANAGED STANDS YIELDS ................................ ............23 
+TABLE 10 – HARVEST LEVELS WITH INCREASED MANAGED STANDS YIELDS ................................ ...........25 
+TABLE 11 – AVERAGE FUTURE SITE INDEX ESTIMATES BY SPECIES ................................ .......................26 
+TABLE 12 – HARVEST LEVELS WITH YIELDS BASED ON SIBEC VALUES ................................ .................27 
+TABLE 13 – HARVEST LEVELS WITH NO FUTURE FERTILIZATION ................................ ............................29 
+TABLE 14 – HARVEST LEVELS WITH LESS HEMLOCK PLANTING ................................ .............................30 
+TABLE 15 – HARVEST LEVELS WITH NO PLANTING OF S1HA SITES ................................ .......................32 
+TABLE 16 – HARVEST LEVELS WITH NO HELI CONSTRAINT................................ ................................ ....33 
+TABLE 17 – HARVEST LEVELS WITH HELI THLB EXCLUDED ................................ ................................ ..35 
+TABLE 18 – MAXIMUM DISTURBANCE BY VQO CLASS ................................ ................................ ..........37 
+TABLE 19 - HARVEST LEVELS WITH MORE RESTRICTIVE VISUAL QUALITY MANAGEMENT .........................37 
+TABLE 20 - HARVEST LEVELS WITH FULL OGMAS IN EFZ #8 ................................ ............................... 40 
+TABLE 21 - MINIMUM HARVEST CRITERIA ................................ ................................ ...........................41 
+TABLE 22 - HARVEST LEVELS WITH LARGER MINIMUM DBH CRITERIA ................................ ...................41 
+TABLE 23 – SUMMARY OF SENSITIVITY ANALYSES HARVEST IMPACTS ................................ ...................43 
+ 
+
+--- page 10 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis   Page v 
+List of Figures 
+ 
+FIGURE 1 - TFL 6 ................................ ................................ ................................ ..............................  2 
+FIGURE 2 - BASE CASE HARVEST SCHEDULE 2009-2258 ................................ ................................ ..... 4 
+FIGURE 3 – STAND TYPES’ CONTRIBUTION TO BASE CASE HARVEST ................................ ..................... 5 
+FIGURE 4 - AGE CLASS DISTRIBUTION OF PRODUCTIVE FOREST AREA ................................ .................... 6 
+FIGURE 5 - AGE CLASS DISTRIBUTION OF TIMBER HARVESTING LAND BASE ................................ ............ 7 
+FIGURE 6 -THLB GROWING STOCK ................................ ................................ ................................ ..... 8 
+FIGURE 7 - HARVEST STATISTICS 2009 – 2258 ................................ ................................ ................... 9 
+FIGURE 8 - VOLUME CONTRIBUTION BY HARVESTING SYSTEM ................................ .............................10 
+FIGURE 9 – BASE CASE CEDAR VOLUME ESTIMATES OVER TIME ................................ ...........................11 
+FIGURE 10 – HARVEST LEVELS WITH MAINTAINING CURRENT AAC ................................ .......................13 
+FIGURE 11 – ALTERNATE HARVEST LEVELS WITH MAINTAINING CURRENT AAC ................................ .....14 
+FIGURE 12 – HARVEST LEVELS WITH NON-DECLINING EVEN FLOW ................................ ........................15 
+FIGURE 13 – HARVEST LEVELS WITH UNSTABLE AND HELI OPERABLE LANDS REMOVED .........................18 
+FIGURE 14 – HARVEST LEVELS WITH DECREASED NATURAL STANDS YIELDS ................................ .........19 
+FIGURE 15 – HARVEST LEVELS WITH INCREASED NATURAL STANDS YIELDS ................................ ..........21 
+FIGURE 16 – ALTERNATE HARVEST LEVELS WITH INCREASED NATURAL STANDS YIELDS ........................22 
+FIGURE 17 – HARVEST LEVELS WITH DECREASED MANAGED STANDS YIELDS ................................ ........24 
+FIGURE 18 – HARVEST LEVELS WITH INCREASED MANAGED STANDS YIELDS ................................ .........25 
+FIGURE 19 – HARVEST LEVELS WITH YIELDS BASED ON SIBEC VALUES ................................ ...............27 
+FIGURE 20 – ALTERNATE HARVEST LEVELS WITH SIBEC-BASED YIELDS ................................ ..............28 
+FIGURE 21 – HARVEST LEVELS WITH NO FUTURE FERTILIZATION ................................ ..........................29 
+FIGURE 22 – HARVEST LEVELS WITH LESS HEMLOCK PLANTING ................................ ...........................31 
+FIGURE 23 – HARVEST LEVELS WITH NO PLANTING OF S1HA SITES ................................ .....................32 
+FIGURE 24 – HARVEST LEVELS WITH NO HELI CONSTRAINT ................................ ................................ ..34 
+FIGURE 25 - HARVEST LEVELS WITH HELI THLB EXCLUDED ................................ ................................ .36 
+FIGURE 26 - HARVEST LEVELS WITH MORE RESTRICTIVE VISUAL QUALITY MANAGEMENT .......................38 
+FIGURE 27 - HARVEST LEVELS WITH FULL OGMAS IN EFZ #8 ................................ .............................40 
+FIGURE 28 – HARVEST LEVELS WITH LARGER MINIMUM DBH CRITERIA ................................ .................42 
+ 
+ 
+ 
+ 
+
+--- page 11 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 1 
+1.0 Introduction 
+1.1 Background 
+Tree Farm Licence (TFL) 6 is located on northern Vancouver Island in the vicinity of Quatsino 
+Sound and is managed by Western Forest Products Inc. (WFP).   Figure 1 indicates the current 
+extent of TFL 6 for this analysis.  Since the last analysis several land deletions have occurred:  
+areas were recently removed to form part of a Community Forest for Port Alice, Port McNeill and 
+Port Hardy; an area was removed from TFL 6 and added to the Pacific Timber Supply Area to 
+create an operating area for BC Timber Sales (BCTS); and finally, it the private managed forest 
+lands were removed from TFL 6 in 2007 (see the Information Package for further details).  The 
+TFL encompasses 171,441 ha of which 107,811 ha is estimated to be available for long term 
+timber production.  The allowable annual cut (AAC) for this landbase is currently set at 1,255,536 
+m3 per year. 
+1.2 Objective 
+The primary objective of this report is to estimate reasonably achievable timber flows for 
+consideration by the Provincial Chief Forester in making the determination of the allowable annual 
+cut for the term of Management Plan #10.  More specifically: 
+1. The management of non-timber values such as fish and wildlife habitat, 
+biodiversity, visual quality, and terrain stability is accounted for.  Protection of non-
+timber values will be satisfied by land base reserves, rate-of-harvest constraints 
+and/or by maintaining a percentage of the landbase in older stands. 
+2. Timber flow is estimated by considering harvestable inventory, growth potential of 
+present and future stands, silvicultural treatments, potential timber losses, and 
+operational and legislative constraints. 
+3. Impacts of declining timber flow on community stability and employment are to be 
+lessened by keeping rates of decline per decade as low as possible without 
+inducing undue impacts on other values or long-term timber sustainability. 
+ 
+1.3 Timber Supply Model 
+Timber supply optimizations were completed with Woodstock software developed by Remsoft.  
+Woodstock is a pseudo-spatial supply model and is described in more detail in the associated 
+Information Package (IP) dated February 2011. 
+The inventory database was current to January 1, 2009 for harvesting depletion and silviculture 
+treatments and assessments.  The model was constructed using 50 5-year periods for a total 
+optimization horizon of 250 years.  Since AAC’s are now effective for up to 10 years, the model 
+was constructed such that harvest volumes over successive pairs of 5-year periods had to be 
+equal (i.e. harvest levels in Periods 1 and 2 had to be equal; harvest levels in Periods 3 and 4 had 
+to be equal; etc.).  This report presents results by 10-year intervals. 
+Analysis units (grouping of forest stands) and associated timber volume yield curve parameters 
+are described in more detail in the associated IP. 
+
+--- page 12 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 2 
+ 
+ 
+Figure 1 - TFL 6 
+
+
+--- page 13 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 3 
+2.0 Base Case (or Current Management Option) 
+The Base Case (or Current Management option) includes the following assumptions and 
+modelling parameters that are described in more detail in the associated IP (February 2011): 
+ The operable forested landbase accessible using conventional and non-conventional (helicopter) 
+harvesting methods with restricted performance in the non-conventional landbase. 
+ Exclusion of uneconomic forest stands. 
+ Harvesting of both mature and immature stands. 
+ Silviculture to meet free growing requirements is carried out on all regenerated stands.  Known 
+tree improvement gains are applied to existing stands ≤ 10 years old and future regenerated 
+stands. 
+ Visual quality objectives (VQOs) are modelled based on the VQOs established and made 
+effective for TFL 6 on September 24, 2010 with upper range disturbance assumed. 
+ Green-up heights for cutblock adjacency are assigned based on Resource Management Zones 
+established in the Vancouver Island Higher Level Plan.  Special and General zones have a 3m 
+green-up requirement while Enhanced zones have a 1.3m green-up height.  
+ Future Wildlife Tree and other stand-level retention within the THLB are accounted for by a 
+percentage area reduction. 
+ Biodiversity and Landscape Units – Established Old Growth Management Areas (OGMAs) in the 
+San Josef and Marble landscape units are removed from the THLB.  Also removed are draft 
+OGMAs in Holberg, Keogh, Mahatta and Neroutsos landscape units.  Mature seral targets are 
+incorporated for the two Special Management Zones within TFL 6. 
+ Established Ungulate Winter Ranges (UWRs) and Wildlife Habitat Areas (WHAs) are removed 
+from the THLB.  As per the accepted IP, no additional netdown is assumed for full 
+implementation (potential future WHAs) of the Identified Wildlife Management Strategy (IWMS). 
+ Riparian management based on the FSP results/strategies and the results of a review of riparian 
+management zone retention for cutblocks harvested between 1997 and 2008. 
+ Minimum harvest age criteria based on minimum average stand diameter-at-breast-height (DBH) 
+that varies by harvest system and minimum volume per hectare.  Both minimum diameter and 
+minimum volume requirements had to be met before a stand could be harvested.  
+ Restriction on volume sourced from heli operable stands and requirement to harvest second 
+growth beginning in the first decade. 
+ Woodstock was set up to maximize harvest volume over the entire 250-year analysis period 
+subject to maintaining a relatively stable conventionally operable growing stock on the THLB 
+over the final 100 years.  This growing stock constraint was not applied to the heli-operable 
+growing stock due to the harvest volume constraint applied to that portion of the landbase. 
+ 
+ 
+
+--- page 14 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 4 
+  
+The Base Case harvest flow is presented in Table 1 and Figure 2.  All harvest volume figures are net of 
+non-recoverable losses of 7,000 m3/year.   
+ 
+Table 1 - Base Case Harvest Levels 
+Period 
+(Decade #) 
+Start 
+Year 
+End 
+Year 
+Annual 
+Harvest 
+Volume (m3) 
+% Change 
+from 
+Previous 
+Period 
+1 2009 2018 1,160,000 -7.6% 
+2 2019 2028 1,101,600 -5.0% 
+3 2029 2038 1,046,200 -5.0% 
+4 2039 2048 993,500 -5.0% 
+5 - 7 2049 2078 943,500 -5.0% 
+8 2079 2088 978,100 +3.7% 
+9 2089 2098 1,028,000 +5.1% 
+10 - 25 2099 2258 1,060,700 +3.2% 
+ 
+ 
+ 
+Figure 2 - Base Case Harvest Schedule 2009-2258 
+ 
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+
+--- page 15 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 5 
+The projected harvest schedule declines 25% over the next 40 years to a low of 943,500 m3/year 
+through to 2078 before gradually increasing to the current long-term harvest level (LTHL) estimate 
+of 1,060,700 m3/year.  The mid-term timber supply “dip” occurs during the transition from natural 
+second growth stands to managed stands with their higher volumes (mainly due to genetic gain 
+values but also fertilization assumptions).  The total volume harvested over the 250 years is 
+roughly 261 million m3.  The schedule resulted in heli harvest levels of approximately 12,000 
+m3/year throughout the 250 years with the balance of the volume being conventional harvest.  
+Figure 3 indicates the contribution to the total harvest volume by period from each of the four 
+broad stand types used to define the analysis units.  As expected, old growth stands contribute 
+the greatest proportion of volume in the short-term (first 20 years).  In the subsequent 10 years 
+natural second growth provides the largest proportion of the volume as old growth harvest 
+continues to decline.  Beginning in the fourth decade (2039 – 2048) current managed stands 
+provide the greatest volume and do so for forty years.  During this time there is still some old 
+growth harvested.  Future managed stands contribute some volume in the fifth and seventh 
+decades (2049 – 2058 and 2069 - 2078) and provide the majority of the harvest volume as of the 
+eighth decade (2079 – 2088). 
+ 
+Figure 3 – Stand Types’ contribution to Base Case harvest 
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+OG
+ Natural SG
+ Current Managed SG
+ Future SG
+
+--- page 16 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 6 
+Age class distributions over time based on the 5-year age groupings used in Woodstock are 
+examined in Figure 4 and Figure 5.  Age class “zero” only exists in the first time period (2009) due 
+to the presence of NSR lands (and stands established in 2007 and 2008) whereas in future time 
+periods the model “regenerates” harvested stands immediately (a 1-year regeneration delay is 
+incorporated in the yield tables).  Within the productive forest the oldest age class declines by 
+slightly more than 45% and then increases to 95% of the current amount as younger reserved 
+timber ages into the old growth age class (see Figure 4).   
+ 
+ 
+Figure 4 - Age class distribution of productive forest area 
+ 
+ 
+The total THLB area in Age Classes 1-4 increases initially until a relatively balanced age class 
+distribution is achieved (refer to Figure 5). 
+0%
+5%
+10%
+15%
+20%
+25%
+30%
+35%
+0 1 2 3 4 5 6 7 8 9
+% of Productive Forest Area 
+Age Class 
+2009
+ 2059
+ 2109
+ 2159
+ 2209
+ 2259
+
+--- page 17 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 7 
+ 
+Figure 5 - Age class distribution of timber harvesting land base 
+ 
+Figure 6 illustrates harvestable (i.e. meets minimum harvest criteria) and total growing stock 
+(including the ground-based / cable / heli split) levels for the timber harvesting landbase.  Total 
+THLB growing stock declines by about 17% until the transition to second growth harvesting is 
+nearly completed (in fourth decade) and then returns to current levels as future stands begin to 
+acquire merchantable volume but harvesting is occurring mainly in existing stands (between fourth 
+and eighth decade).  Refer to Figure 3 for the contribution of each stand type to the total harvest 
+level over time. 
+Once the transition to future stands is completed, operable growing stock is steady at 
+approximately 40 million m3.  Ground-based THLB growing stock is fairly constant over time at 
+roughly 15 million m3.   Cable THLB growing stock initially declines as the majority of the currently 
+operable old-growth is found on this portion of the landbase.  As the cable old-growth is harvested 
+and second growth stands begin acquiring merchantable volume, the cable THLB inventory 
+increases to above current levels and then averages approximately 23 million m3.  Heli THLB 
+growing stock changes very little over time due to the harvest constraint applied to that part of the 
+landbase.   
+The longer term distribution of the THLB growing stock by harvesting system relates directly to 
+differences in harvest age (based on different minimum harvest age criteria).  Cable THLB is 49% 
+of the total THLB but in the longer term holds, on average, 58% of the growing stock; while 
+ground-based THLB is 48% of the total and in the longer term averages 38% of the THLB growing 
+stock. 
+ 
+0%
+5%
+10%
+15%
+20%
+25%
+30%
+0 1 2 3 4 5 6 7 8 9
+% of THLB 
+Age Class 
+2009
+ 2059
+ 2109
+ 2159
+ 2209
+ 2259
+
+--- page 18 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 8 
+The minimum harvest age is substantially older for cable-based logging areas than for ground-
+based areas, with minimum average DBHs of 37 cm and 30 cm respectively for the two systems.  
+Hence longer-term there is more growing stock on cable areas. 
+Harvestable (i.e. meets minimum harvest criteria) volume declines significantly over the first 70 
+years as old growth and existing second growth stands are harvested and replaced with managed 
+stands.  Once the transition to future stands is complete, harvestable volume fluctuates between 6 
+and 10 million m3, averaging about 7.4 million m3.  
+ 
+Figure 6 -THLB Growing stock 
+ 
+Figure 7 provides average statistics for timber harvested through the harvest projection.  As 
+expected, the mean age of stands harvested declines rapidly as the transition to second growth 
+harvesting occurs.  The average age of second growth (SG) harvested in the first 30 years is 109 
+years (ranging between 55 and 140 years old).  For the remainder of the optimization period 
+second growth harvested averages 84 years old.      
+ 
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+THLB  Growing Stock (m3) 
+Millions 
+Year 
+Total Volume Harvestable Volume Ground-based Volume Cable Volume Heli Volume
+
+--- page 19 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 9 
+ 
+Figure 7 - Harvest Statistics 2009 – 2258 
+ 
+Annual area harvested fluctuates between 1,400 and 1,500 hectares for the first three decades in 
+conjunction with the decline in harvest volume and the varying yields available for old growth and 
+natural second growth.  Once the transition to primarily managed second growth harvesting 
+occurs (fourth decade), annual area harvested generally ranges between 1,200 and 1,350 
+hectares.  Merchantable volume per hectare initially declines from 800 m3/ha to 700 m3/ha with 
+the transition from old growth to natural second growth harvesting; it then increases as harvesting 
+shifts to managed stands such that it averages about 825 m3/ha once the shift to future managed 
+stands is made.  
+The minimum harvest age modelled for stands varied by harvesting system (see Section 10.3.1 of 
+the IP).  Figure 8 indicates the contribution by harvesting system to total annual harvest volume 
+and average harvest age. 
+0
+30
+60
+90
+120
+150
+180
+210
+240
+0
+200
+400
+600
+800
+1,000
+1,200
+1,400
+1,600
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Years 
+ha or m3/ha 
+Year 
+Annual Harvest Area Vol/ha Average Age Average SG Age
+
+--- page 20 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 10 
+ 
+Figure 8 - Volume Contribution by Harvesting System 
+ 
+As would be expected, once the majority of the volume is sourced from managed stands there is 
+generally a positive relation between the amount of cable harvesting and the average harvest 
+age: as the cable contribution increases, so does the average harvest age.  This is due to the 
+substantially older harvest ages on cable-based areas compared to ground-based areas 
+discussed earlier in this section.  Of course site quality of the stands harvested is also a factor in 
+determining the average age. 
+  
+0
+40
+80
+120
+160
+200
+240
+280
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Years 
+Annual Volume (m3/year) 
+Year 
+Cable Volume
+ Ground-based Volume
+ Heli Volume
+ Average Harvest Age
+
+--- page 21 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 11 
+2.1 Western Red Cedar and Yellow Cedar Projections  
+Traditional and cultural uses of cedar (red and yellow) are important to First Nations.  
+Opportunities for accessing and managing cedar have been increased through the allocation of 
+AAC to First Nations.  Within TFL 6 there is a significant volume of cedar. 
+Figure 9 indicates the estimated volume (at the beginning of each 10-year period) of red and 
+yellow cedar on the THLB and within the total productive forest associated with the Base Case 
+harvest schedule.  These estimates are based on the red and yellow cedar component of natural 
+stands and TIPSY curves generated for the cedar component of managed stands.  The latter was 
+done to account for the generally lower site index for Cw and Cy within managed stands – Cw 
+and Cy usually grow slower than the other species (Ba, Fd and Hw); therefore at average harvest 
+ages Cw and Cy will usually contribute less to the mixed species stand volume than their 
+proportion at the time of stand establishment. 
+ 
+ 
+Figure 9 – Base Case cedar volume estimates over time 
+ 
+As expected, the amount of cedar (red and yellow) on the THLB declines over the first 30 years 
+as the remaining old growth is harvested.  During this time the amount of cedar within the total 
+productive forest declines by about 16%; however the volume never falls below  10.2 million m3 
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+millions of  m3 
+Year 
+Productive Forest Cw
+ Productive Forest Cy THLB Cw THLB Cy
+
+--- page 22 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 12 
+(9.3 million m3 of Cw and 0.9 million m3 of Cy) – this indicates there is a large inventory of Cw and 
+Cy within the non-contributing landbase (reserves and netdowns).  The relative absence of Cw 
+and Cy in the older second growth stands (mainly natural regeneration) also contributes to the 
+decline (see Table 26 in the IP for Cw/Cy distributions in these stands). 
+By the fourth decade (2039 - 2048) cedar volumes begin to recover as managed stands with 
+significant Cw and Cy components begin to acquire volume (see Tables 27 and 28 in the IP for 
+Cw/Cy distributions in such stands).  Total cedar volume equals the current volume within 50 
+years and averages in excess of 17.5 million m3 from then until the end of the schedule. 
+As the cedar within the non-contributing landbase will generally be older (due to no harvesting 
+occurring) this cedar inventory would be more likely to contain a supply of larger trees suitable for 
+canoes, buildings, carving, etc. (“monumental cedar”). 
+
+--- page 23 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 13 
+3.0 Alternate Harvest Flows 
+This section examines two alternate flow scenarios. 
+3.1 Maintain current AAC  
+Table 2 and Figure 10 represent an attempt to maintain the current AAC for the first 10 years.  The 
+results indicate that, compared to the Base Case, an additional 1,638,000 m3 (4.9%) can be 
+harvested over the next 30 years with a total of approximately 1,853,000 m3 (2.7%) less being 
+harvested over the following 70 years. 
+  
+Table 2 - Harvest levels with maintaining current AAC  
+Period 
+(Decade #) 
+Start 
+Year 
+End 
+Year 
+Annual Harvest Volume (m3) 
+Base Case 
+Maintain 
+current AAC Difference 
+1 2009 2018 1,160,000 1,255,500 + 95,500 
+2 2019 2028 1,101,600 1,154,500 + 52,900 
+3 2029 2038 1,046,200 1,061,600 + 15,400 
+4 2039 2048 993,500 976,100 - 17,400 
+5 - 6 2049 2068 943,500 897,400 - 46,100 
+7 2069 2078 943,500 908,700 - 34,800 
+8 2079 2088 978,100 958,700 - 19,400 
+9 2089 2098 1,028,000 1,008,700 - 19,300 
+10 2099 2108 1,060,700 1,058,700 - 2,000 
+11 - 25 2109 2258 1,060,700 1,060,700 0 
+ 
+ 
+Figure 10 – Harvest levels with maintaining current AAC 
+ 
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+Base Case Maintain Current AAC
+
+--- page 24 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 14 
+Alternatively it is possible to produce a schedule where the mid-term timber supply is greater 
+(closer to the Base Case level) with a LTHL that is approximately 4,900 m3/year less than the 
+LTHL of the Base Case (see the red line in Figure 11 below).  In this schedule the total harvest 
+over the 250 years is approximately 892,000 m3 less than the Base Case. 
+ 
+ 
+Figure 11 – Alternate harvest levels with maintaining current AAC  
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+Base Case Maintain Current AAC Maintain Current AAC
+
+--- page 25 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 15 
+3.2 Non-declining even flow 
+Table 3 and Figure 12 show the impact of immediately dropping to a non-declining even flow 
+(NDEF) harvest level.  Short term harvest levels are significantly lower than the Base Case while 
+the mid-term timber supply “dip” is eliminated.  The LTHL is 29,700 m3/year (2.8%) lower.  Over 
+the entire 250 years approximately 3.36 million m3 (1.3%) less timber is harvested and in the long-
+term the harvest level is less than the growth rate within the forest; thereby foregoing 
+opportunities. 
+ 
+Table 3 – Harvest levels with non-declining even flow 
+Period 
+(Decade #) 
+Start 
+Year 
+End 
+Year 
+Annual Harvest Volume (m3) 
+Base Case NDEF Difference 
+1 2009 2018 1,160,000 1,031,000 - 129,000 
+2 2019 2028 1,101,600 1,031,000 - 70,600 
+3 2029 2038 1,046,200 1,031,000 - 15,200 
+4 2039 2048 993,500 1,031,000 + 37,500 
+5 - 7 2049 2078 943,500 1,031,000 + 87,500 
+8 2079 2088 978,100 1,031,000 + 52,900 
+9 2089 2098 1,028,000 1,031,000 + 3,000 
+10 - 25 2099 2258 1,060,700 1,031,000 - 29,700 
+ 
+ 
+Figure 12 – Harvest levels with non-declining even flow 
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+Base Case NDEF
+
+--- page 26 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 16 
+4.0 Sensitivity Analyses 
+Sensitivity analysis provides a measure of the upper and lower bounds of the Base Case harvest 
+forecast, reflecting the uncertainty of assumptions made in the Base Case.  By developing and 
+testing a number of sensitivity issues, it is possible to determine which variables most affect 
+results.  This in turn facilitates the management decisions that must be made in the face of 
+uncertainty.  As Woodstock was used as an optimization tool to generate the Base Case, it is 
+expected that the results will be sensitive to any changes to the inputs.   
+To allow meaningful comparison of sensitivity analyses, they are performed by varying (from the 
+Base Case) only the assumption being evaluated. 
+In general, sensitivities with negative impacts were run with the goal of keeping the short term 
+harvest as close as possible to the harvest in the Base Case.  Where impacts were positive, flow 
+request adjustments were made to (1) raise the short and medium term flow, and optionally (2) 
+increase the long term harvest level. 
+Sensitivity issues are summarized in Table 4.  The timber supply impacts are illustrated in 
+Sections 4.1 through 4.14. 
+Table 4 – Current Management Sensitivity Analyses 
+Issue Sensitivity tested summary Section 
+Landbase available for 
+harvesting 
+Exclude all class V (unstable) terrain plus helicopter operable 
+landbase 
+4.1 
+   Growth and Yield Natural stands yields overestimated by 10% 4.2 
+Natural stands yields underestimated by 10% 4.3 
+Managed stands yields overestimated by 10% 4.4 
+Managed stands yields underestimated by 10% 4.5 
+Use SIBEC Site Index estimates 4.6 
+   Forest management / 
+Silviculture 
+Exclude future fertilization 4.7 
+Less planting of western hemlock 4.8 
+   Operability Remove heli harvest constraint 4.9 
+Exclude helicopter operable landbase 4.10 
+   Visual Quality Reduce the percent disturbed within each VQO polygon  4.11 
+   Wildlife habitat /  
+Biodiversity 
+Retain old forests to full target to maintain marbled murrelet 
+habitat in EFZ #8 (Mahatta–Neroutsos) – VILUP objective #16 
+4.12 
+   Minimum harvest criteria Increase minimum harvest DBH criteria 4.13 
+   Summary Summary of sensitivity impacts 4.14 
+
+--- page 27 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 17 
+4.1 No harvesting on unstable terrain or by helicopter 
+This sensitivity was run for two reasons: 
+a) As a way of indicating timber supply sensitivity to the estimate of the THLB; and more 
+specifically, 
+b) To indicate the sensitivity of timber supply to contribution from operationally uncertain 
+areas. 
+As several of the landbase netdowns used to derive the THLB (see Section 6 of the IP) are 
+estimates and therefore subject to uncertainty, this sensitivity tests the impact of reducing the 
+THLB.  Rather than reduce the THLB uniformly (e.g. reduce every polygon by 5%) the approach 
+taken was to remove areas that are often difficult to operate on – unstable terrain for 
+environmental management reasons (risk of landslide) and helicopter operable areas 
+(economically challenging due to high costs).  No netdown for terrain stability was used to derive 
+the THLB other than the areas removed via the operability inventory and unstable terrain found 
+within the other netdown areas such as OGMAs, UWRs and riparian management areas. 
+Table 5 provides the breakdown of these land areas.  Excluding these areas from the operable 
+landbase reduces the THLB by 4.9% and the initial THLB inventory by 8.3%.  The volume impact 
+is greater than the area impact due to these portions of the TFL having less harvest history and 
+therefore more old growth timber. 
+Table 5 – Unstable and heli operable land within TFL 6 
+Landbase 
+Total area 
+(ha) 
+Productive 
+Forest Area (ha) 
+Operable 
+Area (ha) 
+THLB Area 
+(ha) 
+THLB 
+Volume (m3) 
+Unstable terrain 
+(Class V) 9,003 7,646 4,463 2,486 1,418,650 
+Heli operable 6,041 5,814 5,400 3,141 2,391,801 
+Total (accounting 
+for overlap) 14,030 12,482 8,934 5,274 3,517,178 
+% of TFL 6 8.2% 8.5% 6.6% 4.9% 8.3% 
+ 
+Table 6 and Figure 13 indicate the results of trying to maintain the same initial harvest level as the 
+Base Case. 
+Table 6 – Harvest levels with unstable and heli operable lands removed 
+Period 
+(Decade #) 
+Start 
+Year 
+End 
+Year 
+Annual Harvest Volume (m3) 
+Base Case 
+No Class V 
+or Heli Difference 
+1 2009 2018 1,160,000 1,160,000 0 
+2 2019 2028 1,101,600 1,090,000 - 11,600 
+3 2029 2038 1,046,200 1,024,200 - 22,000 
+4 2039 2048 993,500 962,300 - 31,200 
+5 - 7 2049 2078 943,500 904,100 - 39,400 
+8 2079 2088 978,100 908,200 - 69,900 
+9 2089 2098 1,028,000 958,200 - 69,800 
+10 2099 2108 1,060,700 1,008,300 - 52,400 
+11 - 25 2109 2258 1,060,700 1,026,300 - 34,400 
+
+--- page 28 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 18 
+ 
+ 
+Figure 13 – Harvest levels with unstable and heli operable lands removed 
+ 
+Over the 250 years, a total of 8.9 million m3 (3.4%) less is harvested and the LTHL is 34,400 
+m3/year (3.2%) less.  The timber supply impacts are less than the THLB impact of 4.9% partially 
+due to the heli volume constraint (12,000 m3/year) in the Base Case mitigating the impact of 
+removing the heli operable landbase from the THLB.  The impacts of the heli constraint and the 
+heli landbase by itself are explored in the sensitivity analyses summarized in sections 4.9 and 4.10 
+respectively. 
+There is a history of harvesting in Class V terrain - spatial logging history records indicate that a 
+total of 1,725 ha of Class V terrain have been logged in the current TFL 6 - equal to 1.9% of the 
+total area logged.  Class V terrain comprises 2.3% of the THLB used in this analysis; therefore, 
+history suggests that the contribution of Class V terrain is represented reasonably in the Base 
+Case. 
+ 
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+Base Case No Class V or Heli
+
+--- page 29 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 19 
+4.2 Natural stands yields overestimated by 10% 
+The sensitivity of timber supply to natural stands (older than 50 years) volume estimates was 
+tested by decreasing (this Section) and increasing (Section 4.3) these volumes by 10%.  The 
+volumes in these stands were estimated from the recently completed Vegetation Resources 
+Inventory (VRI) and the Ministry of Forests, Lands and Natural Resource Operations’ (MFLNRO) 
+Variable Density Yield Projection (VDYP) version 6.6d.  
+Natural stands provide nearly the entire volume in the first 30 years of the Base Case schedule 
+(see Figure 3).  This sensitivity removes 3.4 million m3 (8.3%) from the current THLB inventory.  
+These results (Table 7 and Figure 14) indicate the harvest levels achieved when setting the initial 
+harvest level at the same amount as the Base Case results.  
+Table 7 – Harvest levels with decreased natural stands yields 
+Period 
+(Decade #) 
+Start 
+Year 
+End 
+Year 
+Annual Harvest Volume (m3) 
+Base Case 
+Lower natural 
+yields Difference 
+1 2009 2018 1,160,000 1,160,000 0 
+2 2019 2028 1,101,600 1,078,300 - 23,300 
+3 2029 2038 1,046,200 1,002,300 - 43,900 
+4 2039 2048 993,500 931,700 - 61,800 
+5 - 6 2049 2068 943,500 866,000 - 77,500 
+7 2069 2078 943,500 901,700 - 41,800 
+8 2079 2088 978,100 951,600 - 26,500 
+9 2089 2098 1,028,000 1,001,600 - 26,400 
+10 2099 2108 1,060,700 1,051,600 - 9,100 
+11 - 25 2109 2258 1,060,700 1,060,600 - 100 
+ 
+ 
+Figure 14 – Harvest levels with decreased natural stands yields 
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+Base Case Natural stands -10%
+
+--- page 30 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 20 
+As expected, with the reduction in currently operable inventory and attempting to maintain the 
+same initial harvest level, mid-term harvest levels must be reduced.  This mid-term reduction is 
+required in order to delay harvesting of managed stands until they meet the minimum harvest 
+criteria (see section 10.3.1 of the IP). 
+Total harvest over the entire 250 years is 3.9 million m3 (1.5%) less than the Base Case. 
+  
+
+--- page 31 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 21 
+4.3 Natural stands yields underestimated by 10% 
+The increased yields result in approximately 3.4 million m3 (8.3%) more inventory on the THLB 
+today when compared to the Base Case; of which nearly 3.1 million m3 is available immediately 
+(i.e. meets minimum harvest criteria).  Table 8 and Figure 15 indicate the results of trying to 
+reduce the rate of decline in the short and medium-term while achieving approximately the same 
+LTHL.   
+Table 8 – Harvest levels with increased natural stands yields 
+Period 
+(Decade #) 
+Start 
+Year 
+End 
+Year 
+Annual Harvest Volume (m3) 
+Base Case 
+Higher natural 
+yields Difference 
+1 2009 2018 1,160,000 1,160,000 0 
+2 2019 2028 1,101,600 1,125,000 + 23,400 
+3 2029 2038 1,046,200 1,091,000 + 44,800 
+4 2039 2048 993,500 1,058,100 + 64,600 
+5 - 7 2049 2078 943,500 1,026,100 + 82,600 
+8 2079 2088 978,100 1,026,100 + 48,000 
+9 2089 2098 1,028,000 1,026,100 - 1,900 
+10 2099 2108 1,060,700 1,026,100 - 34,600 
+11 - 25 2109 2258 1,060,700 1,056,400 - 4,300 
+ 
+ 
+Figure 15 – Harvest levels with increased natural stands yields 
+ 
+The LTHL is 4,300 m3/year (0.4%) less than the Base Case while roughly 3.3 million m3 more 
+timber is harvested over the 250 years.  The marginally lower LTHL is a result of reduced 
+inventory levels resulting from the higher mid-term harvest levels. 
+ 
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+Base Case Natural Stands +10%
+
+--- page 32 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 22 
+Alternatively, the additional natural stands inventory could be used to delay the transition to 
+managed stands and allow the shift to the LTHL to occur sooner – see the red line in Figure 16 
+below.  This schedule results in a LTHL approximately 2,000 m3/year (0.2%) higher than the Base 
+Case and about 3.7 million m3 (1.4%) more timber harvested over the 250 years. 
+ 
+ 
+ 
+Figure 16 – Alternate harvest levels with increased natural stands yields 
+ 
+  
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+Base Case Natural Stands + 10% Natural Stands +10%
+
+--- page 33 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 23 
+4.4 Managed stands yields overestimated by 10% 
+The sensitivity of timber supply to managed stands (50 years old and younger) volume estimates 
+was tested by decreasing (this Section) and increasing (Section 4.5) these volumes by 10%.  
+Volumes in these younger stands were estimated from attributes and assumptions detailed in 
+section 8 of the IP and the MFLNRO’s Table Interpolation Program for Stand Yields (TIPSY) 
+version 4.1. 
+Table 9 and Figure 17 indicate that with decreased managed yields and the initial harvest level set 
+at the same amount as the Base Case, both mid and long term harvest levels are significantly 
+affected.  This is logical as managed stands provide the majority of the volume to the Base Case 
+harvest levels beginning in the fourth decade (see Figure 3) – harvest levels must decline faster to 
+accommodate the lower inventory levels.  This run results in approximately 22.5 million m3 (8.6%) 
+less harvest than in the Base Case over the 250 year planning horizon.  The long term harvest 
+level is 9.9% lower than in the Base Case, slightly less than 10% lower due to the annual heli 
+harvest restriction reducing the impact of the lower volumes within the heli portion of the THLB. 
+ 
+Table 9 – Harvest levels with decreased managed stands yields 
+Period 
+(Decade #) 
+Start 
+Year 
+End 
+Year 
+Annual Harvest Volume (m3) 
+Base Case 
+Lower 
+managed 
+yields Difference 
+1 2009 2018 1,160,000 1,160,000 0 
+2 2019 2028 1,101,600 1,066,600 - 35,000 
+3 2029 2038 1,046,200 980,700 - 65,500 
+4 2039 2048 993,500 901,700 - 91,800 
+5 - 6 2049 2068 943,500 829,000 - 114,500 
+7 2069 2078 943,500 900,300 - 43,200 
+8 2079 2088 978,100 955,300 - 22,800 
+9 2089 2098 1,028,000 955,300 - 72,700 
+10 - 25 2099 2258 1,060,700 955,300 - 105,400 
+ 
+
+--- page 34 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 24 
+ 
+Figure 17 – Harvest levels with decreased managed stands yields 
+  
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+Base Case Managed Stands -10%
+
+--- page 35 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 25 
+4.5 Managed stands yields underestimated by 10% 
+With immature stands yields increased by 10%, short term harvest levels need not decline as 
+rapidly to allow the transition to the higher mid and long term harvest levels (relative to the Base 
+Case schedule): a maximum decline rate of 3% per decade can be managed.  The long term 
+harvest level is 107,900 m3/year (10.2%) higher than the Base Case results (see Table 10 and 
+Figure 18).  The long term harvest level is more than 10% greater due to the short and mid-term 
+harvest levels being less than 10% greater than the Base case.  These relatively lower short and 
+mid-term harvest levels allow sufficient inventory to grow that the relatively higher LTHL is 
+possible.   Over the entire 250 year planning horizon, 22.9 million m3 (8.8 %) more is harvested in 
+this sensitivity. 
+ 
+Table 10 – Harvest levels with increased managed stands yields 
+Period 
+(Decade #) 
+Start 
+Year 
+End 
+Year 
+Annual Harvest Volume (m3) 
+Base Case 
+Higher 
+managed 
+yields Difference 
+1 2009 2018 1,160,000 1,160,000 0 
+2 2019 2028 1,101,600 1,125,000 + 23,400 
+3 2029 2038 1,046,200 1,091,000 + 44,800 
+4 2039 2048 993,500 1,058,100 + 64,600 
+5 - 7 2049 2078 943,500 1,026,100 + 82,600 
+8 2079 2088 978,100 1,068,600 + 90,500 
+9 2089 2098 1,028,000 1,118,600 + 90,600 
+10 - 25 2099 2258 1,060,700 1,168,600  +107,900  
+ 
+ 
+Figure 18 – Harvest levels with increased managed stands yields 
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+Base Case Managed Stands +10%
+
+--- page 36 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 26 
+4.6 Use SIBEC Site Index estimates 
+The Base Case used WFP site indexes to estimate site productivity.  These site index values are 
+statistically-based estimates of average site index for the major commercial tree species and 
+ecosystems in TFL 6 and were estimated from randomly located plots within the productivity 
+groups (see section 8.1 of the IP for details).  A frequently used approach for estimating site 
+productivity is to use Terrestrial Ecosystem Mapping (TEM – site series mapping) and the 
+associated SIBEC (Site Index by Biogeoclimatic Ecosystem Classification site series) site index 
+estimates.  Normally the use of TEM and SIBEC depends on an accuracy assessment having 
+been done for the TEM.  No such assessment has been done for the TFL 6 TEM, but this analysis 
+was run to indicate the sensitivity of timber supply to site productivity estimates.   
+The ecological inventory and terrain classification for TFL 6 was completed in 1985 by Dr. Terry 
+Lewis.  These eco-units are not named the same as BEC units; however, there is a very close 
+relation between the two systems and for most units, boundaries are identical. The Lewis system 
+was designed for TFL 6 and thus recognizes local ecosystems not included in BEC.   
+To use SIBEC, the Lewis eco-units were translated into BEC site series and then area-weighted 
+average SIBEC values were determined by species within each productivity group (based on 
+SIBEC values by species for BEC site series within each productivity group).  Table 11 compares 
+area-weighted average WFP and SIBEC site index estimates by species based on future stand 
+species assumptions (i.e. only where a species was present in the future AUs).  The differences 
+that have the greatest impact on volume estimates for managed stands are: 
+a) decreases for all species on the most productive sites (PG 1); 
+b) increases for balsam and Douglas-fir on medium sites (PG 2); and 
+c) increases for western red cedar on poor sites (PG 4). 
+Table 11 – Average future site index estimates by species 
+Landbase 
+Site Index Estimate 
+Source 
+Ba SI 
+(m) 
+Cw SI 
+(m) 
+Cy SI 
+(m) 
+Fd SI 
+(m) 
+Hw SI 
+(m) 
+Ss SI 
+(m) 
+PG1 SIBEC 29.2 - - - 27.7 31.6 
+WFP 30.1 - - - 33.7 35.2 
+PG 2 (and 3) SIBEC 28.9 22.6 20.2 36.0 27.6 24.8 
+WFP 26.2 23.8 23.8 31.4 28.0 31.0 
+PG 4 SIBEC 20.71 20.9 15.9 32.2 17.4 - 
+WFP 20.7 19.2 19.2 22.6 20.1 - 
+Area-weighted 
+average 
+SIBEC 28.9 21.5 19.6 35.3 27.3 26.3 
+WFP 26.5 20.8 23.2 29.7 27.9 31.9 
+ 
+  
+                                                
+1 No SIBEC value was available for Ba within PG4 so TIPSY conversion equations were used.  The WFP value is used to complete this table.  
+The area involved is only 312 ha in AU 9510 so it has no material effect on the average presented here. 
+
+--- page 37 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 27 
+The SIBEC site indexes result in a 144,000 m3 (0.4%) increase in THLB inventory at the beginning 
+of the analysis and overall, increase managed stands yields by approximately 1-2% on average 
+(at average harvest ages).  These increased yields create greater timber supply in the mid and 
+long term (when comparing against the Base Case).  Overall, there is 3.9 million m3 (1.5%) more 
+harvested.  The long term harvest level is approximately 0.9% more than the Base Case level 
+(refer to Table 12 and Figure 19).   
+ 
+Table 12 – Harvest levels with yields based on SIBEC values 
+Period 
+(Decade #) 
+Start 
+Year 
+End 
+Year 
+Annual Harvest Volume (m3) 
+Base Case 
+SIBEC-based 
+yields Difference 
+1 2009 2018 1,160,000 1,160,000 0 
+2 2019 2028 1,101,600 1,113,300 + 11,700 
+3 2029 2038 1,046,200 1,068,500 + 22,300 
+4 2039 2048 993,500 1,025,500 + 32,000 
+5 - 7 2049 2078 943,500 984,200 + 40,700 
+8 2079 2088 978,100 1,007,500 + 29,400 
+9 2089 2098 1,028,000 1,057,500 + 29,500 
+10 - 25 2099 2258 1,060,700 1,069,700 + 9,000 
+ 
+ 
+ Figure 19 – Harvest levels with yields based on SIBEC values 
+  
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+Base Case SIBEC-based Yields
+
+--- page 38 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 28 
+Alternatively, the additional managed stands inventory could be used to allow the shift to the LTHL 
+to occur sooner – see the red line in Figure 20 below.  This schedule results in a LTHL 
+approximately 11,300 m3/year (1.1%) higher than the Base Case and about 4.2 million m3 (1.6%) 
+more timber harvested over the 250 years. 
+ 
+ 
+Figure 20 – Alternate harvest levels with SIBEC-based yields 
+ 
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+Base Case SIBEC-based Yields SIBEC-based Yields
+
+--- page 39 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 29 
+4.7 Exclude future fertilization 
+The Base Case includes yield gains from fertilization (applied through TIPSY yield model) of a 
+portion of future managed stands on the S1CH eco-sites (see section 8.6.2 of the IP for details).  
+This sensitivity tests the impact on timber supply if this silviculture activity to improve yields did not 
+occur. 
+Table 13 and Figure 21 indicate that the fertilization assumption is not contributing to timber 
+supply for the first 70 years.  This is logical as no future stands with fertilization are available for 
+harvest until then.  In the long term, the lack of fertilization generates harvest levels about 2.3% 
+lower than the Base Case.  Overall approximately 4.7 million m3 (~1.8%) less is harvested over 
+the 250 years. 
+ 
+Table 13 – Harvest levels with no future fertilization 
+Period 
+(Decade #) 
+Start 
+Year 
+End 
+Year 
+Annual Harvest Volume (m3) 
+Base Case 
+No future 
+fertilization Difference 
+1 2009 2018 1,160,000 1,160,000 0 
+2 2019 2028 1,101,600 1,101,600 0 
+3 2029 2038 1,046,200 1,046,200 0 
+4 2039 2048 993,500 993,500 0 
+5 - 7 2049 2078 943,500 943,500 0 
+8 2079 2088 978,100 943,500 - 34,600 
+9 2089 2098 1,028,000 988,300 - 39,700 
+10 - 25 2099 2258 1,060,700 1,036,100 - 24,600 
+ 
+ 
+Figure 21 – Harvest levels with no future fertilization 
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+Base Case No future fertilization
+
+--- page 40 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 30 
+4.8 Less planting of western hemlock 
+During the review of the draft Information Package, a question was raised by the MFLNRO 
+regarding the amount of western hemlock that had been planted in the last 10 years and the 
+assumptions for planting that species in the future – the concern being the amount of genetic 
+worth (GW – often referred to as “genetic gain”) applied for hemlock may be optimistic and 
+therefore overestimate timber supply.  The Base Case yields were generated with GW values for 
+hemlock of 10% on low elevation sites and 6% on high elevation sites.  These values were 
+reduced from the GW values of planted hemlock (14% and 10% respectively) to reflect the fact 
+that not all hemlock sites were planted and that naturally regenerated hemlock will likely form part 
+of the harvested stand even on sites where hemlock was planted. 
+To address the question it was agreed to run this sensitivity in which the GW for hemlock is 
+reduced to 4% for the largest analysis unit (AU) in the 1-10 year old and future age ranges (AU 
+1150 and 1500 respectively).  Rather than generating new yield tables for these analysis units, 
+the approach taken was to generate a volume at age 80 years (approximately the average 
+harvest age) for AU 1500 with hemlock GW set at 4% and compare that value to the volume at 
+age 80 years for AU 1500 with hemlock GW set at 10%.  This ratio (0.972 – i.e. reducing the 
+hemlock GW from 10% to 4% reduced the yield at 80 years by 2.8%) was then used as a scaling 
+factor against the original yield tables for AU 1150 and 1500 (with hemlock GW set at 10%). 
+As AU 1500 is approximately 38% of the future THLB (41,399 ha of the total 107,811 ha), one 
+would expect the LTHL to be reduced by roughly 1.1% (38% of THLB * 2.8% average yield 
+reduction).  As the yield changes impact mainly future stands there is no short term timber supply 
+impact.  The schedule shown in Table 14 and Figure 22 indicates the LTHL achieved is 1.2% 
+lower than the Base Case and roughly 2.4 million m3 (0.9%) less is harvested over the 250 years. 
+ 
+Table 14 – Harvest levels with less hemlock planting 
+Period 
+(Decade #) 
+Start 
+Year 
+End 
+Year 
+Annual Harvest Volume (m3) 
+Base Case 
+Less planted 
+hemlock  Difference 
+1 2009 2018 1,160,000 1,160,000 0 
+2 2019 2028 1,101,600 1,101,600 0 
+3 2029 2038 1,046,200 1,046,200 0 
+4 2039 2048 993,500 993,500 0 
+5 - 7 2049 2078 943,500 943,500 0 
+8 2079 2088 978,100 960,900 - 17,200 
+9 2089 2098 1,028,000 1,010,900 - 17,100 
+10 - 25 2099 2258 1,060,700 1,047,900 - 12,800 
+ 
+ 
+
+--- page 41 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 31 
+ 
+Figure 22 – Harvest levels with less hemlock planting 
+To further explore the sensitivity of timber supply to the planting of hemlock in the future a further 
+analysis was conducted which assumed no planting within the S1HA sites (59,142 ha of THLB – 
+nearly 55% of the total).  These are the sites most likely to successfully regenerate naturally.  To 
+accomplish this, AU 1500 was eliminated from the future stands and all S1HA sites were 
+regenerated to AU 1510 (a naturally regenerated stand - see Table 29 in the IP for the details of 
+this AU).  Yields for AU 1150 (1-10 year old existing stands) were set as in the Base Case. 
+Table 15 and Figure 23 indicate the results of this run (indicated by the red line) together with the 
+schedule from Figure 22 above.  The reduced future yields result in a LTHL of 1,034,200 m3/year 
+(2.5% lower than the Base Case).  The transition to this lower LTHL requires a reduced mid-term 
+timber supply due to lower inventory levels combined with older minimum harvest ages on more 
+than half the forest (it takes 15 years longer to meet the minimum DBH criteria on both ground-
+based and cable-based areas for AU 1510 compared to AU 1500).  Compared to the Base Case, 
+approximately 8.0 million m3 (3.1%) less is harvested over the 250 years. 
+  
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+Base Case Less future Hw planting
+
+--- page 42 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 32 
+Table 15 – Harvest levels with no planting of S1HA sites 
+Period 
+(Decade #) 
+Start 
+Year 
+End 
+Year 
+Annual Harvest Volume (m3) 
+Base Case 
+Less planted 
+hemlock  Difference 
+1 2009 2018 1,160,000 1,160,000 0 
+2 2019 2028 1,101,600 1,090,000 - 11,600 
+3 2029 2038 1,046,200 1,024,100 - 22,100 
+4 2039 2048 993,500 962,300 - 31,200 
+5 - 7 2049 2078 943,500 904,100 - 39,400 
+8 2079 2088 978,100 904,100 - 74,000 
+9 2089 2098 1,028,000 946,800 - 81,200 
+10 2099 2108 1,060,700 996,800 - 63,900 
+11 - 25 2109 2258 1,060,700 1,034,200 - 26,500 
+ 
+ 
+Figure 23 – Harvest levels with no planting of S1HA sites 
+ 
+The Base Case yields reflect recent planting of hemlock and the current expectations for its 
+establishment in the future.  Any significant changes to the amount of hemlock planted between 
+now and the next timber supply analysis will be reflected in the next analysis with little risk to 
+timber supply as this analysis indicates that short term timber supply is unaffected by the 
+assumptions used. 
+ 
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+Base Case Less future Hw planting No future Hw planting in S1HA
+
+--- page 43 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 33 
+4.9 Remove heli volume constraint 
+The Base Case includes a constraint that limits the amount of heli volume harvested in a year to 
+12,000 m3.  This constraint was included to reflect recent performance in the non-conventional 
+portion of the THLB and to reflect the expectation that economics will continue to restrict the 
+amount of volume accessed from these heli stands.  This analysis tests the impact that constraint 
+has on harvest levels achieved in the Base Case. 
+The approach taken was to set the initial harvest level such that it and the LTHL differed by 
+approximately the same amount (percentage) when compared to the corresponding harvest level 
+in the Base Case.  In this analysis the “stable” growing stock constraint is applied to the total 
+THLB growing stock (rather than only the conventional THLB growing stock as done in the Base 
+Case) because in this sensitivity the entire THLB is being utilized to provide a sustainable timber 
+supply, whereas in the Base Case the conventional THLB is being utilized to provide a sustainable 
+timber supply while the timber supply from the heli THLB is restricted. 
+As the heli THLB is approximately 2.9% of the total THLB, this would be the expected long-term 
+contribution to timber supply.  Table 16 and Figure 24 indicate that with the heli harvest constraint 
+removed the initial harvest level can be 23,000 m3/year (2.0%) higher.  The LTHL is also 
+approximately 2% higher, with the total heli contribution being roughly 3.0% ((12,000 m3/year in 
+base case + incremental 20,600 m3/year) from total of 1,081,300 m3/year).   Over the entire 250 
+years approximately 5.0 million m3 (1.9%) more is harvested.   
+ 
+Table 16 – Harvest levels with no heli constraint 
+Period 
+(Decade #) 
+Start 
+Year 
+End 
+Year 
+Annual Harvest Volume (m3) 
+Base Case 
+No heli 
+constraint Difference 
+1 2009 2018 1,160,000 1,183,000 + 23,000 
+2 2019 2028 1,101,600 1,123,500 + 21,900 
+3 2029 2038 1,046,200 1,067,000 + 20,800 
+4 2039 2048 993,500 1,013,300 + 19,700 
+5 - 7 2049 2078 943,500 962,300 + 18,800 
+8 2079 2088 978,100 991,500 + 13,400 
+9 2089 2098 1,028,000 1,041,400 + 13,000 
+10 - 25 2099 2258 1,060,700 1,081,300 + 20,600 
+ 
+
+--- page 44 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 34 
+ 
+Figure 24 – Harvest levels with no heli constraint 
+  
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+Base Case No heli constraint
+
+--- page 45 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 35 
+4.10 Exclude heli operable landbase 
+In recent years, harvest in the high cost non-conventional (heli) mature inventory has been 
+significantly less than its contribution to the current merchantable inventory.  A substantial portion 
+of this volume is hemlock and balsam of relatively low value in recent markets.  The sensitivity 
+analysis discussed in section 4.1 removed both unstable (Class V) terrain and the heli operable 
+landbase. This analysis tests the sensitivity of timber supply to the exclusion of the heli operable 
+landbase. The heli THLB contains approximately 2.4 million m3 of inventory – equal to 5.6% of the 
+total. 
+The simple approach would be that the heli landbase contributes 12,000 m3/year to timber supply 
+as this is the constraint applied in the Base Case and the results indicate this level was, for the 
+most part, achieved throughout the planning horizon.  For this sensitivity analysis the model was 
+set up to follow the Base Case schedule as long as possible.  
+Table 17 and Figure 25 indicate the results of this sensitivity - harvest levels are the same as 
+those of the Base Case for the first 70 years.  Afterwards lower harvest levels are required due to 
+lower available inventory levels and a smaller operable landbase.  The LTHL is 13,900 m3/year 
+(1.3%) less than that achieved in the Base Case and the total volume harvested over the 250 
+years is 3.3 million m3 (1.3%) less.  The differences are greater than 12,000 m3/year and 3.0 
+million m3 (12,000 m3/year * 250 years) respectively due to sustaining the Base Case harvest 
+levels for the first 70 years. 
+ 
+Table 17 – Harvest levels with heli THLB excluded 
+Period 
+(Decade #) 
+Start 
+Year 
+End 
+Year 
+Annual Harvest Volume (m3) 
+Base Case 
+No heli 
+logging  Difference 
+1 2009 2018 1,160,000 1,160,000 0 
+2 2019 2028 1,101,600 1,101,600 0 
+3 2029 2038 1,046,200 1,046,200 0 
+4 2039 2048 993,500 993,500 0 
+5 - 7 2049 2078 943,500 943,500 0 
+8 2079 2088 978,100 943,500 - 34,600 
+9 2089 2098 1,028,000 976,600 - 51,400 
+10 2099 2108 1,060,700 1,026,600 - 34,100 
+11 - 25 2109 2258 1,060,700 1,046,800 - 13,900 
+ 
+ 
+ 
+ 
+ 
+
+--- page 46 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 36 
+ 
+Figure 25 - Harvest levels with heli THLB excluded 
+  
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+Base Case No heli logging
+
+--- page 47 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 37 
+4.11 Reduce the percent disturbed within each VQO polygon 
+To test the sensitivity of timber supply to the assumptions used for managing visual quality 
+objectives (VQOs), this sensitivity uses the mid-point of the disturbance range for each VQO class 
+rather than the upper limit as in the Base Case (Table 18).  The model was set such that no more 
+than the applicable listed percentage of each VQO class within each Resource Management Zone 
+(RMZ) could be occupied by stands less than 15 years old (i.e. visually effective green-up (VEG) is 
+reached in 15 years).  When these limits were applied to individual VQO polygons, solving time for 
+the model was several days.  When the VQO polygons were grouped by class within each RMZ 
+solutions were generally generated in less than 3 hours.  A solution was generated with the 
+disturbance limits applied to individual VQO polygons rather than the aggregated polygons and 
+there was no material difference in harvest volumes achieved.  This indicates that the aggregation 
+of the VQO polygons had no significant impact on timber supply results. 
+ 
+Table 18 – Maximum disturbance by VQO class 
+VQO 
+Maximum disturbance % 
+Base Case Sensitivity 
+Modification (M) 25% 20% 
+Partial Retention (PR) 15% 10% 
+Retention (R) 5% 2.5% 
+ 
+Table 19 and Figure 26 indicate the results of this sensitivity.  Short term harvest levels are 
+unaffected as there is sufficient inventory outside the visually sensitive areas to maintain the Base 
+Case harvest levels.  Commencing in 2079 the more restrictive visual quality management 
+assumptions (relative to the Base Case) begin having a timber supply impact.  The LTHL is 
+reduced by only 600 m3/year. 
+ 
+Table 19 - Harvest levels with more restrictive visual quality management 
+Period 
+(Decade #) 
+Start 
+Year 
+End 
+Year 
+Annual Harvest Volume (m3) 
+Base Case 
+VQOs more 
+restrictive  Difference 
+1 2009 2018 1,160,000 1,160,000 0 
+2 2019 2028 1,101,600 1,101,600 0 
+3 2029 2038 1,046,200 1,046,200 0 
+4 2039 2048 993,500 993,500 0 
+5 - 7 2049 2078 943,500 943,500 0 
+8 2079 2088 978,100 960,100 - 18,000 
+9 2089 2098 1,028,000 1,010,000 - 18,000 
+10 - 25 2099 2258 1,060,700 1,060,100 - 600 
+ 
+
+--- page 48 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 38 
+ 
+Figure 26 - Harvest levels with more restrictive visual quality management 
+ 
+Visual impact assessments are used to guide cutblock design in order to mitigate the visual impact 
+of cutblocks and roads and therefore reducing the timber supply impact of visual quality 
+management.  The screening effect of strategically located stand level retention can be used to 
+effectively reduce the visual impact of cutblocks.  These practices allow for higher disturbance 
+percentages to be achieved within a VQO polygon and therefore support using the higher 
+percentage limits for timber supply modelling. 
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+Base Case VQOs more constraining
+
+--- page 49 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 39 
+4.12 VILUP Order Objective #16 
+Objectives #15 and #16 of the Vancouver Island Land Use Plan Higher Level Plan Order (VILUP 
+Order) applies to Enhanced Forestry Zone (EFZ) #8 (Mahatta-Neroutsos) within TFL 6.  The 
+objectives state:  
+”15.  Retain old growth forests to meet old seral targets and marbled murrelet habitat 
+requirements in the non-contributing land base to the fullest extent possible. 
+ 16. Beyond retention in the non-contributing land base, retain old forests in the timber 
+harvesting land base, up to the full target amount, if the district manager and the 
+designated environmental official determine that such retention is required to 
+maintain critical marbled murrelet habitat.”   
+EFZ #8 falls within the Mahatta and Neroutsos landscape units, each which were assigned a low 
+biodiversity emphasis (BEO) by the Order Establishing Provincial Non-Spatial Old Growth 
+Objectives (NSOG Order).  The NSOG Order states that for landscape units with a low BEO the 
+old forest retention percent (Old Growth Management Area (OGMA) allocation) may be reduced 
+by up to 2/3 to address timber supply impacts.  Therefore the OGMAs need only meet 1/3 of the 
+full OGMA allocation and VILUP Objective #15 would still be met.  VILUP Objective #16 however 
+would supersede the 2/3 OGMA reduction if it was determined that retaining the full OGMA 
+allocation is required to maintain critical marbled murrelet habitat. No such determination has 
+been made yet. 
+The final draft OGMAs identified within the Neroutsos landscape unit meet the full OGMA 
+allocation and were drafted to capture a significant portion of the identified marbled murrelet 
+habitat.  The draft OGMAs (preliminary and TFL 6 portion only) identified within the Mahatta 
+landscape unit do not meet the full OGMA allocation (overall they meet 73% of the full allocation) 
+but they were drafted to capture a portion of the identified marbled murrelet habitat.  To address 
+VILUP Objective #16 this sensitivity analysis was run with the full OGMA allocation required to be 
+met immediately (rather than after 3 rotations as in the Base Case).  This constraint reduces the 
+current THLB within the CWHvm1 by 390 ha. 
+Table 20 and Figure 27 indicate the results of this sensitivity.  If this is the proper interpretation of 
+VILUP Objective #16 the modelled timber supply impact of meeting full OGMA allocation within 
+EFZ #8 today is minimal. 
+  
+
+--- page 50 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 40 
+ 
+Table 20 - Harvest levels with full OGMAs in EFZ #8 
+Period 
+(Decade #) 
+Start 
+Year 
+End 
+Year 
+Annual Harvest Volume (m3) 
+Base Case 
+Full OGMAs 
+in EFZ 8  Difference 
+1 2009 2018 1,160,000 1,160,000 0 
+2 2019 2028 1,101,600 1,101,600 0 
+3 2029 2038 1,046,200 1,046,200 0 
+4 2039 2048 993,500 993,500 0 
+5 - 7 2049 2078 943,500 943,500 0 
+8 2079 2088 978,100 976,500 - 1,600 
+9 2089 2098 1,028,000 1,026,500 - 1,500 
+10 - 25 2099 2258 1,060,700 1,060,700 0 
+ 
+ 
+Figure 27 - Harvest levels with full OGMAs in EFZ #8 
+ 
+Short-term operational impacts of this interpretation of VILUP Objective #16 would be greater than 
+modelled timber supply impacts due to a loss of mature operable inventory. 
+  
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+Base Case VILUP objective 16
+
+--- page 51 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 41 
+4.13 Increase minimum harvest DBH criteria 
+Minimum harvest criteria are simply the minimum criteria for use in the timber supply model – 
+stands are not available for harvest by the model until the minimum criteria are met.  Actual 
+harvesting occurs in some stands below the minimum modelled criteria while other stands are not 
+harvested until well past the minimum criteria due to managing for other resource values.  
+Minimum criteria are often specified by an age and a minimum volume per hectare. This analysis 
+used a minimum average stand diameter-at-breast-height (DBH) that varied by harvesting system 
+and a minimum volume per hectare (see section 10.3.1 of the IP).  The concept is that larger 
+diameters in general reflect higher net values.   
+Table 21 indicates the minimum average stand DBH used in the Base Case and in this sensitivity 
+analysis.  WFP has successfully operated within ground-based stands with average DBHs of 30 
+cm so this minimum DBH was not changed.  The minimum DBHs for cable and heli were 
+increased by 2 cm for the sensitivity analysis.  In terms of years, this delays harvest eligibility from 
+5 to 40 years depending on the analysis unit, with the average delay being slightly more than 10 
+years (for the cable/heli portion of the landbase). 
+Table 21 - Minimum Harvest Criteria 
+Harvest 
+System 
+Minimum Average DBH 
+Base Case  Sensitivity  
+Ground 30 cm 30 cm 
+Cable 37 cm 39 cm 
+Heli 42 cm 44 cm 
+ 
+The larger DBH criteria reduce the initial available inventory by 1.03 million m3 (3.3%).  Table 22 
+and Figure 28 indicate the results of maintaining the initial Base Case harvest level and then 
+allowing the mid-term and LTHL to adjust to the reduced available inventory.  The delayed 
+availability of stands necessitates reduced mid-term harvest levels in order to allow sufficient 
+inventory to build such that the LTHL is affected minimally (0.5% lower).  Overall 4.4 million m3 
+(1.7%) less is harvested in this sensitivity analysis. 
+ 
+Table 22 - Harvest levels with larger minimum DBH criteria 
+Period 
+(Decade #) 
+Start 
+Year 
+End 
+Year 
+Annual Harvest Volume (m3) 
+Base Case 
+Larger DBH 
+criteria  Difference 
+1 2009 2018 1,160,000 1,160,000 0 
+2 2019 2028 1,101,600 1,090,000 - 11,600 
+3 2029 2038 1,046,200 1,024,200 - 22,000 
+4 2039 2048 993,500 962,300 - 31,200 
+5 - 7 2049 2078 943,500 904,100 - 39,400 
+8 2079 2088 978,100 913,200 - 64,900 
+9 2089 2098 1,028,000 963,200 - 64,800 
+10 2099 2108 1,060,700 1,013,200 - 47,500 
+11 - 25 2109 2258 1,060,700 1,055,400 - 5,300 
+ 
+
+--- page 52 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 42 
+ 
+Figure 28 – Harvest levels with larger minimum DBH criteria 
+  
+0
+200,000
+400,000
+600,000
+800,000
+1,000,000
+1,200,000
+1,400,000
+2009
+2019
+2029
+2039
+2049
+2059
+2069
+2079
+2089
+2099
+2109
+2119
+2129
+2139
+2149
+2159
+2169
+2179
+2189
+2199
+2209
+2219
+2229
+2239
+2249
+Annual Volume (m3/year) 
+Year 
+Base Case Older MHA (+2 cm cable/heli)
+
+--- page 53 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 43 
+4.14 Summary of sensitivity impacts 
+Table 23 provides a summary of the impacts of the sensitivity issues explored.  Impacts shown 
+indicate the aggregate differences over the defined time periods and are rounded to the nearest 
+tenth of a percent.  Values in parentheses refer to alternate schedules presented for the 
+associated sensitivity analysis.  
+Table 23 – Summary of sensitivity analyses harvest impacts 
+ 
+Harvest Interval (years) 
+1 – 40 41 – 90 91 - 250 
+Base Case total net harvest level (m3) 43,013,000 48,366,000 169,712,000 
+Issue tested Sensitivity Percentage Impact 
+Available 
+landbase 
+Exclude unstable terrain plus heli operable 
+landbase -1.5% -5.3% -3.3% 
+     
+Growth and yield 
+Natural stands yields decreased by 10% -3.0% -5.2% -0.1% 
+Natural stands yields increased by 10% (short 
+term gain) 
+ 
+(alternate: mid-long term gain) 
++3.1%  
+ 
+(+0.3%) 
++6.1%  
+ 
+(+6.8%) 
+-0.6%  
+ 
+(+0.2%) 
+Managed stands yields decreased by 10% -4.5% -7.6% -9.9% 
+Managed stands yields increased by 10% +3.1% +8.9% +10.2% 
+Use SIBEC Site Index estimates (short term 
+gain) 
+ 
+(alternate: mid-long term gain) 
++1.5%  
+ 
+(0.0%) 
++3.7%  
+ 
+(+5.0%) 
++0.8%  
+ 
+(+1.1%) 
+     
+Forest 
+management / 
+Silviculture 
+Remove benefits of future fertilization 0.0% -1.5% -2.3% 
+Less hemlock planting 
+(alternate: no Hw planting on S1HA) 
+0.0%  
+(-1.5%) 
+-0.7% 
+(-5.7%) 
+-1.2% 
+(-2.7%) 
+     
+Operability 
+Remove heli harvest constraint +2.0% +1.7% +1.9% 
+Exclude heli landbase 0.0% -1.8% -1.4% 
+     
+Visual Quality Reduce allowable percent disturbed  0.0% -0.7% -0.1% 
+     
+Wildlife habitat / 
+Biodiversity 
+Retain old forests to full target to maintain 
+marbled murrelet habitat in EFZ #8 (VILUP 
+objective #16) 
+0.0%  -0.1% 0.0% 
+     
+Minimum 
+harvest criteria 
+Increase minimum DBH by 2 cm for cable and 
+heli land base -1.5% -5.1% -0.7% 
+ 
+Since all sensitivities, other than “remove heli harvest constraint” (section 4.9), begin with the 
+same initial harvest level as the Base Case, a negative timber supply impact in the first 40 years is 
+associated with a greater rate of decline in harvest levels than is achieved in the Base Case.  A 
+
+--- page 54 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 44 
+positive timber supply impact in this time period is associated with a gentler rate of decline in 
+harvest levels than the Base Case (refer to Table 1 for Base Case harvest level decline rates). 
+
+--- page 55 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 45 
+5.0  Analysis Summary and Proposed AAC 
+5.1 Changes since MP #9 
+There have been considerable changes in the TFL 6 landbase and timber supply analysis 
+assumptions since MP #9.  Main changes include: 
+ Deletion of BCTS, private land and Tri-Port Community Forest areas has occurred.  The 
+current TFL 6 AAC of 1,255,536 m3/year reflects these changes.  
+ Landscape unit planning (OGMAs) and increased allowances for riparian areas and stand 
+retention have decreased the THLB on the remaining TFL 6 by approximately 12.5%. 
+ A new forest inventory (Vegetation Resources Inventory (VRI)) has reduced estimates of 
+mature timber volumes by close to 10%. 
+ The definition of minimum harvest ages has been changed to relate to harvest system 
+rather than the site productivity basis used in MP #9.  Overall the long-term average 
+harvest age has decreased from 103 years to 84 years. 
+ Harvest scheduling uses optimization compared to the simulation approach in MP #9 
+5.2 MP #10 Base Case Initial Harvest 
+The starting harvest level of 1,160,000 m3/year in the Base Case reflects both the reduced TFL 6 
+landbase and the projected reductions in harvest according to the MP #9 Base Case option. 
+ As noted above, the current TFL 6 AAC of 1,255,536 m3/year accounts for area deletions 
+from the TFL. 
+ The 7.6% decrease from the current AAC of 1,255,536 m3/year to the initial harvest level 
+of 1,160,000 m3/year in the MP #10 analysis corresponds to the projected percentage 
+decrease in harvest in the MP #9 Base Case schedule from the 2001-2005 period to the 
+average of the 2011-2015 and 2016-2020 periods. 
+5.3 Economic Access 
+The main uncertainty is with economic access in the short and medium-terms (the next 60 years).  
+The significance of economic operability has increased due to the following: 
+ A substantial reduction in merchantable inventory has occurred during the last 10 to 20 
+years through the establishment of protected areas and reserves (netdowns) for non-
+timber values (e.g. the establishment of OGMAs during MP #9), combined with on-going 
+harvest.  The result is a decrease in flexibility to maintain harvest levels in poor markets.  
+Reduced harvest flexibility can also be accentuated by land use planning or First Nations 
+interests that restrict access to areas of merchantable inventory. 
+
+--- page 56 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 46 
+ Recent market conditions and the current outlook.  Hembal prices have been relatively low 
+for more than ten years.  The current market downturn has been the most severe in recent 
+decades and recovery in the USA market has been slow. 
+ 
+These issues apply to TFL 6, although to a lesser extent than for many other Coastal forests.  
+Overall, TFL 6 is more accessible and has less difficult terrain.  The AAC has been harvested in 
+recent years.  Still, recent reductions to the THLB, for example for OGMAs reduce planning 
+flexibility. 
+ 
+Reduced harvest flexibility and poor market conditions create uncertainties for economic access, 
+in particular: 
+ In mature forest there is uncertainty of harvest and rate of harvest from helicopter 
+accessible areas (especially lower valued stands) and from conventional areas of low 
+value and/or high access costs. 
+ In second-growth forest there is uncertainty of harvest and harvest ages in more difficult 
+(costly) terrain. 
+ 
+In addition the simplistic approach used in modelling (for practical reasons) introduces some 
+uncertainty, although this may include offsetting factors.  For example: 
+ Operational scheduling of harvests will be different from the modelled approach.  This may 
+result in somewhat reduced harvest flexibility in the mid-term. 
+ Harvest history and reserves have resulted in fragmentation of a portion of the THLB.  For 
+example, a Stanley spatial analysis using the first 25 years of the Woodstock Base Case 
+schedule identified 1.5% of the THLB is in areas of less than 2 ha in size and 3.3% in 
+areas of less than 5 ha in size.  It is possible that some of these small areas will not be 
+harvested or harvest will be delayed until adjacent area is merchantable. 
+ Some small additional volumes will likely be available over time from practices such as 
+single-stem harvesting in areas netted down in the analysis; for example in areas 
+classified as uneconomic or unstable terrain. 
+ 
+Plans are to develop an improved basis for consideration of economic access at the strategic 
+level.  The current TFL 6 data set includes the approach used in previous analyses and generally 
+used in analyses of other forests: that of making a broad allowance for economic operability 
+based on inventory information, rather than on economic data (costs and values).  WFP is 
+planning a more detailed assessment of economic operability including consideration of harvest 
+systems, costs and timber values; an approach similar to that applied recently for some forests 
+(tenures) in BC. 
+  
+
+--- page 57 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 47 
+5.3.1 Allowances made in the Base Case 
+The Base Case has made allowances for some of the concerns on economic access: 
+ Areas of mature forest with low volumes (lower height and stocking classes) classified as 
+having “economic constraints” have been excluded. 
+ The Base Case constrained harvest from helicopter accessible stands to a maximum of 
+12,000 m3/year based on recent performance.  A sensitivity analysis shows that without 
+this constraint an additional 20,000 m3/year might be harvested over much of the 250 year 
+forecast. 
+ Higher minimum harvest ages for areas classified as accessible by more costly harvest 
+systems, cable and helicopter. 
+5.4 Sensitivity Analyses 
+Sensitivity analyses have explored timber supply impacts of several of the issues (uncertainties) 
+individually.  This includes:  
+ A sensitivity excluded the helicopter accessible stands and areas classified as class V 
+(unstable terrain).  Although harvesting is occurring in these areas, (refer to sections 6.6 
+and 10.3.3 in the Information Package) and harvesting in helicopter areas is constrained in 
+the Base Case, this sensitivity assesses timber supply impacts of not being able to access 
+some area of difficult timber types.  The excluded area contributes 4.9% and 8.3% of the 
+Base Case THLB and current growing stock respectively.  The result is a slightly steeper 
+6% per decade decline in harvest from the starting 1,160,000 m3/year, a deeper mid-term 
+trough in harvest by 70,000 m3/year and a LTHL reduced by 3.2%.  The impact is reduced 
+by the already constrained timber supply from helicopter areas in the Base Case. 
+ A sensitivity analysis of minimum harvest ages increased the minimum average DBH for 
+cable and heli areas by 2cm (on average delaying eligibility by 10 years). The initial 
+harvest level remained at 1,160,000 m3/year, but the medium-term (41 to 90 years) 
+harvest is reduced by an average of 5.1%.  Experience with ground based harvest 
+systems has shown harvesting occurring in stands with trees of average 30cm DBH, the 
+criteria used to define minimum harvest ages.  Experience is lacking for testing the 37cm 
+and 42 cm average stand DBH criteria for minimum harvest ages in harvesting second-
+growth with cable and helicopter systems.  The overall average harvest age for second-
+growth of over 80 years is greater than in recent analyses for TFL 19 and TFL 44. 
+ A number of sensitivity analyses examined the timber supply impacts of higher and lower 
+volume projections or of management and other factors contributing to uncertainty on 
+forest growth.  Comments include: 
+ VRI volume estimates for mature (older than 140 years) THLB average 
+approximately 10% less than for the previous inventory applied in the MP #9 
+analysis.  
+
+--- page 58 ---
+    
+ 
+TFL 6 – MP#10 Timber Supply Analysis  Page 48 
+ SIBEC site productivity estimates result in a slightly higher timber supply, 
+particularly in the mid-term. 
+ Changes in natural stand (currently greater than 50 years old) volume estimates 
+impact timber supply most in the medium-term, while changes to managed stand 
+yields (currently aged less than 51 years and future stands) are greatest in the 
+long-term, but still substantial in the mid-term. 
+5.5 Conclusions and Recommendations 
+Compared to the MP #9 analysis, changes in minimum harvest ages largely offset the negative 
+impacts of reductions in THLB and mature volume on short-term and medium-term (next 90 
+years) timber supply. 
+The analysis shows that the initial harvest level for the Base Case is robust across the individual 
+sensitivities. 
+An AAC of 1,160,000 m3/year (the initial harvest level of the Base Case) is proposed for TFL 6 
+during the next ten years.  The 1,160,000 m3 includes 11,578 m3 allocated to First Nations.  
+   
+ 
+ 

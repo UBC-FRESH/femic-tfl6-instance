@@ -1,7 +1,7 @@
-# femic-nicffsp-instance
+# femic-tfl6-instance
 
 Standalone FEMIC teaching instance for the FRST 558 North Island Community
-Forest / Forest Stewardship Plan case.
+Forest / Tree Farm Licence 6 case.
 
 ## Purpose
 
@@ -47,6 +47,12 @@ Active TFL 6 boundary:
 
 - `data/source/tfl_6/aoi/tfl_6_boundary.gpkg`
 - layer: `tfl_6_boundary`
+
+TFL 6 reference corpus:
+
+- machine-readable index: `reference/tfl6_reference_index.json`
+- human-readable summary: `reference/tfl6_reference_index.md`
+- extracted searchable text: `reference/extracted_text/`
 
 ## Workflow
 

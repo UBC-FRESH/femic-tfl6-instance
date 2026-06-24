@@ -1,0 +1,3116 @@
+--- page 1 ---
+WesternWesternSpirit
+Produced by Western Forest Products Limited Volume 2  Issue 1  Summer 2000
+Western Forest
+Products Limited
+Western Spirit is an official newslet-
+ter of Western Forest Products Ltd.
+Content may be reproduced;
+however, we request that WFP
+and the author be credited.
+Western Forest Products Limited
+#2300—1111 West Georgia Street
+Vancouver, BC  V6E 4M3
+Tel: (604) 665–6200
+Fax: (604) 665–6268
+Website: www.westernforest.com
+Editor: Dan Jepsen
+Editorial Board: Larry Andrews, Bobby
+Germyn, Ross Neasloss, George Watts
+Editorial & Design: Dianna Bodnar
+Desktop Publishing: CPH Desktop
+Printed on recycled stock.
+Please recycle this product.
+W 
+estern Forest Prod-
+ucts is very pleased to
+ announce their sponsor-
+          ship of three new students
+      to the 10-month Technical
+Resource education program at the
+Nicola Valley Institute of Technology
+(NVIT) in Merritt, which will begin in
+September 2000.
+The Forest Technician Training Pro-
+gram began in 1997 as a cooperative
+effort among the BC Ministry of
+Forests, NVIT, Forest Renewal BC
+WesternWesternSpirit
+WFP Sponsors More Students to NVIT and
+Enters into New Co-Sponsorship Scheme
+and the Council of Forest Industries
+(COFI), who are continuing to work
+together to increase forestry knowl-
+edge and expertise among First
+Nations communities. The program
+involves BC forest companies and
+their neighbouring aboriginal commu-
+nities jointly sponsoring a First
+Nations student for one year of
+Forest Technician training at NVIT.
+Six months of classroom training
+is supplemented by a one-on-one
+mentoring system with their spon-
+sor company and an additional six
+months of summer work placement.
+Courses such as natural resource
+management, silviculture, technical
+communications, resource measure-
+ments and soils and hyrdrology are
+thus combined with opportunities
+to directly apply knowledge in the
+workplace.
+The Program is maintaining a
+90% retention rate, which Craig
+Noordmans, Program Coordinator,
+NVIT First Nations Forest Technology Training Program 1999 students, Merritt, BC
+photo: Craig Noordmans
+continued as NVIT, page 3
+
+--- page 2 ---
+Building Espranza’s Youth Canoe—
+the Story in Pictures
+2
+Charlie and councillor Tom Smith look at the finished product.
+Photo: Larry Andrews
+Canoe under tarp to be steamed wider (expanded 9 inches)
+Photo: Larry Andrews
+Charlie Mickey, carver, surveys the first stage
+of work. Made from a log from Bligh Island,
+the finished product is destined to be a
+youth canoe, for quest rows and other
+special functions.
+Photo: Larry Andrews
+Charlie making paddles the “traditional” way            Photo: Larry Andrews
+
+--- page 3 ---
+Kitasoo First Nation (who is cur-
+rently the Kitasoo Forestry Coordi-
+nator), P aul Neuman Jr. from the
+Heiltsuk First Nation, and Georgina
+Thomas from the Campbell River band.
+Dan Jepsen, WFP’s Manager of
+Aboriginal Affairs, is enthusiastic
+about the new candidates, “We are
+really pleased with the excellent
+candidates who have applied for
+this important career opportunity
+and wish them every success.”
+Seats in the program are in such
+high demand that all 20 positions for
+the September 2000 course quickly
+filled, and there are 17 companies
+on the waiting list to sponsor First
+Nations students. WFP felt that
+exploring the opportunities to co-
+sponsor a student with another
+company would alleviate some of the
+pressure, so they approached Stan
+Price at Weyerhaeuser to discuss
+co-sponsoring the Heiltsuk student
+with WFP . Stan and senior managers
+within Weyerhaeuser supported the
+idea of co-sponsorship, so P aul
+Neuman Jr. will have two company
+sponsors. Says Jepsen, “We feel
+that this spirit of cooperation will
+be positive for P aul, the Heiltsuk, and
+our two companies. It will also really
+broaden his work experience options.”
+Alan Hanuse from the Oweekeno First
+Nation was WFP’s 1999 sponsored
+student, and is entering the second
+year of the program in September.
+He and his fellow first-year students
+are recovering from their course work
+and exams. “We had students from
+as far away as Haida Gwaii/Queen
+Charlotte Islands. While being away
+from home proved a challenge for
+some students, they have all risen
+to the challenge nicely, and we are
+really proud of them,” stated
+Noordmans. Rhonda Ned, a stu-
+dent from the Upper Nicola Band
+in Merritt, said that the program
+“gave me the opportunity to get
+the education and experience to
+succeed in the career I really want.”
+This summer term, a mentor from
+each sponsoring forest company
+is working one-on-one with each
+student to help them apply the
+knowledge learned in the classroom.
+On-the-job training began in May
+and will run through August 2000.
+On completion of their 12 months of
+classroom studies and work experi-
+ence, the students will be awarded a
+certificate in forest technology and
+half of the credits required for a
+Forestry Technician diploma.
+3
+NVIT, continued from page 1
+attributes to the one-on-one rela-
+tionships provided by sponsoring
+forest companies and districts.
+“The success of this program is
+in large part due to the personal
+attention that each student re-
+ceives from their mentor, “ said
+Noordmans. “Mentors ensure that
+the students fit in the structure of
+the company for a meaningful train-
+ing experience.”
+Each forest company that agrees to
+participate initiates the process of
+recruiting students. After contact-
+ing the over 30 First Nations Bands
+whose traditional territories they
+operate within, WFP has confirmed 3
+candidates: Ross Neasloss from the
+Youth crew paddling in Espranza Inlet         Photo: Larry Andrews
+Youth in full sail up Espranza Inlet Photo: Larry Andrews
+
+--- page 4 ---
+4
+Planning for your Community Using
+Geographic Information Systems (GIS)
+by Louanne Wong, Olympic Resource Management
+T
+ he impending settlement
+       of the land question for
+   many First Nations in
+        British Columbia has focused
+   the need to organize, control,
+and retain information at the
+community level.
+Modern technologies such as Geo-
+graphic Information Systems (GIS)
+are excellent integrating tools that
+can be used to support conservation
+of First Nations heritage, manage
+the community’s resources, and
+plan the community’s future.
+Stephanie Henry of Oweekeno
+Nation’s GIS department is one
+of those working to help manage
+her community’s lands. Acting as
+a liaison between her community,
+the government, industry, and
+various consultants, Henry is work-
+ing towards finding viable solutions
+best suited to the Oweekeno’s
+unique needs in forest management.
+Henry is excited about the possibili-
+ties that GIS brings to her commu-
+nity: “It helps us communicate our
+relationship with the land, as well as
+help us plan for our future,” she says.
+What is a GIS?
+A GIS is an information manage-
+ment system that can collect, store,
+and retrieve information about the
+earth based on physical location.
+It can also assist in analyzing and
+planning our natural and social
+environment. Using the GIS as a
+warehouse of information, relation-
+ships between objects or events in
+time can be explored, making sense
+of the environment that surrounds us.
+A GIS can also help us find out
+about what the environment may
+be like given certain conditions,
+an analysis technique known as
+“modeling.” Using these methods,
+a GIS can provide the “big picture”
+to support decision-making for the
+intelligent use of natural resources
+and to manage the human-made
+environment.
+What does a GIS look like?
+Most often, a GIS presents informa-
+tion in the form of maps and sym-
+bols. A map is useful to help readers
+visualize:
+• where things are located
+• what kinds of things are
+near certain places
+• how these objects can be
+best reached by means of
+transportation.
+The way a GIS presents, displays,
+and analyzes data is flexible. It can
+reflect a user’s unique interests and
+can be adapted to transfer informa-
+tion to readers.
+What can a GIS do?
+Just as a filing cabinet stores files,
+a GIS stores “layers” of information
+that can be combined and cross-
+referenced to find answers to
+“what?”, “where?” and “what if?”
+questions. But unlike a filing cabinet,
+the GIS can do thousands of these
+comparisons and cross-references
+in a minute.
+A GIS can view the world in different
+time frames: we can look at our
+past, present and future through
+windows which we can define and
+change. Communities can archive
+their traditions and collective histo-
+ries by adopting and adapting this
+technology as a tool. A GIS can view
+the landscape over time and simu-
+late outcomes for environmental
+and land use concerns, reflecting
+the specific criteria a community
+develops. By combining information
+about culture, resources and other
+concerns over time, a GIS will help
+to forecast potential outcomes,
+support sustainable planning at the
+community and management level,
+and identify potential conflicts.
+continued as GIS on page 12
+Oweekeno Nation’s Katit IR#1, drawn by E.M. Skinner in 1889–1890
+
+--- page 5 ---
+5
+I 
+’m the proud owner
+      of over 20 hand-made red
+  cedar baskets made by one
+       of the last traditional Kitasoo
+   basket weavers: Violet Neasloss,
+a Kitasoo Elder from
+Klemtu, BC. Klemtu is
+about 125 kilometres due
+west from Bella Coola, on
+the outer coast of BC. On
+my travels as WFP’s
+Manager of Aboriginal
+Affairs over the past few
+years, I have had the
+pleasure of many visits
+with Violet, and of hearing
+her stories about the past.
+Violet bubbles with enthu-
+siasm when she talks of
+her lifelong passion of
+traditional basket-weav-
+ing. She was born in
+Klemtu in 1914. At the turn
+of the century, the village
+had about 150 people; the
+population is now about 500. Violet
+clearly recalls that when she was a
+child, there were no lights or running
+water, so she and her family washed
+clothes by hand. Her grandparents
+told her of the early Hudson’s Bay
+steamships that visited the village
+and brought in vital supplies from
+the city.
+Although these early days in Klemtu
+were very labour-intensive, the com-
+munity had a strong spirit and
+determination to work hard together
+to provide the many necessities of
+life. Violet remembers in vivid detail
+the regular “work parties” each
+season to gather and process the
+Living Heritage—Elder Violet Neasloss,
+Master Weaver
+by Dan Jepsen, WFP Manager Aboriginal Affairs and Environment
+traditional foods required for sur-
+vival in such an isolated community.
+Life was truly tied to the seasons,
+with villagers depending on the land,
+the water and each other. But the
+hard work required to live off the land
+has been the source of Violet’s best-
+loved memories: “We gathered all the
+best food and processed it for the
+cold winter months. There was the
+herring roe, seaweed, cod and
+salmon seasons—we worked to-
+gether to gather and prepare the
+foods. Our people worked together
+in harmony.” Families often had
+specialties; Violet takes great pride
+in her skill at smoking fish.
+School was taught by local white
+women, but schoolbooks were only
+provided for the children until grade
+6. I asked Violet what they did for
+books after that, and she said, “You
+just used the same books over and
+over again!” She had the opportunity
+to continue schooling at the P ort
+Alberni residential school, but recalls
+it was just too far away from home
+and it would take her away from her
+home and family for too long. Other
+than those periods, Violet has spent
+her whole life in Klemtu; the longest
+she was away was one month for an
+eye operation. She started
+work in the Kitasoo Fish
+Cannery in 1933 and worked
+there until it closed in the
+70s. She also married in
+1933, over the years adopt-
+ing 4 children. Violet now has
+14 grandchildren. Her hus-
+band passed away in 1990.
+One of the most remarkable
+aspects of Violet’s life has
+been her rich knowledge
+and expertise in her lan-
+guage and culture. She
+speaks three languages:
+English, and the Kitasoo
+and Heiltsuk dialects.
+There are less than 20
+people who can speak the
+Kitasoo language any
+longer. It appears that it will disap-
+pear over the next few years—truly
+a terrible cultural loss.
+Sadly, it also seems that the tradi-
+tional Kitasoo art of basket-weaving
+may meet the same fate. Violet
+started weaving in 1932, teaching
+herself by watching the village elders.
+Her passion for weaving has stayed
+strong for almost 80 years.
+Violet says the prime time for gath-
+ering the cedar bark is in the spring,
+when the sap is running. She misses
+collecting the bark herself, but finds
+Violet Neasloss with a variety of her handmade baskets
+continued as Living Heritage, page 13
+
+--- page 6 ---
+“Tree of Life” Sparks New Vitality
+to Kwakiutl Community
+by Mike DesRochers, RPF , Assistant Forester, P ort McNeill Forest Operation
+W 
+hat started out as a
+retirement hobby has
+bloomed into a vibrant
+        business for Gloria and
+    Foster Roze. Looking for something
+to keep them busy, they purchased
+equipment from a failed cedar oil
+extraction business. But true to its
+name, their Tree of Life Essential Oil
+company has flourished far beyond
+its origins. Within two seasons of
+operating, they’ve recovered their
+start-up costs (approximately
+$50,000), employed local people,
+and diversified from producing high-
+quality cedar oil into products
+including cedar mulch, soaps and
+candles. All bough collection and oil
+production takes place on Kwakiutl
+First Nation traditional territory on
+the Fort Rupert Reserve, within WFP’s
+TFL 6 in the P ort McNeill area of the
+North Vancouver Island Region.
+One of the most satisfying outcomes
+is how many others Foster and Gloria
+have been able to involve in their
+venture. They have employed 10 people
+from the Kwakiutl First Nation over
+the past two seasons, including
+Napoleon Edwards, Wayne
+“Chamooga” Cook Jr. (student),
+Maggie Hunt (student), Abraham
+Sheena, Sidney Sheena, Josh
+Dawson, Donovan Hunt, and Ed
+White. They have also created a
+number of indirect jobs for local
+craftspeople.
+Essential oils are concentrated
+aromatic oils found in plant leaves,
+flowers, seeds, bark, roots, and the
+rinds of some fruits. They are used
+as bonding agents and preservatives
+in a wide variety of products, from
+soaps and candles to pharmaceuti-
+cals and insecticides.
+To produce the cedar oil, Tree of Life
+staff carefully prune Western Red
+Cedar boughs from living trees along
+roadsides in 10–20 year-old stands.
+Trees selected are at least 4m tall,
+and are pruned so that no more
+than the lower 1/3 of their live foliage
+is removed. This ensures that the
+branches can be harvested again
+within four to five years. The boughs
+are then delivered via 1-ton stake
+truck to the manufacturing site,
+where they are chipped and loaded
+into a hopper. Because the essential
+oil starts to evaporate as soon as
+the branches are cut, staff tries to
+process them within 24–36 hours.
+Steam is forced through the chipped
+boughs, condensed, and collected in
+a skimming barrel. The finished pro-
+cess usually yields 150 litres of fluid,
+from which only a few litres of oil are
+produced. Used chips find their way
+to village gardens as bark mulch.
+In the 1999 season, Tree of Life
+produced 6 barrels (1,200 litres)
+using 132 tons of cedar boughs.
+In two seasons of operation, they
+have sold 5 barrels of oil to brokers
+in New York, New Jersey, and Mon-
+treal at prices ranging from $10,000
+to $15,000 per barrel. Their website
+(www.treeoflife.bc.ca) has even at-
+tracted interested buyers from
+Japan. Sales of spin-off products
+include several truckloads of cedar
+mulch to the local school board, local
+businesses, the Town of P ort Hardy,
+and private individuals. Candles and
+soaps made from cedar oil are also
+sold in two local craft stores. In the
+face of such financial success, some
+might be tempted to forgo shutting
+down for the winter. But Foster and
+Gloria have their priorities clear,
+demonstrated by their philosophy of
+combining environmental responsibil-
+ity and cultural values with modern
+business practices: “Tree of Life
+Essential Oil is not only about eco-
+nomic development; it is also about
+respect for ourselves and Mother
+Earth, job creation, pride and humil-
+ity, and value-added processing.
+It means sharing, and most impor-
+tantly, it means being environmen-
+tally responsible. With these values
+in mind, we are taking responsibility
+to control our destiny in a manner
+consistent with the teachings of
+the Ancestors.”
+And as Foster says, “This is sup-
+posed to be my retirement hobby.
+Besides . . . it’s raining!”
+6
+Gloria and Foster Roze with “Tree of Life”
+(Western Red Cedar) carving on door by
+David Hunt         Photo: Mike DesRochers
+
+--- page 7 ---
+A
+       blessing ceremony
+ performed last Novem-
+     ber by cultural leaders
+from the Mowachaht/
+        Muchalaht First Nation marked
+   the successful completion of a
+4-year project to complete a new
+spawning channel near Gold River.
+Located at the mouth of Oktwanch
+River where it empties into Mucha-
+laht Lake, this innovative ground-
+water-fed channel is giving new life to
+those Muchalaht Lake salmon popu-
+lations that use the Oktwanch River
+for spawning and rearing habitat.
+“This project will finally allow the
+Muchalaht Lake sockeye, coho, and
+chinook stock to rebuild,” said Bill
+Dumont, Chief Forester for WFP .
+“While the salmon have years of
+recovery ahead of them, we are
+one very important step closer
+to returning stable spawning and
+rearing habitats to the watershed.”
+Then $300,000 spawning channel
+was a WFP project, supported with
+Forest Renewal BC funding, started
+four years ago when the potential
+renewal of the Oktwanch River fish
+habitat was first examined. The
+project was initiated by Canfor,
+then reassigned to WFP .
+Fisheries and Oceans Canada and
+Forest Renewal BC had recognized
+that the river’s fish habitat would
+benefit from a restoration project.
+However, further study showed that
+due to increased peak flows, reduced
+woody debris, and accelerated
+sediment delivery, the river would
+be unable to support large-scale
+salmon spawning for some time.
+Oktwanch Spawning Channel Open
+After Completion of 4-Year Project
+Fisheries biologists from Fisheries
+and Oceans Canada and the Nuu-
+chah-nulth Tribal Council determined
+that a solution to saving the runs
+rested in enlarging a small side
+channel to the west of the main river.
+This newly-enlarged channel, con-
+verted to a groundwater-fed system,
+provides stable spawning and rearing
+areas that are protected from the
+changing dynamics of the river.
+Site work began during the spring
+of 1998, and was completed in
+August 1999. In total, 28 people
+worked on the project, including
+contractors, members of the
+Mowachaht/Muchalaht First Nation,
+Fisheries and Oceans Canada, the
+BC Ministry of Lands, Environment
+and P arks, and WFP staff.
+The 1.4 km-long spawning channel
+incorporates the newest fish
+habitat management techniques
+and research and mimics a natural
+stream by providing calm rearing
+areas for fry, log and root tangles
+where fish can hide from predators,
+and graveled areas for spawning.
+Ferns, salmon berry, maple, and alder
+will provide coverage on the banks
+and assist with restricting access
+to the stream by large animals and
+people. A long, raised berm protects
+the channel from the nearby river.
+Other fish habitat improvements
+proposed for the Oktwanch River
+include gravel bar stabilization,
+another spawning channel project
+on the opposite valley wall, force
+pools, and large woody debris cover
+in the main river. It is expected that
+the river’s main fish spawning and
+rearing zones will gradually recover.
+The Oktwanch channel will be used
+primarily by sockeye, coho and
+chinook salmon, and may also
+assist cutthroat trout and Dolly
+Varden char. Oktwanch comes from
+the Nuu-chah-nulth word Okwasht,
+which means “smoking salmon.”
+Forest Renewal BC chair Roger
+Stanyer points out that since
+1994, Forest Renewal has invested
+almost $350 million to restore
+watersheds across BC. “Assess-
+ments have been completed in
+860 watersheds. Restoration
+efforts have been completed in 150
+watersheds, and some restoration
+has been done in 320 watersheds.
+This significant restoration effort
+is generating employment in local
+communities, supporting water
+quality, and protecting fish species.”
+7
+Totem pole carved from log donated by
+WFP by Johnathan Henderson and Sean
+Whonnock, the first to be raised in Victoria’s
+Thunderbird P ark for over 40 years.
+Photo: Heather Brown
+
+--- page 8 ---
+8
+O 
+n June 2, 2000, a wonderfully
+        bright and sunny day to match the
+   spirits of all present, the Kitasoo First
+          Nation hosted a major celebration to mark
+   the historic opening of the new Kitasoo Govern-
+ment House in Klemtu, BC. Klemtu is the main
+village for the Kitasoo people, located about
+200 kilometers southeast of Prince Rupert.
+The old Kitasoo office was located in an old home
+behind the church in the village, and was too small
+and confined for the numerous band operations
+to work effectively and efficiently. Band Manager
+P ercy Starr and the Kitasoo Councils over the
+past few years looked at various options to
+construct a new office building in the village.
+However, due to the high cost of new construction
+and the tight restraints on capital, they deter-
+mined that the construction of a new office large
+enough to fill their needs was going to be virtually
+impossible. They decided to look at options that
+would reduce the costs, yet provide the village
+with a new office building.
+As part of their review process, the councils
+considered the old Kitasoo School. It hadn’t been
+used for years and was in a state of major disre-
+pair. Ben Robinson, Kitasoo Councilor, remembers
+that “when we first looked at the building, it was
+hard to see the potential. However, after careful
+review with the community carpenter, we deter-
+mined that there was potential, the foundation
+was solid, there was enough inside space with
+only minor construction, and the main structural
+integrity of the building was sound.” The Kitasoo
+Council decided to contact a number of busi-
+nesses that the band deals with to explore
+potential partnerships to undertake the major
+renovation required. WFP was one of these. “We
+are pleased that Western Forest Products had
+the foresight to see the opportunity to play a role
+in the re-construction of the building,” said Starr.
+The new office is over 5,000 square feet, and
+includes two boardrooms, a reception area, a
+2-bedroom self-contained suite, and 6 offices.
+Kitasoo Government House O
+by Dan Jepsen, WFP Manager Aboriginal Affairs and Environment
+Kitasoo Hereditary Chiefs
+l to r: Band Administrator P ercy Starr, WF
+and Area Manager Corby Lamb
+Kitasoo Dummers; Raven Drum left
+and Black Fish Drum on right
+Kitasoo Dummers warming up
+l to r: Master Carver Rob
+Kitasoo Hereditary Chie
+
+--- page 9 ---
+9
+Opens to Sun and Celebrations
+Thinking of the future, the band made the addi-
+tional effort to renovate the basement area, which
+includes an additional 1,000 square feet of finished
+space. Currently this space is being used for im-
+portant treaty-mapping functions, and has also
+been used by the auditors, since it provides an
+excellent space to spread out the audit materials.
+Thanks to Haisla Master Carver Robert Stewart,
+Kitasoo Government House is as beautiful as it
+is useful. Stewart carved the two totems that
+grace its entrance, which feature the four main
+Kitasoo family clans: the Black Fish, Raven, Eagle,
+and Wolf Clans.
+At the June opening, over 150 community mem-
+bers came out to enjoy the traditional dancing,
+which included the Kitasoo welcome song and
+the dance of the four clans. Vic Woods, WFP’s Vice
+President, was very honoured to be asked by the
+Kitasoo Elders to cut the cedar bark opening
+ribbon along with Kitasoo Elder Violet Neasloss.
+During the opening speeches, Band Manager
+Starr reflected on the history that led to the
+construction of the fine new office. He said,
+“I wish to acknowledge the efforts here today
+that were made by our previous Elders and Chiefs
+who are no longer with us. Hereditary Chief Tommy
+Brown made major efforts starting 30–40 years
+ago to establish better relationships with the
+outside business world to enable breaking the
+bond with government. We have a beautiful rela-
+tionship with WFP—and this relationship has pro-
+vided the creation of this new office.” P ercy went
+on to say, “I wish to thank Victor and his staff for
+working with us towards a common future.”
+The Kitasoo people presented Woods with a
+beautiful framed photo of the “stew”, one of the
+only remaining First Nations longhouses on the
+coast that still has the roof beams in place. The
+building is thought to date at least back to the
+early 1800s. Woods in turn presented Chief Gary
+Hall with a carved mural by Robert Stewart
+depicting the four Kitasoo clans.
+FP Vice President Vic Woods,
+bert Stewart and
+f Archie Robinson
+Kitasoo Youth Dancers
+Opening Dance
+Cutting the handmade cedar bark
+ribbon! Vic Woods, WFP Vice President
+and Kitasoo Elder and Master Weaver
+Violet Neasloss
+
+--- page 10 ---
+10
+J 
+oint partnerships,
+       shared ventures and
+   successful capital invest-
+         ment strategies have been
+   making a positive difference for
+Canada’s leading non-Native busi-
+ness fraternities, and for the many
+Aboriginal communities that have
+decided to open negotiations and
+develop sustainable partnerships
+with them.
+British Columbia-based Western
+Forest Products Limited (WFP) is
+an example of one of the many
+organizations whose successful
+partnering in Aboriginal communities
+has helped to increase and enhance
+economic opportunities, employment
+and education.
+In business on the BC coast since
+1858, WFP and its predecessor com-
+panies have evolved from a small
+lumber mill, initially located on the
+mouth of the Shawnigan River, to
+become one of the province’s leading
+forest companies. Currently manag-
+ing more than 850,000 hectares
+of coastal forest in British Columbia,
+including public and private lands,
+WFP’s operations are located on
+Vancouver Island, the central coast
+and Queen Charlotte Islands, and
+cover more than 30 traditional
+territories.
+The company has always had a keen
+interest and a strong commitment
+to working with First Nation’s com-
+munities, but, says WFP Aboriginal
+Affairs and Environment Manager
+Dan Jepsen, “over the past few years
+there’s been a substantial increase
+Partnering with Native Communities an
+Important Part of WFP’s Mandate
+by John Copley, adapted from Western Native News Vol 13, No. 2, June 2000
+in the need to look at better ways
+of communicating and engaging with
+local (Native) communities.” In a
+recent interview with Western Native
+News, Mr. Jepsen said the quarterly
+publication was developed as a
+“communication medium for First
+Nations communities whose tradi-
+tional territories we operate within.”
+Building on the experience WFP has
+gained in working with First Nations
+in developing successful joint busi-
+ness ventures, the company is
+currently working with a number of
+First Nation community leaders and
+the Ministry of Forests on additional
+forestry-related business develop-
+ment and employment ventures.
+“These business development oppor-
+tunities,” explained Jepsen, “include
+a diverse range of partnership oppor-
+tunities such as additional employ-
+ment in surveying, assessing fish
+habitats, taking wildlife inventories,
+road construction and maintenance,
+harvesting, and the full range of
+silviculture activities.”
+Western Forest Product’s tenures
+are within the traditional territories
+of over 30 First Nations communi-
+ties throughout coastal BC. These
+areas overlap one another through-
+out the region, but WFP-initiated
+programs to involve the Native
+communities and their citizens have
+proven to be of benefit to everyone.
+“The company and the communities
+have all benefited from First Nations
+participation,” assured Jepsen. “We
+believe that meaningful involvement
+and inclusion of First Nations is
+integral to the economic stability
+of the communities in which we
+operate.” First Nations communities
+who have participated in archeologi-
+cal surveys, silviculture projects,
+forestry and numerous other ven-
+tures with WFP are too numerous
+to mention here, but do include the
+Quatsino, Ehatteshaht, Haida,
+Heiltsuk, Kitasoo, Kwakiutl,
+Mowachaht, Oweekeno, Nuxalt,
+Squamish, Campbell River, and
+Tlatlasikwala Nations. One of the
+most successful economic develop-
+ment, employment and skills-learn-
+ing ventures has been the WFP and
+Heiltsuk First Nation logging crew
+that began training back in 1995.
+“It is truly a success story,” empha-
+sized Jepsen. “That crew is produc-
+ing over 30,000 cubic metres of
+wood per year. At a recent meeting
+between the Heiltsuk Forestry
+Committee, senior WFP staff and
+the logging crew, it was decided to
+look for additional opportunities
+to access wood for the crew this year.”
+Heiltsuk loggers, Yeo Island
+Photo: P atrick Armstrong
+
+--- page 11 ---
+11
+The combination of a positive work-
+ing relationship and some quick
+thinking on the part of WFP forestry
+staff at the Zeballos Forst Opera-
+tions was responsible for the
+creation of “a very interesting
+and successful project with the
+Ehatteshaht Band to plant 25,000
+trees and hand-fertilize a 33-hec-
+tare plantation,” explained Jepsen.
+“We heard about an opportunity
+to purchase fertilizer that had been
+salvaged after a truck flipped over.
+A small amount of dirt was mixed in
+with the fertilizer, making it unsuit-
+able for resale. Operations Forester
+Doug Folkins recognized an opportu-
+nity to enhance growth in a critical
+area and provide an opportunity for
+the Ehatteshaht community to gain
+employment in a very unique trial.”
+Folkins said that “the Ehatteshaht
+crew worked very hard on this often
+physical and challenging job. We
+expect very positive boosts in the
+growth of these trees.”
+Numerous other First Nations
+planters have also been working hard
+with WFP and its contractors during
+this year’s spring planting season.
+Crews have planted more than
+350,000 trees. “WFP First Nations
+silviculture crews commenced work
+in early February and are currently
+involved in numerous projects
+throughout WFP’s operations,”
+added Jepsen.
+One example of WFP’s newer projects
+is the continuing work with the
+Kitasoo Nation near Princess Royal
+Island. The Kitasoo, whose main
+community comprises the village
+of Klemtu, are currently consulting
+with WFP on current and planned
+development within their traditional
+territory. Joint forest resources
+initiatives and training and employ-
+ment opportunities are among the
+topics being discussed. Training
+and employment initiatives include
+stream classification, assessment
+and cleaning, archaeological
+assessments, technical training
+in resource management, silviculture,
+reforestation, harvesting, and
+road construction.
+Another example on the long list of
+successful WFP/First Nations part-
+nerships involves the 1600-plus
+membership of the Heiltsuk Nation
+of Bella Bella. WFP is working with
+the Heiltsuk on a number of projects,
+including one which has already
+trained more than 20 band members
+in forest harvesting practices on Yeo
+Island. Other WFP/Heiltsuk projects
+include training in road construction,
+silviculture, stream classification,
+and harvesting. Silviculture employ-
+ment has been established on both
+Campbell and Yeo Islands. Other
+initiatives include employment in
+archeological inventory, biodiversity,
+and wildlife studies.
+“It’s an exciting time for WFP and
+the Aboriginal communities we
+serve,” closed Jepsen. “It is also a
+busy time; there are many positive
+initiatives currently being discussed
+and carried out with First Nations
+communities and there is bound
+to be many more on the horizon.”
+P eter Johnson, Lead Auditor of Quality Management Institute, and WFP VP Vic Woods
+present ISO 14001 certificate to Band Manager Helen Wallace, Quatsino Band
+Photo: Sandy Lavigne
+ISO 14001 Certificates
+Awarded—Well Done All!
+v       v       v
+
+--- page 12 ---
+12
+GIS, continued from page 4
+Who is using GIS?
+Many First Nations have taken
+advantage of GIS as a technology
+to archive their past and to prepare
+for their future. GIS systems today
+are being used to assist in resolving
+land questions, and to manage a
+Nation’s territory and forested
+lands. They provide a way to monitor
+information such as resource inven-
+tories and culturally-modified trees
+and also to quantify this data for
+value, quality, and area.
+Historical information can be ar-
+chived in a GIS, such as the sketch
+on page 4 of Oweekeno Nation’s
+Katit IR#1 drawn and surveyed
+by E.M. Skinner in 1889–1890
+Find out more!
+GIS is a wonderful educational tool
+that can be used at primary to
+advanced levels to learn more about
+the world around us. There is a
+wealth of information about the
+software, data, and the technology
+available free on the World Wide Web.
+If you would like to find out more
+about the GIS for your community,
+contact Louanne Wong, Olympic
+Resource Management (Tel: 604-
+806-3700, Fax: 604-806-3701,
+Email: lwong@ormcanada.com).
+The Oweekeno Nation GIS depart-
+ment can be contacted through
+Stephanie Henry (Tel: 250-949-8625,
+Fax: 250-949-7105,
+Email: shenry@island.net).
+G
+     host bear. Mythical
+      spirit. Ursus americanus
+  kermodei. The kermode
+           bear is all these things and
+     more. White in colour, similar to
+their counterparts in Arctic regions,
+BC’s kermodes are found on the
+North Coast, concentrated in a few
+areas such as Princess Royal Island
+in the traditional territory of the
+Kitasoo and Hartley Bay Bands.
+With land and resource planning
+underway in the area, more informa-
+tion about the mysterious “ghost
+bear” is crucial to its effective man-
+agement. A study funded through a
+multi-year agreement between Forest
+Renewal BC and Western Forest
+Products is focusing on determining
+the exact range of the bear, and
+identifying the genetic mechanism
+accounting for their distinctive colour.
+Biologist Helen Davis explains the
+process: “Our crews first had to
+locate the best sampling areas,
+string hair snares across bear trails
+leading to salmon spawning streams,
+and then return every two to three
+days to collect hair samples.” The
+“hair snares” are lengths of barbed
+wire baited with spawned-out salmon
+or salmon roe. Each clump of bear
+hair snagged on a barb is considered
+to be an individual sample.
+With the help of Kitasoo workers,
+crews have collected more than
+2,000 hair samples. These are placed
+in a paper envelope and given DNA
+identification numbers, then sent to
+the UBC Faculty of Forests genetics
+lab. The DNA analysis then done at
+the lab could identify factors like the
+interchange between breeding pairs,
+or the frequency of white kermode
+bear births.
+“Western Forest Products is support-
+ing this project because we make a
+lot of decisions around forest-
+planning on the North Coast,” said
+WFP’s Chief Forester Bill Dumont.
+“We have to learn a lot more about
+the bears’ genetics to ensure our plans
+include the needs of the kermode.”
+According to Tony Hamilton, research
+biologist with the Ministry of Environ-
+ment, Lands and P arks’ wildlife branch
+in Victoria, little is known about the
+genetics of the white coat colour-
+ations. “While several explanations
+have been put forward, we still lack a
+definitive understanding of why some
+black bears are white, and why some
+areas seem to have a higher frequency
+of white individuals,” said Hamilton.
+At WFP’s Roderick Island operation,
+a black mother was observed in 1998
+with three cubs, one white and two
+Baring the Facts about
+BC’s Mysterious Kermodes
+black. P ooley Island also has a white
+mother, with two black bear cubs.
+Until biologists and foresters gain a
+better understanding of this myste-
+rious mammal, appropriate conserva-
+tion measures are largely speculative.
+Kermode bear
+v       v       v
+
+--- page 13 ---
+13
+D 
+evil’s Club (Oplopanax
+     horridum) is a plant
+unique to the west coast of
+        North America, being found in
+   the dense coastal forests from
+Northern California to Alaska. Often
+reaching ten feet in height, with its
+oversized leaves gathering the
+dappled sunlight, a mature colony
+of Devil’s Club is almost tropical in
+appearance. The whole plant, includ-
+ing the maple-like leaves, is armed
+with a multitude of large yellow
+spines. Gracefully swaying in the
+forest breezes, it is indeed formida-
+ble as well as beautiful.
+For the past several years, a research
+team at the University of British
+Columbia has been analyzing the
+chemical constituents of the root
+and stem bark of Devil’s Club. They are
+attempting to determine the source
+of the medicinal qualities associated
+with its traditional use by native
+coastal groups. It is evident that the
+data supports its use as a treat-
+ment for various respiratory com-
+plaints as well as other conditions.
+For centuries, northwest coast
+native groups have prepared a tea
+from the root and stem bark to
+treat a variety of lung problems,
+including tuberculosis. The tea
+was also used to treat adult-onset
+diabetes. Like other members of
+the ginseng family, the root of
+Devil’s Club was made into a tonic
+to increase stamina and to help
+strengthen the body after a long
+illness. It was also used effectively
+on the skin to treat burns, sores
+and swollen glands.
+Due to the anti-viral and anti-
+bacterial compounds found in the
+bark of its roots and stems, Devil’s
+Club is becoming of interest to
+European, Asian and North Ameri-
+can manufacturers of herbal formu-
+las. As a result, commercial harvest-
+ers are increasing the pressure on
+the plant colonies of the coast;
+so much so, that it has all but been
+eradicated in parts of the north-
+western US.
+Nancy Turner, an ethnobotanist
+at the University of Victoria, told
+me recently, “most people ‘prune’
+the Devil’s Club branches from the
+mother stalk, then leave the plant
+to recover and regenerate for a few
+years before harvesting again. This
+is done in a lot of traditional medi-
+cine harvesting.”
+It is my belief that it is up to those
+people who understand the ways of
+the plants to point out these pre-
+cautionary measures to commercial
+harvesters and loggers. In this way,
+we will be assured of a sustainable
+harvest and future medicine from
+this sacred traditional plant.
+The Devil’s Club—
+Strong Medicine
+by Kahlee Keane, Save Our Species
+Living Heritage, continued from page 5
+that with her failing eyesight, it just
+isn’t practical to go out into the
+woods anymore. Friends and family
+now collect bark for her. The best
+comes from young cedar trees with
+small diameter and relatively thin
+bark. The traditional Kitasoo gather-
+ing method requires that the bark
+only be removed from one side of the
+tree, to ensure the tree will not be
+permanently damaged. If you are
+skilled in bark collecting, you can
+get bark strips of over 30 feet long.
+Depending on the size and
+design of the basket,
+weaving can take
+anywhere from one
+to three days.
+Violet showed
+me a unique
+basket she made in
+the 1940s that she
+still uses for clam and
+seaweed gathering. Al-
+though it was in need of
+some repair, it was amazing to
+see a basket almost 60 years
+old that was still being used in
+a traditional way.
+Violet’s only disappointment is that
+since young children are not inter-
+ested to learn traditional skills like
+basket weaving, the cultural art is
+destined to be lost: “The children
+of today are too preoccupied with
+television to take an interest in the
+traditional ways.”
+But positive as always, Violet smiles
+and says, “Life has been very good
+for me in Klemtu.” As I left her cozy
+home, I saw her going back to her
+kitchen to finish baking bread.
+“The 
+best bark 
+comes from 
+young cedar 
+trees with small 
+diameter and 
+relatively 
+thin bark”
+v       v       v
+
+--- page 14 ---
+14
+D 
+uring the 1940s and
+50s, commercial logging
+   practices often included
+          the removal of timber adjacent
+     to streams. P ortions of the Keogh
+River on North Vancouver Island were
+treated in this manner when they
+were logged 50 years ago. Many of
+the riparian areas along the Keogh
+are now restocked with relatively
+dense (3,000–4,000 sph), uniform
+conifer regen, or have reverted to
+early seral alder-dominated stands.
+This project was implemented to
+restore and accelerate old-growth
+properties along sections of the
+Keogh River. All riparian silviculture
+Restoring Old Growth
+Properties along the Keogh
+by Mike DesRochers, RPF , Assistant Forester, P ort McNeill Forest Operation
+work took place along the Keogh in
+the vicinity of West 100, on Kwakiutl
+First Nation traditional territory
+within WFP’s TFL 6 in the P ort McNeill
+area of North Vancouver Island.
+Treatments performed included large
+alder release, conifer release from
+alder competition, the thinning of
+dense conifer stands, the immediate
+and gradual introduction of large
+woody debris into the river system
+to complement existing instream
+structures, and the creation of
+wildlife habitat.
+Work crews on this project were
+made up of people from the Kwakiutl,
+the Quatsino (J&T Silviculture Ltd.)
+and the Sechelt (SIBFOR Forestry
+Inc.) First Nations. These crews
+performed a wide range of riparian
+silviculture: alder girdling, conifer
+girdling, conifer spacing, tree topping
+and a variety of habitat “starts”
+for bats, birds, small mammals
+and amphibians.
+This type of silviculture was a depar-
+ture from normal enhanced forestry
+in that uniform spacing and densi-
+ties were abandoned in favour of
+irregular treatments that would
+more resemble old-growth character-
+istics. The crews questioned the
+treatment techniques, but soon
+understood the purpose of this
+“bad” spacing and girdling, and
+how these treatments would have
+immediate impacts on the riparian
+ecosystem along the Keogh.
+Wally Bernard doing alder girdling in confier
+release area           Photo: Mike DesRochers
+Kitasoo
+Crew Braves
+the Elements
+for a Third
+Silviculture
+Season
+by Jeff Brown and Han Van Vugt,
+WFP contract supervisors
+F 
+or the third consecu-
+tive season, the Kitasoo
+   Silviculture Crew from Klemtu
+         has been busy planting trees at
+     WFP’s Roderick Island Operations.
+Every spring brings excitement and
+anticipation for many in this remote
+community of BC’s coastal north.
+Silviculture work brings the Kitasoo
+Arthur Timothy tree-planting on
+Roderick Island        Photo: Jeff Brown
+continued as Kitasoo Crew, page 16continued as Restoring, page 16
+
+--- page 15 ---
+15
+Pruning
+Project at
+Port McNeill
+by Amy Beetham, Assistant Forester,
+WFP P ort McNeill Forest Operation
+T
+   his March in the P ort
+McNeill Forest Operation
+     of TFL 6, we had J&T Silvi-
+culture Ltd. complete an 11.1-
+     hectare second-lift pruning
+project. J&T primarily employs
+Kwakiutl First Nations band mem-
+bers from Fort Rupert and Quatsino
+First Nations band members from
+Coal Harbour.
+by Doug Folkins, RPF , Operations
+Forester, Zeballos Forest Operation
+S 
+entry Forestry have
+been working in the
+   Zeballos Forest Operation
+         for over five years, and have
+    a good deal of experience with
+spacing, pruning, creek cleaning and
+pile burning. In efforts to find sus-
+tained employment opportunities,
+WFP and Sentry are working to find
+new activities to fill the slow periods
+of the year.
+One of these is a manual fertiliza-
+tion silviculture project in TFL 19,
+in Ehattesaht Band territory. This
+project provided Sentry with new
+experience and employment while
+spacing areas are snowed-out.
+Objectives were to enhance crop tree
+growth in order to achieve greenup
+at an earlier date, and to realize the
+benefits of increased growth and
+site productivity. (The harvest of two
+low-elevation conventional blocks are
+delayed until the treated stand is
+three metres high.)
+Altogether, the crew treated about
+35 hectares. Crew members Lloyd
+Billy, Marleen Billy, Steve Frenchie,
+Alfred Frenchie, Jeremy John, and
+Lyle Billy Jr., from the Ehattesaht
+Band, finished up in May. As Alfred
+Frenchie said, “It’s a good job. It
+gets a bit boring, but it’s a good job.”
+Added Lloyd Billy, Sentry’s owner,
+“Things are going well. It’s the first
+time we’ve done fertilization, but the
+crew is learning quickly.” WFP person-
+nel other than myself was Dave Friars.
+Second-lift pruning at P ort McNeill operation
+Photo: Jim Johnson
+Sentry Branches out into
+Silviculture
+Marleen Billy, Ehattesaht manual fertilization project Photo: Lloyd Billy
+continued as Pruning, page 16
+
+--- page 16 ---
+WesternWesternSpirit
+Western Spirit is a publication produced
+by Western Forest Products for First
+Nations Communities, WFP staff,
+employees and contractors
+If you have any comments or questions on the information contained
+in this publication, please contact Dan Jepsen, Manager, Aboriginal Affairs and
+Environment, Western Forest Products Limited, 2300 – 1111 West Georgia Street,
+Vancouver, BC, V6E 4M3, Telephone (604) 665–6274 website
+www.westernforest.com   e-mail: djepsen@westernforest.com
+16
+Kitasoo Crew, continued from page 14
+crew an opportunity to work outside
+the village, get into good physical
+shape, and accumulate some well-
+deserved cash. As last year, con-
+tract supervisor Han Van Vugt led
+the crew: Aubrey Brown, Greg Brown,
+Mitch Duncan, Jack Robinson,
+Darryl Robinson, Tammy Robinson
+and Arthur Timothy.
+The crew began each day with
+a thirty-minute navigation of
+Finlayson Channel in their boat,
+the Sx ay a lakv (Griffin P ass). The
+weather threw many obstacles their
+way: high winds, high seas, snow, rain
+and hail. Yet together they planted
+more than 20 thousand trees,
+including Western Red Cedar, Cy-
+press, Balsam and Sitka Spruce
+species. In addition, the crew com-
+pleted minor maintenance to the
+tree cones covering the Western
+Red Cedar, which protect the seed-
+lings from deer browsing.
+The Kitasoo crew were scheduled
+to complete additional planting on
+Roderick Island with WFP , ensuring
+that future forest growth is main-
+tained and can be enjoyed by genera-
+tions yet to come.
+Pruning, continued from page 15
+The Douglas-fir dominated stand
+was originally pruned to 2.0 metres;
+second-lift pruning took the lift
+height to 5.5 metres. This project
+was challenging due to areas of
+steep and brushy ground in the
+block, but quality was high.
+The project employed a crew of eight
+over a three-week period. At start-
+up, they were Jonathon Jacobson,
+David Louis, Jim Johnson, Shaun
+Johnson, Richard Williams, Mark
+Hunt, Keith Hunt and Dale Scow.
+As FRBC year-end loomed, some
+additional pruners came onto the
+project, including Wallace Bernard,
+Walter Johnson Jr., Leonard Nelson,
+Robert P aul, Glen Robertson, and
+Mark Wallas.
+Restoring, continued from page 14
+P ersonnel involved in the project were
+• Kwakiutl First Nation (J&T Silvicul-
+ture): Walter Johnson, Wally
+Bernard, Keith Hunt, James Nel-
+son, Richard Williams, Mark Hunt
+• Quatsino First Nation (J&T Silvi-
+culture): Mark Wallace
+• Sechelt First Nation (SIBOR
+Forestry), Steve Macleod,
+Dennis Fenton, Bob Toth
+• WFP: Eric Gagne, Mike DesRochers,
+Amy Beetham, and Dan Hayward
+(co-op student)
+• Other: Vince P oulin (P oulin and
+Associates), Bart Simmons
+(Quillicum Forestry Services),
+Tim Brown (Frontier Tree Services).
+Dear Dan,
+    Thank you for putting me on your
+mailing list for Western Spirit. I was
+very pleased to receive the two extra
+issues. I am very impressed to see
+that Bill Dumont and Western Forest
+Products Ltd. have established a good
+relationship with the First Nations
+people, as this paves the way to a
+healthy future. The decisions we make
+today determine the course of our
+future. 
+Western Spirit has taken an
+important step in the right direction.
+Sincerely,
+Mike Leclerc, M.Sc.P ., M. Sc. F .
+Silviculture Forester
+Small Business Forest Enterprise
+Program (SBFEP)
+Ministry of Forests,
+Queen Charlotte District
+Letters to the Editor
+Dear Dan,
+    After reading the last couple of
+issues of the Western Spirit newsletter,
+I wanted to let you know how much I
+enjoyed them. The format is great (very
+readable) and I was pleased to see the
+extent of WFP’s involvement with First
+Nations. I knew things were happening,
+but was not aware of the range and
+scope of the projects.
+   The newsletter is very informative—
+please add me to your regular mailing
+list.
+   All the best to you and your col-
+leagues!
+Dr. Terance Lewis, Ph.D., P .Ag., P .Geo.
+Note: The views epxressed in 
+Western
+Spirit are not necessarily the views of
+Western Forest Products Limited, its
+staff, employees and contractors.
+
+--- page 17 ---
+Environment
+Environment
+Western Forest
+Products Limited
+Environment Matters is an official
+newsletter of Western Forest Products
+Ltd., published quarterly. Content may
+be reproduced only with the editor’s
+permission.
+Western Forest Products
+#2300–1111 West Georgia Street
+Vancouver, BC  V6E 4M3
+Tel: (604) 665–6200
+Fax: (604) 665–6268
+Website: www.westernforest.com
+Editor: Dan Jepsen
+Associate Editor: Dean McGeough
+Editorial Board: Bob Craven, Kerry
+McGourlick, Ken Hallberg, Bernie Clarke
+Cartoon: Heather Brown
+Editorial & Design: Dianna Bodnar
+Desktop Publishing: CPH Desktop
+Printed on recycled stock.
+Please recycle this product.
+Volume 3 • Issue 2  2000
+continued on page 2
+Decommissioning Kimsquit—
+The Long and Costly Struggle
+by Corby Lamb, WFP Area Manager
+Logging in the Kimsquit River
+Watershed first occurred in 1917
+when Pacific Mills Limited con-
+structed a logging trestle and dump
+for a railway operation. Operations
+were limited, with the tracks on the
+east side of Kimsquit River only
+extending about 2 miles from the
+river mouth. The main focus of
+this early logging was to access
+the valuable Douglas-fir stands
+in the lower valley.
+In those early days steam was
+the main source of power. Wood
+was used to fire the boilers in the
+locomotives, eliminating the prob-
+lem of soil contamination from
+fossil fuels. The challenge with
+steam, however, was the many
+associated large forest fires
+caused by sparks from the
+wood-fired boilers.
+The 1917 operation lasted for
+about 2 years, during the time the
+Kimsquit Area was planned to be
+the western terminus of a cross-
+Canada railway. Once it was obvi-
+ous the terminus would be else-
+where, operations moved to other
+areas of the central coast. Except
+for the Nuxalk Reserve on the river,
+there was no activity at Kimsquit
+until Mayo Lumber returned in the
+late 1970s.
+In 1980 Doman Industries
+assumed control of FL 16845 and
+constructed a modern 60-crew
+camp two miles from the beach on
+Aerial view of Kimsquit Camp prior to demobilization photo: Corby Lamb
+
+--- page 18 ---
+EnvironmentPage 2  •  Volume 3, Issue 2
+the west side of the river. The AAC
+was set at 120,000 m3 per year for
+the following 18 years. And signifi-
+cantly, Kimsquit was the first opera-
+tion to be managed under an
+Integrated Resource Management
+Plan as a Grizzly Bear Conserva-
+tion Area.
+In 1997, the Central Coast land
+issues were beginning to heat up.
+Under the laws of the day, no more
+timber could be harvested in the
+watershed. When future operating
+sites started to be constrained by
+land use issues elsewhere on the
+Central Coast, every option was
+examined in the Kimsquit Watershed.
+Unfortunately, due to the Inte-
+grated Resource Management
+Plan, no more economically-viable
+“first pass” wood could be found.
+This meant the camp facilities
+would have to be removed and
+any soil contamination from fuel
+staining and so on would have to
+be remediated.
+In the past 10 years, rules
+regarding the treatment of contami-
+nated soil have been ratcheted up
+considerably. MOELP now requires
+any contaminated soils to be
+brought back to their natural
+condition. This can be achieved
+through a number of ways, includ-
+ing excavation and transportation
+to a registered paving company
+and excavation and treatment in
+a “biocell”, which uses micro
+organisms to virtually eat the
+oil byproducts.
+Once the decision was made
+to pull the camp out, WFP con-
+tacted an environmental consultant
+to conduct a Phase I report: Reid
+Crowther and Partners Ltd. from
+Victoria, BC.
+Phase I
+Phase I of the project consisted
+of a visit to the operation to see
+how the camp was laid out and to
+determine where possible contami-
+nation had occurred, such as fuel
+transfer areas, the generator room,
+shops, staging areas, and equip-
+ment bone yards. Consultants held
+interviews with long-time manage-
+ment and contract personnel as
+part of this initial review. Crews
+mapped all oil staining and dug
+30 test holes with an excavator
+wherever consultants determined
+there was potential contamination.
+The test holes dug in Phase I
+were located all over the operation:
+20 in the camp/shop area, 7 in the
+tank farm/dryland sort area, and
+3 on the airstrip where fuel barrels
+were stored.
+All test pits had to be sampled
+to determine the level of contami-
+nation in parts per million (PPM).
+This was done in two different ways:
+• Using a Micro Tip HL 2000 Photo
+Ionization Detector (PID), each
+pit was sniffed for petroleum
+contaminants.
+• Samples were taken from each
+pit and placed in teflon-sealed
+glass jars. These jars were
+placed in coolers and flown to
+a lab to test for “contaminants
+of concern” or COCs. Examples
+of COCs are benzene, toluene,
+ethylbenzene and xylenes, all
+petroleum contaminants found in
+gasoline, diesel, and furnace oil.
+Depth of contamination was
+noted as well, allowing consultants
+to estimate the extent of soil (in
+cubic metres) to be treated.
+Crews also dug groundwater
+pits to determine whether
+groundwater had been contami-
+nated over the years. Since no
+groundwater appeared in any of
+the test pits, fortunately, no wells
+were required. At the tank farm site,
+one groundwater monitoring well
+was installed.
+Phase II
+Phase II included the review of
+all of the test samples and field
+data. The results determined there
+were several contaminated areas
+that would require remediation. The
+problem areas included the bone
+yard, shop area, generator building,
+waste oil storage area, and the
+marshalling yard.
+There are two biocells over 800 metres long running on both sides of the
+Kimsquit airstrip photo: Corby Lamb
+
+--- page 19 ---
+Environment Volume 3, Issue 2  •  Page 3
+The areas around the camp fuel
+tanks and wash rack showed visual
+evidence of contamination, but had
+to be removed in order to conduct a
+proper investigation.
+The Phase II investigation
+provided the required recommen-
+dations and action plan we needed
+to review and make applications to
+MOELP for approval to proceed
+with the site clean-up.
+The cost to WFP for MOELP
+to review and approve the report
+was $12,500.
+Phase III
+Once MOELP accepted the
+Phase II results and approved
+the plan, the actual dirt work
+(remediation) could begin.
+Before digging up any contami-
+nated soil, we conferred with the con-
+sultants to make several decisions:
+• How much soil did we expect
+to remediate?
+Once all the test results were
+in, we expected to treat between
+7,000 to 10,000m
+3 of soil (up to
+625 truckloads).
+• Where could bio-remediation
+cells be properly constructed?
+The Kimsquit Operation had a
+1,000-metre airstrip close to camp
+(100 metres away). To avoid future
+liability problems, the airstrip was
+scheduled to be deactivated. We
+therefore decided that the air strip
+would be an excellent area close
+by on which to construct the
+biocells.
+• What equipment would
+we need?
+To address concerns from MoF
+and MOELP as well as local First
+Nations, 43 kilometres of Forest
+Service Road had to be deacti-
+vated with MoF funding. Having the
+deactivation equipment on-site
+allowed us to use equipment effi-
+ciently. When there was a slow
+period in road deactivation,
+the equipment moved to camp
+remediation at WFP’s cost.
+We found, however, that the camp
+job would need substantially more
+equipment than forecasted.
+• How much would the
+program cost?
+In every project it is necessary
+to have a budget. But the problem
+with soil remediation is that until
+you know what the extent of the
+contamination is, it is virtually
+impossible to estimate the cost.
+The estimates for
+decommissioning the tank farm
+alone ranged from $40,000 to
+$135,000, depending on what
+the consultant was required to
+do. Tank farms are very expensive
+to decommission, since all tanks
+must be emptied, washed out,
+cut-up and transported for disposal.
+All liquids accumulated during the
+washing must be recovered and
+sent to a hazardous waste
+disposal facility.
+In the case of Kimsquit, every-
+thing had to be barged 250 miles
+to the nearest scrap yard and 350
+miles to the nearest waste facility.
+Once the soil remediation
+began, we had to keep digging at
+each site until contamination met
+acceptable levels for an industrial
+site.
+In total 12,000m
+3 of soil was
+placed in biocells, constructed
+along both sides of the airstrip.
+Biocells have an impermeable
+bottom liner to eliminate the possi-
+bility of contaminating another site
+and a waterproof top cover. For
+soil microbes to work properly, they
+must not have too much water, the
+temperature must be above 10° C
+and they need nitrogen. Contami-
+nated soil was placed in the cells in
+layers with a high-nitrogen fertilizer.
+In total, we used 8 tons of fertilizer.
+On completion of the project, we
+had constructed biocells covering
+the entire length and width of both
+sides of the airstrip (40m x 1000m).
+Visible hydrocarbon stains in marshalling yard photo: Corby Lamb
+continued as Kimsquit, page 11
+
+--- page 20 ---
+EnvironmentPage 4  •  Volume 3, Issue 2
+Forestry operations have
+become more complex. We see
+smaller block sizes, reserve areas,
+single trees or groups left standing,
+and varying harvest methods.
+Amidst all these complexities
+there remains the golden rule
+of the woods: safety is first.
+Recently, a coastal forest com-
+pany was fined $30,000 for leaving
+a wildlife tree within an active
+forestry operation. The veteran
+Douglas-fir tree was alive with a
+relatively small dead spike-top and
+growth burls (possibly blind conks
+of Fomes pini). Because the com-
+pany had failed to properly assess
+the tree for hazards, this defect tree
+was considered, by default, to be
+a dangerous tree. Despite its good
+intentions to protect a valuable
+wildlife tree, the company failed to
+follow current Danger Tree Assess-
+ment procedures, and Workers’
+Compensation Board cited them
+under Occupational Health and
+Safety Regulation 26.21(1) for
+bypassing a dangerous tree.
+In April 1998, WCB Regulations
+replaced the word “snag” with
+“dangerous tree.” Workers need to
+be watchful for both snags and live
+trees that may have dangerous
+defects. Any defective trees (living
+or dead) within or adjacent to a
+worksite must be assessed by
+a qualified danger tree assessor.
+If the tree is safe, then it must be
+marked (by paint, flag, shallow
+blaze, or tag) to communicate to
+workers that it was assessed and
+found to be a safe tree.
+When forestry workers encoun-
+ter live trees that are planned for
+retention (such as the vet fir tree
+noted above), or a tree with signs
+of wildlife use (such as a bear den,
+feeding or nesting cavities) and
+their plan states to keep these trees
+standing, what should workers do?
+First and foremost, ask yourself,
+“Is the tree safe to leave standing?”
+If the tree is defective, a qualified
+person must assess it, and the tree
+marked if found to be safe. Other-
+wise, the tree is dangerous.
+Review your plans or ask your
+supervisor to clarify the danger tree
+procedures. According to Danger
+Tree Assessment procedures,
+when you discover a dangerous
+tree, you have only three possible
+choices of action:
+• Remove the tree.
+• Remove the dangerous part
+of the tree.
+• Install a No Work Zone to protect
+workers from the danger tree
+So the next time you discover a
+wildlife or culturally significant tree,
+or a defect tree within your work-
+Wildlife Tree or Danger Tree—What To Do?
+by Dean McGeough, RPF
+site, and the plan requires you to
+leave the tree standing, assess the
+tree and follow the appropriate
+safety procedures.
+One last word: bear in mind
+that company planners should
+work with fallers to assess retention
+clumps or falling boundaries—
+safety remains our #1 concern.
+Hot Name Will Win Cool Cash!
+During the development of the WFP Environment Management
+System (EMS) over the past two years, we have noted that methods of
+recording WFP activities and agency directives have varied widely from
+region to region. During the ISO registration audits, QMI observed this
+inconsistency and requested that WFP either clarify the process for
+each region in writing or develop a single recording system. The Envi-
+ronment Review Committee recommended and the Senior Management
+Team has agreed that a single WFP recording system is the best ap-
+proach for our company and supports our pursuit of due diligence.
+To that end, we have hired Forsite Consultants to work on combining
+the best features of the two current recording systems into a single
+system over the next 3–4 months. The new computerized system will
+be incorporated in all operations. This system will be used to track all
+the activities and obligations that occur on blocks, roads and bridges.
+It will also provide staff with information on the status of permit approv-
+als, volumes, and inspection results.
+Work has already begun on this project, but the system still needs
+a name—and we’re willing to pay cold, hard cash for it. One hundred
+bucks goes to the wordsmith who can come up with a name for the
+system. The contest is open to all staff and employees of WFP.  Send
+your suggestion to Heidi Walsh in the Vancouver office, or by email to
+hwalsh@westernforest.com, by August 31, 2000. Remember, the name
+should reflect that the system will be used to track our forestry activities.
+Members of the Environmental Review Committee will select the win-
+ning entry in early September.
+“Widowmaker” danger tree
+
+
+--- page 21 ---
+Environment Volume 3, Issue 2  •  Page 5
+Contrary to perception, any
+logging job, from road building
+to falling to processing, can be
+a complex activity. It’s not just a
+matter of going into a setting, doing
+a job, and then leaving. A lot of
+thought and planning must go into
+any of these tasks, and to minimize
+the possibility of legal troubles later
+should something go wrong, it is a
+good idea to develop standard
+operating procedures (“SOPs”).
+What are SOPs? They are
+written versions of the best way
+to undertake a logging activity,
+and every company should have
+them or follow ones given to them.
+For example, if a culvert or bridge
+is to be installed in the course of
+road building, an SOP should exist
+that explains to the installer how
+the work is to be done, what to look
+for when doing the work, and what
+to do if something unexpected is
+encountered in the field.
+Logging activities in the past
+have been carried out by very
+experienced crews who needed
+no written instructions on how to
+carry out their tasks. But under the
+Forest Practices Code, the days
+of the “oral tradition” in logging
+are long gone. Carrying on logging
+without the benefit of SOPs simply
+makes you look disorganized, and
+can lead to trouble should you face
+enforcement action under the Code.
+SOPs do two essential things:
+they reduce the possibility of infrac-
+tions of the Code, and if infractions
+occur they can help to demonstrate
+you were duly diligent and the
+incident happened beyond your
+control. In either case (but espe-
+cially the first), SOPs can save you
+a lot of money because they act as
+a preventative mechanism to avoid
+trouble later.
+The days of the
+‘oral tradition’
+in logging are
+long gone.
+Carrying on
+logging without
+the benefit of
+SOPs simply
+makes you look
+disorganized, and
+can lead to trouble
+should you face
+enforcement
+action under
+the Code.
+SOPs should be developed
+with significant input from the most
+experienced staff members in your
+company, and they should be kept
+current as practices change. They
+should be given to all operators
+with adequate and recurring train-
+ing to ensure they will be followed
+(there’s nothing worse than an out-
+of-date SOP that sits unused in a
+binder in the office). The appropri-
+ate SOPs should be reviewed with
+field crews prior to the start of each
+job to ensure they are followed
+(or departed from only with good
+Watch for newly-
+updated SOPs!
+Three years after our first
+Standard Operating Procedures
+in 1997, we have made updates
+to all SOPs to better reflect the
+changes in practices, input
+received from numerous opera-
+tions, regulation changes, and
+to replace outdated procedures.
+Watch for the newly-updated
+SOPs. Our grateful thanks to all
+those who contributed valuable
+suggestions or assisted by
+reviewing the changes.
+Standard Operating Procedures Vital Due Diligence Tools
+by Paul Cassidy, Blake, Cassels and Graydon
+reason, which should be
+documented).
+SOPs do two
+essential things:
+they reduce the
+possibility of
+infractions of the
+Code, and they
+can help to dem-
+onstrate you were
+duly diligent and
+the incident hap-
+pened beyond
+your control.
+If possible, it’s a good idea
+to write your SOPs in simple lan-
+guage and, where feasible, to keep
+them to one page each. Several
+companies even plasticize them
+(for weather-proofing in field use)
+and put them in each operator’s
+vehicle.
+Paul Cassidy is a lawyer with
+Blake, Cassels and Graydon,
+who specializes in resource man-
+agement and environmental law.
+“
+”
+”
+“
+
+--- page 22 ---
+EnvironmentPage 6  •  Volume 3, Issue 2
+Since 1997 WFP’s Standard
+Operating Procedures have been
+helping the company, its workers,
+and its contractors maintain a high
+level of compliance with forest
+legislation in all “higher risk” activi-
+ties. SOPs for Minor Forest Prod-
+ucts are extremely important to
+establish the company’s due dili-
+gence in the event of contraven-
+tions related to cutting outside of
+approved boundaries. This recent
+example of how SOPs and good
+records helped us in handling a
+contravention within the Zeballos
+Operation reaffirm their importance.
+The contraventions
+On March 15th this year, WFP
+discovered a possible trespass by
+a longtime shake operator within
+TFL 19 of the Zeballos Forest
+Operation. WFP inspection found
+an area of cutting outside the
+obvious timber boundary. Eight to
+ten trees were cut up and the wood
+had been flown to the road. Several
+saplings had also been cut and
+damaged. WFP personnel took
+photos and measured the wood
+on the road, approximating the
+volume at 30–35m
+3. At this point,
+WFP personnel seized the wood,
+then spray-painted “DO NOT
+REMOVE—WFP” on the ground
+in three locations.
+As Operations Forester for the
+area, I then contacted Bill Dumont
+(WFP’s Chief Forester) for direc-
+tion. Bill recommended that I report
+the situation to the MoF as soon
+as possible. I contacted the compli-
+ance and enforcement officer for
+the Zeballos operation, and set
+a date for an on-site inspection.
+The shake operator said that
+the workers in the area felt they
+were not in violation; however, he
+admitted that the cutting was
+obviously outside the boundary.
+The operator agreed that all his
+employees had either undergone
+WFP SOP training or he had re-
+viewed the SOPs with each worker.
+He could offer no further explana-
+tion. And at this time he reported a
+separate possible trespass that he
+had recently discovered in another
+operating area.
+The MoF inspection and
+investigation
+On March 17th, Compliance
+and Enforcement (C&E) officers
+from Campbell River MoF held a
+meeting at WFP office with me and
+the Operations Engineer. We asked
+if this was an inspection or an
+investigation. C&E officials replied
+that they needed more information
+to determine that, but would treat
+the procedure as in similar cases
+where a third party had reported
+a potential violation. We asked the
+officials to clearly indicate at what
+point WFP was being investigated.
+We reviewed our findings and
+outlined the provisions within the
+WFP SOPs and Minor Products
+Operating Agreement to establish
+WFP diligence. We also stated that
+WFP had recently conducted a
+second SOP training course (on
+February 8, 2000) with all the
+salvage crews working in the TFL.
+Recent inspections of shake opera-
+tors’ operating areas were found to
+be in compliance.
+Inspection at site #1:
+The operator explained that two
+inexperienced splitters were work-
+ing under the direction of a cutter
+who had packed up and left town
+overnight. The operator explained
+that the cutter had been given
+SOP training and was fully aware
+of where the boundary was. The
+splitters said that they had ques-
+tioned the cutter on several occa-
+sions about whether they were
+SOPs and Good Records Worth the Effort
+in Zeballos Contravention
+by Doug Folkins, RPF, Operations Forester, Zeballos Forest Operation
+MoF C&E Officer Henry Grierson stamping seized blocks
+photo: D. Folkins
+
+--- page 23 ---
+Environment Volume 3, Issue 2  •  Page 7
+inside the line, and that each time
+the cutter told them that they were.
+The C&E officers asked the opera-
+tor and the splitters to meet at
+the WFP office for one-on-one
+interviews.
+C&E officers took photos of
+each of the cut-up trees and the
+surrounding standing timber in
+each case. We took photos for
+WFP as well. The wood that was
+flown to the road was photo-
+graphed, measured, and marked
+with seizure signs. A large percent-
+age of the blocks were stamped
+with the forest service hammer mark.
+Inspection at site #2: We and
+the officials walked up an S5
+stream where cutting within the 10-
+metre “No Cut” zone had occurred.
+We crossed the flagged pink line
+and photographed 5 cut-up logs
+within the proposed cut block Z105
+(SP was approved). More photos
+were taken of damaged regen and
+cuttings in the creek. As before, the
+wood that was flown to the road
+was photographed, measured, and
+marked with seizure signs. A large
+percentage of the blocks were
+stamped with the forest service
+hammer mark.
+C&E officers then conducted
+individual interviews with the opera-
+tor and the splitters involved at the
+WFP office.
+Wrap-up meeting: The C&E
+officers said that they could not
+perceive any faults caused by
+WFP. They said that they felt
+WFP’s diligence was more than
+adequate in both cases, and that
+the MoF would not
+require copies of WFP’s
+records, since we were
+not being investigated.
+C&E officers felt that
+the shake operator had
+expressed a good atti-
+tude in that he admitted
+his mistakes and wanted
+to move forward. The
+operator had shown
+records to establish
+partial diligence. How-
+ever, officers felt that his
+supervision was lacking.
+The shake operator
+and cutters involved in
+the violations were
+issued tickets.
+Since WFP is the licensee holder,
+the C&E officers said that WFP
+would be able to deal with the
+contractor internally, as long as
+any discipline was in line with the
+following MoF goals:
+• Stumpage is paid.
+• The action is stopped.
+• Preventative measures are
+established.
+Concluding remarks
+Administration of Minor Forest
+Product salvage operating agree-
+ments, pre-work meetings, onsite
+SOP reviews, SOP training, block
+inspections, scaling and cutting
+approval administration can often
+be a considerable time strain on
+WFP staff. The importance of
+maintaining proper records and
+following the SOPs may sometimes
+be lost amongst the mountain of
+paper. However, as we found at
+Zeballos, when problems arise,
+maintaining good records and
+following SOPs are of paramount
+importance in establishing due
+diligence.
+Log cut outside the harvest boundary, TFL 19 photo: D. Folkins
+MoF C&E Officer Russell Boucher establishing
+size on illegally cut log photo: D. Folkins
+
+--- page 24 ---
+Page 8  •  Volume 3, Issue 2
+ISO 14001 Certificate Pres
+Enviro
+by Sandy Lavigne, Coordinator, Environmental Programs
+On May 3, 2000, WFP held ceremonies in Vancouver, Campbell
+River, Gold River, Zeballos and Port McNeill to present the ISO 14001
+registration certificates to staff, employees and contractors.
+Vice President Vic Woods and Lead Auditor Peter Johnson of Qual-
+ity Management Institute (QMI) presented the certificates confirming
+that the company has been granted ISO 14001 registration throughout
+all our coastal forest operations following a thorough audit and review
+of our Environmental Management System (EMS). The registration
+audit, conducted in February, included interviews with numerous
+operational personnel and looked at forestry and harvesting systems.
+Awarding the individual operations certificates recognized their 18
+months of dedication in implementing the EMS throughout the entire
+company. This included extensive training of all personnel in environ-
+mental awareness, setting up an internal audit team, and regular meet-
+ings of environment committees in all company and contractor camps.
+ISO 14001 is an international standard of environmental excellence,
+based on a commitment to continual improvement. Targets for environ-
+mental performance have been set for maintaining air, soil and water
+quality; annual internal audits confirm our progress in relation to these
+targets.
+This important initiative is a major milestone for WFP.  Said Woods,
+“This certification confirms our continued commitment to managing our
+forests in an environmentally-responsible way and shows our interna-
+tional customers that we are meeting the highest environmental stand-
+ard in our day-to-day forest activities.”
+WFP’s registration to ISO 14001 is one of the largest and most
+comprehensive audits in North America. QMI’s Johnson noted that
+“the audit results confirmed WFP’s thorough and effective EMS at
+all levels of the organization.”
+L to R: Rick McRae, Graham Lasure, Berni Clark, Gary Griffith, Andy Hansen,
+Jim Cox, Ivan Amos, Helen Wallace, Mickey Brown, NVIR
+L to R: Brendan Mo
+Back row L to R: Paul Turner, Dave Mogen
+Daryl Stewart, Murray Watkinson, Joel Du
+Middle row L to R: Berni Zimmerman, Kim 
+Joe Schluchter, John Halusiak, Chris Bickn
+Davidson, Jim Dunn; Front row: Jim Newm
+Mainland/Islands
+l to r: Peter Johnson, CMI, Vic Woo
+Jim Cox, Gio Alberti
+
+--- page 25 ---
+sented to WFP – Well Done!
+Volume 3, Issue 2  •  Page 9onment
+NVIR Regional Man-
+ager, Gary Griffith
+ohan, Daniel Gachter, Jim Basha
+L to R: Vic Woods, Sandy Lavigne, Dan Jepsen,
+Bill Dumont, Head Office
+Back row L to R: John Crowhurst, Bob Dunn, Dan Jepsen, Peter Johnson;
+Front row L to R: Gregor MacIntosh, Lane Thornton, Doug Folkins, Phil Fenn,
+Pearl Myhres, Vic Woods, Rick Osmond, Bill Dumont, Zeballos
+nsen, Roger Wade,
+umaresq
+ Christensen,
+nell, Patrick
+man,
+Sharon Moffat, Purchasing
+Manager, Vic Woods
+Central Warehouse
+ods,
+L to R: Trevor Boniface, Bob Craven, John McLaughlin,
+Mark Kenny, John Costin, Gerry Fraser, John Waring,
+Kevin Sommerville, Graham Hues  Nootka Region
+
+
+--- page 26 ---
+Page 10  •  Volume 3, Issue 2 Environment
+Since we have received a
+number of inquiries about proper
+storage and mop-up techniques
+in the event of jet fuel spills,
+I thought it timely to provide
+an update of the issues.
+Storage
+There is little guidance in the
+legislation on the proper storage
+of the 45-gallon drums of  jet fuel
+products in helicopter fuel transfer
+areas. WFP requires that storage
+and transfer of jet fuel products
+meets with the company’s yellow
+Common SOPs card, which clearly
+states our policies on using petro-
+leum products, for example, “Don’t
+dump gas or oil anywhere, don’t
+store petroleum in an RMA, and
+when you see an emergency like
+a fuel spill, follow the WFP emer-
+gency procedures and tell your
+supervisor as soon as possible.”
+Storage areas
+should be located
+both 1) as far
+from RMAs as
+possible and
+2) where they
+are least likely to
+suffer collision
+damage from
+vehicles.
+We are all aware that there is a
+well-recognized procedure for drum
+storage: helicopter pilots must
+ensure the drums are stored on
+their sides to reduce the possibility
+of the water contamination that
+results from the water accumulating
+on the drum’s top if it’s stored
+upright. This informal policy com-
+plies with the current legislation
+regarding storage of 45-gallon
+Guidelines for Helicopter Fuel Storage and Mop-up
+by Dan Jepsen, Manager, Aboriginal Affairs and Environment
+drums. Secondary containment is
+not required for 45-gallon drums.
+However, storage areas should be
+located both 1) as far from RMAs
+as possible and 2) where they are
+least likely to suffer collision dam-
+age from vehicles. Old fuel and
+damaged drums should be dis-
+posed of in the appropriate matter.
+The environment
+is important, but
+safety remains
+our number-one
+priority.
+Mop-up
+Jet fuel and regular gas are
+very volatile. Pay special attention
+to their proper mop-up in the event
+of a spill. Your first priority is the
+safety of personnel, and second,
+the protection of property.
+Although you must reduce spills
+and drips, and mop up small quan-
+tities of fuel, generally the proper
+method of responding to these
+types of spills is to keep the fuel
+away from personnel and property
+and allow it to evaporate. Using
+pads or constructing berms to
+restrict or contain spills is too
+dangerous for these types of fuel.
+In spill training, the Coast Guard
+uses a test scenario where they
+ask what you would do in the case
+of a Jet “B” spill to water adjacent
+to a barge facility. Most people
+fall into the trap of suggesting that
+containment booms be launched
+and an effort made to contain and
+mop up the spill. But this is com-
+pletely incorrect. The recom-
+mended response is to ensure
+the slick is kept away from the
+barge by using a fire hose set
+to a fine spray.
+Please keep this example in
+mind when using the more volatile
+fuels like Jet “A” and “B” and regu-
+lar gas. The environment is impor-
+tant, but safety remains our
+number-one priority.
+Lewey Da Loser says....
+“Remember, the number one cause
+of injury in the woods is  slips and
+falls.  Plan ahead, check your
+footing, think ‘Safety’!”
+Cartoons by Heather Brown
+“
+”
+“
+”
+Hazardous Waste
+by Heidi Walsh, RPF
+The Waste Disposal Program is
+one of the environmental programs
+under WFP’s Environmental Man-
+agement System. Its goal is to
+dispose of any hazardous waste in
+WFP operations by December 31,
+2000. This includes surplus wastes
+not currently disposed of through
+the regular waste disposal channels.
+
+--- page 27 ---
+Environment Volume 3, Issue 2  •  Page 11
+“Being reminded that slips and
+falls are the number one cause
+of injuries in the woods is effective
+only if YOU make the effort to plan
+ahead, check your footing, and
+think ‘Safety’!”
+Does Your Operation Have
+an Environment Committee?
+by Heidi Walsh, RPF , Assistant, Environmental Programs
+Kimsquit, continued from page 3
+And it’s not over yet . . .
+Decommissioning Kimsquit took
+four months to complete, at more
+than $600,000. The largest amount
+of contaminate was found under
+the marshalling yard. Approxi-
+mately 7,000 m
+3 of soil was re-
+moved from the site.
+Everyone should remember that
+parking a vehicle or piece of equip-
+ment in the same spot day after
+day can have a negative potential
+cumulative impact on the environ-
+ment. Leaks need to be addressed
+immediately to prevent the same
+situation elsewhere.
+And the $600,000 spent so
+far is not the end of this project.
+For the next 3 to 5 years, the
+Kimsquit bio cells will have to be
+turned over and re-fertilized annu-
+ally, at an approximate cost of
+$50,000. Each year a consultant
+has to take readings and submit
+a report to MOELP .
+In future, camp decommissioning
+should be minor, requiring one small
+biocell, at a fraction of the cost—pro-
+viding we all learn from experience.
+Operations Environmental
+Committees are a crucial part of
+the EMS, providing the opportunity
+for all employees and contractors
+to assess WFP’s environmental
+performance. They identify poten-
+tial environmental issues in an
+operation, provide feedback,
+and suggest solutions to
+potential issues.
+All working operations must
+have a committee and meet
+quarterly (March, June, September,
+and December). It’s vital that these
+committees are set up and working,
+since they provide important feed-
+back about how well WFP is per-
+forming on the ground, and thus
+key to maintaining our ISO Certifi-
+cation. Your input is welcome, so
+if you’re interested or have issues,
+please see the manager of your
+operation for information.
+Facts and
+Arguments
+• With every turn of the second
+hand on your watch, the world’s
+population increases by 3. That
+means our planet must support
+another 93 million people every
+year. The United Nations predicts
+global demand for forest prod-
+ucts will increase at the rate of
+86 million cubic metres annually.
+BC harvests less than 80 million
+cubic metres per year.
+• Not all forests are equal. About
+220,000 hectares of forest land
+is harvested each year in BC.
+To produce an equivalent volume
+of wood from Siberia, about 1.76
+million hectares would have to be
+harvested; in the Amazon, about
+11 million hectares.
+• Lumber production is cleaner
+than its alternatives. To manufac-
+ture steel studs results in 40
+times more harmful effluents and
+3 times more carbon dioxide
+emissions than manufacturing
+wooden 2x4 studs.
+Water Facts
+• Canadians use, on average,
+390 litres of water per day—
+about twice as much as the
+average European.
+• A tap that drips once every
+second wastes about 10,000
+litres of water per year.
+Disposal Program
+Earlier this year, a request for
+an inventory of these wastes was
+sent to all WFP operations. With
+their help, a final inventory was
+compiled and work to dispose of
+these wastes by our deadline is
+well on its way. Thanks to all who
+are helping to make this happen.
+
+--- page 28 ---
+Page 12  •  Volume 3, Issue 2 Environment
+As a result of vandalism at
+Western Forest Products’ Saanich
+Forestry Centre last fall, and more
+recently at the Ministry of Forests’
+Saanich Seed Orchard, more
+people have been asking what
+the forest tree breeding and seed
+production program is about. The
+vandals apparently thought that the
+trees, gene archives, and seed
+orchards that they destroyed and
+damaged were genetically modified.
+But they were terribly mistaken.
+And as a result some of WFP’s
+reforestation efforts and research
+programs have been set back by
+as much as 5–7 years.
+What are the real facts?
+Tree breeding is not genetic
+modification. Breeding identifies
+and selects naturally-occurring
+characteristics from the genetic
+variation in natural forests. It does
+not introduce new genes or modify
+existing ones.
+In contrast, genetic engineering
+creates genetically-modified organ-
+isms (GMOs) by introducing foreign
+DNA into the natural genetic mate-
+rial of the product. No GMOs are
+used to reforest any Crown lands.
+WFP has been involved in
+programs to improve the quality of
+seedlings available for reforestation
+projects for more than 30 years.
+These include studies of disease
+and insect resistance, growth rate,
+stem form, and wood quality. Why?
+In all the species of interest to our
+company, there are high levels of
+variation in each of these traits in
+wild stands. The tree improvement
+programs for each species select
+numerous individual trees from
+across the landscape for
+breeding programs.
+In the early years of the pro-
+grams, foresters selected “plus
+trees” having good growth and
+form, which generally means they
+have good resistance to pests and
+diseases. Wood quality continues
+to be monitored in these selections.
+Selections of “plus trees” continue
+in species such as Sitka spruce,
+many of which have natural resist-
+ance to weevils, and in western
+white pine, which have natural
+resistance to blister rust.
+Further tree improvement pro-
+grams have helped solve problems
+like “in-breeding depression.” This
+is the result of the natural breeding
+strategy of conifers. Trees growing
+adjacent to one another are often
+closely related; they may result
+from seed produced by a single
+tree. Pollen from these adjacent
+trees has a much greater probabil-
+ity of reaching the cones of immedi-
+ate neighbours than of reaching
+and effectively pollinating cones
+on more distant trees. Though
+many species reject self-pollination
+through various means, once they
+detect a threshold of difference in
+neighbouring trees, pollination will
+proceed.
+Vandals Mistook Natural Selections for GMOs
+by Annette Van Niejenhuis, Tree Improvement and Research Coordinator, Saanich Forestry Centre
+Georgina Dampier, Forest Techni-
+cian, Sannich Forestry Centre
+Kathy Brown, Sannich Forestry Centre
+
+--- page 29 ---
+Environment Volume 3, Issue 2  •  Page 13
+The orchard system allows
+growers to choose individual trees
+that are different from each other
+and replicate them through grafting.
+Because near neighbours will have
+little chance of being near relatives,
+a well-designed orchard removes
+in-breeding depression. Not only is
+this a benefit in producing timber,
+but it also increases the number
+of seeds per cone in many cases.
+Where in-breeding is prevalent,
+seed yields, seed germination
+rates, and seedling performance
+are low.
+Only natural
+reproductive
+processes are
+used to produce
+seed in our or-
+chards. At no time
+in the history of
+the orchard trees
+have they been
+subject to genetic
+engineering or
+DNA tampering.
+Removing in-breeding depres-
+sion can be accomplished by
+simply selecting one tree at random
+from stands separated by a few
+thousand metres. However, to
+realize additional gains, we also
+consider the performance of the
+selected trees.
+For example, consider a hem-
+lock stand of one hectare where
+the mean annual increment is 10
+cubic metres a year. If 1,000 hem-
+lock were contributing to that
+annual increment, each tree con-
+tributes 1/1,000th of the volume.
+When you walk through the hem-
+lock stand, it becomes very appar-
+ent that some trees are contributing
+more than their share, while others
+are contributing less. Selecting the
+individual trees that produce more
+than their share and replicating
+them in the orchards through
+grafting leads to an orchard full
+of high-performing trees. Though
+not all the offspring of these high-
+performers will produce at this
+level, they will on average out-
+perform the progeny of trees that
+contribute less than their share to
+the mean annual increment of the
+stand. This is the premise underly-
+ing choosing trees for orchards.
+All selections included in the seed
+orchards are tested to confirm that
+they are truly “plus trees.”
+Where possible, seed for en-
+hanced regeneration of WFP’s
+managed forests comes from seed
+orchards. Regulations stipulate this
+as part of the Forest Practices Code.
+However, not all seedlings result
+from seed collected in seed or-
+chards. Seed transfer guidelines
+limit the area each orchard can
+serve. So an orchard developed for
+hemlock on Vancouver Island will
+not produce seed for regeneration
+on the north coast. And a redcedar
+orchard developed for low eleva-
+tions on Vancouver Island will not
+produce seed for use above 600m.
+Two species of significant
+interest to WFP that do not produce
+seed in orchards are balsam and
+cypress. We take wild seed collec-
+tions periodically to meet our needs
+in these species. WFP favours
+stecklings for enhanced regenera-
+tion of cypress. Research contin-
+ues in these species to determine
+a strategy to overcome the seed
+production obstacles.
+Tree breeding is
+not genetic modi-
+fication. Breeding
+identifies and
+selects naturally-
+occurring charac-
+teristics from the
+genetic variation
+in natural forests.
+It does not
+introduce new
+genes or modify
+existing ones.
+At the Saanich Forestry Centre
+and at our former Lost Lake Seed
+Orchard, seed crops are managed
+for western redcedar, western
+hemlock, Sitka spruce, and Doug-
+las-fir. Activities include grafting
+continued as Saanich, page 15
+WFP Public Forest Tours Are Back
+The North Island Forestry Centre, sponsored by WFP, Canfor,
+Weyerhaeuser, Interfor and TimberWest, is running free tours for the
+public in July and August. The weekday tours give us a chance to
+showcase our operations. Debbie Anderson, Manager of the Forestry
+Centre, says the tours show everything imaginable: “They meet the
+fallers, they’ll see clearcuts, they’ll see old growth and second growth,
+fertilizing. We show the good and the bad, and it’s a long day.” Plan to
+invite your family and friends to visit or take a tour. Bookings can be
+made by calling the Forestry Centre at (250) 956–3844.
+Don’t forget other sites of interest—call the Saanich Forestry Centre
+at (250) 652–4023 to arrange for a tour of their tree breeding and seed
+production programs. Tours are available to WFP personnel and con-
+tractors. Tours are also running at Gold River. Contact the Tourist Infor-
+mation Centre at (250) 283–2418 for more information.
+“
+“
+”
+”
+
+--- page 30 ---
+Page 14  •  Volume 3, Issue 2 Environment
+Western Pulp has two pulp
+mills, one located in Port Alice
+and one in Squamish, each of
+which produce two different prod-
+ucts. Port Alice is a dissolving mill
+and Squamish a Kraft mill. Dissolv-
+ing pulp is used in various specialty
+products from rayon fabric, explo-
+sives, and lacquers, to acetates.
+Kraft pulp, although it has some
+specialty applications, is mainly
+a commodity product, like lumber.
+The Squamish mill produces
+NBSK (Northern Bleached
+Softwood Kraft pulp). NBSK is
+considered a long fibre pulp and
+is valued for its strength. Paper-
+makers usually add 20 to 30% long
+fibre into their product for strength.
+These long fibres can be easily
+seen with the naked eye: take a
+piece of normal photocopy paper
+and tear it. Closely examine the
+torn edge. You will notice some
+fibres longer than others; these
+longer fibres are the softwood
+portion of the paper. NBSK
+fibres are normally around
+2.5 to 3mm long.
+The commodity market for
+NBSK is strong. Prices have risen
+from a low of $460 US/ton in March
+of 1999 to $670 US/ton in April of
+2000, a 45% price increase in
+about a year. It’s a big change from
+the 1990s, when there was only
+one strong year in 1995. Brian
+Fallows, Vice President of Market-
+ing at WP, has said, “The renewed
+strength in the pulp prices coupled
+with the major efforts to improve
+the environmental performance
+and achieve ISO certification are
+major marketing advantages for
+the Western Pulp products in the
+global marketplace.”
+The mill’s main markets are in
+Europe (35%) and the Pacific Rim
+(55%). With our unique location in
+Howe Sound (there are no roads
+or railroads to the mill), very little
+product is sent to North America.
+It’s cheaper to have deep-sea
+vessels arrive directly at the mill for
+loading, than transfer pulp to Van-
+couver for rail transportation within
+North America. All mill employees
+(plus equipment and supplies) must
+arrive to the mill by ferry each day.
+The Squamish mill first started
+in 1914, and has gone under
+several modifications since then.
+The mill went through a moderniza-
+tion project in 1986. It was de-
+signed to produce 623 tons/day.
+The mill is now averaging 795 tons/
+day, over 25% more than its design
+capacity. Small projects and proc-
+ess “de-bottlenecking” have
+achieved this gain. Production rate
+is one of the main measures of how
+a mill is performing. Says Dave
+Ingram, mill Manager, “I am very
+pleased at the hard work and
+dedication of our mill workers in
+pushing the performance of our
+mill—this is truly a major accom-
+plishment. Chart 1 shows how
+Squamish has increased its pro-
+duction year over year.
+Western Pulp Squamish Operation
+by Steve Sutherland, Manager, Technical Marketing, Western Pulp Squamish Operation
+Steve Sutherland worked for three
+years as Assistant Production
+Superintendent of the Woodfibre
+Mill before becoming the Technical
+and Environmental Manager in
+1996. Since 1999, he has worked
+as Manager of Technical Marketing.
+Chart 1  Squamish Production—Daily Average
+624
+671 675 675
+690
+700
+684
+712
+722
+704
+744 752
+761
+800
+600
+650
+700
+750
+800
+850
+1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000
+ytd
+Production tons/day
+Design
+
+--- page 31 ---
+Environment Volume 3, Issue 2  •  Page 15
+Saanich, continued from page 13
+and propagating orchard trees
+of known origin and rank, doing
+reproductive bud surveys to deter-
+mine the proportion of contribution
+of each individual to the seed yield,
+managing pollen to decrease in-
+breeding rates and increase the
+contribution of high-ranking indi-
+viduals to the crop, and seed
+harvesting. These are all traditional
+breeding practices; only natural
+reproductive processes are used
+to produce seed in our orchards.
+At no time in the history of the
+orchard trees have they been
+subject to genetic engineering or
+DNA tampering. Most of the genetic
+diversity of these species is cap-
+tured in the seed and breeding
+orchards. By selecting numerous
+“plus-trees” from across the range
+of these species, most genes are
+represented. As further selections
+take place among the original plus-
+trees, a few more genes may be
+removed from the seed orchards.
+However, with the number of re-
+serves established across the
+landscape, it is unlikely that any
+genes are being removed from the
+gene pool. All original selections
+have been replicated in gene banks
+around the province.
+All seed is registered with the
+Ministry of Forests and stored.
+The shelf life of each seed crop
+depends on the quality of the seed
+and the species. Seed of most
+species remains viable for years
+when stored under ideal conditions.
+Why not come and see for
+yourself? The Saanich Forestry
+Centre welcomes all WFP person-
+nel and contractors to visit our
+facilities on the Saanich Peninsula.
+Just give us a call beforehand
+at (250) 652–4023 to confirm that
+one of our staff can give you a tour.
+Squamish came under consid-
+erable environmental pressure in
+the 1980s and early ‘90s. With the
+mill rebuild in 1986 and a new
+secondary treatment plant installed
+in 1992, the mill’s environmental
+record has been excellent. The
+two charts below give an indication
+of how well the Squamish mill is
+performing environmentally. Chart
+2 shows the mill’s AOX (chlorinated
+compounds) discharge. The
+present level of only 0.5 kg/ton is
+well below the provincial regulation
+of 1.5 kg/ton. Chart 3 shows BOD,
+Biochemical Oxygen Demand.
+BOD gives an indication of how
+much oxygen the mill’s effluent
+will consume, thus competing with
+other organisms in the environment
+that require oxygen. The mill’s BOD
+discharge is 1.0 kg/ton, again well
+below the provincial regulation of
+7.5 kg/ton.
+Squamish mill achieved its ISO
+9000 certificate (quality standard)
+in 1993 and ISO 14001 in 1999.
+We’re very proud of both of these
+achievements. And with Kraft
+pulp prices rising and production
+high, we’re looking forward to
+a strong 2000.
+Chart 2  Squamish Mill AOX Discharge
+Chart 3  Squamish Mill BOD Discharge
+34 34
+29
+25
+20.9
+2.2 2 1.6 1.3 1.3 1.2 1
+0
+5
+10
+15
+20
+25
+30
+35
+40
+1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999
+BOD kg/ton
+Provincial Standard 7.5 kg/ton
+6.0
+4.5
+3.0
+2.5
+1.8 1.7 1.5 1.4
+1.0 0.9
+0.5 0.5
+0.0
+1.0
+2.0
+3.0
+4.0
+5.0
+6.0
+7.0
+1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999
+AOX kg/ton
+Provincial Standard 1.5 kg/ton
+
+--- page 32 ---
+Page 16  •  Volume 3, Issue 2 Environment
+A blessing ceremony performed
+last November by cultural leaders
+from the Mowachaht/Muchalaht
+First Nation marked the successful
+completion of a 4-year project to
+complete a new spawning channel
+near Gold River. Located at the
+mouth of Oktwanch River where
+it empties into Muchalaht Lake,
+this innovative groundwater-fed
+channel is giving new life to those
+Muchalaht Lake salmon popu-
+lations that use the Oktwanch River
+for spawning and rearing habitat.
+“This project will finally allow the
+Muchalaht Lake sockeye, coho,
+and chinook stock to rebuild,” said
+Bill Dumont, WFP Chief Forester.
+“While the salmon have years of
+recovery ahead of them, we are
+one very important step closer to
+returning stable spawning and
+rearing habitats to the watershed.”
+Then $300,000 spawning chan-
+nel was a WFP project, supported
+with Forest Renewal BC funding,
+started four years ago when the
+potential renewal of the Oktwanch
+River fish habitat was first exam-
+ined. The project was initiated by
+Canfor, then reassigned to WFP.
+Fisheries and Oceans Canada
+and Forest Renewal BC had recog-
+nized that the river’s fish habitat
+would benefit from a restoration
+project. However, further study
+showed that due to increased peak
+flows, reduced woody debris, and
+accelerated sediment delivery, the
+river would be unable to support
+large-scale salmon spawning for
+some time. Fisheries biologists
+from Fisheries and Oceans Canada
+and the Nuu-chah-nulth Tribal
+Council determined that a solution
+to saving the runs rested in enlarg-
+ing a small side channel to the west
+of the main river. This newly-
+enlarged channel, converted to a
+groundwater-fed system, provides
+stable spawning and rearing areas
+that are protected from the chang-
+ing dynamics of the river.
+The natural side channel that
+existed before the WFP work was
+of uncertain value. Juvenile coho
+salmon that over-wintered were
+generally dying as their rearing
+pools evaporated during the spring
+and summer months. In addition,
+the channel water exited via 2–3
+separate sub-channels at the lower
+end of the main channel. These
+exits often dried up during the
+summer and early autumn months,
+preventing juvenile salmon from
+entering and exiting the lake. Much
+work was needed on the channel
+to ensure survival of eggs and fry.
+Site work began during the
+spring of 1998, and was completed
+in August 1999. In total, 28 people
+worked on the project, including
+contractors, members of the
+Mowachaht/Muchalaht First Nation,
+Fisheries and Oceans Canada, the
+BC Ministry of Lands, Environment
+and Parks, and WFP staff.
+Work began by excavating the
+channel bed down to 1m below the
+groundwater table in summer,
+when water levels were lowest.
+This ensured year-round water flow
+for both spawning and rearing. In
+addition, digging the mouth of the
+new channel low enough to exist
+directly into the lake in all seasons
+ensured access between channel
+and lake. The lower sub-channels
+were cleared and access to old
+beaver ponds nearby secured for
+summer and juvenile rearing areas.
+The bulk of the channel work
+was carried out before spawning
+was due to start in July and August.
+The 1.4 km-long spawning
+channel incorporates the newest
+fish habitat management tech-
+niques and research. It mimics a
+natural stream by providing calm
+rearing areas for fry, log and root
+tangles where fish can hide from
+predators, and graveled areas for
+spawning. Ferns, salmon berry,
+maple, and alder will provide cover-
+age on the banks, and assist with
+restricting access to the stream
+by large animals and people.
+The long, raised berm protects
+the channel from the nearby river.
+Other fish habitat improvements
+proposed for the Oktwanch River
+include gravel bar stabilization,
+another spawning channel project
+on the opposite valley wall, force
+pools, and large woody debris
+cover in the main river. It is ex-
+pected that the river’s main fish
+spawning and rearing zones will
+gradually recover.
+The Oktwanch channel will be
+used primarily by sockeye, coho
+and chinook salmon, and may
+also assist cutthroat trout and Dolly
+Varden char. Oktwanch comes from
+the Nuu-chah-nulth word Okwasht,
+which means “smoking salmon.”
+Forest Renewal BC chair Roger
+Stanyer has pointed out that since
+1994, Forest Renewal has invested
+almost $350 million to restore
+watersheds across BC. “Assess-
+ments have been completed in
+860 watersheds. Restoration efforts
+have been completed in 150 water-
+sheds, and some restoration has
+been done in 320 watersheds.
+This significant restoration effort
+is generating employment in local
+communities, supporting water
+quality, and protecting fish species.”
+Oktwanch Spawning Channel Open
+after Completion of 4-Year Project

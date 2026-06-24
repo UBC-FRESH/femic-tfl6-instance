@@ -21,8 +21,25 @@ Local reference already added:
 
 - `data/source/nicf_fsp/reference/tfl_6_management_plan_10_information_package_2011.pdf`
 
-The management-plan PDF still needs a local source copy and checksum before
-recipe extraction work begins.
+Indexed local reference corpus:
+
+- corpus index: `reference/tfl6_reference_index.json`
+- corpus summary: `reference/tfl6_reference_index.md`
+- extracted searchable text: `reference/extracted_text/`
+
+The local corpus index covers 18 locally copied TFL 6 reference files from the
+Province of British Columbia TFL 6 page: 17 PDFs and one PNG. Document families
+include the Chief Forester AAC rationale, licence maps, an instrument, annual
+reports, Management Plan 9 and appendices, Management Plan 10, the Management
+Plan 10 timber supply analysis report, and the Management Plan 10 information
+package.
+
+Each indexed document records repo-relative path, bytes, SHA-256, source page,
+page count or image dimensions, extracted-text path where applicable,
+document-family classification, candidate dates/titles, keyword counts, content
+flags, and page-level text excerpts. This satisfies the P1.7a local source-copy
+and verification prerequisite for later reviewed source-layer and THLB
+extraction work.
 
 ## FEMIC Workflow Pattern
 

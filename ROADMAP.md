@@ -2,7 +2,7 @@
 
 ## Phase 1: Bootstrap Repository and Build Plan (`#4`)
 
-- [x] P1.1 Create the standalone `femic-nicffsp-instance` repository scaffold.
+- [x] P1.1 Create the standalone `femic-tfl6-instance` repository scaffold.
   - [x] P1.1a Initialize the FEMIC instance skeleton.
   - [x] P1.1b Add modelwright-style workflow surfaces:
     `AGENTS.md`, `ROADMAP.md`, `CHANGE_LOG.md`, and `planning/`.
@@ -55,8 +55,8 @@
     original FDU 1/2/3 AOI as superseded for active model extraction.
 - [ ] P1.7 Plan TFL 6 source-layer and THLB netdown recipes from 2011 documents
   (`#7`).
-  - [ ] P1.7a Add/verify local source copies of the TFL 6 Management Plan 10 and
-    information package PDFs.
+  - [x] P1.7a Add/verify local source copies of the TFL 6 Management Plan 10 and
+    information package PDFs, plus the broader TFL 6 reference corpus index.
   - [ ] P1.7b Review the 2011 documents for land-base, source-layer, yield, and
     THLB netdown assumptions.
   - [ ] P1.7c Separate TSA29 workflow carry-forward assumptions from

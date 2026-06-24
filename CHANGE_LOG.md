@@ -241,3 +241,20 @@
   and valid geometries after repairing one source ring self-intersection; and
 - switched `config/run_profile.nicffsp.yaml` to the accepted TFL 6 boundary
   path and marked `P1.6a` complete.
+
+## 2026-06-23 - Indexed the TFL 6 reference corpus
+
+- added the locally copied TFL 6 reference corpus under `reference/`;
+- generated `reference/tfl6_reference_index.json` and
+  `reference/tfl6_reference_index.md`;
+- extracted searchable text for all readable PDFs under
+  `reference/extracted_text/`;
+- indexed 18 files: 17 PDFs and one image, including AAC rationale, licence
+  maps, instrument, annual reports, Management Plan 9/10 files, analysis report,
+  and information package documents; and
+- marked `P1.7a` complete.
+
+## 2026-06-23 - Prepared the instance rename to femic-tfl6-instance
+
+- updated visible instance naming in README, quickstart, AGENTS, roadmap, and
+  generated corpus metadata ahead of the GitHub/local submodule rename.

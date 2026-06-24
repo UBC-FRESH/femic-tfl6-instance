@@ -1,0 +1,1221 @@
+--- page 1 ---
+BRITISH COLUMBIA 
+MINISTRY OF FORESTS, LANDS AND NATURAL 
+RESOURCE OPERATIONS 
+Tree Farm Licence 6 
+held by 
+Western Forest Products Inc. 
+Rationale for  
+Allowable Annual Cut (AAC)  
+Determination 
+Effective February 10, 2012 
+Jim Snetsinger RPF 
+Chief Forester 
+
+--- page 2 ---
+AAC Rationale for TFL 6, February, 2012 
+i 
+ 
+Table of Contents 
+Objective of this document ............................................................................................................... 1 
+Statutory framework ......................................................................................................................... 1 
+Description of the TFL ..................................................................................................................... 1 
+History of the AAC .......................................................................................................................... 1 
+New AAC determination .................................................................................................................. 2 
+Information sources used in the AAC determination ....................................................................... 2 
+Role and limitations of the technical information used .................................................................... 5 
+Guiding principles for AAC determinations .................................................................................... 5 
+The role of the base case .................................................................................................................. 7 
+Timber supply analysis ..................................................................................................................... 8 
+Consideration of factors as required by Section 8 of the Forest Act ................................................ 9 
+Factors requiring additional explanatory consideration ........................................................... 10 
+Factors considered under Section 8(8)(a)(i) ............................................................................. 10 
+- land base contributing to timber harvesting .................................................................................. 10 
+Factors considered under Section 8(8)(a)(ii) ........................................................................... 11 
+Factors considered under Section 8(8)(a)(iii) .......................................................................... 11 
+- fertilization .................................................................................................................................... 11 
+- genetic gain ................................................................................................................................... 12 
+- silvicultural systems ...................................................................................................................... 13 
+Factors considered under Section 8(8)(a)(iv) ........................................................................... 13 
+- coast log grades ............................................................................................................................. 13 
+Factors considered under Section 8(8)(a)(v) ............................................................................ 14 
+- visual resource emphasis............................................................................................................... 14 
+Factors considered under Section 8(8)(a)(vi) ........................................................................... 14 
+- First Nations considerations .......................................................................................................... 14 
+- licence AAC and actual harvest performance ............................................................................... 17 
+- alternative harvest flows ............................................................................................................... 17 
+Factors considered under Section 8(8)(d) ................................................................................ 18 
+.- Minister‘s letter ............................................................................................................................ 18 
+- local objectives ............................................................................................................................. 19 
+Factors considered under Section 8(8)(e) ................................................................................ 19 
+Reasons for Decision ...................................................................................................................... 19 
+Determination ................................................................................................................................. 20 
+Implementation ............................................................................................................................... 21 
+
+--- page 3 ---
+AAC Rationale for TFL 6, February, 2012 
+ii 
+ 
+Appendix 1:  Section 8 of the Forest Act ....................................................................................... 22 
+Appendix 2: Section 4 of the Ministry of Forests and Range Act .................................................. 26 
+Appendix 3: Minister‘s letter of July 4, 2006 ................................................................................. 27 
+List of Tables 
+Table 1. List of accepted factors. ............................................................................................... 9 
+ 
+
+--- page 4 ---
+AAC Rationale for TFL 6, February 2012 
+1 
+ 
+Objective of this document 
+This document provides an accounting of the factors I have considered and the rationale I have 
+employed in making my determination, under Section 8 of the Forest Act, of the allowable 
+annual cut (AAC) for Tree Farm Licence 6 (TFL 6).  This document also identifies where new or 
+better information is needed for incorporation in future determinations. 
+Statutory framework 
+Section 8 of the Forest Act requires the chief forester to consider a number of specified factors in 
+determining AACs for timber supply areas (TSAs) and Tree Farm Licences (TFLs).  Section 8 of 
+the Act is reproduced in full as Appendix 1 of this document. 
+Description of the TFL 
+TFL 6, held by Western Forest Products Inc. (WFP, ―the licensee‖), is located on northern 
+Vancouver Island in the vicinity of Quatsino Sound.  It falls within the West Coast Region of the 
+Ministry of Forests, Lands, and Natural Resource Operations (FLNR), and is administered from 
+the North Island–Central Coast District.  It is bordered by TFL 39 on the southeast, by Cape Scott 
+Provincial Park on the northwest, by the Pacific TSA on the west, and by the Kingcome TSA in 
+other areas. 
+TFL 6 encompasses 171 441 hectares of varied terrain, ranging from steep mountains in central 
+and inland portions to gentle rolling hills in eastern and western portions.  Productive forest 
+covers 147 059 hectares (about 86 percent) of the TFL, whereas brush and wet sites occupy most 
+of the remaining 24 382 hectares.  In the base case of the timber supply analysis, 106 319 hectares 
+(about 72 percent) of the total productive land base were estimated to be available for timber 
+harvesting in the long term.  Overall, about 63 percent of the total TFL 6 area contributes to the 
+long-term timber harvesting land base (THLB) assumed in the analysis. 
+The majority of the operable forest area lies within the Coastal Western Hemlock biogeoclimatic 
+zone.  The forests are primarily composed of western hemlock, western redcedar, and amabilis 
+fir; with lesser amounts of Sitka spruce, Douglas-fir, yellow-cedar, red alder, and shore pine.  
+TFL 6 provides habitat for numerous wildlife species including small mammals, birds, 
+amphibians, and fish; and large mammals such as black bears, black-tailed deer, Roosevelt elk 
+and cougars.  Several of its rivers and creeks support important runs of salmon. 
+The principal communities near or within the TFL are Port Hardy, Port McNeill, and Port Alice.  
+Also present within the TFL are the smaller communities of Holberg, Winter Harbour, and 
+Coal Harbour.  The economies of these communities are highly dependent on resource-based 
+industries including: forestry, aquaculture, tourism, and commercial and recreational fishing. 
+TFL 6 falls within the traditional territories of the following First Nations: the Kwakiutl 
+First Nation, the Mamalilikulla–Qwe‘Qwa‘Sot‘Em First Nation, the‘Namgis First Nation, the 
+Quatsino First Nation, and the Tlatlasikwala First Nation. 
+History of the AAC 
+The last AAC for TFL 6 was determined in 2001 at 1 460 000 cubic metres.  It was subsequently 
+reduced by 116 800 cubic metres (eight percent) in 2007 to account for the deletion of all the 
+
+--- page 5 ---
+AAC Rationale for TFL 6, February, 2012 
+2 
+ 
+private land in TFL 6.  Following this deletion, also in 2007, the AAC determination was 
+postponed under Section 8(3.1) of the Forest Act. 
+In 2001, 1 446 758 cubic metres of the AAC was available to the licensee; while the Small 
+Business Forest Enterprise Program (SBFEP) was entitled to 13 242 cubic metres.  With the 
+enactment of the Forestry Revitalization Act in 2003, 20 percent of the AAC of major 
+licensees, such as WFP, was reallocated to others, including: BC Timber Sales (BCTS, the 
+successor to the SBFEP), First Nations, and small tenures such as Community Forest Agreements 
+and Woodlot Licences.  For TFL 6 the effect was the reallocation of 86 000 cubic metres from 
+WFP to others: 69 422 cubic metres to BCTS (for a new total of 82 664 cubic metres), 
+11 578 cubic metres to First Nations, and 5000 cubic metres to a Community Forest Agreement. 
+In 2009 the Pacific TSA was created by deleting areas from TFLs, including TFL 6, and adding 
+them to the newly created TSA.  As a result of the area deletion from TFL 6, under the Allowable 
+Annual Cut Administration Regulation, the AAC for TFL 6 was reduced by the volume allocated 
+to BCTS.  This volume was added to the AAC of the Pacific TSA.  There was, however, no legal 
+mechanism other than Section 8 of the Forest Act for adjusting the TFL 6 AAC, when the 
+Community Forest Agreement with the North Island Community Forest Limited Partnership 
+(―North Island CFA‖) area, with an AAC of 5000 cubic metres, was deleted.  As a result, the 
+AAC in effect immediately before this determination was 1 260 536 cubic metres.  I will account 
+for the deletion of the North Island CFA in this determination.  Areas for the First Nations 
+allocation of 11 578 cubic metres also remain to be identified within TFL 6, and until these areas 
+are identified and deleted from the TFL, the volume assigned to First Nations will form a part of 
+the AAC I have hereby determined. 
+New AAC determination 
+Effective February 10, 2012, the new AAC for TFL 6 will be 1 160 000 cubic metres, which is 
+eight percent less than the current AAC.  This AAC will remain in effect until a new AAC is 
+determined, which must take place within 10 years of this determination. 
+Information sources used in the AAC determination 
+Information considered in determining the AAC for TFL 6 includes the following: 
+ Tree Farm Licence 6 Timber Supply Analysis Information Package, in Preparation of 
+Management Plan 10–Version 2 (final); submitted February 2011 by WFP, accepted 
+March 3, 2011 by FLNR Forest Analysis and Inventory Branch; 
+ Existing Stand Yields, submitted October 2010 by WFP; accepted March 3, 2011 by 
+FLNR Forest Analysis and Inventory Branch; 
+ Managed stand yields/site index, submitted October 2010 by WFP; accepted January 19, 
+2011 by FLNR Forest Analysis and Inventory Branch; 
+ Tree Farm Licence 6 Timber Supply Analysis, Management Plan 10–Version 1, 
+submitted May 2011 by WFP, accepted August 30, 2011by FLNR Forest Analysis and 
+Inventory Branch; 
+ Tree Farm Licence 6 Draft Management Plan 10, Version 1, submitted by WFP 
+May 2011; 
+ Updated Procedures for Meeting Legal Obligations When Consulting First Nations – 
+Interim; Province of British Columbia; May 7, 2010; 
+
+--- page 6 ---
+AAC Rationale for TFL 6, February, 2012 
+3 
+ 
+ Consultation Record for the Proposed Approval of Management Plan #10 and Annual 
+Allowable Cut Determination for Tree Farm Licence 6 held by Western Forest Products 
+Inc. within the North Island–Central Coast Resource District, November 15, 2011, 
+FLNR; 
+ Summary of public input solicited by the licensee regarding Tree Farm Licence 6 Draft 
+Management Plan 10, Version 1; 
+ Western Forest Strategy: A Program for Conserving Biodiversity on Company Tenures, 
+September 2007, WFP; 
+ Tree Farm Licence 6, Tree Farm Licence 39 Block 4, and Tree Farm Licence 37 
+Watershed Management Strategies, October 29, 2007, WFP; 
+ Forest Stewardship Plan—North Vancouver Island Region Forest Operations of Western 
+Forest Products Inc., May 22, 2007, WFP; 
+ Growth and foliar nutrition of juvenile western hemlock and western redcedar plantations 
+on low- and medium-productivity sites on northern Vancouver Island: response to 
+fertilization and planting density; 2007; R.W Negrave, C.E. Prescott and J.E. Barker; 
+Canadian Journal of Forest Research 37(12), pages 2587-2599; 
+ Salal–Cedar–Hemlock Integrated Research Program—Research Update #2: Silvicultural 
+Practices for Regeneration of Cedar–Hemlock Sites in Coastal British Columbia, 
+March 2002, Faculty of Forestry, University of British Columbia; 
+ Increases in tree growth and nutrient supply still apparent 10 to 13 years following 
+fertilization and vegetation control of salal-dominated cedar-hemlock stands on 
+Vancouver Island; 2003; J.N. Bennett, L.L. Blevins, J.E. Barker, D.P. Blevins and 
+C.E. Prescott; Canadian Journal of Forest Research 33(8), pages 1516-1524; 
+ Summary of Dead Potential Volume Estimates for Management Units within the Coastal 
+Forest Region.  Ministry of Forests and Range.  March 2006; 
+ Procedures for Factoring Visual Resources into Timber Supply Analyses, BC Ministry of 
+Forests, 1998; 
+ Landscape Unit Planning Guide, March 1999, Province of BC; 
+ Vancouver Island Summary Land Use Plan, February 2000, Province of BC; 
+ Vancouver Island Land Use Plan Higher Level Plan Order, Effective December 2000, 
+Province of BC; 
+ Identified Wildlife Management Strategy—Accounts and Measures for Managing 
+Identified Wildlife, Version 2004, Province of BC; 
+ Notice—Indicators of the Amount, Distribution and Attributes of Wildlife Habitat 
+Required for the Survival of Species at Risk in the North Island–Central Coast Forest 
+District, March 2, 2006, BC Ministry of Environment; 
+ Order Establishing Provincial Non-Spatial Old Growth Objectives, June 30, 2004, 
+BC Ministry of Sustainable Resource Management; 
+ Order to Establish a Landscape Unit and Objectives—San Josef Landscape Unit, 
+effective January 26, 2005, BC Ministry of Sustainable Resource Management; 
+ Order—Fisheries Sensitive Watersheds—Vancouver Island, effective December 28, 
+2005, BC Ministry of Environment; 
+ Order to Identify Karst Features for the North Island–Central Coast Forest District, 
+effective March 29, 2007, BC Ministry of Forests and Range; 
+
+--- page 7 ---
+AAC Rationale for TFL 6, February, 2012 
+4 
+ 
+ Keogh Landscape Unit—Draft Summary Biodiversity Report with Proposed Legal 
+Objectives, March 15, 2010, WFP; 
+ Holberg Landscape Unit—Draft Summary Biodiversity Report with Proposed Legal 
+Objectives, March 15, 2010, WFP; 
+ Neroutsos Landscape Unit—Draft Summary Biodiversity Report with Proposed Legal 
+Objectives, March 15, 2010, WFP; 
+ Mahatta Landscape Unit: WFP Tenures—Draft Summary Biodiversity Report with 
+Proposed Legal Objectives, March 15, 2010, WFP; 
+ Ministerial Order—Land Use Objectives for Old Growth Management Areas (OGMAs) 
+within the Nahwitti, Tsulquate and Marble Landscape Units situated on northern 
+Vancouver Island within the North Island–Central Coast Forest District, July 26, 2010, 
+BC Ministry of Agriculture and Lands; 
+ Order to Establish Visual Quality Objectives for Tree Farm Licence 6 and Block 7 of the 
+Pacific TSA within the North Island Central Coast Forest District, September 24, 2010, 
+BC Ministry of Forests and Range; 
+ Approved Wildlife Habitat Areas, BC Ministry of Environment, available online at 
+http://www.env.gov.bc.ca/wld/frpa/iwms/wha.html; 
+ Approved Ungulate Winter Ranges, BC Ministry of Environment, available online at 
+http://www.env.gov.bc.ca/wld/frpa/uwr/approved_uwr.html; 
+ Community Watersheds Query, BC Ministry of Environment, available online at 
+http://www.env.gov.bc.ca/wsd/data_searches/comm_watersheds/index.html 
+ Tree Farm Licence 6, Instrument 84, March 6, 2002; 
+ Tree Farm Licence 6, Instrument 88, June 15, 2001; 
+ Tree Farm Licence 6, Instrument 90, July 23, 2004; 
+ Tree Farm Licence 6, Instrument 92, July 23, 2004; 
+ Tree Farm Licence 6, Instrument 94, January 31, 2007; 
+ Tree Farm Licence 6, Instrument 97, July 15, 2009; 
+ Forestry Revitalization Act Order No. 3(4) 7-3, January 19, 2010, BC Ministry of Forests, 
+Mines and Lands; 
+ Sustainable Forest Management Plan (SFMP) — North Vancouver Island¸ last revised 
+December 2010, WFP; 
+ Forest Practices Code of British Columbia Act current to March 17, 2010, and 
+regulations and guidebooks; 
+ Ministry of Forests and Range Act; 
+ Forest Act and regulations, current to January 25, 2012; 
+ Forest and Range Practices Act and regulations, current to January 25, 2012; 
+ Forestry Revitalization Act, current to January 25, 2012; 
+ Heritage Conservation Act, current to January 25, 2012; 
+ TFL 6 Management Plan No. 9, May 2001, WFP; 
+ Tree Farm Licence 6 Rationale for Allowable Annual Cut (AAC)Determination, 
+Effective September 1, 2001, BC Ministry of Forests; 
+
+--- page 8 ---
+AAC Rationale for TFL 6, February, 2012 
+5 
+ 
+ Chief Forester Order Respecting an AAC Determination for Tree Farm Licence No. 6, 
+June 14, 2007, BC Ministry of Forests and Range; 
+ Letter from the Minister to the Chief Forester re: Economic and Social Objectives of the 
+Crown, July 4, 2006 (Appendix 3); and 
+ Technical review and evaluation of information and current operating conditions through 
+comprehensive discussions with FLNR staff, including the AAC determination meeting 
+held in Victoria on December 8, 2011 and subsequent dialogue with staff. 
+Role and limitations of the technical information used 
+Section 8 of the Forest Act requires the chief forester, in determining AACs, to consider 
+biophysical, social and economic information.  Most of the technical information used in 
+determinations is in the form of a timber supply analysis and its inputs of inventory and growth 
+and yield data.  These are concerned primarily with biophysical factors, such as the rate of timber 
+growth and the definition of the land base considered available for timber harvesting; and with 
+management practices. 
+The analytical techniques used to assess timber supply necessarily are simplifications of the real 
+world.  Many of the factors used as inputs to timber supply analysis are uncertain, due in part to 
+variation in physical, biological, and social conditions.  Ongoing scientific studies of ecological 
+dynamics will help reduce some of this uncertainty. 
+Furthermore, computer models cannot incorporate all of the social, cultural, and economic factors 
+that are relevant when making forest management decisions.  Technical information and analysis, 
+therefore, do not necessarily provide the complete answers or solutions to forest management 
+decisions such as AAC determinations.  Such information does provide valuable insight into 
+potential impacts of different resource-use assumptions and actions, and thus forms an important 
+component of the information I must consider in AAC determinations. 
+In determining this AAC for TFL 6, I have considered known limitations of the technical 
+information provided.  I am satisfied that the information provides a suitable basis for my 
+determination. 
+Guiding principles for AAC determinations 
+Rapid changes in social values and in the understanding and management of complex forest 
+ecosystems mean there is always uncertainty in the information used in AAC determinations.  
+In making the large number of periodic determinations required for British Columbia‘s many 
+forest management units, administrative fairness requires a reasonable degree of consistency of 
+approach in incorporating these changes and uncertainties.  To make my approach in these 
+matters explicit, I have set out the following body of guiding principles.  In any specific 
+circumstance where I may consider it necessary to deviate from these principles, I will explain 
+my reasoning in detail. 
+Two important ways of dealing with uncertainty are: 
+(i) minimizing risk, in respect of which in making AAC determinations I consider particular 
+uncertainties associated with the information before me and attempt to assess and address 
+the various potential current and future, social, economic and environmental risks associated 
+with a range of possible AACs; and 
+(ii) redetermining AACs frequently, in cases where projections of short-term timber supply are 
+not stable, to ensure they incorporate current information and knowledge. 
+
+--- page 9 ---
+AAC Rationale for TFL 6, February, 2012 
+6 
+ 
+In considering the various factors that Section 8 of the Forest Act requires the chief forester to 
+take into account in determining AACs, I intend to reflect, as closely as possible, those forest 
+management factors that are a reasonable extrapolation from current practices.  It is not 
+appropriate to base my decision on unsupported speculation with respect to factors that could 
+affect the timber supply that are not substantiated by demonstrated performance or are beyond 
+current legal requirements. 
+In many areas, the timber supply implications of some legislative provisions remain uncertain, 
+particularly when considered in combination with other factors.  In each AAC determination 
+I take this uncertainty into account to the extent possible in context of the best available 
+information. 
+It is my practice not to speculate on timber supply impacts that may eventually result from 
+land-use decisions not yet finalized by government.  However, where specific protected areas, 
+conservancies, or similar areas have been designated by legislation or by order in council, these 
+areas are deducted from the timber harvesting land base and are not considered to contribute any 
+harvestable volume to the timber supply in AAC determinations, although they may contribute 
+indirectly by providing forest cover to help in meeting resource management objectives such as 
+for biodiversity. 
+In some cases, even when government has made a formal land-use decision, it is not necessarily 
+possible to fully analyse and account for the consequent timber supply impacts in a current AAC 
+determination.  Many government land-use decisions must be followed by detailed 
+implementation decisions requiring, for instance, further detailed planning or legal designations 
+such as those provided for under the Land Act and the Forest and Range Practices Act (FRPA).  
+In cases where there is a clear intent by government to implement these decisions that have not 
+yet been finalized, I will consider information that is relevant to the decision in a manner that is 
+appropriate to the circumstance.  The requirement for regular AAC reviews will ensure that future 
+determinations address ongoing plan-implementation decisions. 
+Where appropriate I will consider information on the types and extent of planned and 
+implemented silviculture practices as well as relevant scientific, empirical and analytical evidence 
+on the likely magnitude and timing of their timber supply effects. 
+Some persons have suggested that, given the large uncertainties present with respect to much of 
+the data in AAC determinations, any adjustments in AAC should wait until better data are 
+available.  I agree that some data are incomplete, but this will always be true where information is 
+constantly evolving and management issues are changing.  The requirement for regular AAC 
+reviews will ensure that future determinations incorporate improved information. 
+Others have suggested that, in view of data uncertainties, I should immediately reduce some 
+AACs in the interest of caution.  However, any AAC determination I make must be the result of 
+applying my judgment to the available information, taking any uncertainties into account.  Given 
+the large impacts that AAC determinations can have on communities, no responsible AAC 
+determination can be made solely on the basis of a response to uncertainty.  Nevertheless, in 
+making my determination, I may need to make allowances for risks that arise because of 
+uncertainty. 
+With respect to First Nations‘ issues, I am aware of the Crown‘s legal obligation resulting from 
+recent court decisions to consult with First Nations regarding asserted rights and title (aboriginal 
+interests) in a manner proportional to the strength of their aboriginal interests and the degree to 
+which the decision may impact these interests.  In this regard, I will consider the information 
+provided to First Nations to explain the timber supply review (TSR) process and any information 
+brought forward respecting First Nations‘ aboriginal interests including how these interests may 
+
+--- page 10 ---
+AAC Rationale for TFL 6, February, 2012 
+7 
+ 
+be impacted, and any operational plans and actions that describe forest practices to address 
+First Nations‘ interests, before I make my decision.  As I am able, within the scope of my 
+authority under Section 8 of the Forest Act, where appropriate I will seek to address aboriginal 
+interests that will be impacted by my decision.  When aboriginal interests are raised that are 
+outside my jurisdiction, I will endeavour to forward these interests for consideration by 
+appropriate decision makers.  Specific concerns identified by First Nations in relation to 
+their aboriginal interests within the TFL are addressed in various sections of this rationale. 
+The AAC that I determine should not be construed as limiting the Crown‘s obligations under 
+court decisions in any way, and in this respect it should be noted that my determination does not 
+prescribe a particular plan of harvesting activity within TFL 6.  It is also independent of any 
+decisions by the Minister of Forests, Lands and Natural Resource Operations with respect to 
+subsequent allocation of wood supply. 
+Overall, in making AAC determinations, I am mindful of my obligation as a steward of the 
+forested land of British Columbia, of the mandate of the Ministry of Forests, Lands and Natural 
+Resource Operations (formerly the Ministry of Forests and Range) as set out in Section 4 of the 
+Ministry of Forests and Range Act, and of my responsibilities under the Forest and Range 
+Practices Act (FRPA). 
+The role of the base case 
+In considering the factors required under Section 8 of the Forest Act to be addressed in AAC 
+determinations, I am assisted by timber supply forecasts provided to me through the work of the 
+Timber Supply Review Program for TSAs and TFLs. 
+For most AAC determinations, a timber supply analysis is carried out using an information 
+package including data and information from three categories: land base inventory, timber growth 
+and yield, and management practices.  Using this set of data and a computer model, a series of 
+timber supply forecasts can be produced to reflect different starting harvest levels, rates of decline 
+or increase, and potential trade-offs between short- and long-term harvest levels. 
+From a range of possible forecasts, one is chosen in which an attempt is made to avoid both 
+excessive changes from decade to decade and significant timber shortages in the future, while 
+ensuring the long-term productivity of forest lands.  This is known as the ―base case‖ forecast and 
+forms the basis for comparison when assessing the effects of uncertainty on timber supply.  The 
+base case is designed to reflect current management practices. 
+Because it represents only one in a number of theoretical forecasts, and because it incorporates 
+information about which there may be some uncertainty, the base case forecast is not an 
+AAC recommendation.  Rather, it is one possible forecast of timber supply, whose validity – as 
+with all the other forecasts provided – depends on the validity of the data and assumptions 
+incorporated into the computer model used to generate it. 
+Therefore, much of what follows in the considerations outlined below is an examination of the 
+degree to which all the assumptions made in generating the base case forecast are realistic and 
+current, and the degree to which resulting predictions of timber supply must be adjusted to more 
+properly reflect the current and foreseeable situation. 
+These adjustments are made on the basis of informed judgment using currently available 
+information about forest management, and that information may well have changed since the 
+original information package was assembled.  Forest management data are particularly subject to 
+change during periods of legislative or regulatory change, or during the implementation of new 
+policies, procedures, guidelines or plans. 
+
+--- page 11 ---
+AAC Rationale for TFL 6, February, 2012 
+8 
+ 
+Thus, in reviewing the considerations that lead to the AAC determination, it is important to 
+remember that the AAC determination itself is not simply a calculation.  Even though the timber 
+supply analysis I am provided is integral to those considerations, the AAC determination is a 
+synthesis of judgment and analysis in which numerous risks and uncertainties are weighed.  
+Depending upon the outcome of these considerations, the AAC determined may or may not 
+coincide with the base case forecast.  Judgments that in part may be based on uncertain 
+information are essentially qualitative in nature and, as such, are subject to an element of risk.  
+Consequently, once an AAC has been determined, no additional precision or validation would be 
+gained by attempting a computer analysis of the combined considerations. 
+Timber supply analysis 
+The May 2011 timber supply analysis for TFL 6 (referred to below as the ―timber supply 
+analysis‖ or just the ―analysis‖) was prepared by licensee staff using the Remsoft Spatial Planning 
+System.  The non-spatial component of the Spatial Planning System suite, Woodstock, was used 
+to prepare the harvest forecasts in the analysis.  Woodstock may be used either in optimization or 
+sequential simulation mode, and for this analysis the optimization mode was used.  The forecasts 
+from this timber supply model were reviewed by FLNR staff who advised me about the function 
+of this model, and any associated implications with the harvest projections. 
+Based on the review by staff and my previous experience reviewing the results of this model, 
+I am satisfied that the Spatial Planning System is capable of providing a reasonable projection of 
+timber supply. 
+The harvest flow objectives for the base case included (1) achieving the long-term harvest 
+potential; (2) minimizing the rate of change in harvest flow during the transition from the current 
+level to the level that is sustainable in the mid-term and the long term; and (3) maximizing 
+harvest volume over the entire 250-year analysis period subject to maintaining a growing stock on 
+the THLB that was operable with conventional equipment and was relatively stable over the final 
+100 years.  The latter objective was not applied to the growing stock classified as being 
+harvestable only by helicopter, as a separate constraint was applied to that portion of the 
+landscape limiting it to producing a maximum of 12 000 cubic metres per year, or approximately 
+one percent of the total harvest.  In order to reflect current and projected future levels of 
+harvesting second growth on the TFL, in the model the licensee initially targeted 20 percent of 
+the total harvest in second-growth stands and increased the proportion until the transition to 
+harvesting second-growth stands was largely complete. 
+In the base case, the harvest level for the first decade was 1 160 000 cubic metres per year, which 
+is eight percent less than the current AAC.  The harvest then declined by five percent per decade 
+through the year 2048, reaching a low of 943 500 cubic metres per year from 2049 to 2078.  
+After that, the harvest rose over the next two decades to the sustainable long-term level of 
+1 060 700 cubic metres per year, which was maintained for the remainder of the analysis period. 
+The TFL 6 area contributing to the base case excluded all the areas deleted since the last 
+determination in 2001.  The area covered by the North Island Community Forest Agreement was 
+also excluded.  As I mentioned above under ‗History of the AAC’, no area has yet been identified 
+for First Nations to account for the AAC of 11 578 cubic metres assigned to First Nations. 
+The base case forecast thus projected a mid-term dip in timber supply.  Analysis of stand types in 
+the model showed the dip to occur during the transition from natural second-growth stands to 
+managed stands with higher volumes.  Harvest levels from stands harvestable only by helicopter 
+stayed at approximately 12 000 cubic metres per year throughout the analysis period. 
+
+--- page 12 ---
+AAC Rationale for TFL 6, February, 2012 
+9 
+ 
+In addition to the base case, the 2011 timber supply analysis report also includes a number of 
+sensitivity analyses conducted to assess the potential implications for timber supply arising from 
+uncertainty in data assumptions and estimates.  All of these sensitivity analyses have been of 
+assistance to me in considering the factors leading to my determination. 
+I have reviewed in detail the assumptions and methodology incorporated in the base case as well 
+as the model output including growing stock projections and age class distributions over time; 
+average age, area, and volume harvested annually; and other factors as described in my 
+considerations below.  For this determination I am satisfied that the base case harvest forecast and 
+the sensitivity analyses have provided suitable bases for my assessment of the timber supply for 
+TFL 6. 
+Consideration of factors as required by Section 8 of the Forest Act 
+I have reviewed the information for all of the factors I am required to consider under Section 8 of 
+the Forest Act.  Where I have concluded that the modelling of a factor in the base case 
+appropriately represents current management or the best available information, and where 
+uncertainties about the factor have little influence on the timber supply projected in the base case, 
+I have included no discussion in this rationale.  These factors are listed in Table 1. 
+Table 1. List of accepted factors. 
+Forest Act section and description Factors accepted as modelled 
+8(8)(a)(i) Composition of the forest and its expected 
+rate of growth 
+Forest cover inventory 
+Non-forest 
+Non-productive forests 
+Roads, trails and landings 
+Inoperable and inaccessible areas 
+Unstable terrain 
+Deciduous-leading stands 
+Site index 
+Existing natural stand yields 
+Regenerated stand yields 
+Operational adjustment factors 
+Minimum harvest age 
+Harvest species profile and sequencing 
+8(8)(a)(ii) Expected time it will take the forest to 
+become re-established following denudation 
+Regeneration delays 
+Not satisfactorily restocked areas (backlog and current) 
+8(8)(a)(iii) Silvicultural treatments to be applied Regeneration regimes 
+8(8)(a)(iv) Standard of timber utilization and 
+allowance for decay, waste and breakage 
+Utilization standards 
+Decay, waste and breakage 
+8(8)(a)(v) Constraints on the amount of timber 
+produced by use of the area for other purposes 
+Resource inventories 
+Riparian reserve and management zones 
+
+--- page 13 ---
+AAC Rationale for TFL 6, February, 2012 
+10 
+ 
+Forest Act section and description Factors accepted as modelled 
+Cultural heritage resources 
+Caves and karst 
+Ungulate winter range 
+Wildlife habitat areas 
+Recreation features inventory 
+Adjacency considerations 
+Watershed considerations 
+Stand-level biodiversity 
+Landscape-level biodiversity 
+8(8)(a)(vi) Any other information Public review 
+Western redcedar and yellow-cedar projections 
+Vancouver Island Land Use Plan 
+Partitioning the harvest 
+8(8)(d) Economic and social objectives of the 
+government 
+Mill fibre requirements 
+Community dependence 
+8(8)(e) Abnormal infestations in and devastation of, 
+and major salvage program planned for, timber on the 
+area 
+Unsalvaged losses 
+For other factors, where more uncertainty exists, or where public or First Nations‘ input indicates 
+contention regarding the information used, modelling, or some other aspect under consideration, 
+this rationale incorporates an explanation of how I considered the essential issues raised and the 
+reasoning leading to my conclusions. 
+Factors requiring additional explanatory consideration 
+Section 8 (8) 
+In determining an allowable annual cut under subsection (1) the chief forester, despite anything to 
+the contrary in an agreement listed in section 12, must consider 
+(a) the rate of timber production that may be sustained on the area, taking into account  
+ (i) the composition of the forest and its expected rate of growth on the area, 
+Factors considered under Section 8(8)(a)(i) 
+In addition to the factors listed under this section in Table 1, I have also considered the following 
+factor requiring comment or discussion. 
+- land base contributing to timber harvesting 
+The total area of TFL 6, as estimated from the licensee‘s inventory file, is 171 441 hectares.  This 
+is 26 672 hectares smaller than the area of the TFL at the time of the last AAC determination in 
+
+--- page 14 ---
+AAC Rationale for TFL 6, February, 2012 
+11 
+ 
+2001, due to boundary adjustments that reduced the analysis area by 122 hectares and a number 
+of deletions of areas.  Those deletions included 14 027 hectares of private land in 2007; 
+11 339 hectares in 2007 for creation of the Pacific TSA; 1072 hectares in 2010 for creation of the 
+North Island Community Forest; and a total of 112 hectares since 2000 for creation of an 
+industrial park near Port Alice and expansion of Marble River Park, Misty Lake Ecological 
+Reserve, Cluxewe Saltmarsh Reserve, and the Kingcome TSA. 
+About 24 382 hectares of the total TFL area are considered non-forest or non-productive forest.  
+In the analysis this area was deducted from the total area, leaving 147 059 hectares of productive 
+forest land. 
+As part of the process used to define the THLB—the land base estimated to be biologically and 
+economically available for harvesting—a series of area deductions was made from the productive 
+forest land base.  These deductions account for the factors that effectively reduce the suitability or 
+availability of the productive forest area for harvest due to social, ecological, or economic 
+reasons.  For TFL 6, these deductions result in a current THLB of 107 811 hectares, which means 
+that 39 248 hectares of productive forest (about 27 percent) are unavailable for timber harvesting 
+for a variety of reasons. 
+The current THLB is 28 percent smaller than the THLB assumed in the 2001 determination.  
+Several factors contributed incrementally to cause this decrease, principal among them being the 
+areas deleted from the TFL as listed above. 
+Having reviewed all the land base deductions applied in deriving the THLB for the base case as 
+well as the other factors related to the composition of the forest and its expected rate of growth, 
+I agree with the information already published for the factors listed above in Table 1.  As I noted 
+under ‗History of the AAC‘, however, the AAC in effect immediately before this determination 
+was approximately 5000 cubic metres higher than it should have been, given that 1072 hectares of 
+land were deleted from the TFL in 2010 for creation of the North Island Community Forest and 
+the AAC was not reduced to account for the deletion.  The base case did account for this deletion 
+of land, and for clarity I will discuss this further under ‗Reasons for Decision‘. 
+(ii) the expected time that it will take the forest to become re-established on the area 
+following denudation: 
+Factors considered under Section 8(8)(a)(ii) 
+Table 1 lists each of the factors I have considered under this section for which I agree with the 
+published information respecting current practice and with the modelling as incorporated in the 
+base case.  No factors considered under this section require additional comment. 
+(iii) silviculture treatments to be applied to the area: 
+Factors considered under Section 8(8)(a)(iii) 
+In addition to the factors listed under this section in Table 1, I have also considered the following 
+factors requiring comment or discussion. 
+- fertilization 
+Since 1986, nitrogen fertilizer has been applied on approximately 15 000 hectares of plantations 
+in TFL 6.  Approximately 4500 hectares have received two fertilizer treatments. 
+
+--- page 15 ---
+AAC Rationale for TFL 6, February, 2012 
+12 
+ 
+The effects of fertilization on tree growth were incorporated into the yield tables used in the base 
+case for current and future stands.  The FLNR‘s Table Interpolation Program for Stand 
+Yields (TIPSY) was used to project the fertilization effect on Douglas-fir stands, whereas the 
+impact of fertilization on hemlock, spruce, and redcedar stands was modelled by using the site 
+index from the next higher productivity group.  WFP and ministry staff advise that the projected 
+fertilization gains for hemlock, spruce, and redcedar are supported by recent work at the site of 
+the Salal–Cedar–Hemlock Integrated Research Program within TFL 6 near Port McNeill. 
+The licensee provided a sensitivity analysis to evaluate the impact of excluding future 
+fertilization.  The timber supply was not affected by excluding future fertilization for the 
+first seven decades of the analysis period, as the treated stands in the base case were not available 
+for harvesting until then.  In the long term, however, the lack of fertilization generated harvest 
+levels about 2.3 percent lower than the base case. 
+I accept that the fertilization impact as modelled reflects the best available information and 
+current practice. 
+The fertilization program on TFL 6 has been contingent on government funding programs and the 
+licensee expects the funding to continue.  I consider, however, that there is a realistic risk that 
+government funding for fertilization may be reduced or eliminated at some point in the future; 
+which potentially could lead to harvest levels lower than those projected in the base case.  
+I therefore request the licensee to monitor the amount of fertilization actually carried out on the 
+TFL and report and reflect the results in the analysis for the next AAC determination. 
+- genetic gain 
+The licensee plants seedlings derived from genetically improved ―select seed‖ for Douglas-fir, 
+western hemlock, western redcedar, and yellow-cedar established in plantations on TFL 6, and 
+plans to continue this practice in future.  Projections of the average ―genetic worth‖ or volume 
+gain attributable to the use of select seed for these species were developed from information 
+generated at WFP‘s Saanich Forestry Centre.  Average values for genetic worth by species and 
+analysis unit were then applied to current and future managed stands in the yield tables used in 
+the analysis. 
+Because hemlock seedlings also regenerate naturally in many plantations on the TFL and thus 
+dilute the genetic-worth effect of planted trees in managed stands, the genetic-worth value for 
+hemlock on low-elevation sites was reduced in the analysis from 14 percent to 10 percent.  For 
+high-elevation sites the value was reduced from 10 percent to six percent.  These reductions of 
+four percent were based on WFP‘s expectations regarding the composition of managed stands at 
+the time of harvest. 
+Staff from FLNR questioned whether the amount of natural regeneration may have been 
+underestimated in the base case, and therefore the genetic worth overestimated; which could 
+result in an overestimation of future timber supply.  To address this, a sensitivity analysis was 
+conducted to estimate the impact on timber supply if the genetic worth for hemlock in the largest 
+analysis unit was reduced to four percent for existing stands from one to 10 years old and for 
+future managed stands.  Results showed that the maximum impact on the long-term harvest level 
+would be about 1.2 percent. 
+Based on advice from staff and WFP, I am satisfied that the genetic-worth estimates incorporated 
+in the base case adequately reflect current planting performance and experience and I accept this 
+factor as modelled in the base case.  I am concerned, however, that the abundant natural 
+regeneration of western hemlock in TFL 6 may result in a higher proportion of natural versus 
+planted hemlock trees in future managed stands than was assumed in the base case.  I therefore 
+
+--- page 16 ---
+AAC Rationale for TFL 6, February, 2012 
+13 
+ 
+request that the licensee monitor the amount of planting with genetically improved stock on the 
+TFL and report and reflect the results in the analysis for the next determination. 
+- silvicultural systems 
+In recent years, WFP has developed the Western Forest Strategy, which it is phasing in over the 
+next few years on all its major tenures, including TFL 6.  This strategy incorporates extensive use 
+of retention silvicultural systems, in part to address objectives for conservation of biodiversity.  
+For the analysis WFP assumed that the strategy is being fully implemented from the beginning of 
+the analysis period. 
+In the base case, various levels of minimum long-term stand-level retention ranging from 10 to 
+20 percent were applied to individual ecosections within the resource management zones 
+established for the area in the Vancouver Island Land Use Plan.  In total, at least 40 percent of the 
+total harvest area was modelled as being in retention-system cutblocks, with the remaining area of 
+the THLB being in clearcuts or clearcuts with reserves.  The minimum average level of 
+stand-level retention, weighted by area, was 10.4 percent. 
+Overall, considering that 7.7 percent of the stand-level retention target is satisfied by 
+requirements for wildlife tree retention, the impact of the Western Forest Strategy on TFL 6 was 
+estimated as a reduction of 2.7 percent of the total harvest that would otherwise be possible over 
+the analysis period.  This was incorporated in the base case along with the exclusion of area for 
+stand-level biodiversity.  In addition, expected future yields were reduced to account for shading 
+from the additional stand retention. 
+I have considered the information regarding silvicultural systems and I accept the information as 
+appropriate for this determination.  I request the licensee to monitor the application of retention 
+systems on the TFL to assess whether it matches the targets and assumptions applied in the base 
+case, and use its findings in the analysis for the next determination. 
+(iv) the standard of timber utilization and the allowance for decay, waste and breakage 
+expected to be applied with respect to timber harvesting on the area: 
+Factors considered under Section 8(8)(a)(iv) 
+In addition to the factors listed under this section in Table 1 above, I have also considered the 
+following factor which requires additional comment. 
+- coast log grades 
+Dead western redcedar and old-growth Douglas-fir stems can remain sound and potentially 
+suitable for milling for many years.  On the coast of BC, logs from trees that were dead prior to 
+harvest (called ―dead potential‖ volume) have been harvested, scaled, and charged to the AAC.  
+Dead potential volume is not currently included in inventory volume estimates, however, and 
+therefore has not been accounted for in previous AAC determinations. 
+For TFL 6, the dead potential volume was estimated in the 2006 report Summary of dead 
+potential volume estimates for the management units within the Coastal Forest Region at 
+14.3 percent.  District staff note that this estimate was based on limited sample data which was 
+incomplete and variable; and further, that much of the dead potential volume is not merchantable.  
+WFP staff agree with the district‘s conclusions but note that some dead western redcedar on the 
+TFL may be merchantable. 
+
+--- page 17 ---
+AAC Rationale for TFL 6, February, 2012 
+14 
+ 
+Based on the 2006 report and WFP‘s advice, it appears that there is likely to be some 
+merchantable dead cedar volume in TFL 6 that was not accounted for in the base case.  
+I conclude, therefore, that this factor represents an upward pressure of a very small but 
+unquantifiable amount on the short-term timber supply.  I have considered this below in ‗Reasons 
+for Decision‘. 
+ (v) the constraints on the amount of timber produced from the area that reasonably can 
+be expected by use of the area for purposes other than timber production,  
+Factors considered under Section 8(8)(a)(v) 
+In addition to the factors listed under this section in Table 1, I have also considered the following 
+factor which requires discussion. 
+- visual resource emphasis 
+The visual landscape inventory for TFL 6 was updated between 2003 and 2005, and it was 
+accepted by the FLNR District Manager in June 2010.  This inventory was used for the process of 
+legally establishing visual quality objectives (VQOs) within scenic areas under the Government 
+Actions Regulation of the FRPA.  On September 24, 2010, the DM signed the Order to Establish 
+Visual Quality Objectives for Tree Farm Licence 6 and Block 7 of the Pacific TSA within the 
+North Island–Central Coast Forest District. 
+The VQO classes established under this order were similar to the classes used in the base case, 
+but the boundaries of some VQO polygons were different.  As a result, 97 hectares of THLB 
+affected by VQOs were not captured in the base case. 
+The licensee provided a sensitivity analysis that explored the impacts of reducing the allowable 
+disturbance in VQO classes M (modification), PR (partial retention) and R (retention) to 20, 10, 
+and 2.5 percent, respectively.  The results showed that the short-term harvest was unaffected, as 
+there was sufficient inventory outside the visually sensitive areas to maintain the base case 
+harvest levels.  Commencing in 2079, however, the more restrictive visual quality management 
+assumptions (relative to the base case) began having a very small timber supply impact, with the 
+long-term harvest level being reduced by 600 cubic metres per year. 
+Based on this information, I conclude that the 97 hectare underestimate of the area subject to 
+VQO objectives exerts an unknown but very small downward pressure on the long-term timber 
+supply, and I return to this matter below in ‗Reasons for Decision‘. 
+(vi) any other information that, in the chief forester’s opinion, relates to the capability of 
+the area to produce timber, 
+Factors considered under Section 8(8)(a)(vi) 
+In addition to the factors listed under this section in Table 1, I have also considered the following 
+factors which require comment or discussion. 
+- First Nations considerations 
+The Crown has a duty to consult with and, where appropriate, accommodate those First Nations 
+for whom it has knowledge of proven or claimed aboriginal rights and title or treaty rights that 
+may be affected by a proposed decision, including strategic-level decisions such as AAC 
+
+--- page 18 ---
+AAC Rationale for TFL 6, February, 2012 
+15 
+ 
+determinations.  For this AAC determination, I must consider information arising from the 
+consultation process that occurred with First Nations who have claimed aboriginal rights and title 
+(aboriginal interests) and with one First Nation who holds treaty rights that may be affected by 
+my AAC determination.  As well, I will consider other relevant information available to the 
+ministry regarding aboriginal interests and treaty rights, including information gathered during 
+other consultation processes. 
+Five First Nations have asserted traditional territory covering all or part of TFL 6: the 
+Kwakiutl First Nation (KFN), the Mamalilikulla–Qwe‘Qwa‘Sot‘Em First Nation (MQFN), the 
+‘Namgis First Nation (NFN), the Quatsino First Nation (QFN), and the Tlatlasikwala First 
+Nation (TFN).  There is significant evidence to support First Nations use and occupation over 
+portions of the TFL. 
+The traditional territory of the QFN overlaps with approximately 90 percent of TFL 6.  The KFN, 
+who are signatory to an 1851 Douglas treaty, have a traditional territory that overlaps with 
+approximately 11 percent of the TFL.  The traditional territories of the NFN, TFN, and MQFN all 
+have relatively small areas of overlap with TFL 6 (less than four percent), much of which are also 
+subject to competing claims. 
+The NFN, QFN, and TFN are involved in the BC Treaty Commission process and are negotiating 
+at Stage 4, working towards an Agreement in Principle.  The NFN, QFN and MQFN each have a 
+new Forest and Range Consultation and Revenue Sharing Agreement (FRCSA) with the 
+Province.  The FCRSA provides economic benefits to the First Nations and may contain 
+provisions for consultation on administrative decisions, including AAC determinations, as is the 
+case with the NFN and QFN.  The consultation provisions for the MQFN are guided by the 
+consultation processes set out in the Nanwakolas/British Columbia Framework Agreement signed 
+in December 2009. 
+Prior to commencing consultation on the AAC determination, FLNR staff undertook an initial 
+review of available information to assess the nature of the known aboriginal interests of each 
+First Nation, to understand how the proposed AAC determination would impact those interests.  
+As well, initial consideration was given to possible measures to address specific impacts, if such 
+accommodation measures were deemed appropriate later in the consultation process.  This 
+information was assessed in order to arrive at a suggested level of consultation. 
+Based upon this information review, and as guided by relevant forestry agreements, the 
+FLNR proposed that consultation be undertaken at the ―normal‖ level for the NFN, QFN, and 
+TFN.  Consultation with the KFN and MQFM, on the other hand, was guided by the 
+Nanwakolas/British Columbia Framework Agreement, to which they are signatories.  Under that 
+agreement, administrative decisions such as timber supply reviews are assigned a predetermined 
+engagement level (Level 4–Complex).  District staff confirm that engagement with the KFN and 
+MQFN during the TFL 6 AAC determination consultation process was consistent with the 
+process outlined in the Framework Agreement. 
+Staff from the North Island–Central Coast Forest District initiated consultation with the 
+five First Nations on this timber supply review on May 31, 2010 and concluded it on 
+August 30, 2011.  Procedural aspects of the consultation process were completed by the licensee, 
+who shared information about the analysis and copies of the TSR information package and the 
+draft management plan for the TFL with each First Nation. 
+The MQFN, QFN and TFN provided written responses to WFP that indicated no opposition to 
+this AAC determination and the approval of Management Plan Number 10 for TFL 6, although 
+they raised certain concerns that I address below.  The NFN provided a response at the 
+information-package stage that indicated they had no specific concerns, but no formal comments 
+
+--- page 19 ---
+AAC Rationale for TFL 6, February, 2012 
+16 
+ 
+were received from the NFN during the management-plan review stage.  The KFN provided a 
+written response to WFP that identified their opposition to an AAC determination that would 
+result in the AAC for TFL 6 either remaining at its current level or increasing. 
+All the First Nations also cited concerns about monumental and old-growth cedar, archaeological 
+features, and fish and wildlife.  Regarding cedar, the KFN was concerned about potential 
+overharvest, while the MQFN and TFN indicated their interest in continued access to 
+monumental cedar for cultural purposes.  The MQFN, NFN, QFN, and TFN all shared comments 
+related to the protection of archaeological features.  The KFN and TFN both provided general 
+comments related to fish and wildlife. 
+WFP has analyzed the forest inventory for TFL 6 and found that there is a significant volume of 
+old-growth cedar within the TFL; with a large portion of it occurring on land outside the THLB.  
+WFP considers that this ―non-contributing‖ land would be likely to contain a supply of larger 
+cedar trees suitable for First Nations canoes, buildings, and poles.  WFP has offered to meet with 
+all of the First Nations to discuss their cultural cedar needs in additional detail, and has stated that 
+it would be open to creating an inventory of those needs, as it has done with other First Nations. 
+The protection of archaeological features is guided by the Heritage Conservation Act, whereas 
+cultural heritage resources are addressed through the FRPA and by commitments made by 
+WFP in their approved North Island Forest Stewardship Plan.  Meaningful engagement at the 
+operational stage has proven to be the appropriate venue for First Nations and WFP to discuss and 
+identify archaeological survey requirements and feature protection. 
+WFP and FLNR consider that existing regulations, planning, and meaningful engagement at the 
+operational level can be used to appropriately minimize or mitigate potential adverse impacts on 
+fish and wildlife stemming from forest development activities that will be implemented after the 
+AAC determination.  WFP maintains a strong interest in developing a positive working 
+relationship with all of the First Nations who are shown to have traditional territories that overlap 
+with TFL 6. 
+In addition to reviewing the information received through the formal consultation process, I have 
+been advised on the existence, nature, and content of various other sources of information that 
+have been considered by ministry and licensee staff in respect of First Nations‘ aboriginal 
+interests and treaty rights associated with this AAC determination.  This information has been 
+considered in relation to the strength of aboriginal interests; cultural heritage resources; 
+archaeological resources; traditional use sites; and the management of elk and deer and other 
+hunting and fishing interests. 
+I am aware that the KFN filed a petition on April 11, 2008 against the Minister of Forests and 
+Range on the decision to allow WFP to remove private lands from within TFL 6; and against the 
+District Manager of the North Island–Central Coast District for his approval of WFP‘s North 
+Island Forest Stewardship Plan; citing inadequate consultation and accommodation on both 
+decisions.  WFP and the Attorney General of Canada were also named in the petition.  I note that 
+on March 31, 2011, the KFN filed an amended petition against the same respondents; still citing 
+inadequate consultation and accommodation on the two decisions but amending their claim for 
+relief to include a court declaration that the KFN possess a prima facie case for unextinguished 
+Aboriginal title and rights to the KFN territory.  This litigation is still proceeding and has not yet 
+undergone a judicial review.  In keeping with my guiding principles for AAC determinations 
+outlined above, in making my determination I will not speculate on the outcome of the petition or 
+its potential effect on the timber supply. 
+I am satisfied that, for this AAC determination for TFL 6, the North Island–Central Coast Forest 
+District has engaged in consultation with all potentially affected First Nations in accordance with 
+
+--- page 20 ---
+AAC Rationale for TFL 6, February, 2012 
+17 
+ 
+current government guidance and with existing agreements.  The level of consultation was 
+appropriate, given the aboriginal interests or treaty rights expressed by each First Nation, the 
+available information regarding their respective interests or treaty rights, and the potential impact 
+that this AAC determination may have on those interests or treaty rights.  The level of 
+consultation was also consistent with that set out in the process agreements that were in effect.  
+The determination of an AAC does not, in itself, change the forest practices, the management 
+method, the layout of operations on the ground, or the consideration of aboriginal interests or 
+treaty rights at the operational level.  Under current practice, the TFL area will be managed under 
+the FRPA legislation, which maintains a level of protection for a range of forest values such as 
+watershed integrity, wildlife, and biodiversity.  For operational and administrative decisions 
+subsequent to this AAC determination, consultation with First Nations will continue. 
+Overall, I believe a good foundation has been established in TFL 6 from which to move forward 
+in managing the TFL on the basis of continuing good dialogue and cooperation with the area‘s 
+First Nations. 
+- licence AAC and actual harvest performance 
+As noted above, the AAC for TFL 6 has been reduced twice since the last determination, to 
+account for deletion of private lands and for creation of the Pacific TSA.  Records of the annual 
+harvest by year show that the average harvest has been very close to the AAC since 2001. 
+Information was not provided during the analysis to document the amount of harvesting that has 
+been conducted on the TFL using cable, ground-based, and helicopter harvesting methods.  
+Because the economic viability of the TFL could potentially be compromised if harvesting was 
+avoided for lengthy periods in the more challenging terrain, it will be important to know, when 
+the AAC is next determined, whether the various harvesting methods have been applied on the 
+ground in approximately the proportions indicated in the operability classes defined by the 
+licensee. 
+I therefore request the licensee to monitor its harvesting performance on areas classified as being 
+harvestable by cable, ground-based, and helicopter methods; and report on the results to the 
+chief forester at the time of the next TSR. 
+(b) the short and long term implications to British Columbia of alternative rates of 
+timber harvesting from the area; 
+- alternative harvest flows 
+The nature of the transition from harvesting old-growth forests to harvesting second-growth 
+forests is a major consideration in determining AACs in many parts of the province.  In the 
+short term, the presence of large timber volumes in older forests often permits harvesting above 
+long-term levels without jeopardizing the future timber supply.  In keeping with the objectives of 
+good forest stewardship, AACs in British Columbia have been and continue to be determined to 
+ensure that current and mid-term harvest levels will be compatible with a smooth transition 
+toward usually (but not always) the lower long-term harvest level.  Thus, the timber supply 
+should remain sufficiently stable that there will be no inordinately adverse impacts on current or 
+future generations.  To achieve this, the AAC determined must not be so high as to cause later 
+disruptive shortfalls in supply nor so low as to cause immediate social and economic impacts that 
+are not required to maintain forest productivity and future harvest stability. 
+In addition to the base case, three alternative harvest flows were provided by the licensee.  These 
+alternative flows represent trade-offs between short-, mid- and long-term harvest levels. 
+
+--- page 21 ---
+AAC Rationale for TFL 6, February, 2012 
+18 
+ 
+The first alternative flow was prepared to examine the impact of maintaining the current AAC for 
+10 years.  After 10 years, the harvest level declined over the next two decades to approximately 
+the long-term level, then fell below it (and below the base case level) for a further 80 years before 
+increasing to a long-term harvest level of 1 060 700 cubic metres per year in the eleventh decade.  
+This long-term harvest level is the same as the base case long-term harvest level. 
+The second alternative flow illustrated the effects of maintaining the current AAC for 10 years 
+and then increasing the mid-term timber supply by harvesting young trees earlier.  It resulted in a 
+more stable harvest level during the fifth through tenth decades, but the resulting long-term 
+harvest level was 4900 cubic metres per year lower that the long-term level in the base case. 
+In the third alternative flow, the objective was to examine the effect on timber supply of 
+maintaining a non-declining even-flow harvest forecast.  In that scenario, a harvest level of 
+1 031 000 cubic metres per year could be maintained throughout the forecast period.  Short-term 
+harvest levels were significantly lower than in the base case, but the mid-term dip in timber 
+supply was eliminated. 
+I have considered these alternatives in my determination.  I note that the current AAC of 
+1 255 500 cubic metres per year cannot be sustained any further in the short term without causing 
+a shortfall in the mid-term.  The base case and alternative harvest forecasts provided suggest that 
+it would now be appropriate to initiate the transition to the mid-term harvest level for TFL 6, and 
+I have been mindful of this in my determination. 
+(c) the nature, production capabilities and timber requirements of established and 
+proposed timber processing facilities; 
+This section of the Forest Act has been repealed [2003-31-2 (B.C. Reg. 401/2003)]. 
+(d) the economic and social objectives of the government, as expressed by the minister, 
+for the area, for the general region and for British Columbia; 
+Factors considered under Section 8(8)(d) 
+In addition to the factors listed under this section in Table 1, I have also considered the following 
+factors which require comment or discussion. 
+.- Minister’s letter 
+The Minister of Forests, Lands and Natural Resource Operations has expressed the economic and 
+social objectives of the Crown for the province in a letter to the chief forester, dated July 4, 2006 
+(attached as Appendix 3).  The letter stresses the importance of a stable timber supply to maintain 
+a competitive and sustainable forest industry while being mindful of other forest values.  In 
+respect of this, one of the base case harvest forecast objectives was to attain a stable, long-term 
+harvest level where the growing stock becomes stable, neither increasing nor decreasing 
+over time.  In my determination, I have been mindful of the need for the allowable harvest level 
+in the short term to remain consistent with maintaining the integrity of the timber supply 
+projection throughout the planning horizon.  The base case and alternative forecasts demonstrate 
+the feasibility of attaining this objective.  I have also considered with care the adequacy of the 
+provisions made in current practice, and assumed in the analyses, for maintaining a range of 
+forest values. 
+
+--- page 22 ---
+AAC Rationale for TFL 6, February, 2012 
+19 
+ 
+The letter also notes the period of significant change and transition being experienced in coastal 
+areas.  The Minister asks that when making AAC determinations, the chief forester consider the 
+nature of timber supply that can contribute to a sustainable Coast forest industry, while reflecting 
+decisions made in land and resource management plans.  I note that the harvest flow and other 
+assumptions incorporated in the base case are consistent with this objective. 
+- local objectives 
+In the letter of July 4, 2006, the Minister also asks that I consider important local social and 
+economic objectives expressed by the public during the Timber Supply Review process, where 
+these are consistent with the government‘s broader objectives as well as any relevant information 
+received from First Nations. 
+Local objectives for land and resource use in TFL 6 are captured in the Vancouver Island Land 
+Use Plan Higher Level Plan Order and in orders under the Government Actions Regulation of the 
+FRPA.  The base case assumptions reflected the directions provided by these orders. 
+As part of the management planning process, the licensee provided the public with an opportunity 
+to comment on the timber supply review.  One respondent provided comments that dealt with 
+operational forestry activities and access to gated roads.  None of the comments related to the 
+timber supply review. 
+The consultation process with First Nations, and the feedback received, was discussed above 
+under First Nations considerations. 
+I am satisfied that this determination accords with the objectives of government as expressed by 
+the Minister. 
+(e) abnormal infestations in and devastations of, and major salvage programs planned 
+for, timber on the area. 
+Factors considered under Section 8(8)(e) 
+Table 1 lists each of the factors I have considered under this section for which I agree with the 
+published information respecting current practice and with the modelling as incorporated in the 
+analysis.  No factors considered under this section require additional comment. 
+Reasons for Decision 
+In reaching my AAC determination for TFL 6, I have considered all of the factors required under 
+Section 8 of the Forest Act and I have reasoned as follows. 
+Based on my review of the licensee‘s base case described above, I accept it as an adequate basis 
+from which to assess timber supply for this AAC determination.  Under the assumptions applied 
+in the base case, as discussed throughout this document, it was possible to attain an initial harvest 
+level of 1 160 000 cubic metres per year.  This harvest level then declined by five percent per 
+decade through to the year 2048, when it reached a low of 943 500 cubic metres per year.  This 
+level was maintained until 2078.  At that point the harvest rose over the next two decades to the 
+sustainable long-term level of 1 060 700 cubic metres per year, which was maintained for the 
+remainder of the analysis period. 
+In determining an AAC for TFL 6, I have identified two factors which, considered separately, 
+indicate that the timber supply may be either greater or less than that projected in the base case.  
+
+--- page 23 ---
+AAC Rationale for TFL 6, February, 2012 
+20 
+ 
+These factors may influence the timber supply by adding an element of risk or uncertainty to the 
+decision, but cannot be reliably quantified at this time. 
+I have identified the following factor in my considerations as indicating that the timber supply 
+projected in the base case may have been overestimated: 
+Visual resource emphasis – the VQO inventory used in the analysis was 97 hectares smaller than 
+the actual area affected by the District Manager‘s order establishing VQO objectives for the TFL.  
+I concluded that this exerts an unknown but very small downward pressure on the long-term 
+timber supply. 
+I have identified the following factor in my considerations that indicates that timber supply 
+projected in the base case may have been underestimated: 
+Coast log grades – there is likely to be some merchantable volume of dead western redcedar on 
+the TFL that was not accounted for in the base case.  No reliable estimate is available for how 
+much of this volume exists, but I concluded that this factor represents an upward pressure of a 
+very small but unquantifiable amount on the timber supply in the short term. 
+Finally, as discussed above under ‗land base contributing to timber harvesting’, I wish to clarify 
+the situation regarding the deletion of 1072 hectares of land from TFL 6 in 2010 for creation of 
+the North Island Community Forest.  As I noted earlier, the harvest attributable to that area 
+amounted to 5000 cubic metres per year, but the AAC was not reduced at the time to account for 
+the loss of that volume from the TFL.  In the base case, however, the licensee did account for the 
+land area deletion and the reduced harvest.  The base case projections of harvest levels therefore 
+appropriately accounted for the deletion of the 1072 hectares and I make no adjustment to the 
+AAC on this account. 
+In consideration of the above-mentioned influences, I observe that the two unquantified 
+uncertainties each have a very small effect on the timber supply.  The uncertainty in the visual 
+resource emphasis assumptions affects the long term and I have therefore not made any 
+adjustments in my determination on this account.  The uncertainty in short-term timber supply 
+associated with the additional cedar volume that should now contribute to timber supply is small 
+and unquantified.  For this determination I will consider this volume to provide a small buffer in 
+future timber supplies as the transition from harvesting old-growth timber to second-growth 
+timber proceeds.  For this determination, having identified no other factors requiring any 
+adjustment to the base case harvest projection at this time, I consider the base case projection to 
+reflect the current timber supply situation on TFL 6.  I therefore determine that an appropriate 
+harvest level for TFL 6 at this time is 1 160 000 cubic metres, which is eight percent below the 
+current AAC. 
+Determination 
+I have considered and reviewed all the factors as documented above, including the risks and 
+uncertainties of the information provided.  It is my determination that a timber harvest level that 
+accommodates objectives for all forest resources during the next decade, and that reflects current 
+management practices as well as the socio-economic objectives of the Crown, can be best 
+achieved on TFL 6 by establishing an AAC of 1 160 000 cubic metres. 
+This determination is effective February 10, 2012, and will remain in effect until a new AAC is 
+determined, which must take place within 10 years of the effective date of this determination. 
+If significant new information is made available to me, or major changes occur in the 
+management assumptions upon which I have predicated this decision, then I am prepared to 
+revisit this determination sooner than the 10 years required by legislation. 
+
+--- page 24 ---
+AAC Rationale for TFL 6, February, 2012 
+21 
+ 
+Implementation 
+In the period following this determination and leading to the subsequent determination, 
+I encourage the licensee to undertake the tasks and studies noted below.  I have described these 
+tasks further in the appropriate sections of this rationale.  These projects are important to help 
+reduce the risk and uncertainty associated with key factors that affect the timber supply in TFL 6: 
+Fertilization – I request the licensee to monitor the amount of fertilization actually carried out on 
+the TFL and report the results in the analysis for the next AAC determination; 
+Genetic gain – I request that the licensee monitor the amount of planting with genetically 
+improved stock on the TFL and report on the results in the analysis for the next 
+AAC determination; 
+Silvicultural systems – I request the licensee to monitor the application of retention silviculture 
+systems on the TFL to assess whether it matches the targets and assumptions applied in the 
+base case, and report the results in the analysis for the next AAC determination; and 
+Actual harvest performance – I request the licensee to monitor its harvesting performance on 
+areas classified as being harvestable by cable, ground-based, and helicopter methods; and 
+report on the results to the chief forester at the time of the next TSR. 
+ 
+ 
+ 
+ 
+Jim Snetsinger, RPF 
+Chief Forester 
+February 10, 2012 
+
+
+--- page 25 ---
+AAC Rationale for TFL 6, February, 2012 
+22 
+ 
+Appendix 1:  Section 8 of the Forest Act 
+Section 8 of the Forest Act, Revised Statutes of British Columbia 1996, c. 157, (current to January 25, 
+2012), reads as follows: 
+8  (1) The chief forester must determine an allowable annual cut at least once every 10 years 
+after the date of the last determination, for 
+(a) the Crown land in each timber supply area, excluding the Crown land 
+in the following areas: 
+(i)  tree farm licence areas; 
+(ii)  community forest agreement areas; 
+(iii)  first nations woodland licence areas; 
+(iv)  woodlot licence areas, and 
+(b) each tree farm licence area. 
+(2) If the minister 
+(a) makes an order under section 7 (b) respecting a timber supply area, or 
+(b) amends or enters into a tree farm licence to accomplish a result set out 
+under section 39 (2) or (3), 
+the chief forester must make an allowable annual cut determination under subsection  (1) 
+for the timber supply area or tree farm licence area 
+(c) within 10 years after the order under paragraph (a) or the amendment 
+or entering into under paragraph (b), and 
+(d) after the determination under paragraph (c), at least once every 
+10 years after the date of the last determination. 
+(3) If 
+(a) the allowable annual cut for the tree farm licence area is reduced under 
+section 9 (3), and 
+(b) the chief forester subsequently determines, under subsection (1) of this 
+section, the allowable annual cut for the tree farm licence area, 
+the chief forester must determine an allowable annual cut at least once every 10 years from 
+the date the allowable annual cut under subsection (1) of this section is effective under 
+section 9 (6). 
+
+--- page 26 ---
+AAC Rationale for TFL 6, February, 2012 
+23 
+ 
+(3.1) If, in respect of the allowable annual cut for a timber supply area or tree farm licence 
+area, the chief forester considers that the allowable annual cut that was determined under 
+subsection (1) is not likely to be changed significantly with a new determination, then, 
+despite subsections (1) to (3), the chief forester 
+(a) by written order may postpone the next determination under subsection 
+(1) to a date that is up to 15 years after the date of the relevant last 
+determination, and 
+(b) must give written reasons for the postponement. 
+(3.2) If the chief forester, having made an order under subsection (3.1), considers that 
+because of changed circumstances the allowable annual cut that was determined under 
+subsection (1) for a timber supply area or tree farm licence area is likely to be changed 
+significantly with a new determination, he or she 
+(a) by written order may rescind the order made under subsection (3.1) 
+and set an earlier date for the next determination under subsection (1), and  
+(b) must give written reasons for setting the earlier date. 
+(4) If the allowable annual cut for the tree farm licence area is reduced under section 9 (3), 
+the chief forester is not required to make the determination under subsection (1) of this 
+section at the times set out in subsection (1) or (2) (c) or (d), but must make that 
+determination within one year after the chief forester determines that the holder is in 
+compliance with section 9 (2). 
+(5) In determining an allowable annual cut under subsection (1) the chief forester may 
+specify that portions of the allowable annual cut are attributable to one or more of the 
+following: 
+(a) different types of timber or terrain in different parts of Crown land 
+within a timber supply area or tree farm licence area; 
+(a.1) different areas of Crown land within a timber supply area or tree 
+farm licence area; 
+(b) different types of timber or terrain in different parts of private land 
+within a tree farm licence area. 
+(c) [Repealed 1999-10-1.] 
+
+--- page 27 ---
+AAC Rationale for TFL 6, February, 2012 
+24 
+ 
+(6) The minister must determine an allowable annual cut for each woodlot licence area, in 
+accordance with the woodlot licence for that area. 
+(7) The minister must determine an allowable annual cut for 
+(a) each community forest agreement area in accordance with the 
+community forest agreement for that area, and 
+(b) each first nations woodland licence area in accordance with the first 
+nations woodland licence for that area. 
+(8) In determining an allowable annual cut under subsection (1) the chief forester, despite 
+anything to the contrary in an agreement listed in section 12, must consider 
+(a) the rate of timber production that may be sustained on the area, taking 
+into account 
+(i)  the composition of the forest and its expected rate of growth 
+on the area, 
+(ii)  the expected time that it will take the forest to become re-
+established on the area following denudation, 
+(iii)  silviculture treatments to be applied to the area, 
+(iv)  the standard of timber utilization and the allowance for 
+decay, waste and breakage expected to be applied with respect to 
+timber harvesting on the area, 
+(v)  the constraints on the amount of timber produced from the 
+area that reasonably can be expected by use of the area for 
+purposes other than timber production, and 
+(vi)  any other information that, in the chief forester's opinion, 
+relates to the capability of the area to produce timber, 
+(b) the short and long term implications to British Columbia of alternative 
+rates of timber harvesting from the area, 
+(c) [Repealed 2003-31-2.] 
+(d) the economic and social objectives of the government, as expressed by 
+the minister, for the area, for the general region and for British Columbia, 
+and 
+
+--- page 28 ---
+AAC Rationale for TFL 6, February, 2012 
+25 
+ 
+(e) abnormal infestations in and devastations of, and major salvage 
+programs planned for, timber on the area. 
+(9) Subsections (1) to (4) of this section do not apply in respect of the management area, as 
+defined in section 1 (1) of the Haida Gwaii Reconciliation Act. 
+(10) Within one year after the chief forester receives notice under section 5 (4) (a) of the 
+Haida Gwaii Reconciliation Act, the chief forester must determine, in accordance with this 
+section, the allowable annual cut for 
+(a) the Crown land in each timber supply area, except the areas excluded 
+under subsection (1) (a) of this section, and 
+(b) each tree farm licence area 
+in the management area, as defined in section 1 (1) of the Haida Gwaii Reconciliation Act. 
+(11) The aggregate of the allowable annual cuts determined under subsections (6), (7) and 
+(10) that apply in the management area, as defined in section 1 (1) of the Haida Gwaii 
+Reconciliation Act, must not exceed the amount set out in a notice to the chief forester 
+under section 5 (4) (a) of that Act. 
+  
+
+--- page 29 ---
+AAC Rationale for TFL 6, February, 2012 
+26 
+ 
+Appendix 2: Section 4 of the Ministry of Forests and Range Act 
+Section 4 of the Ministry of Forests and Range Act (current to January 25, 2012) reads as follows: 
+Purposes and functions of ministry 
+4  The purposes and functions of the ministry are, under the direction of the minister, to do 
+the following: 
+(a) encourage maximum productivity of the forest and range resources in 
+British Columbia; 
+(b) manage, protect and conserve the forest and range resources of the 
+government, having regard to the immediate and long term economic and 
+social benefits they may confer on British Columbia; 
+(c) plan the use of the forest and range resources of the government, so 
+that the production of timber and forage, the harvesting of timber, the 
+grazing of livestock and the realization of fisheries, wildlife, water, 
+outdoor recreation and other natural resource values are coordinated and 
+integrated, in consultation and cooperation with other ministries and 
+agencies of the government and with the private sector; 
+(d) encourage a vigorous, efficient and world competitive 
+(i)  timber processing industry, and 
+(ii)  ranching sector 
+in British Columbia; 
+(e) assert the financial interest of the government in its forest and range 
+resources in a systematic and equitable manner. 
+  
+
+--- page 30 ---
+AAC Rationale for TFL 6, February, 2012 
+27 
+ 
+Appendix 3: Minister’s letter of July 4, 2006 
+ 
+  
+
+
+--- page 31 ---
+AAC Rationale for TFL 6, February, 2012 
+28 
+ 
+ 
