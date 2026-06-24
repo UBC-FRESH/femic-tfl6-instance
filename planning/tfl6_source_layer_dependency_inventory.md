@@ -47,12 +47,12 @@ reviewed aspatial or proxy treatment instead of public geometry.
 | `tfl6_nd_100` | `ogma_established` | Legal current OGMA, `WHSE_LAND_USE_PLANNING.RMP_OGMA_LEGAL_CURRENT_SVW` | Established OGMA overlay exclusion | Public authority candidate identified; current-vs-2011 vintage risk | Materialize/clip current legal OGMAs and flag any mismatch against MP10 established OGMA assumptions. |
 | `tfl6_nd_110` | `ogma_draft_2011` | Historical/local draft OGMA geometry if available; current non-legal OGMA candidate `WHSE_LAND_USE_PLANNING.RMP_OGMA_NON_LEGAL_CURRENT_SVW` is only a review clue | Draft OGMA overlay or aspatial fallback | Missing historical source / fallback | Search reference/local corpus for 2011 draft OGMA geometry; do not substitute current non-legal OGMAs without review. |
 | `tfl6_nd_120` | `wha_orders` | Approved WHA, `WHSE_WILDLIFE_MANAGEMENT.WCP_WILDLIFE_HABITAT_AREA_POLY` | WHA overlay exclusion for listed WHA IDs | Public authority candidate identified | Materialize/clip approved WHA and confirm listed IDs/overlaps. |
-| `tfl6_nd_130` | `recreation_features` | Public recreation sites/trails candidates | Recreation feature overlay with 10 m buffer | Missing source | Resolve recreation site/trail layers and geometry type. |
+| `tfl6_nd_130` | `recreation_features` | Recreation polygons `WHSE_FOREST_TENURE.FTEN_RECREATION_POLY_SVW`, recreation trails `WHSE_FOREST_TENURE.FTEN_REC_TRAILS_SVW`, recreation site points `WHSE_FOREST_TENURE.FTEN_REC_SITE_POINTS_SVW`, plus details/closures `WHSE_FOREST_TENURE.FTEN_REC_DTAILS_CLOSURES_SV` as attribution context | Recreation feature overlay with 10 m buffer | Public authority candidates identified; geometry/rule review still open | Materialize/clip the point/line/polygon recreation feature set and decide which geometry classes receive the MP10 10 m buffer. |
 | `tfl6_nd_140` | `deciduous_leading_signal` from `vri_2025_r1_tfl6` and/or `vdyp7_2025_layer_tfl6` | Accepted 2025 VRI R1/VDYP7 species fields | Deciduous-leading attribute exclusion | Field mapping blocker | P2.2 define leading-species rule and deciduous/conifer species-code handling. |
 | `tfl6_nd_150` | `cultural_heritage_proxy` | Sensitive/local TUS/CMT data not expected as public source; possible EFZ/ocean-proximity proxy | Aspatial/proxy deduction | Fallback only | Do not seek sensitive public geometry; define reviewed teaching fallback. |
 | `tfl6_nd_160` | prior-step checkpoint | MP10 Table 4 | Report-only total operable reductions checkpoint | No source needed | Keep as validation row only. |
 | `tfl6_nd_170` | prior-step checkpoint | MP10 Table 4 | Report-only reduced landbase checkpoint | No source needed | Keep as validation row only. |
-| `tfl6_nd_180` | `rmz_lu_bec_strata` | Landscape unit, resource management zone, and BEC attribution sources | Stand-level retention percent-by-stratum | Missing source/schema decision | Resolve LU/RMZ/BEC sources and Table 16 stratum schema; do not execute until reviewed. |
+| `tfl6_nd_180` | `rmz_lu_bec_strata` | Landscape units `WHSE_LAND_USE_PLANNING.RMP_LANDSCAPE_UNIT_SVW`; BEC `WHSE_FOREST_VEGETATION.BEC_BIOGEOCLIMATIC_POLY`; RMZ public geometry unresolved, with Strategic Land and Resource Plans `WHSE_LAND_USE_PLANNING.RMP_STRGC_LAND_RSRCE_PLAN_SVW` as a review clue only | Stand-level retention percent-by-stratum | LU/BEC candidates identified; RMZ/schema review still open | Materialize/clip LU and BEC candidates, then resolve whether RMZ can be derived from public Strategic Land and Resource Plans, local MP evidence, or a reviewed Table 16 aspatial fallback. |
 | `tfl6_nd_190` | prior-step checkpoint | MP10 Table 4 / adjusted targets | Report-only current THLB checkpoint | No source needed | Keep as validation row only. |
 | `tfl6_nd_200` | `future_roads_allowance` | MP10 Table 17 aspatial future-road assumption | Long-term landbase context only | Fallback/context only | Keep out of current THLB lane unless long-term scenario work is explicitly opened. |
 | `tfl6_nd_210` | prior-step checkpoint | MP10 Table 4 / adjusted targets | Report-only long-term landbase checkpoint | No source needed | Keep as validation row only. |
@@ -167,15 +167,79 @@ Current decision:
   coastline candidates found here are coarse NTS 1:250,000 layers.
 - Draft OGMA remains unresolved as historical/fallback work.
 
+## Recreation and Strata Resolver Evidence
+
+This resolver slice was metadata-only. It did not download or materialize
+source layers.
+
+Commands:
+
+```powershell
+..\..\.venv\Scripts\python.exe -m femic data bcdc-resolve `
+  'Recreation Sites and Trails BC sites' `
+  'Recreation Sites and Trails BC trails' `
+  'forest recreation sites' `
+  'forest recreation trails' `
+  'WHSE_FOREST_TENURE.FTEN_RECREATION_POLY_SVW' `
+  'WHSE_FOREST_TENURE.FTEN_RECREATION_LINE_SVW' `
+  'WHSE_FOREST_TENURE.FTEN_RECREATION_POINTS_SVW' `
+  'Landscape Units of British Columbia' `
+  'WHSE_LAND_USE_PLANNING.RMP_LANDSCAPE_UNIT_SVW' `
+  'Biogeoclimatic ecosystem classification' `
+  'WHSE_FOREST_VEGETATION.BEC_BIOGEOCLIMATIC_POLY' `
+  'resource management zones Vancouver Island' `
+  'resource management zones' `
+  'land use plan resource management zones' `
+  --summary-csv runtime\logs\p2_1_recreation_strata_bcdc_summary.csv `
+  --manifest-path runtime\logs\p2_1_recreation_strata_bcdc_manifest.json
+
+..\..\.venv\Scripts\python.exe -m femic data bcdc-resolve `
+  'WHSE_FOREST_TENURE.FTEN_REC_TRAILS_SVW' `
+  'WHSE_FOREST_TENURE.FTEN_REC_SITE_POINTS_SVW' `
+  'WHSE_FOREST_TENURE.FTEN_REC_DTAILS_CLOSURES_SV' `
+  'WHSE_FOREST_TENURE.FTEN_RECREATION_POLY_SVW' `
+  'Strategic Land and Resource Plans Current' `
+  'WHSE_LAND_USE_PLANNING.RMP_STRGC_LAND_RSRCE_PLAN_SVW' `
+  'Vancouver Island land use plan' `
+  'TFL 6 resource management zones' `
+  --summary-csv runtime\logs\p2_1_recreation_strata_targeted_bcdc_summary.csv `
+  --manifest-path runtime\logs\p2_1_recreation_strata_targeted_bcdc_manifest.json
+```
+
+Resolver findings:
+
+| Dependency | Resolver result | Resolution decision |
+| --- | --- | --- |
+| Recreation polygons | `Recreation Polygons`, object `WHSE_FOREST_TENURE.FTEN_RECREATION_POLY_SVW`, exact object-name hit | Accept as a public polygon candidate for recreation feature materialization. |
+| Recreation trails | `Recreation Trails Subset - Information Purposes Only`, object `WHSE_FOREST_TENURE.FTEN_REC_TRAILS_SVW`, exact object-name hit | Accept as the first public trail-line materialization candidate. |
+| Recreation site points | `Recreation Sites Subset - Information Purposes Only`, object `WHSE_FOREST_TENURE.FTEN_REC_SITE_POINTS_SVW`, exact object-name hit | Accept as the first public site-point materialization candidate. |
+| Recreation attribution context | `Recreation Sites, Reserves, and Interpretive Forests Details and Closures`, object `WHSE_FOREST_TENURE.FTEN_REC_DTAILS_CLOSURES_SV`, exact object-name hit | Keep as an attribution/context candidate, not a replacement for point/line/polygon geometry. |
+| Landscape units | `Landscape Units of British Columbia - Current`, object `WHSE_LAND_USE_PLANNING.RMP_LANDSCAPE_UNIT_SVW`, exact object-name hit | Accept as the first public LU materialization candidate. |
+| BEC | `BEC Map`, object `WHSE_FOREST_VEGETATION.BEC_BIOGEOCLIMATIC_POLY`, exact object-name hit | Accept as the first public BEC materialization candidate. |
+| RMZ / land-use zones | `Strategic Land and Resource Plans - Current`, object `WHSE_LAND_USE_PLANNING.RMP_STRGC_LAND_RSRCE_PLAN_SVW`, exact object-name hit; generic `TFL 6 resource management zones` returned an unrelated North Coast riparian-management-zone dataset | Keep Strategic Land and Resource Plans as a review clue only. No TFL 6-specific RMZ geometry is accepted yet. |
+
+Current decision:
+
+- Recreation feature geometry has first-pass public authority candidates for
+  polygons, trails, and site points.
+- Landscape unit and BEC attribution have first-pass public authority
+  candidates.
+- RMZ remains unresolved. The MP10 Table 16 stand-level retention row should
+  not execute until RMZ type/schema handling is reviewed against local MP10/MP9
+  evidence or converted to a reviewed aspatial fallback.
+- The generic `TFL 6 resource management zones` resolver hit was rejected
+  because it returned a North Coast riparian-management-zone dataset rather
+  than TFL 6/Vancouver Island RMZ geometry.
+
 ## Priority for Next P2.1 Slice
 
 The next P2.1 slice should resolve public/reference authorities for the missing
 source rows in this order:
 
-1. Recreation features: sites/trails and 10 m buffer source.
-2. Strata attribution: LU, RMZ, and BEC source/schema for stand-level retention.
-3. Historical/fallback rows: shoreline rule choice, draft OGMAs, operability,
+1. Historical/fallback rows: shoreline rule choice, draft OGMAs, operability,
    and cultural heritage proxy/aspatial handling.
+2. Source-materialization plan: decide which accepted candidates are safe to
+   clip first, and which need maintainer review before download/materialization.
 
 P2.2 should run in parallel only after maintainer approval, because the
 accepted local R1/VDYP7 field-mapping rows are separable from missing public

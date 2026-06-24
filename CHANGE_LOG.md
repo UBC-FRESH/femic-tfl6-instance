@@ -593,3 +593,27 @@
   candidates found in this pass are coarse NTS 1:250,000 layers; and
 - updated `ROADMAP.md` Current Next Steps to move the next P2.1 resolver slice
   to recreation features and LU/RMZ/BEC strata before source materialization.
+
+## 2026-06-23 - Resolved recreation and LU/BEC strata candidates
+
+- ran metadata-only FEMIC BCDC resolver passes for recreation features,
+  landscape units, BEC, and resource-management-zone candidate layers;
+- recorded recreation polygons
+  `WHSE_FOREST_TENURE.FTEN_RECREATION_POLY_SVW`, recreation trails
+  `WHSE_FOREST_TENURE.FTEN_REC_TRAILS_SVW`, and recreation site points
+  `WHSE_FOREST_TENURE.FTEN_REC_SITE_POINTS_SVW` as first public recreation
+  materialization candidates;
+- recorded recreation details/closures
+  `WHSE_FOREST_TENURE.FTEN_REC_DTAILS_CLOSURES_SV` as attribution/context
+  only;
+- recorded Landscape Units of British Columbia
+  `WHSE_LAND_USE_PLANNING.RMP_LANDSCAPE_UNIT_SVW` and BEC Map
+  `WHSE_FOREST_VEGETATION.BEC_BIOGEOCLIMATIC_POLY` as first public strata
+  candidates;
+- kept Strategic Land and Resource Plans
+  `WHSE_LAND_USE_PLANNING.RMP_STRGC_LAND_RSRCE_PLAN_SVW` as an RMZ review clue
+  only, not an accepted TFL 6 RMZ source;
+- rejected the generic `TFL 6 resource management zones` resolver hit because
+  it returned an unrelated North Coast riparian-management-zone dataset; and
+- updated `ROADMAP.md` Current Next Steps to point at historical/fallback
+  decisions and source-materialization planning before any downloads.
