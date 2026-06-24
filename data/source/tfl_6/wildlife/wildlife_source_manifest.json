@@ -1,0 +1,112 @@
+{
+  "generated_utc": "2026-06-24T18:33:58.350861+00:00",
+  "plan_status": "materialized_for_review",
+  "non_goals": [
+    "No THLB recipe semantics accepted.",
+    "No recipe YAML created.",
+    "No THLB netdown executed.",
+    "No model-input or Patchworks runtime work performed."
+  ],
+  "aoi": {
+    "path": "data\\source\\tfl_6\\aoi\\tfl_6_boundary.gpkg",
+    "layer": "tfl_6_boundary",
+    "crs": "EPSG:3005",
+    "feature_count": 182,
+    "union_area_ha": 217042.71895028095,
+    "bounds": [
+      841375.75,
+      580345.5069999993,
+      928480.8239999991,
+      639356.2770000007
+    ],
+    "invalid_geometries_repaired": 0
+  },
+  "layers": [
+    {
+      "source_id": "uwr_approved_tfl6",
+      "dependency_rows": [
+        "tfl6_nd_090"
+      ],
+      "status": "materialized_for_review",
+      "bcdc_title": "Ungulate Winter Range - Approved",
+      "package_name": "ungulate-winter-range-approved",
+      "dataset_page_url": "https://catalogue.data.gov.bc.ca/dataset/ungulate-winter-range-approved",
+      "object_name": "WHSE_WILDLIFE_MANAGEMENT.WCP_UNGULATE_WINTER_RANGE_SP",
+      "organization": "Wildlife and Habitat Branch",
+      "licence": "Open Government Licence - British Columbia",
+      "access_method": "OpenMaps WFS bbox fetch via femic data bcdc-fetch, exact AOI clip via geopandas",
+      "fetch_query": "WHSE_WILDLIFE_MANAGEMENT.WCP_UNGULATE_WINTER_RANGE_SP",
+      "raw_layer": "WHSE_WILDLIFE_MANAGEMENT_WCP_UNGULATE_WINTER_RANGE_SP",
+      "raw_feature_count": 41,
+      "invalid_raw_geometries_repaired": 0,
+      "output_path": "data\\source\\tfl_6\\wildlife\\uwr_approved_tfl6.gpkg",
+      "output_layer": "uwr_approved_tfl6",
+      "output_format": "GPKG",
+      "output_crs": "EPSG:3005",
+      "output_geometry_types": {
+        "MultiPolygon": 1,
+        "Polygon": 21
+      },
+      "output_feature_count": 22,
+      "output_bounds": [
+        867424.75,
+        584965.125,
+        918202.004,
+        634884.0524304092
+      ],
+      "output_metric_name": "area_ha",
+      "output_metric_value": 2365.51445990121,
+      "invalid_output_geometries_repaired": 0,
+      "sha256": "e38dee7c03987b0a0fd0590b37cd4529f2e5602305ba3eb50c950c24801acbdd",
+      "read_smoke": "geopandas read_file succeeded after write",
+      "review_required_before_recipe": true,
+      "review_notes": "Materialized for source review only; UWR IDs, overlap treatment, and MP10 deer/elk/wildlife assumptions remain unaccepted.",
+      "raw_runtime_path_used_for_materialization": "runtime\\bcdc_fetch\\p2_1_wildlife\\WHSE_WILDLIFE_MANAGEMENT_WCP_UNGULATE_WINTER_RANGE_SP\\WHSE_WILDLIFE_MANAGEMENT_WCP_UNGULATE_WINTER_RANGE_SP.gpkg",
+      "raw_runtime_artifact_retained": false,
+      "fetch_command_note": "Fetched to transient runtime cache with femic data bcdc-fetch, then clipped to exact TFL 6 AOI; runtime cache removed after curated outputs were written and read-smoked."
+    },
+    {
+      "source_id": "wha_approved_tfl6",
+      "dependency_rows": [
+        "tfl6_nd_120"
+      ],
+      "status": "materialized_for_review",
+      "bcdc_title": "Wildlife Habitat Areas - Approved",
+      "package_name": "wildlife-habitat-areas-approved",
+      "dataset_page_url": "https://catalogue.data.gov.bc.ca/dataset/wildlife-habitat-areas-approved",
+      "object_name": "WHSE_WILDLIFE_MANAGEMENT.WCP_WILDLIFE_HABITAT_AREA_POLY",
+      "organization": "Wildlife and Habitat Branch",
+      "licence": "Open Government Licence - British Columbia",
+      "access_method": "OpenMaps WFS bbox fetch via femic data bcdc-fetch, exact AOI clip via geopandas",
+      "fetch_query": "WHSE_WILDLIFE_MANAGEMENT.WCP_WILDLIFE_HABITAT_AREA_POLY",
+      "raw_layer": "WHSE_WILDLIFE_MANAGEMENT_WCP_WILDLIFE_HABITAT_AREA_POLY",
+      "raw_feature_count": 90,
+      "invalid_raw_geometries_repaired": 0,
+      "output_path": "data\\source\\tfl_6\\wildlife\\wha_approved_tfl6.gpkg",
+      "output_layer": "wha_approved_tfl6",
+      "output_format": "GPKG",
+      "output_crs": "EPSG:3005",
+      "output_geometry_types": {
+        "MultiPolygon": 6,
+        "Polygon": 39
+      },
+      "output_feature_count": 45,
+      "output_bounds": [
+        851055.37,
+        582125.304,
+        922709.0292070741,
+        637816.9162357189
+      ],
+      "output_metric_name": "area_ha",
+      "output_metric_value": 2942.7956558839774,
+      "invalid_output_geometries_repaired": 0,
+      "sha256": "719e549a55724e1a95169e67186cf58ce17e8a7145d829c1632325444a922840",
+      "read_smoke": "geopandas read_file succeeded after write",
+      "review_required_before_recipe": true,
+      "review_notes": "Materialized for source review only; WHA IDs, overlap treatment, and MP10 wildlife assumptions remain unaccepted.",
+      "raw_runtime_path_used_for_materialization": "runtime\\bcdc_fetch\\p2_1_wildlife\\WHSE_WILDLIFE_MANAGEMENT_WCP_WILDLIFE_HABITAT_AREA_POLY\\WHSE_WILDLIFE_MANAGEMENT_WCP_WILDLIFE_HABITAT_AREA_POLY.gpkg",
+      "raw_runtime_artifact_retained": false,
+      "fetch_command_note": "Fetched to transient runtime cache with femic data bcdc-fetch, then clipped to exact TFL 6 AOI; runtime cache removed after curated outputs were written and read-smoked."
+    }
+  ]
+}

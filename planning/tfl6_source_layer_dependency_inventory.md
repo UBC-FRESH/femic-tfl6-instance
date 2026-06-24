@@ -43,10 +43,10 @@ reviewed aspatial or proxy treatment instead of public geometry.
 | `tfl6_nd_060` | `operability` | Historical 1999 WFP/TFL physical and economic operability inventory if local geometry is found; generic public `Operable and Inoperable Areas SIR` is not accepted for TFL 6; see P2.1a issue `#20` and `planning/tfl6_operability_netdown_proxy.md` | Operability class exclusion for `I`, `Ocm`, `Ohm`, plus base-case/sensitivity treatment of yarding-system and economic-access assumptions | Separate design lane opened; no accepted public geometry; aspatial benchmark remains provisional only, not a final locked base-case rule | Complete P2.1a before source-materialization planning treats operability as resolved. Use MP10 Table 8 / adjusted benchmark as calibration context, and design a VRI/VDYP plus DEM-slope proxy lane before executable spatial logic is accepted. |
 | `tfl6_nd_070` | prior-step checkpoint | MP10 Table 4 / adjusted targets | Report-only operable/LHLB checkpoint | No source needed | Keep as validation row only. |
 | `tfl6_nd_080` | `hydrography_streams`, `lakes_wetlands_shoreline` | Freshwater Atlas `WHSE_BASEMAPPING.FWA_STREAM_NETWORKS_SP`, `WHSE_BASEMAPPING.FWA_LAKES_POLY`, and `WHSE_BASEMAPPING.FWA_WETLANDS_POLY`; coarse shoreline candidate `WHSE_BASEMAPPING.NTS_BC_COASTLINE_POLYS_125M` | Riparian reserve/management overlay or fallback | FWA streams/lakes/wetlands materialized for review; MP10 40 m ocean-shoreline rule accepted, but coarse NTS coastline still requires review before precision use | Review FWA hydrology attributes and buffer semantics before recipe use; keep the MP10 40 m ocean-shoreline reserve as the teaching rule and review whether NTS coastline is adequate for approximate clipping. |
-| `tfl6_nd_090` | `uwr_orders` | Approved UWR, `WHSE_WILDLIFE_MANAGEMENT.WCP_UNGULATE_WINTER_RANGE_SP` | UWR overlay exclusion for `U-1-010` and small `U-1-011` overlap | Public authority candidate identified | Materialize/clip approved UWR and confirm listed IDs within current TFL 6 AOI. |
+| `tfl6_nd_090` | `uwr_orders` | Approved UWR, `WHSE_WILDLIFE_MANAGEMENT.WCP_UNGULATE_WINTER_RANGE_SP` | UWR overlay exclusion for `U-1-010` and small `U-1-011` overlap | Approved UWR materialized for review | Review clipped UWR IDs, areas, overlap treatment, and MP10 consistency before executable exclusion. |
 | `tfl6_nd_100` | `ogma_established` | Legal current OGMA, `WHSE_LAND_USE_PLANNING.RMP_OGMA_LEGAL_CURRENT_SVW` | Established OGMA overlay exclusion | Public current polygon authority confirmed; WFS-queryable with TFL 6 bbox hits; current-vs-2011 vintage risk remains | Materialize/clip current legal OGMAs in the source-materialization pass and compare resulting areas/landscape units against MP10 established OGMA assumptions. |
 | `tfl6_nd_110` | `ogma_draft_2011` | Current non-legal OGMA, `WHSE_LAND_USE_PLANNING.RMP_OGMA_NON_LEGAL_CURRENT_SVW`, plus historical/local draft OGMA geometry if found | Draft OGMA overlay or benchmark-calibrated fallback | Public current non-legal polygon authority confirmed as a likely draft-OGMA proxy candidate; WFS-queryable with TFL 6 bbox hits; current-vs-2011 draft-state risk remains | Materialize/clip current non-legal OGMAs for review. Do not automatically treat them as the 2011 draft OGMAs until clipped areas, landscape units, dates, and MP10 Table 11 consistency are reviewed. |
-| `tfl6_nd_120` | `wha_orders` | Approved WHA, `WHSE_WILDLIFE_MANAGEMENT.WCP_WILDLIFE_HABITAT_AREA_POLY` | WHA overlay exclusion for listed WHA IDs | Public authority candidate identified | Materialize/clip approved WHA and confirm listed IDs/overlaps. |
+| `tfl6_nd_120` | `wha_orders` | Approved WHA, `WHSE_WILDLIFE_MANAGEMENT.WCP_WILDLIFE_HABITAT_AREA_POLY` | WHA overlay exclusion for listed WHA IDs | Approved WHA materialized for review | Review clipped WHA IDs, areas, overlap treatment, and MP10 consistency before executable exclusion. |
 | `tfl6_nd_130` | `recreation_features` | Recreation polygons `WHSE_FOREST_TENURE.FTEN_RECREATION_POLY_SVW`, recreation trails `WHSE_FOREST_TENURE.FTEN_REC_TRAILS_SVW`, recreation site points `WHSE_FOREST_TENURE.FTEN_REC_SITE_POINTS_SVW`, plus details/closures `WHSE_FOREST_TENURE.FTEN_REC_DTAILS_CLOSURES_SV` as attribution context | Recreation feature overlay with 10 m buffer | Public authority candidates identified; geometry/rule review still open | Materialize/clip the point/line/polygon recreation feature set and decide which geometry classes receive the MP10 10 m buffer. |
 | `tfl6_nd_140` | `deciduous_leading_signal` from `vri_2025_r1_tfl6` and/or `vdyp7_2025_layer_tfl6` | Accepted 2025 VRI R1/VDYP7 species fields | Deciduous-leading attribute exclusion | Field mapping blocker | P2.2 define leading-species rule and deciduous/conifer species-code handling. |
 | `tfl6_nd_150` | `cultural_heritage_proxy` | Sensitive/local TUS/CMT data not expected as public source; MP10 Table 15 supports EFZ plus 1 km ocean-proximity proxy/aspatial treatment | Aspatial/proxy deduction | Reviewed fallback accepted; no sensitive public geometry search | Do not seek sensitive TUS/CMT geometry; use MP10 Table 15 / adjusted benchmark deduction unless a reviewed EFZ plus 1 km ocean-proximity proxy is explicitly implemented later. |
@@ -480,6 +480,55 @@ Recipe boundary:
 - Riparian reserve/management buffer rules, stream/lake/wetland class handling,
   overlap order, shoreline/ocean handling, and final netdown semantics remain
   unaccepted until recipe-readiness review.
+
+## First Wildlife Materialization Pass
+
+This pass materialized the approved UWR and approved WHA public wildlife
+overlay candidates for source review only. It did not accept wildlife netdown
+semantics, create recipe YAML, or run THLB netdown.
+
+Command used:
+
+```powershell
+..\..\.venv\Scripts\python.exe -m femic data bcdc-fetch `
+  'WHSE_WILDLIFE_MANAGEMENT.WCP_UNGULATE_WINTER_RANGE_SP' `
+  'WHSE_WILDLIFE_MANAGEMENT.WCP_WILDLIFE_HABITAT_AREA_POLY' `
+  --bbox '841375.750,580345.507,928480.824,639356.277' `
+  --output-format gpkg `
+  --download-root runtime\bcdc_fetch\p2_1_wildlife `
+  --manifest-path runtime\logs\p2_1_wildlife_bcdc_fetch_manifest.json
+```
+
+Notes:
+
+- The bbox fetch returned `41` raw UWR features and `90` raw WHA features.
+- Runtime WFS outputs were used as transient cache only. They were clipped to
+  the exact TFL 6 AOI, written to curated source paths, read-smoked, and then
+  removed from `runtime/`.
+- Curated output manifest:
+  `data/source/tfl_6/wildlife/wildlife_source_manifest.json`.
+
+| Source ID | Curated output | Raw bbox features | TFL 6 clipped features | Metric | Status |
+| --- | --- | ---: | ---: | ---: | --- |
+| `uwr_approved_tfl6` | `data/source/tfl_6/wildlife/uwr_approved_tfl6.gpkg`, layer `uwr_approved_tfl6` | `41` | `22` | `2365.514 ha` polygon area | materialized for review |
+| `wha_approved_tfl6` | `data/source/tfl_6/wildlife/wha_approved_tfl6.gpkg`, layer `wha_approved_tfl6` | `90` | `45` | `2942.796 ha` polygon area | materialized for review |
+
+Read-smoke and QA:
+
+- both curated outputs read successfully with geopandas;
+- both outputs are EPSG:3005;
+- both outputs contain polygon and multipolygon geometries;
+- all curated output geometries are valid after clipping;
+- output bounds are inside the accepted TFL 6 AOI bbox; and
+- each output has a SHA-256 hash recorded in
+  `data/source/tfl_6/wildlife/wildlife_source_manifest.json`.
+
+Recipe boundary:
+
+- These layers are source-review artifacts only.
+- UWR/WHA ID selection, overlap order, current-vs-2011 interpretation, and
+  final wildlife netdown semantics remain unaccepted until recipe-readiness
+  review.
 
 ## Non-Goals
 

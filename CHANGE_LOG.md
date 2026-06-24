@@ -766,3 +766,20 @@
   safe-to-clip source family; and
 - accepted no riparian recipe semantics, created no recipe YAML, ran no THLB
   netdown, generated no model inputs, and performed no Patchworks runtime work.
+
+## 2026-06-24 - Materialized approved wildlife overlays for review
+
+- materialized the approved UWR and WHA public wildlife overlay candidates
+  clipped to the accepted TFL 6 AOI;
+- wrote curated review artifacts under `data/source/tfl_6/wildlife/`;
+- recorded provenance, source authority, transient fetch details, clipped
+  feature counts, area summaries, SHA-256 hashes, and read-smoke evidence in
+  `data/source/tfl_6/wildlife/wildlife_source_manifest.json`;
+- recorded `22` clipped UWR polygons with `2365.514 ha` total area and `45`
+  clipped WHA polygons with `2942.796 ha` total area;
+- updated `planning/tfl6_source_layer_dependency_inventory.md` and
+  `ROADMAP.md` so the next P2.1 materialization pass remains bounded to another
+  safe-to-clip source family, preferably current legal/non-legal OGMA overlays;
+  and
+- accepted no wildlife netdown semantics, created no recipe YAML, ran no THLB
+  netdown, generated no model inputs, and performed no Patchworks runtime work.
