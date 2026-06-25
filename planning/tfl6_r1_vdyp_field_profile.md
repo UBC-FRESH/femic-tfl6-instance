@@ -299,3 +299,41 @@ P2.2b is complete as a candidate mapping and gross-area diagnostic pass:
 The next bounded P2.2 slice is maintainer review of these candidates and, if
 accepted or revised, a short P2.2 closeout mapping contract that hands P2.3 a
 reviewed set of field assumptions without running THLB recipes.
+
+## P2.2c Field-Mapping Handoff Contract
+
+This handoff closes P2.2 by deciding which R1/VDYP7 surfaces P2.3 may use when
+drafting reviewed current-AOI source-layer recipe contracts. "Accepted for
+P2.3 drafting" means the field surface is suitable for recipe-contract design
+and ordered marginal testing. It does not mean the rule is accepted for
+executable THLB netdown until P2.3/P2.4 review and smoke evidence exist.
+
+| Step | Handoff status | P2.3 drafting instruction | Still blocked before executable use |
+| --- | --- | --- | --- |
+| `tfl6_nd_010` non-forest | accepted for P2.3 drafting with review caveat | Draft the non-forest source-layer contract around BCLCS/non-vegetated/land-cover signals, with `bclcs_level_2 in {N, W}` or null as the first high-side review envelope and `bclcs_level_1 in {N, U}` as the conservative comparison. Use `for_mgmt_land_base_ind == N` only as a QA cross-check. | Final BCLCS code mapping, treatment of unreported/null classes, and ordered marginal comparison against scaled `tfl6_nd_010` benchmark. |
+| `tfl6_nd_040` non-productive forest | accepted for P2.3 drafting with review caveat | Draft the non-productive source-layer contract around explicit `non_productive_descriptor_cd` / `non_productive_cd` signals plus a reviewed productivity threshold candidate. Use explicit non-productive code presence as the low-side rule and explicit code presence plus `site_index < 5` as the first benchmark-proximate review rule. | Acceptance of a site-index/productivity threshold, mapping of MP10 CP/MH/MH1/S7/S8/PG5-style classes, and separation from the non-forest row. |
+| `tfl6_nd_140` deciduous-leading forest | accepted for P2.3 drafting with review caveat | Draft the deciduous-leading contract using leading species only: `species_cd_1 in {DR, AC, MB}` from R1 and cross-check against VDYP7 layer `species_cd_1`. Do not treat deciduous secondary components in conifer-leading stands as deciduous-leading. | Ordered marginal comparison after prior deductions; handling of missing VDYP7 layer rows; final species-code set if additional deciduous species appear in review. |
+| Operability-proxy support for `tfl6_nd_060` | QA/sensitivity support only | Carry R1/VDYP fields into P2.3 as candidate proxy inputs: height class, projected height, site index, estimated site index, live volume, crown closure, basal area, stems per hectare, species group, and free-to-grow/open-stand signals. | No executable operability rule may be accepted without the P2.1a design constraints, a reviewed multi-factor proxy, and later DEM/slope materialization or an explicit aspatial fallback decision. |
+| R1/VDYP join coverage | accepted QA requirement for P2.3 | Treat R1 as the complete area surface. Treat VDYP polygon/layer as subset attribute surfaces joined by `feature_id`. Carry the `126` R1-without-VDYP-polygon and `1603` R1-without-VDYP-layer diagnostics into recipe-contract QA. | No recipe may silently drop R1 polygons missing VDYP rows. P2.3 must specify whether each row needs VDYP data or can be evaluated from R1 alone. |
+| BEC attribution | accepted for P2.3 drafting as supporting strata | Use R1 BEC fields and materialized BEC polygons as cross-checking strata for reporting and later RMZ/Table 16 review. | Decide whether executable recipe contracts use R1 BEC attributes, materialized BEC overlay, or both. |
+| `for_mgmt_land_base_ind` | QA-only | Use as a diagnostic and reconciliation field because `N` is close to the scaled non-forest benchmark. | Do not use as a single accepted non-forest rule because it absorbs explicit non-productive rows. |
+
+P2.3 is authorized to draft source-layer recipe contracts from these accepted
+field surfaces, but not to execute netdown logic until P2.4 explicitly opens
+the first runnable THLB lane.
+
+## P2.2 Closeout
+
+P2.2 is complete:
+
+- R1 and VDYP7 field inventories are recorded;
+- join-key integrity and row coverage are summarized;
+- candidate mappings with counts and gross areas are documented;
+- operability-proxy input fields are identified without executing the proxy;
+- P2.3 has a short handoff contract for source-layer recipe-contract drafting;
+  and
+- roadmap, changelog, and issue surfaces are synchronized.
+
+No source layer was fetched, no recipe YAML was created, no THLB netdown was
+executed, no DEM/slope product was built, and no model-input, XML, Matrix
+Builder, or Patchworks runtime work was started.

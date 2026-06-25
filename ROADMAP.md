@@ -95,7 +95,7 @@ starts.
 - [x] P2.1 Resolve and materialize public/reference source layers needed by the
   TFL 6 THLB skeleton (`#16`).
 - [x] P2.1a Design operability netdown proxy and sensitivity lane (`#20`).
-- [ ] P2.2 Profile accepted 2025 R1 and VDYP7 fields for non-forest,
+- [x] P2.2 Profile accepted 2025 R1 and VDYP7 fields for non-forest,
   non-productive, deciduous-leading, productivity, and join-key assumptions
   (`#22`).
   - [x] P2.2a Record accepted input schema profile, area surface, and
@@ -103,7 +103,7 @@ starts.
   - [x] P2.2b Draft candidate field mappings and gross-area diagnostics for
     non-forest, non-productive, deciduous-leading, productivity, and
     operability-proxy review without accepting executable recipe logic.
-  - [ ] P2.2c Review/accept or revise the candidate mappings and record the
+  - [x] P2.2c Review/accept or revise the candidate mappings and record the
     short field-mapping handoff contract for P2.3.
 - [ ] P2.3 Define reviewed current-AOI source-layer recipe contracts under the
   future TFL/general-FMU recipe path.
@@ -208,12 +208,12 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 
 ## Current Next Steps
 
-1. P2.2b / `#22` is complete: candidate field mappings and gross-area
-   diagnostics are recorded in `planning/tfl6_r1_vdyp_field_profile.md`.
-2. Continue P2.2 with P2.2c: review, accept, or revise the candidate mappings
-   and record the short field-mapping handoff contract for P2.3. Do not fetch
-   new source layers, create recipe YAML, or execute THLB recipes in this
-   slice.
+1. P2.2 / `#22` is complete: accepted R1/VDYP7 schema, candidate field
+   mappings, gross-area diagnostics, and the P2.3 handoff contract are recorded
+   in `planning/tfl6_r1_vdyp_field_profile.md`.
+2. Start P2.3: define reviewed current-AOI source-layer recipe contracts under
+   the future TFL/general-FMU recipe path. Do not execute THLB recipes, build
+   DEM/slope products, or generate model inputs in this slice.
 3. Keep Phase 3 design issues `#8` and `#9` idle until Phase 2 source-layer and
    THLB dependencies are accepted or the maintainer explicitly approves a
    narrower parallel design slice.

@@ -987,3 +987,19 @@
 - kept P2.2 open for a short review/acceptance handoff contract before P2.3,
   with no source fetch, recipe YAML, THLB execution, model-input generation,
   XML, Matrix Builder, or Patchworks runtime work started.
+
+## 2026-06-24 - Closed P2.2 R1 and VDYP7 field profiling
+
+- added a P2.2c field-mapping handoff contract to
+  `planning/tfl6_r1_vdyp_field_profile.md`;
+- accepted BCLCS/non-vegetated/land-cover, explicit non-productive codes plus
+  reviewed productivity thresholds, leading-species deciduous signals, BEC
+  attribution, and R1/VDYP join diagnostics as suitable surfaces for P2.3
+  source-layer recipe-contract drafting;
+- kept `for_mgmt_land_base_ind == N` as QA-only because it absorbs explicit
+  non-productive rows;
+- kept operability-proxy fields as QA/sensitivity support only until the P2.1a
+  design constraints and later slope/aspatial decisions are incorporated; and
+- marked P2.2 complete in `ROADMAP.md` without fetching source layers, creating
+  recipe YAML, executing THLB netdown, building DEM/slope products, generating
+  model inputs, or starting XML, Matrix Builder, or Patchworks runtime work.
