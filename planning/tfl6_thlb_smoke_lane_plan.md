@@ -100,6 +100,31 @@ The next bounded slice is P2.4d validation/readiness: record the exact
 non-executing validation command set, the future smoke-run command, stop-line,
 expected outputs, and acceptance checks before P2.4e execution.
 
+## P2.4d Checkpoint Input Format Note
+
+FEMIC issue `UBC-FRESH/femic#203` records the parent-code support needed for
+this smoke lane: explicit THLB checkpoint inputs may be Feather or readable
+vector datasets such as GeoPackage. The older Feather checkpoint convention is
+still useful for large repeated TSA29 restart/debug cycles, but it is not a
+raw-input requirement for TFL 6.
+
+For this instance, the first P2.4e smoke command should use the accepted R1
+GeoPackage directly as the explicit checkpoint/accounting surface:
+
+```powershell
+& .\.venv\Scripts\python.exe -m femic tsr thlb-netdown-run `
+  --instance-root external/femic-tfl6-instance `
+  --thlb-netdown-recipe-path config/tsr/thlb_netdown.recipe.yaml `
+  --checkpoint-path data/input/tfl_6/vri_2025_r1_poly_tfl6.gpkg `
+  --output-path data/tsr/tfl6_thlb_smoke_checkpoint.feather `
+  --audit-path config/tsr/tfl6_thlb_smoke.audit.json `
+  --execution-mode reconstructed `
+  --parallel-mode serial
+```
+
+P2.4d still needs to validate the scaffold and record acceptance checks before
+this command is executed in P2.4e.
+
 ## Non-Goals
 
 - No source fetches.

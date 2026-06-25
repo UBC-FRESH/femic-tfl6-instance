@@ -1061,3 +1061,13 @@
   loaders without executing THLB logic; and
 - updated `ROADMAP.md` and `planning/tfl6_thlb_smoke_lane_plan.md` so P2.4d
   validation/readiness is the next bounded slice.
+
+## 2026-06-25 - Recorded GeoPackage checkpoint support for P2.4d
+
+- updated `planning/tfl6_thlb_smoke_lane_plan.md` to record that parent FEMIC
+  issue `#203` supports explicit GeoPackage/vector THLB checkpoint inputs;
+- preserved the historical rationale for Feather checkpoints as a TSA29
+  restart/debug speed convention rather than a raw-input requirement; and
+- recorded the future P2.4e smoke-run command using the accepted R1 GeoPackage
+  as the explicit checkpoint/accounting surface, while keeping P2.4d
+  validation/readiness non-executing.
