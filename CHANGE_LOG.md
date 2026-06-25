@@ -972,3 +972,18 @@
 - accepted no executable THLB recipe logic, fetched no new source layers, and
   started no DEM/slope, model-input, XML, Matrix Builder, or Patchworks runtime
   work.
+
+## 2026-06-24 - Drafted P2.2b candidate field-mapping diagnostics
+
+- extended `planning/tfl6_r1_vdyp_field_profile.md` with candidate mapping and
+  gross-area diagnostics for `tfl6_nd_010`, `tfl6_nd_040`, `tfl6_nd_140`, and
+  operability-proxy review;
+- compared candidate gross areas against the scaled current-AOI benchmark
+  deductions while keeping gross-vs-marginal accounting explicit;
+- flagged `for_mgmt_land_base_ind == N` as a useful QA cross-check rather than
+  a clean single-step non-forest rule because it absorbs explicit
+  non-productive rows;
+- recorded missing VDYP7 layer coverage as a P2.3 QA/mapping item; and
+- kept P2.2 open for a short review/acceptance handoff contract before P2.3,
+  with no source fetch, recipe YAML, THLB execution, model-input generation,
+  XML, Matrix Builder, or Patchworks runtime work started.

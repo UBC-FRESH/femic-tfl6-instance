@@ -100,9 +100,11 @@ starts.
   (`#22`).
   - [x] P2.2a Record accepted input schema profile, area surface, and
     R1/VDYP7 join coverage in `planning/tfl6_r1_vdyp_field_profile.md`.
-  - [ ] P2.2b Draft candidate field mappings and gross-area diagnostics for
+  - [x] P2.2b Draft candidate field mappings and gross-area diagnostics for
     non-forest, non-productive, deciduous-leading, productivity, and
     operability-proxy review without accepting executable recipe logic.
+  - [ ] P2.2c Review/accept or revise the candidate mappings and record the
+    short field-mapping handoff contract for P2.3.
 - [ ] P2.3 Define reviewed current-AOI source-layer recipe contracts under the
   future TFL/general-FMU recipe path.
 - [ ] P2.4 Implement and smoke-test the first executable THLB netdown recipe
@@ -206,13 +208,12 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 
 ## Current Next Steps
 
-1. P2.2a / `#22` is complete: accepted 2025 R1 and VDYP7 schema, area surface,
-   and join coverage are recorded in
-   `planning/tfl6_r1_vdyp_field_profile.md`.
-2. Continue P2.2 with P2.2b: draft candidate field mappings and gross-area
-   diagnostics for non-forest, non-productive, deciduous-leading,
-   productivity, and operability-proxy review. Do not fetch new source layers,
-   accept executable recipe logic, or execute THLB recipes in this slice.
+1. P2.2b / `#22` is complete: candidate field mappings and gross-area
+   diagnostics are recorded in `planning/tfl6_r1_vdyp_field_profile.md`.
+2. Continue P2.2 with P2.2c: review, accept, or revise the candidate mappings
+   and record the short field-mapping handoff contract for P2.3. Do not fetch
+   new source layers, create recipe YAML, or execute THLB recipes in this
+   slice.
 3. Keep Phase 3 design issues `#8` and `#9` idle until Phase 2 source-layer and
    THLB dependencies are accepted or the maintainer explicitly approves a
    narrower parallel design slice.

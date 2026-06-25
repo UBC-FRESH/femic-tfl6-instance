@@ -189,7 +189,113 @@ P2.2a is complete as a schema and join-coverage profile:
 - no mapping has been accepted as executable recipe logic; and
 - no THLB recipe, model-input, DEM/slope, or Patchworks work has started.
 
-The next bounded P2.2 slice is to draft candidate field mappings and gross-area
-diagnostics for non-forest, non-productive, deciduous-leading, productivity,
-and operability-proxy inputs, keeping marginal netdown acceptance for later
-recipe-readiness review.
+P2.2b below drafts candidate mappings and gross-area diagnostics for
+maintainer review.
+
+## P2.2b Candidate Mapping Diagnostics
+
+These candidate mappings are review diagnostics only. They are not executable
+recipe logic and they are not marginal netdown results. Gross current-AOI areas
+can be larger than the MP10 or scaled benchmark deductions because the MP10
+Table 4 rows are ordered marginal reductions after previous overlaps have
+already been removed.
+
+| Step | Candidate rule surface | Rows | Gross area | Scaled benchmark deduction | P2.2b interpretation |
+| --- | --- | ---: | ---: | ---: | --- |
+| `tfl6_nd_010` | `bclcs_level_1 in {N, U}` | `1288` | `10693.446 ha` | `17069.353 ha` | conservative non-vegetated/unreported signal; likely undercounts MP10 non-forest if used alone |
+| `tfl6_nd_010` | `bclcs_level_2 in {N, W}` or null | `2195` | `20209.542 ha` | `17069.353 ha` | closer high-side BCLCS candidate; includes water/wetland and unreported rows |
+| `tfl6_nd_010` | `for_mgmt_land_base_ind == N` | `2437` | `18652.798 ha` | `17069.353 ha` | close to the scaled benchmark, but it absorbs explicit non-productive codes and should not be used blindly as the non-forest row |
+| `tfl6_nd_010` | `bclcs_level_1 in {N, U}` or `for_mgmt_land_base_ind == N` | `2509` | `18935.956 ha` | `17069.353 ha` | candidate review envelope; needs split from non-productive logic |
+| `tfl6_nd_040` | any `non_productive_descriptor_cd` or `non_productive_cd` present | `965` | `5850.363 ha` | `8816.360 ha` | explicit non-productive code signal; likely undercounts MP10 Table 7 if used alone |
+| `tfl6_nd_040` | explicit non-productive signal or `site_index < 5` | `1306` | `10048.848 ha` | `8816.360 ha` | plausible review candidate, slightly high before overlap/marginal accounting |
+| `tfl6_nd_040` | explicit non-productive signal or `site_index < 8` | `2039` | `16821.321 ha` | `8816.360 ha` | likely too broad as a base-case rule unless a low-productivity threshold is intentionally accepted |
+| `tfl6_nd_040` | explicit non-productive signal or missing/zero `site_index` | `2630` | `19382.142 ha` | `8816.360 ha` | too broad as a direct Table 7 proxy; useful as a QA flag |
+| `tfl6_nd_140` | `species_cd_1 in {DR, AC, MB}` from R1 | `1007` | `4395.795 ha` | `2245.868 ha` | gross deciduous-leading candidate; expected to shrink after earlier netdown overlaps |
+| `tfl6_nd_140` | R1 deciduous-leading candidate outside `bclcs_level_2 in {N, W}`/null | `980` | `4318.093 ha` | `2245.868 ha` | still above scaled benchmark; recipe-readiness review must compare marginal area after prior steps |
+| `tfl6_nd_140` | R1 deciduous-leading candidate with `for_mgmt_land_base_ind == Y` | `950` | `4272.531 ha` | `2245.868 ha` | candidate if the managed-land-base indicator is adopted upstream |
+| operability proxy | `proj_height_class_cd_1 in {1, 2}` | `9017` | `85998.283 ha` | `15746.393 ha` | far too broad as a direct inoperability deduction; only useful as one proxy input |
+| operability proxy | `live_stand_volume_125 < 150` | `5140` | `42986.145 ha` | `15746.393 ha` | broad low-volume proxy input; needs slope/access/species context |
+| operability proxy | `crown_closure < 30` | `3973` | `35972.911 ha` | `15746.393 ha` | broad open-stand proxy input; not sufficient by itself |
+| operability proxy | `basal_area < 20` | `3628` | `32017.459 ha` | `15746.393 ha` | broad low-density proxy input; not sufficient by itself |
+| operability proxy | union of height class 1/2, volume < 150, crown closure < 30, or basal area < 20 | `10126` | `92593.500 ha` | `15746.393 ha` | diagnostic only; confirms proxy needs a reviewed multi-factor rule and likely DEM-derived slope |
+
+### Non-Forest / Non-Productive Split Notes
+
+`for_mgmt_land_base_ind == N` is close to the scaled non-forest benchmark, but
+it contains all explicit non-productive descriptor/code rows:
+
+| Overlap check | Rows | Gross area |
+| --- | ---: | ---: |
+| explicit non-productive rows inside `for_mgmt_land_base_ind == N` | `965` | `5850.363 ha` |
+| explicit non-productive rows outside `for_mgmt_land_base_ind == N` | `0` | `0.000 ha` |
+| `site_index < 8` inside `for_mgmt_land_base_ind == N` | `597` | `5103.361 ha` |
+| `site_index < 8` outside `for_mgmt_land_base_ind == N` | `738` | `6817.213 ha` |
+
+P2.2b therefore recommends treating `for_mgmt_land_base_ind` as a QA and
+cross-check field, not as the single accepted non-forest mapping. A cleaner
+candidate review path is:
+
+1. Use BCLCS and non-vegetated/land-cover fields to define the gross
+   non-forest review envelope for `tfl6_nd_010`.
+2. Use explicit `non_productive_*` fields plus a reviewed site-index or
+   productivity threshold to define `tfl6_nd_040`.
+3. Compare the ordered marginal result against the scaled `tfl6_nd_010` and
+   `tfl6_nd_040` benchmarks during P2.3/P2.4 recipe-readiness review.
+
+### Missing VDYP Coverage Notes
+
+The `1603` R1 polygons missing VDYP7 layer rows cover `14621.899 ha`. Their
+gross profile supports the hypothesis that many missing layer rows are outside
+the normal yield/species lane, but this still needs recipe-readiness review:
+
+| Field signal among R1 rows missing VDYP7 layer | Dominant area signals |
+| --- | --- |
+| `bclcs_level_1` | `N` `8305.025 ha`; `V` `4917.422 ha`; `U` `1399.452 ha` |
+| `bclcs_level_2` | `L` `5400.341 ha`; `N` `4909.733 ha`; `W` `2904.684 ha`; null `1399.452 ha`; `T` `7.688 ha` |
+| `bclcs_level_4` | null `7367.067 ha`; `SL` `4793.852 ha`; `EL` `2299.589 ha`; `ST` `75.228 ha`; `TC` `6.843 ha` |
+| `species_cd_1` | null `14613.740 ha`; minor non-null species `8.159 ha` combined |
+| `for_mgmt_land_base_ind` | `N` `9800.458 ha`; `Y` `4821.441 ha` |
+
+The `Y` area missing VDYP7 layer rows is a QA item for P2.3. It should not be
+silently discarded until the mapping contract decides how to handle R1 polygons
+with no VDYP species/yield layer.
+
+### VDYP Species Cross-Check
+
+VDYP7 layer `species_cd_1` broadly agrees with the R1 leading-species signal:
+
+| VDYP7 layer `species_cd_1` group | Rows | Gross R1 area |
+| --- | ---: | ---: |
+| `HW` | `15946` | `133397.652 ha` |
+| `CW` | `5077` | `35332.950 ha` |
+| `YC` | `1003` | `9435.505 ha` |
+| `HM` | `633` | `6963.222 ha` |
+| `DR` | `993` | `4380.514 ha` |
+| `BA` | `530` | `4022.814 ha` |
+| `SS` | `490` | `3673.615 ha` |
+| `FDC` | `348` | `3202.965 ha` |
+| null | `162` | `745.206 ha` |
+| `AC` / `MB` | `4` | `14.275 ha` |
+
+For `tfl6_nd_140`, the first candidate rule should focus on leading species
+(`species_cd_1`) rather than any deciduous component in secondary species
+fields. Deciduous secondary components occur across much larger conifer-leading
+areas and should remain in conifer-leading stands, consistent with the MP10
+Table 14 wording.
+
+## P2.2b Status
+
+P2.2b is complete as a candidate mapping and gross-area diagnostic pass:
+
+- candidate field mappings are documented for non-forest, non-productive,
+  deciduous-leading, productivity, and operability-proxy review;
+- gross areas are recorded against the scaled benchmark deductions where
+  relevant;
+- `for_mgmt_land_base_ind == N` is flagged as a useful QA cross-check but not
+  a clean single-step rule because it absorbs explicit non-productive rows;
+- missing VDYP7 layer coverage is documented as a P2.3 QA/mapping item; and
+- no mapping has been accepted as executable recipe logic.
+
+The next bounded P2.2 slice is maintainer review of these candidates and, if
+accepted or revised, a short P2.2 closeout mapping contract that hands P2.3 a
+reviewed set of field assumptions without running THLB recipes.
