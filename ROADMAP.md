@@ -105,13 +105,13 @@ starts.
     operability-proxy review without accepting executable recipe logic.
   - [x] P2.2c Review/accept or revise the candidate mappings and record the
     short field-mapping handoff contract for P2.3.
-- [ ] P2.3 Define reviewed current-AOI source-layer recipe contracts under the
+- [x] P2.3 Define reviewed current-AOI source-layer recipe contracts under the
   future TFL/general-FMU recipe path (`#23`).
   - [x] P2.3a Open and link the child issue under Phase 2 parent `#12`.
   - [x] P2.3b Draft the first source-layer recipe-contract table in
     `planning/tfl6_source_layer_recipe_contracts.md` without creating
     executable recipe YAML.
-  - [ ] P2.3c Review and revise the contract table into the accepted P2.4
+  - [x] P2.3c Review and revise the contract table into the accepted P2.4
     handoff.
 - [ ] P2.4 Implement and smoke-test the first executable THLB netdown recipe
   lane against the accepted TFL 6 input surfaces.
@@ -214,12 +214,13 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 
 ## Current Next Steps
 
-1. P2.3 / `#23` has started: the child issue is linked under Phase 2 parent
-   `#12`, and the first source-layer recipe-contract table is drafted in
+1. P2.3 / `#23` is complete: the reviewed source-layer contract table and
+   accepted P2.4 smoke-lane handoff are recorded in
    `planning/tfl6_source_layer_recipe_contracts.md`.
-2. Continue P2.3 with P2.3c: review and revise the contract table into the
-   accepted P2.4 handoff. Do not create executable recipe YAML, execute THLB
-   recipes, build DEM/slope products, or generate model inputs in this slice.
+2. Start P2.4: implement and smoke-test the first executable THLB netdown
+   recipe lane against the accepted TFL 6 input surfaces. Keep the first P2.4
+   slice narrowly scoped to recipe YAML/scaffold planning and smoke-run
+   boundaries before executing a full lane.
 3. Keep Phase 3 design issues `#8` and `#9` idle until Phase 2 source-layer and
    THLB dependencies are accepted or the maintainer explicitly approves a
    narrower parallel design slice.

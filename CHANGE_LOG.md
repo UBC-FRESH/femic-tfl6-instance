@@ -1015,3 +1015,21 @@
 - kept this slice planning-only, with no source fetch, executable recipe YAML,
   THLB execution, DEM/slope materialization, model-input generation, XML,
   Matrix Builder, or Patchworks runtime work.
+
+## 2026-06-24 - Closed P2.3 source-layer recipe-contract planning
+
+- accepted `planning/tfl6_source_layer_recipe_contracts.md` as the P2.4
+  smoke-lane handoff contract;
+- defined which rows P2.4 may encode first as inventory-derived rules,
+  provisional spatial overlays, aspatial fallbacks, QA-only diagnostics, or
+  context-only checkpoints;
+- required the first P2.4 smoke report to keep gross area, ordered marginal
+  area, cumulative checkpoints, fallback rows, provisional rows, and scaled
+  benchmark comparisons visible;
+- preserved unresolved road, riparian, vintage, draft-OGMA, operability, and
+  strategic-RMZ items as provisional, fallback, or sensitivity-bound rather
+  than final semantics; and
+- marked P2.3 complete in `ROADMAP.md` without fetching source layers,
+  creating executable recipe YAML, executing THLB netdown, building DEM/slope
+  products, generating model inputs, or starting XML, Matrix Builder, or
+  Patchworks runtime work.
