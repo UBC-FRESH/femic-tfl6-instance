@@ -958,3 +958,17 @@
   dependency gates open; and
 - preserved older changelog wording about the original P1.8 proposal step as
   historical provenance.
+
+## 2026-06-24 - Profiled accepted R1 and VDYP7 field surfaces
+
+- added `planning/tfl6_r1_vdyp_field_profile.md` as the P2.2a schema and
+  join-coverage profile for accepted 2025 TFL 6 R1 and VDYP7 inputs;
+- recorded `feature_id` join integrity across `26959` R1 rows, `26833` VDYP7
+  polygon rows, and `25585` VDYP7 layer rows;
+- summarized area-weighted candidate fields for non-forest, non-productive,
+  deciduous-leading, productivity, BEC, and operability-proxy review;
+- updated `ROADMAP.md` so P2.2b is the next bounded slice for candidate field
+  mappings and gross-area diagnostics; and
+- accepted no executable THLB recipe logic, fetched no new source layers, and
+  started no DEM/slope, model-input, XML, Matrix Builder, or Patchworks runtime
+  work.
