@@ -1033,3 +1033,17 @@
   creating executable recipe YAML, executing THLB netdown, building DEM/slope
   products, generating model inputs, or starting XML, Matrix Builder, or
   Patchworks runtime work.
+
+## 2026-06-25 - Started P2.4 THLB smoke-lane planning
+
+- opened child issue `#24` for P2.4 under Phase 2 parent `#12`;
+- added `planning/tfl6_thlb_smoke_lane_plan.md` with the first executable
+  recipe/scaffold and smoke-run boundary;
+- selected the existing FEMIC `config/tsr/` reviewed recipe convention for the
+  first TFL 6 smoke lane until a dedicated TFL/general-FMU wrapper exists;
+- split P2.4 into bounded subtasks for recipe scaffold creation, scaffold
+  validation, exact smoke-run command/stop-line definition, bounded execution,
+  and artifact inspection; and
+- kept this slice planning-only, with no recipe YAML creation, THLB execution,
+  source fetch, DEM/slope materialization, model-input generation, XML, Matrix
+  Builder, or Patchworks runtime work.

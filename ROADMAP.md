@@ -114,7 +114,17 @@ starts.
   - [x] P2.3c Review and revise the contract table into the accepted P2.4
     handoff.
 - [ ] P2.4 Implement and smoke-test the first executable THLB netdown recipe
-  lane against the accepted TFL 6 input surfaces.
+  lane against the accepted TFL 6 input surfaces (`#24`).
+  - [x] P2.4a Open and link the child issue under Phase 2 parent `#12`.
+  - [x] P2.4b Draft the first smoke-lane plan in
+    `planning/tfl6_thlb_smoke_lane_plan.md` without creating recipe YAML or
+    executing THLB netdown.
+  - [ ] P2.4c Create the first recipe YAML scaffold under the accepted
+    `config/tsr/` convention without executing it.
+  - [ ] P2.4d Validate the scaffold and record the exact bounded smoke-run
+    command, stop-line, outputs, and acceptance checks.
+  - [ ] P2.4e Execute the first bounded smoke run and inspect checkpoint, audit,
+    status, and benchmark/tolerance artifacts.
 - [ ] P2.5 Compare GLB/AFLB/LHLB/THLB milestones against the adjusted current-AOI
   benchmark targets and record accepted teaching tolerances.
 
@@ -214,13 +224,13 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 
 ## Current Next Steps
 
-1. P2.3 / `#23` is complete: the reviewed source-layer contract table and
-   accepted P2.4 smoke-lane handoff are recorded in
-   `planning/tfl6_source_layer_recipe_contracts.md`.
-2. Start P2.4: implement and smoke-test the first executable THLB netdown
-   recipe lane against the accepted TFL 6 input surfaces. Keep the first P2.4
-   slice narrowly scoped to recipe YAML/scaffold planning and smoke-run
-   boundaries before executing a full lane.
+1. P2.4 / `#24` has started: the child issue is linked under Phase 2 parent
+   `#12`, and the first smoke-lane plan is recorded in
+   `planning/tfl6_thlb_smoke_lane_plan.md`.
+2. Continue P2.4 with P2.4c: create the first recipe YAML scaffold under the
+   accepted `config/tsr/` convention without executing THLB netdown. Do not
+   fetch sources, build DEM/slope products, generate model inputs, or start
+   Patchworks work in this slice.
 3. Keep Phase 3 design issues `#8` and `#9` idle until Phase 2 source-layer and
    THLB dependencies are accepted or the maintainer explicitly approves a
    narrower parallel design slice.
