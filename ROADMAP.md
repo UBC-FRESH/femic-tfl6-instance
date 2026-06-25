@@ -119,7 +119,7 @@ starts.
   - [x] P2.4b Draft the first smoke-lane plan in
     `planning/tfl6_thlb_smoke_lane_plan.md` without creating recipe YAML or
     executing THLB netdown.
-  - [ ] P2.4c Create the first recipe YAML scaffold under the accepted
+  - [x] P2.4c Create the first recipe YAML scaffold under the accepted
     `config/tsr/` convention without executing it.
   - [ ] P2.4d Validate the scaffold and record the exact bounded smoke-run
     command, stop-line, outputs, and acceptance checks.
@@ -227,10 +227,10 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 1. P2.4 / `#24` has started: the child issue is linked under Phase 2 parent
    `#12`, and the first smoke-lane plan is recorded in
    `planning/tfl6_thlb_smoke_lane_plan.md`.
-2. Continue P2.4 with P2.4c: create the first recipe YAML scaffold under the
-   accepted `config/tsr/` convention without executing THLB netdown. Do not
-   fetch sources, build DEM/slope products, generate model inputs, or start
-   Patchworks work in this slice.
+2. Continue P2.4 with P2.4d: validate the `config/tsr/` scaffold and record the
+   exact bounded smoke-run command, stop-line, outputs, and acceptance checks
+   before any THLB execution. Do not fetch sources, build DEM/slope products,
+   generate model inputs, or start Patchworks work in this slice.
 3. Keep Phase 3 design issues `#8` and `#9` idle until Phase 2 source-layer and
    THLB dependencies are accepted or the maintainer explicitly approves a
    narrower parallel design slice.

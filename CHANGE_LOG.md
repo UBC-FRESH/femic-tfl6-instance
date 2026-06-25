@@ -1047,3 +1047,17 @@
 - kept this slice planning-only, with no recipe YAML creation, THLB execution,
   source fetch, DEM/slope materialization, model-input generation, XML, Matrix
   Builder, or Patchworks runtime work.
+
+## 2026-06-25 - Added P2.4c THLB recipe scaffold
+
+- added `config/tsr/source_layers.recipe.yaml` as the companion source-layer
+  scaffold for already-materialized TFL 6 inputs;
+- added `config/tsr/thlb_netdown.recipe.yaml` with one parent row and one
+  scaffolded step for every MP10 Table 4 row from `tfl6_nd_000` through
+  `tfl6_nd_210`;
+- preserved the P2.3/P2.4 statuses for attribute rules, provisional spatial
+  overlays, aspatial fallbacks, context rows, and deferred sensitivity rows;
+- verified both scaffold files parse and load through FEMIC's TSR recipe
+  loaders without executing THLB logic; and
+- updated `ROADMAP.md` and `planning/tfl6_thlb_smoke_lane_plan.md` so P2.4d
+  validation/readiness is the next bounded slice.

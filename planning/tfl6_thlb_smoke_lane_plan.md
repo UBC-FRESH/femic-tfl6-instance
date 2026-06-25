@@ -7,9 +7,10 @@ smoke-run boundary for TFL 6.
 
 Governing issue: `#24`.
 
-This is a P2.4 planning slice only. It does not create executable recipe YAML,
-run THLB netdown, fetch source layers, build DEM/slope products, generate model
-inputs, or build Patchworks runtime artifacts.
+P2.4b was a planning slice only. P2.4c added the first tracked recipe
+scaffolds under `config/tsr/`, but still did not run THLB netdown, fetch source
+layers, build DEM/slope products, generate model inputs, or build Patchworks
+runtime artifacts.
 
 ## Existing FEMIC Recipe Convention
 
@@ -19,15 +20,16 @@ has CLI, status, audit, and workbench guardrails:
 
 | Artifact | Planned TFL 6 path | Notes |
 | --- | --- | --- |
-| Source-layer recipe | `config/tsr/source_layers.recipe.yaml` | Instance-local reviewed source-layer contract. |
-| THLB netdown recipe | `config/tsr/thlb_netdown.recipe.yaml` | First executable THLB scaffold; must preserve MP10 row order and P2.3 statuses. |
+| Source-layer recipe | `config/tsr/source_layers.recipe.yaml` | Instance-local reviewed source-layer scaffold created in P2.4c. |
+| THLB netdown recipe | `config/tsr/thlb_netdown.recipe.yaml` | First THLB scaffold created in P2.4c; preserves MP10 row order and P2.3 statuses. |
 | THLB status report | `config/tsr/thlb_netdown.status.md` | Review/status surface for scaffold/build. |
 | Runtime status report | `runtime/logs/tsr/` | Runtime-only logs; do not track by default. |
 | Smoke output checkpoint | `data/tsr/tfl6_thlb_smoke_checkpoint.feather` | Planned first smoke output; track only if accepted by later issue review. |
 | Smoke audit | `config/tsr/tfl6_thlb_smoke.audit.json` | Planned first smoke audit if compact and reviewable. |
 
-P2.4 may later create recipe YAML under these paths, but this slice only
-defines the boundary.
+P2.4c created the two recipe scaffold files under these paths. P2.4d must
+validate the scaffold and record the exact bounded smoke-run command, stop-line,
+outputs, and acceptance checks before P2.4e execution.
 
 ## First Smoke-Lane Scope
 
@@ -79,10 +81,28 @@ P2.4 should proceed in small slices:
    benchmark/tolerance findings before deciding whether P2.4 is complete or
    needs another repair slice.
 
+## P2.4c Scaffold Status
+
+P2.4c is complete:
+
+- `config/tsr/source_layers.recipe.yaml` lists the already-materialized TFL 6
+  source artifacts needed by the first smoke lane;
+- `config/tsr/thlb_netdown.recipe.yaml` contains one parent step and one
+  scaffolded step for each MP10 Table 4 row from `tfl6_nd_000` through
+  `tfl6_nd_210`;
+- the scaffold keeps attribute, provisional spatial overlay, aspatial fallback,
+  context-only, and deferred-sensitivity statuses visible;
+- the scaffold loads through FEMIC's TSR recipe loaders; and
+- no recipe execution, source fetch, DEM/slope derivation, model-input
+  generation, XML, Matrix Builder, or Patchworks runtime work occurred.
+
+The next bounded slice is P2.4d validation/readiness: record the exact
+non-executing validation command set, the future smoke-run command, stop-line,
+expected outputs, and acceptance checks before P2.4e execution.
+
 ## Non-Goals
 
 - No source fetches.
-- No recipe YAML creation in this slice.
 - No THLB netdown execution in this slice.
 - No DEM/slope materialization or operability zonal statistics.
 - No model-input, XML, Matrix Builder, or Patchworks runtime work.
