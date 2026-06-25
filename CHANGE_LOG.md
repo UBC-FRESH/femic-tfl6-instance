@@ -901,3 +901,12 @@
   deduction for the teaching base case: `5686 ha` historical MP10 or
   `7198.423 ha` scaled current-AOI validation target, with any later strategic
   RMZ spatial treatment deferred to an enhancement/sensitivity lane.
+
+## 2026-06-24 - Added strategic RMZ student-challenge docs note
+
+- added the first minimal Sphinx docs tree under `docs/`;
+- documented an advanced student challenge to locate strategic RMZ polygon
+  areas, replace the aspatial `tfl6_nd_180` fallback with a geometry-backed
+  RMZ/LU/BEC overlay, rebuild the model, and rerun scenarios; and
+- kept the challenge scoped as an enhancement/sensitivity exercise rather than
+  a base-case prerequisite.
