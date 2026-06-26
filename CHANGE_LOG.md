@@ -1230,3 +1230,13 @@
   reports can be compared against whole-TFL and TFL 6 remainder outcomes; and
 - updated roadmap text so P3.1 and P3.2 carry stakeholder-comparison reporting
   requirements into later model-input and Patchworks surfaces.
+
+## 2026-06-25 - Clarified student-facing stakeholder KPI purpose
+
+- expanded `planning/tfl6_stakeholder_context.md` so the purpose of student
+  projects is explicitly framed as multi-perspective scenario tradeoff
+  exploration using stakeholder-valued KPI proxies;
+- added a `Multi-Perspective Scenario Tradeoffs` section to the Sphinx teaching
+  challenges page; and
+- updated Phase 3 and Phase 5 roadmap text so cedar, expansion, and final
+  teaching docs carry the multi-perspective KPI interpretation requirement.

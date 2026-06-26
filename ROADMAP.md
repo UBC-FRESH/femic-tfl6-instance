@@ -196,7 +196,9 @@ source-layer and THLB surfaces, without compiling a Patchworks package.
     provisional unresolved assumptions.
   - [ ] P3.1c Define Patchworks-facing cedar products, accounts, treatment
     hooks, stakeholder-comparison signals, and report requirements for the
-    first model-input bundle.
+    first model-input bundle, including student-facing KPI families for
+    comparing cedar/community outcomes against broader TFL 6 fibre supply,
+    value, and delivered-cost proxies.
 - [ ] P3.2 Complete embedded NICF/K3Z identity and expansion candidate-area
   design (`#9`) for group accounts, matching targets, reports, unallocated
   candidate pools, productivity screening, and AAC uplift constraints.
@@ -213,7 +215,8 @@ source-layer and THLB surfaces, without compiling a Patchworks package.
   - [ ] P3.2d Define Patchworks group accounts, matching targets, scenario
     toggles, and reports needed to track K3Z/NICF core and expansion
     candidates separately, including WFP-facing fibre supply, value, and
-    delivered-cost tradeoff signals where available.
+    delivered-cost tradeoff signals where available and multi-perspective KPI
+    outputs for student scenario projects.
   - [ ] P3.2e Lock dependency handoff to P3.7/P4.1 so embedded identity fields
     appear in the model-input bundle without changing AU identity.
 - [ ] P3.7 Update the TFL 6 run-profile/model-input contract with reviewed
@@ -248,7 +251,8 @@ after the runtime package has passed direct artifact and launch smoke checks.
   `femic-k3z-instance` and `femic-tsa29-instance` documentation surfaces,
   including quickstart instructions, rebuild workflow, source-data provenance,
   THLB validation notes, scenario teaching workflows, advanced student
-  challenges, known limitations, and warning-clean Sphinx build evidence.
+  challenges, multi-perspective stakeholder/KPI scenario interpretation, known
+  limitations, and warning-clean Sphinx build evidence.
 - [ ] P5.4 Run final release QA across source materialization, instance rebuild,
   Patchworks launch smoke, and documentation checks.
 

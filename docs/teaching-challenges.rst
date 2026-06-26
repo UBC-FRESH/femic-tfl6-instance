@@ -1,6 +1,31 @@
 Advanced Student Challenges
 ===========================
 
+Multi-Perspective Scenario Tradeoffs
+------------------------------------
+
+The TFL 6 teaching instance should support student projects that explore
+tensions among stakeholder perspectives rather than search for a single
+universal objective. The embedded K3Z/NICF core and candidate expansion areas
+sit inside a larger TFL 6 context managed by Western Forest Products. NICF
+stakeholders may value cedar, cultural cedar visibility, community-forest
+continuity, and expansion opportunities, while WFP-facing perspectives will
+also care about fibre supply volume, product value, delivered-cost proxies, and
+mill/supply-chain implications.
+
+A good student project should therefore compare scenarios using multiple KPI
+families. Useful examples include harvest flow, growing-stock change, product
+mix or value proxies, delivered-cost or operability proxies, cedar availability
+and reserve outcomes, community-forest expansion area, treatment opportunity,
+retention geography, and impacts on the TFL 6 remainder. These KPIs are
+proxies for things stakeholders may value; they are not claims that every
+stakeholder values every metric equally.
+
+Scenario interpretation should make the tradeoff visible. For example, an
+NICF-preferred cedar or expansion scenario may improve community-facing
+outcomes while reducing whole-TFL harvest flow or increasing delivered-cost
+pressure. That tension is part of the teaching value of the instance.
+
 Strategic RMZ Spatial Replacement
 ---------------------------------
 

@@ -28,6 +28,11 @@ For the teaching instance, assume:
 ## Modeling Implications
 
 The model should make tradeoffs visible instead of hiding them in assumptions.
+The student-facing purpose is to let teams explore tensions among stakeholder
+perspectives, not to optimize for one preferred viewpoint. Scenario comparisons
+should use a range of output KPIs that proxy for values different stakeholders
+care about, while recognizing that not every stakeholder agrees that every KPI
+has the same importance or even the same sign.
 
 Design requirements:
 
@@ -40,6 +45,10 @@ Design requirements:
   available.
 - Preserve WFP-facing fibre-supply signals alongside NICF-facing community,
   cedar, and expansion signals.
+- Preserve student-facing KPI families for multiple perspectives, including
+  fibre supply, product-value proxies, delivered-cost proxies, cedar/cultural
+  cedar signals, community-forest expansion opportunity, treatment opportunity,
+  reserve/retention outcomes, and spatial distribution of effects.
 - Treat conflict between NICF goals and WFP fibre-supply/value/cost constraints
   as a teaching feature, not a nuisance to average away.
 
@@ -53,6 +62,8 @@ Phase 4 and later runtime surfaces should support:
   WFP-facing fibre-supply outcomes;
 - reports that show whether expansion or cedar-reserve scenarios shift area,
   volume, product mix, or cost proxies away from the TFL 6 remainder;
+- KPI tables that let students compare stakeholder-style perspectives without
+  implying that all perspectives share the same objective function;
 - scenario toggles that let students test NICF expansion/cedar assumptions
   without changing base AU identities; and
 - narrative documentation that explains the likely governance tension between
