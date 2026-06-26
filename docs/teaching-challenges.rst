@@ -6,12 +6,14 @@ Multi-Perspective Scenario Tradeoffs
 
 The TFL 6 teaching instance should support student projects that explore
 tensions among stakeholder perspectives rather than search for a single
-universal objective. The embedded K3Z/NICF core and candidate expansion areas
-sit inside a larger TFL 6 context managed by Western Forest Products. NICF
-stakeholders may value cedar, cultural cedar visibility, community-forest
-continuity, and expansion opportunities, while WFP-facing perspectives will
-also care about fibre supply volume, product value, delivered-cost proxies, and
-mill/supply-chain implications.
+universal objective. The current TFL 6 AOI is managed in a Western Forest
+Products context, while the original K3Z/NICF teaching tenure is mostly an
+external reference area under the current boundary. Future NICF expansion
+candidates are expected to come from proximal or adjacent public forested land
+outside the current TFL 6 AOI. NICF stakeholders may value cedar, cultural
+cedar visibility, community-forest continuity, and expansion opportunities,
+while WFP-facing perspectives will also care about fibre supply volume, product
+value, delivered-cost proxies, and mill/supply-chain implications.
 
 A good student project should therefore compare scenarios using multiple KPI
 families. Useful examples include harvest flow, growing-stock change, product
@@ -19,7 +21,9 @@ mix or value proxies, delivered-cost or operability proxies, cedar availability
 and reserve outcomes, community-forest expansion area, treatment opportunity,
 retention geography, and impacts on the TFL 6 remainder. These KPIs are
 proxies for things stakeholders may value; they are not claims that every
-stakeholder values every metric equally.
+stakeholder values every metric equally. Expansion scenarios should report the
+outside-AOI source lands separately from current-AOI TFL 6 area so students do
+not mistake candidate expansion geography for part of the base TFL 6 landbase.
 
 Scenario interpretation should make the tradeoff visible. For example, an
 NICF-preferred cedar or expansion scenario may improve community-facing

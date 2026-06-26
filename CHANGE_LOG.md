@@ -1638,3 +1638,29 @@
 - updated `ROADMAP.md` while preserving the boundary that no expansion
   geometry, screening execution, model-input bundle, XML, Matrix Builder, or
   runtime-package work starts in P3.2c.
+
+## 2026-06-26 - Locked P3.2d Patchworks comparison surfaces
+
+- extended `planning/tfl6_nicf_embedded_identity.md` with the P3.2d
+  Patchworks-facing contract for embedded-area group dimensions, account
+  families, matching targets, scenario toggles, and reports;
+- required separate reporting for current-AOI WFP/TFL 6 remainder,
+  K3Z/NICF reference identity, outside-AOI expansion candidates,
+  rejected/unreviewed expansion pools, and whole-model teaching comparisons;
+- defined WFP-facing fibre-supply, delivered-cost proxy, harvest-system,
+  cedar/community, K3Z-continuity, and rejected-pool audit report families
+  without creating hard base targets or schedulable rejected/unreviewed pools;
+  and
+- marked P3.2d complete in `ROADMAP.md`, leaving P3.2e as the next bounded
+  handoff tranche before P3.2 can close.
+
+## 2026-06-26 - Documented Phase 3 cedar and embedded NICF design
+
+- added `docs/phase3-cedar-nicf-expansion.rst` to summarize P3.1 cedar
+  signals, cedar product/account boundaries, P3.2 K3Z/NICF reference identity,
+  outside-AOI expansion candidate classes, Patchworks comparison surfaces, and
+  scenario toggles for students and maintainers;
+- added the new page to the Sphinx toctree in `docs/index.rst`;
+- updated `docs/teaching-challenges.rst` so outside-AOI NICF expansion source
+  lands are clearly separated from current-AOI TFL 6 base geography; and
+- rebuilt the instance Sphinx docs with warnings treated as errors.

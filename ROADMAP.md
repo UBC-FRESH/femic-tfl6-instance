@@ -222,7 +222,7 @@ source-layer and THLB surfaces, without compiling a Patchworks package.
     TFL 6 model area.
   - [x] P3.2c Define outside-AOI expansion candidate, rejected-candidate, and
     current-AOI TFL 6 remainder identity classes and source/provenance fields.
-  - [ ] P3.2d Define Patchworks group accounts, matching targets, scenario
+  - [x] P3.2d Define Patchworks group accounts, matching targets, scenario
     toggles, and reports needed to track K3Z/NICF core and expansion
     candidates separately, including WFP-facing fibre supply, value, and
     delivered-cost tradeoff signals where available and multi-perspective KPI
@@ -356,11 +356,14 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    `nicf_expansion_pool_unreviewed`, and `nicf_k3z_core_reference`, plus the
    outside-AOI source/provenance fields and first `expansion_screen_status`
    vocabulary needed for Phase 4 handoff.
-7. The next bounded tranche is P3.2d: define Patchworks group accounts,
-   matching targets, scenario toggles, and reports needed to track K3Z/NICF
-   core, expansion candidates, rejected candidates, TFL 6 remainder, and
-   whole-TFL comparisons. Keep this as design work only: no Phase 4 bundle
-   generation, XML, Matrix Builder, or runtime package work.
-8. After P3.2 closes, continue with P3.7 run-profile/model-input contract
+7. P3.2d is complete. The embedded identity contract now lists the Patchworks
+   group dimensions, account families, matching targets, scenario toggles, and
+   reports needed to compare K3Z/NICF reference identity, outside-AOI expansion
+   candidates, rejected/unreviewed pools, WFP TFL 6 remainder, and whole-model
+   teaching outcomes without changing AU identity.
+8. The next bounded tranche is P3.2e: lock the dependency handoff to P3.7/P4.1
+   so the embedded identity fields enter the model-input contract without
+   starting bundle generation, XML, Matrix Builder, or runtime-package work.
+9. After P3.2 closes, continue with P3.7 run-profile/model-input contract
    reconciliation. Phase 4 remains blocked until P3.2 and P3.7 are complete or
    explicitly narrowed by the maintainer.

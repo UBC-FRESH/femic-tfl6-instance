@@ -208,28 +208,89 @@ Phase 4 model-input generation should receive explicit fields such as:
 Exact field names can be finalized in P3.7 / the model-input contract, but the
 identity content must be available before P4.1 starts.
 
-## Patchworks-Facing Requirements
+## P3.2d Patchworks Accounts, Targets, Toggles, And Reports
 
-The embedded identity contract must support:
+P3.2d defines the Patchworks-facing contract that consumes the P3.2b/P3.2c
+identity fields. It is still design-only: it does not create model-input
+tables, ForestModel XML, Matrix Builder output, or Patchworks runtime files.
 
-- group accounts for the whole TFL 6 area, NICF/K3Z core, expansion candidates,
-  rejected candidates, and TFL 6 remainder;
-- matching targets that can compare NICF/K3Z core behavior against expansion
-  candidate behavior;
-- matching targets and reports that compare NICF-preferred expansion outcomes
-  against broader TFL 6 and WFP-facing fibre-supply, value, and delivered-cost
-  signals where available;
-- area/yield/product reports split by embedded area class;
-- scenario toggles that add or exclude expansion candidates without altering
-  base AU identity;
-- AAC-uplift reporting for expansion scenarios; and
-- continuity reports that help students compare the former K3Z teaching model
-  with the embedded TFL 6 model.
+Required group dimensions:
+
+| Dimension | Accepted values / examples | Purpose |
+| --- | --- | --- |
+| `embedded_area_class` | `wfp_tfl6_remainder`, `nicf_k3z_core_reference`, `nicf_expansion_candidate`, `nicf_expansion_rejected`, `nicf_expansion_pool_unreviewed` | primary group split for accounts, targets, and reports |
+| `embedded_area_id` | `tfl6_current_aoi`, `k3z_tenure`, candidate-pool IDs, rejected-pool IDs | provenance and scenario-group traceability |
+| `inside_tfl6_aoi` | `true` / `false` | separate active TFL 6 base geography from external source lands |
+| `outside_tfl6_aoi_expansion_source` | `true` / `false` | prevent outside-AOI expansion lands from being hidden in whole-TFL totals |
+| `expansion_candidate_set` | reviewed candidate-set name or `none` | support multiple candidate pools without changing AU identity |
+| `expansion_scenario_group` | scenario group label or `none` | support Patchworks toggles and teaching comparisons |
+| `expansion_screen_status` | P3.2c accepted/rejected/unreviewed status | preserve accepted/rejected-pool audit evidence |
+| `core_overlay_status` | `inside_current_tfl6`, `outside_current_tfl6`, `tiny_boundary_overlap` | keep K3Z carve-out status visible |
+
+Required account families:
+
+| Account family | Split by | Base behavior |
+| --- | --- | --- |
+| Area | embedded area class, candidate set, screen status, TFL 6 AOI membership | report gross and schedulable area; do not merge outside-AOI expansion lands into base TFL 6 area |
+| Managed / unmanaged area | embedded area class, `IFM`, retention, THLB/THLB-equivalent status | verify candidate status does not silently override treatment eligibility |
+| Harvest area | embedded area class, harvest system, treatment, scenario group | compare where harvest pressure shifts under expansion scenarios |
+| Harvest volume | embedded area class, AU, product group, harvest system | compare WFP-facing supply effects against NICF expansion gains |
+| Residual inventory | embedded area class, AU, cedar signal, age class, harvest system | support post-scenario state comparison and teaching diagnostics |
+| Delivered-cost proxy | embedded area class, harvest system, slope/operability class | expose ground/cable/heli cost tradeoffs without claiming real delivered cost |
+| Cedar signal | embedded area class, cedar-leading/present/old-cedar flags | connect P3.1 cedar reporting to NICF and WFP comparison groups |
+| Rejected-pool diagnostics | rejection reason, candidate set, source quality, tenure/public-land availability | show why plausible adjacent areas were not activated |
+
+Required matching targets:
+
+| Target / comparison | Purpose | Base status |
+| --- | --- | --- |
+| Whole TFL 6 vs WFP remainder | compare base TFL 6 outcomes with and without separately reported current-AOI remainder | report/comparison target only |
+| K3Z reference vs expansion candidates | compare continuity with the original K3Z teaching AOI against outside-AOI candidate pools | report/comparison target only |
+| Expansion accepted vs rejected | show the opportunity cost and evidence trail for candidate screening | report/comparison target only |
+| Expansion scenario uplift | compare added area, THLB-equivalent area, harvest area, and harvest volume when accepted external candidates are activated | scenario target; no base hard constraint |
+| WFP fibre supply impact | compare whole-TFL and WFP-remainder harvest volume/value proxies before and after expansion scenarios | scenario target; no base hard constraint |
+| Delivered-cost proxy shift | compare ground/cable/heli mix under expansion scenarios | scenario target; proxy only |
+| Cedar/community outcomes | compare cedar availability, scheduled cedar harvest, and residual old-cedar context by group | report/comparison target only |
+
+Required scenario toggles:
+
+| Toggle | Effect | Guardrail |
+| --- | --- | --- |
+| `base_tfl6_only` | use current-AOI TFL 6 stands and report K3Z as reference/provenance where available | default first-runtime behavior |
+| `include_nicf_expansion_candidates` | activates reviewed outside-AOI `accepted_candidate` lands for scenario comparison | only accepted candidates; never unreviewed or rejected pools |
+| `report_rejected_expansion_pool` | exposes rejected-pool area and rejection reasons | report-only; not schedulable |
+| `k3z_reference_reporting` | reports K3Z tenure continuity alongside the TFL 6 model | report-only unless a later broadened-geometry lane explicitly activates it |
+| `nicf_ct_fert_eligible_groups` | gates CT/fertilization hooks to K3Z core/reference and accepted expansion candidates | no CT/fert activation outside reviewed NICF groups |
+
+Required reports:
+
+| Report | Minimum splits | Interpretation |
+| --- | --- | --- |
+| Embedded landbase summary | embedded area class, AOI membership, candidate set, screen status | shows current TFL 6, K3Z reference, outside-AOI candidate, rejected, and unreviewed pools separately |
+| Area and THLB-equivalent summary | embedded area class, `IFM`, retention, THLB/THLB-equivalent, harvest system | checks that expansion identity does not override landbase eligibility |
+| Fibre-supply comparison | embedded area class, period, treatment, product group, AU | shows whole-TFL/WFP supply implications of NICF scenarios |
+| Delivered-cost proxy comparison | embedded area class, period, harvest system, operability/slope class | lets students evaluate whether expansion shifts harvest into higher-cost systems |
+| Cedar/community comparison | embedded area class, cedar signal, period, residual/scheduled status | connects P3.1 cedar interests to K3Z/NICF and WFP-facing tradeoffs |
+| Expansion screen audit | candidate set, screen status, screen reason, source-quality and tenure/public-land fields | preserves why accepted and rejected candidate areas differ |
+| K3Z continuity report | K3Z reference status, area, AU/SI/species context where present, comparison to accepted expansion candidates | links the TFL 6 teaching model back to the original K3Z instance |
 
 The reporting design should make tradeoffs visible. Expansion candidates that
 increase NICF opportunity may still affect WFP fibre supply, fibre value, or
-delivered unit cost in the TFL 6 remainder; those effects should be reportable
-rather than hidden inside a single whole-model total.
+delivered unit cost in the broader teaching model; those effects should be
+reportable rather than hidden inside a single whole-model total.
+
+Rejected P3.2d shortcuts:
+
+- Do not place rejected or unreviewed expansion pools into schedulable base
+  area.
+- Do not let outside-AOI expansion lands inflate base current-AOI TFL 6 area
+  accounts.
+- Do not create separate AU or yield-curve families only because a stand is in
+  a K3Z/NICF or expansion group.
+- Do not create hard expansion or cedar targets in the base model; keep first
+  targets as report/comparison surfaces unless a later scenario lane reviews a
+  constraint.
+- Do not treat delivered-cost proxy accounts as real delivered-cost forecasts.
 
 ## Dependencies
 

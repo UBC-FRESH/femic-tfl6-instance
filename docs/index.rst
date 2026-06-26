@@ -11,4 +11,5 @@ until the roadmap records a runnable Patchworks package.
 
    phase2-thlb-netdown
    phase3-au-yield-curves
+   phase3-cedar-nicf-expansion
    teaching-challenges
