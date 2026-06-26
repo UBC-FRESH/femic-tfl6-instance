@@ -75,12 +75,50 @@ should be regenerated or reconstructed deliberately under
 `data/model_input_bundle/input_geometry/` and either added to the accepted
 artifact policy or treated as local runtime cache.
 
+## AFLB Resultant-Fragment Handoff
+
+P4.1c.2 rematerialized the accepted AFLB checkpoint partitions into the
+canonical generated input-geometry handoff:
+
+- `data/model_input_bundle/input_geometry/aflb_current.feather`
+- `data/model_input_bundle/input_geometry/aflb_current.gpkg`
+- `data/model_input_bundle/input_geometry/aflb_checkpoint_manifest.json`
+
+The handoff concatenates the 13 LU partition Feather files under
+`runtime/logs/tsr/lu_partitions/aflb_checkpoint.6a351f3a223a/`, preserves the
+runner-supplied identifiers, and adds:
+
+- `aflb_fragment_id`: stable generated row key for the AFLB resultant-fragment
+  universe;
+- `lu_partition`: source LU partition name; and
+- `aflb_area_ha`: geometry area in hectares.
+
+Direct inspection:
+
+- Generated UTC: `2026-06-26T15:25:11.807293+00:00`
+- CRS: `EPSG:3005`
+- Rows: `26186`
+- Geometry type: `MultiPolygon`
+- Total AFLB resultant-fragment area: `196833.176646 ha`
+- Unique `FEATURE_ID`: `25796`
+- Duplicate `FEATURE_ID` rows: `780`
+- Unique `SOURCE_FEATURE_ID`: `24764`
+- Duplicate `SOURCE_FEATURE_ID` rows: `2443`
+- Empty geometry: `0`
+- Null geometry: `0`
+- Invalid geometry: `0`
+
+Duplicate source identifiers are expected because the LU-partitioned,
+resultant-fragment surface can split one source polygon into multiple
+Patchworks fragments. The generated `aflb_fragment_id` is therefore the stable
+P4.1c row key for bundle-table construction.
+
 ## Scope Boundary
 
-This pass regenerated the final THLB/NTHLB state handoff only. It did not build
-the AFLB resultant-fragment handoff, bundle CSV tables, ForestModel XML, Matrix
-Builder outputs, a Patchworks runtime package, or Phase 5 publication policy
-work.
+This pass regenerated the final THLB/NTHLB state handoff and materialized the
+AFLB resultant-fragment handoff. It did not build bundle CSV tables,
+ForestModel XML, Matrix Builder outputs, a Patchworks runtime package, or Phase
+5 publication policy work.
 
 The next P4.1c move is to build the first core model-input bundle tables from
 the AFLB resultant-fragment universe, this THLB/NTHLB managed-share state

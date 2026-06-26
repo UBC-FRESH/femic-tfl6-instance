@@ -1833,3 +1833,15 @@
   and
 - kept P4.1c.2 open for actual core bundle-table generation from the AFLB
   resultant-fragment universe.
+
+## 2026-06-26 - Materialized the AFLB resultant-fragment handoff
+
+- rematerialized the accepted AFLB LU partition checkpoint into generated
+  `data/model_input_bundle/input_geometry/aflb_current.feather` and
+  `aflb_current.gpkg`;
+- wrote `aflb_checkpoint_manifest.json` beside the generated geometry handoff;
+- inspected the generated handoff and confirmed `26186` EPSG:3005
+  `MultiPolygon` resultant-fragment rows, `196833.177 ha`, and zero
+  null/empty/invalid geometries; and
+- kept P4.1c.2 open because bundle CSV tables, ForestModel XML, Matrix Builder
+  outputs, and Patchworks runtime packaging are still pending.
