@@ -272,6 +272,13 @@ exist.
   protoaccounts, products, targets, and reports (`#38`).
 - [ ] P4.4 Complete Patchworks runtime-package build/QA (`#10`) with
   representative launch and scenario-smoke checks.
+  - [x] P4.4a Build and inspect runtime block/topology artifacts from the
+    accepted P4.2 fragments.
+  - [ ] P4.4b Add the `analysis/base.pin` launch surface and helper scripts.
+  - [ ] P4.4c Run direct Patchworks launch smoke and inspect saved-stage
+    artifacts.
+  - [ ] P4.4d Run representative scenario smoke and record Phase 4 closeout
+    evidence.
 
 ## Proposed Phase 5: Publication, Teaching Docs, and Release QA (`#15`)
 
@@ -526,7 +533,14 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
     Patchworks runtime package from the accepted P4.3 tracks and P4.2
     XML/fragments, then run representative launch/scenario smoke before Phase 4
     closeout. Do not move to final publication until runtime-package smoke
-    evidence exists.
+    evidence exists. P4.4a is complete: `femic patchworks build-blocks`
+    generated `models/tfl6_patchworks_model/blocks/blocks.*` and
+    `topology_blocks_200r.csv`; inspection found `24879` valid EPSG:3005 block
+    rows, `191168.566 ha`, and `170759` topology edges. Generated blocks,
+    tracks, and `patchworksLog.csv` remain ignored until Phase 5 decides the
+    publication policy. P4.4b is the next bounded step: add
+    `models/tfl6_patchworks_model/analysis/base.pin` and its helper scripts so
+    direct launch smoke can run.
 22. P5.3a / `#21` publication plumbing is complete for the current seed docs,
     but P5.3 stays open for final teaching-docs expansion after Phase 4 runtime
     package evidence exists.

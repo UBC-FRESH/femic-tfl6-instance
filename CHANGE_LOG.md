@@ -2011,3 +2011,21 @@
   `product.HarvestedVolume.managed.Total.CC` account surfaces are present; and
 - marked P4.3 complete in `ROADMAP.md`, leaving P4.4 runtime-package build/QA
   as the active Phase 4 lane.
+
+## 2026-06-26 - Completed P4.4a runtime block/topology build
+
+- ran `femic patchworks build-blocks` against
+  `config/patchworks.runtime.windows.yaml` with a `200` m topology radius;
+- allowed the process to finish after the agent tool timeout while it completed
+  topology generation;
+- inspected `models/tfl6_patchworks_model/blocks/blocks.shp` and confirmed
+  `24879` valid EPSG:3005 block rows, `191168.566 ha`, and the expected
+  runtime block fields;
+- inspected `topology_blocks_200r.csv` and confirmed `170759` edges with
+  `BLOCK1`, `BLOCK2`, `DISTANCE`, and `LENGTH` columns;
+- added `models/tfl6_patchworks_model/README.md`,
+  `models/tfl6_patchworks_model/lineage_registry.yaml`, and
+  `planning/tfl6_runtime_package_p44.md` to record the P4.4 package boundary;
+  and
+- kept generated blocks/tracks ignored until Phase 5 artifact publication
+  policy decides what is tracked, annexed, published, or regenerated.

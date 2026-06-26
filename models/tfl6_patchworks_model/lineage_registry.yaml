@@ -1,0 +1,102 @@
+schema_version: 1
+model_id: tfl6_patchworks_model
+model_root: models/tfl6_patchworks_model
+runtime_config: config/patchworks.runtime.windows.yaml
+phase: P4.4
+
+artifact_inventory:
+  data:
+    fragments_shapefile:
+      path: output/patchworks_tfl6_validated/fragments/fragments.shp
+      sidecars:
+        - output/patchworks_tfl6_validated/fragments/fragments.dbf
+        - output/patchworks_tfl6_validated/fragments/fragments.shx
+        - output/patchworks_tfl6_validated/fragments/fragments.prj
+        - output/patchworks_tfl6_validated/fragments/fragments.cpg
+      built_by:
+        command: >
+          python -m femic export patchworks --instance-root .
+          --tsa tfl6 --bundle-dir data/model_input_bundle/export_compat
+          --checkpoint data/model_input_bundle/export_compat/aflb_current_export_compat.feather
+          --output-dir output/patchworks_tfl6_validated --start-year 2026
+          --horizon-years 300 --ifm-mode proportional
+      qa_status: accepted_p4_2
+      notes:
+        - AFLB fragment universe with THLB/NTHLB expressed through managed-share state.
+
+  yield:
+    forestmodel_xml:
+      path: output/patchworks_tfl6_validated/forestmodel.xml
+      built_by:
+        command: >
+          python -m femic export patchworks --instance-root .
+          --tsa tfl6 --bundle-dir data/model_input_bundle/export_compat
+          --checkpoint data/model_input_bundle/export_compat/aflb_current_export_compat.feather
+          --output-dir output/patchworks_tfl6_validated --start-year 2026
+          --horizon-years 300 --ifm-mode proportional
+      qa_status: accepted_p4_2
+      notes:
+        - Generic CC is the accepted first-pass clearcut-and-plant treatment lane.
+
+  tracks:
+    matrix_outputs:
+      path_glob: models/tfl6_patchworks_model/tracks/*.csv
+      built_by:
+        command: >
+          python -m femic patchworks matrix-build
+          --config config/patchworks.runtime.windows.yaml
+          --run-id tfl6_p43_matrix_accounts_wait20
+      qa_status: accepted_p4_3
+      evidence:
+        planning_note: planning/tfl6_matrix_builder_p43_smoke.md
+        run_id: tfl6_p43_matrix_accounts_wait20
+        accounts_sync: synced
+        protoaccounts_rows: 211
+        accounts_rows: 211
+
+  blocks:
+    blocks_shapefile:
+      path: models/tfl6_patchworks_model/blocks/blocks.shp
+      sidecars:
+        - models/tfl6_patchworks_model/blocks/blocks.dbf
+        - models/tfl6_patchworks_model/blocks/blocks.shx
+        - models/tfl6_patchworks_model/blocks/blocks.prj
+        - models/tfl6_patchworks_model/blocks/blocks.cpg
+      built_by:
+        command: >
+          python -m femic patchworks build-blocks
+          --config config/patchworks.runtime.windows.yaml
+          --topology-radius 200
+      qa_status: accepted_p4_4a
+      evidence:
+        rows: 24879
+        crs: EPSG:3005
+        geometry_valid: true
+        area_ha: 191168.566
+    topology_csv:
+      path: models/tfl6_patchworks_model/blocks/topology_blocks_200r.csv
+      built_by:
+        command: >
+          python -m femic patchworks build-blocks
+          --config config/patchworks.runtime.windows.yaml
+          --topology-radius 200
+      qa_status: accepted_p4_4a
+      evidence:
+        rows: 170759
+        columns:
+          - BLOCK1
+          - BLOCK2
+          - DISTANCE
+          - LENGTH
+
+pending_runtime_surfaces:
+  - analysis/base.pin
+  - analysis/headless_runtime_common.bsh
+  - scripts/targets/flowtargets.bsh
+  - launch-smoke manifest and saved-stage evidence
+  - representative scenario-smoke evidence
+
+provenance_policy:
+  - generated blocks and tracks are ignored locally until Phase 5 publication policy is decided
+  - do not claim launch readiness until analysis/base.pin exists and passes a direct smoke
+  - update this registry whenever runtime-package inputs, commands, or launch surfaces change
