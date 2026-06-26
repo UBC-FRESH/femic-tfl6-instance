@@ -1508,3 +1508,17 @@
 - recorded that harvest system affects treatment eligibility, delivered-cost
   proxies, scenario controls, and teaching reports, but is not part of AU
   identity and does not create separate yield-curve families by itself.
+
+## 2026-06-26 - Added P3.6a state-class contract
+
+- added `planning/tfl6_state_transition_contract.md` with the first TFL 6
+  state-class contract for initial managed/unmanaged natural/treated states,
+  retained/unmanaged states, post-clearcut planted state, NICF-focused CT/fert
+  candidate states, and deferred special teaching states;
+- locked the semantic field separation for P3.6/P4: `IFM` is treatment
+  eligibility, `ORIGIN` is curve provenance, `SILV_STATE` is the state path,
+  `RETENTION` is retention status/fraction, `HARVEST_SYSTEM` carries
+  ground/cable/heli operational class, and `TFL6_GROUP` carries reporting
+  identity; and
+- updated `ROADMAP.md` so P3.6a is complete and P3.6b is the next bounded
+  tranche for transition-row definitions without starting Phase 4.

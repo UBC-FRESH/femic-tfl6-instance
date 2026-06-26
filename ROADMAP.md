@@ -183,7 +183,7 @@ source-layer and THLB surfaces, without compiling a Patchworks package.
     review needs.
 - [ ] P3.6 Define TFL 6 state-transition logic (`#31`) before Phase 4
   model-input bundle generation.
-  - [ ] P3.6a Define stand-state classes for initial, managed, unmanaged,
+  - [x] P3.6a Define stand-state classes for initial, managed, unmanaged,
     retained, regenerated, and deferred/special teaching states.
   - [ ] P3.6b Define transitions for base harvest, managed regeneration,
     retention/unmanaged movement, existing managed/natural origin handling,
@@ -366,7 +366,13 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    cedar-specific treatments, and standalone NICF expansion actions remain
    deferred behind explicit review blockers. Do not jump to cedar details,
    expansion options, or Phase 4 until P3.6 locks state transitions against
-   this treatment vocabulary.
+   this treatment vocabulary. P3.6a now defines the stand-state classes and
+   semantic fields in `planning/tfl6_state_transition_contract.md`, including
+   separate `IFM`, `ORIGIN`, `SILV_STATE`, `RETENTION`, `HARVEST_SYSTEM`, and
+   `TFL6_GROUP` fields. The next bounded tranche is P3.6b: define transition
+   rows for grow, `clearcut_and_plant`, retained/unmanaged movement,
+   origin-provenance handling, operability sensitivity, and gated CT/fert hook
+   points without starting Phase 4.
 4. Keep P3.1 cedar design open but paused until P3.3-P3.6 are reviewed/locked
    or explicitly narrowed by the maintainer.
 5. Keep P3.2 embedded NICF/K3Z identity and expansion design idle until
