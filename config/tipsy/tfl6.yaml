@@ -1,9 +1,9 @@
-# Bootstrap TIPSY rule configuration for the NICF FSP case.
+# Bootstrap TIPSY rule configuration for the TFL 6 case.
 # This file is intentionally provisional until the AOI source inspection and
 # K3Z-template adaptation pass establish real managed-AU families.
 
 schema_version: 1
-tsa_code: "nicffsp"  # legacy key name; use as the case/FMU code where applicable
+tsa_code: "tfl6"  # legacy key name; use as the case/FMU code where applicable
 
 metadata:
   source_tsr:

@@ -266,7 +266,7 @@ Rationale:
 
 Open normalization work:
 
-- Source-path wiring is recorded in `config/run_profile.nicffsp.yaml`.
+- Source-path wiring is recorded in `config/run_profile.tfl6.yaml`.
 
 ## Canonical Extracted AOI Source
 
@@ -312,7 +312,7 @@ Interpretation:
   path for the pre-pivot bootstrap NICF FSP AOI only.
 - The original zip remains tracked as raw provenance for all six amendment
   features.
-- `config/run_profile.nicffsp.yaml` now points `selection.boundary_path` at
+- `config/run_profile.tfl6.yaml` now points `selection.boundary_path` at
   `data/source/tfl_6/aoi/tfl_6_boundary.gpkg`; do not use this pre-pivot FDU
   path as the active AOI for current model extraction.
 
@@ -359,7 +359,7 @@ Interpretation:
   path for LU reference context in the bootstrap NICF FSP instance.
 - The raw BCGW LU zip remains tracked as provenance for the broader 27-feature
   clip.
-- `config/run_profile.nicffsp.yaml` records this source as
+- `config/run_profile.tfl6.yaml` records this source as
   `selection.source_context.lu_reference_path`; the current FEMIC runtime
   consumes `selection.boundary_path` directly and carries LU reference context
   as provenance while TFL 6 becomes the active extraction AOI.

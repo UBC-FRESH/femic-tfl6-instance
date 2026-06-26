@@ -6,7 +6,7 @@ Patchworks rebuild commands are blocked until the AOI source zip has been
 inspected and extracted into stable runtime input paths.
 
 ## Required Inputs
-- `config/run_profile.nicffsp.yaml`
+- `config/run_profile.tfl6.yaml`
 - `config/rebuild.spec.yaml`
 - `config/rebuild.allowlist.yaml`
 - `data/source/nicf_fsp/` raw source payloads
@@ -21,7 +21,7 @@ femic instance validate-spec --spec config/rebuild.spec.yaml
 ## Standard Rebuild Commands
 ```bash
 femic instance rebuild \
-  --run-config config/run_profile.nicffsp.yaml \
+  --run-config config/run_profile.tfl6.yaml \
   --spec config/rebuild.spec.yaml \
   --baseline config/rebuild.baseline.json \
   --allowlist config/rebuild.allowlist.yaml
@@ -42,7 +42,7 @@ After refresh, verify:
 
 ## Local Notes
 - Do not run full rebuild as proof of model readiness until
-  `config/run_profile.nicffsp.yaml` references extracted source layers rather
+  `config/run_profile.tfl6.yaml` references extracted source layers rather
   than raw zip payloads.
 - Document case-specific overrides, expected warnings, and accepted deltas here.
 

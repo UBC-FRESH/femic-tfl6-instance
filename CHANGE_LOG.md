@@ -2,7 +2,7 @@
 
 ## 2026-06-23 - Bootstrapped the NICF FSP FRST 558 instance repository
 
-- created the FEMIC instance scaffold for `femic-nicffsp-instance`;
+- created the FEMIC instance scaffold for `femic-tfl6-instance`;
 - added modelwright-style workflow surfaces (`AGENTS.md`, `ROADMAP.md`,
   `CHANGE_LOG.md`, and `planning/`);
 - tracked the initial NICF FSP AOI, LU, and FSP source payloads under lowercase
@@ -113,7 +113,7 @@
 
 ## 2026-06-23 - Wired the NICF run profile to accepted source paths
 
-- updated `config/run_profile.nicffsp.yaml` so `selection.boundary_path` points
+- updated `config/run_profile.tfl6.yaml` so `selection.boundary_path` points
   at `data/source/nicf_fsp/aoi/nicf_fsp_aoi.shp`;
 - recorded the LU reference source at
   `selection.source_context.lu_reference_path` as
@@ -138,7 +138,7 @@
 ## 2026-06-23 - Defined the first NICF run-profile boundary
 
 - activated the first NICF stratification defaults in
-  `config/run_profile.nicffsp.yaml`: subzone BEC grouping, two-species
+  `config/run_profile.tfl6.yaml`: subzone BEC grouping, two-species
   combinations, TM second-species fallback, and `0.90` area coverage;
 - set first-compile runtime defaults to `resume: false`,
   `vdyp_sampling_mode: all`, `vdyp_two_pass_rebin: true`,
@@ -239,7 +239,7 @@
   `data/source/tfl_6/aoi/tfl_6_boundary.gpkg`;
 - verified 182 EPSG:3005 features, `217042.719 ha` union area, matching bounds,
   and valid geometries after repairing one source ring self-intersection; and
-- switched `config/run_profile.nicffsp.yaml` to the accepted TFL 6 boundary
+- switched `config/run_profile.tfl6.yaml` to the accepted TFL 6 boundary
   path and marked `P1.6a` complete.
 
 ## 2026-06-23 - Indexed the TFL 6 reference corpus
@@ -1338,3 +1338,20 @@
 - updated `ROADMAP.md` Current Next Steps so the next bounded P3.4d move is to
   materialize or adapt the stand-level VDYP yield time-series before fitting
   natural curves.
+
+## 2026-06-25 - Re-centered P3.4d on the standard FEMIC Stage 01a VDYP lane
+
+- removed the instance-local VDYP materializer draft and re-centered P3.4d on
+  the established FEMIC Stage 01a workflow used by K3Z, TSA29, and MKRF:
+  `femic prep validate-case` followed by `femic run`;
+- renamed the active runtime profile and TIPSY/silviculture configs from the
+  stale NICF FSP code to TFL6 (`config/run_profile.tfl6.yaml`,
+  `config/tipsy/tfl6.yaml`, and `config/silviculture.tfl6.yaml`);
+- updated `config/rebuild.spec.yaml`, `QUICKSTART.md`, `AGENTS.md`, and the
+  rebuild runbook to use the TFL6 run profile and `--tsa tfl6` handoff code;
+- kept `runtime/` ignored so Stage 01a scratch/log output does not become a
+  tracked planning artifact; and
+- updated `planning/tfl6_vdyp_curve_generation_plan.md` and `ROADMAP.md` so the
+  next P3.4d move is to validate `config/run_profile.tfl6.yaml`, then run the
+  standard `femic run --run-config config/run_profile.tfl6.yaml --run-id
+  tfl6_stage01a` lane and inspect its VDYP curve/log artifacts.

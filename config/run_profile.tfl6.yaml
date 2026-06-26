@@ -1,12 +1,12 @@
 selection:
   # FMU/code mode (legacy field name: selection.tsa):
   tsa:
-    - "nicffsp"
+    - "tfl6"
 
   # Active TFL 6 boundary materialized by P1.6a.
   boundary_path: "data/source/tfl_6/aoi/tfl_6_boundary.gpkg"
   boundary_layer: "tfl_6_boundary"
-  boundary_code: "nicffsp"
+  boundary_code: "tfl6"
 
   # Source context paths tracked for P1.2 provenance. FEMIC currently consumes
   # boundary_path directly; LU reference context is carried here as historical
@@ -48,5 +48,5 @@ modes:
   # yield_assumptions_path: "config/tsr/yield_assumptions.yaml"
 
 run:
-  run_id: "nicffsp_bootstrap"
+  run_id: "tfl6_bootstrap"
   log_dir: "runtime/logs"

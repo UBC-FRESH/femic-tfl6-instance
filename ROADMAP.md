@@ -19,7 +19,7 @@
 - [x] P1.3 Define the first K3Z-to-NICF adaptation contract (`#3`).
   - [x] P1.3a Compare K3Z config, model-input bundle, docs, and Patchworks
     package structure against the NICF FSP requirements.
-  - [x] P1.3b Define the first `run_profile.nicffsp.yaml` boundary after AOI
+  - [x] P1.3b Define the first `run_profile.tfl6.yaml` boundary after AOI
     extraction.
   - [x] P1.3c Identify which K3Z teaching assumptions can carry forward and
     which need explicit FRST 558 review.
@@ -316,9 +316,11 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    closeout commit.
 2. Continue with Phase 3 / P3.4 on branch
    `feature/p3-model-design-assumptions`: continue P3.4d from
-   `planning/tfl6_vdyp_curve_generation_plan.md` by materializing or adapting
-   the stand-level VDYP yield time-series required by the shared
-   `smoothed_bin_pchip` selector. Keep this out of `data/model_input_bundle/`;
+   `planning/tfl6_vdyp_curve_generation_plan.md` by using the established
+   Stage 01a lane: first validate `config/run_profile.tfl6.yaml`, then run
+   `femic run --run-config config/run_profile.tfl6.yaml --run-id tfl6_stage01a`
+   and inspect the emitted VDYP curve/log artifacts. Do not introduce a
+   parallel instance-local VDYP runner. Keep this out of `data/model_input_bundle/`;
    P3.4e owns treated/managed BatchTIPSY curve generation after the TIPSY
    parameter crosswalk is reviewed enough for executable use.
 3. After P3.4, proceed in order through P3.5 treatment options and P3.6

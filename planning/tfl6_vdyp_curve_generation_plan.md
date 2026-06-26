@@ -40,11 +40,37 @@ The accepted method is the shared FEMIC AU-level first-growth selector:
 | VDYP7 polygon source attributes | `data/input/tfl_6/vdyp7_input_poly_2025_tfl6.parquet` | available |
 | VDYP7 layer source attributes | `data/input/tfl_6/vdyp7_input_layer_2025_tfl6.parquet` | available |
 | R1 geometry / area surface | `data/input/tfl_6/vri_2025_r1_poly_tfl6.gpkg` | available |
-| Stand-level VDYP yield time-series | not yet materialized | blocker for curve fitting |
+| Stage 01a VDYP run surface | `femic run --run-config config/run_profile.tfl6.yaml` | next executable step |
 
 The available VDYP7 parquet files are source attributes. They are not the
 stand-level `FEATURE_ID` x projected-age yield table needed by
 `build_mkrf_first_growth_curves` or `select_au_first_growth_curve`.
+
+## Standard FEMIC Stage 01a Surface
+
+Do not create a TFL6-specific VDYP runner. The established wheel already exists:
+the parent FEMIC Stage 01a path used by K3Z, TSA29, and the MKRF rebuild work.
+
+Use the same operator sequence:
+
+```bash
+femic prep validate-case --run-config config/run_profile.tfl6.yaml --tipsy-config-dir config/tipsy
+femic run --run-config config/run_profile.tfl6.yaml --run-id tfl6_stage01a
+```
+
+That path owns:
+
+- top-strata selection;
+- SI binning and sparse-bin handling;
+- VDYP polygon/layer handoff through `femic.pipeline.vdyp_stage`;
+- VDYP run logs under the established VDYP runtime/log locations;
+- smoothed VDYP curve tables and diagnostics; and
+- the later BatchTIPSY handoff boundary.
+
+TFL6-specific work should therefore focus on making the run profile, tipsy
+config, AU definitions, and accepted source inputs compatible with that Stage
+01a surface. Runtime scratch and logs stay ignored; reviewed summaries and
+figures can be promoted into `planning/`, `plots/`, and `docs/` after the run.
 
 ## Reused FEMIC Interfaces
 
@@ -90,10 +116,7 @@ curve-selection and sparse-support QA surfaces.
 
 ## Required Preflight Checks Before Running Curves
 
-1. Materialize a stand-level VDYP yield time-series with at least:
-   - `FEATURE_ID`;
-   - `PRJ_TOTAL_AGE`; and
-   - `PRJ_VOL_DWB`.
+1. Validate `config/run_profile.tfl6.yaml` with `femic prep validate-case`.
 2. Confirm every yield-table `FEATURE_ID` is either present in
    `planning/tfl6_stand_to_au_review.csv` or explicitly excluded with a reason.
 3. Build a TFL6 assignment frame from `planning/tfl6_stand_to_au_review.csv`
@@ -102,9 +125,8 @@ curve-selection and sparse-support QA surfaces.
    - `au_id`;
    - `res_key = feature_id`; and
    - `shape_area_ha = area_ha`.
-4. Run the selector for selected top-area AUs first, then decide whether to run
-   all 384 AU bins or keep non-selected/minor AU rows as explicit fallback or
-   remap cases.
+4. Run the standard Stage 01a path and inspect the emitted VDYP curve and log
+   artifacts before promoting review summaries.
 5. Treat `insufficient_source_stands` as an accepted diagnostic state, not as a
    silent failure.
 6. Confirm no output path writes into `data/model_input_bundle/`.
@@ -126,17 +148,14 @@ Minimum P3.4d acceptance checks:
 - no model-input bundle, TIPSY, XML, Matrix Builder, or Patchworks runtime
   artifacts are created in this slice.
 
-## Open Implementation Decision
+## Next Implementation Step
 
-The remaining blocker is the stand-level VDYP yield time-series. The next
-bounded implementation step should either:
-
-1. reuse an existing FEMIC command or helper that emits a TFL6
-   `FEATURE_ID`/`PRJ_TOTAL_AGE`/`PRJ_VOL_DWB` table from the accepted VDYP7
-   source inputs; or
-2. add a small generic TFL6-safe adapter around the existing VDYP processing
-   path if the available commands only write broader upstream/model-bundle
-   artifacts.
+Run `femic prep validate-case` against `config/run_profile.tfl6.yaml`, resolve
+any stale TFL6 configuration/path blockers, then run the standard `femic run`
+Stage 01a lane from the instance root. If the generic Stage 01a lane cannot
+consume the reviewed TFL6 AU contract, fix the generic FEMIC surface or the
+TFL6 run-profile/config contract rather than introducing a parallel
+instance-local VDYP runner.
 
 Do not start BatchTIPSY or model-input bundle generation until this natural
 curve QA surface is reviewed.
