@@ -114,6 +114,73 @@ Open design consequence for P3.2c/P3.2d:
   tenure, FDU/LU planning context, expansion candidates, and the WFP/TFL 6
   remainder.
 
+## P3.2c Expansion And Remainder Identity Classes
+
+P3.2c defines the identity classes that Phase 4 must be able to carry, but it
+does not materialize candidate geometry or execute screening logic. Candidate
+status is a model-design/reporting identity, not an AU or yield-curve identity.
+
+Accepted class vocabulary:
+
+| `embedded_area_class` | Meaning | First-bundle behavior |
+| --- | --- | --- |
+| `wfp_tfl6_remainder` | Current-AOI TFL 6 stands that are not accepted K3Z core and are not in an accepted expansion-candidate or rejected-candidate class. | Default current-AOI class for the first bundle unless a later P3.2 screen assigns a candidate/rejected class. |
+| `nicf_expansion_candidate` | Current-AOI stands outside the near-zero K3Z core overlay that pass the reviewed expansion screen and are available for NICF-style scenario toggles. | Scenario/reporting class only; does not alter AU identity, curve family, or base treatment eligibility by itself. |
+| `nicf_expansion_rejected` | Current-AOI stands considered by the expansion screen but rejected by productivity, THLB, operability, reserve/retention, constraint, source-quality, or maintainer-review rules. | Audit/reporting class; keeps rejected-pool evidence visible. |
+| `nicf_expansion_pool_unreviewed` | Current-AOI stands inside the candidate search envelope before the P3.2d/P4 screen assigns accepted or rejected status. | Temporary planning/QA status only; should not be used as an active scenario class in the first runtime package. |
+| `nicf_k3z_core_reference` | K3Z tenure identity carried as a provenance/external-reference group because the current TFL 6 AOI contains only a tiny boundary overlap. | Reference/reporting class only unless the maintainer later broadens model geography. |
+
+Candidate-area pool semantics for the active TFL 6 AOI:
+
+- Candidate areas are searched inside the accepted current TFL 6 AOI unless the
+  maintainer explicitly broadens the model geography.
+- Candidate areas are outside the accepted K3Z tenure source under the current
+  overlay, because the K3Z core is effectively external to the active AOI.
+- Candidate areas must be separately identifiable from the WFP/TFL 6 remainder
+  so scenario toggles can move or compare them without relabeling the whole
+  TFL 6 model.
+- Candidate status is not equivalent to THLB status. A candidate may need
+  separate fields for source-pool membership, active THLB, treatment
+  eligibility, operability, and scenario activation.
+- Rejected candidates remain valuable teaching evidence; they explain why a
+  plausible-looking area is not used for expansion scenarios.
+
+Required source/provenance fields for the first candidate screen:
+
+| Field family | Candidate field(s) | Purpose |
+| --- | --- | --- |
+| Stand key and area | `feature_id`, `map_id`, `polygon_id`, `area_ha` | trace candidate decisions to final bundle stands/fragments |
+| Current AOI membership | `inside_tfl6_aoi` or implicit bundle membership | ensure candidates are inside the accepted active geography |
+| K3Z reference overlay | `is_nicf_k3z_core`, `core_overlay_status`, `nicf_k3z_core_external_reference` | keep K3Z tenure continuity separate from expansion decisions |
+| Expansion identity | `embedded_area_class`, `embedded_area_id`, `is_nicf_expansion_candidate`, `is_nicf_expansion_rejected` | carry candidate/rejected/remainder classes into Patchworks groups |
+| Candidate set | `expansion_candidate_set`, `expansion_scenario_group` | support multiple future candidate-pool definitions or scenario toggles |
+| Screen status | `expansion_screen_status`, `expansion_screen_reason` | explain accepted/rejected/unreviewed decisions |
+| THLB and eligibility | final Phase 4 THLB flag, `IFM`, `RETENTION`, reserve/non-THLB status | prevent candidate status from silently overriding land-base eligibility |
+| Productivity | `site_index`, `est_site_index`, `estimated_site_index`, AU/SI class, VDYP curve availability | support productivity screening and AAC-uplift plausibility |
+| Operability/cost | `HARVEST_SYSTEM`, operability/slope proxy fields, ground/cable/heli class | support delivered-cost proxy and operability screening |
+| Constraints/context | UWR/WHA/OGMA/recreation/riparian/retention/context flags where carried by Phase 4 | keep constrained/rejected reasons auditable |
+| Stakeholder grouping | `wfp_tfl6_remainder`, whole-TFL group, FDU/LU context where carried | support WFP-facing comparison and FDU/LU context reporting |
+
+First screen-status vocabulary:
+
+| `expansion_screen_status` | Meaning |
+| --- | --- |
+| `accepted_candidate` | passed the reviewed candidate screen and may be toggled in expansion scenarios |
+| `rejected_productivity` | failed the reviewed productivity/SI/yield screen |
+| `rejected_non_thlb` | outside active THLB or otherwise not schedulable under the base land-base contract |
+| `rejected_operability` | failed the reviewed operability/harvest-system/slope/cost screen |
+| `rejected_constraint` | rejected by reserve, retention, UWR/WHA/OGMA, riparian, recreation, or other constraint context |
+| `rejected_source_quality` | missing or ambiguous source fields prevent reliable classification |
+| `rejected_review` | maintainer-reviewed rejection not covered by a more specific code |
+| `unreviewed_pool` | inside the search envelope but not yet screened |
+| `not_in_pool` | current-AOI remainder not considered for expansion |
+
+P3.2c accepts only the identity/class vocabulary. P3.2d must define the
+Patchworks group-account, matching-target, scenario-toggle, and report
+requirements that consume these classes. Any executable screen or candidate
+geometry materialization belongs to Phase 4 or a later explicitly scoped
+implementation lane.
+
 ## Candidate Stand Attributes
 
 Phase 4 model-input generation should receive explicit fields such as:

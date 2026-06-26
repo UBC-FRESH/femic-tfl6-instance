@@ -220,7 +220,7 @@ source-layer and THLB surfaces, without compiling a Patchworks package.
     `planning/tfl6_nicf_embedded_identity.md`.
   - [x] P3.2b Define accepted K3Z/NICF core AOI overlay identity inside the
     TFL 6 model area.
-  - [ ] P3.2c Define expansion candidate, rejected-candidate, and TFL 6
+  - [x] P3.2c Define expansion candidate, rejected-candidate, and TFL 6
     remainder identity classes and source/provenance fields.
   - [ ] P3.2d Define Patchworks group accounts, matching targets, scenario
     toggles, and reports needed to track K3Z/NICF core and expansion
@@ -348,10 +348,16 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    silently relabel the broader FDU 1/2/3 planning context as
    `nicf_k3z_core`; K3Z core should be treated as a source/provenance identity
    and likely external/reference carve-out under the current TFL 6 boundary.
-6. The next bounded tranche is P3.2c: define expansion candidate,
-   rejected-candidate, and TFL 6 remainder identity classes and source/
-   provenance fields. Keep this as design and identity-contract work only: no
-   Phase 4 bundle generation, XML, Matrix Builder, or runtime package work.
-7. After P3.2 closes, continue with P3.7 run-profile/model-input contract
+6. P3.2c is complete. The embedded identity contract now defines
+   `wfp_tfl6_remainder`, `nicf_expansion_candidate`,
+   `nicf_expansion_rejected`, `nicf_expansion_pool_unreviewed`, and
+   `nicf_k3z_core_reference`, plus the source/provenance fields and first
+   `expansion_screen_status` vocabulary needed for Phase 4 handoff.
+7. The next bounded tranche is P3.2d: define Patchworks group accounts,
+   matching targets, scenario toggles, and reports needed to track K3Z/NICF
+   core, expansion candidates, rejected candidates, TFL 6 remainder, and
+   whole-TFL comparisons. Keep this as design work only: no Phase 4 bundle
+   generation, XML, Matrix Builder, or runtime package work.
+8. After P3.2 closes, continue with P3.7 run-profile/model-input contract
    reconciliation. Phase 4 remains blocked until P3.2 and P3.7 are complete or
    explicitly narrowed by the maintainer.

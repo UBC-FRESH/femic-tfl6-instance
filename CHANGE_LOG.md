@@ -1612,3 +1612,16 @@
 - marked P3.2b complete in `ROADMAP.md`, leaving P3.2c as the next bounded
   identity-contract tranche for expansion candidate, rejected-candidate, and
   TFL 6 remainder classes.
+
+## 2026-06-26 - Locked P3.2c expansion and remainder identity classes
+
+- extended `planning/tfl6_nicf_embedded_identity.md` with accepted
+  `embedded_area_class` values for `wfp_tfl6_remainder`,
+  `nicf_expansion_candidate`, `nicf_expansion_rejected`,
+  `nicf_expansion_pool_unreviewed`, and `nicf_k3z_core_reference`;
+- defined candidate-area pool semantics, source/provenance fields, and the
+  first `expansion_screen_status` vocabulary without materializing candidate
+  geometry or executing screening logic; and
+- marked P3.2c complete in `ROADMAP.md`, leaving P3.2d as the next bounded
+  tranche for Patchworks group accounts, matching targets, scenario toggles,
+  and reports.
