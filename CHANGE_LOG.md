@@ -1706,3 +1706,18 @@
   package is generated inside P3.7; and
 - prepared issue `#32` and Phase 3 parent `#13` for final P3.7 status
   synchronization.
+
+## 2026-06-26 - Closed Phase 3 model-design assumptions
+
+- updated `planning/tfl6_model_input_contract.md` and `ROADMAP.md` to record
+  that `femic prep validate-case` passes after loading the local Arbutus
+  environment and materializing/unlocking the required public-data
+  `FADM_TSA.gdb` payload;
+- verified that Phase 3 child issues `#8`, `#9`, and `#28` through `#32` are
+  closed and that Phase 3 parent issue `#13` has all child acceptance criteria
+  complete;
+- preserved the boundary that Phase 4 model-input generation, outside-AOI
+  expansion screening, ForestModel XML, Matrix Builder, and runtime-package work
+  have not started; and
+- prepared the `feature/p3-model-design-assumptions` branch for the instance
+  PR/merge workflow.

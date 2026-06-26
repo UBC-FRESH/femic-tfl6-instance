@@ -373,11 +373,11 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    surfaces can enter the model-input contract without changing AU identity.
 9. P3.7 / `#32` is complete. The TFL 6 run-profile and model-input contract
    now point at the reviewed Phase 2/3 artifacts, required field families, and
-   explicit Phase 4 entry guardrails. YAML parsing and Sphinx passed; the
-   full `femic prep validate-case` preflight remains blocked by local
-   Arbutus/DataLad public-data materialization/auth state, not by the P3.7
-   config syntax.
-10. The next bounded tranche is Phase 3 closeout: verify issue/roadmap/docs
-   synchronization, close or comment on Phase 3 parent `#13` as appropriate,
-   and prepare the branch for the prescribed PR/merge workflow before Phase 4
-   starts.
+   explicit Phase 4 entry guardrails. YAML parsing, warning-clean Sphinx, and
+   `femic prep validate-case` all passed after loading the local Arbutus
+   environment and materializing/unlocking the public-data `FADM_TSA.gdb`
+   payload.
+10. Phase 3 closeout is complete once parent issue `#13` is closed and the
+   instance feature branch is handed to the prescribed PR/merge workflow. Phase
+   4 must not start until the Phase 3 PR is reviewed/merged or explicitly
+   narrowed by the maintainer.

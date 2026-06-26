@@ -116,8 +116,8 @@ Validation status:
 - YAML parsing passed for `config/run_profile.tfl6.yaml` and
   `config/tipsy/tfl6.yaml`.
 - Sphinx documentation built with warnings treated as errors.
-- `femic prep validate-case` parsed the run profile but could not complete in
-  this shell because the linked public-data mirror requires Arbutus auth and
-  DataLad/git-annex materialization/unlock recovery before FileGDB reads can
-  proceed. Treat that as a local data-materialization/preflight blocker for
-  Phase 4 setup, not as a P3.7 syntax failure.
+- `femic prep validate-case` passed after loading the local Arbutus environment
+  and materializing/unlocking the required public-data `FADM_TSA.gdb` payload.
+  The public-data worktree may remain locally dirty because unlocked FileGDB
+  members are materialized for Windows GDAL reads; do not commit those local
+  public-data materialization changes as part of the TFL 6 instance closeout.
