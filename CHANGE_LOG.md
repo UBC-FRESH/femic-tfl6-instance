@@ -1559,3 +1559,17 @@
   scenario-group fields through transition/account/report surfaces; and
 - marked P3.6d complete in `ROADMAP.md`, leaving P3.6e deferred-transition
   blocker lock as the next bounded tranche.
+
+## 2026-06-26 - Locked P3.6e deferred transition semantics
+
+- expanded `planning/tfl6_state_transition_contract.md` with the P3.6e
+  deferred-transition lock for CT residual-state transitions, fertilization
+  response transitions, cedar-specific transitions, NICF expansion scenario
+  transitions, harvest-system reassignment, operability state movement,
+  natural-regeneration alternatives, and cedar/cultural reserve scenario
+  exclusions;
+- recorded the current base behavior, blocker/review need, and owner lane for
+  each deferred transition item; and
+- marked P3.6 and P3.6e complete in `ROADMAP.md`, leaving the remaining Phase
+  3 design work to P3.1 cedar source-field/signal review, P3.2 embedded
+  K3Z/NICF identity, and P3.7 run-profile/model-input contract reconciliation.

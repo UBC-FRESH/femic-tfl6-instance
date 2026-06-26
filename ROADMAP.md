@@ -181,7 +181,7 @@ source-layer and THLB surfaces, without compiling a Patchworks package.
     managed/unmanaged treatment eligibility.
   - [x] P3.5c Lock any deferred treatment semantics with explicit blockers or
     review needs.
-- [ ] P3.6 Define TFL 6 state-transition logic (`#31`) before Phase 4
+- [x] P3.6 Define TFL 6 state-transition logic (`#31`) before Phase 4
   model-input bundle generation.
   - [x] P3.6a Define stand-state classes for initial, managed, unmanaged,
     retained, regenerated, and deferred/special teaching states.
@@ -192,7 +192,7 @@ source-layer and THLB surfaces, without compiling a Patchworks package.
     without redefining treatment semantics.
   - [x] P3.6d Record cedar and expansion hook points without completing those
     detail lanes.
-  - [ ] P3.6e Lock deferred transition semantics with explicit blockers or
+  - [x] P3.6e Lock deferred transition semantics with explicit blockers or
     review needs.
 - [ ] P3.1 Complete cedar-signal design (`#8`) for Cw cultural reserve,
   utility-pole-grade products, treatments, yield implications, accounts, and
@@ -380,8 +380,14 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    and cedar/expansion treatment details remain deferred. P3.6d records cedar
    and embedded NICF/K3Z expansion hook fields for P4 handoff while keeping
    cedar treatment design in P3.1 and expansion-candidate design in P3.2. The
-   next bounded tranche is P3.6e: lock deferred transition semantics with
-   explicit blockers or review needs.
+   P3.6e deferred-transition lock records blockers and owner lanes for CT
+   residual-state transitions, fertilization response transitions,
+   cedar-specific transitions, NICF expansion scenario transitions,
+   harvest-system reassignment, operability state movement, natural-regeneration
+   alternatives, and cedar/cultural reserve scenario exclusions. P3.6 is now
+   complete. The next bounded tranche returns to the remaining Phase 3 design
+   lanes: P3.1b cedar source-field/signal review or P3.2b embedded K3Z/NICF
+   overlay identity, unless the maintainer explicitly chooses P3.7 first.
 4. Keep P3.1 cedar design open but paused until P3.3-P3.6 are reviewed/locked
    or explicitly narrowed by the maintainer.
 5. Keep P3.2 embedded NICF/K3Z identity and expansion design idle until

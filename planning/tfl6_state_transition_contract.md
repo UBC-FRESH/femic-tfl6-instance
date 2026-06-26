@@ -214,15 +214,34 @@ transition contract unchanged:
   `nicf_expansion_candidate` fields as gates; and
 - cedar/expansion treatment or scenario semantics remain deferred.
 
-## Deferred Transition Semantics
+## P3.6e Deferred Transition-Semantics Lock
 
-| Deferred item | Blocker |
-| --- | --- |
-| CT residual-state transition | Needs reviewed age/volume eligibility, removal fraction, residual curve behavior, products, and accounts. |
-| Fertilization response transition | Needs clear separation between TIPSY yield assumptions already embedded in curves and optional scheduled fertilization response logic. |
-| Cedar-specific state transitions | Depends on P3.1 cedar product/cultural reserve/treatment design. |
-| NICF expansion scenario transitions | Depends on P3.2 accepted expansion identity fields and later scenario design. |
-| Harvest-system reassignment over time | Needs explicit scenario rule; base model treats harvest system as an initial stand-level operational attribute. |
+P3.6e locks the deferred transition semantics for the first TFL 6 model-input
+handoff. Deferred means "not implemented in the base transition contract" and
+does not mean the concept is rejected forever.
+
+| Deferred item | Current base behavior | Blocker / review need | Owner |
+| --- | --- | --- | --- |
+| CT residual-state transition | CT rows remain hook/candidate rows only; no residual curve, removal, or post-CT state is active. | Needs reviewed age/volume eligibility, removal fraction, residual curve behavior, products, accounts, and teaching scenario purpose. | Later CT treatment lane, downstream of P3.5/P3.6 and K3Z/NICF group review. |
+| Fertilization response transition | Fertilization rows remain hook/candidate rows only; no scheduled response transition is active. | Needs clear separation between TIPSY yield assumptions already embedded in curves and optional scheduled fertilization response logic, plus response curve/account design. | Later fertilization treatment lane, downstream of P3.5/P3.6 and K3Z/NICF group review. |
+| Cedar-specific state transitions | Cedar fields are preserved as hook/reporting fields only; no cedar-specific treatment or exclusion is active. | Depends on P3.1b/P3.1c cedar source-field, product, cultural reserve, treatment, and reporting decisions. | P3.1. |
+| NICF expansion scenario transitions | Embedded identity fields are preserved; no expansion scenario transition or AAC-uplift action is active. | Depends on P3.2 accepted K3Z/NICF core overlay, expansion candidate/rejected classes, scenario toggles, and matching/report requirements. | P3.2. |
+| Harvest-system reassignment over time | `HARVEST_SYSTEM` is treated as an initial stand-level operational attribute used by eligibility/account/reporting. | Needs explicit scenario rule before ground/cable/heli classes can change over time. | Later scenario/cost-sensitivity lane. |
+| Operability sensitivity as state movement | Default behavior is eligibility masking; movement to `IFM=unmanaged` happens only under reviewed scenario rule. | Needs explicit scenario contract deciding whether an operability sensitivity is a mask or a state/eligibility reclassification. | Later operability scenario lane. |
+| Natural-regeneration post-harvest alternative | Base `clearcut_and_plant` transition uses planted regeneration and `ORIGIN=treated`. | Needs reviewed scenario purpose, regeneration assumptions, curve-lane assignment, and product/account implications. | Later regeneration scenario lane. |
+| Cedar or cultural reserve scenario exclusions | Base contract carries cedar/cultural fields but creates no hidden THLB exclusion. | Needs P3.1 accepted threshold/target design and explicit scenario/account/report contract. | P3.1 / later scenario lane. |
+
+These deferred rows do not block Phase 4 model-input bundle work because the
+base contract has a complete first-pass transition surface:
+
+- `grow` preserves state and advances age;
+- `clearcut_and_plant` maps eligible managed stands to
+  `post_clearcut_planted` and `ORIGIN=treated`;
+- retention/reserve/non-THLB movement is represented through
+  `retained_unmanaged` / `IFM=unmanaged`;
+- operability sensitivity has a default mask-only behavior;
+- CT/fertilization are present as gated hooks only; and
+- cedar and expansion fields are carried as hook/reporting attributes.
 
 ## Acceptance Checks
 
@@ -232,3 +251,4 @@ transition contract unchanged:
 - State classes preserve static AU identity under age, operability, retention,
   and scenario changes.
 - Transition rows are defined without starting Phase 4 model-input generation.
+- Deferred transition semantics are locked with owner lanes and blockers.
