@@ -98,6 +98,11 @@ behavior, large one-year drops, or L/M/H ordering violations.
 
 ## Parameter-Tuning Implications
 
+The selected-set curve shapes are accepted as good enough to continue Phase 3.
+The flags below remain useful for a later optional smoothing/tail-constraint
+revisit before final model-input bundle lock, but they do not block P3.4e
+treated/managed curves, P3.5 treatment options, or P3.6 transition logic.
+
 - Curves with `near_zero_to_old_age_then_jump` should not be accepted from
   the current fit. Prefer borrowing from an adjacent SI class or similar
   base AU until a support threshold or source-filter problem is resolved.

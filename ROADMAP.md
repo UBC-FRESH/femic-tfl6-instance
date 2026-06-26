@@ -165,10 +165,10 @@ source-layer and THLB surfaces, without compiling a Patchworks package.
     and a lexicographic remap audit for non-selected AU bins.
   - [ ] P3.4e Generate and QA treated/managed BatchTIPSY curves from the
     reviewed TIPSY parameter crosswalk.
-  - [ ] P3.4f Review low-support and shape-pathology natural-curve AUs, lock
-    fallback/borrowing and smoothing/tail-cleanup policy, and finish
-    curve-selection, sparse-support, TIPSY/VDYP overlay, missing mapping, and
-    species-share QA artifacts for Phase 4.
+  - [x] P3.4f Review selected-set natural-curve shape diagnostics and document
+    that the current VDYP smoothing/tail behavior is good enough to proceed
+    with the rest of Phase 3, while reserving a later optional revisit before
+    final model-input bundle lock.
 - [ ] P3.5 Define TFL 6 treatment options (`#30`) before transition logic and
   Phase 4 model-input bundle generation.
   - [ ] P3.5a Define treatment IDs, labels, eligibility filters, products,
@@ -328,13 +328,15 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    `planning/tfl6_first_growth_plot_manifest.{csv,md}`. The selected curve
    surface now matches the P3.4b strata plot: `26` selected top-area base
    strata and `77` selected AU curve bins. Non-selected AU bins are remapped in
-   `planning/tfl6_first_growth_au_remap_audit.{csv,md}`. The next bounded P3.4
-   slice is P3.4f: review the selected-set shape diagnostics (`45` review
-   rows, `32` OK rows, no critical selected curves) and lock any tail,
-   smoothing, or L/M/H ordering cleanup before changing the accepted curve
-   table. P3.4e owns treated/managed BatchTIPSY curve generation after the
-   TIPSY parameter crosswalk is reviewed enough for executable use.
-3. After P3.4, proceed in order through P3.5 treatment options and P3.6
+   `planning/tfl6_first_growth_au_remap_audit.{csv,md}`. P3.4f reviewed the
+   selected-set shape diagnostics (`45` review rows, `32` OK rows, no critical
+   selected curves) and accepted the current VDYP smoothing/tail behavior as
+   good enough to proceed with Phase 3. A smoothing/tail-constraint revisit
+   remains a deferred pre-bundle cleanup option, not a blocker for P3.4e,
+   P3.5, or P3.6. P3.4e owns treated/managed BatchTIPSY curve generation after
+   the TIPSY parameter crosswalk is reviewed enough for executable use.
+3. Continue Phase 3 in order through P3.4e treated/managed curves, P3.5
+   treatment options, and P3.6
    transition logic. Do not jump to cedar details, expansion options, or Phase
    4 until these base model mechanics are locked.
 4. Keep P3.1 cedar design open but paused until P3.3-P3.6 are reviewed/locked

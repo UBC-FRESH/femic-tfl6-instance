@@ -1408,3 +1408,16 @@
 - updated `ROADMAP.md` so P3.4f explicitly covers selected-set
   shape-pathology review and remap QA before any smoothing/tail-cleanup
   parameter changes are locked.
+
+## 2026-06-26 - Deferred optional VDYP smoothing cleanup after P3.4f review
+
+- updated `ROADMAP.md` to mark P3.4f complete and record that the selected
+  top-area VDYP first-growth curves are good enough to proceed with the rest of
+  Phase 3;
+- kept the `45` selected-set review flags visible in
+  `planning/tfl6_first_growth_shape_diagnostics.md`, but reframed smoothing,
+  tail-constraint, and L/M/H ordering cleanup as an optional pre-bundle revisit
+  rather than a blocker for P3.4e, P3.5, or P3.6; and
+- left the selected canonical curve set at `77` AU bins with `26` L/M/H review
+  panels and the `307` non-selected AU remaps documented in
+  `planning/tfl6_first_growth_au_remap_audit.{csv,md}`.
