@@ -10,4 +10,5 @@ until the roadmap records a runnable Patchworks package.
    :caption: Teaching Notes
 
    phase2-thlb-netdown
+   phase3-au-yield-curves
    teaching-challenges

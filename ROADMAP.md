@@ -349,7 +349,10 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    error file has `0` error rows. The remaining treated-curve caveat is
    row-level: high treated-to-natural ratios are concentrated in small
    fallback `CWHvm1_DR` rows, while dominant selected strata are good enough to
-   proceed with treatment-option design.
+   proceed with treatment-option design. The Sphinx docs now expose the Phase
+   3 AU/yield surfaces in `docs/phase3-au-yield-curves.rst`, including the
+   AU definition contract, strata plot, VDYP L/M/H plots, VDYP fit diagnostics,
+   and treated TIPSY-vs-VDYP overlays.
 3. Continue Phase 3 in order with P3.5 treatment options, then P3.6 transition
    logic. Do not jump to cedar details, expansion options, or Phase 4 until
    these base model mechanics are locked.

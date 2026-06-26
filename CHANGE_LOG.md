@@ -1454,3 +1454,19 @@
 - marked P3.4 complete in `ROADMAP.md`, with the remaining treated-curve caveat
   limited to small fallback `CWHvm1_DR` rows that show high treated-to-natural
   max-volume ratios and should remain visible during later bundle QA.
+
+## 2026-06-26 - Published Phase 3 AU and yield-curve docs
+
+- added `docs/phase3-au-yield-curves.rst` and linked it from
+  `docs/index.rst` so students and maintainers can find the Phase 3 AU
+  definition contract, strata diagnostic, natural VDYP plots, and
+  treated TIPSY-vs-VDYP overlays from the standalone docs;
+- added `scripts/build_docs_phase3_au_yield_curves.py` to regenerate the docs
+  gallery from checked-in plot artifacts;
+- documented the accepted static AU policy, the `174` static strata, `26`
+  selected top-area strata, `384` total AU bins, and `77` selected AU bins;
+- surfaced the `plots/strata-tfl6.png` diagnostic, `26`
+  `vdyp_lmh_tfl6-*.png` panels, `77` `vdyp_fitdiag_tfl6-*.png` panels, and
+  `77` `tipsy_vdyp_tfl6-*.png` treated-overlay panels; and
+- kept the optional VDYP smoothing revisit and small fallback `CWHvm1_DR`
+  treated-curve caveats visible in the docs before P3.5 treatment-option work.
