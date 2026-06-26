@@ -205,6 +205,12 @@ def _missing_curve_row(au_id: str, diag: pd.Series) -> dict[str, object]:
     }
 
 
+def _selected_au_ids() -> set[str]:
+    static_au = pd.read_csv(INSTANCE_ROOT / "planning" / "tfl6_static_au_universe.csv")
+    selected = static_au.loc[static_au["selected_top_90_stratum"].astype(bool), "au_id"]
+    return set(selected.dropna().astype(str))
+
+
 def _add_lmh_order_flags(summary: pd.DataFrame, curves: pd.DataFrame) -> pd.DataFrame:
     summary = summary.copy()
     summary["lmh_order_violation_count"] = 0
@@ -282,13 +288,14 @@ def _write_markdown(summary: pd.DataFrame, output_path: Path) -> None:
         "## Purpose",
         "",
         "Classify the current P3.4d natural/untreated first-growth curve shapes",
-        "before changing smoothing parameters, borrowing rules, or Phase 4 bundle",
-        "inputs. This report is diagnostic only: it does not alter",
+        "for the selected top-area AU set before changing smoothing parameters,",
+        "borrowing rules, or Phase 4 bundle inputs. This report is diagnostic",
+        "only: it does not alter",
         "`planning/tfl6_first_growth_au_curves.csv`.",
         "",
         "## Summary Counts",
         "",
-        f"- Total AU diagnostic rows: `{len(summary)}`",
+        f"- Selected top-area AU diagnostic rows: `{len(summary)}`",
         f"- Accepted curve rows assessed: `{int(summary['accepted'].sum())}`",
         f"- OK shape rows: `{counts.get('ok', 0)}`",
         f"- Review shape rows: `{counts.get('review', 0)}`",
@@ -353,7 +360,7 @@ def _write_markdown(summary: pd.DataFrame, output_path: Path) -> None:
             "",
             "## Insufficient-Source Cases",
             "",
-            f"`{len(insufficient)}` AUs still require borrowing/fallback review.",
+            f"`{len(insufficient)}` selected top-area AUs still require borrowing/fallback review.",
             "",
             "## Parameter-Tuning Implications",
             "",
@@ -376,6 +383,8 @@ def _write_markdown(summary: pd.DataFrame, output_path: Path) -> None:
             "",
             "- `planning/tfl6_first_growth_shape_diagnostics.csv`",
             "- `planning/tfl6_first_growth_shape_diagnostics.md`",
+            "- Non-selected AU imputation is audited separately in",
+            "  `planning/tfl6_first_growth_au_remap_audit.csv`.",
             "- Inputs: `planning/tfl6_first_growth_au_curves.csv` and",
             "  `planning/tfl6_first_growth_au_fit_diagnostics.csv`",
             "",
@@ -389,6 +398,11 @@ def main() -> None:
     diagnostics = pd.read_csv(
         INSTANCE_ROOT / "planning" / "tfl6_first_growth_au_fit_diagnostics.csv"
     )
+    selected_au_ids = _selected_au_ids()
+    curves = curves.loc[curves["au_id"].astype(str).isin(selected_au_ids)].copy()
+    diagnostics = diagnostics.loc[
+        diagnostics["au_id"].astype(str).isin(selected_au_ids)
+    ].copy()
     diag_lookup = diagnostics.set_index("au_id", drop=False)
     rows = []
     curved_au_ids: set[str] = set()

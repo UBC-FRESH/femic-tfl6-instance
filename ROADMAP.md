@@ -159,9 +159,10 @@ source-layer and THLB surfaces, without compiling a Patchworks package.
     bundle.
   - [x] P3.4c Crosswalk static TFL 6 AUs to reviewed TIPSY parameter rows or
     explicit fallbacks.
-  - [x] P3.4d Generate and QA natural/untreated VDYP curves for AU-assigned
-    AFLB feature IDs using the shared `smoothed_bin_pchip` first-growth
-    selector, with AU-wise L/M/H comparison and fit-diagnostic plots.
+  - [x] P3.4d Generate and QA natural/untreated VDYP curves for the selected
+    top-area AU set using the shared `smoothed_bin_pchip` first-growth
+    selector, with selected-AU L/M/H comparison plots, fit-diagnostic plots,
+    and a lexicographic remap audit for non-selected AU bins.
   - [ ] P3.4e Generate and QA treated/managed BatchTIPSY curves from the
     reviewed TIPSY parameter crosswalk.
   - [ ] P3.4f Review low-support and shape-pathology natural-curve AUs, lock
@@ -321,15 +322,18 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    AFLB feature IDs and wrote review artifacts to
    `planning/tfl6_first_growth_au_curves.csv`,
    `planning/tfl6_first_growth_au_fit_diagnostics.csv`, and
-   `planning/tfl6_first_growth_vdyp_run_summary.md`; AU-wise plots are in
-   `plots/vdyp_lmh_tfl6-*.png` and `plots/vdyp_fitdiag_tfl6-*.png`, with the
-   manifest in `planning/tfl6_first_growth_plot_manifest.{csv,md}`. The next
-   bounded P3.4 slice is P3.4f: compile AU-wise shape diagnostics for the
-   accepted first-growth curves, then review the `104` insufficient-source
-   natural-curve AUs and any late-start, old-age-uptick, wobbly, or L/M/H order
-   violation cases before changing smoothing parameters or borrowing policy.
-   P3.4e owns treated/managed BatchTIPSY curve generation after the TIPSY
-   parameter crosswalk is reviewed enough for executable use.
+   `planning/tfl6_first_growth_vdyp_run_summary.md`; canonical selected-AU
+   plots are in `plots/vdyp_lmh_tfl6-*.png` and
+   `plots/vdyp_fitdiag_tfl6-*.png`, with the manifest in
+   `planning/tfl6_first_growth_plot_manifest.{csv,md}`. The selected curve
+   surface now matches the P3.4b strata plot: `26` selected top-area base
+   strata and `77` selected AU curve bins. Non-selected AU bins are remapped in
+   `planning/tfl6_first_growth_au_remap_audit.{csv,md}`. The next bounded P3.4
+   slice is P3.4f: review the selected-set shape diagnostics (`45` review
+   rows, `32` OK rows, no critical selected curves) and lock any tail,
+   smoothing, or L/M/H ordering cleanup before changing the accepted curve
+   table. P3.4e owns treated/managed BatchTIPSY curve generation after the
+   TIPSY parameter crosswalk is reviewed enough for executable use.
 3. After P3.4, proceed in order through P3.5 treatment options and P3.6
    transition logic. Do not jump to cedar details, expansion options, or Phase
    4 until these base model mechanics are locked.

@@ -262,6 +262,12 @@ def _write_fitdiag_plots(
     return rows
 
 
+def _selected_au_ids() -> set[str]:
+    static_au = pd.read_csv(INSTANCE_ROOT / "planning" / "tfl6_static_au_universe.csv")
+    selected = static_au.loc[static_au["selected_top_90_stratum"].astype(bool), "au_id"]
+    return set(selected.dropna().astype(str))
+
+
 def main() -> None:
     plots_dir = INSTANCE_ROOT / "plots"
     plots_dir.mkdir(parents=True, exist_ok=True)
@@ -269,8 +275,14 @@ def main() -> None:
     diagnostics = pd.read_csv(
         INSTANCE_ROOT / "planning" / "tfl6_first_growth_au_fit_diagnostics.csv"
     )
+    selected_au_ids = _selected_au_ids()
+    curves = curves.loc[curves["au_id"].astype(str).isin(selected_au_ids)].copy()
+    diagnostics = diagnostics.loc[
+        diagnostics["au_id"].astype(str).isin(selected_au_ids)
+    ].copy()
     stand_to_au = pd.read_csv(
-        INSTANCE_ROOT / "planning" / "tfl6_stand_to_au_review.csv"
+        INSTANCE_ROOT / "planning" / "tfl6_stand_to_au_review.csv",
+        low_memory=False,
     )
     yields = pd.read_parquet(
         INSTANCE_ROOT
@@ -305,10 +317,17 @@ def main() -> None:
     summary = [
         "# TFL 6 First-Growth Curve Plot Manifest",
         "",
+        f"- Selected top-area AU curves: `{len(selected_au_ids)}`",
         f"- LMH comparison plots: `{int((manifest['plot_type'] == 'vdyp_lmh').sum())}`",
         f"- Fit diagnostic plots: `{int((manifest['plot_type'] == 'vdyp_fitdiag').sum())}`",
         "- Plot directory: `plots/`",
         "- Filename families: `vdyp_lmh_tfl6-*.png` and `vdyp_fitdiag_tfl6-*.png`",
+        "",
+        "Cardinality note: `vdyp_fitdiag_tfl6-*.png` is one diagnostic plot per",
+        "selected top-area AU curve, while `vdyp_lmh_tfl6-*.png` is one",
+        "comparison panel per selected base stratum / AU family. Non-selected",
+        "AUs are not published as separate curve families; they are imputed onto",
+        "the selected canonical AU set by the lexicographic remap audit.",
         "",
         "These follow the MKRF/TSA29 visual review convention: L/M/H comparison",
         "panels for AU families and fit-diagnostic panels with raw VDYP curves,",
@@ -320,6 +339,7 @@ def main() -> None:
     )
     print(summary[2])
     print(summary[3])
+    print(summary[4])
 
 
 if __name__ == "__main__":

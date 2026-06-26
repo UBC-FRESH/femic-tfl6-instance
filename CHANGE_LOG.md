@@ -1366,9 +1366,10 @@
 - promoted review artifacts to `planning/tfl6_first_growth_au_curves.csv`,
   `planning/tfl6_first_growth_au_fit_diagnostics.csv`, and
   `planning/tfl6_first_growth_vdyp_run_summary.md`;
-- accepted `276` AU natural/untreated first-growth curves using the shared
-  `smoothed_bin_pchip` selector and flagged `104` AUs as insufficient-source
-  cases for the next P3.4f fallback/borrowing review; and
+- produced `276` raw accepted AU natural/untreated first-growth curve
+  candidates using the shared `smoothed_bin_pchip` selector and flagged `104`
+  raw AUs as insufficient-source candidates, while retaining only the selected
+  top-area AU set as canonical curve families for publication/review; and
 - kept the large stand-level VDYP yield time series and VDYP run logs under
   ignored `runtime/derived/p3_4_aflb_vdyp_first_growth_run2/` for local audit
   and did not write Phase 4 model-input bundle outputs.
@@ -1377,11 +1378,12 @@
 
 - added `scripts/build_p3_4_first_growth_plots.py` to regenerate the TFL 6
   natural/untreated first-growth review plots from the P3.4d VDYP run outputs;
-- generated `108` `plots/vdyp_lmh_tfl6-*.png` AU-family comparison plots using
-  the same L/M/H visual review pattern as the other FEMIC instance examples;
-- generated `276` `plots/vdyp_fitdiag_tfl6-*.png` AU fit-diagnostic plots with
-  raw VDYP curves, 5-year observed medians/interquartile bands, selected fits,
-  and residual panels;
+- generated `26` `plots/vdyp_lmh_tfl6-*.png` selected-AU-family comparison
+  plots using the same L/M/H visual review pattern as the other FEMIC instance
+  examples;
+- generated `77` `plots/vdyp_fitdiag_tfl6-*.png` selected-AU fit-diagnostic
+  plots with raw VDYP curves, 5-year observed medians/interquartile bands,
+  selected fits, and residual panels;
 - wrote `planning/tfl6_first_growth_plot_manifest.{csv,md}` with repo-relative
   plot paths for review and downstream documentation; and
 - updated `planning/tfl6_first_growth_vdyp_run_summary.md` and `ROADMAP.md` so
@@ -1392,17 +1394,17 @@
 ## 2026-06-25 - Added P3.4f first-growth curve shape diagnostics
 
 - added `scripts/build_p3_4_first_growth_shape_diagnostics.py` to classify
-  AU-wise natural/untreated first-growth curve shapes before changing the
+  selected-AU natural/untreated first-growth curve shapes before changing the
   accepted P3.4d curve table;
 - wrote `planning/tfl6_first_growth_shape_diagnostics.{csv,md}` with one row
-  per AU diagnostic case, including accepted curves and the `104`
-  insufficient-source AUs;
-- flagged `8` accepted curves as critical, including late-start and
-  near-zero-to-old-age jump cases that should be rejected and replaced through
-  adjacent-AU borrowing or reviewed fallback rules before Phase 4;
-- flagged `194` accepted curves for review, including old-age terminal upticks,
-  large one-year drops, wobbly multi-extrema behavior, and L/M/H ordering
-  violations; and
-- updated `ROADMAP.md` so P3.4f explicitly covers low-support and
-  shape-pathology review before any smoothing/tail-cleanup parameter changes
-  are locked.
+  per selected top-area AU diagnostic case;
+- confirmed the selected curve set has `77` accepted curves, no
+  insufficient-source selected AUs, no critical selected curves, `45` review
+  rows, and `32` OK rows;
+- added `scripts/build_p3_4_first_growth_au_remap_audit.py` and
+  `planning/tfl6_first_growth_au_remap_audit.{csv,md}` to map `307`
+  non-selected AU bins onto the `77` selected canonical curve families using
+  FEMIC's established lexicographic stratum-name matching pattern; and
+- updated `ROADMAP.md` so P3.4f explicitly covers selected-set
+  shape-pathology review and remap QA before any smoothing/tail-cleanup
+  parameter changes are locked.

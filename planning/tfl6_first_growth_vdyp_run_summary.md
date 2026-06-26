@@ -24,6 +24,8 @@ Review artifacts promoted to `planning/`:
 - `planning/tfl6_first_growth_au_fit_diagnostics.csv`
 - `planning/tfl6_first_growth_plot_manifest.csv`
 - `planning/tfl6_first_growth_plot_manifest.md`
+- `planning/tfl6_first_growth_au_remap_audit.csv`
+- `planning/tfl6_first_growth_au_remap_audit.md`
 
 Visual review artifacts promoted to `plots/` using the same AU-wise review
 families used by the other FEMIC instance examples:
@@ -44,12 +46,15 @@ Large runtime/audit artifacts remain under ignored runtime output:
 - Feature IDs with VDYP yield evidence: `16,659`
 - Stand-level VDYP yield rows generated: `3,220,953`
 - AU diagnostics generated: `380`
-- AUs with accepted first-growth curves: `276`
-- AUs with insufficient source-stand support: `104`
+- Raw accepted first-growth curve candidates: `276`
+- Raw insufficient-source AU candidates: `104`
+- Static AU bins in the P3.4b universe: `384`
+- Selected top-area AU bins retained as canonical curve families: `77`
+- Non-selected AU bins remapped/imputed to selected curve families: `307`
 - Sparse-support diagnostic flags: `186`
 - Selected accepted curve family: `smoothed_bin_pchip`
-- L/M/H AU-family comparison plots: `108`
-- AU fit diagnostic plots: `276`
+- L/M/H selected-AU-family comparison plots: `26`
+- Selected AU fit diagnostic plots: `77`
 
 ## Notes
 
@@ -59,7 +64,9 @@ source-ID remap pattern used by the established FEMIC VDYP runner when output
 table counts and requested feature counts align closely but output keys do not
 match input feature IDs.
 
-The first-growth selector intentionally leaves low-support AUs without accepted
-natural curves. Those AUs must either receive a reviewed borrowing/fallback rule
-in a later P3.4 QA pass or be carried forward as managed-only / insufficient
-support cases, depending on the downstream treatment and runtime contract.
+The raw first-growth selector produced more candidate curves than the canonical
+selected top-area AU universe needs. Current P3.4 artifacts therefore publish
+and visually review only the `77` selected top-area AU curves. Non-selected AU
+bins are not separate natural-curve families; they are remapped to selected
+curve families in `planning/tfl6_first_growth_au_remap_audit.csv` using the
+established FEMIC lexicographic stratum-name matching pattern.
