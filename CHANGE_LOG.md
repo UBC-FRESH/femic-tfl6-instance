@@ -1485,3 +1485,15 @@
 - recorded that managed/unmanaged treatment eligibility remains separate from
   natural/treated curve provenance, with cedar and NICF expansion treatment
   details deferred behind P3.1/P3.2 review blockers.
+
+## 2026-06-26 - Refined P3.5 treatment scope for NICF-focused CT/fertilization
+
+- revised the P3.5 treatment contract so the only whole-TFL 6 base scheduled
+  treatment is `clearcut_and_plant`, combining harvest and planted
+  regeneration into the base treatment vocabulary consumed by P3.6;
+- updated `config/silviculture.tfl6.yaml` to replace the separate `cc` and
+  `regen_plant` planning entries with `clearcut_and_plant`; and
+- retained CT and fertilization as group-gated scenario treatments eligible
+  only inside the K3Z/NICF core block and future accepted NICF expansion
+  blocks, with response, residual-state, transition, product, and account
+  blockers still requiring review before activation.

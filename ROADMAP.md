@@ -355,13 +355,15 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    and treated TIPSY-vs-VDYP overlays.
 3. Continue Phase 3 in order with P3.6 transition logic. P3.5 locked the base
    treatment-option vocabulary in `planning/tfl6_treatment_option_contract.md`
-   and `config/silviculture.tfl6.yaml`: `cc` is the only accepted base
-   scheduled treatment, `grow` is implicit state behavior, `regen_plant` is the
-   default managed post-harvest transition target, `regen_natural` is a
-   deferred/fallback transition target, and CT/PCT/fertilization/cedar/NICF
-   expansion actions remain deferred behind explicit review blockers. Do not
-   jump to cedar details, expansion options, or Phase 4 until P3.6 locks state
-   transitions against this treatment vocabulary.
+   and `config/silviculture.tfl6.yaml`: `clearcut_and_plant` is the only
+   accepted whole-TFL 6 base scheduled treatment and `grow` is implicit state
+   behavior. CT and fertilization are accepted only as K3Z/NICF-core and future
+   NICF-expansion group-gated scenario treatments, with response/transition/
+   product/account blockers still unresolved before activation. PCT,
+   cedar-specific treatments, and standalone NICF expansion actions remain
+   deferred behind explicit review blockers. Do not jump to cedar details,
+   expansion options, or Phase 4 until P3.6 locks state transitions against
+   this treatment vocabulary.
 4. Keep P3.1 cedar design open but paused until P3.3-P3.6 are reviewed/locked
    or explicitly narrowed by the maintainer.
 5. Keep P3.2 embedded NICF/K3Z identity and expansion design idle until

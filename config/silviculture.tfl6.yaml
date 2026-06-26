@@ -14,11 +14,11 @@ treatment_catalogue:
     status: "accepted_implicit_state_behavior"
     scheduled_action: false
     role: "Stand remains unscheduled in the period."
-  cc:
-    label: "Clearcut/final harvest"
+  clearcut_and_plant:
+    label: "Clearcut and plant"
     status: "accepted_base_scheduled_treatment"
     scheduled_action: true
-    role: "Primary timber-harvest treatment for eligible managed THLB stands."
+    role: "Primary timber-harvest treatment for eligible managed THLB stands, including planted regeneration as the base post-harvest path."
     eligibility_filters:
       - "inside_tfl6_aoi"
       - "thlb"
@@ -28,16 +28,32 @@ treatment_catalogue:
       - "valid_static_au"
       - "valid_yield_curve"
       - "minimum_harvest_age_or_merchantability_rule"
-  regen_plant:
-    label: "Planted regeneration"
-    status: "accepted_post_harvest_transition_target"
-    scheduled_action: false
-    role: "Default managed post-harvest transition target using reviewed treated/managed TIPSY curves."
-  regen_natural:
-    label: "Natural regeneration"
-    status: "deferred_fallback_transition_target"
-    scheduled_action: false
-    role: "Fallback transition target where source evidence or scenario design requires natural regeneration."
+    post_harvest_transition_target: "planted_regeneration"
+  commercial_thinning:
+    label: "Commercial thinning"
+    status: "accepted_group_gated_scenario_treatment"
+    scheduled_action: true
+    eligible_groups:
+      - "nicf_k3z_core"
+      - "nicf_expansion_candidate"
+    role: "NICF-focused scenario treatment; unavailable in the WFP/TFL 6 remainder unless explicitly broadened later."
+    blockers_before_activation:
+      - "merchantability_thresholds"
+      - "removal_fractions"
+      - "residual_state_transitions"
+      - "products_and_accounts"
+  fertilization:
+    label: "Fertilization"
+    status: "accepted_group_gated_scenario_treatment"
+    scheduled_action: true
+    eligible_groups:
+      - "nicf_k3z_core"
+      - "nicf_expansion_candidate"
+    role: "NICF-focused scenario treatment; unavailable in the WFP/TFL 6 remainder unless explicitly broadened later."
+    blockers_before_activation:
+      - "separate_embedded_tipsy_yield_assumptions_from_scheduled_fertilization"
+      - "response_curve_rules"
+      - "products_and_accounts"
 
 reporting_hooks:
   groups:
@@ -64,11 +80,17 @@ deferred_treatments:
     status: "deferred"
     blocker: "Needs reviewed stocking/age eligibility, response logic, and teaching purpose."
   commercial_thinning:
-    status: "deferred"
-    blocker: "Needs merchantability thresholds, removal fractions, residual-state transitions, and products."
+    status: "group_gated"
+    eligible_groups:
+      - "nicf_k3z_core"
+      - "nicf_expansion_candidate"
+    blocker: "Needs merchantability thresholds, removal fractions, residual-state transitions, and products before activation."
   fertilization:
-    status: "deferred"
-    blocker: "Needs separation between TIPSY yield assumptions already embedded in curves and optional scheduled fertilization scenarios."
+    status: "group_gated"
+    eligible_groups:
+      - "nicf_k3z_core"
+      - "nicf_expansion_candidate"
+    blocker: "Needs separation between TIPSY yield assumptions already embedded in curves and optional scheduled fertilization scenarios before activation."
   cedar_specific_treatments:
     status: "deferred"
     blocker: "Belongs to P3.1 cedar signal/product/treatment design."
