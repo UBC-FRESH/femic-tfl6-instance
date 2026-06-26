@@ -1296,3 +1296,24 @@
 - marked P3.4b complete in `ROADMAP.md` and moved Current Next Steps to P3.4c
   MP10 TIPSY parameter crosswalk work without writing the model-input bundle or
   generating curves.
+
+## 2026-06-25 - Crosswalked static TFL 6 AUs to MP10 TIPSY rows for P3.4c
+
+- added the P3.4c planning crosswalk under
+  `planning/tfl6_tipsy_parameter_crosswalk.{md,json,csv}`;
+- matched each of the `384` refined static TFL 6 AU bins to three MP10 TIPSY
+  parameter lanes: existing managed stands aged 11-50, existing managed stands
+  aged 1-10, and future managed stands;
+- produced `1,152` crosswalk rows, including separate confidence flags,
+  species-share distance, weighted-SI difference, zero-padded MP10 legacy AU
+  codes, and non-numeric `mp10_au_####` provenance keys;
+- recorded selected top-area AU confidence counts by lane: for
+  existing-managed 11-50, `34` high, `23` medium, `8` low, and `12` fallback;
+  for existing-managed 1-10, `19` high, `32` medium, `15` low, and `11`
+  fallback; and for future-managed, `11` high, `36` medium, `19` low, and `11`
+  fallback;
+- kept low-confidence and fallback rows explicit for maintainer review before
+  executable BatchTIPSY use; and
+- marked P3.4c complete in `ROADMAP.md` and moved Current Next Steps to P3.4d
+  natural/untreated VDYP curve generation and QA without writing the
+  model-input bundle.

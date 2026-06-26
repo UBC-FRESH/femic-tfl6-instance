@@ -157,7 +157,7 @@ source-layer and THLB surfaces, without compiling a Patchworks package.
   - [x] P3.4b Compile the first static TFL 6 AU/stratum universe and review
     plots from accepted R1/VDYP source inputs, without writing the model-input
     bundle.
-  - [ ] P3.4c Crosswalk static TFL 6 AUs to reviewed TIPSY parameter rows or
+  - [x] P3.4c Crosswalk static TFL 6 AUs to reviewed TIPSY parameter rows or
     explicit fallbacks.
   - [ ] P3.4d Generate and QA natural/untreated VDYP curves using the shared
     `smoothed_bin_pchip` first-growth selector unless a reviewed TFL6-specific
@@ -315,11 +315,12 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    surfaces; the parent FEMIC submodule pointer has been updated to the merged
    closeout commit.
 2. Continue with Phase 3 / P3.4 on branch
-   `feature/p3-model-design-assumptions`: complete P3.4c by crosswalking the
-   first review-only static TFL 6 AU/stratum universe to reviewed MP10 Tables
-   27-29 TIPSY parameter rows or explicit fallbacks. Keep this out of
-   `data/model_input_bundle/`; P3.4d/P3.4e own actual VDYP and BatchTIPSY curve
-   generation after the crosswalk is accepted.
+   `feature/p3-model-design-assumptions`: complete P3.4d by generating and QAing
+   natural/untreated VDYP curves for the reviewed TFL 6 AU universe using the
+   shared `smoothed_bin_pchip` selector unless a reviewed TFL6-specific override
+   is accepted. Keep this out of `data/model_input_bundle/`; P3.4e owns
+   treated/managed BatchTIPSY curve generation after the TIPSY parameter
+   crosswalk is reviewed enough for executable use.
 3. After P3.4, proceed in order through P3.5 treatment options and P3.6
    transition logic. Do not jump to cedar details, expansion options, or Phase
    4 until these base model mechanics are locked.
