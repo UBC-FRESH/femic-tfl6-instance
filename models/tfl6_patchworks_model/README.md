@@ -7,8 +7,8 @@ Current scope:
 
 - `tracks/` is the generated Matrix Builder track-table surface from P4.3.
 - `blocks/` is the generated block/topology surface from P4.4a.
-- `analysis/` is not yet materialized; the next P4.4 step is to add the
-  `analysis/base.pin` launch surface and supporting scenario scripts.
+- `analysis/` contains the baseline `base.pin` launch surface and shared
+  headless helper scripts.
 - `lineage_registry.yaml` records the current package inputs, generation
   commands, and validation status.
 
@@ -22,6 +22,6 @@ Current modeling boundary:
 - Ground/cable/heli harvest-system assignment is deferred to a later
   operability refinement.
 
-Generated blocks and tracks are currently ignored in Git. Phase 5 publication
-policy will decide which runtime artifacts are tracked, annexed, published, or
-regenerated.
+Generated blocks, tracks, and saved-stage smoke outputs are currently ignored
+in Git. Phase 5 publication policy will decide which runtime artifacts are
+tracked, annexed, published, or regenerated.

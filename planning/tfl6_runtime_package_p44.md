@@ -57,17 +57,56 @@ P4.4a is accepted.
 
 ## Remaining P4.4 Steps
 
-P4.4b must add the launch surface:
+## P4.4b Launch Surface
+
+P4.4b added the baseline launch surface:
 
 - `models/tfl6_patchworks_model/analysis/base.pin`
-- shared headless helper script
-- target helper script for the first representative scenario smoke
+- `models/tfl6_patchworks_model/analysis/base_variant_common.bsh`
+- `models/tfl6_patchworks_model/analysis/headless_runtime_common.bsh`
+- `models/tfl6_patchworks_model/scripts/targets/flowtargets.bsh`
 
-P4.4c must run direct launch smoke:
+The TFL 6 flow target helper uses the generated account label family
+`product.HarvestedVolume.managed.*`, with
+`product.HarvestedVolume.managed.Total.CC` as the default scenario-smoke target.
 
-- `femic patchworks preflight`
-- `femic patchworks run-headless models/tfl6_patchworks_model/analysis/base.pin`
-- inspect saved-stage artifacts rather than relying on command success only
+P4.4b is accepted.
+
+## P4.4c Direct Launch Smoke
+
+Command:
+
+```powershell
+..\..\.venv\Scripts\python.exe -m femic patchworks run-headless `
+  models\tfl6_patchworks_model\analysis\base.pin `
+  --config config\patchworks.runtime.windows.yaml `
+  --run-id tfl6_p44b_launch0 `
+  --iterations 0 `
+  --stage-label p44b_launch0
+```
+
+Result: accepted.
+
+Manifest evidence:
+
+| Field | Value |
+| --- | --- |
+| run id | `tfl6_p44b_launch0` |
+| raw return code | `0` |
+| effective return code | `0` |
+| terminal state | `success` |
+| detected marker | `[FEMIC headless] saveStage completed` |
+| saved files | `903` |
+| scenario mode | `none` |
+| stage directory | `models/tfl6_patchworks_model/analysis/p44b_launch0` |
+
+Trace evidence confirms Patchworks loaded the PIN, initialized, skipped
+scheduler iterations as requested, and completed `saveStage`.
+
+P4.4c is accepted for direct launch smoke. The saved stage is generated output
+and remains ignored in Git.
+
+## Remaining P4.4 Steps
 
 P4.4d must run a representative scenario smoke:
 
@@ -75,5 +114,5 @@ P4.4d must run a representative scenario smoke:
 - confirm target status / target summary are written; and
 - confirm schedule evidence is non-empty if a scheduling scenario is claimed.
 
-Phase 4 closeout remains blocked until P4.4c/P4.4d produce direct runtime
+Phase 4 closeout remains blocked until P4.4d produces representative scenario
 evidence.

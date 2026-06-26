@@ -2029,3 +2029,23 @@
   and
 - kept generated blocks/tracks ignored until Phase 5 artifact publication
   policy decides what is tracked, annexed, published, or regenerated.
+
+## 2026-06-26 - Added P4.4b launch surface and passed P4.4c direct smoke
+
+- added the baseline TFL6 Patchworks launch surface at
+  `models/tfl6_patchworks_model/analysis/base.pin`;
+- added shared TFL6 launch helpers:
+  `models/tfl6_patchworks_model/analysis/base_variant_common.bsh`,
+  `models/tfl6_patchworks_model/analysis/headless_runtime_common.bsh`, and
+  `models/tfl6_patchworks_model/scripts/targets/flowtargets.bsh`;
+- configured the TFL6 flow-target helper around
+  `product.HarvestedVolume.managed.*` account labels, with
+  `product.HarvestedVolume.managed.Total.CC` as the representative
+  scenario-smoke target;
+- ran direct no-scenario headless launch smoke with run id
+  `tfl6_p44b_launch0`;
+- confirmed raw and effective return code `0`, terminal state `success`,
+  marker `[FEMIC headless] saveStage completed`, and `903` saved-stage files;
+  and
+- marked P4.4b/P4.4c complete in `ROADMAP.md`, leaving P4.4d representative
+  scenario smoke as the remaining Phase 4 runtime-package gate.

@@ -274,8 +274,8 @@ exist.
   representative launch and scenario-smoke checks.
   - [x] P4.4a Build and inspect runtime block/topology artifacts from the
     accepted P4.2 fragments.
-  - [ ] P4.4b Add the `analysis/base.pin` launch surface and helper scripts.
-  - [ ] P4.4c Run direct Patchworks launch smoke and inspect saved-stage
+  - [x] P4.4b Add the `analysis/base.pin` launch surface and helper scripts.
+  - [x] P4.4c Run direct Patchworks launch smoke and inspect saved-stage
     artifacts.
   - [ ] P4.4d Run representative scenario smoke and record Phase 4 closeout
     evidence.
@@ -540,7 +540,14 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
     tracks, and `patchworksLog.csv` remain ignored until Phase 5 decides the
     publication policy. P4.4b is the next bounded step: add
     `models/tfl6_patchworks_model/analysis/base.pin` and its helper scripts so
-    direct launch smoke can run.
+    direct launch smoke can run. P4.4b and P4.4c are now complete: the TFL6
+    runtime package has a baseline `analysis/base.pin`, shared headless helper,
+    and `flowtargets.bsh` keyed to `product.HarvestedVolume.managed.*`; direct
+    headless launch run `tfl6_p44b_launch0` returned `0`, detected
+    `[FEMIC headless] saveStage completed`, and wrote `903` saved-stage files.
+    P4.4d is the next bounded step: run representative scenario smoke against
+    `product.HarvestedVolume.managed.Total.CC` and inspect target/schedule
+    outputs.
 22. P5.3a / `#21` publication plumbing is complete for the current seed docs,
     but P5.3 stays open for final teaching-docs expansion after Phase 4 runtime
     package evidence exists.
