@@ -41,12 +41,78 @@ classes:
 | Identity | Meaning | Expected use |
 | --- | --- | --- |
 | `tfl6_base` | Area inside the accepted TFL 6 AOI but outside the embedded NICF/K3Z core and outside active expansion-candidate classes. | Whole-TFL accounting, comparison reports, broader teaching context. |
-| `nicf_k3z_core` | Original K3Z/NICF teaching AOI embedded inside the TFL 6 model. | Separate area/yield/account reporting, matching targets, continuity with the K3Z teaching instance. |
+| `nicf_k3z_core` | Original K3Z/NICF teaching AOI identity from the K3Z tenure source; under the current TFL 6 AOI it is mostly an external/reference carve-out rather than a material current-AOI class. | Separate area/yield/account reporting where present, continuity with the K3Z teaching instance, and explicit carve-out audit. |
 | `nicf_expansion_candidate` | Area outside `nicf_k3z_core` that is eligible for candidate expansion scenarios. | Scenario toggles, candidate pool accounting, AAC-uplift comparisons, matching targets. |
 | `nicf_expansion_rejected` | Area considered but screened out by productivity, THLB, operability, constraint, or review criteria. | Audit trail, teaching comparison, rejected-pool reporting. |
 
 The implementation can use a more compact coded field, but it must preserve
 these distinctions in auditable form.
+
+## P3.2b K3Z/NICF Core AOI Overlay Identity
+
+P3.2b reviewed the original K3Z/NICF core source against the accepted current
+TFL 6 AOI. The accepted K3Z/NICF core source remains the K3Z teaching-instance
+tenure boundary:
+
+| Surface | Path | Role |
+| --- | --- | --- |
+| K3Z/NICF core tenure | `external/femic-k3z-instance/data/bc/cfa/k3z/CFA K3Z Tenure.shp` | authoritative source for the original K3Z teaching AOI identity |
+| Current TFL 6 AOI | `data/source/tfl_6/aoi/tfl_6_boundary.gpkg` | active model extraction boundary accepted under P1.6 |
+| Pre-pivot FDU 1/2/3 FSP AOI | `data/source/nicf_fsp/aoi/nicf_fsp_aoi.shp` | historical NICF FSP planning context, not the K3Z tenure and not the active model boundary |
+
+Non-mutating overlay diagnostics in EPSG:3005:
+
+| Surface | Rows | Gross area | Area intersecting current TFL 6 AOI | Area outside current TFL 6 AOI |
+| --- | ---: | ---: | ---: | ---: |
+| K3Z/NICF core tenure | `3` | `2391.511 ha` | `0.072 ha` | `2391.440 ha` |
+| Pre-pivot FDU 1/2/3 FSP AOI | `3` | `147798.392 ha` | `118617.247 ha` | `29181.145 ha` |
+| Current TFL 6 AOI | `182` | `217042.719 ha` | `217042.719 ha` | `0.000 ha` |
+
+Interpretation:
+
+- The K3Z/NICF core tenure is the correct identity source for continuity with
+  the original K3Z teaching instance.
+- The current FADM-derived TFL 6 AOI appears to exclude essentially all of the
+  K3Z community-forest tenure. This is consistent with the working hypothesis
+  that K3Z/community-forest lands may have been carved out of TFL 6 before the
+  current boundary vintage.
+- The pre-pivot FDU 1/2/3 FSP AOI is a broader planning context and overlaps a
+  large part of current TFL 6, but it is not the same thing as the K3Z tenure.
+- Therefore the first TFL 6 model-input bundle cannot honestly label a large
+  current-AOI area as `nicf_k3z_core` unless the maintainer explicitly chooses
+  to expand the model boundary beyond the accepted current TFL 6 AOI or adds an
+  external adjacent/community-forest overlay surface.
+
+Accepted P3.2b identity behavior for the first bundle:
+
+| Field / class | First behavior |
+| --- | --- |
+| `is_nicf_k3z_core` | `true` only for stands or fragments that materially intersect the accepted K3Z tenure source after the final bundle overlay; expected current-AOI area is effectively zero under the current TFL 6 boundary. |
+| `embedded_area_class` | use `wfp_tfl6_remainder` or equivalent for current-AOI stands outside any future accepted expansion class; do not silently assign FDU 1/2/3 area to `nicf_k3z_core`. |
+| `embedded_area_id` | preserve `k3z_tenure` as a source identity/provenance ID where the K3Z overlay is present; preserve FDU/LU IDs separately as planning context if used. |
+| `nicf_k3z_core_external_reference` | recommended review flag for the K3Z tenure source when it is reported alongside, but mostly outside, the current TFL 6 AOI. |
+| `core_overlay_status` | record `inside_current_tfl6`, `outside_current_tfl6`, or `tiny_boundary_overlap` during Phase 4 QA so the carve-out condition is auditable. |
+
+Rejected P3.2b shortcuts:
+
+- Do not use the pre-pivot FDU 1/2/3 FSP AOI as a synonym for
+  `nicf_k3z_core`.
+- Do not force the K3Z tenure into the current TFL 6 AOI by dissolving or
+  snapping geometry.
+- Do not create separate AU or yield-curve families for K3Z identity.
+- Do not gate CT/fertilization across broad FDU 1/2/3 area as though it were
+  the K3Z/NICF core.
+
+Open design consequence for P3.2c/P3.2d:
+
+- Expansion-candidate classes should be defined inside the current TFL 6 AOI
+  unless the maintainer explicitly broadens the model geography.
+- If student scenarios need direct comparison with the original K3Z tenure,
+  the first design should treat K3Z as an external/reference group or adjacent
+  carve-out group, not as a large current-AOI embedded core.
+- Group accounts and reports should preserve the distinction between K3Z
+  tenure, FDU/LU planning context, expansion candidates, and the WFP/TFL 6
+  remainder.
 
 ## Candidate Stand Attributes
 
@@ -103,8 +169,9 @@ rather than hidden inside a single whole-model total.
 
 ## Acceptance Checks
 
-- A stand inside the K3Z/NICF core can be identified after clipping to the
-  TFL 6 AOI.
+- The K3Z/NICF core tenure source can be overlaid against the current TFL 6
+  AOI, and the near-zero current-AOI intersection is reported rather than
+  hidden.
 - A stand in an expansion-candidate pool can be identified separately from the
   K3Z/NICF core and from the TFL 6 remainder.
 - Group-account, matching-target, and report requirements are listed before

@@ -218,7 +218,7 @@ source-layer and THLB surfaces, without compiling a Patchworks package.
   model without redefining AUs.
   - [x] P3.2a Record the embedded identity contract in
     `planning/tfl6_nicf_embedded_identity.md`.
-  - [ ] P3.2b Define accepted K3Z/NICF core AOI overlay identity inside the
+  - [x] P3.2b Define accepted K3Z/NICF core AOI overlay identity inside the
     TFL 6 model area.
   - [ ] P3.2c Define expansion candidate, rejected-candidate, and TFL 6
     remainder identity classes and source/provenance fields.
@@ -341,10 +341,17 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    should carry cedar reporting surfaces, but it must not create cedar-specific
    base treatments, hard cedar reserve targets, utility-pole grade claims, or
    cedar-only yield-curve families.
-5. The next bounded tranche is P3.2b: define the accepted K3Z/NICF core AOI
-   overlay identity inside the larger TFL 6 model area. Keep this as design
-   and identity-contract work only: no Phase 4 bundle generation, XML, Matrix
-   Builder, or runtime package work.
-6. After P3.2 closes, continue with P3.7 run-profile/model-input contract
+5. P3.2b is complete. The accepted K3Z/NICF core source is the original K3Z
+   tenure boundary from `external/femic-k3z-instance`, but non-mutating overlay
+   diagnostics show that the current FADM-derived TFL 6 AOI intersects only
+   `0.072 ha` of that `2391.511 ha` K3Z tenure. The first bundle must not
+   silently relabel the broader FDU 1/2/3 planning context as
+   `nicf_k3z_core`; K3Z core should be treated as a source/provenance identity
+   and likely external/reference carve-out under the current TFL 6 boundary.
+6. The next bounded tranche is P3.2c: define expansion candidate,
+   rejected-candidate, and TFL 6 remainder identity classes and source/
+   provenance fields. Keep this as design and identity-contract work only: no
+   Phase 4 bundle generation, XML, Matrix Builder, or runtime package work.
+7. After P3.2 closes, continue with P3.7 run-profile/model-input contract
    reconciliation. Phase 4 remains blocked until P3.2 and P3.7 are complete or
    explicitly narrowed by the maintainer.

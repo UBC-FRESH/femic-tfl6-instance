@@ -1599,3 +1599,16 @@
   reserve targets, and cedar-only yield-curve families deferred; and
 - marked P3.1 and P3.1c complete in `ROADMAP.md`, moving the next bounded
   Phase 3 tranche to P3.2b embedded K3Z/NICF core AOI overlay identity.
+
+## 2026-06-26 - Locked P3.2b K3Z/NICF core overlay identity
+
+- updated `planning/tfl6_nicf_embedded_identity.md` to distinguish the original
+  K3Z tenure source from the broader pre-pivot FDU 1/2/3 FSP planning context
+  and from the active current TFL 6 AOI;
+- recorded non-mutating EPSG:3005 overlay diagnostics showing the K3Z tenure
+  is `2391.511 ha`, but only `0.072 ha` intersects the current FADM-derived
+  TFL 6 AOI, so the first bundle must not silently label broad current-AOI
+  stands as `nicf_k3z_core`; and
+- marked P3.2b complete in `ROADMAP.md`, leaving P3.2c as the next bounded
+  identity-contract tranche for expansion candidate, rejected-candidate, and
+  TFL 6 remainder classes.
