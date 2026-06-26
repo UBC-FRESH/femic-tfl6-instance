@@ -214,14 +214,14 @@ source-layer and THLB surfaces, without compiling a Patchworks package.
   candidate pools, productivity screening, and AAC uplift constraints.
   Priority note: P3.2 remains open but sits downstream of the base AU, yield,
   treatment, and transition contract lanes. It must preserve the embedded
-  K3Z/NICF core and expansion-candidate identities inside the larger TFL 6
-  model without redefining AUs.
+  K3Z/NICF core identity and outside-AOI expansion-candidate identities inside
+  the larger teaching model without redefining AUs.
   - [x] P3.2a Record the embedded identity contract in
     `planning/tfl6_nicf_embedded_identity.md`.
   - [x] P3.2b Define accepted K3Z/NICF core AOI overlay identity inside the
     TFL 6 model area.
-  - [x] P3.2c Define expansion candidate, rejected-candidate, and TFL 6
-    remainder identity classes and source/provenance fields.
+  - [x] P3.2c Define outside-AOI expansion candidate, rejected-candidate, and
+    current-AOI TFL 6 remainder identity classes and source/provenance fields.
   - [ ] P3.2d Define Patchworks group accounts, matching targets, scenario
     toggles, and reports needed to track K3Z/NICF core and expansion
     candidates separately, including WFP-facing fibre supply, value, and
@@ -348,11 +348,14 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    silently relabel the broader FDU 1/2/3 planning context as
    `nicf_k3z_core`; K3Z core should be treated as a source/provenance identity
    and likely external/reference carve-out under the current TFL 6 boundary.
-6. P3.2c is complete. The embedded identity contract now defines
-   `wfp_tfl6_remainder`, `nicf_expansion_candidate`,
-   `nicf_expansion_rejected`, `nicf_expansion_pool_unreviewed`, and
-   `nicf_k3z_core_reference`, plus the source/provenance fields and first
-   `expansion_screen_status` vocabulary needed for Phase 4 handoff.
+6. P3.2c is complete and corrected after maintainer clarification. Expansion
+   candidates are not selected from current-AOI TFL 6 stands; they come from
+   proximal/adjacent public forested land outside the current TFL 6 AOI. The
+   embedded identity contract now defines `wfp_tfl6_remainder`,
+   `nicf_expansion_candidate`, `nicf_expansion_rejected`,
+   `nicf_expansion_pool_unreviewed`, and `nicf_k3z_core_reference`, plus the
+   outside-AOI source/provenance fields and first `expansion_screen_status`
+   vocabulary needed for Phase 4 handoff.
 7. The next bounded tranche is P3.2d: define Patchworks group accounts,
    matching targets, scenario toggles, and reports needed to track K3Z/NICF
    core, expansion candidates, rejected candidates, TFL 6 remainder, and

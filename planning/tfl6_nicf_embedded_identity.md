@@ -40,10 +40,10 @@ classes:
 
 | Identity | Meaning | Expected use |
 | --- | --- | --- |
-| `tfl6_base` | Area inside the accepted TFL 6 AOI but outside the embedded NICF/K3Z core and outside active expansion-candidate classes. | Whole-TFL accounting, comparison reports, broader teaching context. |
+| `tfl6_base` | Area inside the accepted TFL 6 AOI, reported separately from the mostly external K3Z reference and any outside-AOI expansion source lands. | Whole-TFL accounting, comparison reports, broader teaching context. |
 | `nicf_k3z_core` | Original K3Z/NICF teaching AOI identity from the K3Z tenure source; under the current TFL 6 AOI it is mostly an external/reference carve-out rather than a material current-AOI class. | Separate area/yield/account reporting where present, continuity with the K3Z teaching instance, and explicit carve-out audit. |
-| `nicf_expansion_candidate` | Area outside `nicf_k3z_core` that is eligible for candidate expansion scenarios. | Scenario toggles, candidate pool accounting, AAC-uplift comparisons, matching targets. |
-| `nicf_expansion_rejected` | Area considered but screened out by productivity, THLB, operability, constraint, or review criteria. | Audit trail, teaching comparison, rejected-pool reporting. |
+| `nicf_expansion_candidate` | Proximal or adjacent public forested land outside the accepted current TFL 6 AOI that is eligible for candidate expansion scenarios. | Scenario toggles, candidate pool accounting, AAC-uplift comparisons, matching targets. |
+| `nicf_expansion_rejected` | Outside-AOI public forest land considered but screened out by productivity, THLB-equivalent eligibility, operability, tenure/public-land availability, proximity, constraint, or review criteria. | Audit trail, teaching comparison, rejected-pool reporting. |
 
 The implementation can use a more compact coded field, but it must preserve
 these distinctions in auditable form.
@@ -88,7 +88,7 @@ Accepted P3.2b identity behavior for the first bundle:
 | Field / class | First behavior |
 | --- | --- |
 | `is_nicf_k3z_core` | `true` only for stands or fragments that materially intersect the accepted K3Z tenure source after the final bundle overlay; expected current-AOI area is effectively zero under the current TFL 6 boundary. |
-| `embedded_area_class` | use `wfp_tfl6_remainder` or equivalent for current-AOI stands outside any future accepted expansion class; do not silently assign FDU 1/2/3 area to `nicf_k3z_core`. |
+| `embedded_area_class` | use `wfp_tfl6_remainder` or equivalent for current-AOI TFL 6 stands; use explicit outside-AOI expansion classes for reviewed external public-forest source lands; do not silently assign FDU 1/2/3 area to `nicf_k3z_core`. |
 | `embedded_area_id` | preserve `k3z_tenure` as a source identity/provenance ID where the K3Z overlay is present; preserve FDU/LU IDs separately as planning context if used. |
 | `nicf_k3z_core_external_reference` | recommended review flag for the K3Z tenure source when it is reported alongside, but mostly outside, the current TFL 6 AOI. |
 | `core_overlay_status` | record `inside_current_tfl6`, `outside_current_tfl6`, or `tiny_boundary_overlap` during Phase 4 QA so the carve-out condition is auditable. |
@@ -105,8 +105,8 @@ Rejected P3.2b shortcuts:
 
 Open design consequence for P3.2c/P3.2d:
 
-- Expansion-candidate classes should be defined inside the current TFL 6 AOI
-  unless the maintainer explicitly broadens the model geography.
+- Expansion-candidate classes should be defined from proximal or adjacent
+  public forested land outside the current TFL 6 AOI.
 - If student scenarios need direct comparison with the original K3Z tenure,
   the first design should treat K3Z as an external/reference group or adjacent
   carve-out group, not as a large current-AOI embedded core.
@@ -124,24 +124,30 @@ Accepted class vocabulary:
 
 | `embedded_area_class` | Meaning | First-bundle behavior |
 | --- | --- | --- |
-| `wfp_tfl6_remainder` | Current-AOI TFL 6 stands that are not accepted K3Z core and are not in an accepted expansion-candidate or rejected-candidate class. | Default current-AOI class for the first bundle unless a later P3.2 screen assigns a candidate/rejected class. |
-| `nicf_expansion_candidate` | Current-AOI stands outside the near-zero K3Z core overlay that pass the reviewed expansion screen and are available for NICF-style scenario toggles. | Scenario/reporting class only; does not alter AU identity, curve family, or base treatment eligibility by itself. |
-| `nicf_expansion_rejected` | Current-AOI stands considered by the expansion screen but rejected by productivity, THLB, operability, reserve/retention, constraint, source-quality, or maintainer-review rules. | Audit/reporting class; keeps rejected-pool evidence visible. |
-| `nicf_expansion_pool_unreviewed` | Current-AOI stands inside the candidate search envelope before the P3.2d/P4 screen assigns accepted or rejected status. | Temporary planning/QA status only; should not be used as an active scenario class in the first runtime package. |
+| `wfp_tfl6_remainder` | Current-AOI TFL 6 stands that are not accepted K3Z core and are not adjacent/proximal expansion source land. | Default class for the active TFL 6 base geography. |
+| `nicf_expansion_candidate` | Proximal or adjacent public forested land outside the accepted current TFL 6 AOI that passes the reviewed expansion screen and is available for NICF-style scenario toggles. | External expansion scenario/reporting class; does not alter TFL 6 base AU identity, curve family, or treatment eligibility by itself. |
+| `nicf_expansion_rejected` | Proximal or adjacent public forested land considered by the expansion screen but rejected by productivity, THLB-equivalent eligibility, operability, reserve/retention, constraint, source-quality, tenure/public-land, proximity, or maintainer-review rules. | External rejected-pool audit/reporting class; keeps rejected-pool evidence visible. |
+| `nicf_expansion_pool_unreviewed` | Proximal or adjacent public forested land inside the candidate search envelope before the P3.2d/P4 screen assigns accepted or rejected status. | Temporary planning/QA status only; should not be used as an active scenario class in the first runtime package. |
 | `nicf_k3z_core_reference` | K3Z tenure identity carried as a provenance/external-reference group because the current TFL 6 AOI contains only a tiny boundary overlap. | Reference/reporting class only unless the maintainer later broadens model geography. |
 
 Candidate-area pool semantics for the active TFL 6 AOI:
 
-- Candidate areas are searched inside the accepted current TFL 6 AOI unless the
-  maintainer explicitly broadens the model geography.
-- Candidate areas are outside the accepted K3Z tenure source under the current
-  overlay, because the K3Z core is effectively external to the active AOI.
+- Candidate areas come from proximal or adjacent public forested land outside
+  the accepted current TFL 6 AOI.
+- Candidate areas should be close enough to the K3Z/NICF context to support the
+  community-forest expansion teaching question, but exact proximity thresholds
+  remain a P3.2d/P4 review item.
+- Candidate areas are outside the accepted K3Z tenure source unless the
+  maintainer later decides to model K3Z as part of a broadened external
+  geography. Under the current overlay, K3Z core is effectively external to
+  the active TFL 6 AOI.
 - Candidate areas must be separately identifiable from the WFP/TFL 6 remainder
   so scenario toggles can move or compare them without relabeling the whole
   TFL 6 model.
-- Candidate status is not equivalent to THLB status. A candidate may need
-  separate fields for source-pool membership, active THLB, treatment
-  eligibility, operability, and scenario activation.
+- Candidate status is not equivalent to TFL 6 THLB status. External expansion
+  candidates need separate fields for source-pool membership, THLB-equivalent
+  eligibility, treatment eligibility, public-land/tenure availability,
+  operability, and scenario activation.
 - Rejected candidates remain valuable teaching evidence; they explain why a
   plausible-looking area is not used for expansion scenarios.
 
@@ -150,12 +156,13 @@ Required source/provenance fields for the first candidate screen:
 | Field family | Candidate field(s) | Purpose |
 | --- | --- | --- |
 | Stand key and area | `feature_id`, `map_id`, `polygon_id`, `area_ha` | trace candidate decisions to final bundle stands/fragments |
-| Current AOI membership | `inside_tfl6_aoi` or implicit bundle membership | ensure candidates are inside the accepted active geography |
+| Current AOI membership | `inside_tfl6_aoi` plus `outside_tfl6_aoi_expansion_source` | distinguish active TFL 6 base geography from external expansion source geography |
 | K3Z reference overlay | `is_nicf_k3z_core`, `core_overlay_status`, `nicf_k3z_core_external_reference` | keep K3Z tenure continuity separate from expansion decisions |
 | Expansion identity | `embedded_area_class`, `embedded_area_id`, `is_nicf_expansion_candidate`, `is_nicf_expansion_rejected` | carry candidate/rejected/remainder classes into Patchworks groups |
 | Candidate set | `expansion_candidate_set`, `expansion_scenario_group` | support multiple future candidate-pool definitions or scenario toggles |
 | Screen status | `expansion_screen_status`, `expansion_screen_reason` | explain accepted/rejected/unreviewed decisions |
-| THLB and eligibility | final Phase 4 THLB flag, `IFM`, `RETENTION`, reserve/non-THLB status | prevent candidate status from silently overriding land-base eligibility |
+| Tenure/public-land availability | public land / tenure source, candidate availability flag, exclusion reason | confirm the expansion source is public forested land suitable for consideration |
+| THLB and eligibility | final Phase 4 TFL 6 THLB flag where applicable, external THLB-equivalent flag, `IFM`, `RETENTION`, reserve/non-THLB status | prevent candidate status from silently overriding land-base eligibility |
 | Productivity | `site_index`, `est_site_index`, `estimated_site_index`, AU/SI class, VDYP curve availability | support productivity screening and AAC-uplift plausibility |
 | Operability/cost | `HARVEST_SYSTEM`, operability/slope proxy fields, ground/cable/heli class | support delivered-cost proxy and operability screening |
 | Constraints/context | UWR/WHA/OGMA/recreation/riparian/retention/context flags where carried by Phase 4 | keep constrained/rejected reasons auditable |
@@ -165,21 +172,22 @@ First screen-status vocabulary:
 
 | `expansion_screen_status` | Meaning |
 | --- | --- |
-| `accepted_candidate` | passed the reviewed candidate screen and may be toggled in expansion scenarios |
+| `accepted_candidate` | external public-forest candidate passed the reviewed screen and may be toggled in expansion scenarios |
 | `rejected_productivity` | failed the reviewed productivity/SI/yield screen |
-| `rejected_non_thlb` | outside active THLB or otherwise not schedulable under the base land-base contract |
+| `rejected_non_thlb` | outside active TFL 6 THLB where applicable, outside external THLB-equivalent landbase, or otherwise not schedulable under the expansion land-base contract |
 | `rejected_operability` | failed the reviewed operability/harvest-system/slope/cost screen |
 | `rejected_constraint` | rejected by reserve, retention, UWR/WHA/OGMA, riparian, recreation, or other constraint context |
+| `rejected_tenure_public_land` | failed public-land, tenure-availability, or adjacency/proximity requirements |
 | `rejected_source_quality` | missing or ambiguous source fields prevent reliable classification |
 | `rejected_review` | maintainer-reviewed rejection not covered by a more specific code |
 | `unreviewed_pool` | inside the search envelope but not yet screened |
-| `not_in_pool` | current-AOI remainder not considered for expansion |
+| `not_in_pool` | TFL 6 base area or external public forest land not considered for expansion |
 
 P3.2c accepts only the identity/class vocabulary. P3.2d must define the
 Patchworks group-account, matching-target, scenario-toggle, and report
 requirements that consume these classes. Any executable screen or candidate
-geometry materialization belongs to Phase 4 or a later explicitly scoped
-implementation lane.
+geometry materialization, including the external public-forest search envelope,
+belongs to Phase 4 or a later explicitly scoped implementation lane.
 
 ## Candidate Stand Attributes
 

@@ -1625,3 +1625,16 @@
 - marked P3.2c complete in `ROADMAP.md`, leaving P3.2d as the next bounded
   tranche for Patchworks group accounts, matching targets, scenario toggles,
   and reports.
+
+## 2026-06-26 - Corrected P3.2c expansion geography
+
+- corrected `planning/tfl6_nicf_embedded_identity.md` so expansion candidates
+  come from proximal/adjacent public forested land outside the current TFL 6
+  AOI rather than from inside current-AOI TFL 6 stands;
+- updated candidate/rejected/unreviewed class semantics, source/provenance
+  fields, and screen-status vocabulary to include outside-AOI source
+  membership, public-land/tenure availability, external THLB-equivalent
+  eligibility, and proximity/adjacency review; and
+- updated `ROADMAP.md` while preserving the boundary that no expansion
+  geometry, screening execution, model-input bundle, XML, Matrix Builder, or
+  runtime-package work starts in P3.2c.
