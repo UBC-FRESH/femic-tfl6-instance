@@ -1790,3 +1790,20 @@
   P4.1b did not create `data/model_input_bundle/`, write bundle tables,
   generate ForestModel/XML, run Matrix Builder, or assemble a Patchworks
   runtime package.
+
+## 2026-06-26 - Regenerated P4.1c THLB geometry handoff
+
+- regenerated the final TFL 6 THLB geometry handoff from the accepted clipped
+  2025 R1 VRI input and reviewed THLB recipe into
+  `data/model_input_bundle/input_geometry/thlb_current.feather`;
+- wrote the matching GeoPackage mirror and checkpoint manifest under
+  `data/model_input_bundle/input_geometry/`;
+- inspected both geometry formats and confirmed `29892` EPSG:3005
+  `MultiPolygon` rows with weighted `thlb_fact` THLB area of
+  `144203.485 ha`, matching the accepted Phase 2 benchmark;
+- added `planning/tfl6_model_input_bundle_geometry_handoff.md` to preserve the
+  command, artifact paths, inspection metrics, and fractional `thlb_fact`
+  interpretation; and
+- kept P4.1c open because no model-input bundle tables, ForestModel XML,
+  Matrix Builder outputs, or Patchworks runtime package were generated in this
+  handoff pass.

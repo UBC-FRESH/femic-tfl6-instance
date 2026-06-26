@@ -252,6 +252,12 @@ exist.
   - [ ] P4.1c Build the first reviewed model-input bundle from the accepted
     THLB, AU, curve, treatment, transition, cedar, and embedded-identity
     contracts.
+    - [x] P4.1c.1 Regenerate the final THLB geometry handoff at
+      `data/model_input_bundle/input_geometry/thlb_current.feather`, write the
+      GeoPackage mirror and checkpoint manifest, and record the inspection
+      summary in `planning/tfl6_model_input_bundle_geometry_handoff.md`.
+    - [ ] P4.1c.2 Build the first core bundle tables from the regenerated THLB
+      geometry plus the accepted Phase 3 model-design contracts.
   - [ ] P4.1d Run lightweight bundle QA for readability, required fields,
     missing AU/curve mappings, treatment eligibility flags, and embedded
     K3Z/NICF identity fields.
@@ -415,10 +421,13 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
     `data/model_input_bundle/input_geometry/thlb_current.feather` plus a
     readable GeoPackage mirror and checkpoint manifest. P4.1b did not create
     the bundle root or write generated outputs.
-13. Continue Phase 4 on branch `feature/p4-model-input-bundle`. The current
-    executable edge is P4.1c / `#17`: build the first reviewed model-input
-    bundle from accepted THLB, AU, curve, treatment, transition, cedar, and
-    embedded-identity contracts.
+13. Continue Phase 4 on branch `feature/p4-model-input-bundle`. P4.1c.1 /
+    `#17` regenerated the final THLB geometry handoff at
+    `data/model_input_bundle/input_geometry/thlb_current.feather`, wrote the
+    GeoPackage mirror and manifest, and confirmed the weighted `thlb_fact`
+    THLB area is `144203.485 ha`. The current executable edge is P4.1c.2:
+    build the first core bundle tables from that geometry plus the accepted AU,
+    curve, treatment, transition, cedar, and embedded-identity contracts.
 14. P5.3a / `#21` publication plumbing is complete for the current seed docs,
     but P5.3 stays open for final teaching-docs expansion after Phase 4 runtime
     package evidence exists.
