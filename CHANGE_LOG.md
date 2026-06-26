@@ -1949,3 +1949,17 @@
   harvest-system assignment is deferred and final clearcut-and-plant
   eligibility is blocked. Matrix Builder and runtime work remain blocked until
   P4.2 preserves that treatment-ineligibility state in XML.
+
+## 2026-06-26 - Accepted generic clearcut treatment for first TFL6 XML
+
+- updated the P4.2 interpretation so the `814` emitted `CC` treatment nodes are
+  accepted as a generic Phase 4 clearcut-and-plant treatment lane rather than a
+  blocker;
+- preserved ground/cable/heli harvest-system assignment as a deferred
+  operability, delivered-cost, and reporting refinement for later work after
+  DEM and stand-inventory parsing logic is reviewed;
+- marked P4.2 complete in `ROADMAP.md` and moved the next executable Phase 4
+  lane to P4.3 Matrix Builder and track/account QA against the generated
+  XML/fragments; and
+- updated `planning/tfl6_forestmodel_xml_export_bridge.md` so the audit trail
+  records the accepted generic-clearcut modeling assumption.

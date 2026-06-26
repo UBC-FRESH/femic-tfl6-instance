@@ -265,7 +265,7 @@ exist.
   - [x] P4.1d Run lightweight bundle QA for readability, required fields,
     missing AU/curve mappings, treatment eligibility flags, and embedded
     K3Z/NICF identity fields.
-- [ ] P4.2 Generate ForestModel/XML and inspect the semantics that affect
+- [x] P4.2 Generate ForestModel/XML and inspect the semantics that affect
   Patchworks treatment eligibility, curve provenance, products, accounts, and
   targets (`#37`).
 - [ ] P4.3 Execute Matrix Builder and QA tracks, features, accounts,
@@ -446,8 +446,10 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
     `51172.799 ha` NTHLB, no missing natural or treated curve assignments, and
     warning-only sparse TIPSY fallback for `136` rows / `749.396 ha`. All
     harvest-system classes remain explicit `unassigned_review_required`
-    placeholders pending reviewed operability/ground-cable-heli assignment, so
-    final clearcut-and-plant eligibility remains blocked. The current
+    placeholders pending reviewed operability/ground-cable-heli assignment. The
+    first Phase 4 ForestModel may still use a generic `CC` treatment across
+    eligible managed area; ground/cable/heli splitting is a later refinement
+    for costs, operability reporting, and scenario interpretation. The current
     executable edge is P4.1d lightweight bundle QA; do not start ForestModel
     XML, Matrix Builder, or Patchworks runtime work until P4.1d passes or the
     maintainer explicitly narrows the gate.
@@ -459,41 +461,41 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
     and cedar/embedded/harvest-system support tables match the stand count. The
     accepted warning gates are `136` sparse treated-curve fallback rows and
     harvest-system assignment deferred as `unassigned_review_required` for all
-    rows. P4.2 may start ForestModel/XML generation from the reviewed bundle,
-    but the exporter must preserve those warnings and must not silently convert
-    deferred harvest-system rows into accepted operational treatment
-    eligibility.
-16. P4.2 / `#37` is the active Phase 4 lane. It must generate ForestModel XML
-    from the refreshed P4.1 bundle tables and corrected AFLB checkpoint, then
-    inspect XML semantics before Matrix Builder starts. The first bounded
-    command should use `femic export patchworks --tsa tfl6` with
-    `data/model_input_bundle/` as the bundle directory,
+    rows. P4.2 may start ForestModel/XML generation from the reviewed bundle.
+    Generic `CC` treatment emission is acceptable for the first ForestModel
+    package; reviewed ground/cable/heli harvest-system assignment is deferred
+    to a later operability and delivered-cost refinement.
+16. P4.2 / `#37` is complete. It generated ForestModel XML from the refreshed
+    P4.1 bundle tables and corrected AFLB checkpoint, then inspected XML
+    semantics before Matrix Builder. The direct first attempt used
+    `femic export patchworks --tsa tfl6` with `data/model_input_bundle/` as the
+    bundle directory,
     `data/model_input_bundle/input_geometry/aflb_current.feather` as the
     checkpoint, and `output/patchworks_tfl6_validated/` as the output
-    directory. Any exporter failure should be recorded as a P4.2 blocker before
-    broad code changes.
+    directory. That attempt exposed the schema mismatch recorded below.
 17. The first P4.2 export attempt failed before writing a usable XML package
     because the reviewed TFL6 bundle uses string AU/curve IDs and audit-oriented
     columns, while the current generic FMG Patchworks exporter still expects the
     legacy numeric bundle schema with `tsa`, integer `au_id`,
     `managed_curve_id`, `unmanaged_curve_id`, `si_level`, and curve point
     columns `x`/`y`. The blocker is recorded in
-    `planning/tfl6_forestmodel_xml_export_blocker.md`. The next bounded P4.2
-    repair is to create an exporter-compatible schema bridge or deliberately
-    extend the exporter; Matrix Builder and runtime work remain blocked.
-18. The P4.2 exporter-compatible schema bridge is generated under ignored
+    `planning/tfl6_forestmodel_xml_export_blocker.md`. That numeric-schema
+    blocker was repaired by the exporter-compatible bridge recorded in item 18.
+18. P4.2 / `#37` is complete. The exporter-compatible schema bridge is
+    generated under ignored
     `data/model_input_bundle/export_compat/` output space and audited in
     `planning/tfl6_forestmodel_xml_export_bridge.md`. It maps reviewed TFL6
     string AU/curve IDs to deterministic numeric IDs and allowed
     `femic export patchworks --tsa tfl6` to produce XML/fragments under ignored
     `output/patchworks_tfl6_validated/`. Structural inspection found
     `373` XML curves, `2442` selects, `24879` fragments, `191168.566 ha`
-    exported fragment area, and `407` exported AUs. P4.2 remains blocked
-    semantically because the XML still emits `814` `CC` treatment nodes even
-    though harvest-system assignment is deferred and final
-    clearcut-and-plant eligibility is blocked in the reviewed bundle. The next
-    bounded repair is to preserve treatment-ineligibility/deferred
-    harvest-system state in XML before Matrix Builder starts.
+    exported fragment area, and `407` exported AUs. The `814` emitted `CC`
+    treatment nodes are accepted as a generic Phase 4 clearcut-and-plant
+    approximation. Harvest-system assignment remains deferred and will later
+    split generic `CC` into ground/cable/heli classes after the DEM and
+    inventory parsing logic is reviewed. The next executable Phase 4 lane is
+    P4.3 Matrix Builder and track/account QA against the generated XML and
+    fragments.
 19. P5.3a / `#21` publication plumbing is complete for the current seed docs,
     but P5.3 stays open for final teaching-docs expansion after Phase 4 runtime
     package evidence exists.

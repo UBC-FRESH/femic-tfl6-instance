@@ -2,8 +2,9 @@
 
 ## Purpose
 
-This note records the P4.2 exporter-compatible schema bridge and the second
-semantic blocker found after ForestModel XML/fragments generation succeeded.
+This note records the P4.2 exporter-compatible schema bridge, the generated
+ForestModel XML/fragments, and the accepted interim generic-clearcut treatment
+assumption for the first Phase 4 model package.
 
 Governing issue: `#37`.
 
@@ -86,26 +87,22 @@ because the exporter drops zero/subprecision positive-area fragments. The area
 gap is `0.030939 ha`, which is negligible for the current P4.2 structural
 export check.
 
-## Semantic Blocker
+## Treatment Semantics Decision
 
-The XML currently emits `814` `CC` treatment nodes even though P4.1d accepted
-that final clearcut-and-plant eligibility remains blocked until reviewed
-ground/cable/heli harvest-system assignment exists. The generated XML does not
-include `unassigned_review_required` or `clearcut_blocker` conditions in select
-statements.
+The XML emits `814` generic `CC` treatment nodes. This is accepted for the
+first Phase 4 ForestModel package. Ground/cable/heli harvest-system assignment
+remains explicitly deferred because the stand-inventory and DEM-derived
+operability signal has not yet been reviewed, but that deferral should not block
+the generic clearcut-and-plant treatment lane.
 
-This means the compatibility bridge solves the numeric-schema blocker, but P4.2
-is not yet semantically ready for Matrix Builder. The next repair must ensure
-the ForestModel exporter preserves the P4.1d warning state and does not
-silently convert deferred harvest-system rows into accepted operational
-treatment eligibility.
+The intended interpretation is:
 
-Possible bounded repairs:
+- `CC` is a generic Phase 4 base treatment, not a final harvest-system class;
+- harvest-system splitting into ground, cable, and heli remains a later
+  operability/cost/reporting refinement;
+- deferred harvest-system fields in the model-input bundle remain useful QA and
+  metadata, but they are not treatment blockers for this first XML package; and
+- Matrix Builder may proceed from this XML/fragments pair.
 
-1. add an exporter option/config hook that disables base CC treatment emission
-   for this first TFL6 XML until harvest-system eligibility is reviewed; or
-2. extend the exporter to include a treatment-eligibility field in fragments and
-   constrain managed treatment selects to eligible rows.
-
-P4.2 remains open. Matrix Builder, runtime packaging, publication, and runtime
-smoke remain blocked.
+P4.2 is complete. Runtime packaging and publication remain downstream, but the
+next executable Phase 4 lane is P4.3 Matrix Builder and track/account QA.
