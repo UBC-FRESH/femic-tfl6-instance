@@ -110,8 +110,8 @@ femic instance validate-spec --spec config/rebuild.spec.yaml
 Later runnable-model milestones should add, at minimum:
 
 ```bash
-femic prep validate-case --run-config config/run_profile.nicffsp.yaml --tipsy-config-dir config/tipsy
-femic instance rebuild --run-config config/run_profile.nicffsp.yaml --spec config/rebuild.spec.yaml
+femic prep validate-case --run-config config/run_profile.tfl6.yaml --tipsy-config-dir config/tipsy
+femic instance rebuild --run-config config/run_profile.tfl6.yaml --spec config/rebuild.spec.yaml
 sphinx-build -b html docs docs/_build/html -W
 ```
 

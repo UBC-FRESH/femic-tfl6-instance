@@ -1,0 +1,40 @@
+{
+  "input_crosswalk": "planning/tfl6_tipsy_parameter_crosswalk.csv",
+  "input_parameter_library": "planning/tfl6_mp10_tipsy_parameter_library.csv",
+  "output_btc_csv": "data/03_input-tfl6.csv",
+  "output_curve_id_map": "planning/tfl6_tipsy_btc_curve_id_map.csv",
+  "selected_au_count": 77,
+  "curve_lane_count": 3,
+  "btc_row_count": 231,
+  "feature_id_policy": "600000 + selected_AU_area_rank * 10 + lane_code",
+  "lane_codes": {
+    "existing_managed_11_50": 1,
+    "existing_managed_1_10": 2,
+    "future_managed": 3
+  },
+  "oaf_policy": "MP10 percent reductions are converted to BTC factors.",
+  "regen_delay_policy": "Use first numeric MP10 delay where present; otherwise existing-managed lanes use 0 and future-managed uses 1.",
+  "other_species_policy": "MP10 other species share is encoded as Dr for this executable review handoff and flagged in the curve-id map. If the matched MP10 row has no deciduous/other site-index value, the static TFL 6 AU mean SI is used as the BTC Dr SI fallback.",
+  "planted_percent_policy": "Rows are emitted as 100 percent planted/managed because the reviewed MP10 rows provide one managed species composition; the MP10 future row text is treated as delay context, not planted-area proportion.",
+  "confidence_counts": {
+    "existing_managed_11_50": {
+      "fallback_review_required": 12,
+      "high": 34,
+      "low": 8,
+      "medium": 23
+    },
+    "existing_managed_1_10": {
+      "fallback_review_required": 11,
+      "high": 19,
+      "low": 15,
+      "medium": 32
+    },
+    "future_managed": {
+      "fallback_review_required": 11,
+      "high": 11,
+      "low": 19,
+      "medium": 36
+    }
+  },
+  "rows_with_other_species_as_dr": 9
+}

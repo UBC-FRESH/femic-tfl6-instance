@@ -2,7 +2,7 @@
 
 ## 2026-06-23 - Bootstrapped the NICF FSP FRST 558 instance repository
 
-- created the FEMIC instance scaffold for `femic-nicffsp-instance`;
+- created the FEMIC instance scaffold for `femic-tfl6-instance`;
 - added modelwright-style workflow surfaces (`AGENTS.md`, `ROADMAP.md`,
   `CHANGE_LOG.md`, and `planning/`);
 - tracked the initial NICF FSP AOI, LU, and FSP source payloads under lowercase
@@ -113,7 +113,7 @@
 
 ## 2026-06-23 - Wired the NICF run profile to accepted source paths
 
-- updated `config/run_profile.nicffsp.yaml` so `selection.boundary_path` points
+- updated `config/run_profile.tfl6.yaml` so `selection.boundary_path` points
   at `data/source/nicf_fsp/aoi/nicf_fsp_aoi.shp`;
 - recorded the LU reference source at
   `selection.source_context.lu_reference_path` as
@@ -138,7 +138,7 @@
 ## 2026-06-23 - Defined the first NICF run-profile boundary
 
 - activated the first NICF stratification defaults in
-  `config/run_profile.nicffsp.yaml`: subzone BEC grouping, two-species
+  `config/run_profile.tfl6.yaml`: subzone BEC grouping, two-species
   combinations, TM second-species fallback, and `0.90` area coverage;
 - set first-compile runtime defaults to `resume: false`,
   `vdyp_sampling_mode: all`, `vdyp_two_pass_rebin: true`,
@@ -239,7 +239,7 @@
   `data/source/tfl_6/aoi/tfl_6_boundary.gpkg`;
 - verified 182 EPSG:3005 features, `217042.719 ha` union area, matching bounds,
   and valid geometries after repairing one source ring self-intersection; and
-- switched `config/run_profile.nicffsp.yaml` to the accepted TFL 6 boundary
+- switched `config/run_profile.tfl6.yaml` to the accepted TFL 6 boundary
   path and marked `P1.6a` complete.
 
 ## 2026-06-23 - Indexed the TFL 6 reference corpus
@@ -1143,3 +1143,581 @@
   documentation before PR merge; and
 - kept full final teaching documentation under later P5.3, after runtime and
   publication surfaces exist.
+
+## 2026-06-25 - Started Phase 3 cedar-signal design
+
+- created branch `feature/p3-model-design-assumptions` from merged instance
+  `main`;
+- promoted Phase 3 to active in `ROADMAP.md` after Phase 2 closeout;
+- split P3.1 cedar-signal design into P3.1a evidence/design note, P3.1b field
+  and derived-signal review, and P3.1c Patchworks-facing product/account/report
+  requirements;
+- added `planning/tfl6_cedar_signal_design.md` with first-pass source evidence
+  for cultural cedar, Cw/Cy composition, Cw productivity/yield context, K3Z
+  carry-forward boundaries, candidate cedar signals, cultural-reserve behavior,
+  utility-pole product questions, treatment/yield implications, and
+  Patchworks-facing requirements; and
+- kept this slice planning/design only, with no model-input generation,
+  ForestModel XML, Matrix Builder, or Patchworks runtime work.
+
+## 2026-06-25 - Added P3.3 AU and yield-curve assignment contract
+
+- opened P3.3 child issue `#28` under Phase 3 parent `#13`;
+- added `planning/tfl6_au_yield_curve_contract.md` to define static TFL 6 AU
+  identity, yield-curve lanes, MP10 TIPSY parameter extraction/crosswalk
+  boundaries, and treatment/operability eligibility interactions;
+- recorded that MP10 age-at-time-0 AU splits are rejected as canonical
+  Patchworks AU identity, while MP10 Tables 27-29 remain accepted TIPSY
+  parameter evidence;
+- incorporated MKRF as an additional curve-smoothing and selected-AU/remap
+  design reference alongside TSA29, and recorded parent FEMIC issue `#187` as
+  the governing shared/default `smoothed_bin_pchip` decision trail; and
+- moved the roadmap edge to P3.3 review while keeping cedar P3.1 open but
+  paused and avoiding model-input generation, XML, Matrix Builder, and
+  Patchworks runtime work.
+
+## 2026-06-25 - Moved AU/yield contract to top Phase 3 priority
+
+- reordered `ROADMAP.md` so P3.3 / `#28` appears first in the Phase 3 stack;
+- retained the `P3.3` identifier to preserve the already-created issue,
+  comments, and commit audit trail; and
+- recorded that cedar P3.1 and expansion P3.2 remain open but downstream of
+  the AU/yield contract review.
+
+## 2026-06-25 - Added explicit pre-Phase-4 yield and transition tasks
+
+- opened P3.4 child issue `#29` for building and QAing the actual TFL 6
+  natural/untreated VDYP and treated/managed BatchTIPSY yield curves before
+  Phase 4 model-input bundle generation;
+- opened P3.5 child issue `#30` for defining treatment options, eligibility
+  filters, products/accounts/reporting hooks, and state-transition logic before
+  Phase 4;
+- shifted the run-profile/model-input contract update to P3.6 so it remains
+  downstream of the AU/yield, curve-build, and transition-logic locks; and
+- updated roadmap dependency text to make P3.3, P3.4, and P3.5 explicit
+  prerequisites for P4.1.
+
+## 2026-06-25 - Reordered Phase 3 around base model mechanics
+
+- narrowed P3.5 / `#30` to treatment options and opened P3.6 / `#31` for
+  state-transition logic;
+- reordered Phase 3 so the execution stack is AU contract, yield curves,
+  treatment options, transition logic, then cedar details and expansion
+  options;
+- moved the run-profile/model-input contract update to P3.7; and
+- updated Current Next Steps so cedar and expansion remain open but paused
+  until the base AU/yield/treatment/transition mechanics are locked.
+
+## 2026-06-25 - Added embedded NICF/K3Z identity contract
+
+- added `planning/tfl6_nicf_embedded_identity.md` to require the original
+  K3Z/NICF core and expansion candidate areas to remain separately auditable
+  inside the larger TFL 6 model;
+- updated P3.2 / `#9` roadmap scope so embedded identity supports Patchworks
+  group accounts, matching targets, scenario toggles, and reports;
+- recorded that embedded NICF/K3Z and expansion-candidate identities are
+  stand/group attributes, not AU identity fields; and
+- kept P3.2 downstream of the base AU/yield/treatment/transition mechanics.
+
+## 2026-06-25 - Added NICF/WFP stakeholder framing
+
+- added `planning/tfl6_stakeholder_context.md` to record that NICF cedar and
+  expansion interests should be modeled alongside WFP-facing fibre supply,
+  fibre value, and delivered-cost implications;
+- updated cedar planning so cedar reserve or cedar-priority scenarios must
+  report broader TFL 6/WFP supply-chain tradeoffs where available;
+- updated embedded identity planning so K3Z/NICF core and expansion candidate
+  reports can be compared against whole-TFL and TFL 6 remainder outcomes; and
+- updated roadmap text so P3.1 and P3.2 carry stakeholder-comparison reporting
+  requirements into later model-input and Patchworks surfaces.
+
+## 2026-06-25 - Clarified student-facing stakeholder KPI purpose
+
+- expanded `planning/tfl6_stakeholder_context.md` so the purpose of student
+  projects is explicitly framed as multi-perspective scenario tradeoff
+  exploration using stakeholder-valued KPI proxies;
+- added a `Multi-Perspective Scenario Tradeoffs` section to the Sphinx teaching
+  challenges page; and
+- updated Phase 3 and Phase 5 roadmap text so cedar, expansion, and final
+  teaching docs carry the multi-perspective KPI interpretation requirement.
+
+## 2026-06-25 - Locked the P3.3 AU and yield-curve assignment contract
+
+- added a P3.3b accepted-contract lock to
+  `planning/tfl6_au_yield_curve_contract.md`;
+- accepted K3Z-style static AU identity while rejecting age, THLB status,
+  operability, treatment eligibility, curve provenance, cedar, retention, and
+  expansion fields as canonical AU identity fields;
+- locked MP10 Tables 27-29 as TFL 6 TIPSY parameter evidence only, with legacy
+  AU codes preserved as provenance/parameter keys;
+- locked the natural/untreated VDYP curve lane to the shared FEMIC
+  `smoothed_bin_pchip` default governed by `UBC-FRESH/femic#187`, with MKRF
+  as evidence and TSA29 as adoption evidence;
+- locked treated/managed curves to a reviewed TFL 6 BatchTIPSY parameter
+  crosswalk; and
+- marked P3.3 complete in `ROADMAP.md` and moved Current Next Steps to P3.4
+  actual yield-curve build/QA without building model inputs or runtime files.
+
+## 2026-06-25 - Extracted MP10 TIPSY parameter tables for P3.4a
+
+- scraped MP10 Information Package Tables 27, 28, and 29 into reviewed planning
+  artifacts under `planning/tfl6_mp10_tipsy_parameter_library.{md,json,csv}`;
+- captured 90 legacy parameter rows: 60 from Table 27, 16 from Table 28, and
+  14 from Table 29;
+- preserved MP10 legacy AU codes, Table 29 footnote markers, age-band context,
+  SPH, species percentages, species site indexes, genetic worth, OAF,
+  utilization, regeneration-delay notes, THLB area evidence, and raw row text;
+- recorded accepted extraction caveats, including dash normalization, Table 27
+  genetic-worth handling, a repaired row-1221 text-extraction artifact, and
+  small accepted THLB-area deltas against printed totals; and
+- marked P3.4a complete in `ROADMAP.md` and moved Current Next Steps to P3.4b
+  static-AU-to-MP10-parameter crosswalk planning without generating curves.
+
+## 2026-06-25 - Compiled the first static AU review universe for P3.4b
+
+- compiled a review-only static TFL 6 AU/stratum universe from accepted R1
+  geometry and VDYP7 primary-layer attributes under
+  `planning/tfl6_static_au_universe.{md,json,csv}`;
+- wrote the stand-level review assignment table to
+  `planning/tfl6_stand_to_au_review.csv` and the top-strata summary to
+  `planning/tfl6_static_au_top_strata.csv`;
+- generated the standard FEMIC strata distribution diagnostic at
+  `plots/strata-tfl6.{png,pdf}` using
+  `femic.pipeline.plots.render_strata_distribution_plot`, matching the K3Z and
+  MKRF instance plot specification, with the SI axis widened to `0-55` for the
+  high-productivity TFL 6 coastal rainforest source data;
+- recorded 17,223 yieldable review rows, 174 static strata, 26 selected
+  top-area strata covering 90.397% of the yieldable review area, 384 total
+  review AU bins, and 77 selected top-area AU bins;
+- kept AU identity limited to BEC/subzone/variant/phase group, top-two species
+  combo, and L/M/H site-index review class, without encoding THLB,
+  operability, treatment eligibility, cedar, retention, or NICF expansion
+  state; and
+- marked P3.4b complete in `ROADMAP.md` and moved Current Next Steps to P3.4c
+  MP10 TIPSY parameter crosswalk work without writing the model-input bundle or
+  generating curves.
+
+## 2026-06-25 - Crosswalked static TFL 6 AUs to MP10 TIPSY rows for P3.4c
+
+- added the P3.4c planning crosswalk under
+  `planning/tfl6_tipsy_parameter_crosswalk.{md,json,csv}`;
+- matched each of the `384` refined static TFL 6 AU bins to three MP10 TIPSY
+  parameter lanes: existing managed stands aged 11-50, existing managed stands
+  aged 1-10, and future managed stands;
+- produced `1,152` crosswalk rows, including separate confidence flags,
+  species-share distance, weighted-SI difference, zero-padded MP10 legacy AU
+  codes, and non-numeric `mp10_au_####` provenance keys;
+- recorded selected top-area AU confidence counts by lane: for
+  existing-managed 11-50, `34` high, `23` medium, `8` low, and `12` fallback;
+  for existing-managed 1-10, `19` high, `32` medium, `15` low, and `11`
+  fallback; and for future-managed, `11` high, `36` medium, `19` low, and `11`
+  fallback;
+- kept low-confidence and fallback rows explicit for maintainer review before
+  executable BatchTIPSY use; and
+- marked P3.4c complete in `ROADMAP.md` and moved Current Next Steps to P3.4d
+  natural/untreated VDYP curve generation and QA without writing the
+  model-input bundle.
+
+## 2026-06-25 - Planned the P3.4d natural VDYP curve-generation run
+
+- added `planning/tfl6_vdyp_curve_generation_plan.md` to define the bounded
+  P3.4d execution path for natural/untreated VDYP curve generation;
+- confirmed the shared selector authority is
+  `femic.pipeline.au_first_growth.select_au_first_growth_curve` with the
+  `smoothed_bin_pchip` path governed by parent FEMIC issue `#187`;
+- recorded that the current TFL 6 instance has accepted R1 geometry, VDYP7
+  source attribute parquet files, the static AU universe, and the stand-to-AU
+  review table, but does not yet have the stand-level
+  `FEATURE_ID`/`PRJ_TOTAL_AGE`/`PRJ_VOL_DWB` VDYP yield time-series required by
+  the first-growth selector;
+- defined review-only output paths under `planning/` and `plots/`, explicitly
+  keeping P3.4d out of `data/model_input_bundle/`;
+- listed QA gates for missing-curve rationales, sparse-support diagnostics,
+  L/M/H envelope plots, fit diagnostics, and Patchworks semantics guardrails;
+  and
+- updated `ROADMAP.md` Current Next Steps so the next bounded P3.4d move is to
+  materialize or adapt the stand-level VDYP yield time-series before fitting
+  natural curves.
+
+## 2026-06-25 - Re-centered P3.4d on the standard FEMIC Stage 01a VDYP lane
+
+- removed the instance-local VDYP materializer draft and re-centered P3.4d on
+  the established FEMIC Stage 01a workflow used by K3Z, TSA29, and MKRF:
+  `femic prep validate-case` followed by `femic run`;
+- renamed the active runtime profile and TIPSY/silviculture configs from the
+  stale NICF FSP code to TFL6 (`config/run_profile.tfl6.yaml`,
+  `config/tipsy/tfl6.yaml`, and `config/silviculture.tfl6.yaml`);
+- updated `config/rebuild.spec.yaml`, `QUICKSTART.md`, `AGENTS.md`, and the
+  rebuild runbook to use the TFL6 run profile and `--tsa tfl6` handoff code;
+- kept `runtime/` ignored so Stage 01a scratch/log output does not become a
+  tracked planning artifact; and
+- updated `planning/tfl6_vdyp_curve_generation_plan.md` and `ROADMAP.md` so the
+  next P3.4d move is to validate `config/run_profile.tfl6.yaml`, then run the
+  standard `femic run --run-config config/run_profile.tfl6.yaml --run-id
+  tfl6_stage01a` lane and inspect its VDYP curve/log artifacts.
+
+## 2026-06-25 - Ran P3.4d AFLB feature-ID VDYP first-growth curves
+
+- ran VDYP against the AU-assigned TFL 6 AFLB feature IDs from
+  `planning/tfl6_stand_to_au_review.csv` using the clipped 2025 VDYP polygon
+  and layer parquet inputs under `data/input/tfl_6/`;
+- generated `3,220,953` stand-level VDYP yield rows for `16,659` of the
+  `17,223` AU-assigned AFLB feature IDs;
+- promoted review artifacts to `planning/tfl6_first_growth_au_curves.csv`,
+  `planning/tfl6_first_growth_au_fit_diagnostics.csv`, and
+  `planning/tfl6_first_growth_vdyp_run_summary.md`;
+- produced `276` raw accepted AU natural/untreated first-growth curve
+  candidates using the shared `smoothed_bin_pchip` selector and flagged `104`
+  raw AUs as insufficient-source candidates, while retaining only the selected
+  top-area AU set as canonical curve families for publication/review; and
+- kept the large stand-level VDYP yield time series and VDYP run logs under
+  ignored `runtime/derived/p3_4_aflb_vdyp_first_growth_run2/` for local audit
+  and did not write Phase 4 model-input bundle outputs.
+
+## 2026-06-25 - Added AU-wise first-growth curve review plots
+
+- added `scripts/build_p3_4_first_growth_plots.py` to regenerate the TFL 6
+  natural/untreated first-growth review plots from the P3.4d VDYP run outputs;
+- generated `26` `plots/vdyp_lmh_tfl6-*.png` selected-AU-family comparison
+  plots using the same L/M/H visual review pattern as the other FEMIC instance
+  examples;
+- generated `77` `plots/vdyp_fitdiag_tfl6-*.png` selected-AU fit-diagnostic
+  plots with raw VDYP curves, 5-year observed medians/interquartile bands,
+  selected fits, and residual panels;
+- wrote `planning/tfl6_first_growth_plot_manifest.{csv,md}` with repo-relative
+  plot paths for review and downstream documentation; and
+- updated `planning/tfl6_first_growth_vdyp_run_summary.md` and `ROADMAP.md` so
+  P3.4d explicitly references the AU-wise plot artifacts while keeping
+  treated/managed TIPSY curves and Phase 4 model-input bundle generation out of
+  this slice.
+
+## 2026-06-25 - Added P3.4f first-growth curve shape diagnostics
+
+- added `scripts/build_p3_4_first_growth_shape_diagnostics.py` to classify
+  selected-AU natural/untreated first-growth curve shapes before changing the
+  accepted P3.4d curve table;
+- wrote `planning/tfl6_first_growth_shape_diagnostics.{csv,md}` with one row
+  per selected top-area AU diagnostic case;
+- confirmed the selected curve set has `77` accepted curves, no
+  insufficient-source selected AUs, no critical selected curves, `45` review
+  rows, and `32` OK rows;
+- added `scripts/build_p3_4_first_growth_au_remap_audit.py` and
+  `planning/tfl6_first_growth_au_remap_audit.{csv,md}` to map `307`
+  non-selected AU bins onto the `77` selected canonical curve families using
+  FEMIC's established lexicographic stratum-name matching pattern; and
+- updated `ROADMAP.md` so P3.4f explicitly covers selected-set
+  shape-pathology review and remap QA before any smoothing/tail-cleanup
+  parameter changes are locked.
+
+## 2026-06-26 - Deferred optional VDYP smoothing cleanup after P3.4f review
+
+- updated `ROADMAP.md` to mark P3.4f complete and record that the selected
+  top-area VDYP first-growth curves are good enough to proceed with the rest of
+  Phase 3;
+- kept the `45` selected-set review flags visible in
+  `planning/tfl6_first_growth_shape_diagnostics.md`, but reframed smoothing,
+  tail-constraint, and L/M/H ordering cleanup as an optional pre-bundle revisit
+  rather than a blocker for P3.4e, P3.5, or P3.6; and
+- left the selected canonical curve set at `77` AU bins with `26` L/M/H review
+  panels and the `307` non-selected AU remaps documented in
+  `planning/tfl6_first_growth_au_remap_audit.{csv,md}`.
+
+## 2026-06-26 - Built the P3.4e TFL 6 BatchTIPSY handoff
+
+- added `scripts/build_p3_4e_tipsy_handoff.py` to convert the selected
+  top-area AU/MP10 TIPSY crosswalk into an executable BTC input handoff;
+- wrote `data/03_input-tfl6.csv` with `231` rows: `77` selected AU bins across
+  the three managed lanes `existing_managed_11_50`, `existing_managed_1_10`,
+  and `future_managed`;
+- wrote `planning/tfl6_tipsy_btc_curve_id_map.csv` plus
+  `planning/tfl6_tipsy_btc_handoff_manifest.{json,md}` so synthetic BTC
+  feature IDs, OAF conversion, regen-delay defaults, confidence counts, and
+  the `9` MP10 `other`-species rows encoded as `Dr` remain reviewable; and
+- updated `ROADMAP.md` so P3.4e1 is complete while P3.4e2 remains the next
+  bounded step: run BTC/BatchTIPSY from `data/03_input-tfl6.csv`, parse
+  `04_output-tfl6.csv`, and generate treated/managed curve QA overlays.
+
+## 2026-06-26 - Ran and QAed P3.4e treated/managed BatchTIPSY curves
+
+- ran BTC/BatchTIPSY from the TFL 6 handoff `data/03_input-tfl6.csv` and wrote
+  the cleaned output `data/04_output-tfl6.csv` plus `data/04_error-tfl6.csv`;
+- fixed the P3.4e handoff builder so MP10 `other` species rows encoded as `Dr`
+  use the static TFL 6 AU mean SI when the matched MP10 row has no usable
+  deciduous/other SI value, removing the initial BTC `Dr` site-index errors;
+- added `scripts/build_p3_4e_tipsy_qa.py`, parsed `8316` treated-curve rows to
+  `planning/tfl6_tipsy_managed_curves.csv`, and wrote
+  `planning/tfl6_tipsy_managed_curve_diagnostics.{csv,md}`;
+- generated `77` treated-vs-natural overlay plots with the manifest in
+  `planning/tfl6_tipsy_vdyp_overlay_manifest.{csv,md}`;
+- recorded that the cleaned BTC error file has `0` error rows and complete
+  coverage of the `231` selected AU/lane handoff rows; and
+- marked P3.4 complete in `ROADMAP.md`, with the remaining treated-curve caveat
+  limited to small fallback `CWHvm1_DR` rows that show high treated-to-natural
+  max-volume ratios and should remain visible during later bundle QA.
+
+## 2026-06-26 - Published Phase 3 AU and yield-curve docs
+
+- added `docs/phase3-au-yield-curves.rst` and linked it from
+  `docs/index.rst` so students and maintainers can find the Phase 3 AU
+  definition contract, strata diagnostic, natural VDYP plots, and
+  treated TIPSY-vs-VDYP overlays from the standalone docs;
+- added `scripts/build_docs_phase3_au_yield_curves.py` to regenerate the docs
+  gallery from checked-in plot artifacts;
+- documented the accepted static AU policy, the `174` static strata, `26`
+  selected top-area strata, `384` total AU bins, and `77` selected AU bins;
+- surfaced the `plots/strata-tfl6.png` diagnostic, `26`
+  `vdyp_lmh_tfl6-*.png` panels, `77` `vdyp_fitdiag_tfl6-*.png` panels, and
+  `77` `tipsy_vdyp_tfl6-*.png` treated-overlay panels; and
+- kept the optional VDYP smoothing revisit and small fallback `CWHvm1_DR`
+  treated-curve caveats visible in the docs before P3.5 treatment-option work.
+
+## 2026-06-26 - Locked the P3.5 treatment-option vocabulary
+
+- added `planning/tfl6_treatment_option_contract.md` to define the first TFL 6
+  treatment catalogue, eligibility filters, product/account/reporting hooks,
+  and deferred treatment blockers before transition logic;
+- updated `config/silviculture.tfl6.yaml` from the copied scaffold into a
+  TFL 6 planning contract while keeping legacy FEMIC CT/PCT/fertilization knobs
+  disabled until a later implementation lane explicitly activates them;
+- accepted `cc` as the only base scheduled treatment, `grow` as implicit state
+  behavior, `regen_plant` as the default managed post-harvest transition
+  target, and `regen_natural` as a deferred/fallback transition target; and
+- recorded that managed/unmanaged treatment eligibility remains separate from
+  natural/treated curve provenance, with cedar and NICF expansion treatment
+  details deferred behind P3.1/P3.2 review blockers.
+
+## 2026-06-26 - Refined P3.5 treatment scope for NICF-focused CT/fertilization
+
+- revised the P3.5 treatment contract so the only whole-TFL 6 base scheduled
+  treatment is `clearcut_and_plant`, combining harvest and planted
+  regeneration into the base treatment vocabulary consumed by P3.6;
+- updated `config/silviculture.tfl6.yaml` to replace the separate `cc` and
+  `regen_plant` planning entries with `clearcut_and_plant`; and
+- retained CT and fertilization as group-gated scenario treatments eligible
+  only inside the K3Z/NICF core block and future accepted NICF expansion
+  blocks, with response, residual-state, transition, product, and account
+  blockers still requiring review before activation.
+
+## 2026-06-26 - Added TFL-wide harvest-system classes to P3.5
+
+- updated the P3.5 treatment contract so ground-based, cable-yarding, and
+  heli-logging systems are explicit stand-level operational attributes carried
+  throughout the TFL 6 AOI;
+- added harvest-system eligibility and reporting hooks to
+  `config/silviculture.tfl6.yaml`; and
+- recorded that harvest system affects treatment eligibility, delivered-cost
+  proxies, scenario controls, and teaching reports, but is not part of AU
+  identity and does not create separate yield-curve families by itself.
+
+## 2026-06-26 - Added P3.6a state-class contract
+
+- added `planning/tfl6_state_transition_contract.md` with the first TFL 6
+  state-class contract for initial managed/unmanaged natural/treated states,
+  retained/unmanaged states, post-clearcut planted state, NICF-focused CT/fert
+  candidate states, and deferred special teaching states;
+- locked the semantic field separation for P3.6/P4: `IFM` is treatment
+  eligibility, `ORIGIN` is curve provenance, `SILV_STATE` is the state path,
+  `RETENTION` is retention status/fraction, `HARVEST_SYSTEM` carries
+  ground/cable/heli operational class, and `TFL6_GROUP` carries reporting
+  identity; and
+- updated `ROADMAP.md` so P3.6a is complete and P3.6b is the next bounded
+  tranche for transition-row definitions without starting Phase 4.
+
+## 2026-06-26 - Added P3.6b transition-row contract
+
+- extended `planning/tfl6_state_transition_contract.md` with reviewed
+  transition rows for grow/no-action behavior, `clearcut_and_plant`, retained
+  or unmanaged movement, operability masking, origin-provenance handling,
+  K3Z/NICF-gated CT/fertilization hooks, and cedar/expansion hook points;
+- recorded that `clearcut_and_plant` is the only accepted base transition that
+  changes `ORIGIN`, moving harvested managed stands to the treated/managed
+  BatchTIPSY curve lane after planted regeneration; and
+- marked P3.6b complete in `ROADMAP.md`, leaving P3.6c as the next bounded
+  verification step before any Phase 4 model-input generation.
+
+## 2026-06-26 - Verified P3.6c treatment-semantics consistency
+
+- added a P3.6c verification table to
+  `planning/tfl6_state_transition_contract.md` comparing transition rows
+  against the P3.5 treatment vocabulary;
+- confirmed that transition rows use only accepted P3.5 treatment IDs/triggers,
+  keep `clearcut_and_plant` as the only whole-TFL 6 base scheduled treatment,
+  retain CT/fertilization as K3Z/NICF-gated hooks, preserve `IFM` as treatment
+  eligibility and `ORIGIN` as curve provenance, and keep harvest system as
+  operational/reporting context; and
+- marked P3.6c complete in `ROADMAP.md`, leaving P3.6d cedar/expansion hook
+  point recording as the next bounded tranche.
+
+## 2026-06-26 - Recorded P3.6d cedar and expansion hook points
+
+- extended `planning/tfl6_state_transition_contract.md` with P3.6d cedar hook
+  fields that preserve P3.1 cedar signals through grow, harvest, retention,
+  and operability transitions without creating cedar-specific base treatments
+  or AU identities;
+- added embedded NICF/K3Z and expansion-candidate hook fields from P3.2 so
+  Phase 4 can carry group identities, candidate pools, screen status, and
+  scenario-group fields through transition/account/report surfaces; and
+- marked P3.6d complete in `ROADMAP.md`, leaving P3.6e deferred-transition
+  blocker lock as the next bounded tranche.
+
+## 2026-06-26 - Locked P3.6e deferred transition semantics
+
+- expanded `planning/tfl6_state_transition_contract.md` with the P3.6e
+  deferred-transition lock for CT residual-state transitions, fertilization
+  response transitions, cedar-specific transitions, NICF expansion scenario
+  transitions, harvest-system reassignment, operability state movement,
+  natural-regeneration alternatives, and cedar/cultural reserve scenario
+  exclusions;
+- recorded the current base behavior, blocker/review need, and owner lane for
+  each deferred transition item; and
+- marked P3.6 and P3.6e complete in `ROADMAP.md`, leaving the remaining Phase
+  3 design work to P3.1 cedar source-field/signal review, P3.2 embedded
+  K3Z/NICF identity, and P3.7 run-profile/model-input contract reconciliation.
+
+## 2026-06-26 - Locked P3.1b cedar source fields and signals
+
+- updated `planning/tfl6_cedar_signal_design.md` to lock cedar source fields
+  against the accepted `planning/tfl6_stand_to_au_review.csv` surface, using
+  `species_cd_1..6`, `species_pct_1..6`, age proxy fields, BEC/reporting
+  fields, and AU/yield support fields without adding cedar to AU identity;
+- accepted `CW` and `YC` leading/component cedar signals, the first
+  `cedar_present >= 20%` threshold, and the `old_cedar >= 141` age proxy, with
+  gross review diagnostics for cedar-leading, cedar-present, and old-cedar
+  area; and
+- marked P3.1b complete in `ROADMAP.md`, leaving P3.1c as the next bounded
+  cedar design tranche for Patchworks-facing cedar products, accounts,
+  treatment hooks, stakeholder-comparison signals, and report requirements.
+
+## 2026-06-26 - Closed P3.1 cedar Patchworks-facing design
+
+- extended `planning/tfl6_cedar_signal_design.md` with the P3.1c
+  Patchworks-facing contract for cedar product hooks, feature/account families,
+  report/target families, treatment-hook boundaries, yield-curve boundaries,
+  and Phase 4 cedar handoff fields;
+- accepted generic cedar/CW/YC reporting products and account/report surfaces
+  while keeping utility-pole grade, cedar-specific base treatments, hard cedar
+  reserve targets, and cedar-only yield-curve families deferred; and
+- marked P3.1 and P3.1c complete in `ROADMAP.md`, moving the next bounded
+  Phase 3 tranche to P3.2b embedded K3Z/NICF core AOI overlay identity.
+
+## 2026-06-26 - Locked P3.2b K3Z/NICF core overlay identity
+
+- updated `planning/tfl6_nicf_embedded_identity.md` to distinguish the original
+  K3Z tenure source from the broader pre-pivot FDU 1/2/3 FSP planning context
+  and from the active current TFL 6 AOI;
+- recorded non-mutating EPSG:3005 overlay diagnostics showing the K3Z tenure
+  is `2391.511 ha`, but only `0.072 ha` intersects the current FADM-derived
+  TFL 6 AOI, so the first bundle must not silently label broad current-AOI
+  stands as `nicf_k3z_core`; and
+- marked P3.2b complete in `ROADMAP.md`, leaving P3.2c as the next bounded
+  identity-contract tranche for expansion candidate, rejected-candidate, and
+  TFL 6 remainder classes.
+
+## 2026-06-26 - Locked P3.2c expansion and remainder identity classes
+
+- extended `planning/tfl6_nicf_embedded_identity.md` with accepted
+  `embedded_area_class` values for `wfp_tfl6_remainder`,
+  `nicf_expansion_candidate`, `nicf_expansion_rejected`,
+  `nicf_expansion_pool_unreviewed`, and `nicf_k3z_core_reference`;
+- defined candidate-area pool semantics, source/provenance fields, and the
+  first `expansion_screen_status` vocabulary without materializing candidate
+  geometry or executing screening logic; and
+- marked P3.2c complete in `ROADMAP.md`, leaving P3.2d as the next bounded
+  tranche for Patchworks group accounts, matching targets, scenario toggles,
+  and reports.
+
+## 2026-06-26 - Corrected P3.2c expansion geography
+
+- corrected `planning/tfl6_nicf_embedded_identity.md` so expansion candidates
+  come from proximal/adjacent public forested land outside the current TFL 6
+  AOI rather than from inside current-AOI TFL 6 stands;
+- updated candidate/rejected/unreviewed class semantics, source/provenance
+  fields, and screen-status vocabulary to include outside-AOI source
+  membership, public-land/tenure availability, external THLB-equivalent
+  eligibility, and proximity/adjacency review; and
+- updated `ROADMAP.md` while preserving the boundary that no expansion
+  geometry, screening execution, model-input bundle, XML, Matrix Builder, or
+  runtime-package work starts in P3.2c.
+
+## 2026-06-26 - Locked P3.2d Patchworks comparison surfaces
+
+- extended `planning/tfl6_nicf_embedded_identity.md` with the P3.2d
+  Patchworks-facing contract for embedded-area group dimensions, account
+  families, matching targets, scenario toggles, and reports;
+- required separate reporting for current-AOI WFP/TFL 6 remainder,
+  K3Z/NICF reference identity, outside-AOI expansion candidates,
+  rejected/unreviewed expansion pools, and whole-model teaching comparisons;
+- defined WFP-facing fibre-supply, delivered-cost proxy, harvest-system,
+  cedar/community, K3Z-continuity, and rejected-pool audit report families
+  without creating hard base targets or schedulable rejected/unreviewed pools;
+  and
+- marked P3.2d complete in `ROADMAP.md`, leaving P3.2e as the next bounded
+  handoff tranche before P3.2 can close.
+
+## 2026-06-26 - Documented Phase 3 cedar and embedded NICF design
+
+- added `docs/phase3-cedar-nicf-expansion.rst` to summarize P3.1 cedar
+  signals, cedar product/account boundaries, P3.2 K3Z/NICF reference identity,
+  outside-AOI expansion candidate classes, Patchworks comparison surfaces, and
+  scenario toggles for students and maintainers;
+- added the new page to the Sphinx toctree in `docs/index.rst`;
+- updated `docs/teaching-challenges.rst` so outside-AOI NICF expansion source
+  lands are clearly separated from current-AOI TFL 6 base geography; and
+- rebuilt the instance Sphinx docs with warnings treated as errors.
+
+## 2026-06-26 - Closed P3.2 embedded identity handoff
+
+- added a P3.2e handoff section to
+  `planning/tfl6_nicf_embedded_identity.md` defining the embedded identity
+  fields that P3.7/P4.1 must carry into the run-profile and model-input
+  contract;
+- locked dependency boundaries showing that embedded identity may split
+  accounts, targets, toggles, reports, treatment gates, harvest-system
+  summaries, cedar outputs, and THLB-equivalent summaries, but must not become
+  an AU key, curve-family key, or hidden THLB deduction;
+- updated `docs/phase3-cedar-nicf-expansion.rst` with the P3.2e handoff field
+  list for student and maintainer visibility; and
+- marked P3.2e and P3.2 complete in `ROADMAP.md`, moving the next bounded
+  Phase 3 tranche to P3.7 run-profile/model-input contract reconciliation.
+
+## 2026-06-26 - Started P3.7 model-input contract reconciliation
+
+- opened P3.7 child issue `#32` and linked it from `ROADMAP.md`;
+- added `planning/tfl6_model_input_contract.md` to collect accepted Phase 2/3
+  artifacts, required model-input field families, Phase 4 QA checks, and
+  rejected/deferred assumptions before bundle generation starts;
+- updated `config/run_profile.tfl6.yaml` with Phase 3 contract metadata,
+  accepted artifact paths, required field families, and explicit P3.7
+  non-goals;
+- updated `config/tipsy/tfl6.yaml` so the reviewed P3.4 BTC handoff and
+  managed-curve artifacts supersede the bootstrap fallback rule metadata; and
+- added `docs/phase3-model-input-contract.rst` to the Sphinx toctree.
+
+## 2026-06-26 - Locked P3.7 model-input contract
+
+- marked P3.7 and its subtasks complete in `ROADMAP.md`, moving the next
+  bounded tranche to Phase 3 closeout rather than Phase 4 implementation;
+- recorded the P3.7 validation state in
+  `planning/tfl6_model_input_contract.md`: YAML parsing and warning-clean
+  Sphinx passed, while full `femic prep validate-case` remains blocked by
+  local Arbutus/DataLad public-data materialization and auth state;
+- preserved the Phase 4 boundary that no model-input bundle, outside-AOI
+  expansion screening, ForestModel XML, Matrix Builder output, or runtime
+  package is generated inside P3.7; and
+- prepared issue `#32` and Phase 3 parent `#13` for final P3.7 status
+  synchronization.
+
+## 2026-06-26 - Closed Phase 3 model-design assumptions
+
+- updated `planning/tfl6_model_input_contract.md` and `ROADMAP.md` to record
+  that `femic prep validate-case` passes after loading the local Arbutus
+  environment and materializing/unlocking the required public-data
+  `FADM_TSA.gdb` payload;
+- verified that Phase 3 child issues `#8`, `#9`, and `#28` through `#32` are
+  closed and that Phase 3 parent issue `#13` has all child acceptance criteria
+  complete;
+- preserved the boundary that Phase 4 model-input generation, outside-AOI
+  expansion screening, ForestModel XML, Matrix Builder, and runtime-package work
+  have not started; and
+- prepared the `feature/p3-model-design-assumptions` branch for the instance
+  PR/merge workflow.

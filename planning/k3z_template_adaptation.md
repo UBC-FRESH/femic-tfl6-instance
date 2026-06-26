@@ -70,8 +70,8 @@ Reference surfaces inspected:
 - K3Z Patchworks package:
   `external/femic-k3z-instance/models/k3z_patchworks_model/`
 - NICF current scaffold:
-  `config/run_profile.nicffsp.yaml`, `config/rebuild.spec.yaml`,
-  `config/tipsy/nicffsp.yaml`, `config/silviculture.nicffsp.yaml`, and
+  `config/run_profile.tfl6.yaml`, `config/rebuild.spec.yaml`,
+  `config/tipsy/tfl6.yaml`, `config/silviculture.tfl6.yaml`, and
   `config/patchworks.runtime.windows.yaml`
 
 Observed K3Z template state:
@@ -94,15 +94,15 @@ Observed K3Z template state:
 
 Observed NICF bootstrap state:
 
-- `run_profile.nicffsp.yaml` now uses the active TFL 6 boundary path
+- `run_profile.tfl6.yaml` now uses the active TFL 6 boundary path
   `data/source/tfl_6/aoi/tfl_6_boundary.gpkg`, layer `tfl_6_boundary`, and
   records pre-pivot LU reference context at
   `data/source/nicf_fsp/lu_reference/nicf_lu_reference.shp`.
 - NICF does not yet have a compiled `data/model_input_bundle/`.
 - NICF does not yet have a `models/` Patchworks package.
-- `config/tipsy/nicffsp.yaml` is still a bootstrap placeholder and contains a
+- `config/tipsy/tfl6.yaml` is still a bootstrap placeholder and contains a
   generic softwood rule that is not accepted for the North Island FSP boundary.
-- `config/silviculture.nicffsp.yaml` is still a scaffold, not an accepted
+- `config/silviculture.tfl6.yaml` is still a scaffold, not an accepted
   treatment or cedar-signal contract.
 - `config/patchworks.runtime.windows.yaml` is still a placeholder copied from
   the K3Z shape and currently points at K3Z output/model paths; it must not be
@@ -137,13 +137,13 @@ Immediate next P1.3 work:
 
 Decision date: 2026-06-23
 
-Accepted first-boundary settings in `config/run_profile.nicffsp.yaml`:
+Accepted first-boundary settings in `config/run_profile.tfl6.yaml`:
 
 | Field | Accepted value | Rationale |
 | --- | --- | --- |
 | `selection.boundary_path` | `data/source/tfl_6/aoi/tfl_6_boundary.gpkg` | Active TFL 6 AOI boundary accepted under P1.6. The P1.2 FDU 1-3 bootstrap AOI remains provenance only. |
 | `selection.boundary_layer` | `tfl_6_boundary` | GeoPackage layer for the active TFL 6 AOI boundary. |
-| `selection.boundary_code` | `nicffsp` | Case code for the custom-boundary lane. |
+| `selection.boundary_code` | `tfl6` | Case code for the custom-boundary lane. |
 | `selection.stratification.bec_grouping` | `subzone` | Carries forward the K3Z teaching-template structure and keeps the first AU design inspectable. |
 | `selection.stratification.species_combo_count` | `2` | Carries forward the K3Z two-species teaching simplification for the first bundle. |
 | `selection.stratification.include_tm_species2_for_single` | `true` | Carries forward K3Z's fallback species-pairing behavior for sparse/single-species records. |
@@ -161,7 +161,7 @@ Boundary interpretation:
 - These settings do not accept K3Z AU identities, generated bundle tables,
   TIPSY rule content, silviculture treatments, seral thresholds, products,
   accounts, or Patchworks runtime paths as NICF semantics.
-- `config/tipsy/nicffsp.yaml` remains provisional; the `managed_curve_mode:
+- `config/tipsy/tfl6.yaml` remains provisional; the `managed_curve_mode:
   tipsy` decision means the first bundle will need NICF-reviewed TIPSY rules
   before managed-curve outputs are treated as accepted teaching evidence.
 - The first bundle should still be blocked until P1.3c separates
@@ -170,7 +170,7 @@ Boundary interpretation:
 Validation performed:
 
 - `load_pipeline_run_profile()` parsed the accepted boundary defaults from
-  `config/run_profile.nicffsp.yaml`.
+  `config/run_profile.tfl6.yaml`.
 
 Immediate next P1.3 work:
 

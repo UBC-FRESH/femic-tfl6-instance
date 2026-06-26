@@ -19,7 +19,7 @@
 - [x] P1.3 Define the first K3Z-to-NICF adaptation contract (`#3`).
   - [x] P1.3a Compare K3Z config, model-input bundle, docs, and Patchworks
     package structure against the NICF FSP requirements.
-  - [x] P1.3b Define the first `run_profile.nicffsp.yaml` boundary after AOI
+  - [x] P1.3b Define the first `run_profile.tfl6.yaml` boundary after AOI
     extraction.
   - [x] P1.3c Identify which K3Z teaching assumptions can carry forward and
     which need explicit FRST 558 review.
@@ -129,26 +129,113 @@ starts.
   current-AOI benchmark targets and record accepted teaching tolerances (`#25`).
   The accepted tolerance lock is recorded in
   `planning/tfl6_thlb_benchmark_tolerance.md`.
-- [ ] P2.6 Close out the Phase 2 branch/PR lifecycle before starting Phase 3
+- [x] P2.6 Close out the Phase 2 branch/PR lifecycle before starting Phase 3
   implementation (`#26`).
   - [x] P2.6a Add Phase 2 THLB Sphinx documentation covering design rationale,
     caveats, benchmark tolerance, and reproducibility audit trail.
-  - [ ] P2.6b Reconcile and merge the Phase 2 closeout PR.
+  - [x] P2.6b Reconcile and merge the Phase 2 closeout PR.
 
-## Proposed Phase 3: Model Design Assumptions (`#13`)
+## Phase 3: Model Design Assumptions (`#13`)
 
 Goal: define the reviewed model-design assumptions that depend on the accepted
 source-layer and THLB surfaces, without compiling a Patchworks package.
 
-- [ ] P3.1 Complete cedar-signal design (`#8`) for Cw cultural reserve,
+- [x] P3.3 Define TFL 6 AU, yield-curve, and treatment-eligibility contract
+  (`#28`) before model-input bundle generation.
+  Priority note: P3.3 is listed first because the AU/yield contract is now the
+  top Phase 3 dependency. The `P3.3` identifier is retained to preserve the
+  existing issue/comment/commit audit trail.
+  - [x] P3.3a Add the first AU/yield-curve planning contract in
+    `planning/tfl6_au_yield_curve_contract.md`.
+  - [x] P3.3b Review and lock the static AU identity, legacy MP10 TIPSY
+    parameter extraction boundary, curve-lane assumptions, and
+    operability/treatment-eligibility interaction.
+- [x] P3.4 Build and QA actual TFL 6 yield curves (`#29`) before Phase 4
+  model-input bundle generation.
+  - [x] P3.4a Scrape MP10 Tables 27, 28, and 29 into a reviewed TIPSY
+    parameter library.
+  - [x] P3.4b Compile the first static TFL 6 AU/stratum universe and review
+    plots from accepted R1/VDYP source inputs, without writing the model-input
+    bundle.
+  - [x] P3.4c Crosswalk static TFL 6 AUs to reviewed TIPSY parameter rows or
+    explicit fallbacks.
+  - [x] P3.4d Generate and QA natural/untreated VDYP curves for the selected
+    top-area AU set using the shared `smoothed_bin_pchip` first-growth
+    selector, with selected-AU L/M/H comparison plots, fit-diagnostic plots,
+    and a lexicographic remap audit for non-selected AU bins.
+  - [x] P3.4e Generate and QA treated/managed BatchTIPSY curves from the
+    reviewed TIPSY parameter crosswalk.
+    - [x] P3.4e1 Emit the selected-AU BTC handoff as `data/03_input-tfl6.csv`
+      with curve-ID mapping and translation-policy manifest.
+    - [x] P3.4e2 Run BTC/BatchTIPSY from the `tfl6` handoff, parse
+      `04_output-tfl6.csv`, and build treated/managed curve QA overlays.
+  - [x] P3.4f Review selected-set natural-curve shape diagnostics and document
+    that the current VDYP smoothing/tail behavior is good enough to proceed
+    with the rest of Phase 3, while reserving a later optional revisit before
+    final model-input bundle lock.
+- [x] P3.5 Define TFL 6 treatment options (`#30`) before transition logic and
+  Phase 4 model-input bundle generation.
+  - [x] P3.5a Define treatment IDs, labels, eligibility filters, products,
+    accounts, and reporting hooks.
+  - [x] P3.5b Verify natural/treated curve provenance remains separate from
+    managed/unmanaged treatment eligibility.
+  - [x] P3.5c Lock any deferred treatment semantics with explicit blockers or
+    review needs.
+- [x] P3.6 Define TFL 6 state-transition logic (`#31`) before Phase 4
+  model-input bundle generation.
+  - [x] P3.6a Define stand-state classes for initial, managed, unmanaged,
+    retained, regenerated, and deferred/special teaching states.
+  - [x] P3.6b Define transitions for base harvest, managed regeneration,
+    retention/unmanaged movement, existing managed/natural origin handling,
+    and operability-driven eligibility changes.
+  - [x] P3.6c Verify transitions consume reviewed treatment options from P3.5
+    without redefining treatment semantics.
+  - [x] P3.6d Record cedar and expansion hook points without completing those
+    detail lanes.
+  - [x] P3.6e Lock deferred transition semantics with explicit blockers or
+    review needs.
+- [x] P3.1 Complete cedar-signal design (`#8`) for Cw cultural reserve,
   utility-pole-grade products, treatments, yield implications, accounts, and
   reporting outputs.
-- [ ] P3.2 Complete expansion candidate-area design (`#9`) for unallocated
+  Priority note: P3.1 remains open with P3.1a already completed, but cedar
+  details now sit downstream of AU, yield-curve, treatment-option, and
+  transition-logic locks.
+  - [x] P3.1a Record the first cedar evidence/design note in
+    `planning/tfl6_cedar_signal_design.md` without generating model inputs.
+  - [x] P3.1b Review and lock cedar source fields, derived signals, and
+    provisional unresolved assumptions.
+  - [x] P3.1c Define Patchworks-facing cedar products, accounts, treatment
+    hooks, stakeholder-comparison signals, and report requirements for the
+    first model-input bundle, including student-facing KPI families for
+    comparing cedar/community outcomes against broader TFL 6 fibre supply,
+    value, and delivered-cost proxies.
+- [x] P3.2 Complete embedded NICF/K3Z identity and expansion candidate-area
+  design (`#9`) for group accounts, matching targets, reports, unallocated
   candidate pools, productivity screening, and AAC uplift constraints.
-- [ ] P3.3 Define yield-source, treatment, seral/objective, and account/report
-  assumptions that must exist before model-input bundle generation.
-- [ ] P3.4 Update the TFL 6 run-profile/model-input contract with reviewed
-  design decisions and explicit rejected/deferred assumptions.
+  Priority note: P3.2 remains open but sits downstream of the base AU, yield,
+  treatment, and transition contract lanes. It must preserve the embedded
+  K3Z/NICF core identity and outside-AOI expansion-candidate identities inside
+  the larger teaching model without redefining AUs.
+  - [x] P3.2a Record the embedded identity contract in
+    `planning/tfl6_nicf_embedded_identity.md`.
+  - [x] P3.2b Define accepted K3Z/NICF core AOI overlay identity inside the
+    TFL 6 model area.
+  - [x] P3.2c Define outside-AOI expansion candidate, rejected-candidate, and
+    current-AOI TFL 6 remainder identity classes and source/provenance fields.
+  - [x] P3.2d Define Patchworks group accounts, matching targets, scenario
+    toggles, and reports needed to track K3Z/NICF core and expansion
+    candidates separately, including WFP-facing fibre supply, value, and
+    delivered-cost tradeoff signals where available and multi-perspective KPI
+    outputs for student scenario projects.
+  - [x] P3.2e Lock dependency handoff to P3.7/P4.1 so embedded identity fields
+    appear in the model-input bundle without changing AU identity.
+- [x] P3.7 Update the TFL 6 run-profile/model-input contract (`#32`) with
+  reviewed design decisions and explicit rejected/deferred assumptions.
+  - [x] P3.7a Record the Phase 4 model-input contract field families and
+    accepted source artifacts.
+  - [x] P3.7b Reconcile `config/run_profile.tfl6.yaml` and
+    `config/tipsy/tfl6.yaml` metadata with accepted Phase 3 artifacts.
+  - [x] P3.7c Lock rejected/deferred assumptions and Phase 4 entry guardrails.
 
 ## Proposed Phase 4: Model Inputs and Patchworks Runtime Package (`#14`)
 
@@ -179,7 +266,8 @@ after the runtime package has passed direct artifact and launch smoke checks.
   `femic-k3z-instance` and `femic-tsa29-instance` documentation surfaces,
   including quickstart instructions, rebuild workflow, source-data provenance,
   THLB validation notes, scenario teaching workflows, advanced student
-  challenges, known limitations, and warning-clean Sphinx build evidence.
+  challenges, multi-perspective stakeholder/KPI scenario interpretation, known
+  limitations, and warning-clean Sphinx build evidence.
 - [ ] P5.4 Run final release QA across source materialization, instance rebuild,
   Patchworks launch smoke, and documentation checks.
 
@@ -199,8 +287,11 @@ approves a narrower independent slice:
    treatment/product/account/reporting behavior, and AAC-uplift assumptions
    rather than source extraction mechanics.
 3. **Model-input generation**: Phase 4 (`#14`) starts only after Phase 2 source
-   and THLB outputs plus Phase 3 model-design assumptions are reviewed. P4.1
-   (`#17`) builds the model-input bundle from those accepted contracts.
+   and THLB outputs plus Phase 3 model-design assumptions are reviewed. Phase
+   3 must explicitly lock the AU/yield contract (`#28`), actual yield-curve
+   build and QA (`#29`), treatment options (`#30`), and state-transition logic
+   (`#31`) before P4.1 (`#17`) builds the model-input bundle from those
+   accepted contracts.
 4. **Patchworks runtime build and QA**: ForestModel/XML generation, Matrix
    Builder execution, runtime-package assembly, and runtime-package QA remain
    Phase 4 work after P4.1. Runtime-package follow-on `#10` is downstream of
@@ -231,17 +322,62 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 
 ## Current Next Steps
 
-1. Phase 2 implementation is functionally complete through P2.5: the P2.4e
-   final THLB result of `144203.485 ha` is accepted against the approximate
-   scaled current-AOI current-THLB benchmark of `136487.728 ha`; the
-   `+7715.757 ha` / `+5.65%` gap is locked as an acceptable base teaching-lane
-   tolerance in `planning/tfl6_thlb_benchmark_tolerance.md`.
-2. Continue with P2.6 / `#26`: close out the Phase 2 branch/PR lifecycle before
-   any Phase 3 implementation starts. P2.6a Sphinx documentation is complete;
-   next reconcile the `feature/p2-source-layer-thlb-inputs` PR against instance
-   `main` and update the parent FEMIC submodule pointer after the instance
-   closeout merge if `main` advances.
-3. Keep Phase 3 design issues `#8` and `#9` idle until P2.6 closeout is done
-   or the maintainer explicitly approves a narrower parallel design slice.
-4. Keep Phase 4 runtime issue `#10` idle until Phase 3 design assumptions and
-   P4.1 model-input bundle prerequisites are accepted.
+1. Phase 2 is closed. The instance `main` branch contains the Phase 2
+   source-layer, THLB smoke, benchmark-tolerance, and Sphinx audit-trail
+   surfaces; the parent FEMIC submodule pointer has been updated to the merged
+   closeout commit.
+2. Continue Phase 3 on branch `feature/p3-model-design-assumptions`. P3.3
+   through P3.6 are complete: AU identity, untreated VDYP curves, treated
+   BatchTIPSY curves, treatment options, and state-transition logic are locked
+   for current design purposes. P3.4 still carries a non-blocking deferred
+   option to revisit VDYP smoothing/tail constraints before the final Phase 4
+   model-input bundle lock.
+3. P3.1b is complete. Cedar source fields and derived signal definitions are
+   locked in `planning/tfl6_cedar_signal_design.md` using the accepted
+   `planning/tfl6_stand_to_au_review.csv` surface. P3.1b accepts `CW`/`YC`
+   leading and component signals, the `>= 20%` cedar-present threshold, and the
+   `>= 141` age proxy for `old_cedar`. It leaves `large_cedar_proxy`,
+   utility-pole thresholds, cedar-specific treatments, and cedar-specific
+   products/accounts to P3.1c.
+4. P3.1c and P3.1 are complete. The cedar design lane now defines
+   Patchworks-facing product hooks, feature/account families, report/target
+   families, treatment-hook boundaries, yield-curve boundaries, and Phase 4
+   handoff fields in `planning/tfl6_cedar_signal_design.md`. The first bundle
+   should carry cedar reporting surfaces, but it must not create cedar-specific
+   base treatments, hard cedar reserve targets, utility-pole grade claims, or
+   cedar-only yield-curve families.
+5. P3.2b is complete. The accepted K3Z/NICF core source is the original K3Z
+   tenure boundary from `external/femic-k3z-instance`, but non-mutating overlay
+   diagnostics show that the current FADM-derived TFL 6 AOI intersects only
+   `0.072 ha` of that `2391.511 ha` K3Z tenure. The first bundle must not
+   silently relabel the broader FDU 1/2/3 planning context as
+   `nicf_k3z_core`; K3Z core should be treated as a source/provenance identity
+   and likely external/reference carve-out under the current TFL 6 boundary.
+6. P3.2c is complete and corrected after maintainer clarification. Expansion
+   candidates are not selected from current-AOI TFL 6 stands; they come from
+   proximal/adjacent public forested land outside the current TFL 6 AOI. The
+   embedded identity contract now defines `wfp_tfl6_remainder`,
+   `nicf_expansion_candidate`, `nicf_expansion_rejected`,
+   `nicf_expansion_pool_unreviewed`, and `nicf_k3z_core_reference`, plus the
+   outside-AOI source/provenance fields and first `expansion_screen_status`
+   vocabulary needed for Phase 4 handoff.
+7. P3.2d is complete. The embedded identity contract now lists the Patchworks
+   group dimensions, account families, matching targets, scenario toggles, and
+   reports needed to compare K3Z/NICF reference identity, outside-AOI expansion
+   candidates, rejected/unreviewed pools, WFP TFL 6 remainder, and whole-model
+   teaching outcomes without changing AU identity.
+8. P3.2e and P3.2 are complete. The embedded identity contract now hands
+   required field families and dependency boundaries to P3.7/P4.1 so
+   current-AOI TFL 6 base geography, K3Z reference identity, outside-AOI
+   expansion candidates, rejected/unreviewed pools, and Patchworks comparison
+   surfaces can enter the model-input contract without changing AU identity.
+9. P3.7 / `#32` is complete. The TFL 6 run-profile and model-input contract
+   now point at the reviewed Phase 2/3 artifacts, required field families, and
+   explicit Phase 4 entry guardrails. YAML parsing, warning-clean Sphinx, and
+   `femic prep validate-case` all passed after loading the local Arbutus
+   environment and materializing/unlocking the public-data `FADM_TSA.gdb`
+   payload.
+10. Phase 3 closeout is complete once parent issue `#13` is closed and the
+   instance feature branch is handed to the prescribed PR/merge workflow. Phase
+   4 must not start until the Phase 3 PR is reviewed/merged or explicitly
+   narrowed by the maintainer.

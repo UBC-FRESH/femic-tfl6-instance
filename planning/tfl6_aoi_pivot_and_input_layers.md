@@ -69,7 +69,7 @@ Materialized boundary snapshot from `P1.6a`:
 - Field normalization: source fields lowercased; ArcGIS `GEOMETRY.AREA` and
   `GEOMETRY.LEN` stored as `geometry_area` and `geometry_len`
 - Run-profile boundary path switched to this GeoPackage in
-  `config/run_profile.nicffsp.yaml`
+  `config/run_profile.tfl6.yaml`
 
 ## Provincial 2025 Inputs
 
