@@ -1522,3 +1522,15 @@
   identity; and
 - updated `ROADMAP.md` so P3.6a is complete and P3.6b is the next bounded
   tranche for transition-row definitions without starting Phase 4.
+
+## 2026-06-26 - Added P3.6b transition-row contract
+
+- extended `planning/tfl6_state_transition_contract.md` with reviewed
+  transition rows for grow/no-action behavior, `clearcut_and_plant`, retained
+  or unmanaged movement, operability masking, origin-provenance handling,
+  K3Z/NICF-gated CT/fertilization hooks, and cedar/expansion hook points;
+- recorded that `clearcut_and_plant` is the only accepted base transition that
+  changes `ORIGIN`, moving harvested managed stands to the treated/managed
+  BatchTIPSY curve lane after planted regeneration; and
+- marked P3.6b complete in `ROADMAP.md`, leaving P3.6c as the next bounded
+  verification step before any Phase 4 model-input generation.

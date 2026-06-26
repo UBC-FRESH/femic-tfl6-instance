@@ -85,24 +85,43 @@ The field should be available for:
 The field should not create separate AU IDs or separate yield-curve families by
 itself.
 
-## P3.6b Transition Handoff
+## Transition Rows
 
-The next tranche should define transition rows for:
+This P3.6b table defines the reviewed transition rows for the first transition
+contract. These are design rows for the Phase 4 model-input/XML builders to
+consume later; they are not executable runtime outputs in this slice.
 
-- `grow`: no scheduled action, state persists and age advances;
-- `clearcut_and_plant`: eligible managed stand transitions to
-  `post_clearcut_planted` and `ORIGIN=treated`;
-- retained/non-THLB/reserve movement: eligible or ineligible source stands
-  move or remain in `retained_unmanaged` / `IFM=unmanaged`;
-- initial natural and treated origins: starting curve provenance is retained
-  until a treatment transition explicitly changes it;
-- operability sensitivity: changes treatment eligibility or scenario masks,
-  not AU identity;
-- CT/fertilization: optional transitions only inside `nicf_k3z_core` and
-  accepted future `nicf_expansion_candidate` groups after reviewed response
-  rules exist; and
-- cedar and expansion hooks: fields are carried for future accounts/reports,
-  but cedar/expansion treatment semantics remain deferred.
+| Transition ID | Treatment / trigger | Source state | Destination state | Field changes | Eligibility gates | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| `tr_grow_managed_natural` | `grow` | `initial_managed_natural` | `initial_managed_natural` | age advances; `IFM`, `ORIGIN`, `SILV_STATE`, `HARVEST_SYSTEM`, and AU unchanged | valid state and curve | No scheduled action. Natural curve provenance persists. |
+| `tr_grow_managed_treated` | `grow` | `initial_managed_treated` or `post_clearcut_planted` | same source state | age advances; `IFM`, `ORIGIN`, `SILV_STATE`, `HARVEST_SYSTEM`, and AU unchanged | valid state and curve | Treated curve provenance persists. |
+| `tr_grow_unmanaged` | `grow` | `initial_unmanaged_natural`, `initial_unmanaged_treated`, or `retained_unmanaged` | same source state | age advances; `IFM=unmanaged`; `ORIGIN`, `SILV_STATE`, `HARVEST_SYSTEM`, and AU unchanged | valid state and curve | No scheduled treatment eligibility is introduced. |
+| `tr_clearcut_plant_natural` | `clearcut_and_plant` | `initial_managed_natural` | `post_clearcut_planted` | `ORIGIN=treated`; `SILV_STATE=cc_planted`; `IFM=managed`; age reset/regeneration delay handled in P4 implementation; AU family maps to treated curve lane | active THLB, `IFM=managed`, not retained/reserve/non-THLB, operable under scenario, assigned `HARVEST_SYSTEM`, valid AU/curve, age/merchantability rule passes, group constraints allow | Base whole-TFL 6 harvest transition. Natural-origin source can become treated-origin after planted regeneration. |
+| `tr_clearcut_plant_treated` | `clearcut_and_plant` | `initial_managed_treated` or `post_clearcut_planted` | `post_clearcut_planted` | `ORIGIN=treated`; `SILV_STATE=cc_planted`; `IFM=managed`; age reset/regeneration delay handled in P4 implementation; AU family maps to treated curve lane | active THLB, `IFM=managed`, not retained/reserve/non-THLB, operable under scenario, assigned `HARVEST_SYSTEM`, valid AU/curve, age/merchantability rule passes, group constraints allow | Reharvest or harvest of existing treated-origin stands stays on treated/managed curve lane. |
+| `tr_reserve_to_retained` | reserve, non-THLB, full retention, or scenario exclusion | any initial or post-treatment state | `retained_unmanaged` | `IFM=unmanaged`; `SILV_STATE=retained`; `RETENTION` set or preserved; `ORIGIN`, `HARVEST_SYSTEM`, and AU unchanged | retained/reserve/non-THLB/scenario-excluded area | Retention affects scheduling eligibility, not curve provenance or AU identity. |
+| `tr_operability_mask_out` | operability or harvest-system sensitivity excludes scheduling | any managed source state | same source state with scheduling mask disabled, or `retained_unmanaged` only if the scenario explicitly models exclusion as unmanaged | no AU or `ORIGIN` change; treatment eligibility mask changes; optional `IFM=unmanaged` only under reviewed scenario rule | scenario-specific operability, slope, yarding, or heli/cable/ground availability rule | Default behavior is eligibility masking, not identity change. |
+| `tr_ct_candidate_hold` | `commercial_thinning` hook | `initial_managed_treated`, `post_clearcut_planted`, or reviewed managed source state | `ct_candidate` or source state until CT rules are reviewed | no AU or `ORIGIN` change in this base contract | inside `nicf_k3z_core` or accepted future `nicf_expansion_candidate`; active THLB; `IFM=managed`; valid harvest system; reviewed CT response rules | Hook only. CT residual-state and curve behavior remain deferred. |
+| `tr_fert_candidate_hold` | `fertilization` hook | `initial_managed_treated`, `post_clearcut_planted`, or reviewed managed source state | `fert_candidate` or source state until fertilization rules are reviewed | no AU or `ORIGIN` change in this base contract | inside `nicf_k3z_core` or accepted future `nicf_expansion_candidate`; active THLB; `IFM=managed`; valid harvest system; reviewed fertilization response rules | Hook only. Must not double-count fertilization already embedded in TIPSY curves. |
+| `tr_cedar_expansion_hook` | cedar or NICF expansion detail lane | any applicable state | same source state or `deferred_special` only after reviewed lane defines it | no base-contract AU, `IFM`, or `ORIGIN` change | P3.1/P3.2 reviewed hook fields present | Carries future account/report hooks without implementing cedar or expansion treatment semantics. |
+
+## Origin and Eligibility Handling
+
+Initial `ORIGIN` is carried from source evidence into the model-input bundle.
+`grow`, retention movement, operability masks, harvest-system class changes,
+and reporting-group membership do not change `ORIGIN`. The only accepted base
+transition that changes `ORIGIN` is `clearcut_and_plant`, which moves the
+destination stand to `ORIGIN=treated` because planted regeneration uses the
+reviewed treated/managed BatchTIPSY curve lane.
+
+Initial `IFM` is derived from the accepted Phase 2 THLB/scheduling-eligibility
+contract and later scenario masks. `clearcut_and_plant`, CT hooks, and
+fertilization hooks require `IFM=managed`. Retention, reserves, non-THLB, and
+reviewed scenario exclusions can move or hold stands in `IFM=unmanaged`.
+
+`HARVEST_SYSTEM` must be present for scheduled treatment eligibility and should
+remain available for account/reporting outputs. Changing `HARVEST_SYSTEM`
+thresholds in a scenario changes eligibility and cost/reporting signals; it
+does not redefine AU identity or curve provenance.
 
 ## Deferred Transition Semantics
 
@@ -121,5 +140,4 @@ The next tranche should define transition rows for:
 - State classes carry ground/cable/heli harvest systems as operational fields.
 - State classes preserve static AU identity under age, operability, retention,
   and scenario changes.
-- P3.6b can define transitions from this document without starting Phase 4
-  model-input generation.
+- Transition rows are defined without starting Phase 4 model-input generation.
