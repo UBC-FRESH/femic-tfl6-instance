@@ -1159,3 +1159,19 @@
   Patchworks-facing requirements; and
 - kept this slice planning/design only, with no model-input generation,
   ForestModel XML, Matrix Builder, or Patchworks runtime work.
+
+## 2026-06-25 - Added P3.3 AU and yield-curve assignment contract
+
+- opened P3.3 child issue `#28` under Phase 3 parent `#13`;
+- added `planning/tfl6_au_yield_curve_contract.md` to define static TFL 6 AU
+  identity, yield-curve lanes, MP10 TIPSY parameter extraction/crosswalk
+  boundaries, and treatment/operability eligibility interactions;
+- recorded that MP10 age-at-time-0 AU splits are rejected as canonical
+  Patchworks AU identity, while MP10 Tables 27-29 remain accepted TIPSY
+  parameter evidence;
+- incorporated MKRF as an additional curve-smoothing and selected-AU/remap
+  design reference alongside TSA29, and recorded parent FEMIC issue `#187` as
+  the governing shared/default `smoothed_bin_pchip` decision trail; and
+- moved the roadmap edge to P3.3 review while keeping cedar P3.1 open but
+  paused and avoiding model-input generation, XML, Matrix Builder, and
+  Patchworks runtime work.
