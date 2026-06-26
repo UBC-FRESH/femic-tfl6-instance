@@ -25,6 +25,18 @@ selection:
     top_area_coverage: 0.90
   strata: []
 
+source_paths:
+  # Prefer the 2025 BC VRI sources materialized under external/femic-public-data.
+  # Older inventories remain listed only as fallbacks for reproducibility audits.
+  vri_rel_candidates:
+    - "bc/vri/2025/VEG_COMP_LYR_R1_POLY_2025.gdb"
+    - "bc/vri/2024/VEG_COMP_LYR_R1_POLY_2024.gdb"
+    - "bc/vri/2019/VEG_COMP_LYR_R1_POLY.gdb"
+  vdyp_input_rel_candidates:
+    - "bc/vri/2025/VEG_COMP_VDYP7_INPUT_POLY_AND_LAYER_2025.gdb"
+    - "bc/vri/2024/VEG_COMP_VDYP7_INPUT_POLY_AND_LAYER_2024.gdb"
+    - "bc/vri/2019/VEG_COMP_VDYP7_INPUT_POLY_AND_LAYER_2019.gdb"
+
 modes:
   resume: false
   dry_run: false

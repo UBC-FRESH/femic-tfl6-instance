@@ -1355,3 +1355,20 @@
   next P3.4d move is to validate `config/run_profile.tfl6.yaml`, then run the
   standard `femic run --run-config config/run_profile.tfl6.yaml --run-id
   tfl6_stage01a` lane and inspect its VDYP curve/log artifacts.
+
+## 2026-06-25 - Ran P3.4d AFLB feature-ID VDYP first-growth curves
+
+- ran VDYP against the AU-assigned TFL 6 AFLB feature IDs from
+  `planning/tfl6_stand_to_au_review.csv` using the clipped 2025 VDYP polygon
+  and layer parquet inputs under `data/input/tfl_6/`;
+- generated `3,220,953` stand-level VDYP yield rows for `16,659` of the
+  `17,223` AU-assigned AFLB feature IDs;
+- promoted review artifacts to `planning/tfl6_first_growth_au_curves.csv`,
+  `planning/tfl6_first_growth_au_fit_diagnostics.csv`, and
+  `planning/tfl6_first_growth_vdyp_run_summary.md`;
+- accepted `276` AU natural/untreated first-growth curves using the shared
+  `smoothed_bin_pchip` selector and flagged `104` AUs as insufficient-source
+  cases for the next P3.4f fallback/borrowing review; and
+- kept the large stand-level VDYP yield time series and VDYP run logs under
+  ignored `runtime/derived/p3_4_aflb_vdyp_first_growth_run2/` for local audit
+  and did not write Phase 4 model-input bundle outputs.

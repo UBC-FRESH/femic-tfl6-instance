@@ -159,13 +159,14 @@ source-layer and THLB surfaces, without compiling a Patchworks package.
     bundle.
   - [x] P3.4c Crosswalk static TFL 6 AUs to reviewed TIPSY parameter rows or
     explicit fallbacks.
-  - [ ] P3.4d Generate and QA natural/untreated VDYP curves using the shared
-    `smoothed_bin_pchip` first-growth selector unless a reviewed TFL6-specific
-    override is accepted.
+  - [x] P3.4d Generate and QA natural/untreated VDYP curves for AU-assigned
+    AFLB feature IDs using the shared `smoothed_bin_pchip` first-growth
+    selector.
   - [ ] P3.4e Generate and QA treated/managed BatchTIPSY curves from the
     reviewed TIPSY parameter crosswalk.
-  - [ ] P3.4f Lock curve-selection, sparse-support, TIPSY/VDYP overlay, missing
-    mapping, and species-share QA artifacts for Phase 4.
+  - [ ] P3.4f Review low-support natural-curve AUs, lock fallback/borrowing
+    policy, and finish curve-selection, sparse-support, TIPSY/VDYP overlay,
+    missing mapping, and species-share QA artifacts for Phase 4.
 - [ ] P3.5 Define TFL 6 treatment options (`#30`) before transition logic and
   Phase 4 model-input bundle generation.
   - [ ] P3.5a Define treatment IDs, labels, eligibility filters, products,
@@ -315,14 +316,17 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    surfaces; the parent FEMIC submodule pointer has been updated to the merged
    closeout commit.
 2. Continue with Phase 3 / P3.4 on branch
-   `feature/p3-model-design-assumptions`: continue P3.4d from
-   `planning/tfl6_vdyp_curve_generation_plan.md` by using the established
-   Stage 01a lane: first validate `config/run_profile.tfl6.yaml`, then run
-   `femic run --run-config config/run_profile.tfl6.yaml --run-id tfl6_stage01a`
-   and inspect the emitted VDYP curve/log artifacts. Do not introduce a
-   parallel instance-local VDYP runner. Keep this out of `data/model_input_bundle/`;
-   P3.4e owns treated/managed BatchTIPSY curve generation after the TIPSY
-   parameter crosswalk is reviewed enough for executable use.
+   `feature/p3-model-design-assumptions`: P3.4d ran VDYP for the AU-assigned
+   AFLB feature IDs and wrote review artifacts to
+   `planning/tfl6_first_growth_au_curves.csv`,
+   `planning/tfl6_first_growth_au_fit_diagnostics.csv`, and
+   `planning/tfl6_first_growth_vdyp_run_summary.md`. The next bounded P3.4
+   slice is P3.4f: review the `104` insufficient-source natural-curve AUs and
+   decide whether each should remain without a natural curve, receive a
+   reviewed borrowing/fallback rule, or be carried forward as managed-only /
+   insufficient-support evidence. P3.4e owns treated/managed BatchTIPSY curve
+   generation after the TIPSY parameter crosswalk is reviewed enough for
+   executable use.
 3. After P3.4, proceed in order through P3.5 treatment options and P3.6
    transition logic. Do not jump to cedar details, expansion options, or Phase
    4 until these base model mechanics are locked.
