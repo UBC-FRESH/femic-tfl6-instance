@@ -256,6 +256,9 @@ exist.
       `data/model_input_bundle/input_geometry/thlb_current.feather`, write the
       GeoPackage mirror and checkpoint manifest, and record the inspection
       summary in `planning/tfl6_model_input_bundle_geometry_handoff.md`.
+    - [x] P4.1c.2a Repair the GLB-to-AFLB non-forest filter and rerun the
+      corrected AFLB/THLB/NTHLB geometry handoffs before bundle CSV generation
+      resumes (`#36`).
     - [ ] P4.1c.2 Build the first core bundle tables from the AFLB
       resultant-fragment universe, the regenerated THLB/NTHLB managed-share
       state surface, and the accepted Phase 3 model-design contracts.
@@ -425,17 +428,18 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 13. Continue Phase 4 on branch `feature/p4-model-input-bundle`. P4.1c.1 /
     `#17` regenerated the final THLB geometry handoff at
     `data/model_input_bundle/input_geometry/thlb_current.feather`, wrote the
-    GeoPackage mirror and manifest, and confirmed the weighted `thlb_fact`
-    THLB area is `144203.485 ha`. P4.1c.2 must not treat THLB area alone as
-    the full Patchworks stand universe. The stand universe is the AFLB
-    resultant-fragment surface; THLB is the managed subset, and
-    `NTHLB = AFLB - THLB` remains unmanaged/full-retention forest that still
-    needs untreated VDYP curves. The attempted AFLB handoff from
-    `aflb_checkpoint.6a351f3a223a` was invalidated because the runner-labeled
-    AFLB checkpoint still contains non-treed/non-forested BCLCS rows. The
-    current executable edge is to repair and rerun the GLB-to-AFLB
-    non-forest/non-productive filter before resuming P4.1c.2 bundle CSV
-    generation.
+    GeoPackage mirror and manifest. P4.1c.2a / `#36` then repaired the
+    GLB-to-AFLB non-forest filter after the attempted AFLB handoff from
+    `aflb_checkpoint.6a351f3a223a` was invalidated. The corrected AFLB handoff
+    has `25019` rows, `191168.597 ha`, and `0.000 ha` of
+    `bclcs_level_1 in {N, U}` contamination. The corrected weighted
+    `thlb_fact` THLB area is `139995.798 ha`, `2.57%` above the scaled current
+    benchmark and inside the accepted teaching tolerance. P4.1c.2 must not
+    treat THLB area alone as the full Patchworks stand universe. The stand
+    universe is the AFLB resultant-fragment surface; THLB is the managed
+    subset, and `NTHLB = AFLB - THLB` remains unmanaged/full-retention forest
+    that still needs untreated VDYP curves. The current executable edge is to
+    resume P4.1c.2 bundle CSV generation from the corrected AFLB/THLB handoff.
 14. P5.3a / `#21` publication plumbing is complete for the current seed docs,
     but P5.3 stays open for final teaching-docs expansion after Phase 4 runtime
     package evidence exists.

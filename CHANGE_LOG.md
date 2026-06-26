@@ -1858,3 +1858,23 @@
   permissive for the Patchworks stand universe; and
 - blocked core bundle CSV generation until the GLB-to-AFLB lane is corrected
   and rerun.
+
+## 2026-06-26 - Repaired P4.1c GLB-to-AFLB filter and regenerated handoffs
+
+- opened P4.1c blocker issue `#36` and linked it to Phase 4 parent `#14` and
+  active model-input bundle issue `#17`;
+- corrected `tfl6_nd_010_non_forest` so the executable rule removes BCLCS
+  level 1 non-treed/unclassified rows as well as BCLCS level 2
+  non-vegetated, water, or unreported rows, while keeping
+  `for_mgmt_land_base_ind == N` as QA evidence only;
+- reran the reconstructed THLB netdown from
+  `data/input/tfl_6/vri_2025_r1_poly_tfl6.gpkg`;
+- promoted the corrected AFLB handoff to
+  `data/model_input_bundle/input_geometry/aflb_current.feather` and
+  `aflb_current.gpkg`, with `25019` rows, `191168.597 ha`, zero invalid
+  geometries, and `0.000 ha` of `bclcs_level_1 in {N, U}` contamination;
+- regenerated the THLB handoff with weighted `thlb_fact` area
+  `139995.798 ha`, `2.57%` above the scaled current-AOI benchmark and inside
+  the accepted teaching tolerance; and
+- marked P4.1c.2a complete in `ROADMAP.md`, leaving P4.1c.2 open for core
+  model-input bundle CSV generation from the corrected AFLB/THLB handoff.
