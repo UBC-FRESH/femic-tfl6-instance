@@ -95,14 +95,58 @@ model-input generation:
 
 | Signal | First definition | Purpose | Status |
 | --- | --- | --- | --- |
-| `cedar_leading` | Primary species is western redcedar (`Cw` / source code `C`) or yellow-cedar (`Yc` / source code `Cy`) depending on accepted R1/VDYP species coding. | Separate cedar-dominant stands for reporting, products, and treatment review. | Draft; verify exact R1/VDYP species columns and code values in P3.1b. |
-| `western_redcedar_leading` | Primary species is western redcedar. | Preserve Cw-specific cultural and utility-pole signals. | Draft. |
-| `yellow_cedar_leading` | Primary species is yellow-cedar/cypress. | Keep yellow-cedar visible without conflating it with Cw cultural cedar. | Draft. |
-| `cedar_present` | Any accepted species component includes Cw or Cy above a reviewed percent threshold. | Catch mixed stands where cedar is not leading but may matter for products or culture. | Review required; first candidate threshold should be `>= 20%` component share. |
-| `old_cedar` | Cedar-leading or cedar-present stand above a reviewed age threshold. | Approximate old-growth cedar reporting where direct monumental cedar inventory is unavailable. | Review required; first candidate threshold should use age class 8 / `>= 141 years` to align with MP10 age-class reporting. |
-| `large_cedar_proxy` | Cedar-leading or cedar-present stand above reviewed diameter/height proxy thresholds if source fields are available. | Proxy for monumental/pole-quality candidates and cultural-cedar availability. | Review required; do not accept until field availability is confirmed. |
-| `cedar_cultural_reserve_context` | Cedar signal intersecting non-THLB, reserve, or otherwise unmanaged landbase context. | Report likely cultural cedar availability outside scheduled timber production. | Draft; should be reporting/accounting first, not a new THLB exclusion. |
-| `cedar_harvest_candidate` | Cedar signal inside accepted THLB and eligible managed area. | Report where cedar supply may enter harvest scheduling. | Draft; depends on Phase 4 managed/unmanaged/origin assignment. |
+| `cedar_leading` | Primary species is western redcedar (`CW`) or yellow-cedar (`YC`) in the accepted R1/VDYP-derived species fields. | Separate cedar-dominant stands for reporting, products, and treatment review. | Accepted for P3.1b as a derived signal, not an AU key. |
+| `western_redcedar_leading` | `species_cd_1 == CW`. | Preserve Cw-specific cultural and utility-pole signals. | Accepted for P3.1b as a derived signal. |
+| `yellow_cedar_leading` | `species_cd_1 == YC`. | Keep yellow-cedar visible without conflating it with Cw cultural cedar. | Accepted for P3.1b as a derived signal. |
+| `cedar_present` | Sum `species_pct_1..6` where the matching `species_cd_1..6` value is `CW` or `YC`; flag stands with cedar share `>= 20%`. | Catch mixed stands where cedar is not leading but may matter for products or culture. | Accepted for P3.1b as the first threshold. |
+| `old_cedar` | `cedar_present` and either `est_age_spp1 >= 141` or `est_age_spp2 >= 141`. | Approximate old-growth cedar reporting where direct monumental cedar inventory is unavailable. | Accepted for P3.1b as the first age proxy. |
+| `large_cedar_proxy` | Cedar-leading or cedar-present stand above reviewed diameter/height proxy thresholds if source fields are available. | Proxy for monumental/pole-quality candidates and cultural-cedar availability. | Unresolved; no accepted DBH or pole-grade threshold is locked in P3.1b. |
+| `cedar_cultural_reserve_context` | Cedar signal intersecting non-THLB, retained, reserve, or otherwise unmanaged landbase context once Phase 4 assigns final `IFM`/retention fields. | Report likely cultural cedar availability outside scheduled timber production. | Accepted as a reporting/accounting context, not a new THLB exclusion. |
+| `cedar_harvest_candidate` | Cedar signal inside accepted THLB and eligible managed area once Phase 4 assigns final `IFM=managed`. | Report where cedar supply may enter harvest scheduling. | Accepted as a reporting/accounting context; depends on Phase 4 bundle fields. |
+
+## P3.1b Source-Field Lock
+
+P3.1b locks cedar source fields against the accepted Phase 3 review surface
+`planning/tfl6_stand_to_au_review.csv`. That surface was built from the current
+TFL 6 R1 geometry plus VDYP7 primary-layer attribution and is already used by
+the static AU and yield-curve work.
+
+Accepted cedar source fields for the first model-input bundle are:
+
+| Field family | Accepted fields | P3.1b use |
+| --- | --- | --- |
+| Stand key and area | `feature_id`, `map_id`, `polygon_id`, `area_ha` | carry cedar signals back to stands and report area by signal |
+| BEC/reporting strata | `bec_group`, `bec_zone_code`, `bec_subzone`, `bec_variant`, `bec_phase` | report cedar by ecological context without changing AU identity |
+| Species codes | `species_cd_1` through `species_cd_6` | identify `CW` and `YC` leading or component cedar |
+| Species percentages | `species_pct_1` through `species_pct_6` | compute total cedar component share for `cedar_present` |
+| Age proxy | `est_age_spp1`, `est_age_spp2` | compute first `old_cedar` proxy at `>= 141` years |
+| Height/supporting proxy | `est_height_spp1`, `est_height_spp2` | carry for later large-cedar and utility-pole review, but do not lock thresholds yet |
+| Treatment-eligibility support | `for_mgmt_land_base_ind`, later Phase 4 `IFM` fields | distinguish managed harvest candidates from reserve/unmanaged contexts |
+| AU/yield support | `au_id`, `stratum_code`, `selected_top_90_stratum` | report cedar against accepted AU/yield surfaces without using cedar in AU identity |
+
+Gross P3.1b diagnostics from `planning/tfl6_stand_to_au_review.csv`:
+
+| Signal | Rows | Gross area |
+| --- | ---: | ---: |
+| `western_redcedar_leading` | `3868` | `27980.000 ha` |
+| `yellow_cedar_leading` | `659` | `5446.870 ha` |
+| `cedar_leading` | `4527` | `33426.800 ha` |
+| `cedar_present >= 20%` | `8454` | `62963.700 ha` |
+| `old_cedar` using `cedar_present >= 20%` and age `>= 141` | `3838` | `23058.300 ha` |
+| `cedar_present >= 20%` inside selected top-90 strata | `7255` | `54734.200 ha` |
+
+These are gross review-surface diagnostics, not final Patchworks account values.
+Phase 4 must recompute them against the final model-input bundle after THLB,
+`IFM`, retention, embedded NICF/K3Z identity, and any accepted expansion
+candidate fields are carried into the bundle.
+
+P3.1b explicitly does not lock:
+
+- DBH or pole-grade thresholds for `large_cedar_proxy`;
+- cedar-specific treatments or fertilization/CT response assumptions;
+- cedar-specific yield-curve families beyond the existing AU/yield surfaces;
+- cultural cedar as a new base THLB exclusion; or
+- any AU identity changes based on cedar status.
 
 ## Cultural Reserve Design
 
@@ -140,7 +184,7 @@ Minimum first-bundle requirements:
 - a product/account surface that can distinguish generic cedar volume from
   candidate high-value utility-pole potential.
 
-Open review questions for P3.1b/P3.1c:
+Open review questions for P3.1c:
 
 - Which diameter, height, age, or volume thresholds are defensible as a first
   utility-pole proxy?
@@ -189,6 +233,6 @@ Patchworks-facing surfaces later:
 P3.1a accepts only the evidence base and first design questions. It does not
 lock source fields, thresholds, products, targets, or treatments.
 
-P3.1b should verify the exact R1/VDYP fields and candidate thresholds for the
-cedar signals. P3.1c should turn the accepted signals into explicit
-Patchworks-facing product/account/report requirements.
+P3.1b accepts the first source fields and derived signals above. P3.1c should
+turn the accepted signals into explicit Patchworks-facing product, account,
+treatment-hook, stakeholder-comparison, and report requirements.

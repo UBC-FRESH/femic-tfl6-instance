@@ -1573,3 +1573,17 @@
 - marked P3.6 and P3.6e complete in `ROADMAP.md`, leaving the remaining Phase
   3 design work to P3.1 cedar source-field/signal review, P3.2 embedded
   K3Z/NICF identity, and P3.7 run-profile/model-input contract reconciliation.
+
+## 2026-06-26 - Locked P3.1b cedar source fields and signals
+
+- updated `planning/tfl6_cedar_signal_design.md` to lock cedar source fields
+  against the accepted `planning/tfl6_stand_to_au_review.csv` surface, using
+  `species_cd_1..6`, `species_pct_1..6`, age proxy fields, BEC/reporting
+  fields, and AU/yield support fields without adding cedar to AU identity;
+- accepted `CW` and `YC` leading/component cedar signals, the first
+  `cedar_present >= 20%` threshold, and the `old_cedar >= 141` age proxy, with
+  gross review diagnostics for cedar-leading, cedar-present, and old-cedar
+  area; and
+- marked P3.1b complete in `ROADMAP.md`, leaving P3.1c as the next bounded
+  cedar design tranche for Patchworks-facing cedar products, accounts,
+  treatment hooks, stakeholder-comparison signals, and report requirements.

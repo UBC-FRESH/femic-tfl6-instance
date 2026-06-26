@@ -202,7 +202,7 @@ source-layer and THLB surfaces, without compiling a Patchworks package.
   transition-logic locks.
   - [x] P3.1a Record the first cedar evidence/design note in
     `planning/tfl6_cedar_signal_design.md` without generating model inputs.
-  - [ ] P3.1b Review and lock cedar source fields, derived signals, and
+  - [x] P3.1b Review and lock cedar source fields, derived signals, and
     provisional unresolved assumptions.
   - [ ] P3.1c Define Patchworks-facing cedar products, accounts, treatment
     hooks, stakeholder-comparison signals, and report requirements for the
@@ -321,81 +321,24 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    source-layer, THLB smoke, benchmark-tolerance, and Sphinx audit-trail
    surfaces; the parent FEMIC submodule pointer has been updated to the merged
    closeout commit.
-2. Continue with Phase 3 / P3.4 on branch
-   `feature/p3-model-design-assumptions`: P3.4d ran VDYP for the AU-assigned
-   AFLB feature IDs and wrote review artifacts to
-   `planning/tfl6_first_growth_au_curves.csv`,
-   `planning/tfl6_first_growth_au_fit_diagnostics.csv`, and
-   `planning/tfl6_first_growth_vdyp_run_summary.md`; canonical selected-AU
-   plots are in `plots/vdyp_lmh_tfl6-*.png` and
-   `plots/vdyp_fitdiag_tfl6-*.png`, with the manifest in
-   `planning/tfl6_first_growth_plot_manifest.{csv,md}`. The selected curve
-   surface now matches the P3.4b strata plot: `26` selected top-area base
-   strata and `77` selected AU curve bins. Non-selected AU bins are remapped in
-   `planning/tfl6_first_growth_au_remap_audit.{csv,md}`. P3.4f reviewed the
-   selected-set shape diagnostics (`45` review rows, `32` OK rows, no critical
-   selected curves) and accepted the current VDYP smoothing/tail behavior as
-   good enough to proceed with Phase 3. A smoothing/tail-constraint revisit
-   remains a deferred pre-bundle cleanup option, not a blocker for P3.4e,
-   P3.5, or P3.6. P3.4e1 emitted the selected-AU BTC handoff at
-   `data/03_input-tfl6.csv` with curve-ID mapping in
-   `planning/tfl6_tipsy_btc_curve_id_map.csv` and translation-policy review in
-   `planning/tfl6_tipsy_btc_handoff_manifest.{json,md}`. P3.4e2 ran BTC from
-   that handoff, wrote `data/04_output-tfl6.csv` and `data/04_error-tfl6.csv`,
-   parsed `8316` treated-curve rows to
-   `planning/tfl6_tipsy_managed_curves.csv`, and generated `77`
-   treated-vs-natural overlay plots with diagnostics in
-   `planning/tfl6_tipsy_managed_curve_diagnostics.{csv,md}`. The cleaned BTC
-   error file has `0` error rows. The remaining treated-curve caveat is
-   row-level: high treated-to-natural ratios are concentrated in small
-   fallback `CWHvm1_DR` rows, while dominant selected strata are good enough to
-   proceed with treatment-option design. The Sphinx docs now expose the Phase
-   3 AU/yield surfaces in `docs/phase3-au-yield-curves.rst`, including the
-   AU definition contract, strata plot, VDYP L/M/H plots, VDYP fit diagnostics,
-   and treated TIPSY-vs-VDYP overlays.
-3. Continue Phase 3 in order with P3.6 transition logic. P3.5 locked the base
-   treatment-option vocabulary in `planning/tfl6_treatment_option_contract.md`
-   and `config/silviculture.tfl6.yaml`: `clearcut_and_plant` is the only
-   accepted whole-TFL 6 base scheduled treatment and `grow` is implicit state
-   behavior. CT and fertilization are accepted only as K3Z/NICF-core and future
-   NICF-expansion group-gated scenario treatments, with response/transition/
-   product/account blockers still unresolved before activation. Harvest system
-   must be carried throughout TFL 6 as a stand-level operational/reporting
-   attribute with `ground_based`, `cable`, and `heli` classes; it is not part
-   of AU identity and does not create yield-curve families by itself. PCT,
-   cedar-specific treatments, and standalone NICF expansion actions remain
-   deferred behind explicit review blockers. Do not jump to cedar details,
-   expansion options, or Phase 4 until P3.6 locks state transitions against
-   this treatment vocabulary. P3.6a now defines the stand-state classes and
-   semantic fields in `planning/tfl6_state_transition_contract.md`, including
-   separate `IFM`, `ORIGIN`, `SILV_STATE`, `RETENTION`, `HARVEST_SYSTEM`, and
-   `TFL6_GROUP` fields. P3.6b now defines transition rows for grow,
-   `clearcut_and_plant`, retained/unmanaged movement, origin-provenance
-   handling, operability sensitivity, and gated CT/fert hook points without
-   starting Phase 4. P3.6c verifies that those rows consume the P3.5 treatment
-   vocabulary without redefining treatment semantics: `clearcut_and_plant`
-   remains the only whole-TFL 6 base scheduled treatment, CT/fertilization
-   remain K3Z/NICF-gated hooks, `IFM` stays treatment eligibility, `ORIGIN`
-   stays curve provenance, harvest system stays operational/reporting context,
-   and cedar/expansion treatment details remain deferred. P3.6d records cedar
-   and embedded NICF/K3Z expansion hook fields for P4 handoff while keeping
-   cedar treatment design in P3.1 and expansion-candidate design in P3.2. The
-   P3.6e deferred-transition lock records blockers and owner lanes for CT
-   residual-state transitions, fertilization response transitions,
-   cedar-specific transitions, NICF expansion scenario transitions,
-   harvest-system reassignment, operability state movement, natural-regeneration
-   alternatives, and cedar/cultural reserve scenario exclusions. P3.6 is now
-   complete. The next bounded tranche returns to the remaining Phase 3 design
-   lanes: P3.1b cedar source-field/signal review or P3.2b embedded K3Z/NICF
-   overlay identity, unless the maintainer explicitly chooses P3.7 first.
-4. Keep P3.1 cedar design open but paused until P3.3-P3.6 are reviewed/locked
-   or explicitly narrowed by the maintainer.
-5. Keep P3.2 embedded NICF/K3Z identity and expansion design idle until
-   P3.3-P3.6 and the necessary cedar hooks are reviewed/locked or explicitly
-   paused by the maintainer. When resumed, P3.2 must preserve K3Z/NICF core
-   and expansion-candidate identities as Patchworks grouping/reporting
-   attributes without redefining AU identity.
-6. Keep Phase 4 runtime issue `#10` idle until Phase 3 design assumptions and
-   P4.1 model-input bundle prerequisites are accepted. In particular, do not
-   start P4.1 until P3.3, P3.4, P3.5, and P3.6 are reviewed/locked or
+2. Continue Phase 3 on branch `feature/p3-model-design-assumptions`. P3.3
+   through P3.6 are complete: AU identity, untreated VDYP curves, treated
+   BatchTIPSY curves, treatment options, and state-transition logic are locked
+   for current design purposes. P3.4 still carries a non-blocking deferred
+   option to revisit VDYP smoothing/tail constraints before the final Phase 4
+   model-input bundle lock.
+3. P3.1b is complete. Cedar source fields and derived signal definitions are
+   locked in `planning/tfl6_cedar_signal_design.md` using the accepted
+   `planning/tfl6_stand_to_au_review.csv` surface. P3.1b accepts `CW`/`YC`
+   leading and component signals, the `>= 20%` cedar-present threshold, and the
+   `>= 141` age proxy for `old_cedar`. It leaves `large_cedar_proxy`,
+   utility-pole thresholds, cedar-specific treatments, and cedar-specific
+   products/accounts to P3.1c.
+4. The next bounded tranche is P3.1c: define Patchworks-facing cedar products,
+   accounts, treatment hooks, stakeholder-comparison signals, and report
+   requirements for the first model-input bundle. Keep this as design only:
+   no Phase 4 bundle generation, XML, Matrix Builder, or runtime package work.
+5. After P3.1 closes, continue with P3.2 embedded NICF/K3Z identity and
+   expansion design, then P3.7 run-profile/model-input contract reconciliation.
+   Phase 4 remains blocked until P3.1, P3.2, and P3.7 are complete or
    explicitly narrowed by the maintainer.
