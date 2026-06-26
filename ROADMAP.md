@@ -249,7 +249,7 @@ exist.
     the bundle input manifest.
   - [x] P4.1b Define generated model-input bundle paths and table roles before
     writing bundle outputs.
-  - [ ] P4.1c Build the first reviewed model-input bundle from the accepted
+  - [x] P4.1c Build the first reviewed model-input bundle from the accepted
     THLB, AU, curve, treatment, transition, cedar, and embedded-identity
     contracts.
     - [x] P4.1c.1 Regenerate the final THLB geometry handoff at
@@ -259,7 +259,7 @@ exist.
     - [x] P4.1c.2a Repair the GLB-to-AFLB non-forest filter and rerun the
       corrected AFLB/THLB/NTHLB geometry handoffs before bundle CSV generation
       resumes (`#36`).
-    - [ ] P4.1c.2 Build the first core bundle tables from the AFLB
+    - [x] P4.1c.2 Build the first core bundle tables from the AFLB
       resultant-fragment universe, the regenerated THLB/NTHLB managed-share
       state surface, and the accepted Phase 3 model-design contracts.
   - [ ] P4.1d Run lightweight bundle QA for readability, required fields,
@@ -438,8 +438,19 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
     treat THLB area alone as the full Patchworks stand universe. The stand
     universe is the AFLB resultant-fragment surface; THLB is the managed
     subset, and `NTHLB = AFLB - THLB` remains unmanaged/full-retention forest
-    that still needs untreated VDYP curves. The current executable edge is to
-    resume P4.1c.2 bundle CSV generation from the corrected AFLB/THLB handoff.
-14. P5.3a / `#21` publication plumbing is complete for the current seed docs,
+    that still needs untreated VDYP curves.
+14. P4.1c.2 / `#17` is complete. The first generated core bundle tables are
+    written under ignored `data/model_input_bundle/` output space and audited in
+    `planning/tfl6_model_input_bundle_core_tables.md`. The bundle contains
+    `25019` AFLB stand rows, `191168.597 ha` AFLB, `139995.798 ha` THLB,
+    `51172.799 ha` NTHLB, no missing natural or treated curve assignments, and
+    warning-only sparse TIPSY fallback for `136` rows / `749.396 ha`. All
+    harvest-system classes remain explicit `unassigned_review_required`
+    placeholders pending reviewed operability/ground-cable-heli assignment, so
+    final clearcut-and-plant eligibility remains blocked. The current
+    executable edge is P4.1d lightweight bundle QA; do not start ForestModel
+    XML, Matrix Builder, or Patchworks runtime work until P4.1d passes or the
+    maintainer explicitly narrows the gate.
+15. P5.3a / `#21` publication plumbing is complete for the current seed docs,
     but P5.3 stays open for final teaching-docs expansion after Phase 4 runtime
     package evidence exists.

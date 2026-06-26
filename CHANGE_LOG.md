@@ -1878,3 +1878,19 @@
   the accepted teaching tolerance; and
 - marked P4.1c.2a complete in `ROADMAP.md`, leaving P4.1c.2 open for core
   model-input bundle CSV generation from the corrected AFLB/THLB handoff.
+
+## 2026-06-26 - Generated P4.1c.2 core model-input bundle tables
+
+- generated the first core model-input bundle tables under ignored
+  `data/model_input_bundle/` output space from the corrected AFLB/THLB handoffs;
+- recorded the tracked audit trail in
+  `planning/tfl6_model_input_bundle_core_tables.md`;
+- confirmed the generated bundle has `25019` AFLB stand rows,
+  `191168.597 ha` AFLB, `139995.798 ha` THLB, and `51172.799 ha` NTHLB;
+- confirmed all stand rows have non-null natural and treated curve assignments,
+  including `136` rows / `749.396 ha` that use warning-only sparse TIPSY curve
+  fallback; and
+- kept ForestModel XML, Matrix Builder, Patchworks runtime packaging, and
+  publication out of scope. P4.1d lightweight bundle QA is the next gate, with
+  harvest-system assignment still explicitly deferred as
+  `unassigned_review_required`.
