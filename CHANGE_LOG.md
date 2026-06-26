@@ -1317,3 +1317,24 @@
 - marked P3.4c complete in `ROADMAP.md` and moved Current Next Steps to P3.4d
   natural/untreated VDYP curve generation and QA without writing the
   model-input bundle.
+
+## 2026-06-25 - Planned the P3.4d natural VDYP curve-generation run
+
+- added `planning/tfl6_vdyp_curve_generation_plan.md` to define the bounded
+  P3.4d execution path for natural/untreated VDYP curve generation;
+- confirmed the shared selector authority is
+  `femic.pipeline.au_first_growth.select_au_first_growth_curve` with the
+  `smoothed_bin_pchip` path governed by parent FEMIC issue `#187`;
+- recorded that the current TFL 6 instance has accepted R1 geometry, VDYP7
+  source attribute parquet files, the static AU universe, and the stand-to-AU
+  review table, but does not yet have the stand-level
+  `FEATURE_ID`/`PRJ_TOTAL_AGE`/`PRJ_VOL_DWB` VDYP yield time-series required by
+  the first-growth selector;
+- defined review-only output paths under `planning/` and `plots/`, explicitly
+  keeping P3.4d out of `data/model_input_bundle/`;
+- listed QA gates for missing-curve rationales, sparse-support diagnostics,
+  L/M/H envelope plots, fit diagnostics, and Patchworks semantics guardrails;
+  and
+- updated `ROADMAP.md` Current Next Steps so the next bounded P3.4d move is to
+  materialize or adapt the stand-level VDYP yield time-series before fitting
+  natural curves.

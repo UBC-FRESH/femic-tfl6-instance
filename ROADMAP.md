@@ -315,12 +315,12 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    surfaces; the parent FEMIC submodule pointer has been updated to the merged
    closeout commit.
 2. Continue with Phase 3 / P3.4 on branch
-   `feature/p3-model-design-assumptions`: complete P3.4d by generating and QAing
-   natural/untreated VDYP curves for the reviewed TFL 6 AU universe using the
-   shared `smoothed_bin_pchip` selector unless a reviewed TFL6-specific override
-   is accepted. Keep this out of `data/model_input_bundle/`; P3.4e owns
-   treated/managed BatchTIPSY curve generation after the TIPSY parameter
-   crosswalk is reviewed enough for executable use.
+   `feature/p3-model-design-assumptions`: continue P3.4d from
+   `planning/tfl6_vdyp_curve_generation_plan.md` by materializing or adapting
+   the stand-level VDYP yield time-series required by the shared
+   `smoothed_bin_pchip` selector. Keep this out of `data/model_input_bundle/`;
+   P3.4e owns treated/managed BatchTIPSY curve generation after the TIPSY
+   parameter crosswalk is reviewed enough for executable use.
 3. After P3.4, proceed in order through P3.5 treatment options and P3.6
    transition logic. Do not jump to cedar details, expansion options, or Phase
    4 until these base model mechanics are locked.
