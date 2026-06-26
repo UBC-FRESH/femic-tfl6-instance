@@ -1497,3 +1497,14 @@
   only inside the K3Z/NICF core block and future accepted NICF expansion
   blocks, with response, residual-state, transition, product, and account
   blockers still requiring review before activation.
+
+## 2026-06-26 - Added TFL-wide harvest-system classes to P3.5
+
+- updated the P3.5 treatment contract so ground-based, cable-yarding, and
+  heli-logging systems are explicit stand-level operational attributes carried
+  throughout the TFL 6 AOI;
+- added harvest-system eligibility and reporting hooks to
+  `config/silviculture.tfl6.yaml`; and
+- recorded that harvest system affects treatment eligibility, delivered-cost
+  proxies, scenario controls, and teaching reports, but is not part of AU
+  identity and does not create separate yield-curve families by itself.

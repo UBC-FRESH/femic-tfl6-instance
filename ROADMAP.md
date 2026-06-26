@@ -359,7 +359,10 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    accepted whole-TFL 6 base scheduled treatment and `grow` is implicit state
    behavior. CT and fertilization are accepted only as K3Z/NICF-core and future
    NICF-expansion group-gated scenario treatments, with response/transition/
-   product/account blockers still unresolved before activation. PCT,
+   product/account blockers still unresolved before activation. Harvest system
+   must be carried throughout TFL 6 as a stand-level operational/reporting
+   attribute with `ground_based`, `cable`, and `heli` classes; it is not part
+   of AU identity and does not create yield-curve families by itself. PCT,
    cedar-specific treatments, and standalone NICF expansion actions remain
    deferred behind explicit review blockers. Do not jump to cedar details,
    expansion options, or Phase 4 until P3.6 locks state transitions against
