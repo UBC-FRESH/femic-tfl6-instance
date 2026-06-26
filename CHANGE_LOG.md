@@ -1284,13 +1284,15 @@
 - generated the standard FEMIC strata distribution diagnostic at
   `plots/strata-tfl6.{png,pdf}` using
   `femic.pipeline.plots.render_strata_distribution_plot`, matching the K3Z and
-  MKRF instance plot specification;
-- recorded 17,223 yieldable review rows, 136 static strata, 18 selected
-  top-area strata covering 90.267% of the yieldable review area, 297 total
-  review AU bins, and 53 selected top-area AU bins;
-- kept AU identity limited to BEC/subzone group, top-two species combo, and
-  L/M/H site-index review class, without encoding THLB, operability, treatment
-  eligibility, cedar, retention, or NICF expansion state; and
+  MKRF instance plot specification, with the SI axis widened to `0-55` for the
+  high-productivity TFL 6 coastal rainforest source data;
+- recorded 17,223 yieldable review rows, 174 static strata, 26 selected
+  top-area strata covering 90.397% of the yieldable review area, 384 total
+  review AU bins, and 77 selected top-area AU bins;
+- kept AU identity limited to BEC/subzone/variant/phase group, top-two species
+  combo, and L/M/H site-index review class, without encoding THLB,
+  operability, treatment eligibility, cedar, retention, or NICF expansion
+  state; and
 - marked P3.4b complete in `ROADMAP.md` and moved Current Next Steps to P3.4c
   MP10 TIPSY parameter crosswalk work without writing the model-input bundle or
   generating curves.

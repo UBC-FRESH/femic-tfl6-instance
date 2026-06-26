@@ -24,11 +24,11 @@ AU identity.
 
 | Component | Review policy |
 | --- | --- |
-| BEC grouping | zone plus subzone, matching `stratification.bec_grouping: subzone` |
-| Species combo | top two non-null VDYP primary-layer species by percentage/listed order |
+| BEC grouping | zone plus subzone plus variant plus phase where present; current R1 phase is null for all rows |
+| Species combo | top two non-null VDYP primary-layer species by percentage/listed order, rendered as `species1+species2` |
 | Top-area threshold | select the smallest ranked stratum set whose cumulative area reaches at least `90%` of the yieldable review universe |
 | SI class | stratum-local `estimated_site_index` p35/p65 breakpoints into `L`, `M`, and `H` review bins |
-| AU key | `bec_group + species_combo + si_class` |
+| AU key | `bec_zone + bec_subzone + bec_variant + bec_phase + species_combo + si_class` |
 
 The SI split is intentionally review-oriented. P3.4d/P3.4f still own the final
 curve-bin policy, sparse-bin rescue, and curve-selection diagnostics.
@@ -45,11 +45,11 @@ curve-bin policy, sparse-bin rescue, and curve-selection diagnostics.
 | Yieldable review rows | `17223` |
 | Yieldable review area | `135,692.628 ha` |
 | Excluded review area | `81,350.091 ha` |
-| Static strata | `136` |
-| Selected top-area strata | `18` |
-| Selected top-area coverage | `90.267%` |
-| All review AU count | `297` |
-| Selected top-area AU count | `53` |
+| Static strata | `174` |
+| Selected top-area strata | `26` |
+| Selected top-area coverage | `90.397%` |
+| All review AU count | `384` |
+| Selected top-area AU count | `77` |
 
 ## Exclusion Diagnostics
 
@@ -67,73 +67,74 @@ single exclusion total.
 
 The P3.4b diagnostic uses `femic.pipeline.plots.render_strata_distribution_plot`,
 the same horizontal relative-abundance plus site-index violin specification used
-by the K3Z and MKRF instance examples.
+by the K3Z and MKRF instance examples. The SI axis is widened for TFL 6 because
+site indexes are high in this productive coastal rainforest area.
 
 | Plot field | Value |
 | --- | ---: |
 | PNG | `plots/strata-tfl6.png` |
 | PDF | `plots/strata-tfl6.pdf` |
-| Selected strata plotted | `18` |
-| SI axis window | `0.0-30.0` |
-| Total plotted-candidate points | `15131` |
-| In-window points | `14042` |
+| Selected strata plotted | `26` |
+| SI axis window | `0.0-55.0` |
+| Total plotted-candidate points | `15290` |
+| In-window points | `15290` |
 | Sampled strip points plotted | `3000` |
-| High-SI points clipped from view | `1089` |
+| High-SI points clipped from view | `0` |
 
 ## Top Strata By Area
 
 |   area_rank | stratum_code   | bec_group   | species_combo   |   stand_count |   area_ha | area_share   | cumulative_area_share   | selected_top_90   |
 |------------:|:---------------|:------------|:----------------|--------------:|----------:|:-------------|:------------------------|:------------------|
-|           1 | CWHVM_HW_BA    | CWHvm       | HW_BA           |          3783 |   34839.1 | 25.675%      | 25.675%                 | yes               |
-|           2 | CWHVM_HW_CW    | CWHvm       | HW_CW           |          3450 |   27333.5 | 20.144%      | 45.819%                 | yes               |
-|           3 | CWHVM_CW_HW    | CWHvm       | CW_HW           |          2372 |   17477.9 | 12.880%      | 58.699%                 | yes               |
-|           4 | CWHVM_HW       | CWHvm       | HW              |          1185 |    8014.2 | 5.906%       | 64.605%                 | yes               |
-|           5 | CWHVM_HW_SS    | CWHvm       | HW_SS           |           777 |    7339.9 | 5.409%       | 70.015%                 | yes               |
-|           6 | CWHVM_HW_DR    | CWHvm       | HW_DR           |           452 |    3264   | 2.405%       | 72.420%                 | yes               |
-|           7 | CWHVH_CW_HW    | CWHvh       | CW_HW           |           435 |    3106.1 | 2.289%       | 74.709%                 | yes               |
-|           8 | CWHVM_CW       | CWHvm       | CW              |           475 |    2757.6 | 2.032%       | 76.741%                 | yes               |
-|           9 | CWHVM_CW_YC    | CWHvm       | CW_YC           |           236 |    2555.4 | 1.883%       | 78.625%                 | yes               |
-|          10 | CWHVM_HW_FDC   | CWHvm       | HW_FDC          |           167 |    2232.7 | 1.645%       | 80.270%                 | yes               |
-|          11 | CWHVM_BA_HW    | CWHvm       | BA_HW           |           268 |    2135.1 | 1.573%       | 81.844%                 | yes               |
-|          12 | CWHVM_HW_FD    | CWHvm       | HW_FD           |           194 |    2055.5 | 1.515%       | 83.358%                 | yes               |
-|          13 | CWHVH_HW_CW    | CWHvh       | HW_CW           |           291 |    1947.7 | 1.435%       | 84.794%                 | yes               |
-|          14 | CWHVM_YC_HW    | CWHvm       | YC_HW           |           193 |    1741.4 | 1.283%       | 86.077%                 | yes               |
-|          15 | CWHVM_SS_HW    | CWHvm       | SS_HW           |           159 |    1649.5 | 1.216%       | 87.293%                 | yes               |
-|          16 | CWHVM_DR_HW    | CWHvm       | DR_HW           |           334 |    1476.1 | 1.088%       | 88.380%                 | yes               |
-|          17 | CWHVM_HW_YC    | CWHvm       | HW_YC           |           212 |    1406.6 | 1.037%       | 89.417%                 | yes               |
-|          18 | CWHVM_YC_CW    | CWHvm       | YC_CW           |           148 |    1153.9 | 0.850%       | 90.267%                 | yes               |
-|          19 | CWHVH_HW_BA    | CWHvh       | HW_BA           |           172 |     981   | 0.723%       | 90.990%                 | no                |
-|          20 | CWHVH_HW_SS    | CWHvh       | HW_SS           |           123 |     887.8 | 0.654%       | 91.645%                 | no                |
+|           1 | CWHvm1_HW+BA   | CWHvm1      | HW+BA           |          2705 |   25748.6 | 18.976%      | 18.976%                 | yes               |
+|           2 | CWHvm1_HW+CW   | CWHvm1      | HW+CW           |          3063 |   24593.8 | 18.125%      | 37.100%                 | yes               |
+|           3 | CWHvm1_CW+HW   | CWHvm1      | CW+HW           |          2212 |   16277.5 | 11.996%      | 49.096%                 | yes               |
+|           4 | CWHvm2_HW+BA   | CWHvm2      | HW+BA           |          1078 |    9090.5 | 6.699%       | 55.795%                 | yes               |
+|           5 | CWHvm1_HW      | CWHvm1      | HW              |          1046 |    7366.4 | 5.429%       | 61.224%                 | yes               |
+|           6 | CWHvm1_HW+SS   | CWHvm1      | HW+SS           |           772 |    7304.3 | 5.383%       | 66.607%                 | yes               |
+|           7 | CWHvh1_CW+HW   | CWHvh1      | CW+HW           |           435 |    3106.1 | 2.289%       | 68.896%                 | yes               |
+|           8 | CWHvm1_HW+DR   | CWHvm1      | HW+DR           |           432 |    3090.1 | 2.277%       | 71.174%                 | yes               |
+|           9 | CWHvm2_HW+CW   | CWHvm2      | HW+CW           |           387 |    2739.7 | 2.019%       | 73.193%                 | yes               |
+|          10 | CWHvm1_CW      | CWHvm1      | CW              |           442 |    2626.1 | 1.935%       | 75.128%                 | yes               |
+|          11 | CWHvm1_HW+FDC  | CWHvm1      | HW+FDC          |           161 |    2177.7 | 1.605%       | 76.733%                 | yes               |
+|          12 | CWHvm1_CW+YC   | CWHvm1      | CW+YC           |           189 |    2064.5 | 1.521%       | 78.254%                 | yes               |
+|          13 | CWHvh1_HW+CW   | CWHvh1      | HW+CW           |           291 |    1947.7 | 1.435%       | 79.690%                 | yes               |
+|          14 | CWHvm1_HW+FD   | CWHvm1      | HW+FD           |           182 |    1892.1 | 1.394%       | 81.084%                 | yes               |
+|          15 | CWHvm1_SS+HW   | CWHvm1      | SS+HW           |           157 |    1638.1 | 1.207%       | 82.291%                 | yes               |
+|          16 | CWHvm1_DR+HW   | CWHvm1      | DR+HW           |           325 |    1437.8 | 1.060%       | 83.351%                 | yes               |
+|          17 | CWHvm2_BA+HW   | CWHvm2      | BA+HW           |           157 |    1433.5 | 1.056%       | 84.407%                 | yes               |
+|          18 | CWHvm2_CW+HW   | CWHvm2      | CW+HW           |           160 |    1200.4 | 0.885%       | 85.292%                 | yes               |
+|          19 | CWHvh1_HW+BA   | CWHvh1      | HW+BA           |           172 |     981   | 0.723%       | 86.015%                 | yes               |
+|          20 | CWHvm2_HW+YC   | CWHvm2      | HW+YC           |           149 |     934.9 | 0.689%       | 86.704%                 | yes               |
 
 ## Largest Selected AU Bins
 
-| au_id          | stratum_code   | si_class   |   stand_count |   area_ha |   mean_si |   median_si |
-|:---------------|:---------------|:-----------|--------------:|----------:|----------:|------------:|
-| cwhvm_hw_ba_m  | CWHVM_HW_BA    | M          |          1727 |   17626.9 |      25.9 |        27   |
-| cwhvm_hw_cw_m  | CWHVM_HW_CW    | M          |          1827 |   16323.1 |      26   |        28   |
-| cwhvm_hw_ba_l  | CWHVM_HW_BA    | L          |          1476 |   10048.7 |      16   |        16   |
-| cwhvm_hw_cw_l  | CWHVM_HW_CW    | L          |          1265 |    8056.1 |      15.4 |        16   |
-| cwhvm_hw_ba_h  | CWHVM_HW_BA    | H          |           580 |    7163.5 |      31.1 |        30   |
-| cwhvm_cw_hw_l  | CWHVM_CW_HW    | L          |          1024 |    6683.8 |      13.3 |        14   |
-| cwhvm_cw_hw_h  | CWHVM_CW_HW    | H          |           747 |    6537.6 |      23.8 |        23   |
-| cwhvm_hw_m     | CWHVM_HW       | M          |           524 |    4569.6 |      26   |        27   |
-| cwhvm_cw_hw_m  | CWHVM_CW_HW    | M          |           601 |    4256.5 |      18.6 |        19   |
-| cwhvm_hw_ss_l  | CWHVM_HW_SS    | L          |           468 |    4171.2 |      24.4 |        27   |
-| cwhvm_hw_cw_h  | CWHVM_HW_CW    | H          |           358 |    2954.3 |      30.8 |        30   |
-| cwhvm_hw_ss_h  | CWHVM_HW_SS    | H          |           236 |    2240.2 |      32.4 |        32   |
-| cwhvm_hw_l     | CWHVM_HW       | L          |           435 |    1786.8 |      15.4 |        16   |
-| cwhvm_hw_h     | CWHVM_HW       | H          |           226 |    1657.8 |      31.4 |        30.5 |
-| cwhvm_cw_h     | CWHVM_CW       | H          |           166 |    1556.9 |      20.8 |        19   |
-| cwhvm_hw_fdc_l | CWHVM_HW_FDC   | L          |           116 |    1343.9 |      27.1 |        28   |
-| cwhvm_cw_yc_m  | CWHVM_CW_YC    | M          |            80 |    1286.4 |      13   |        12.5 |
-| cwhvm_hw_dr_m  | CWHVM_HW_DR    | M          |           154 |    1199.8 |      27.5 |        27   |
-| cwhvh_cw_hw_l  | CWHVH_CW_HW    | L          |           175 |    1104.1 |      12.2 |        13   |
-| cwhvh_cw_hw_h  | CWHVH_CW_HW    | H          |           138 |    1076.8 |      20.7 |        20   |
-| cwhvm_hw_dr_l  | CWHVM_HW_DR    | L          |           160 |    1052.4 |      19.3 |        20.5 |
-| cwhvm_hw_dr_h  | CWHVM_HW_DR    | H          |           138 |    1011.8 |      31.7 |        31   |
-| cwhvm_ba_hw_m  | CWHVM_BA_HW    | M          |            99 |     974.7 |      25   |        26   |
-| cwhvm_yc_hw_l  | CWHVM_YC_HW    | L          |            75 |     930.3 |       8.2 |         9   |
-| cwhvm_hw_ss_m  | CWHVM_HW_SS    | M          |            73 |     928.5 |      29   |        29   |
+| au_id           | stratum_code   | si_class   |   stand_count |   area_ha |   mean_si |   median_si |
+|:----------------|:---------------|:-----------|--------------:|----------:|----------:|------------:|
+| cwhvm1_hw_cw_m  | CWHvm1_HW+CW   | M          |          1602 |   14576.5 |      26.4 |        28   |
+| cwhvm1_hw_ba_m  | CWHvm1_HW+BA   | M          |          1222 |   13083.9 |      26.3 |        27   |
+| cwhvm1_hw_cw_l  | CWHvm1_HW+CW   | L          |          1112 |    7117.9 |      16   |        16   |
+| cwhvm1_hw_ba_h  | CWHvm1_HW+BA   | H          |           531 |    6336.7 |      31.2 |        31   |
+| cwhvm1_hw_ba_l  | CWHvm1_HW+BA   | L          |           952 |    6328   |      17.1 |        17   |
+| cwhvm1_cw_hw_h  | CWHvm1_CW+HW   | H          |           717 |    6154.4 |      23.8 |        23   |
+| cwhvm1_cw_hw_l  | CWHvm1_CW+HW   | L          |           927 |    6107.9 |      13.4 |        14   |
+| cwhvm1_hw_m     | CWHvm1_HW      | M          |           448 |    4138.9 |      26.4 |        27   |
+| cwhvm1_hw_ss_l  | CWHvm1_HW+SS   | L          |           463 |    4135.6 |      24.5 |        27   |
+| cwhvm1_cw_hw_m  | CWHvm1_CW+HW   | M          |           568 |    4015.1 |      18.6 |        19   |
+| cwhvm2_hw_ba_h  | CWHvm2_HW+BA   | H          |           326 |    3577   |      27.7 |        28   |
+| cwhvm2_hw_ba_l  | CWHvm2_HW+BA   | L          |           448 |    3095.4 |      13.8 |        14   |
+| cwhvm1_hw_cw_h  | CWHvm1_HW+CW   | H          |           349 |    2899.4 |      30.8 |        30   |
+| cwhvm2_hw_ba_m  | CWHvm2_HW+BA   | M          |           304 |    2418.1 |      20.1 |        20   |
+| cwhvm1_hw_ss_h  | CWHvm1_HW+SS   | H          |           236 |    2240.2 |      32.4 |        32   |
+| cwhvm1_hw_h     | CWHvm1_HW      | H          |           223 |    1645   |      31.4 |        30   |
+| cwhvm1_hw_l     | CWHvm1_HW      | L          |           375 |    1582.4 |      16   |        16   |
+| cwhvm1_cw_h     | CWHvm1_CW      | H          |           131 |    1331.3 |      21.7 |        22   |
+| cwhvm1_cw_yc_l  | CWHvm1_CW+YC   | L          |            93 |    1293.9 |      10.1 |        11   |
+| cwhvm1_hw_fdc_l | CWHvm1_HW+FDC  | L          |           110 |    1288.9 |      27.4 |        28   |
+| cwhvm1_hw_dr_m  | CWHvm1_HW+DR   | M          |           148 |    1157.3 |      27.5 |        27.5 |
+| cwhvm2_hw_cw_h  | CWHvm2_HW+CW   | H          |           131 |    1136.4 |      25.9 |        26   |
+| cwhvh1_cw_hw_l  | CWHvh1_CW+HW   | L          |           175 |    1104.1 |      12.2 |        13   |
+| cwhvh1_cw_hw_h  | CWHvh1_CW+HW   | H          |           138 |    1076.8 |      20.7 |        20   |
+| cwhvm1_hw_dr_l  | CWHvm1_HW+DR   | L          |           151 |     983.3 |      19.4 |        20   |
 
 ## Downstream Use
 

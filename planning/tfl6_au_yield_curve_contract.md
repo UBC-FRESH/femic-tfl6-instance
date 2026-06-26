@@ -10,9 +10,11 @@ runtime package.
 
 ## Source Evidence
 
-- K3Z teaching baseline: uses BEC subzone grouping, ordered top-two species
+- K3Z teaching baseline: uses BEC grouping, ordered top-two species
   combinations, `top_area_coverage = 0.90`, and L/M/H SI classes to build
-  stable AU/curve IDs.
+  stable AU/curve IDs. For TFL 6, the BEC grouping is refined to include
+  subzone, variant, and phase where present because productive coastal BEC
+  variants carry useful yield-family signal.
 - FEMIC parent issue `UBC-FRESH/femic#187`: promoted MKRF's
   `smoothed_bin_pchip` AU-level first-growth method into the official shared
   default for AU-level first-growth / unmanaged VDYP synthesis.
@@ -47,7 +49,9 @@ encode time-dynamic or scenario-dynamic attributes.
 
 Accepted AU identity dimensions:
 
-- BEC/subzone grouping, following the current TFL 6 run-profile/K3Z profile.
+- BEC/subzone/variant/phase grouping. The current accepted R1 source has null
+  BEC phase for all rows, but phase remains part of the identity rule so future
+  source refreshes do not collapse phase-specific BEC labels.
 - Ordered top-two leading species combination.
 - `top_area_coverage = 0.90` for selecting the main stratum set.
 - L/M/H SI class after accepted VDYP/SiteProd field review.
@@ -216,7 +220,8 @@ this slice.
 
 Accepted static AU identity:
 
-- BEC/subzone grouping.
+- BEC/subzone/variant/phase grouping. The current accepted R1 source has null
+  BEC phase for all rows, but phase remains part of the identity rule.
 - Ordered top-two leading species combination.
 - `top_area_coverage = 0.90`.
 - L/M/H SI class after accepted VDYP/SiteProd field review.
