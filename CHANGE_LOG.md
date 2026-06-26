@@ -2096,3 +2096,11 @@
 - moved `ROADMAP.md` to P5.2, where the accepted publication path must be
   implemented and fresh-environment materialization must be proven before
   release readiness is claimed.
+
+## 2026-06-26 - Created P5.2 publication/materialization child issue
+
+- opened P5.2 issue `#39` to publish TFL 6 runtime artifacts and prove fresh
+  materialization;
+- linked P5.2 under Phase 5 parent `#15` and the planning gate `#11`; and
+- updated `ROADMAP.md` so the next bounded Phase 5 lane is deciding and
+  implementing the accepted publication path from the P5.1 artifact policy.

@@ -288,7 +288,7 @@ after the runtime package has passed direct artifact and launch smoke checks.
 - [x] P5.1 Decide which compact runtime artifacts are tracked, annexed,
   published, or regenerated (`#18`).
 - [ ] P5.2 Publish required data/runtime artifacts through the accepted FEMIC
-  public-data workflow and prove fresh-environment materialization.
+  public-data workflow and prove fresh-environment materialization (`#39`).
 - [ ] P5.3 Build full Sphinx teaching documentation (`#21`) modeled on the
   `femic-k3z-instance` and `femic-tsa29-instance` documentation surfaces,
   including quickstart instructions, rebuild workflow, source-data provenance,
@@ -571,6 +571,8 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 24. P5.3a / `#21` publication plumbing is complete for the current seed docs,
     but P5.3 stays open for final teaching-docs expansion after Phase 4 runtime
     package evidence exists.
-25. P5.2 is the next bounded lane: implement the accepted publication path from
-    P5.1 and prove required fresh-environment materialization before claiming
-    release readiness.
+25. P5.2 / `#39` is the next bounded lane: implement the accepted publication
+    path from P5.1 and prove required fresh-environment materialization before
+    claiming release readiness. The first P5.2 decision is whether this release
+    publishes only source data plus rebuild instructions or also publishes a
+    reviewed ready-to-launch runtime archive for teaching users.
