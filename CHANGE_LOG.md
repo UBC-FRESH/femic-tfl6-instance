@@ -1372,3 +1372,37 @@
 - kept the large stand-level VDYP yield time series and VDYP run logs under
   ignored `runtime/derived/p3_4_aflb_vdyp_first_growth_run2/` for local audit
   and did not write Phase 4 model-input bundle outputs.
+
+## 2026-06-25 - Added AU-wise first-growth curve review plots
+
+- added `scripts/build_p3_4_first_growth_plots.py` to regenerate the TFL 6
+  natural/untreated first-growth review plots from the P3.4d VDYP run outputs;
+- generated `108` `plots/vdyp_lmh_tfl6-*.png` AU-family comparison plots using
+  the same L/M/H visual review pattern as the other FEMIC instance examples;
+- generated `276` `plots/vdyp_fitdiag_tfl6-*.png` AU fit-diagnostic plots with
+  raw VDYP curves, 5-year observed medians/interquartile bands, selected fits,
+  and residual panels;
+- wrote `planning/tfl6_first_growth_plot_manifest.{csv,md}` with repo-relative
+  plot paths for review and downstream documentation; and
+- updated `planning/tfl6_first_growth_vdyp_run_summary.md` and `ROADMAP.md` so
+  P3.4d explicitly references the AU-wise plot artifacts while keeping
+  treated/managed TIPSY curves and Phase 4 model-input bundle generation out of
+  this slice.
+
+## 2026-06-25 - Added P3.4f first-growth curve shape diagnostics
+
+- added `scripts/build_p3_4_first_growth_shape_diagnostics.py` to classify
+  AU-wise natural/untreated first-growth curve shapes before changing the
+  accepted P3.4d curve table;
+- wrote `planning/tfl6_first_growth_shape_diagnostics.{csv,md}` with one row
+  per AU diagnostic case, including accepted curves and the `104`
+  insufficient-source AUs;
+- flagged `8` accepted curves as critical, including late-start and
+  near-zero-to-old-age jump cases that should be rejected and replaced through
+  adjacent-AU borrowing or reviewed fallback rules before Phase 4;
+- flagged `194` accepted curves for review, including old-age terminal upticks,
+  large one-year drops, wobbly multi-extrema behavior, and L/M/H ordering
+  violations; and
+- updated `ROADMAP.md` so P3.4f explicitly covers low-support and
+  shape-pathology review before any smoothing/tail-cleanup parameter changes
+  are locked.

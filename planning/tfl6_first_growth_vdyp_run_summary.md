@@ -22,6 +22,14 @@ Review artifacts promoted to `planning/`:
 
 - `planning/tfl6_first_growth_au_curves.csv`
 - `planning/tfl6_first_growth_au_fit_diagnostics.csv`
+- `planning/tfl6_first_growth_plot_manifest.csv`
+- `planning/tfl6_first_growth_plot_manifest.md`
+
+Visual review artifacts promoted to `plots/` using the same AU-wise review
+families used by the other FEMIC instance examples:
+
+- `plots/vdyp_lmh_tfl6-*.png`
+- `plots/vdyp_fitdiag_tfl6-*.png`
 
 Large runtime/audit artifacts remain under ignored runtime output:
 
@@ -40,6 +48,8 @@ Large runtime/audit artifacts remain under ignored runtime output:
 - AUs with insufficient source-stand support: `104`
 - Sparse-support diagnostic flags: `186`
 - Selected accepted curve family: `smoothed_bin_pchip`
+- L/M/H AU-family comparison plots: `108`
+- AU fit diagnostic plots: `276`
 
 ## Notes
 
