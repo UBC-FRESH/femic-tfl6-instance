@@ -8,18 +8,31 @@
   "notes": [
     "The bundle root follows existing FEMIC instance convention.",
     "The bundle root is generated-output space. P4.1b does not create the directory or write outputs.",
-    "P4.1c must regenerate or rematerialize final THLB geometry before consuming it."
+    "P4.1c must use AFLB as the stand-table universe and final THLB as a managed-share overlay.",
+    "NTHLB equals AFLB minus THLB and remains unmanaged/full-retention forest that still needs untreated VDYP growth curves."
   ],
   "input_geometry": {
-    "canonical_final_thlb_checkpoint": {
+    "canonical_aflb_stand_universe": {
+      "path": "data/model_input_bundle/input_geometry/aflb_current.feather",
+      "role": "canonical AFLB stand-table universe for P4.1c bundle generation",
+      "source": "regenerated or rematerialized from the accepted Phase 2 AFLB checkpoint/partitions",
+      "required_before": "P4.1c stand table generation"
+    },
+    "readable_aflb_checkpoint": {
+      "path": "data/model_input_bundle/input_geometry/aflb_current.gpkg",
+      "role": "readable GeoPackage mirror for AFLB stand-universe GIS QA and maintainer inspection",
+      "source": "same regenerated/rematerialized AFLB state as the Feather checkpoint",
+      "required_before": "P4.1c QA"
+    },
+    "final_thlb_overlay_checkpoint": {
       "path": "data/model_input_bundle/input_geometry/thlb_current.feather",
-      "role": "canonical final schedulable geometry/checkpoint for P4.1c bundle generation",
+      "role": "final THLB overlay for managed share, unmanaged/NTHLB retention share, and final THLB area reconciliation",
       "source": "regenerated or rematerialized from the accepted Phase 2 THLB recipe/audit",
-      "required_before": "P4.1c"
+      "required_before": "P4.1c managed-share assignment"
     },
     "readable_final_thlb_checkpoint": {
       "path": "data/model_input_bundle/input_geometry/thlb_current.gpkg",
-      "role": "readable GeoPackage mirror for GIS QA and maintainer inspection",
+      "role": "readable GeoPackage mirror for THLB overlay/fragments GIS QA and maintainer inspection",
       "source": "same regenerated/rematerialized final THLB state as the Feather checkpoint",
       "required_before": "P4.1c QA"
     },
@@ -36,7 +49,7 @@
     },
     {
       "path": "data/model_input_bundle/stand_table.csv",
-      "role": "one row per final schedulable/non-schedulable stand or fragment with stable keys, area, THLB/IFM, ORIGIN, AU, curve, treatment, transition, cedar, harvest-system, and embedded-identity fields"
+      "role": "one row per AFLB stand or accepted fragment with stable keys, area, THLB/NTHLB share, IFM, ORIGIN, AU, curve, treatment, transition, cedar, harvest-system, and embedded-identity fields"
     },
     {
       "path": "data/model_input_bundle/au_table.csv",
@@ -52,7 +65,7 @@
     },
     {
       "path": "data/model_input_bundle/stand_au_assignment.csv",
-      "role": "stand-to-AU and AU-remap audit table"
+      "role": "AFLB stand-to-AU and selected curve-family remap audit table; every AFLB row must have an untreated curve or explicit fatal missing-curve rationale"
     },
     {
       "path": "data/model_input_bundle/stand_origin_assignment.csv",
@@ -124,9 +137,20 @@
   },
   "non_goals": [
     "create data/model_input_bundle outputs in P4.1b",
-    "generate final THLB geometry in P4.1b",
     "generate ForestModel XML in P4.1b",
     "run Matrix Builder in P4.1b",
-    "assemble Patchworks runtime package in P4.1b"
-  ]
+    "assemble Patchworks runtime package in P4.1b",
+    "drop NTHLB forested rows from the model-input bundle",
+    "treat final THLB fragments as the complete Patchworks stand universe"
+  ],
+  "stand_universe_contract": {
+    "stand_universe": "AFLB",
+    "managed_subset": "THLB",
+    "unmanaged_retention_subset": "NTHLB = AFLB - THLB",
+    "growth_curve_requirement": "Every AFLB stand or accepted fragment needs an untreated VDYP curve, including NTHLB rows.",
+    "patchworks_semantics": {
+      "THLB": "managed treatment-eligible share subject to additional treatment gates",
+      "NTHLB": "unmanaged/full-retention share; compiles to UNMANAGEDAREA semantics downstream while preserving growth and reporting attributes"
+    }
+  }
 }

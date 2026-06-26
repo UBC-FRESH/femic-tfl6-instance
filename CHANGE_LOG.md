@@ -1807,3 +1807,17 @@
 - kept P4.1c open because no model-input bundle tables, ForestModel XML,
   Matrix Builder outputs, or Patchworks runtime package were generated in this
   handoff pass.
+
+## 2026-06-26 - Clarified AFLB universe versus THLB managed-share contract
+
+- amended instance model-input docs and planning metadata to state that the
+  Patchworks stand universe is AFLB, not final THLB fragments alone;
+- documented that THLB is the managed subset of AFLB and that
+  `NTHLB = AFLB - THLB` remains in the model as unmanaged/full-retention forest
+  requiring untreated VDYP growth curves;
+- updated the P4.1 bundle path contract so `aflb_current` is the future
+  stand-universe handoff and `thlb_current` is the managed-share overlay used
+  for `managed_share`, `thlb_fact`, `thlb_area_ha`, and `retention_share`; and
+- kept P4.1c.2 open because this was a documentation/metadata correction only,
+  with no bundle table generation, ForestModel XML, Matrix Builder output, or
+  Patchworks runtime package.
