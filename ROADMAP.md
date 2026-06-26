@@ -165,6 +165,10 @@ source-layer and THLB surfaces, without compiling a Patchworks package.
     and a lexicographic remap audit for non-selected AU bins.
   - [ ] P3.4e Generate and QA treated/managed BatchTIPSY curves from the
     reviewed TIPSY parameter crosswalk.
+    - [x] P3.4e1 Emit the selected-AU BTC handoff as `data/03_input-tfl6.csv`
+      with curve-ID mapping and translation-policy manifest.
+    - [ ] P3.4e2 Run BTC/BatchTIPSY from the `tfl6` handoff, parse
+      `04_output-tfl6.csv`, and build treated/managed curve QA overlays.
   - [x] P3.4f Review selected-set natural-curve shape diagnostics and document
     that the current VDYP smoothing/tail behavior is good enough to proceed
     with the rest of Phase 3, while reserving a later optional revisit before
@@ -333,8 +337,12 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    selected curves) and accepted the current VDYP smoothing/tail behavior as
    good enough to proceed with Phase 3. A smoothing/tail-constraint revisit
    remains a deferred pre-bundle cleanup option, not a blocker for P3.4e,
-   P3.5, or P3.6. P3.4e owns treated/managed BatchTIPSY curve generation after
-   the TIPSY parameter crosswalk is reviewed enough for executable use.
+   P3.5, or P3.6. P3.4e1 emitted the selected-AU BTC handoff at
+   `data/03_input-tfl6.csv` with curve-ID mapping in
+   `planning/tfl6_tipsy_btc_curve_id_map.csv` and translation-policy review in
+   `planning/tfl6_tipsy_btc_handoff_manifest.{json,md}`. The next bounded
+   P3.4e step is to run BTC/BatchTIPSY from the `tfl6` handoff, parse
+   `04_output-tfl6.csv`, and generate treated/managed curve QA overlays.
 3. Continue Phase 3 in order through P3.4e treated/managed curves, P3.5
    treatment options, and P3.6
    transition logic. Do not jump to cedar details, expansion options, or Phase

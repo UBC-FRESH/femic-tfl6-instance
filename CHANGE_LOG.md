@@ -1421,3 +1421,18 @@
 - left the selected canonical curve set at `77` AU bins with `26` L/M/H review
   panels and the `307` non-selected AU remaps documented in
   `planning/tfl6_first_growth_au_remap_audit.{csv,md}`.
+
+## 2026-06-26 - Built the P3.4e TFL 6 BatchTIPSY handoff
+
+- added `scripts/build_p3_4e_tipsy_handoff.py` to convert the selected
+  top-area AU/MP10 TIPSY crosswalk into an executable BTC input handoff;
+- wrote `data/03_input-tfl6.csv` with `231` rows: `77` selected AU bins across
+  the three managed lanes `existing_managed_11_50`, `existing_managed_1_10`,
+  and `future_managed`;
+- wrote `planning/tfl6_tipsy_btc_curve_id_map.csv` plus
+  `planning/tfl6_tipsy_btc_handoff_manifest.{json,md}` so synthetic BTC
+  feature IDs, OAF conversion, regen-delay defaults, confidence counts, and
+  the `9` MP10 `other`-species rows encoded as `Dr` remain reviewable; and
+- updated `ROADMAP.md` so P3.4e1 is complete while P3.4e2 remains the next
+  bounded step: run BTC/BatchTIPSY from `data/03_input-tfl6.csv`, parse
+  `04_output-tfl6.csv`, and generate treated/managed curve QA overlays.
