@@ -1196,3 +1196,14 @@
   downstream of the AU/yield, curve-build, and transition-logic locks; and
 - updated roadmap dependency text to make P3.3, P3.4, and P3.5 explicit
   prerequisites for P4.1.
+
+## 2026-06-25 - Reordered Phase 3 around base model mechanics
+
+- narrowed P3.5 / `#30` to treatment options and opened P3.6 / `#31` for
+  state-transition logic;
+- reordered Phase 3 so the execution stack is AU contract, yield curves,
+  treatment options, transition logic, then cedar details and expansion
+  options;
+- moved the run-profile/model-input contract update to P3.7; and
+- updated Current Next Steps so cedar and expansion remain open but paused
+  until the base AU/yield/treatment/transition mechanics are locked.

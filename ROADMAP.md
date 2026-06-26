@@ -150,17 +150,6 @@ source-layer and THLB surfaces, without compiling a Patchworks package.
   - [ ] P3.3b Review and lock the static AU identity, legacy MP10 TIPSY
     parameter extraction boundary, curve-lane assumptions, and
     operability/treatment-eligibility interaction.
-- [ ] P3.1 Complete cedar-signal design (`#8`) for Cw cultural reserve,
-  utility-pole-grade products, treatments, yield implications, accounts, and
-  reporting outputs.
-  - [x] P3.1a Record the first cedar evidence/design note in
-    `planning/tfl6_cedar_signal_design.md` without generating model inputs.
-  - [ ] P3.1b Review and lock cedar source fields, derived signals, and
-    provisional unresolved assumptions.
-  - [ ] P3.1c Define Patchworks-facing cedar products, accounts, treatment
-    hooks, and report requirements for the first model-input bundle.
-- [ ] P3.2 Complete expansion candidate-area design (`#9`) for unallocated
-  candidate pools, productivity screening, and AAC uplift constraints.
 - [ ] P3.4 Build and QA actual TFL 6 yield curves (`#29`) before Phase 4
   model-input bundle generation.
   - [ ] P3.4a Scrape MP10 Tables 27, 28, and 29 into a reviewed TIPSY
@@ -174,18 +163,44 @@ source-layer and THLB surfaces, without compiling a Patchworks package.
     reviewed TIPSY parameter crosswalk.
   - [ ] P3.4e Lock curve-selection, sparse-support, TIPSY/VDYP overlay, missing
     mapping, and species-share QA artifacts for Phase 4.
-- [ ] P3.5 Define TFL 6 treatment options and transition logic (`#30`) before
+- [ ] P3.5 Define TFL 6 treatment options (`#30`) before transition logic and
   Phase 4 model-input bundle generation.
   - [ ] P3.5a Define treatment IDs, labels, eligibility filters, products,
     accounts, and reporting hooks.
-  - [ ] P3.5b Define state transitions for base harvest, managed regeneration,
-    retention/unmanaged transitions, cedar treatments, and expansion-area
-    behavior.
-  - [ ] P3.5c Verify natural/treated curve provenance remains separate from
+  - [ ] P3.5b Verify natural/treated curve provenance remains separate from
     managed/unmanaged treatment eligibility.
-  - [ ] P3.5d Lock any deferred treatment or transition semantics with explicit
-    blockers or review needs.
-- [ ] P3.6 Update the TFL 6 run-profile/model-input contract with reviewed
+  - [ ] P3.5c Lock any deferred treatment semantics with explicit blockers or
+    review needs.
+- [ ] P3.6 Define TFL 6 state-transition logic (`#31`) before Phase 4
+  model-input bundle generation.
+  - [ ] P3.6a Define stand-state classes for initial, managed, unmanaged,
+    retained, regenerated, and deferred/special teaching states.
+  - [ ] P3.6b Define transitions for base harvest, managed regeneration,
+    retention/unmanaged movement, existing managed/natural origin handling,
+    and operability-driven eligibility changes.
+  - [ ] P3.6c Verify transitions consume reviewed treatment options from P3.5
+    without redefining treatment semantics.
+  - [ ] P3.6d Record cedar and expansion hook points without completing those
+    detail lanes.
+  - [ ] P3.6e Lock deferred transition semantics with explicit blockers or
+    review needs.
+- [ ] P3.1 Complete cedar-signal design (`#8`) for Cw cultural reserve,
+  utility-pole-grade products, treatments, yield implications, accounts, and
+  reporting outputs.
+  Priority note: P3.1 remains open with P3.1a already completed, but cedar
+  details now sit downstream of AU, yield-curve, treatment-option, and
+  transition-logic locks.
+  - [x] P3.1a Record the first cedar evidence/design note in
+    `planning/tfl6_cedar_signal_design.md` without generating model inputs.
+  - [ ] P3.1b Review and lock cedar source fields, derived signals, and
+    provisional unresolved assumptions.
+  - [ ] P3.1c Define Patchworks-facing cedar products, accounts, treatment
+    hooks, and report requirements for the first model-input bundle.
+- [ ] P3.2 Complete expansion candidate-area design (`#9`) for unallocated
+  candidate pools, productivity screening, and AAC uplift constraints.
+  Priority note: P3.2 remains open but sits downstream of the base AU, yield,
+  treatment, and transition contract lanes.
+- [ ] P3.7 Update the TFL 6 run-profile/model-input contract with reviewed
   design decisions and explicit rejected/deferred assumptions.
 
 ## Proposed Phase 4: Model Inputs and Patchworks Runtime Package (`#14`)
@@ -239,8 +254,9 @@ approves a narrower independent slice:
 3. **Model-input generation**: Phase 4 (`#14`) starts only after Phase 2 source
    and THLB outputs plus Phase 3 model-design assumptions are reviewed. Phase
    3 must explicitly lock the AU/yield contract (`#28`), actual yield-curve
-   build and QA (`#29`), and treatment/transition logic (`#30`) before P4.1
-   (`#17`) builds the model-input bundle from those accepted contracts.
+   build and QA (`#29`), treatment options (`#30`), and state-transition logic
+   (`#31`) before P4.1 (`#17`) builds the model-input bundle from those
+   accepted contracts.
 4. **Patchworks runtime build and QA**: ForestModel/XML generation, Matrix
    Builder execution, runtime-package assembly, and runtime-package QA remain
    Phase 4 work after P4.1. Runtime-package follow-on `#10` is downstream of
@@ -282,11 +298,14 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    first-growth curve family, MP10 Tables 27-29 as TIPSY parameter evidence
    rather than canonical AU identity, and stand-level operability/treatment
    eligibility filters outside AU identity.
-3. Keep P3.1 cedar design open but paused while P3.3 is reviewed; resume P3.1b
-   after the AU/yield contract is either locked or explicitly deferred.
-4. Keep P3.2 expansion design idle until P3.3 and P3.1 are either complete or
-   explicitly paused by the maintainer.
-5. Keep Phase 4 runtime issue `#10` idle until Phase 3 design assumptions and
+3. After P3.3, proceed in order through P3.4 actual yield-curve build/QA, P3.5
+   treatment options, and P3.6 transition logic. Do not jump to cedar details,
+   expansion options, or Phase 4 until these base model mechanics are locked.
+4. Keep P3.1 cedar design open but paused until P3.3-P3.6 are reviewed/locked
+   or explicitly narrowed by the maintainer.
+5. Keep P3.2 expansion design idle until P3.3-P3.6 and the necessary cedar
+   hooks are reviewed/locked or explicitly paused by the maintainer.
+6. Keep Phase 4 runtime issue `#10` idle until Phase 3 design assumptions and
    P4.1 model-input bundle prerequisites are accepted. In particular, do not
-   start P4.1 until P3.3, P3.4, and P3.5 are reviewed/locked or explicitly
-   narrowed by the maintainer.
+   start P4.1 until P3.3, P3.4, P3.5, and P3.6 are reviewed/locked or
+   explicitly narrowed by the maintainer.
