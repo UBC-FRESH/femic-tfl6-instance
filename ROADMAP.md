@@ -86,22 +86,54 @@
   - [x] P1.8e Place existing follow-on issues `#8`, `#9`, and `#10` into the
     planned phase structure or explicitly defer them.
 
-## Proposed Phase 2: Reviewed Source Layers and THLB Netdown (`#12`)
+## Phase 2: Reviewed Source Layers and THLB Netdown (`#12`)
 
 Goal: turn the TFL 6 source-layer and THLB planning surfaces into reviewed,
 executable FEMIC source-layer and netdown recipes before model-input generation
 starts.
 
-- [ ] P2.1 Resolve and materialize public/reference source layers needed by the
+- [x] P2.1 Resolve and materialize public/reference source layers needed by the
   TFL 6 THLB skeleton (`#16`).
-- [ ] P2.2 Profile accepted 2025 R1 and VDYP7 fields for non-forest,
-  non-productive, deciduous-leading, productivity, and join-key assumptions.
-- [ ] P2.3 Define reviewed current-AOI source-layer recipe contracts under the
-  future TFL/general-FMU recipe path.
-- [ ] P2.4 Implement and smoke-test the first executable THLB netdown recipe
-  lane against the accepted TFL 6 input surfaces.
-- [ ] P2.5 Compare GLB/AFLB/LHLB/THLB milestones against the adjusted current-AOI
-  benchmark targets and record accepted teaching tolerances.
+- [x] P2.1a Design operability netdown proxy and sensitivity lane (`#20`).
+- [x] P2.2 Profile accepted 2025 R1 and VDYP7 fields for non-forest,
+  non-productive, deciduous-leading, productivity, and join-key assumptions
+  (`#22`).
+  - [x] P2.2a Record accepted input schema profile, area surface, and
+    R1/VDYP7 join coverage in `planning/tfl6_r1_vdyp_field_profile.md`.
+  - [x] P2.2b Draft candidate field mappings and gross-area diagnostics for
+    non-forest, non-productive, deciduous-leading, productivity, and
+    operability-proxy review without accepting executable recipe logic.
+  - [x] P2.2c Review/accept or revise the candidate mappings and record the
+    short field-mapping handoff contract for P2.3.
+- [x] P2.3 Define reviewed current-AOI source-layer recipe contracts under the
+  future TFL/general-FMU recipe path (`#23`).
+  - [x] P2.3a Open and link the child issue under Phase 2 parent `#12`.
+  - [x] P2.3b Draft the first source-layer recipe-contract table in
+    `planning/tfl6_source_layer_recipe_contracts.md` without creating
+    executable recipe YAML.
+  - [x] P2.3c Review and revise the contract table into the accepted P2.4
+    handoff.
+- [x] P2.4 Implement and smoke-test the first executable THLB netdown recipe
+  lane against the accepted TFL 6 input surfaces (`#24`).
+  - [x] P2.4a Open and link the child issue under Phase 2 parent `#12`.
+  - [x] P2.4b Draft the first smoke-lane plan in
+    `planning/tfl6_thlb_smoke_lane_plan.md` without creating recipe YAML or
+    executing THLB netdown.
+  - [x] P2.4c Create the first recipe YAML scaffold under the accepted
+    `config/tsr/` convention without executing it.
+  - [x] P2.4d Validate the scaffold and record the exact bounded smoke-run
+    command, stop-line, outputs, and acceptance checks.
+  - [x] P2.4e Execute the first bounded smoke run and inspect checkpoint, audit,
+    status, and benchmark/tolerance artifacts.
+- [x] P2.5 Compare GLB/AFLB/LHLB/THLB milestones against the adjusted
+  current-AOI benchmark targets and record accepted teaching tolerances (`#25`).
+  The accepted tolerance lock is recorded in
+  `planning/tfl6_thlb_benchmark_tolerance.md`.
+- [ ] P2.6 Close out the Phase 2 branch/PR lifecycle before starting Phase 3
+  implementation (`#26`).
+  - [x] P2.6a Add Phase 2 THLB Sphinx documentation covering design rationale,
+    caveats, benchmark tolerance, and reproducibility audit trail.
+  - [ ] P2.6b Reconcile and merge the Phase 2 closeout PR.
 
 ## Proposed Phase 3: Model Design Assumptions (`#13`)
 
@@ -143,8 +175,11 @@ after the runtime package has passed direct artifact and launch smoke checks.
   published, or regenerated (`#18`).
 - [ ] P5.2 Publish required data/runtime artifacts through the accepted FEMIC
   public-data workflow and prove fresh-environment materialization.
-- [ ] P5.3 Write teaching workflow docs, quickstart instructions, validation
-  notes, and known-limitations notes.
+- [ ] P5.3 Build full Sphinx teaching documentation (`#21`) modeled on the
+  `femic-k3z-instance` and `femic-tsa29-instance` documentation surfaces,
+  including quickstart instructions, rebuild workflow, source-data provenance,
+  THLB validation notes, scenario teaching workflows, advanced student
+  challenges, known limitations, and warning-clean Sphinx build evidence.
 - [ ] P5.4 Run final release QA across source materialization, instance rebuild,
   Patchworks launch smoke, and documentation checks.
 
@@ -174,7 +209,8 @@ approves a narrower independent slice:
 5. **Publication and teaching release**: Phase 5 (`#15`) starts after the
    runtime package passes direct artifact and launch smoke. P5.1 (`#18`) first
    decides artifact publication policy, then later Phase 5 tasks publish
-   materializable artifacts, write teaching docs, and run final release QA.
+   materializable artifacts, build full K3Z/TSA29-style Sphinx teaching docs,
+   and run final release QA.
 
 Guardrail: source extraction, THLB execution, cedar/expansion implementation,
 model-input generation, XML/Matrix Builder work, runtime packaging,
@@ -195,14 +231,17 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 
 ## Current Next Steps
 
-1. Complete Phase 1 closeout: confirm Phase 1 parent `#4`, closed P1.8 gate
-   `#11`, parent FEMIC issue `UBC-FRESH/femic#199`, and parent PR
-   `UBC-FRESH/femic#200` are synchronized before starting Phase 2 work.
-2. After Phase 1 closeout, start Phase 2 with P2.1 / `#16`: resolve and
-   materialize the TFL 6 THLB source layers needed by the first executable
-   netdown lane.
-3. Keep Phase 3 design issues `#8` and `#9` idle until Phase 2 source-layer and
-   THLB dependencies are accepted or the maintainer explicitly approves a
-   narrower parallel design slice.
-4. Keep Phase 4 runtime issue `#10` idle until Phase 2, Phase 3, and P4.1
-   prerequisites are accepted.
+1. Phase 2 implementation is functionally complete through P2.5: the P2.4e
+   final THLB result of `144203.485 ha` is accepted against the approximate
+   scaled current-AOI current-THLB benchmark of `136487.728 ha`; the
+   `+7715.757 ha` / `+5.65%` gap is locked as an acceptable base teaching-lane
+   tolerance in `planning/tfl6_thlb_benchmark_tolerance.md`.
+2. Continue with P2.6 / `#26`: close out the Phase 2 branch/PR lifecycle before
+   any Phase 3 implementation starts. P2.6a Sphinx documentation is complete;
+   next reconcile the `feature/p2-source-layer-thlb-inputs` PR against instance
+   `main` and update the parent FEMIC submodule pointer after the instance
+   closeout merge if `main` advances.
+3. Keep Phase 3 design issues `#8` and `#9` idle until P2.6 closeout is done
+   or the maintainer explicitly approves a narrower parallel design slice.
+4. Keep Phase 4 runtime issue `#10` idle until Phase 3 design assumptions and
+   P4.1 model-input bundle prerequisites are accepted.

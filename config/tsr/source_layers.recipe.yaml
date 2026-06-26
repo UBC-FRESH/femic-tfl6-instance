@@ -1,0 +1,154 @@
+schema_version: 1
+recipe_kind: source_layers
+tsa:
+  tsa_id: tfl_6
+  tsa_code: tfl6
+  tsa_name: Tree Farm Licence 6
+canonical_inputs:
+  registry_path: ""
+  documents_path: reference/tfl6_reference_index.json
+  candidate_facts_path: planning/tfl6_source_layer_dependency_inventory.md
+instance_inputs:
+  overlay_path: ""
+  source_layer_overrides_path: ""
+  download_root: data/downloads/bcdc
+recipe_contract:
+  status: scaffolded_p2_4c
+  last_built_utc: ""
+  last_run_utc: ""
+  governing_issue: UBC-FRESH/femic-tfl6-instance#24
+  notes:
+    - Hand-authored P2.4c source-layer scaffold for the first TFL 6 THLB smoke lane.
+    - All listed artifacts were materialized before this slice; do not run source acquisition from this scaffold in P2.4c.
+    - Keep unresolved rule semantics in the THLB recipe and smoke report instead of hiding them here.
+entries:
+  - entry_id: tfl6_boundary
+    label: Accepted current TFL 6 AOI boundary
+    artifact_path: data/source/tfl_6/aoi/tfl_6_boundary.gpkg
+    layer: tfl_6_boundary
+    artifact_scope: current_tfl6_aoi
+    run_status: materialized
+    acquisition_strategy: pre_materialized
+    notes:
+      - Accepted by P1.6 as the active current AOI.
+  - entry_id: vri_2025_r1_tfl6
+    label: 2025 VRI R1 polygon clipped to TFL 6
+    artifact_path: data/input/tfl_6/vri_2025_r1_poly_tfl6.gpkg
+    layer: vri_2025_r1_poly_tfl6
+    artifact_scope: current_tfl6_aoi
+    run_status: materialized
+    acquisition_strategy: pre_materialized
+    notes:
+      - Complete R1 accounting universe for P2.4.
+  - entry_id: vdyp7_2025_poly_tfl6
+    label: 2025 VDYP7 polygon table filtered to TFL 6
+    artifact_path: data/input/tfl_6/vdyp7_input_poly_2025_tfl6.parquet
+    artifact_scope: current_tfl6_aoi
+    run_status: materialized
+    acquisition_strategy: pre_materialized
+    notes:
+      - Subset attribute table; do not drop R1 polygons missing VDYP rows.
+  - entry_id: vdyp7_2025_layer_tfl6
+    label: 2025 VDYP7 layer/species table filtered to TFL 6
+    artifact_path: data/input/tfl_6/vdyp7_input_layer_2025_tfl6.parquet
+    artifact_scope: current_tfl6_aoi
+    run_status: materialized
+    acquisition_strategy: pre_materialized
+    notes:
+      - Subset layer/species table used for species cross-checks.
+  - entry_id: dra_roads_tfl6
+    label: Digital Road Atlas roads clipped to TFL 6
+    artifact_path: data/source/tfl_6/roads/dra_roads_tfl6.gpkg
+    artifact_scope: current_tfl6_aoi
+    run_status: materialized
+    acquisition_strategy: pre_materialized
+    notes:
+      - Provisional existing-road overlay candidate; filters and buffers remain review-required.
+  - entry_id: fwa_stream_networks_tfl6
+    label: Freshwater Atlas stream networks clipped to TFL 6
+    artifact_path: data/source/tfl_6/hydrology/fwa_stream_networks_tfl6.gpkg
+    artifact_scope: current_tfl6_aoi
+    run_status: materialized
+    acquisition_strategy: pre_materialized
+    notes:
+      - Provisional operational riparian candidate.
+  - entry_id: fwa_lakes_tfl6
+    label: Freshwater Atlas lakes clipped to TFL 6
+    artifact_path: data/source/tfl_6/hydrology/fwa_lakes_tfl6.gpkg
+    artifact_scope: current_tfl6_aoi
+    run_status: materialized
+    acquisition_strategy: pre_materialized
+    notes:
+      - Provisional operational riparian candidate.
+  - entry_id: fwa_wetlands_tfl6
+    label: Freshwater Atlas wetlands clipped to TFL 6
+    artifact_path: data/source/tfl_6/hydrology/fwa_wetlands_tfl6.gpkg
+    artifact_scope: current_tfl6_aoi
+    run_status: materialized
+    acquisition_strategy: pre_materialized
+    notes:
+      - Provisional operational riparian candidate.
+  - entry_id: uwr_approved_tfl6
+    label: Approved ungulate winter ranges clipped to TFL 6
+    artifact_path: data/source/tfl_6/wildlife/uwr_approved_tfl6.gpkg
+    artifact_scope: current_tfl6_aoi
+    run_status: materialized
+    acquisition_strategy: pre_materialized
+    notes:
+      - Current public UWR candidate; 2011-vintage consistency remains review-required.
+  - entry_id: ogma_legal_current_tfl6
+    label: Current legal OGMAs clipped to TFL 6
+    artifact_path: data/source/tfl_6/ogma/ogma_legal_current_tfl6.gpkg
+    artifact_scope: current_tfl6_aoi
+    run_status: materialized
+    acquisition_strategy: pre_materialized
+    notes:
+      - Current public established-OGMA candidate; 2011-vintage consistency remains review-required.
+  - entry_id: ogma_non_legal_current_tfl6
+    label: Current non-legal OGMAs clipped to TFL 6
+    artifact_path: data/source/tfl_6/ogma/ogma_non_legal_current_tfl6.gpkg
+    artifact_scope: current_tfl6_aoi
+    run_status: materialized
+    acquisition_strategy: pre_materialized
+    notes:
+      - Context-only clue for draft OGMAs; not accepted as 2011 draft-OGMA geometry.
+  - entry_id: wha_approved_tfl6
+    label: Approved wildlife habitat areas clipped to TFL 6
+    artifact_path: data/source/tfl_6/wildlife/wha_approved_tfl6.gpkg
+    artifact_scope: current_tfl6_aoi
+    run_status: materialized
+    acquisition_strategy: pre_materialized
+    notes:
+      - Current public WHA candidate; 2011-vintage consistency remains review-required.
+  - entry_id: recreation_polygons_tfl6
+    label: Recreation polygons clipped to TFL 6
+    artifact_path: data/source/tfl_6/recreation/recreation_polygons_tfl6.gpkg
+    artifact_scope: current_tfl6_aoi
+    run_status: materialized
+    acquisition_strategy: pre_materialized
+    notes:
+      - Provisional recreation overlay candidate.
+  - entry_id: recreation_trails_tfl6
+    label: Recreation trails clipped to TFL 6
+    artifact_path: data/source/tfl_6/recreation/recreation_trails_tfl6.gpkg
+    artifact_scope: current_tfl6_aoi
+    run_status: materialized
+    acquisition_strategy: pre_materialized
+    notes:
+      - Provisional 10 m buffer candidate.
+  - entry_id: landscape_units_tfl6
+    label: Landscape units clipped to TFL 6
+    artifact_path: data/source/tfl_6/strata/landscape_units_tfl6.gpkg
+    artifact_scope: current_tfl6_aoi
+    run_status: materialized
+    acquisition_strategy: pre_materialized
+    notes:
+      - Context/supporting stratum for Table 16 and later reporting.
+  - entry_id: bec_tfl6
+    label: BEC polygons clipped to TFL 6
+    artifact_path: data/source/tfl_6/strata/bec_tfl6.gpkg
+    artifact_scope: current_tfl6_aoi
+    run_status: materialized
+    acquisition_strategy: pre_materialized
+    notes:
+      - Context/supporting stratum for Table 16 and field cross-checks.

@@ -1,0 +1,811 @@
+schema_version: 1
+recipe_kind: thlb_netdown
+tsa:
+  tsa_id: tfl_6
+  tsa_code: tfl6
+  tsa_name: Tree Farm Licence 6
+canonical_inputs:
+  registry_path: ""
+  documents_path: reference/tfl6_reference_index.json
+  candidate_facts_path: planning/tfl6_thlb_netdown_steps.md
+instance_inputs:
+  overlay_path: ""
+  source_layer_recipe_path: config/tsr/source_layers.recipe.yaml
+  source_layer_overrides_path: ""
+recipe_contract:
+  status: validated_p2_4d
+  last_built_utc: ""
+  last_run_utc: ""
+  governing_issue: UBC-FRESH/femic-tfl6-instance#24
+  selected_document_paths:
+    - reference/tfl_6_mngment_plan_2011_ip.pdf
+    - reference/tfl_6_mngment_plan_10_2011.pdf
+  selected_checkpoint_path: data/input/tfl_6/vri_2025_r1_poly_tfl6.gpkg
+  output_checkpoint_path: data/tsr/tfl6_thlb_smoke_checkpoint.feather
+  audit_path: config/tsr/tfl6_thlb_smoke.audit.json
+  status_report_path: config/tsr/tfl6_thlb_smoke.status.md
+  runtime_status_report_path: runtime/logs/tsr/tfl6_thlb_smoke_status_report.md
+  benchmark_path: planning/tfl6_adjusted_thlb_benchmarks.json
+  notes:
+    - Hand-authored P2.4c scaffold preserving MP10 Table 4 row order for the first TFL 6 smoke lane.
+    - Do not execute this recipe except through the bounded P2.4e smoke command recorded in planning/tfl6_thlb_smoke_lane_plan.md.
+    - R1 geometry remains the complete accounting universe; VDYP7 tables are joined subsets and must not silently drop R1 polygons.
+    - Aspatial fallback rows are explicit teaching-model assumptions, not recovered 2011 geometry.
+    - P2.4d validated YAML parsing, FEMIC recipe-loader compatibility, source artifact existence, and the GeoPackage checkpoint input boundary without executing THLB netdown.
+parent_steps:
+  - parent_step_id: tfl6_nd_000
+    parent_label: Total landbase
+    parent_kind: milestone
+    row_order: 0
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: reference_target
+    stage_label: Reference targets
+    execution_class: reference_only
+    benchmark_marginal_area_ha: null
+    benchmark_cumulative_area_ha: 217042.719
+    historical_mp10_cumulative_area_ha: 171441
+    contract_status: contract_draft_ready
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_010
+    parent_label: Less non-forest
+    parent_kind: transformation
+    row_order: 10
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: glb_to_aflb
+    stage_label: GLB -> AFLB
+    execution_class: attribute_exclusion
+    benchmark_marginal_area_ha: 17069.353
+    benchmark_cumulative_area_ha: 199973.366
+    historical_mp10_marginal_area_ha: 13483
+    historical_mp10_cumulative_area_ha: 157958
+    contract_status: contract_draft_ready
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_020
+    parent_label: Less existing roads
+    parent_kind: transformation
+    row_order: 20
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: glb_to_aflb
+    stage_label: GLB -> AFLB
+    execution_class: provisional_spatial_overlay
+    benchmark_marginal_area_ha: 4981.674
+    benchmark_cumulative_area_ha: 194991.692
+    historical_mp10_marginal_area_ha: 3935
+    historical_mp10_cumulative_area_ha: 154023
+    contract_status: contract_review_required
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_030
+    parent_label: Total forested
+    parent_kind: milestone
+    row_order: 30
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: reference_target
+    stage_label: Reference targets
+    execution_class: reference_only
+    benchmark_marginal_area_ha: null
+    benchmark_cumulative_area_ha: 194991.692
+    historical_mp10_cumulative_area_ha: 154023
+    contract_status: context_only
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_040
+    parent_label: Less non-productive forest
+    parent_kind: transformation
+    row_order: 40
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: glb_to_aflb
+    stage_label: GLB -> AFLB
+    execution_class: attribute_exclusion
+    benchmark_marginal_area_ha: 8816.36
+    benchmark_cumulative_area_ha: 186175.333
+    historical_mp10_marginal_area_ha: 6964
+    historical_mp10_cumulative_area_ha: 147059
+    contract_status: contract_draft_ready
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_050
+    parent_label: Total productive forest
+    parent_kind: milestone
+    row_order: 50
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: reference_target
+    stage_label: Reference targets
+    execution_class: reference_only
+    benchmark_marginal_area_ha: null
+    benchmark_cumulative_area_ha: 186175.333
+    historical_mp10_cumulative_area_ha: 147059
+    contract_status: context_only
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_060
+    parent_label: Less inoperable, including uneconomic
+    parent_kind: transformation
+    row_order: 60
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: aflb_to_lhlb
+    stage_label: AFLB -> LHLB
+    execution_class: aspatial_fallback
+    benchmark_marginal_area_ha: 15746.393
+    benchmark_cumulative_area_ha: 170428.94
+    historical_mp10_marginal_area_ha: 12438
+    historical_mp10_cumulative_area_ha: 134621
+    contract_status: deferred_sensitivity
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_070
+    parent_label: Total operable
+    parent_kind: milestone
+    row_order: 70
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: reference_target
+    stage_label: Reference targets
+    execution_class: reference_only
+    benchmark_marginal_area_ha: null
+    benchmark_cumulative_area_ha: 170428.94
+    historical_mp10_cumulative_area_ha: 134621
+    contract_status: context_only
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_080
+    parent_label: Riparian management
+    parent_kind: transformation
+    row_order: 80
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: lhlb_to_thlb
+    stage_label: LHLB -> THLB
+    execution_class: provisional_spatial_overlay
+    benchmark_marginal_area_ha: 13460.014
+    benchmark_cumulative_area_ha: 156968.926
+    historical_mp10_marginal_area_ha: 10632
+    historical_mp10_cumulative_area_ha: 123989
+    contract_status: contract_review_required
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_090
+    parent_label: Ungulate winter ranges
+    parent_kind: transformation
+    row_order: 90
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: lhlb_to_thlb
+    stage_label: LHLB -> THLB
+    execution_class: provisional_spatial_overlay
+    benchmark_marginal_area_ha: 1662.246
+    benchmark_cumulative_area_ha: 155306.68
+    historical_mp10_marginal_area_ha: 1313
+    historical_mp10_cumulative_area_ha: 122676
+    contract_status: contract_review_required
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_100
+    parent_label: Established OGMAs
+    parent_kind: transformation
+    row_order: 100
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: lhlb_to_thlb
+    stage_label: LHLB -> THLB
+    execution_class: provisional_spatial_overlay
+    benchmark_marginal_area_ha: 4747.465
+    benchmark_cumulative_area_ha: 150559.215
+    historical_mp10_marginal_area_ha: 3750
+    historical_mp10_cumulative_area_ha: 118926
+    contract_status: contract_review_required
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_110
+    parent_label: Draft OGMAs
+    parent_kind: transformation
+    row_order: 110
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: lhlb_to_thlb
+    stage_label: LHLB -> THLB
+    execution_class: aspatial_fallback
+    benchmark_marginal_area_ha: 4391.722
+    benchmark_cumulative_area_ha: 146167.493
+    historical_mp10_marginal_area_ha: 3469
+    historical_mp10_cumulative_area_ha: 115457
+    contract_status: aspatial_fallback
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_120
+    parent_label: Wildlife habitat areas
+    parent_kind: transformation
+    row_order: 120
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: lhlb_to_thlb
+    stage_label: LHLB -> THLB
+    execution_class: provisional_spatial_overlay
+    benchmark_marginal_area_ha: 3.798
+    benchmark_cumulative_area_ha: 146163.695
+    historical_mp10_marginal_area_ha: 3
+    historical_mp10_cumulative_area_ha: 115454
+    contract_status: contract_review_required
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_130
+    parent_label: Recreation sites and trails
+    parent_kind: transformation
+    row_order: 130
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: lhlb_to_thlb
+    stage_label: LHLB -> THLB
+    execution_class: provisional_spatial_overlay
+    benchmark_marginal_area_ha: 63.3
+    benchmark_cumulative_area_ha: 146100.396
+    historical_mp10_marginal_area_ha: 50
+    historical_mp10_cumulative_area_ha: 115404
+    contract_status: contract_review_required
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_140
+    parent_label: Deciduous-leading forest
+    parent_kind: transformation
+    row_order: 140
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: lhlb_to_thlb
+    stage_label: LHLB -> THLB
+    execution_class: attribute_exclusion
+    benchmark_marginal_area_ha: 2245.868
+    benchmark_cumulative_area_ha: 143854.528
+    historical_mp10_marginal_area_ha: 1774
+    historical_mp10_cumulative_area_ha: 113630
+    contract_status: contract_draft_ready
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_150
+    parent_label: Cultural heritage resources
+    parent_kind: transformation
+    row_order: 150
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: lhlb_to_thlb
+    stage_label: LHLB -> THLB
+    execution_class: aspatial_fallback
+    benchmark_marginal_area_ha: 167.111
+    benchmark_cumulative_area_ha: 143687.417
+    historical_mp10_marginal_area_ha: 132
+    historical_mp10_cumulative_area_ha: 113498
+    contract_status: aspatial_fallback
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_160
+    parent_label: Total operable reductions
+    parent_kind: milestone
+    row_order: 160
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: reference_target
+    stage_label: Reference targets
+    execution_class: reference_only
+    benchmark_marginal_area_ha: null
+    benchmark_cumulative_area_ha: 143686.151
+    historical_mp10_marginal_area_ha: 21124
+    historical_mp10_cumulative_area_ha: 113497
+    contract_status: context_only
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_170
+    parent_label: Reduced landbase
+    parent_kind: milestone
+    row_order: 170
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: reference_target
+    stage_label: Reference targets
+    execution_class: reference_only
+    benchmark_marginal_area_ha: null
+    benchmark_cumulative_area_ha: 143686.151
+    historical_mp10_cumulative_area_ha: 113497
+    contract_status: context_only
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_180
+    parent_label: Less allowance for stand-level retention
+    parent_kind: transformation
+    row_order: 180
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: lhlb_to_thlb
+    stage_label: LHLB -> THLB
+    execution_class: aspatial_fallback
+    benchmark_marginal_area_ha: 7198.423
+    benchmark_cumulative_area_ha: 136487.728
+    historical_mp10_marginal_area_ha: 5686
+    historical_mp10_cumulative_area_ha: 107811
+    contract_status: aspatial_fallback
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_190
+    parent_label: Current THLB
+    parent_kind: milestone
+    row_order: 190
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: reference_target
+    stage_label: Reference targets
+    execution_class: reference_only
+    benchmark_marginal_area_ha: null
+    benchmark_cumulative_area_ha: 136487.728
+    historical_mp10_cumulative_area_ha: 107811
+    contract_status: context_only
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_200
+    parent_label: Less future roads
+    parent_kind: context
+    row_order: 200
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: context
+    stage_label: Context / interpretation
+    execution_class: context_only
+    benchmark_marginal_area_ha: 1887.592
+    benchmark_cumulative_area_ha: 134598.87
+    historical_mp10_marginal_area_ha: 1491
+    historical_mp10_cumulative_area_ha: 106319
+    contract_status: context_only
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+  - parent_step_id: tfl6_nd_210
+    parent_label: Long-term landbase
+    parent_kind: context
+    row_order: 210
+    row_source_kind: mp10_table_4
+    table_role: land_base_summary
+    land_base_stage: context
+    stage_label: Context / interpretation
+    execution_class: context_only
+    benchmark_marginal_area_ha: null
+    benchmark_cumulative_area_ha: 134598.87
+    historical_mp10_cumulative_area_ha: 106319
+    contract_status: context_only
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+    compiled_logic: []
+steps:
+  - step_id: tfl6_nd_000_reference
+    parent_step_id: tfl6_nd_000
+    order_index: 0
+    step_kind: reference_target
+    label: Total landbase
+    land_base_stage: reference_target
+    stage_label: Reference targets
+    execution_class: reference_only
+    normalized_action: reference_target
+    linked_source_entry_ids:
+      - tfl6_boundary
+      - vri_2025_r1_tfl6
+    step_status: scaffolded
+    required: true
+    benchmark_cumulative_area_ha: 217042.719
+    table_provenance: reference/tfl_6_mngment_plan_2011_ip.pdf#table=4
+  - step_id: tfl6_nd_010_non_forest
+    parent_step_id: tfl6_nd_010
+    order_index: 10
+    step_kind: attribute_exclusion
+    label: Less non-forest
+    land_base_stage: glb_to_aflb
+    stage_label: GLB -> AFLB
+    execution_class: attribute_exclusion
+    compiled_operation_type: select_attribute
+    normalized_action: exclude
+    normalized_subject: Non-forest R1 polygons
+    normalized_predicate: Review envelope uses BCLCS and non-vegetated fields; first candidate is bclcs_level_2 in N/W or null.
+    linked_source_entry_ids:
+      - vri_2025_r1_tfl6
+    checkpoint_attribute_filters:
+      - field: bclcs_level_2
+        operator: in_or_null
+        values:
+          - N
+          - W
+    step_status: scaffolded_review_required
+    required: true
+    benchmark_marginal_area_ha: 17069.353
+    benchmark_cumulative_area_ha: 199973.366
+    contract_status: contract_draft_ready
+    notes:
+      - Use for_mgmt_land_base_ind only as QA, not as the base rule.
+  - step_id: tfl6_nd_020_existing_roads
+    parent_step_id: tfl6_nd_020
+    order_index: 20
+    step_kind: spatial_overlay
+    label: Less existing roads
+    land_base_stage: glb_to_aflb
+    stage_label: GLB -> AFLB
+    execution_class: provisional_spatial_overlay
+    compiled_operation_type: buffer_then_intersect
+    normalized_action: exclude
+    normalized_subject: Existing roads
+    normalized_predicate: Buffer DRA road lines using reviewed MP10 road-width parameters and exclude overlap.
+    linked_source_entry_ids:
+      - dra_roads_tfl6
+    spatial_application_mode: provisional_buffer_overlay
+    step_status: scaffolded_review_required
+    required: true
+    benchmark_marginal_area_ha: 4981.674
+    benchmark_cumulative_area_ha: 194991.692
+    contract_status: contract_review_required
+    parameters:
+      width_rules_m:
+        highway: 30
+        mainline: 12
+        branch: 10
+        spur_or_stub: 8
+      include_future_roads: false
+  - step_id: tfl6_nd_030_total_forested
+    parent_step_id: tfl6_nd_030
+    order_index: 30
+    step_kind: reference_target
+    label: Total forested
+    land_base_stage: reference_target
+    stage_label: Reference targets
+    execution_class: reference_only
+    normalized_action: reference_target
+    linked_source_entry_ids: []
+    step_status: scaffolded
+    required: true
+    benchmark_cumulative_area_ha: 194991.692
+    contract_status: context_only
+  - step_id: tfl6_nd_040_non_productive
+    parent_step_id: tfl6_nd_040
+    order_index: 40
+    step_kind: attribute_exclusion
+    label: Less non-productive forest
+    land_base_stage: glb_to_aflb
+    stage_label: GLB -> AFLB
+    execution_class: attribute_exclusion
+    compiled_operation_type: select_attribute
+    normalized_action: exclude
+    normalized_subject: Non-productive forest
+    normalized_predicate: Exclude explicit non-productive R1 rows plus reviewed site-index threshold candidate.
+    linked_source_entry_ids:
+      - vri_2025_r1_tfl6
+      - vdyp7_2025_poly_tfl6
+    checkpoint_attribute_filters:
+      - field: non_productive_descriptor_cd
+        operator: is_not_null
+      - field: non_productive_cd
+        operator: is_not_null
+      - field: site_index
+        operator: less_than
+        value: 5
+    checkpoint_attribute_mode: any
+    step_status: scaffolded_review_required
+    required: true
+    benchmark_marginal_area_ha: 8816.36
+    benchmark_cumulative_area_ha: 186175.333
+    contract_status: contract_draft_ready
+  - step_id: tfl6_nd_050_total_productive
+    parent_step_id: tfl6_nd_050
+    order_index: 50
+    step_kind: reference_target
+    label: Total productive forest
+    land_base_stage: reference_target
+    stage_label: Reference targets
+    execution_class: reference_only
+    normalized_action: reference_target
+    linked_source_entry_ids: []
+    step_status: scaffolded
+    required: true
+    benchmark_cumulative_area_ha: 186175.333
+    contract_status: context_only
+  - step_id: tfl6_nd_060_inoperable
+    parent_step_id: tfl6_nd_060
+    order_index: 60
+    step_kind: aspatial_fallback
+    label: Less inoperable, including uneconomic
+    land_base_stage: aflb_to_lhlb
+    stage_label: AFLB -> LHLB
+    execution_class: aspatial_fallback
+    compiled_operation_type: aspatial_reduction
+    spatial_application_mode: aspatial_fallback
+    normalized_action: aspatial_reduction
+    normalized_subject: Inoperable and uneconomic stands
+    normalized_predicate: Apply benchmark-calibrated placeholder until operability proxy/sensitivity issue supplies a reviewed DEM/slope and inventory rule.
+    linked_source_entry_ids: []
+    direct_target_removed_area: true
+    step_status: scaffolded_deferred_sensitivity
+    required: true
+    benchmark_marginal_area_ha: 15746.393
+    benchmark_cumulative_area_ha: 170428.94
+    contract_status: deferred_sensitivity
+  - step_id: tfl6_nd_070_total_operable
+    parent_step_id: tfl6_nd_070
+    order_index: 70
+    step_kind: reference_target
+    label: Total operable
+    land_base_stage: reference_target
+    stage_label: Reference targets
+    execution_class: reference_only
+    normalized_action: reference_target
+    linked_source_entry_ids: []
+    step_status: scaffolded
+    required: true
+    benchmark_cumulative_area_ha: 170428.94
+    contract_status: context_only
+  - step_id: tfl6_nd_080_riparian
+    parent_step_id: tfl6_nd_080
+    order_index: 80
+    step_kind: spatial_overlay
+    label: Riparian management
+    land_base_stage: lhlb_to_thlb
+    stage_label: LHLB -> THLB
+    execution_class: provisional_spatial_overlay
+    compiled_operation_type: buffer_then_intersect
+    normalized_action: exclude
+    normalized_subject: Riparian management areas
+    normalized_predicate: Buffer classified streams, lakes, wetlands, and reviewed shoreline source using MP10/FPPR-style widths.
+    linked_source_entry_ids:
+      - fwa_stream_networks_tfl6
+      - fwa_lakes_tfl6
+      - fwa_wetlands_tfl6
+    spatial_application_mode: provisional_buffer_overlay
+    step_status: scaffolded_review_required
+    required: true
+    benchmark_marginal_area_ha: 13460.014
+    benchmark_cumulative_area_ha: 156968.926
+    contract_status: contract_review_required
+    notes:
+      - Ocean shoreline geometry remains unresolved for the first scaffold.
+  - step_id: tfl6_nd_090_uwr
+    parent_step_id: tfl6_nd_090
+    order_index: 90
+    step_kind: spatial_overlay
+    label: Ungulate winter ranges
+    land_base_stage: lhlb_to_thlb
+    stage_label: LHLB -> THLB
+    execution_class: provisional_spatial_overlay
+    compiled_operation_type: select_spatial_intersect
+    normalized_action: exclude
+    normalized_subject: UWR polygons
+    normalized_predicate: Exclude reviewed TFL 6 UWR polygons after ID/vintage filter acceptance.
+    linked_source_entry_ids:
+      - uwr_approved_tfl6
+    spatial_application_mode: provisional_fragment_overlay
+    step_status: scaffolded_review_required
+    required: true
+    benchmark_marginal_area_ha: 1662.246
+    benchmark_cumulative_area_ha: 155306.68
+    contract_status: contract_review_required
+  - step_id: tfl6_nd_100_established_ogma
+    parent_step_id: tfl6_nd_100
+    order_index: 100
+    step_kind: spatial_overlay
+    label: Established OGMAs
+    land_base_stage: lhlb_to_thlb
+    stage_label: LHLB -> THLB
+    execution_class: provisional_spatial_overlay
+    compiled_operation_type: select_spatial_intersect
+    normalized_action: exclude
+    normalized_subject: Established legal OGMAs
+    normalized_predicate: Exclude reviewed current legal OGMA polygons with 2011-vintage caveat visible.
+    linked_source_entry_ids:
+      - ogma_legal_current_tfl6
+    spatial_application_mode: provisional_fragment_overlay
+    step_status: scaffolded_review_required
+    required: true
+    benchmark_marginal_area_ha: 4747.465
+    benchmark_cumulative_area_ha: 150559.215
+    contract_status: contract_review_required
+  - step_id: tfl6_nd_110_draft_ogma
+    parent_step_id: tfl6_nd_110
+    order_index: 110
+    step_kind: aspatial_fallback
+    label: Draft OGMAs
+    land_base_stage: lhlb_to_thlb
+    stage_label: LHLB -> THLB
+    execution_class: aspatial_fallback
+    compiled_operation_type: aspatial_reduction
+    spatial_application_mode: aspatial_fallback
+    normalized_action: aspatial_reduction
+    normalized_subject: Draft OGMAs
+    normalized_predicate: Apply MP10 Table 11 benchmark fallback unless historical draft geometry is supplied and reviewed.
+    linked_source_entry_ids:
+      - ogma_non_legal_current_tfl6
+    direct_target_removed_area: true
+    step_status: scaffolded_aspatial_fallback
+    required: true
+    benchmark_marginal_area_ha: 4391.722
+    benchmark_cumulative_area_ha: 146167.493
+    contract_status: aspatial_fallback
+  - step_id: tfl6_nd_120_wha
+    parent_step_id: tfl6_nd_120
+    order_index: 120
+    step_kind: spatial_overlay
+    label: Wildlife habitat areas
+    land_base_stage: lhlb_to_thlb
+    stage_label: LHLB -> THLB
+    execution_class: provisional_spatial_overlay
+    compiled_operation_type: select_spatial_intersect
+    normalized_action: exclude
+    normalized_subject: WHA polygons
+    normalized_predicate: Exclude reviewed TFL 6 WHA polygons after ID/vintage filter acceptance.
+    linked_source_entry_ids:
+      - wha_approved_tfl6
+    spatial_application_mode: provisional_fragment_overlay
+    step_status: scaffolded_review_required
+    required: true
+    benchmark_marginal_area_ha: 3.798
+    benchmark_cumulative_area_ha: 146163.695
+    contract_status: contract_review_required
+  - step_id: tfl6_nd_130_recreation
+    parent_step_id: tfl6_nd_130
+    order_index: 130
+    step_kind: spatial_overlay
+    label: Recreation sites and trails
+    land_base_stage: lhlb_to_thlb
+    stage_label: LHLB -> THLB
+    execution_class: provisional_spatial_overlay
+    compiled_operation_type: buffer_then_intersect
+    normalized_action: exclude
+    normalized_subject: Recreation sites and trails
+    normalized_predicate: Apply reviewed polygon overlay and 10 m trail buffer for accepted active recreation features.
+    linked_source_entry_ids:
+      - recreation_polygons_tfl6
+      - recreation_trails_tfl6
+    spatial_application_mode: provisional_buffer_overlay
+    step_status: scaffolded_review_required
+    required: true
+    benchmark_marginal_area_ha: 63.3
+    benchmark_cumulative_area_ha: 146100.396
+    contract_status: contract_review_required
+  - step_id: tfl6_nd_140_deciduous_leading
+    parent_step_id: tfl6_nd_140
+    order_index: 140
+    step_kind: attribute_exclusion
+    label: Deciduous-leading forest
+    land_base_stage: lhlb_to_thlb
+    stage_label: LHLB -> THLB
+    execution_class: attribute_exclusion
+    compiled_operation_type: select_attribute
+    normalized_action: exclude
+    normalized_subject: Deciduous-leading stands
+    normalized_predicate: Exclude stands where leading species is deciduous; do not remove deciduous secondary components in conifer-leading stands.
+    linked_source_entry_ids:
+      - vri_2025_r1_tfl6
+      - vdyp7_2025_layer_tfl6
+    checkpoint_attribute_filters:
+      - field: species_cd_1
+        operator: in
+        values:
+          - DR
+          - AC
+          - MB
+    step_status: scaffolded_review_required
+    required: true
+    benchmark_marginal_area_ha: 2245.868
+    benchmark_cumulative_area_ha: 143854.528
+    contract_status: contract_draft_ready
+  - step_id: tfl6_nd_150_cultural_heritage
+    parent_step_id: tfl6_nd_150
+    order_index: 150
+    step_kind: aspatial_fallback
+    label: Cultural heritage resources
+    land_base_stage: lhlb_to_thlb
+    stage_label: LHLB -> THLB
+    execution_class: aspatial_fallback
+    compiled_operation_type: aspatial_reduction
+    spatial_application_mode: aspatial_fallback
+    normalized_action: aspatial_reduction
+    normalized_subject: Cultural heritage resources
+    normalized_predicate: Apply MP10 Table 15 aspatial fallback; do not seek sensitive TUS/CMT geometry.
+    linked_source_entry_ids: []
+    direct_target_removed_area: true
+    step_status: scaffolded_aspatial_fallback
+    required: true
+    benchmark_marginal_area_ha: 167.111
+    benchmark_cumulative_area_ha: 143687.417
+    contract_status: aspatial_fallback
+  - step_id: tfl6_nd_160_total_operable_reductions
+    parent_step_id: tfl6_nd_160
+    order_index: 160
+    step_kind: reference_target
+    label: Total operable reductions
+    land_base_stage: reference_target
+    stage_label: Reference targets
+    execution_class: reference_only
+    normalized_action: reference_target
+    linked_source_entry_ids: []
+    step_status: scaffolded
+    required: true
+    benchmark_marginal_area_ha: 26742.788
+    benchmark_cumulative_area_ha: 143686.151
+    contract_status: context_only
+  - step_id: tfl6_nd_170_reduced_landbase
+    parent_step_id: tfl6_nd_170
+    order_index: 170
+    step_kind: reference_target
+    label: Reduced landbase
+    land_base_stage: reference_target
+    stage_label: Reference targets
+    execution_class: reference_only
+    normalized_action: reference_target
+    linked_source_entry_ids: []
+    step_status: scaffolded
+    required: true
+    benchmark_cumulative_area_ha: 143686.151
+    contract_status: context_only
+  - step_id: tfl6_nd_180_stand_level_retention
+    parent_step_id: tfl6_nd_180
+    order_index: 180
+    step_kind: aspatial_fallback
+    label: Less allowance for stand-level retention
+    land_base_stage: lhlb_to_thlb
+    stage_label: LHLB -> THLB
+    execution_class: aspatial_fallback
+    compiled_operation_type: aspatial_reduction
+    spatial_application_mode: aspatial_fallback
+    normalized_action: aspatial_reduction
+    normalized_subject: Stand-level retention
+    normalized_predicate: Apply MP10 Table 16 scaled fallback until strategic RMZ geometry is located and reviewed.
+    linked_source_entry_ids:
+      - landscape_units_tfl6
+      - bec_tfl6
+    direct_target_removed_area: true
+    step_status: scaffolded_aspatial_fallback
+    required: true
+    benchmark_marginal_area_ha: 7198.423
+    benchmark_cumulative_area_ha: 136487.728
+    contract_status: aspatial_fallback
+  - step_id: tfl6_nd_190_current_thlb
+    parent_step_id: tfl6_nd_190
+    order_index: 190
+    step_kind: reference_target
+    label: Current THLB
+    land_base_stage: reference_target
+    stage_label: Reference targets
+    execution_class: reference_only
+    normalized_action: reference_target
+    linked_source_entry_ids: []
+    step_status: scaffolded
+    required: true
+    benchmark_cumulative_area_ha: 136487.728
+    contract_status: context_only
+  - step_id: tfl6_nd_200_future_roads
+    parent_step_id: tfl6_nd_200
+    order_index: 200
+    step_kind: context
+    label: Less future roads
+    land_base_stage: context
+    stage_label: Context / interpretation
+    execution_class: context_only
+    normalized_action: no_deduction
+    linked_source_entry_ids: []
+    step_status: scaffolded_context_only
+    required: false
+    benchmark_marginal_area_ha: 1887.592
+    benchmark_cumulative_area_ha: 134598.87
+    contract_status: context_only
+    notes:
+      - Excluded from current THLB base-lane execution.
+  - step_id: tfl6_nd_210_long_term_landbase
+    parent_step_id: tfl6_nd_210
+    order_index: 210
+    step_kind: context
+    label: Long-term landbase
+    land_base_stage: context
+    stage_label: Context / interpretation
+    execution_class: context_only
+    normalized_action: reference_target
+    linked_source_entry_ids: []
+    step_status: scaffolded_context_only
+    required: false
+    benchmark_cumulative_area_ha: 134598.87
+    contract_status: context_only

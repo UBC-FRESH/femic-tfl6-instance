@@ -63,6 +63,7 @@ projects:
 - `ROADMAP.md` is the active plan and next-step tracker.
 - `CHANGE_LOG.md` is the append-only project narrative.
 - `planning/` contains focused design and provenance notes.
+- `docs/` contains Sphinx teaching-facing notes.
 - GitHub Issues carry active workflow state and should be kept synchronized with
   roadmap and changelog entries.
 

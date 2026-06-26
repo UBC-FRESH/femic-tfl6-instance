@@ -545,3 +545,601 @@
   first task; and
 - corrected `ROADMAP.md` Current Next Steps so Phase 1 closeout comes before
   P2.1 `#16`.
+
+## 2026-06-23 - Started P2.1 source-layer dependency inventory
+
+- created `feature/p2-source-layer-thlb-inputs` from merged instance `main`;
+- added `planning/tfl6_source_layer_dependency_inventory.md` as the first P2.1
+  dependency-resolution surface;
+- separated accepted local TFL 6 AOI/VRI/VDYP inputs from R1/VDYP field-mapping
+  blockers, missing public/reference spatial layers, and fallback-only rows;
+- updated `ROADMAP.md` Current Next Steps to continue P2.1 authority/source
+  resolution before downloads, recipe YAML, or THLB execution; and
+- performed no source downloads, recipe execution, model-input generation, or
+  Patchworks runtime work.
+
+## 2026-06-23 - Resolved first roads/operability source candidates
+
+- ran a metadata-only FEMIC BCDC resolver pass for TFL 6 roads and operability
+  candidate layers;
+- recorded Digital Road Atlas MPAR
+  `WHSE_BASEMAPPING.DRA_DGTL_ROAD_ATLAS_MPAR_SP` as the first public authority
+  candidate for current existing-road geometry;
+- recorded 2025 CEF Integrated Roads as a secondary/reference candidate, not
+  the accepted road authority;
+- recorded that no public TFL 6-specific operability geometry was accepted from
+  the first resolver pass, so operability remains a local-evidence/proxy
+  decision; and
+- updated `ROADMAP.md` Current Next Steps to move the next P2.1 resolver slice
+  to hydrology/wetlands/shoreline and legal overlays before source
+  materialization.
+
+## 2026-06-23 - Resolved hydrology and legal overlay candidates
+
+- ran metadata-only FEMIC BCDC resolver passes for Freshwater Atlas hydrology,
+  shoreline/coastline, UWR, WHA, and OGMA candidate layers;
+- recorded Freshwater Atlas streams, lakes, and wetlands as the first public
+  hydrology materialization candidates;
+- recorded approved UWR
+  `WHSE_WILDLIFE_MANAGEMENT.WCP_UNGULATE_WINTER_RANGE_SP` and approved WHA
+  `WHSE_WILDLIFE_MANAGEMENT.WCP_WILDLIFE_HABITAT_AREA_POLY` as the first
+  legal-overlay materialization candidates, rejecting proposed layers for the
+  reviewed lane;
+- recorded current legal OGMA
+  `WHSE_LAND_USE_PLANNING.RMP_OGMA_LEGAL_CURRENT_SVW` as the first established
+  OGMA candidate, with current-vs-2011 vintage risk;
+- kept current non-legal OGMA as a review clue only for the draft-OGMA row;
+- kept shoreline/ocean handling unresolved because the clean public coastline
+  candidates found in this pass are coarse NTS 1:250,000 layers; and
+- updated `ROADMAP.md` Current Next Steps to move the next P2.1 resolver slice
+  to recreation features and LU/RMZ/BEC strata before source materialization.
+
+## 2026-06-23 - Resolved recreation and LU/BEC strata candidates
+
+- ran metadata-only FEMIC BCDC resolver passes for recreation features,
+  landscape units, BEC, and resource-management-zone candidate layers;
+- recorded recreation polygons
+  `WHSE_FOREST_TENURE.FTEN_RECREATION_POLY_SVW`, recreation trails
+  `WHSE_FOREST_TENURE.FTEN_REC_TRAILS_SVW`, and recreation site points
+  `WHSE_FOREST_TENURE.FTEN_REC_SITE_POINTS_SVW` as first public recreation
+  materialization candidates;
+- recorded recreation details/closures
+  `WHSE_FOREST_TENURE.FTEN_REC_DTAILS_CLOSURES_SV` as attribution/context
+  only;
+- recorded Landscape Units of British Columbia
+  `WHSE_LAND_USE_PLANNING.RMP_LANDSCAPE_UNIT_SVW` and BEC Map
+  `WHSE_FOREST_VEGETATION.BEC_BIOGEOCLIMATIC_POLY` as first public strata
+  candidates;
+- kept Strategic Land and Resource Plans
+  `WHSE_LAND_USE_PLANNING.RMP_STRGC_LAND_RSRCE_PLAN_SVW` as an RMZ review clue
+  only, not an accepted TFL 6 RMZ source;
+- rejected the generic `TFL 6 resource management zones` resolver hit because
+  it returned an unrelated North Coast riparian-management-zone dataset; and
+- updated `ROADMAP.md` Current Next Steps to point at historical/fallback
+  decisions and source-materialization planning before any downloads.
+
+## 2026-06-24 - Recorded P2.1 historical fallback decisions
+
+- recorded provisional teaching fallback decisions for the remaining P2.1
+  historical/fallback rows without downloading or materializing source layers;
+- kept 1999 WFP operability as historical/local-source evidence only and
+  accepted MP10 Table 8 / adjusted benchmark as an aspatial fallback until
+  local operability geometry is found;
+- preserved the MP10 40 m ocean-shoreline rule while keeping coarse NTS
+  coastline as a teaching candidate requiring review;
+- kept current non-legal OGMA as a review clue only and accepted MP10 Table 11
+  / adjusted benchmark as the draft-OGMA fallback until historical geometry is
+  found;
+- accepted LU/BEC public candidates while keeping RMZ geometry/schema
+  unresolved and recording MP10 Table 16 as a reviewed percent-by-stratum
+  fallback;
+- recorded MP10 Table 15 cultural heritage as an aspatial/proxy fallback and
+  confirmed that sensitive TUS/CMT geometry should not be sought as public
+  input; and
+- updated `ROADMAP.md` Current Next Steps to point at a P2.1
+  source-materialization plan before any downloads or THLB execution.
+
+## 2026-06-24 - Split operability into its own P2.1a design lane
+
+- opened `#20` as `P2.1a` for operability netdown proxy and sensitivity design;
+- added `planning/tfl6_operability_netdown_proxy.md` with MP9/MP10 evidence for
+  physical/economic operability, yarding-system logic, slope classes, minimum
+  harvest criteria, and economic-access sensitivities;
+- updated `planning/tfl6_source_layer_dependency_inventory.md` so MP10 Table 8
+  / adjusted benchmarks remain calibration context rather than a final locked
+  aspatial fallback;
+- updated `ROADMAP.md` Current Next Steps so P2.1a design precedes the
+  source-materialization plan; and
+- performed no DEM materialization, slope-raster build, recipe YAML creation,
+  THLB execution, model-input generation, or Patchworks runtime work.
+
+## 2026-06-24 - Confirmed public current OGMA polygon authorities
+
+- ran a metadata-only FEMIC BCDC resolver deep dive for legal, non-legal, and
+  general OGMA layer candidates;
+- confirmed `WHSE_LAND_USE_PLANNING.RMP_OGMA_LEGAL_CURRENT_SVW` as the public,
+  WFS-queryable current legal OGMA polygon layer and first established-OGMA
+  materialization candidate;
+- confirmed `WHSE_LAND_USE_PLANNING.RMP_OGMA_NON_LEGAL_CURRENT_SVW` as the
+  public, WFS-queryable current non-legal OGMA polygon layer and first
+  materialization/review candidate for the draft-OGMA row;
+- recorded non-materializing TFL 6 bbox WFS hit checks of `264` legal-current
+  and `26` non-legal-current features;
+- kept government-only `Legal - All` and `Non Legal - All` OGMA layers out of
+  the public teaching source lane; and
+- performed no OGMA download, clipping, recipe YAML creation, THLB execution,
+  model-input generation, or Patchworks runtime work.
+
+## 2026-06-24 - Recorded P2.1a DEM discovery for operability slope proxy
+
+- ran metadata-only FEMIC BCDC resolver passes for DEM, LiDAR, CDED, TRIM
+  contour, elevation, and slope-raster candidates;
+- recorded LidarBC/open LiDAR as the preferred future high-resolution source
+  route for a defensible TFL 6 stand-level slope surface, subject to AOI tile
+  coverage and materialization planning;
+- recorded CDED 1:250,000 as a coarse fallback or raster-pipeline smoke-test
+  source, not the preferred operability proxy surface;
+- recorded RESULTS openings slope/aspect/elevation as an attribute clue only,
+  not a continuous DEM substitute;
+- recorded that no useful ready-made public provincial slope-raster candidate
+  was found by the resolver queries; and
+- performed no DEM download, raster clipping, slope derivation, zonal
+  statistics, recipe YAML creation, THLB execution, model-input generation, or
+  Patchworks runtime work.
+
+## 2026-06-24 - Drafted P2.1a operability parameter contract
+
+- added a base-case-versus-sensitivity parameter table to
+  `planning/tfl6_operability_netdown_proxy.md`;
+- separated base-case design stance from student-tunable sensitivity knobs for
+  height class, species group, stocking/open-stand signal, volume threshold,
+  slope threshold, proportion-of-stand slope threshold, heli inclusion,
+  marginal economic classes, and road/access pressure;
+- added later DEM materialization-plan requirements covering LidarBC tile-index
+  selection, AOI buffering, tile count/volume estimates, public-data suitability,
+  CDED smoke-test sequencing, canonical paths, and QA checks;
+- updated `ROADMAP.md` Current Next Steps so P2.1a is now ready for maintainer
+  review/closeout or targeted edits before any source downloads start; and
+- performed no source download, DEM materialization, slope derivation, zonal
+  statistics, recipe YAML creation, THLB execution, model-input generation, or
+  Patchworks runtime work.
+
+## 2026-06-24 - Closed P2.1a operability design lane
+
+- audited P2.1a acceptance against `planning/tfl6_operability_netdown_proxy.md`,
+  `planning/tfl6_source_layer_dependency_inventory.md`, `ROADMAP.md`, and issue
+  comments;
+- marked P2.1a complete in `ROADMAP.md`;
+- moved Current Next Steps back to P2.1 source-materialization planning, with
+  operability proxy/DEM slope kept as a later reviewed dependency rather than
+  an immediate download;
+- closed GitHub issue `#20` after posting a final closeout comment; and
+- performed no source download, DEM materialization, slope derivation, zonal
+  statistics, recipe YAML creation, THLB execution, model-input generation, or
+  Patchworks runtime work.
+
+## 2026-06-24 - Drafted P2.1 source-materialization plan
+
+- added a source-materialization plan to
+  `planning/tfl6_source_layer_dependency_inventory.md`;
+- separated safe-to-clip-first public candidates from review/fallback-only rows;
+- listed planned output paths for FWA hydrology, approved UWR/WHA, legal and
+  non-legal current OGMAs, recreation features, landscape units, BEC, and DRA
+  roads;
+- kept operability proxy/DEM slope, shoreline precision, RMZ schema, cultural
+  heritage, future roads, historical WFP operability geometry, and
+  government-only OGMA `All` layers out of the first materialization pass;
+- added provenance manifest requirements and first-pass QA checks for future
+  materialized layers;
+- updated `ROADMAP.md` Current Next Steps so source downloads remain blocked
+  until the materialization plan is accepted; and
+- performed no source download, clipping, recipe YAML creation, THLB execution,
+  model-input generation, or Patchworks runtime work.
+
+## 2026-06-24 - Accepted P2.1 source-materialization plan
+
+- marked the source-materialization plan in
+  `planning/tfl6_source_layer_dependency_inventory.md` as accepted for the first
+  bounded P2.1 materialization pass;
+- clarified that acceptance authorizes only safe-to-clip-first rows and does
+  not accept any materialized layer as executable THLB recipe logic;
+- kept review/fallback-only rows out of scope for the first materialization
+  pass;
+- updated `ROADMAP.md` Current Next Steps to the first approved
+  source-materialization pass; and
+- performed no source download, clipping, recipe YAML creation, THLB execution,
+  model-input generation, or Patchworks runtime work.
+
+## 2026-06-24 - Materialized FWA hydrology sources for review
+
+- materialized the first approved P2.1 source family: FWA streams, lakes, and
+  wetlands clipped to the accepted TFL 6 AOI;
+- wrote curated review artifacts under `data/source/tfl_6/hydrology/`;
+- recorded provenance, source authority, transient fetch details, clipped
+  feature counts, area/length summaries, SHA-256 hashes, and read-smoke
+  evidence in `data/source/tfl_6/hydrology/hydrology_source_manifest.json`;
+- recorded `12078` clipped stream features with `4748715.276 m` total line
+  length, `599` clipped lake polygons with `3243.849 ha`, and `572` clipped
+  wetland polygons with `982.424 ha`;
+- updated `planning/tfl6_source_layer_dependency_inventory.md` and
+  `ROADMAP.md` so the next P2.1 materialization pass remains bounded to another
+  safe-to-clip source family; and
+- accepted no riparian recipe semantics, created no recipe YAML, ran no THLB
+  netdown, generated no model inputs, and performed no Patchworks runtime work.
+
+## 2026-06-24 - Materialized approved wildlife overlays for review
+
+- materialized the approved UWR and WHA public wildlife overlay candidates
+  clipped to the accepted TFL 6 AOI;
+- wrote curated review artifacts under `data/source/tfl_6/wildlife/`;
+- recorded provenance, source authority, transient fetch details, clipped
+  feature counts, area summaries, SHA-256 hashes, and read-smoke evidence in
+  `data/source/tfl_6/wildlife/wildlife_source_manifest.json`;
+- recorded `22` clipped UWR polygons with `2365.514 ha` total area and `45`
+  clipped WHA polygons with `2942.796 ha` total area;
+- updated `planning/tfl6_source_layer_dependency_inventory.md` and
+  `ROADMAP.md` so the next P2.1 materialization pass remains bounded to another
+  safe-to-clip source family, preferably current legal/non-legal OGMA overlays;
+  and
+- accepted no wildlife netdown semantics, created no recipe YAML, ran no THLB
+  netdown, generated no model inputs, and performed no Patchworks runtime work.
+
+## 2026-06-24 - Materialized current OGMA overlays for review
+
+- materialized the current legal and current non-legal public OGMA overlay
+  candidates clipped to the accepted TFL 6 AOI;
+- wrote curated review artifacts under `data/source/tfl_6/ogma/`;
+- recorded provenance, source authority, transient fetch details, clipped
+  feature counts, area summaries, rule-critical fields, date summaries,
+  SHA-256 hashes, and read-smoke evidence in
+  `data/source/tfl_6/ogma/ogma_source_manifest.json`;
+- recorded `165` clipped legal-current OGMA polygons with `16131.032 ha`
+  total area and `2` clipped non-legal-current OGMA multipolygons with
+  `0.687 ha` total area;
+- preserved the current-vs-2011 vintage warning: current non-legal OGMA is a
+  proxy candidate only and should not be treated as the MP10 draft-OGMA row
+  without recipe-readiness review against MP10 Table 11 and the adjusted
+  benchmark;
+- updated `planning/tfl6_source_layer_dependency_inventory.md` and
+  `ROADMAP.md` so the next P2.1 materialization pass remains bounded to another
+  safe-to-clip source family, preferably recreation features or LU/BEC strata;
+  and
+- accepted no established-OGMA or draft-OGMA netdown semantics, created no
+  recipe YAML, ran no THLB netdown, generated no model inputs, and performed no
+  Patchworks runtime work.
+
+## 2026-06-24 - Materialized recreation sources for review
+
+- materialized public recreation polygons, recreation trails, recreation site
+  points, and recreation details/closures clipped or filtered to the accepted
+  TFL 6 AOI;
+- wrote curated review artifacts under `data/source/tfl_6/recreation/`;
+- recorded provenance, source authority, transient fetch details, clipped or
+  filtered feature counts, area/length/count summaries, rule-critical fields,
+  date summaries, SHA-256 hashes, and read-smoke evidence in
+  `data/source/tfl_6/recreation/recreation_source_manifest.json`;
+- recorded `26` clipped recreation polygon features with `187.868 ha`, `3`
+  clipped recreation trail features with `1737.285 m`, `10` filtered site
+  points, and `13` filtered details/closures points;
+- preserved the review-only boundary: recreation class selection,
+  retirement/status handling, point/line/polygon overlap order, and the MP10
+  10 m buffer rule remain unaccepted;
+- updated `planning/tfl6_source_layer_dependency_inventory.md` and
+  `ROADMAP.md` so the next P2.1 materialization pass remains bounded to another
+  safe-to-clip source family, preferably LU/BEC strata; and
+- accepted no recreation netdown semantics, created no recipe YAML, ran no THLB
+  netdown, generated no model inputs, and performed no Patchworks runtime work.
+
+## 2026-06-24 - Materialized LU/BEC strata sources for review
+
+- materialized public landscape-unit and BEC strata candidates clipped to the
+  accepted TFL 6 AOI;
+- wrote curated review artifacts under `data/source/tfl_6/strata/`;
+- recorded provenance, source authority, transient fetch details, clipped
+  feature counts, area summaries, LU names, BEC labels, rule-critical fields,
+  date summaries, SHA-256 hashes, and read-smoke evidence in
+  `data/source/tfl_6/strata/strata_source_manifest.json`;
+- recorded `13` clipped landscape-unit features and `107` clipped BEC features,
+  both summing to `217042.719 ha` because they partition the accepted AOI;
+- preserved the review-only boundary: LU/BEC can support OGMA, RMZ, and Table
+  16 review, but neither layer is a netdown by itself, and RMZ/Table 16
+  executable semantics remain blocked;
+- updated `planning/tfl6_source_layer_dependency_inventory.md` and
+  `ROADMAP.md` so the next P2.1 materialization pass remains bounded to another
+  safe-to-clip source family, preferably DRA existing roads; and
+- accepted no RMZ or Table 16 netdown semantics, created no recipe YAML, ran no
+  THLB netdown, generated no model inputs, and performed no Patchworks runtime
+  work.
+
+## 2026-06-24 - Materialized DRA existing-road source for review
+
+- materialized the Digital Road Atlas MPAR public road-line candidate clipped
+  to the accepted TFL 6 AOI;
+- wrote the curated review artifact under `data/source/tfl_6/roads/`;
+- recorded provenance, source authority, transient fetch details, WFS paging,
+  clipped feature count, line-length summary, road class/surface/type fields,
+  date summaries, SHA-256 hash, and read-smoke evidence in
+  `data/source/tfl_6/roads/roads_source_manifest.json`;
+- recorded `10706` clipped DRA road features with `4255862.907 m` clipped
+  geometry length;
+- preserved the review-only boundary: road class filtering, road-width/buffer
+  rules, overlap order, and treatment of trails/bridges/virtual records remain
+  unaccepted;
+- preserved the future-road boundary: MP10 Table 17 future-road allowance stays
+  separate from the current existing-road overlay unless a later scenario
+  decision accepts it; and
+- updated `planning/tfl6_source_layer_dependency_inventory.md` and
+  `ROADMAP.md` so the next P2.1 slice is a source-materialization
+  closeout/review pass rather than another download.
+
+## 2026-06-24 - Clarified RMZ terminology in Phase 2 planning
+
+- split operational riparian RMA/RRZ/RMZ language for `tfl6_nd_080` from
+  strategic Resource Management Zone language for `tfl6_nd_180`;
+- clarified that MP10 Table 16 stand-level retention needs strategic
+  Resource Management Zone/LU/BEC attribution or an explicit
+  percent-by-stratum fallback, not streamside riparian RMZ geometry;
+- preserved the rejected North Coast riparian-management-zone resolver hit as a
+  false positive for the TFL 6 strategic RMZ need; and
+- kept both riparian-rule execution and Table 16 stand-level-retention
+  execution blocked until recipe-readiness review accepts the required schema
+  or fallback treatments.
+
+## 2026-06-24 - Accepted aspatial Table 16 stand-level-retention fallback
+
+- ran a targeted strategic RMZ resolver recheck using the current FEMIC BCDC
+  resolver against VILUP, Vancouver Island strategic Resource Management Zone,
+  EFZ/GMZ/SMZ, TFL 6 resource-management-zone, and exact-object queries;
+- confirmed the only plausible public candidate remains
+  `WHSE_LAND_USE_PLANNING.RMP_STRGC_LAND_RSRCE_PLAN_SVW`, which exposes WMS,
+  KML ground-overlay, and custom-download resources but no usable WFS/direct
+  vector geometry for the automated P2.1 lane;
+- confirmed the KML path contains WMS overlays, including a Vancouver Island
+  Land Use Plan boundary overlay, but no materializable EFZ/GMZ/SMZ or
+  strategic RMZ vector polygons for TFL 6; and
+- accepted `tfl6_nd_180` as an aspatial MP10 Table 16 stand-level-retention
+  deduction for the teaching base case: `5686 ha` historical MP10 or
+  `7198.423 ha` scaled current-AOI validation target, with any later strategic
+  RMZ spatial treatment deferred to an enhancement/sensitivity lane.
+
+## 2026-06-24 - Added strategic RMZ student-challenge docs note
+
+- added the first minimal Sphinx docs tree under `docs/`;
+- documented an advanced student challenge to locate strategic RMZ polygon
+  areas, replace the aspatial `tfl6_nd_180` fallback with a geometry-backed
+  RMZ/LU/BEC overlay, rebuild the model, and rerun scenarios; and
+- kept the challenge scoped as an enhancement/sensitivity exercise rather than
+  a base-case prerequisite.
+
+## 2026-06-24 - Added full Sphinx docs requirement to Phase 5 roadmap
+
+- tightened P5.3 so the release phase requires full Sphinx teaching
+  documentation modeled on `femic-k3z-instance` and `femic-tsa29-instance`;
+- listed the expected docs scope: quickstart, rebuild workflow, source-data
+  provenance, THLB validation notes, scenario teaching workflows, advanced
+  student challenges, known limitations, and warning-clean Sphinx build
+  evidence; and
+- kept the minimal current `docs/` tree as an early seed, not the final Phase 5
+  documentation deliverable.
+
+## 2026-06-24 - Created Phase 5 full-docs child issue
+
+- opened P5.3 child issue `#21` for building the full Sphinx teaching
+  documentation package;
+- linked `#21` from the Phase 5 roadmap task and Phase 5 parent issue `#15`;
+- scoped the docs package to K3Z/TSA29-style coverage, including student
+  quickstart, rebuild workflow, source provenance, THLB validation, scenario
+  teaching workflows, advanced challenges, known limitations, and
+  warning-clean Sphinx build evidence; and
+- kept the issue explicitly downstream of Phase 4 runtime/package QA rather
+  than active Phase 2 work.
+
+## 2026-06-24 - Closed P2.1 source-materialization review
+
+- audited the accepted local TFL 6 AOI/VRI/VDYP inputs and the materialized
+  hydrology, wildlife, OGMA, recreation, LU/BEC strata, and DRA roads source
+  manifests;
+- added a P2.1 closeout-review table to
+  `planning/tfl6_source_layer_dependency_inventory.md` classifying each MP10
+  netdown dependency as accepted local input, materialized-for-review source,
+  P2.2 field-mapping work, accepted aspatial fallback, context-only row, or
+  deferred enhancement/sensitivity lane;
+- marked P2.1 complete in `ROADMAP.md`;
+- opened P2.2 child issue `#22` for accepted 2025 R1/VDYP7 field profiling and
+  linked it from the roadmap; and
+- preserved the boundary that no THLB recipe YAML, THLB execution, model input,
+  XML, Matrix Builder, or Patchworks runtime work was started.
+
+## 2026-06-24 - Promoted Phase 2 from proposed to active
+
+- updated `ROADMAP.md` so Phase 2 is no longer described as proposed now that
+  P2.1 source-layer and THLB-input work is active under parent issue `#12`;
+- left later Phase 3 through Phase 5 sections as proposed/future until their
+  dependency gates open; and
+- preserved older changelog wording about the original P1.8 proposal step as
+  historical provenance.
+
+## 2026-06-24 - Profiled accepted R1 and VDYP7 field surfaces
+
+- added `planning/tfl6_r1_vdyp_field_profile.md` as the P2.2a schema and
+  join-coverage profile for accepted 2025 TFL 6 R1 and VDYP7 inputs;
+- recorded `feature_id` join integrity across `26959` R1 rows, `26833` VDYP7
+  polygon rows, and `25585` VDYP7 layer rows;
+- summarized area-weighted candidate fields for non-forest, non-productive,
+  deciduous-leading, productivity, BEC, and operability-proxy review;
+- updated `ROADMAP.md` so P2.2b is the next bounded slice for candidate field
+  mappings and gross-area diagnostics; and
+- accepted no executable THLB recipe logic, fetched no new source layers, and
+  started no DEM/slope, model-input, XML, Matrix Builder, or Patchworks runtime
+  work.
+
+## 2026-06-24 - Drafted P2.2b candidate field-mapping diagnostics
+
+- extended `planning/tfl6_r1_vdyp_field_profile.md` with candidate mapping and
+  gross-area diagnostics for `tfl6_nd_010`, `tfl6_nd_040`, `tfl6_nd_140`, and
+  operability-proxy review;
+- compared candidate gross areas against the scaled current-AOI benchmark
+  deductions while keeping gross-vs-marginal accounting explicit;
+- flagged `for_mgmt_land_base_ind == N` as a useful QA cross-check rather than
+  a clean single-step non-forest rule because it absorbs explicit
+  non-productive rows;
+- recorded missing VDYP7 layer coverage as a P2.3 QA/mapping item; and
+- kept P2.2 open for a short review/acceptance handoff contract before P2.3,
+  with no source fetch, recipe YAML, THLB execution, model-input generation,
+  XML, Matrix Builder, or Patchworks runtime work started.
+
+## 2026-06-24 - Closed P2.2 R1 and VDYP7 field profiling
+
+- added a P2.2c field-mapping handoff contract to
+  `planning/tfl6_r1_vdyp_field_profile.md`;
+- accepted BCLCS/non-vegetated/land-cover, explicit non-productive codes plus
+  reviewed productivity thresholds, leading-species deciduous signals, BEC
+  attribution, and R1/VDYP join diagnostics as suitable surfaces for P2.3
+  source-layer recipe-contract drafting;
+- kept `for_mgmt_land_base_ind == N` as QA-only because it absorbs explicit
+  non-productive rows;
+- kept operability-proxy fields as QA/sensitivity support only until the P2.1a
+  design constraints and later slope/aspatial decisions are incorporated; and
+- marked P2.2 complete in `ROADMAP.md` without fetching source layers, creating
+  recipe YAML, executing THLB netdown, building DEM/slope products, generating
+  model inputs, or starting XML, Matrix Builder, or Patchworks runtime work.
+
+## 2026-06-24 - Started P2.3 source-layer recipe-contract planning
+
+- opened child issue `#23` for P2.3 under Phase 2 parent `#12`;
+- added `planning/tfl6_source_layer_recipe_contracts.md` as the first
+  source-layer recipe-contract table for MP10 Table 4 rows;
+- classified each row as contract-draft-ready, review-required,
+  aspatial-fallback, QA-only, deferred-sensitivity, or context-only;
+- recorded P2.4 handoff boundaries for future executable recipe work; and
+- kept this slice planning-only, with no source fetch, executable recipe YAML,
+  THLB execution, DEM/slope materialization, model-input generation, XML,
+  Matrix Builder, or Patchworks runtime work.
+
+## 2026-06-24 - Closed P2.3 source-layer recipe-contract planning
+
+- accepted `planning/tfl6_source_layer_recipe_contracts.md` as the P2.4
+  smoke-lane handoff contract;
+- defined which rows P2.4 may encode first as inventory-derived rules,
+  provisional spatial overlays, aspatial fallbacks, QA-only diagnostics, or
+  context-only checkpoints;
+- required the first P2.4 smoke report to keep gross area, ordered marginal
+  area, cumulative checkpoints, fallback rows, provisional rows, and scaled
+  benchmark comparisons visible;
+- preserved unresolved road, riparian, vintage, draft-OGMA, operability, and
+  strategic-RMZ items as provisional, fallback, or sensitivity-bound rather
+  than final semantics; and
+- marked P2.3 complete in `ROADMAP.md` without fetching source layers,
+  creating executable recipe YAML, executing THLB netdown, building DEM/slope
+  products, generating model inputs, or starting XML, Matrix Builder, or
+  Patchworks runtime work.
+
+## 2026-06-25 - Started P2.4 THLB smoke-lane planning
+
+- opened child issue `#24` for P2.4 under Phase 2 parent `#12`;
+- added `planning/tfl6_thlb_smoke_lane_plan.md` with the first executable
+  recipe/scaffold and smoke-run boundary;
+- selected the existing FEMIC `config/tsr/` reviewed recipe convention for the
+  first TFL 6 smoke lane until a dedicated TFL/general-FMU wrapper exists;
+- split P2.4 into bounded subtasks for recipe scaffold creation, scaffold
+  validation, exact smoke-run command/stop-line definition, bounded execution,
+  and artifact inspection; and
+- kept this slice planning-only, with no recipe YAML creation, THLB execution,
+  source fetch, DEM/slope materialization, model-input generation, XML, Matrix
+  Builder, or Patchworks runtime work.
+
+## 2026-06-25 - Added P2.4c THLB recipe scaffold
+
+- added `config/tsr/source_layers.recipe.yaml` as the companion source-layer
+  scaffold for already-materialized TFL 6 inputs;
+- added `config/tsr/thlb_netdown.recipe.yaml` with one parent row and one
+  scaffolded step for every MP10 Table 4 row from `tfl6_nd_000` through
+  `tfl6_nd_210`;
+- preserved the P2.3/P2.4 statuses for attribute rules, provisional spatial
+  overlays, aspatial fallbacks, context rows, and deferred sensitivity rows;
+- verified both scaffold files parse and load through FEMIC's TSR recipe
+  loaders without executing THLB logic; and
+- updated `ROADMAP.md` and `planning/tfl6_thlb_smoke_lane_plan.md` so P2.4d
+  validation/readiness is the next bounded slice.
+
+## 2026-06-25 - Recorded GeoPackage checkpoint support for P2.4d
+
+- updated `planning/tfl6_thlb_smoke_lane_plan.md` to record that parent FEMIC
+  issue `#203` supports explicit GeoPackage/vector THLB checkpoint inputs;
+- preserved the historical rationale for Feather checkpoints as a TSA29
+  restart/debug speed convention rather than a raw-input requirement; and
+- recorded the future P2.4e smoke-run command using the accepted R1 GeoPackage
+  as the explicit checkpoint/accounting surface, while keeping P2.4d
+  validation/readiness non-executing.
+
+## 2026-06-25 - Completed P2.4d THLB smoke scaffold readiness validation
+
+- validated that the THLB and source-layer recipe scaffolds parse as YAML and
+  that the THLB scaffold loads through FEMIC's recipe loader;
+- confirmed the scaffold contains `22` parent rows and `22` step records from
+  `tfl6_nd_000_reference` through `tfl6_nd_210_long_term_landbase`;
+- confirmed every source-layer artifact listed by
+  `config/tsr/source_layers.recipe.yaml` exists locally, including the accepted
+  R1 GeoPackage checkpoint input;
+- recorded that output, audit, and status parent directories are either already
+  present or created by the FEMIC THLB runner; and
+- moved the roadmap edge to P2.4e, the first bounded serial reconstructed smoke
+  run, without executing THLB netdown in this slice.
+
+## 2026-06-25 - Completed P2.4e first THLB smoke run
+
+- executed the bounded serial reconstructed THLB smoke command against the
+  accepted TFL 6 R1 GeoPackage checkpoint input;
+- recorded tracked run evidence in `config/tsr/tfl6_thlb_smoke.audit.json` and
+  `config/tsr/thlb_reconstructed.status.md`;
+- inspected the generated checkpoint/status products and recorded the smoke
+  area signals: `217042.719 ha` GLB proxy, `196833.177 ha` AFLB checkpoint,
+  `174768.947 ha` LHLB checkpoint, and `144203.485 ha` final THLB;
+- confirmed the smoke run had `12` applied rows, `2` applied no-op rows, and
+  `8` unsupported milestone/reference rows, with no blocked exact-overlay
+  transformation rows;
+- kept bulky `data/tsr/` checkpoints and `runtime/logs/tsr/` products out of
+  normal tracked Git content for this closeout; and
+- marked P2.4 complete in `ROADMAP.md`, moving the next bounded slice to P2.5
+  benchmark/tolerance comparison without starting model-input generation, XML,
+  Matrix Builder, or Patchworks runtime work.
+
+## 2026-06-25 - Locked P2.5 THLB benchmark tolerance
+
+- opened P2.5 child issue `#25` and recorded the benchmark/tolerance lock in
+  `planning/tfl6_thlb_benchmark_tolerance.md`;
+- accepted the P2.4e final current-THLB result of `144203.485 ha` against the
+  approximate scaled current-AOI benchmark of `136487.728 ha`;
+- recorded the `+7715.757 ha` / `+5.65%` gap as acceptable for the base
+  teaching lane because the scaled benchmark depends on the unverifiable
+  assumption that the post-2011 extension area has the same mean THLB netdown
+  rate as the pre-extension MP10 landbase;
+- updated `planning/tfl6_adjusted_thlb_benchmarks.md` with the same tolerance
+  lock and caveat;
+- marked P2.5 and Phase 2 complete in `ROADMAP.md`; and
+- moved the roadmap edge to Phase 3 model-design assumptions, with P3.1 cedar
+  signal design as the next default child lane unless the maintainer chooses
+  P3.2 expansion design first.
+
+## 2026-06-25 - Restored explicit Phase 2 closeout gate
+
+- reopened Phase 2 parent issue `#12` because the branch/PR lifecycle closeout
+  must happen before Phase 3 implementation starts;
+- opened P2.6 child issue `#26` for the Phase 2 branch/PR closeout;
+- updated `ROADMAP.md` so P2.6 is the active Current Next Step and Phase 3 is
+  proposed until the Phase 2 closeout PR path is reconciled; and
+- kept the P2.5 THLB tolerance lock intact while correcting the lifecycle
+  sequencing mistake.
+
+## 2026-06-25 - Added Phase 2 THLB Sphinx closeout documentation
+
+- added `docs/phase2-thlb-netdown.rst` to document the Phase 2 THLB base lane
+  for future maintainers and student users;
+- covered the current-AOI versus MP10 historical-boundary rationale, scaled
+  benchmark tolerance, accepted `+5.65%` THLB gap, fallback rows, and audit
+  trail artifacts;
+- linked the new page from `docs/index.rst`;
+- updated `ROADMAP.md` so P2.6 explicitly includes Phase 2 THLB Sphinx
+  documentation before PR merge; and
+- kept full final teaching documentation under later P5.3, after runtime and
+  publication surfaces exist.
