@@ -2194,3 +2194,15 @@
   maintainer rebuild checklist; and
 - marked P5.3b.3 complete in `ROADMAP.md` while leaving the broader final
   teaching-docs expansion open.
+
+## 2026-06-26 - Added Phase 5 scenario teaching-workflow docs
+
+- added `docs/phase5-scenario-teaching-workflows.rst` to orient students and
+  instructors from the first runtime package into baseline scenario
+  interpretation;
+- documented first Patchworks outputs to inspect, stakeholder-style KPI
+  families, starter exercises, advanced project prompts, scenario reporting
+  rules, and first-release limits around generic `CC`, deferred harvest-system
+  splits, and outside-AOI NICF expansion; and
+- marked P5.3b.4 complete in `ROADMAP.md` while leaving the broader final
+  teaching-docs expansion open.

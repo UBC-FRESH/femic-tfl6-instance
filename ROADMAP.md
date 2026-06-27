@@ -315,6 +315,10 @@ after the runtime package has passed direct artifact and launch smoke checks.
       configs, planning notes, generated artifacts, lineage commands, release
       archive metadata, and dependency order from source/THLB through runtime
       publication.
+    - [x] P5.3b.4 Add scenario teaching-workflow documentation that orients
+      students to the baseline runtime package, stakeholder/KPI families,
+      first outputs to inspect, starter exercises, advanced project prompts,
+      reporting rules, and first-release scenario limits.
 - [ ] P5.4 Run final release QA across source materialization, instance rebuild,
   Patchworks launch smoke, and documentation checks.
 
@@ -625,3 +629,8 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
     canonical planning/config/docs surfaces, generated artifact boundaries,
     accepted Phase 2-5 rebuild anchors, lineage-registry commands, release
     archive/manifest surfaces, and maintainer rebuild checklist.
+    P5.3b.4 is complete: `docs/phase5-scenario-teaching-workflows.rst` now
+    documents the baseline scenario orientation, stakeholder-style KPI
+    families, first Patchworks outputs to inspect, starter exercises, advanced
+    project prompts, reporting rules, and first-release limits for generic
+    `CC`, deferred harvest-system splits, and outside-AOI NICF expansion.
