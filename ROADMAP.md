@@ -302,6 +302,10 @@ after the runtime package has passed direct artifact and launch smoke checks.
       instance documentation.
   - [ ] P5.3b Expand final K3Z/TSA29-style teaching docs after Phase 4 runtime
     package evidence exists.
+    - [x] P5.3b.1 Add the Phase 5 runtime-release page covering the published
+      archive, DataLad/git-annex materialization commands, Arbutus remote
+      metadata, no-credential proof, launch boundary, rebuild anchors, and
+      caveats.
 - [ ] P5.4 Run final release QA across source materialization, instance rebuild,
   Patchworks launch smoke, and documentation checks.
 
@@ -599,3 +603,8 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
     closed. The next bounded Phase 5 lane is P5.3b / `#21`: expand the final
     K3Z/TSA29-style teaching docs now that the runtime archive exists and is
     publicly materializable.
+    P5.3b.1 is complete: `docs/phase5-runtime-release.rst` now documents the
+    published runtime archive, `arbutus-s3` materialization commands and remote
+    metadata, no-credential proof, launch boundary, rebuild anchors, and known
+    caveats; `docs/index.rst` links the page and no longer describes the package
+    as not runnable.

@@ -2161,3 +2161,14 @@
   `17f56d11faeba89170fc48e202d1bfe83c2dd40b53e7409d8cdb8c1c487c2f9f`; and
 - closed P5.2 as materializable, leaving final teaching-docs expansion and
   release QA as the remaining Phase 5 work.
+
+## 2026-06-26 - Added Phase 5 runtime-release teaching docs
+
+- added `docs/phase5-runtime-release.rst` covering the published TFL 6
+  Patchworks runtime archive, release manifest, materialization commands,
+  Arbutus remote metadata, no-credential proof, launch boundary, rebuild
+  anchors, and known caveats;
+- updated `docs/index.rst` to link the Phase 5 runtime-release page and to stop
+  describing the package as not yet runnable; and
+- marked P5.3b.1 complete in `ROADMAP.md` while leaving the broader final
+  teaching-docs expansion open.
