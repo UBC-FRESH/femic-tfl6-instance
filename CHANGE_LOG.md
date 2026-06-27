@@ -2241,3 +2241,19 @@
   `17f56d11faeba89170fc48e202d1bfe83c2dd40b53e7409d8cdb8c1c487c2f9f`, size
   `28000736`, ZIP member count `31`, and required launch/XML/tracks/block
   members against the manifest.
+
+## 2026-06-26 - Verified P5.4c Patchworks launch and baseline signals
+
+- inspected accepted lineage-registry evidence for direct launch smoke
+  `tfl6_p44b_launch0` and representative scenario smoke
+  `tfl6_p44d_harvest_smoke200`;
+- confirmed both smoke runs recorded return code `0`, the
+  `[FEMIC headless] saveStage completed` marker, and `903` saved-stage files;
+- inspected the scenario smoke schedule and confirmed `801` managed `CC`
+  scheduled rows;
+- inspected saved target CSVs for nonzero managed `CC` harvested-volume,
+  managed `CC` treated-area, managed/unmanaged area, and managed/unmanaged
+  yield signals; and
+- inspected the release ZIP and confirmed the published package contains the
+  launch helpers, ForestModel XML, track tables, and required baseline signal
+  names.

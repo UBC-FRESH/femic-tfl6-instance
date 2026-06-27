@@ -327,7 +327,7 @@ after the runtime package has passed direct artifact and launch smoke checks.
   - [x] P5.4a Create the release-QA child issue and checklist surface before
     running executable QA checks.
   - [x] P5.4b Verify archive, manifest, and public materialization.
-  - [ ] P5.4c Verify Patchworks launch and baseline signal smoke evidence.
+  - [x] P5.4c Verify Patchworks launch and baseline signal smoke evidence.
   - [ ] P5.4d Verify docs build, docs links, and published Pages surface.
   - [ ] P5.4e Close Phase 5 after QA evidence is recorded.
 
@@ -659,3 +659,13 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
     size `28000736` against the manifest, and confirmed required ZIP members
     are present. The next bounded QA slice is P5.4c Patchworks launch and
     baseline signal smoke evidence.
+    P5.4c is complete: accepted lineage evidence records direct launch smoke
+    `tfl6_p44b_launch0` and scenario smoke `tfl6_p44d_harvest_smoke200`, both
+    with return code `0`, `[FEMIC headless] saveStage completed`, and `903`
+    saved-stage files. The scenario schedule has `801` managed `CC` rows, and
+    saved target CSVs carry nonzero managed `CC` harvested-volume,
+    managed `CC` treated-area, managed/unmanaged area, and managed/unmanaged
+    yield signals. Release ZIP inspection confirmed required launch helpers,
+    ForestModel XML, track tables, and baseline signal names are included. The
+    next bounded QA slice is P5.4d docs build, docs links, and published Pages
+    verification.
