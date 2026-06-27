@@ -2218,3 +2218,12 @@
   tasks rather than blockers for the first teaching release; and
 - marked P5.3b and P5.3 complete in `ROADMAP.md`, leaving P5.4 final release QA
   as the next Phase 5 lane.
+
+## 2026-06-26 - Created Phase 5 final release-QA checklist
+
+- opened P5.4 issue `#40` to run final release QA and close Phase 5;
+- added `planning/tfl6_phase5_release_qa.md` as the checklist surface for
+  archive/materialization, manifest, Patchworks launch, baseline signal, docs,
+  and issue-hygiene checks; and
+- updated `ROADMAP.md` so P5.4 is split into bounded QA slices before Phase 5
+  closeout.

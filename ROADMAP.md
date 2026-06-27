@@ -323,7 +323,13 @@ after the runtime package has passed direct artifact and launch smoke checks.
       that consolidates first-release caveats, clarifies what does and does not
       block the teaching release, and defines the P5.4 final QA checklist.
 - [ ] P5.4 Run final release QA across source materialization, instance rebuild,
-  Patchworks launch smoke, and documentation checks.
+  Patchworks launch smoke, and documentation checks (`#40`).
+  - [x] P5.4a Create the release-QA child issue and checklist surface before
+    running executable QA checks.
+  - [ ] P5.4b Verify archive, manifest, and public materialization.
+  - [ ] P5.4c Verify Patchworks launch and baseline signal smoke evidence.
+  - [ ] P5.4d Verify docs build, docs links, and published Pages surface.
+  - [ ] P5.4e Close Phase 5 after QA evidence is recorded.
 
 ## Dependency Order
 
@@ -641,3 +647,7 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
     now consolidates first-release caveats, release-readiness boundaries, and
     the P5.4 final QA checklist. P5.3 / `#21` is complete and the next bounded
     Phase 5 lane is P5.4 release QA.
+    P5.4a is complete: P5.4 child issue `#40` is open and
+    `planning/tfl6_phase5_release_qa.md` records the final release-QA checklist.
+    The next bounded QA slice is P5.4b archive, manifest, and public
+    materialization verification.
