@@ -2257,3 +2257,21 @@
 - inspected the release ZIP and confirmed the published package contains the
   launch helpers, ForestModel XML, track tables, and required baseline signal
   names.
+
+## 2026-06-26 - Verified P5.4d Sphinx and public Pages docs
+
+- rebuilt the instance Sphinx documentation warning-clean with
+  `sphinx-build -b html docs docs/_build/html -W`;
+- inspected generated HTML for RTD theme navigation, Phase 5 page links, and
+  runtime archive / `arbutus-s3` / `base.pin` / baseline harvest-product
+  references;
+- found that public GitHub Pages was stale because the workflow deployed only
+  `main`, so Phase 5 pages returned `404` before repair;
+- updated `.github/workflows/docs-pages.yml` so manual `workflow_dispatch`
+  deployments can publish an explicit release branch while automatic deploys
+  remain restricted to `main`;
+- added a narrow `github-pages` environment branch policy for
+  `feature/p5-publication-release` and reran the manual Pages workflow
+  successfully; and
+- verified the public root returns `200` with Phase 5 content and RTD theme
+  markup, and the five Phase 5 documentation pages return `200`.

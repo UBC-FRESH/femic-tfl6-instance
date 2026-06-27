@@ -328,7 +328,7 @@ after the runtime package has passed direct artifact and launch smoke checks.
     running executable QA checks.
   - [x] P5.4b Verify archive, manifest, and public materialization.
   - [x] P5.4c Verify Patchworks launch and baseline signal smoke evidence.
-  - [ ] P5.4d Verify docs build, docs links, and published Pages surface.
+  - [x] P5.4d Verify docs build, docs links, and published Pages surface.
   - [ ] P5.4e Close Phase 5 after QA evidence is recorded.
 
 ## Dependency Order
@@ -669,3 +669,12 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
     ForestModel XML, track tables, and baseline signal names are included. The
     next bounded QA slice is P5.4d docs build, docs links, and published Pages
     verification.
+    P5.4d is complete: local Sphinx built warning-clean, generated HTML uses
+    the RTD theme and links the Phase 5 pages, and public Pages now serves the
+    Phase 5 release docs. The first public check exposed stale Pages content
+    because deployment was still `main`-only; the workflow now permits manual
+    `workflow_dispatch` deployment while keeping automatic deployment restricted
+    to `main`, and the `github-pages` environment has a narrow branch policy for
+    `feature/p5-publication-release`. The manual deploy succeeded, the public
+    root returns `200` with Phase 5 content, and the five Phase 5 pages return
+    `200`. The next bounded QA slice is P5.4e Phase 5 closeout.
