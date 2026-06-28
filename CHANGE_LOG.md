@@ -1,5 +1,18 @@
 # Change Log
 
+## 2026-06-28 - Launched Phase 9 MP11 source-layer and THLB rebuild
+
+- created Phase 9 child issues `#72` through `#77` for launch planning,
+  source-layer verification, input/proxy profiling, ordered overlay scaffold,
+  full THLB rebuild comparison, and phase closeout;
+- added `planning/tfl6_mp11_phase9_execution_plan.md` to record the Phase 9
+  branch, issue tree, artifact layout, source dependency checklist,
+  generated-output hygiene, no-force-fit rules, and promotion gates;
+- marked Phase 9 active and P9.1 complete in `ROADMAP.md`;
+- kept MP11 current THLB `120,099 ha` as a comparison target only; and
+- did not generate or track new THLB outputs, model-input tables, XML, Matrix
+  Builder outputs, Patchworks runtime artifacts, or private WFP assumptions.
+
 ## 2026-06-28 - Closed Phase 8 MP11 implementation foundation
 
 - added `planning/tfl6_mp11_phase8_closeout.md` to summarize the completed
