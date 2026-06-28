@@ -49,6 +49,20 @@ It contains the `61` figures listed in Appendix A's list of figures, with:
 The first inventory is a triage surface. It does not contain crops,
 calibrations, recovered values, overlays, or accepted model evidence.
 
+## Corpus Preparation
+
+The compact P7.2 runtime-corpus summary is:
+
+- `planning/tfl6_mp11_figrecover_corpus_summary.md`
+- `planning/tfl6_mp11_figrecover_corpus_summary.json`
+
+The ignored runtime corpus is:
+
+- `runtime/document_ingestion/tfl6-mp11-full-figures/`
+
+It renders the `58` unique PDF pages referenced by the `61` figure inventory
+rows at `150` DPI with `figrecover 0.1.0a1` and PyMuPDF `1.27.2.3`.
+
 ## Runtime Artifact Boundary
 
 Generated figure-recovery artifacts belong under ignored runtime paths such as:

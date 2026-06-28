@@ -19,6 +19,24 @@
 - marked P7.1 complete in `ROADMAP.md`, advancing the active edge to P7.2
   ignored `figrecover` corpus preparation.
 
+## 2026-06-28 - Prepared the ignored MP11 figrecover runtime corpus
+
+- installed the local `figrecover[pdf,cv]` package into the active environment,
+  moving the environment from `figrecover 0.1.0a0` without OpenCV/scikit-image
+  to `figrecover 0.1.0a1` with PDF and deterministic CV dependencies
+  importable;
+- reran `femic doc figures preflight` through the FEMIC Typer app and confirmed
+  `figrecover`, PyMuPDF, pypdf, OpenCV, scikit-image, and httpx are importable;
+- rendered the 58 unique PDF pages referenced by the 61-row MP11 figure
+  inventory at 150 DPI under ignored
+  `runtime/document_ingestion/tfl6-mp11-full-figures/`;
+- added `planning/tfl6_mp11_figrecover_corpus_summary.md` and
+  `planning/tfl6_mp11_figrecover_corpus_summary.json` as compact public-safe
+  records of the corpus ID, page selection, render settings, versions,
+  checksum, and ignored artifact paths; and
+- marked P7.2 complete in `ROADMAP.md`, advancing the active edge to P7.3
+  crop/classification/calibration work.
+
 ## 2026-06-23 - Bootstrapped the NICF FSP FRST 558 instance repository
 
 - created the FEMIC instance scaffold for `femic-tfl6-instance`;

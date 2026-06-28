@@ -373,13 +373,13 @@ model-upgrade work.
   - [x] P7.1d Identify extraction priority tiers and figures excluded from
     digitization.
   - [x] P7.1e Update roadmap, changelog, planning notes, and issue comments.
-- [ ] P7.2 Prepare `figrecover` corpus and artifact conventions (`#51`).
-  - [ ] P7.2a Confirm local optional dependency preflight.
-  - [ ] P7.2b Prepare ignored runtime corpus paths.
-  - [ ] P7.2c Render required MP11 figure pages with documented DPI and page
+- [x] P7.2 Prepare `figrecover` corpus and artifact conventions (`#51`).
+  - [x] P7.2a Confirm local optional dependency preflight.
+  - [x] P7.2b Prepare ignored runtime corpus paths.
+  - [x] P7.2c Render required MP11 figure pages with documented DPI and page
     selection.
-  - [ ] P7.2d Write corpus source/candidate manifests and record checksums.
-  - [ ] P7.2e Update roadmap, changelog, planning notes, and issue comments.
+  - [x] P7.2d Write corpus source/candidate manifests and record checksums.
+  - [x] P7.2e Update roadmap, changelog, planning notes, and issue comments.
 - [ ] P7.3 Crop, classify, and calibrate MP11 figure candidates (`#52`).
   - [ ] P7.3a Crop selected figure candidates under ignored runtime paths.
   - [ ] P7.3b Classify extraction method and support status.
@@ -469,10 +469,13 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    Parent issue `#49` and child issues `#50` through `#55` define the full MP11
    figure-extraction test upstream of any MP10-to-MP11 model upgrade. P7.1 is
    complete: `planning/tfl6_mp11_figure_extraction_test_plan.md` defines the
-   extraction-test boundary and
+   extraction-test boundary,
    `planning/tfl6_mp11_full_figure_inventory.csv` records the first 61-figure
-   inventory from Appendix A's list of figures. The active edge is P7.2:
-   prepare the ignored `figrecover` runtime corpus and artifact conventions.
+   inventory from Appendix A's list of figures, and
+   `planning/tfl6_mp11_figrecover_corpus_summary.md` /
+   `planning/tfl6_mp11_figrecover_corpus_summary.json` record the ignored
+   runtime corpus preparation. The active edge is P7.3: crop, classify, and
+   calibrate MP11 figure candidates.
 1. Phase 2 is closed. The instance `main` branch contains the Phase 2
    source-layer, THLB smoke, benchmark-tolerance, and Sphinx audit-trail
    surfaces; the parent FEMIC submodule pointer has been updated to the merged
