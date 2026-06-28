@@ -75,6 +75,25 @@ figures. These crops are marked `needs_manual_crop_review`, and calibration is
 explicitly `not_started`. They are a review queue, not accepted plot-area crops
 or recovered data.
 
+## First Extraction Pilot
+
+The first raw extraction pilot is recorded in:
+
+- `planning/tfl6_mp11_figure2_extraction_pilot.md`
+- `planning/tfl6_mp11_figure2_extraction_pilot.json`
+
+The pilot manually crops and calibrates `Figure 2 Base Case Harvest Level`,
+then extracts the top edge of the green filled harvest-level trajectory with
+`figrecover.digitize`. It produced `161` raw points over approximately years
+`1.5` to `299`, with a mean recovered harvest level of approximately
+`1,056,896 m3/year`.
+
+This pilot demonstrates that the MP11 PDF contains chart images clean enough
+for deterministic recovery on at least one priority harvest-flow figure. It
+remains `raw_extraction` evidence and must be reviewed against the QA overlay,
+axis labels, and related MP11 text/tables before it can be promoted to
+comparison-ready evidence.
+
 ## Runtime Artifact Boundary
 
 Generated figure-recovery artifacts belong under ignored runtime paths such as:

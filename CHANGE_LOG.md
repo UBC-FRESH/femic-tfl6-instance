@@ -1,5 +1,20 @@
 # Change Log
 
+## 2026-06-28 - Recorded the first MP11 Figure 2 extraction pilot
+
+- manually cropped and calibrated MP11 `Figure 2 Base Case Harvest Level` under
+  the ignored Phase 7 runtime artifact tree;
+- ran a deterministic `figrecover.digitize` line extraction on the top edge of
+  the green harvest-level chart area;
+- generated ignored raw extraction, recovered-point, QA overlay, and metrics
+  artifacts under `runtime/document_ingestion/tfl6-mp11-full-figures/`;
+- added compact public-safe pilot summaries in
+  `planning/tfl6_mp11_figure2_extraction_pilot.md` and
+  `planning/tfl6_mp11_figure2_extraction_pilot.json`, recording 161 raw points
+  and a mean recovered level of approximately `1,056,896 m3/year`; and
+- kept the pilot status as `raw_extraction`, requiring crop, calibration,
+  overlay, and value review before any Phase 6 comparison or model-upgrade use.
+
 ## 2026-06-28 - Launched Phase 7 MP11 figure extraction test
 
 - opened Phase 7 parent issue `#49` and child issues `#50` through `#55` for a

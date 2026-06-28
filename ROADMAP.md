@@ -476,9 +476,13 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    `planning/tfl6_mp11_figrecover_corpus_summary.json` record the ignored
    runtime corpus preparation, and
    `planning/tfl6_mp11_priority_figure_crop_queue.csv` records the first 36
-   high-priority preliminary crop queue. The active edge remains P7.3:
-   manually review crop boxes and create calibration specs for the first
-   extraction batch.
+   high-priority preliminary crop queue. A first Figure 2 raw extraction pilot
+   is recorded in `planning/tfl6_mp11_figure2_extraction_pilot.md` and
+   `planning/tfl6_mp11_figure2_extraction_pilot.json`; it produced 161 raw
+   points from the base-case harvest-level chart and remains unaccepted
+   `raw_extraction` evidence pending overlay/value review. The active edge
+   remains P7.3/P7.4: convert the pilot into reviewed calibration practice,
+   then broaden extraction across the high-priority batch.
 1. Phase 2 is closed. The instance `main` branch contains the Phase 2
    source-layer, THLB smoke, benchmark-tolerance, and Sphinx audit-trail
    surfaces; the parent FEMIC submodule pointer has been updated to the merged
