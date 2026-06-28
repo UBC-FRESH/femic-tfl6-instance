@@ -3176,3 +3176,19 @@
   `not_model_input`; and
 - marked P10R.5 managed-plot subtasks complete while leaving natural-curve
   plot refresh and review-reference updates open.
+
+## 2026-06-28 - Marked P10R managed curves tentatively passed for sequencing
+
+- added `scripts/mark_p10r_mp11_managed_curves_tentative.py` to record the
+  maintainer decision that all `27` regenerated MP11 managed curves are
+  `tentatively_passed_review`;
+- updated `planning/tfl6_mp11_managed_curves.{csv,json}` so all `972`
+  age-by-curve rows carry the tentative review status;
+- updated
+  `planning/tfl6_mp11_managed_curve_comparison.{csv,json,md}` and
+  `planning/tfl6_mp11_managed_curve_plot_manifest.{csv,json,md}` so the
+  comparison and plot review surfaces carry the same status while preserving
+  the large/moderate/low difference classifications;
+- kept every row `not_model_input`; and
+- moved the active P10R.5 edge to updated VDYP/natural curve generation and
+  AU-wise TIPSY-vs-VDYP diagnostic plots.

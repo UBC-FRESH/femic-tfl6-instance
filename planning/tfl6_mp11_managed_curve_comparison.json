@@ -52,7 +52,7 @@
       "age_curve_mean_delta": -219.431,
       "age_curve_rmse": 248.525,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -94,7 +94,7 @@
       "age_curve_mean_delta": -639.131,
       "age_curve_rmse": 709.247,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -136,7 +136,7 @@
       "age_curve_mean_delta": 54.386,
       "age_curve_rmse": 82.263,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -178,7 +178,7 @@
       "age_curve_mean_delta": 95.408,
       "age_curve_rmse": 102.713,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -220,7 +220,7 @@
       "age_curve_mean_delta": -224.956,
       "age_curve_rmse": 272.708,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -262,7 +262,7 @@
       "age_curve_mean_delta": -291.411,
       "age_curve_rmse": 352.143,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -304,7 +304,7 @@
       "age_curve_mean_delta": -231.517,
       "age_curve_rmse": 262.005,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -346,7 +346,7 @@
       "age_curve_mean_delta": -84.967,
       "age_curve_rmse": 146.961,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -388,7 +388,7 @@
       "age_curve_mean_delta": 294.117,
       "age_curve_rmse": 313.24,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -430,7 +430,7 @@
       "age_curve_mean_delta": -142.892,
       "age_curve_rmse": 191.935,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -472,7 +472,7 @@
       "age_curve_mean_delta": -137.042,
       "age_curve_rmse": 159.9,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -514,7 +514,7 @@
       "age_curve_mean_delta": -174.914,
       "age_curve_rmse": 264.241,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -556,7 +556,7 @@
       "age_curve_mean_delta": -230.411,
       "age_curve_rmse": 264.639,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -598,7 +598,7 @@
       "age_curve_mean_delta": 319.539,
       "age_curve_rmse": 340.551,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -640,7 +640,7 @@
       "age_curve_mean_delta": -32.169,
       "age_curve_rmse": 151.794,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -682,7 +682,7 @@
       "age_curve_mean_delta": -182.689,
       "age_curve_rmse": 228.782,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -724,7 +724,7 @@
       "age_curve_mean_delta": -84.953,
       "age_curve_rmse": 173.634,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -766,7 +766,7 @@
       "age_curve_mean_delta": -18.814,
       "age_curve_rmse": 83.92,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -808,7 +808,7 @@
       "age_curve_mean_delta": -579.194,
       "age_curve_rmse": 642.079,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -850,7 +850,7 @@
       "age_curve_mean_delta": -45.1,
       "age_curve_rmse": 73.474,
       "comparison_class": "low_difference",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -892,7 +892,7 @@
       "age_curve_mean_delta": 258.314,
       "age_curve_rmse": 277.123,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -934,7 +934,7 @@
       "age_curve_mean_delta": -225.917,
       "age_curve_rmse": 247.697,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -976,7 +976,7 @@
       "age_curve_mean_delta": -66.339,
       "age_curve_rmse": 85.29,
       "comparison_class": "low_difference",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -1018,7 +1018,7 @@
       "age_curve_mean_delta": -66.339,
       "age_curve_rmse": 85.29,
       "comparison_class": "low_difference",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -1060,7 +1060,7 @@
       "age_curve_mean_delta": -730.756,
       "age_curve_rmse": 796.976,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -1102,7 +1102,7 @@
       "age_curve_mean_delta": -392.517,
       "age_curve_rmse": 430.23,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     },
     {
@@ -1144,8 +1144,12 @@
       "age_curve_mean_delta": -415.214,
       "age_curve_rmse": 453.795,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "tentatively_passed_review",
       "model_input_status": "not_model_input"
     }
-  ]
+  ],
+  "review_status_counts": {
+    "tentatively_passed_review": 27
+  },
+  "review_decision_note": "Maintainer requested tentative review pass so P10R can proceed to updated VDYP curve generation and AU-wise TIPSY-vs-VDYP diagnostics. This does not promote curves to model-input status."
 }

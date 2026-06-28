@@ -22,6 +22,13 @@ or regenerated value into model input contracts.
 | low_difference                      |            3 |
 | moderate_difference_review_required |           11 |
 
+## Review Decision
+
+- Review status: `tentatively_passed_review`
+- Model-input status: `not_model_input`
+- Decision timestamp UTC: `2026-06-28T23:00:09+00:00`
+- Decision note: Maintainer requested tentative review pass so P10R can proceed to updated VDYP curve generation and AU-wise TIPSY-vs-VDYP diagnostics. This does not promote curves to model-input status.
+
 ## Review Index
 
 | mp11_au_code   | phase5_au_id    | comparison_class                    |   max_volume_pct_delta |   volume_age_100_pct_delta | plot_path                                                                     |

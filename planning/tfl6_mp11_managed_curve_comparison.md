@@ -13,6 +13,13 @@ curve to model input.
 - Phase 5 comparison matches: `27`
 - Model-input status: `not_model_input`
 
+## Review Decision
+
+- Review status: `tentatively_passed_review`
+- Model-input status: `not_model_input`
+- Decision timestamp UTC: `2026-06-28T23:00:09+00:00`
+- Decision note: Maintainer requested tentative review pass so P10R can proceed to updated VDYP curve generation and AU-wise TIPSY-vs-VDYP diagnostics. This does not promote curves to model-input status.
+
 ## Method
 
 Nearest Phase 5 future-managed comparison row selected by matching BEC zone/subzone first, then maximizing species overlap and minimizing weighted site-index difference.

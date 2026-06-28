@@ -18,10 +18,12 @@ keeping every row review-gated as `not_model_input`.
 - BTC error rows: `0`
 - Parsed curve rows: `972`
 - Parsed curve feature count: `27`
+- Review status: `tentatively_passed_review`
+- Model-input status: `not_model_input`
 
 ## Toolchain Finding
 
-FEMIC BTC generated real MP11 candidate outputs from the P10R.3 handoff. The parsed curves are retained as review surfaces only; they are not model inputs and have not yet been compared against Phase 5 fallback curves.
+FEMIC BTC generated real MP11 candidate outputs from the P10R.3 handoff. The parsed curves are retained as review surfaces only. They have been tentatively passed for P10R sequencing after Phase 5 fallback comparison and plot review, but they remain `not_model_input`.
 
 ## Searched Paths
 
