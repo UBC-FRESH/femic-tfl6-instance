@@ -1,5 +1,19 @@
 # Change Log
 
+## 2026-06-28 - Added missing P9RF THLB Sphinx closeout documentation
+
+- amended `AGENTS.md` to make phase-closeout documentation mandatory: affected
+  user-facing Sphinx docs and Python API docstrings must be updated before any
+  roadmap phase is treated as closed;
+- added `docs/phase9-mp11-thlb-netdown.rst` to document the accepted P9RF
+  resultant-fragment MP11 THLB lane, public data sources, proxy rules,
+  skipped/deferred sensitive or unavailable source rows, and MP11 Table 12
+  cumulative deltas;
+- wired the new page into `docs/index.rst`;
+- updated `ROADMAP.md` with the missing P9.6f Sphinx closeout item; and
+- kept the correction focused on documentation/contract closeout with no
+  package API, model-input, XML, Matrix Builder, or Patchworks runtime changes.
+
 ## 2026-06-28 - Corrected Phase 10 wording and launched Phase 10R curve rebuild
 
 - corrected Phase 10 wording from "MP11 AU/yield curve rebuild" to
