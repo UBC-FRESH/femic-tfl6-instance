@@ -1,5 +1,20 @@
 # Change Log
 
+## 2026-06-28 - Completed P6.1 MP11 source package manifest
+
+- restored the Phase 6 ingestion/overhaul planning note as
+  `planning/tfl6_mp11_ingestion_overhaul_plan.md`;
+- added `scripts/build_p6_mp11_source_manifest.py` to generate public-safe
+  source/provenance and extraction-manifest records from a verified local copy
+  of the public MP11 PDF;
+- added `planning/tfl6_mp11_source_package_manifest.md` and JSON with source
+  URL, access timestamp, document identity, byte size, page count, SHA256,
+  document-component ranges, ignored source-copy policy, and governance caveat;
+- added `planning/tfl6_mp11_document_components.csv` and
+  `planning/tfl6_mp11_extraction_manifest_fields.csv`; and
+- marked P6.1 complete in `ROADMAP.md`, advancing the active edge to P6.2
+  extraction of MP11 tables, figures, sections, assumptions, and metadata.
+
 ## 2026-06-28 - Closed Phase 7 MP11 figure extraction test
 
 - merged PR `#56`, bringing the Phase 7 MP11 figure-extraction closeout,

@@ -337,13 +337,15 @@ Goal: ingest the public TFL 6 Management Plan 11 source package and plan the
 MP10-derived teaching model overhaul without changing accepted model inputs
 before the MP11 evidence is extracted, reviewed, and crosswalked.
 
-- [ ] P6.1 Archive MP11 source package and extraction manifest (`#43`).
-  - [ ] P6.1a Record source URL, access date, document identity, page count,
+- [x] P6.1 Archive MP11 source package and extraction manifest (`#43`).
+  - [x] P6.1a Record source URL, access date, document identity, page count,
     and package components.
-  - [ ] P6.1b Define source-copy and provenance conventions before accepting
+  - [x] P6.1b Define source-copy and provenance conventions before accepting
     derived extraction artifacts.
-  - [ ] P6.1c Record extraction-manifest requirements for sections, tables,
+  - [x] P6.1c Record extraction-manifest requirements for sections, tables,
     figures, assumptions, metadata, and page anchors.
+  - [x] P6.1d State clearly that MP11 analysis informs the Chief Forester's
+    AAC determination and is not treated here as a final approved AAC decision.
 - [ ] P6.2 Extract MP11 tables, figures, sections, assumptions, and metadata
   (`#44`).
   - [ ] P6.2a Inventory section headings, tables, figures, appendices,
@@ -465,7 +467,14 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 
 ## Current Next Steps
 
-0. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
+0. Phase 6 is active on branch `feature/p6-mp11-ingestion-model-overhaul`.
+   P6.1 is complete: `planning/tfl6_mp11_source_package_manifest.md` records
+   the public MP11 source identity, verified SHA256, 475-page PDF structure,
+   document-component ranges, ignored source-copy policy, governance caveat,
+   and extraction-manifest field contract. The active edge is P6.2 extraction
+   of MP11 tables, figures, sections, assumptions, and metadata using page
+   anchors and review-status fields.
+1. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
    closeout into `main`. The final closeout surface is
    `planning/tfl6_mp11_figure_extraction_closeout.md` with matching CSV/JSON.
    Phase 7 inventoried `61` figures, reviewed all `36` high-priority figures,
@@ -474,38 +483,38 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    `5` context figures as inventory-only. Every row remains
    `not_model_input`. The next active edge is Phase 6 MP11 extraction and
    model-overhaul planning from the reviewed figure evidence.
-1. Phase 2 is closed. The instance `main` branch contains the Phase 2
+2. Phase 2 is closed. The instance `main` branch contains the Phase 2
    source-layer, THLB smoke, benchmark-tolerance, and Sphinx audit-trail
    surfaces; the parent FEMIC submodule pointer has been updated to the merged
    closeout commit.
-2. Continue Phase 3 on branch `feature/p3-model-design-assumptions`. P3.3
+3. Continue Phase 3 on branch `feature/p3-model-design-assumptions`. P3.3
    through P3.6 are complete: AU identity, untreated VDYP curves, treated
    BatchTIPSY curves, treatment options, and state-transition logic are locked
    for current design purposes. P3.4 still carries a non-blocking deferred
    option to revisit VDYP smoothing/tail constraints before the final Phase 4
    model-input bundle lock.
-3. P3.1b is complete. Cedar source fields and derived signal definitions are
+4. P3.1b is complete. Cedar source fields and derived signal definitions are
    locked in `planning/tfl6_cedar_signal_design.md` using the accepted
    `planning/tfl6_stand_to_au_review.csv` surface. P3.1b accepts `CW`/`YC`
    leading and component signals, the `>= 20%` cedar-present threshold, and the
    `>= 141` age proxy for `old_cedar`. It leaves `large_cedar_proxy`,
    utility-pole thresholds, cedar-specific treatments, and cedar-specific
    products/accounts to P3.1c.
-4. P3.1c and P3.1 are complete. The cedar design lane now defines
+5. P3.1c and P3.1 are complete. The cedar design lane now defines
    Patchworks-facing product hooks, feature/account families, report/target
    families, treatment-hook boundaries, yield-curve boundaries, and Phase 4
    handoff fields in `planning/tfl6_cedar_signal_design.md`. The first bundle
    should carry cedar reporting surfaces, but it must not create cedar-specific
    base treatments, hard cedar reserve targets, utility-pole grade claims, or
    cedar-only yield-curve families.
-5. P3.2b is complete. The accepted K3Z/NICF core source is the original K3Z
+6. P3.2b is complete. The accepted K3Z/NICF core source is the original K3Z
    tenure boundary from `external/femic-k3z-instance`, but non-mutating overlay
    diagnostics show that the current FADM-derived TFL 6 AOI intersects only
    `0.072 ha` of that `2391.511 ha` K3Z tenure. The first bundle must not
    silently relabel the broader FDU 1/2/3 planning context as
    `nicf_k3z_core`; K3Z core should be treated as a source/provenance identity
    and likely external/reference carve-out under the current TFL 6 boundary.
-6. P3.2c is complete and corrected after maintainer clarification. Expansion
+7. P3.2c is complete and corrected after maintainer clarification. Expansion
    candidates are not selected from current-AOI TFL 6 stands; they come from
    proximal/adjacent public forested land outside the current TFL 6 AOI. The
    embedded identity contract now defines `wfp_tfl6_remainder`,

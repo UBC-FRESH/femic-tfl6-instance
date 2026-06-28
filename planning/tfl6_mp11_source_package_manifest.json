@@ -1,0 +1,275 @@
+{
+  "source_package_id": "tfl6_mp11_202606_public_pdf",
+  "source_url": "https://www.westernforest.com/wp-content/uploads/2026/06/TFL6_MP_11_202606_w_Appendices_Web-compressed.pdf",
+  "accessed_at_utc": "2026-06-28T00:00:00Z",
+  "local_source_copy_policy": {
+    "tracked_in_git": false,
+    "allowed_locations": [
+      "runtime/mp11/source/",
+      "data/downloads/mp11/",
+      "external public-data cache with matching SHA256"
+    ],
+    "required_before_extraction": "verify URL, byte size, page count, and SHA256"
+  },
+  "document_identity": {
+    "title": "Tree Farm Licence 6 Management Plan 11",
+    "version": "Version 1, June 2026",
+    "publisher": "Western Forest Products Inc.",
+    "document_date": "June 2026",
+    "governance_caveat": "Treat as a public planning and AAC-analysis package. Do not treat the AAC analysis as a final Chief Forester AAC decision unless a separate approved decision is located and reviewed."
+  },
+  "inspection": {
+    "byte_size": 9147004,
+    "sha256": "44591c1024254e36d8989df45a2b489a624d5669c5ae01a6ebfd961b50a7321b",
+    "page_count": 475,
+    "format": "PDF 1.7",
+    "producer": "Pdftools SDK",
+    "mod_date": "D:20260622195710Z",
+    "encrypted": false,
+    "pymupdf_version": "1.27.2.3"
+  },
+  "expected_sha256": "44591c1024254e36d8989df45a2b489a624d5669c5ae01a6ebfd961b50a7321b",
+  "checksum_status": "passed",
+  "document_components": [
+    {
+      "component_id": "management_plan_main",
+      "label": "Management Plan 11 main document",
+      "pdf_page_start": 1,
+      "pdf_page_end": 44,
+      "report_page_start": "i",
+      "report_page_end": "33 of 37",
+      "extraction_role": "front_matter_governance_context",
+      "notes": "Includes MP purpose, AAC history, public review, appendices listing, and governance context."
+    },
+    {
+      "component_id": "appendix_a_divider",
+      "label": "Appendix A divider page",
+      "pdf_page_start": 45,
+      "pdf_page_end": 45,
+      "report_page_start": "34 of 37",
+      "report_page_end": "34 of 37",
+      "extraction_role": "component_boundary",
+      "notes": "Management Plan divider page identifying Appendix A as the Timber Supply Analysis Report."
+    },
+    {
+      "component_id": "appendix_a_timber_supply_analysis",
+      "label": "Appendix A Timber Supply Analysis",
+      "pdf_page_start": 46,
+      "pdf_page_end": 226,
+      "report_page_start": "i",
+      "report_page_end": "113 of 113",
+      "extraction_role": "primary_mp11_analysis_source",
+      "notes": "Primary source for land-base, THLB, sensitivity, model-behavior, and AAC-recommendation evidence."
+    },
+    {
+      "component_id": "appendix_a_trailing_blank",
+      "label": "Appendix A trailing blank page",
+      "pdf_page_start": 227,
+      "pdf_page_end": 227,
+      "report_page_start": "35 of 37",
+      "report_page_end": "35 of 37",
+      "extraction_role": "blank_component_boundary",
+      "notes": "Blank management-plan page between Appendix A and Appendix B divider."
+    },
+    {
+      "component_id": "appendix_b_divider",
+      "label": "Appendix B divider page",
+      "pdf_page_start": 228,
+      "pdf_page_end": 228,
+      "report_page_start": "36 of 37",
+      "report_page_end": "36 of 37",
+      "extraction_role": "component_boundary",
+      "notes": "Management Plan divider page identifying Appendix B as the Timber Supply Analysis Information Package."
+    },
+    {
+      "component_id": "appendix_b_acceptance_letter",
+      "label": "Appendix B acceptance letter",
+      "pdf_page_start": 229,
+      "pdf_page_end": 229,
+      "report_page_start": "letter",
+      "report_page_end": "letter",
+      "extraction_role": "information_package_acceptance_context",
+      "notes": "Ministry acceptance correspondence preceding the information package."
+    },
+    {
+      "component_id": "appendix_b_information_package",
+      "label": "Appendix B Timber Supply Analysis Information Package",
+      "pdf_page_start": 230,
+      "pdf_page_end": 475,
+      "report_page_start": "i",
+      "report_page_end": "37 of 37",
+      "extraction_role": "assumption_and_input_package_source",
+      "notes": "Source for timber-supply inputs, assumptions, inventory, land base, yield, and nested appendix evidence."
+    }
+  ],
+  "extraction_manifest_fields": [
+    {
+      "field_name": "record_id",
+      "required": true,
+      "value_type": "string",
+      "description": "Stable unique extraction row identifier.",
+      "example": "mp11-table-001"
+    },
+    {
+      "field_name": "source_package_id",
+      "required": true,
+      "value_type": "string",
+      "description": "Source package identifier.",
+      "example": "tfl6_mp11_202606_public_pdf"
+    },
+    {
+      "field_name": "source_sha256",
+      "required": true,
+      "value_type": "string",
+      "description": "SHA256 of the public PDF used for extraction.",
+      "example": "44591c1024254e36d8989df45a2b489a624d5669c5ae01a6ebfd961b50a7321b"
+    },
+    {
+      "field_name": "document_component",
+      "required": true,
+      "value_type": "string",
+      "description": "Component ID from the source manifest.",
+      "example": "appendix_a_timber_supply_analysis"
+    },
+    {
+      "field_name": "pdf_page",
+      "required": true,
+      "value_type": "integer",
+      "description": "One-based PDF page number.",
+      "example": "82"
+    },
+    {
+      "field_name": "reported_page_label",
+      "required": false,
+      "value_type": "string",
+      "description": "Visible report page label where available.",
+      "example": "Page 18 of 113"
+    },
+    {
+      "field_name": "section_path",
+      "required": true,
+      "value_type": "string",
+      "description": "Hierarchical section heading path.",
+      "example": "3 Base Case > 3.1 Base Case Harvest Forecast"
+    },
+    {
+      "field_name": "object_type",
+      "required": true,
+      "value_type": "enum",
+      "description": "Extracted object class.",
+      "example": "table|figure|paragraph|heading|assumption|reference"
+    },
+    {
+      "field_name": "object_id",
+      "required": false,
+      "value_type": "string",
+      "description": "Table, figure, section, or assumption identifier.",
+      "example": "Figure 2"
+    },
+    {
+      "field_name": "object_title",
+      "required": false,
+      "value_type": "string",
+      "description": "Caption, table title, or normalized heading.",
+      "example": "Base Case Harvest Level"
+    },
+    {
+      "field_name": "claim_text",
+      "required": true,
+      "value_type": "string",
+      "description": "Verbatim or tightly paraphrased extracted claim.",
+      "example": "Base-case harvest level is approximately 1,061,600 m3/year."
+    },
+    {
+      "field_name": "normalized_value",
+      "required": false,
+      "value_type": "string|number",
+      "description": "Normalized structured value when available.",
+      "example": "1061600"
+    },
+    {
+      "field_name": "units",
+      "required": false,
+      "value_type": "string",
+      "description": "Units for normalized value.",
+      "example": "m3/year"
+    },
+    {
+      "field_name": "comparison_topic",
+      "required": true,
+      "value_type": "enum",
+      "description": "Phase 6 comparison lane.",
+      "example": "land_base|inventory_yield|model_behavior|aac|metadata"
+    },
+    {
+      "field_name": "extraction_method",
+      "required": true,
+      "value_type": "string",
+      "description": "Tool or method used to create the row.",
+      "example": "PyMuPDF text extraction"
+    },
+    {
+      "field_name": "tool_versions",
+      "required": true,
+      "value_type": "object",
+      "description": "Relevant parser/package versions.",
+      "example": "{\"pymupdf\": \"1.27.2.3\"}"
+    },
+    {
+      "field_name": "source_artifact",
+      "required": false,
+      "value_type": "string",
+      "description": "Ignored runtime artifact path if one exists.",
+      "example": "runtime/mp11/pages/page-0082.png"
+    },
+    {
+      "field_name": "review_status",
+      "required": true,
+      "value_type": "enum",
+      "description": "Review state for use in downstream planning.",
+      "example": "raw_extraction|reviewed_evidence|accepted_contract|rejected|deferred"
+    },
+    {
+      "field_name": "downstream_use",
+      "required": true,
+      "value_type": "string",
+      "description": "Permitted downstream use of this row.",
+      "example": "phase6_comparison_only"
+    },
+    {
+      "field_name": "model_input_status",
+      "required": true,
+      "value_type": "enum",
+      "description": "Whether row may enter model inputs.",
+      "example": "not_model_input"
+    },
+    {
+      "field_name": "reviewer",
+      "required": false,
+      "value_type": "string",
+      "description": "Reviewer identity or role after review.",
+      "example": "maintainer"
+    },
+    {
+      "field_name": "reviewed_at_utc",
+      "required": false,
+      "value_type": "datetime",
+      "description": "UTC timestamp for reviewed rows.",
+      "example": "2026-06-28T00:00:00Z"
+    },
+    {
+      "field_name": "notes",
+      "required": false,
+      "value_type": "string",
+      "description": "Important caveats, failures, or unresolved questions.",
+      "example": "Requires table cross-check."
+    }
+  ],
+  "phase6_non_goals": [
+    "do not change accepted model inputs",
+    "do not rerun THLB",
+    "do not regenerate yield curves",
+    "do not regenerate ForestModel XML or Matrix Builder outputs",
+    "do not republish the Phase 5 runtime package"
+  ]
+}
