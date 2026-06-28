@@ -1,5 +1,23 @@
 # Change Log
 
+## 2026-06-28 - Closed the MP11 high-priority figure extraction evidence pass
+
+- added `scripts/build_p7_mp11_figure2_review_manifest.py` and promoted the
+  Figure `2` base-case harvest-level pilot to `accepted_for_comparison` with
+  downstream use `phase6_mp11_comparison_only`;
+- added `scripts/build_p7_mp11_closeout_summary.py` to join the 61-row MP11
+  figure inventory with every reviewed extraction manifest;
+- added `planning/tfl6_mp11_figure_extraction_closeout.md`,
+  `planning/tfl6_mp11_figure_extraction_closeout.csv`, and
+  `planning/tfl6_mp11_figure_extraction_closeout.json`;
+- recorded the final Phase 7 evidence surface: `22` figures accepted for
+  comparison, `14` figures reviewed for planning only, `20` medium-priority
+  figures deferred, `5` context figures inventory-only, and `0` figures
+  accepted as model input; and
+- added `docs/phase7-mp11-figure-extraction.rst` to document the source,
+  artifact boundary, reviewed evidence surface, validation pattern, and Phase 6
+  handoff rules.
+
 ## 2026-06-28 - Recorded figrecover deployment feedback from MP11 extraction
 
 - added `planning/tfl6_mp11_figrecover_deployment_feedback.md` as a

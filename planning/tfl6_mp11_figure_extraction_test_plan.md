@@ -211,6 +211,55 @@ The promotion is limited to `reviewed_for_planning` with downstream use
 `phase6_mp11_age_class_planning_only`. The outputs remain explicitly
 `not_model_input` and are not `accepted_for_comparison`.
 
+## Later Extraction And Review Batches
+
+The later Phase 7 passes expanded the initial test from a few chart classes to
+the full high-priority figure queue.
+
+Additional reviewed manifests are:
+
+- `planning/tfl6_mp11_figure2_review_manifest.md`
+- `planning/tfl6_mp11_impact_chart_review_manifest.md`
+- `planning/tfl6_mp11_old_seral_review_manifest.md`
+- `planning/tfl6_mp11_remaining_harvest_review_manifest.md`
+
+Those passes added:
+
+- `Figure 2` base-case harvest level, promoted to
+  `accepted_for_comparison`;
+- impact/waterfall Figures `20` and `57`, promoted to
+  `accepted_for_comparison`;
+- old-seral landscape-unit Figures `16`, `17`, `18`, `19`, `53`, `54`, `55`,
+  and `56`, promoted to `reviewed_for_planning`; and
+- remaining harvest/scenario Figures `21`, `22`, `23`, `24`, `25`, `26`,
+  `32`, `33`, `34`, `37`, and `38`, promoted to
+  `accepted_for_comparison`.
+
+All rows remain `not_model_input`.
+
+## Phase 7 Closeout
+
+The final closeout surface is:
+
+- `planning/tfl6_mp11_figure_extraction_closeout.md`
+- `planning/tfl6_mp11_figure_extraction_closeout.csv`
+- `planning/tfl6_mp11_figure_extraction_closeout.json`
+
+Closeout status:
+
+- full inventory: `61` figures;
+- high-priority figures with explicit reviewed status: `36`;
+- accepted for Phase 6 comparison planning: `22`;
+- reviewed for planning only: `14`;
+- deferred medium-priority figures: `20`;
+- inventory context-only figures: `5`; and
+- accepted for model input: `0`.
+
+The deferred figures are mainly stacked, grouped, mixed, or method-explanation
+charts. They remain useful `figrecover` improvement targets, but they are not
+required before Phase 6 can use the reviewed comparison evidence to plan the
+MP10-to-MP11 model-overhaul work.
+
 ## Runtime Artifact Boundary
 
 Generated figure-recovery artifacts belong under ignored runtime paths such as:

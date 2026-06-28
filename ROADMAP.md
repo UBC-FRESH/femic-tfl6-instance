@@ -380,18 +380,18 @@ model-upgrade work.
     selection.
   - [x] P7.2d Write corpus source/candidate manifests and record checksums.
   - [x] P7.2e Update roadmap, changelog, planning notes, and issue comments.
-- [ ] P7.3 Crop, classify, and calibrate MP11 figure candidates (`#52`).
+- [x] P7.3 Crop, classify, and calibrate MP11 figure candidates (`#52`).
   - [x] P7.3a Crop selected figure candidates under ignored runtime paths.
   - [x] P7.3b Classify extraction method and support status.
-  - [ ] P7.3c Create calibration specs for high-priority numeric charts.
-  - [ ] P7.3d Record crop checksums and calibration-review status.
-  - [ ] P7.3e Update roadmap, changelog, planning notes, and issue comments.
-- [ ] P7.4 Extract priority MP11 figure tables and QA overlays (`#53`).
-  - [ ] P7.4a Extract line-chart priority figures.
-  - [ ] P7.4b Extract bar/stacked/mixed-chart priority figures where feasible.
-  - [ ] P7.4c Generate QA overlays and diagnostics.
-  - [ ] P7.4d Register raw extraction outputs with provenance and checksums.
-  - [ ] P7.4e Update roadmap, changelog, planning notes, and issue comments.
+  - [x] P7.3c Create calibration specs for high-priority numeric charts.
+  - [x] P7.3d Record crop checksums and calibration-review status.
+  - [x] P7.3e Update roadmap, changelog, planning notes, and issue comments.
+- [x] P7.4 Extract priority MP11 figure tables and QA overlays (`#53`).
+  - [x] P7.4a Extract line-chart priority figures.
+  - [x] P7.4b Extract bar/stacked/mixed-chart priority figures where feasible.
+  - [x] P7.4c Generate QA overlays and diagnostics.
+  - [x] P7.4d Register raw extraction outputs with provenance and checksums.
+  - [x] P7.4e Update roadmap, changelog, planning notes, and issue comments.
 - [x] P7.5 Review recovered outputs and classify downstream use (`#54`).
   - [x] P7.5a Review high-priority extraction overlays.
   - [x] P7.5b Cross-check against related MP11 tables/text when available.
@@ -400,8 +400,8 @@ model-upgrade work.
   - [x] P7.5e Update roadmap, changelog, planning notes, and Phase 6 handoff
     comments.
 - [ ] P7.6 Close out docs, validation, and model-upgrade handoff (`#55`).
-  - [ ] P7.6a Write the phase closeout summary and model-upgrade handoff note.
-  - [ ] P7.6b Add or update Sphinx docs if the workflow should be user-facing.
+  - [x] P7.6a Write the phase closeout summary and model-upgrade handoff note.
+  - [x] P7.6b Add or update Sphinx docs if the workflow should be user-facing.
   - [ ] P7.6c Run final validation checks.
   - [ ] P7.6d Open and merge the Phase 7 PR.
   - [ ] P7.6e Close parent and child issues with final links.
@@ -467,48 +467,14 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 
 0. Phase 7 is active on branch `feature/p7-mp11-figure-extraction-test`.
    Parent issue `#49` and child issues `#50` through `#55` define the full MP11
-   figure-extraction test upstream of any MP10-to-MP11 model upgrade. P7.1 is
-   complete: `planning/tfl6_mp11_figure_extraction_test_plan.md` defines the
-   extraction-test boundary,
-   `planning/tfl6_mp11_full_figure_inventory.csv` records the first 61-figure
-   inventory from Appendix A's list of figures, and
-   `planning/tfl6_mp11_figrecover_corpus_summary.md` /
-   `planning/tfl6_mp11_figrecover_corpus_summary.json` record the ignored
-   runtime corpus preparation, and
-   `planning/tfl6_mp11_priority_figure_crop_queue.csv` records the first 36
-   high-priority preliminary crop queue. A first Figure 2 raw extraction pilot
-   is recorded in `planning/tfl6_mp11_figure2_extraction_pilot.md` and
-   `planning/tfl6_mp11_figure2_extraction_pilot.json`; it produced 161 raw
-   points from the base-case harvest-level chart and remains unaccepted
-   `raw_extraction` evidence pending overlay/value review. The first repeatable
-   crop-proposal pass is now recorded in
-   `planning/tfl6_mp11_priority_crop_proposals.md`,
-   `planning/tfl6_mp11_priority_crop_proposals.csv`, and
-   `planning/tfl6_mp11_priority_crop_proposals.json`, with 36 proposed crops
-   still marked `needs_manual_crop_review`. The first repeatable six-figure
-   harvest-sensitivity extraction batch is recorded in
-   `planning/tfl6_mp11_harvest_sensitivity_extraction_summary.md` and related
-   CSV/JSON summaries. The reviewed manifest
-   `planning/tfl6_mp11_reviewed_extraction_manifest.md` promotes Figures `29`,
-   `30`, `31`, `35`, `36`, and `39` to `accepted_for_comparison` with
-   downstream use `phase6_mp11_comparison_only`; all rows remain
-   `not_model_input`. The next P7.4 chart class is also started:
-   `planning/tfl6_mp11_growing_stock_extraction_summary.md` records raw
-   extraction of Figures `3` and `40`, with component-sum residuals below `1%`.
-   The reviewed manifest `planning/tfl6_mp11_growing_stock_review_manifest.md`
-   promotes those two growing-stock figures to `accepted_for_comparison` with
-   downstream use `phase6_mp11_comparison_only`; both remain `not_model_input`.
-   `planning/tfl6_mp11_cedar_inventory_extraction_summary.md` records raw
-   extraction of cedar inventory Figures `14`, `15`, `51`, and `52`.
-   `planning/tfl6_mp11_cedar_inventory_review_manifest.md` promotes those rows
-   to `reviewed_for_planning` with downstream use
-   `phase6_mp11_cedar_planning_only`; they are not
-   `accepted_for_comparison`. `planning/tfl6_mp11_age_class_review_manifest.md`
-   promotes age-class Figures `6` and `45` to `reviewed_for_planning` with
-   downstream use `phase6_mp11_age_class_planning_only`; they are not
-   `accepted_for_comparison` because panel-total deviations reach `7.23%` and
-   `10.31%`. The active edge remains P7.4 for waterfall, old-seral, and
-   remaining hybrid figures.
+   figure-extraction test upstream of any MP10-to-MP11 model upgrade. The final
+   closeout surface is `planning/tfl6_mp11_figure_extraction_closeout.md` with
+   matching CSV/JSON. Phase 7 inventoried `61` figures, reviewed all `36`
+   high-priority figures, promoted `22` figures to `accepted_for_comparison`,
+   assigned `14` figures to `reviewed_for_planning`, deferred `20`
+   medium-priority figures, and kept `5` context figures as inventory-only.
+   Every row remains `not_model_input`. The active edge is P7.6 final
+   validation, issue closeout, and PR merge.
 1. Phase 2 is closed. The instance `main` branch contains the Phase 2
    source-layer, THLB smoke, benchmark-tolerance, and Sphinx audit-trail
    surfaces; the parent FEMIC submodule pointer has been updated to the merged
