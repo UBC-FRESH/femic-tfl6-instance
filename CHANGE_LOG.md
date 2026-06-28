@@ -3130,3 +3130,20 @@
   blocker; and
 - left P10R.4 open because no MP11 managed curves have been generated, parsed,
   inspected, compared, or promoted.
+
+## 2026-06-28 - Parsed P10R.4 MP11 managed BTC outputs
+
+- ran the `27` P10R.3 future-managed candidate rows through FEMIC's existing
+  `python -m femic tipsy run-btc ...` surface, writing raw BTC outputs under
+  ignored `runtime/mp11_yield/`;
+- inspected the BTC manifest and outputs: manifest status `ok`, exit code `0`,
+  `27` output rows, and `0` BTC error rows;
+- extended `scripts/build_p10r_mp11_managed_curve_rebuild_blocker.py` so it
+  parses the real BTC `MVcon_*` / `MVdec_*` columns when runtime output is
+  present;
+- emitted `planning/tfl6_mp11_managed_curves.{csv,json}` with `972`
+  age-by-curve rows across all `27` candidate feature IDs;
+- regenerated `planning/tfl6_mp11_managed_curve_rebuild.{csv,json,md}` with
+  per-candidate max-volume and representative-age summaries; and
+- kept every parsed row `not_model_input`, leaving P10R.4e comparison against
+  Phase 5 fallback curves as the next review step.
