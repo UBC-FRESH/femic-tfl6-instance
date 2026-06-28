@@ -3160,3 +3160,19 @@
   moderate-difference review rows, and `3` as low-difference rows; and
 - marked P10R.4 complete in `ROADMAP.md` while keeping every comparison row
   `not_model_input` and leaving P10R.5 plot refresh as the next edge.
+
+## 2026-06-28 - Generated P10R.5 managed curve review plots
+
+- added `scripts/build_p10r_mp11_managed_curve_plots.py` to overlay each
+  generated MP11 Table 57 future-managed curve against its matched Phase 5
+  fallback curve;
+- wrote `27` review PNGs under ignored
+  `plots/mp11_managed_curve_comparison/`;
+- emitted
+  `planning/tfl6_mp11_managed_curve_plot_manifest.{csv,json,md}` with plot
+  paths, comparison classes, source curve IDs, deltas, and review/model-input
+  status fields;
+- confirmed every manifest row has a non-empty plot and remains
+  `not_model_input`; and
+- marked P10R.5 managed-plot subtasks complete while leaving natural-curve
+  plot refresh and review-reference updates open.
