@@ -456,11 +456,11 @@ Phase 5 runtime as the accepted baseline.
   - [x] P8.1c Define promotion requirements for text/table/figure-derived
     evidence.
   - [x] P8.1d Define rollback and non-replacement rules.
-- [ ] P8.2 Design MP11 public source-layer and THLB rebuild contract (`#60`).
-  - [ ] P8.2a Classify source-layer categories by public reproducibility.
-  - [ ] P8.2b Define public proxy candidates and sensitivity lanes.
-  - [ ] P8.2c Define benchmark checkpoints and tolerances.
-  - [ ] P8.2d Write the reviewed source-layer/THLB rebuild contract.
+- [x] P8.2 Design MP11 public source-layer and THLB rebuild contract (`#60`).
+  - [x] P8.2a Classify source-layer categories by public reproducibility.
+  - [x] P8.2b Define public proxy candidates and sensitivity lanes.
+  - [x] P8.2c Define benchmark checkpoints and tolerances.
+  - [x] P8.2d Write the reviewed source-layer/THLB rebuild contract.
 - [ ] P8.3 Decide MP11 AU/yield and managed-stand parameter strategy (`#61`).
   - [ ] P8.3a Decide AU identity strategy.
   - [ ] P8.3b Define MP11 managed-yield table extraction requirements.
@@ -550,12 +550,13 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 ## Current Next Steps
 
 0. Phase 8 is active on branch
-   `feature/p8-mp11-public-data-implementation-foundation`. P8.1 is complete:
-   `planning/tfl6_mp11_baseline_and_promotion_contract.md` preserves the
-   Phase 5 teaching runtime as the accepted baseline and defines MP11 evidence
-   promotion states, evidence classes, figure-evidence rules, non-public-data
-   rules, and rollback gates. The active edge is P8.2: design the MP11 public
-   source-layer and THLB rebuild contract.
+   `feature/p8-mp11-public-data-implementation-foundation`. P8.1 and P8.2 are
+   complete. `planning/tfl6_mp11_baseline_and_promotion_contract.md` preserves
+   the Phase 5 teaching runtime and defines MP11 evidence-promotion rules.
+   `planning/tfl6_mp11_source_layer_thlb_rebuild_contract.md` defines public
+   source-layer lanes, proxy/sensitivity boundaries, non-public WFP/LiDAR/LBB
+   gaps, THLB checkpoints, and ordered-overlay requirements. The active edge is
+   P8.3: decide the MP11 AU/yield and managed-stand parameter strategy.
 1. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
    closeout into `main`. The final closeout surface is
    `planning/tfl6_mp11_figure_extraction_closeout.md` with matching CSV/JSON.

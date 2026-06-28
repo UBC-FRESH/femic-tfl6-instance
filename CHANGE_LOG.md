@@ -1,5 +1,21 @@
 # Change Log
 
+## 2026-06-28 - Completed P8.2 MP11 source-layer and THLB rebuild contract
+
+- added `planning/tfl6_mp11_source_layer_thlb_rebuild_contract.md` to convert
+  reviewed MP11 land-base and netdown evidence into a public-data rebuild
+  strategy for a future THLB implementation phase;
+- classified MP11 netdown/source-layer categories into public rebuild,
+  public-proxy, public-proxy-plus-unavailable-gap, aspatial-policy,
+  model-parameter, and model-constraint lanes;
+- defined public source candidates, WFP/LiDAR/LBB unavailable dependencies,
+  MP11 benchmark checkpoints, tolerance guidance, and ordered-overlay
+  requirements;
+- recorded that MP11 current THLB `120,099 ha` remains a comparison target,
+  not a forced output or accepted model input; and
+- kept all P8.2 work in the planning/contract layer with no generated THLB
+  outputs tracked.
+
 ## 2026-06-28 - Completed P8.1 MP11 baseline and promotion contract
 
 - added `planning/tfl6_mp11_baseline_and_promotion_contract.md` to preserve
