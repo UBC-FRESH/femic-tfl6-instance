@@ -1,5 +1,114 @@
 # Change Log
 
+## 2026-06-28 - Closed Phase 6 MP11 ingestion and overhaul planning
+
+- added `planning/tfl6_mp11_phase6_closeout.md` summarizing the completed
+  Phase 6 issue tree, tracked outputs, headline MP11 findings, validation
+  checks, and Phase 8 handoff;
+- confirmed P6.1-P6.6 are complete and linked to issues `#43` through `#48`;
+- recorded the main Phase 6 conclusion that MP11 alignment requires a future
+  public-data implementation foundation before any THLB, yield, model-input,
+  XML, Matrix Builder, or runtime rebuild; and
+- preserved the Phase 5 teaching runtime as the accepted baseline until a
+  future MP11-aligned replacement passes direct QA.
+
+## 2026-06-28 - Completed P6.6 MP11 implementation roadmap
+
+- added `planning/tfl6_mp11_phase8_implementation_roadmap.md` to convert
+  reviewed Phase 6/7 MP11 evidence into the next implementation foundation
+  roadmap;
+- created Phase 8 parent issue `#58` and child issues `#59` through `#64`
+  for baseline preservation, source-layer/THLB contract, AU/yield strategy,
+  operability/harvest-system/MHA/scenario rules, KPI/QA targets, and Phase 8
+  closeout;
+- updated `ROADMAP.md` with the Phase 8 issue tree while marking P6.6
+  complete and keeping Phase 6 closeout as the next active edge;
+- recorded that Phase 8 is a contract and implementation-foundation phase, not
+  a one-step replacement runtime rebuild; and
+- kept the Phase 5 teaching runtime as the accepted baseline until a future
+  MP11-aligned package passes direct source, model-input, XML, Matrix Builder,
+  runtime, documentation, and scenario-output QA.
+
+## 2026-06-28 - Completed P6.5 MP11 model-behavior comparison
+
+- added `scripts/build_p6_mp11_model_behavior_crosswalk.py` to consolidate
+  MP11 base-case, alternate harvest-flow, sensitivity, AAC recommendation, and
+  KPI evidence from reviewed Phase 7 figure summaries and MP11 source-page
+  anchors;
+- added `planning/tfl6_mp11_model_behavior_crosswalk.md` with `8` reviewed
+  behavior/KPI rows and matching CSV/JSON outputs;
+- added `planning/tfl6_mp11_model_behavior_scenario_endpoints.csv` with `18`
+  comparison-ready scenario endpoints, all marked `not_model_input`;
+- recorded headline MP11 comparison targets of `1,061,600 m3/year` for the
+  Base Case and `1,252,700 m3/year` for the AAC recommendation; and
+- documented that the Phase 5 teaching runtime is structurally useful but not
+  MP11-behavior-equivalent because it lacks an AAC-calibrated base case,
+  MP11 sensitivity suite, harvest-system classifier, and MP11-style KPI
+  reporting surfaces.
+
+## 2026-06-28 - Completed P6.4 MP11 inventory/yield/operability comparison
+
+- added `scripts/build_p6_mp11_assumption_crosswalk.py` to generate reviewed
+  Markdown/CSV/JSON comparison artifacts for MP11 inventory, LiDAR/ITI, yield,
+  operability, harvest-system, harvest-rule, and model-constraint assumptions;
+- added `planning/tfl6_mp11_inventory_yield_operability_crosswalk.md` with
+  `14` reviewed assumption-family rows and matching CSV/JSON outputs;
+- classified every row by delta class, implementation class, Phase 7+
+  follow-up lane, review status, downstream-use status, and model-input
+  status;
+- recorded that MP11 alignment requires a future source-layer, AU/yield,
+  managed-yield, harvest-system, MHA, retention/OAF/VRAF, NRL, and Patchworks
+  constraint overhaul rather than a small edit to the Phase 5 teaching
+  package; and
+- kept every P6.4 row as `reviewed_evidence`,
+  `phase6_assumption_comparison_only`, and `not_model_input`.
+
+## 2026-06-28 - Completed P6.3 MP11 land-base comparison
+
+- added `scripts/build_p6_mp11_land_base_crosswalk.py` and
+  `planning/tfl6_mp11_land_base_crosswalk.md` with CSV/JSON outputs comparing
+  MP11 total land base, productive forest, operable area, THLB, NCLB,
+  long-term land base, and previous-MP current-AAC-supporting THLB against
+  Phase 5 benchmark and bundle surfaces;
+- added `scripts/build_p6_mp11_netdown_delta_crosswalk.py` and
+  `planning/tfl6_mp11_netdown_delta_crosswalk.md` with CSV/JSON outputs
+  classifying changed MP11 netdown/source-layer categories by likely public
+  reproducibility, proxy needs, WFP-model gaps, and model-constraint lanes;
+- recorded that MP11 current THLB is `120,099 ha`, compared with the Phase 5
+  accepted weighted THLB of `139,995.798 ha`; and
+- kept every P6.3 row as `reviewed_evidence`,
+  `phase6_land_base_comparison_only`, and `not_model_input`.
+
+## 2026-06-28 - Built first P6.2 MP11 raw extraction inventory
+
+- added `scripts/build_p6_mp11_extraction_inventory.py` to extract raw heading,
+  table, figure, and high-priority claim candidates from the MP11 PDF using the
+  P6.1 document-component and manifest-field contracts;
+- added `planning/tfl6_mp11_extraction_inventory.csv` with `1870` raw
+  candidate rows, all carrying source SHA256, document component, one-based PDF
+  page, extraction method, review status, downstream use, and model-input
+  status;
+- added `planning/tfl6_mp11_extraction_inventory_summary.md` and JSON with
+  object-type, comparison-topic, component, review-status, and model-input
+  status counts; and
+- kept the inventory as raw triage evidence only: every row remains
+  `raw_extraction`, `phase6_inventory_triage_only`, and `not_model_input`.
+
+## 2026-06-28 - Completed P6.1 MP11 source package manifest
+
+- restored the Phase 6 ingestion/overhaul planning note as
+  `planning/tfl6_mp11_ingestion_overhaul_plan.md`;
+- added `scripts/build_p6_mp11_source_manifest.py` to generate public-safe
+  source/provenance and extraction-manifest records from a verified local copy
+  of the public MP11 PDF;
+- added `planning/tfl6_mp11_source_package_manifest.md` and JSON with source
+  URL, access timestamp, document identity, byte size, page count, SHA256,
+  document-component ranges, ignored source-copy policy, and governance caveat;
+- added `planning/tfl6_mp11_document_components.csv` and
+  `planning/tfl6_mp11_extraction_manifest_fields.csv`; and
+- marked P6.1 complete in `ROADMAP.md`, advancing the active edge to P6.2
+  extraction of MP11 tables, figures, sections, assumptions, and metadata.
+
 ## 2026-06-28 - Closed Phase 7 MP11 figure extraction test
 
 - merged PR `#56`, bringing the Phase 7 MP11 figure-extraction closeout,

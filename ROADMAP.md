@@ -337,28 +337,66 @@ Goal: ingest the public TFL 6 Management Plan 11 source package and plan the
 MP10-derived teaching model overhaul without changing accepted model inputs
 before the MP11 evidence is extracted, reviewed, and crosswalked.
 
-- [ ] P6.1 Archive MP11 source package and extraction manifest (`#43`).
-  - [ ] P6.1a Record source URL, access date, document identity, page count,
+- [x] P6.1 Archive MP11 source package and extraction manifest (`#43`).
+  - [x] P6.1a Record source URL, access date, document identity, page count,
     and package components.
-  - [ ] P6.1b Define source-copy and provenance conventions before accepting
+  - [x] P6.1b Define source-copy and provenance conventions before accepting
     derived extraction artifacts.
-  - [ ] P6.1c Record extraction-manifest requirements for sections, tables,
+  - [x] P6.1c Record extraction-manifest requirements for sections, tables,
     figures, assumptions, metadata, and page anchors.
-- [ ] P6.2 Extract MP11 tables, figures, sections, assumptions, and metadata
+  - [x] P6.1d State clearly that MP11 analysis informs the Chief Forester's
+    AAC determination and is not treated here as a final approved AAC decision.
+- [x] P6.2 Extract MP11 tables, figures, sections, assumptions, and metadata
   (`#44`).
-  - [ ] P6.2a Inventory section headings, tables, figures, appendices,
+  - [x] P6.2a Inventory section headings, tables, figures, appendices,
     references, assumptions, model-input descriptions, and sensitivity items.
-  - [ ] P6.2b Attach every extracted claim to a page/section anchor.
-  - [ ] P6.2c Record extraction method, tool versions, failures, and manual
+  - [x] P6.2b Attach every extracted claim to a page/section anchor.
+  - [x] P6.2c Record extraction method, tool versions, failures, and manual
     review flags.
-- [ ] P6.3 Compare MP11 land base and THLB assumptions against the Phase 5
+- [x] P6.3 Compare MP11 land base and THLB assumptions against the Phase 5
   prototype (`#45`).
-- [ ] P6.4 Compare MP11 inventory, LiDAR/ITI, yield, operability, and
+  - [x] P6.3a Crosswalk MP11 total TFL area, productive forest, THLB, NCLB,
+    total operable, and long-term land-base values against Phase 5 benchmark
+    and bundle surfaces.
+  - [x] P6.3b Identify changed netdown categories, source-layer definitions,
+    and boundary/tenure assumptions.
+  - [x] P6.3c Separate directly reproducible public-layer deltas from
+    proxy/sensitivity and model-constraint assumptions.
+- [x] P6.4 Compare MP11 inventory, LiDAR/ITI, yield, operability, and
   harvest-system assumptions (`#46`).
-- [ ] P6.5 Compare MP11 model behavior, sensitivities, AAC recommendation, and
+  - [x] P6.4a Inspect VRI, LiDAR, ITI, physical operability, economic
+    operability, riparian, OGMA/WHA, terrain, karst, and future-retention
+    assumptions.
+  - [x] P6.4b Inspect analysis-unit, natural-yield, managed-yield, OAF,
+    utilization, non-recoverable-loss, forest-cover constraint,
+    minimum-harvest-age, harvest-rule, silvicultural-system, and
+    harvest-flow-objective assumptions.
+  - [x] P6.4c Compare MP11 assumptions against the Phase 5 AU/yield,
+    treatment, transition, runtime, and known-limitation surfaces.
+  - [x] P6.4d Classify deltas as public-data update, model-parameter update,
+    sensitivity candidate, model-constraint update, or unresolved
+    proprietary/WFP-model gap.
+- [x] P6.5 Compare MP11 model behavior, sensitivities, AAC recommendation, and
   KPI outputs (`#47`).
-- [ ] P6.6 Write the Phase 7+ implementation roadmap for the MP11-aligned
+  - [x] P6.5a Inventory MP11 base case, alternate harvest flows,
+    sensitivity analyses, AAC recommendation, and key reported outputs.
+  - [x] P6.5b Compare available Phase 5 Patchworks evidence against MP11
+    harvest-system, age/volume-class, cedar, old-cedar, elevation-band,
+    species-composition, and other KPI surfaces.
+  - [x] P6.5c Identify where a public-data prototype can align with MP11 and
+    where WFP's model remains non-public and must be approximated or caveated.
+  - [x] P6.5d Produce a prioritized gap list for Phase 7+ implementation
+    planning.
+- [x] P6.6 Write the Phase 7+ implementation roadmap for the MP11-aligned
   model overhaul (`#48`).
+  - [x] P6.6a Define follow-on lanes for source layers, THLB, AU/yield,
+    Patchworks runtime, scenario/KPI surfaces, docs, QA, and publication.
+  - [x] P6.6b Preserve the Phase 5 prototype as the baseline until
+    replacement artifacts pass direct inspection and QA.
+  - [x] P6.6c Identify required public data, unresolved validation gaps,
+    non-public WFP model assumptions, and sequencing dependencies.
+  - [x] P6.6d Draft the parent/child issue structure for the next
+    implementation phase without beginning the overhaul.
 
 ## Phase 7: MP11 Figure Extraction Test Harness (`#49`)
 
@@ -406,6 +444,48 @@ model-upgrade work.
   - [x] P7.6d Open and merge the Phase 7 PR.
   - [x] P7.6e Close parent and child issues with final links.
 
+## Phase 8: MP11-Aligned Public-Data Implementation Foundation (`#58`)
+
+Goal: convert Phase 6/7 MP11 evidence into reviewed public-data contracts and
+implementation-ready recipes for the next model rebuild, while preserving the
+Phase 5 runtime as the accepted baseline.
+
+- [ ] P8.1 Preserve Phase 5 baseline and lock MP11 promotion rules (`#59`).
+  - [ ] P8.1a Summarize Phase 5 accepted baseline artifacts and QA evidence.
+  - [ ] P8.1b Define MP11 evidence-promotion states.
+  - [ ] P8.1c Define promotion requirements for text/table/figure-derived
+    evidence.
+  - [ ] P8.1d Define rollback and non-replacement rules.
+- [ ] P8.2 Design MP11 public source-layer and THLB rebuild contract (`#60`).
+  - [ ] P8.2a Classify source-layer categories by public reproducibility.
+  - [ ] P8.2b Define public proxy candidates and sensitivity lanes.
+  - [ ] P8.2c Define benchmark checkpoints and tolerances.
+  - [ ] P8.2d Write the reviewed source-layer/THLB rebuild contract.
+- [ ] P8.3 Decide MP11 AU/yield and managed-stand parameter strategy (`#61`).
+  - [ ] P8.3a Decide AU identity strategy.
+  - [ ] P8.3b Define MP11 managed-yield table extraction requirements.
+  - [ ] P8.3c Define public/private SI and inventory dependency boundaries.
+  - [ ] P8.3d Define yield-adjustment parameter surfaces.
+- [ ] P8.4 Define operability, harvest-system, MHA, and scenario rules (`#62`).
+  - [ ] P8.4a Define harvest-system classifier candidates and required public
+    inputs.
+  - [ ] P8.4b Define economic-operability sensitivity logic.
+  - [ ] P8.4c Define MHA extraction and contract requirements.
+  - [ ] P8.4d Define base-case, max-short-term, AAC recommendation, and
+    sensitivity scenario policies.
+- [ ] P8.5 Define MP11 KPI, QA, and reporting targets (`#63`).
+  - [ ] P8.5a Define accepted comparison targets and planning-only target
+    families.
+  - [ ] P8.5b Define KPI output schemas and report groups.
+  - [ ] P8.5c Define comparison tolerances and validation-strength labels.
+  - [ ] P8.5d Write the KPI/QA/reporting contract.
+- [ ] P8.6 Close Phase 8 and split rebuild phases (`#64`).
+  - [ ] P8.6a Audit Phase 8 child issues and artifacts.
+  - [ ] P8.6b Draft follow-on rebuild phase issue tree.
+  - [ ] P8.6c Run validation checks.
+  - [ ] P8.6d Open and merge the Phase 8 PR.
+  - [ ] P8.6e Close parent and child issues with final links.
+
 ## Dependency Order
 
 The next phases must proceed in this order unless the maintainer explicitly
@@ -445,6 +525,10 @@ approves a narrower independent slice:
    Phase 6 extraction planning, but recovered figure values cannot become model
    inputs until reviewed and handed off through the relevant Phase 6 comparison
    lanes.
+8. **MP11 implementation foundation**: Phase 8 (`#58`) starts only after
+   Phase 6 closes or after explicit maintainer approval. It should lock
+   public-data contracts and promotion rules before any source-layer, yield,
+   model-input, XML, Matrix Builder, or runtime rebuild begins.
 
 Guardrail: source extraction, THLB execution, cedar/expansion implementation,
 model-input generation, XML/Matrix Builder work, runtime packaging,
@@ -465,7 +549,30 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 
 ## Current Next Steps
 
-0. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
+0. Phase 6 is complete and ready to merge from branch
+   `feature/p6-mp11-ingestion-model-overhaul`.
+   P6.1 is complete: `planning/tfl6_mp11_source_package_manifest.md` records
+   the public MP11 source identity, verified SHA256, 475-page PDF structure,
+   document-component ranges, ignored source-copy policy, governance caveat,
+   and extraction-manifest field contract. The first P6.2 raw extraction
+   inventory is also recorded in `planning/tfl6_mp11_extraction_inventory.csv`
+   with `1870` candidate rows. P6.3 is complete:
+   `planning/tfl6_mp11_land_base_crosswalk.md` records the headline land-base
+   deltas and `planning/tfl6_mp11_netdown_delta_crosswalk.md` records the
+   source-layer/netdown reproducibility split. P6.4 is complete:
+   `planning/tfl6_mp11_inventory_yield_operability_crosswalk.md` records the
+   reviewed inventory, LiDAR/ITI, yield, operability, harvest-system,
+   harvest-rule, and model-constraint deltas. P6.5 is complete:
+   `planning/tfl6_mp11_model_behavior_crosswalk.md` records the reviewed
+   model-behavior, sensitivity, AAC recommendation, and KPI comparison, with
+   `planning/tfl6_mp11_model_behavior_scenario_endpoints.csv` carrying the
+   comparison-ready scenario endpoint table. P6.6 is complete:
+   `planning/tfl6_mp11_phase8_implementation_roadmap.md` defines the Phase 8+
+   implementation roadmap and issue tree. The final closeout note is
+   `planning/tfl6_mp11_phase6_closeout.md`. After the Phase 6 PR merges, the
+   next active edge is Phase 8 P8.1 on branch
+   `feature/p8-mp11-public-data-implementation-foundation`.
+1. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
    closeout into `main`. The final closeout surface is
    `planning/tfl6_mp11_figure_extraction_closeout.md` with matching CSV/JSON.
    Phase 7 inventoried `61` figures, reviewed all `36` high-priority figures,
@@ -474,38 +581,38 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    `5` context figures as inventory-only. Every row remains
    `not_model_input`. The next active edge is Phase 6 MP11 extraction and
    model-overhaul planning from the reviewed figure evidence.
-1. Phase 2 is closed. The instance `main` branch contains the Phase 2
+2. Phase 2 is closed. The instance `main` branch contains the Phase 2
    source-layer, THLB smoke, benchmark-tolerance, and Sphinx audit-trail
    surfaces; the parent FEMIC submodule pointer has been updated to the merged
    closeout commit.
-2. Continue Phase 3 on branch `feature/p3-model-design-assumptions`. P3.3
+3. Continue Phase 3 on branch `feature/p3-model-design-assumptions`. P3.3
    through P3.6 are complete: AU identity, untreated VDYP curves, treated
    BatchTIPSY curves, treatment options, and state-transition logic are locked
    for current design purposes. P3.4 still carries a non-blocking deferred
    option to revisit VDYP smoothing/tail constraints before the final Phase 4
    model-input bundle lock.
-3. P3.1b is complete. Cedar source fields and derived signal definitions are
+4. P3.1b is complete. Cedar source fields and derived signal definitions are
    locked in `planning/tfl6_cedar_signal_design.md` using the accepted
    `planning/tfl6_stand_to_au_review.csv` surface. P3.1b accepts `CW`/`YC`
    leading and component signals, the `>= 20%` cedar-present threshold, and the
    `>= 141` age proxy for `old_cedar`. It leaves `large_cedar_proxy`,
    utility-pole thresholds, cedar-specific treatments, and cedar-specific
    products/accounts to P3.1c.
-4. P3.1c and P3.1 are complete. The cedar design lane now defines
+5. P3.1c and P3.1 are complete. The cedar design lane now defines
    Patchworks-facing product hooks, feature/account families, report/target
    families, treatment-hook boundaries, yield-curve boundaries, and Phase 4
    handoff fields in `planning/tfl6_cedar_signal_design.md`. The first bundle
    should carry cedar reporting surfaces, but it must not create cedar-specific
    base treatments, hard cedar reserve targets, utility-pole grade claims, or
    cedar-only yield-curve families.
-5. P3.2b is complete. The accepted K3Z/NICF core source is the original K3Z
+6. P3.2b is complete. The accepted K3Z/NICF core source is the original K3Z
    tenure boundary from `external/femic-k3z-instance`, but non-mutating overlay
    diagnostics show that the current FADM-derived TFL 6 AOI intersects only
    `0.072 ha` of that `2391.511 ha` K3Z tenure. The first bundle must not
    silently relabel the broader FDU 1/2/3 planning context as
    `nicf_k3z_core`; K3Z core should be treated as a source/provenance identity
    and likely external/reference carve-out under the current TFL 6 boundary.
-6. P3.2c is complete and corrected after maintainer clarification. Expansion
+7. P3.2c is complete and corrected after maintainer clarification. Expansion
    candidates are not selected from current-AOI TFL 6 stands; they come from
    proximal/adjacent public forested land outside the current TFL 6 AOI. The
    embedded identity contract now defines `wfp_tfl6_remainder`,

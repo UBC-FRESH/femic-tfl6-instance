@@ -1,0 +1,24 @@
+field_name,required,value_type,description,example
+record_id,True,string,Stable unique extraction row identifier.,mp11-table-001
+source_package_id,True,string,Source package identifier.,tfl6_mp11_202606_public_pdf
+source_sha256,True,string,SHA256 of the public PDF used for extraction.,44591c1024254e36d8989df45a2b489a624d5669c5ae01a6ebfd961b50a7321b
+document_component,True,string,Component ID from the source manifest.,appendix_a_timber_supply_analysis
+pdf_page,True,integer,One-based PDF page number.,82
+reported_page_label,False,string,Visible report page label where available.,Page 18 of 113
+section_path,True,string,Hierarchical section heading path.,3 Base Case > 3.1 Base Case Harvest Forecast
+object_type,True,enum,Extracted object class.,table|figure|paragraph|heading|assumption|reference
+object_id,False,string,"Table, figure, section, or assumption identifier.",Figure 2
+object_title,False,string,"Caption, table title, or normalized heading.",Base Case Harvest Level
+claim_text,True,string,Verbatim or tightly paraphrased extracted claim.,"Base-case harvest level is approximately 1,061,600 m3/year."
+normalized_value,False,string|number,Normalized structured value when available.,1061600
+units,False,string,Units for normalized value.,m3/year
+comparison_topic,True,enum,Phase 6 comparison lane.,land_base|inventory_yield|model_behavior|aac|metadata
+extraction_method,True,string,Tool or method used to create the row.,PyMuPDF text extraction
+tool_versions,True,object,Relevant parser/package versions.,"{""pymupdf"": ""1.27.2.3""}"
+source_artifact,False,string,Ignored runtime artifact path if one exists.,runtime/mp11/pages/page-0082.png
+review_status,True,enum,Review state for use in downstream planning.,raw_extraction|reviewed_evidence|accepted_contract|rejected|deferred
+downstream_use,True,string,Permitted downstream use of this row.,phase6_comparison_only
+model_input_status,True,enum,Whether row may enter model inputs.,not_model_input
+reviewer,False,string,Reviewer identity or role after review.,maintainer
+reviewed_at_utc,False,datetime,UTC timestamp for reviewed rows.,2026-06-28T00:00:00Z
+notes,False,string,"Important caveats, failures, or unresolved questions.",Requires table cross-check.

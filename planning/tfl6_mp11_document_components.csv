@@ -1,0 +1,8 @@
+component_id,label,pdf_page_start,pdf_page_end,report_page_start,report_page_end,extraction_role,notes
+management_plan_main,Management Plan 11 main document,1,44,i,33 of 37,front_matter_governance_context,"Includes MP purpose, AAC history, public review, appendices listing, and governance context."
+appendix_a_divider,Appendix A divider page,45,45,34 of 37,34 of 37,component_boundary,Management Plan divider page identifying Appendix A as the Timber Supply Analysis Report.
+appendix_a_timber_supply_analysis,Appendix A Timber Supply Analysis,46,226,i,113 of 113,primary_mp11_analysis_source,"Primary source for land-base, THLB, sensitivity, model-behavior, and AAC-recommendation evidence."
+appendix_a_trailing_blank,Appendix A trailing blank page,227,227,35 of 37,35 of 37,blank_component_boundary,Blank management-plan page between Appendix A and Appendix B divider.
+appendix_b_divider,Appendix B divider page,228,228,36 of 37,36 of 37,component_boundary,Management Plan divider page identifying Appendix B as the Timber Supply Analysis Information Package.
+appendix_b_acceptance_letter,Appendix B acceptance letter,229,229,letter,letter,information_package_acceptance_context,Ministry acceptance correspondence preceding the information package.
+appendix_b_information_package,Appendix B Timber Supply Analysis Information Package,230,475,i,37 of 37,assumption_and_input_package_source,"Source for timber-supply inputs, assumptions, inventory, land base, yield, and nested appendix evidence."
