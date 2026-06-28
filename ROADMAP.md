@@ -562,13 +562,13 @@ QA diagnostics, and isolate unavailable LEFI/ITI/LiDAR assumptions.
   - [x] P10.4c Emit natural curve diagnostics, plots/manifests, and comparison
     summaries.
   - [x] P10.4d Flag sparse-support, fallback, or unsupported curve families.
-- [ ] P10.5 Generate MP11 managed curve diagnostics (`#83`).
-  - [ ] P10.5a Build reviewed MP11 BatchTIPSY/TIPSY handoff from P10.2/P10.3
+- [x] P10.5 Generate MP11 managed curve diagnostics (`#83`).
+  - [x] P10.5a Build reviewed MP11 BatchTIPSY/TIPSY handoff from P10.2/P10.3
     outputs.
-  - [ ] P10.5b Generate managed curve diagnostics for supported rows.
-  - [ ] P10.5c Emit curve tables, diagnostics, plots/manifests, and fallback
+  - [x] P10.5b Generate managed curve diagnostics for supported rows.
+  - [x] P10.5c Emit curve tables, diagnostics, plots/manifests, and fallback
     reports.
-  - [ ] P10.5d Classify unsupported and unavailable-dependency rows.
+  - [x] P10.5d Classify unsupported and unavailable-dependency rows.
 - [ ] P10.6 Close Phase 10 and hand off curve artifacts (`#84`).
   - [ ] P10.6a Audit Phase 10 artifacts and generated-output hygiene.
   - [ ] P10.6b Write Phase 10 closeout and Phase 11 handoff note.
@@ -676,10 +676,12 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 ## Current Next Steps
 
 0. Phase 10 is active on branch
-   `feature/p10-mp11-au-yield-curve-rebuild`. P10.1 through P10.4 are
-   complete. `planning/tfl6_mp11_natural_curve_diagnostics.md` records the
-   MP11 natural-curve diagnostic surface from existing public VDYP evidence.
-   The active edge is P10.5: generate MP11 managed curve diagnostics (`#83`).
+   `feature/p10-mp11-au-yield-curve-rebuild`. P10.1 through P10.5 are
+   complete. `planning/tfl6_mp11_managed_curve_diagnostics.md` records that
+   MP11 managed curve generation is blocked pending reviewed per-AU parsers for
+   Tables 54, 55, and 57, while Phase 5 managed curves remain comparison
+   baselines. The active edge is P10.6: close Phase 10 and hand off curve
+   artifacts (`#84`).
 1. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
    closeout into `main`. The final closeout surface is
    `planning/tfl6_mp11_figure_extraction_closeout.md` with matching CSV/JSON.

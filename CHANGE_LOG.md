@@ -1,5 +1,21 @@
 # Change Log
 
+## 2026-06-28 - Completed P10.5 MP11 managed-curve diagnostics
+
+- added `scripts/build_p10_mp11_managed_curve_diagnostics.py` to join the
+  P10.3 managed AU/lane crosswalk with existing Phase 5 MP10-derived managed
+  curve diagnostics;
+- added `planning/tfl6_mp11_managed_curve_diagnostics.md` with matching
+  CSV/JSON outputs covering `1,152` managed AU/lane rows;
+- recorded that MP11 managed curve generation remains blocked for Tables 54,
+  55, and 57 pending reviewed per-AU TIPSY row parsers;
+- preserved Phase 5 managed curves as comparison/fallback evidence only, not
+  MP11-equivalent curves; and
+- kept every P10.5 row as `not_model_input`, with zero new MP11 managed curves,
+  model-input tables, XML, Matrix Builder outputs, Patchworks runtime
+  artifacts, private WFP curves, or proprietary LEFI/ITI/LiDAR assumptions
+  tracked.
+
 ## 2026-06-28 - Completed P10.4 MP11 natural-curve diagnostics
 
 - added `scripts/build_p10_mp11_natural_curve_diagnostics.py` to repackage the
