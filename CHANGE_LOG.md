@@ -1,5 +1,21 @@
 # Change Log
 
+## 2026-06-28 - Completed P9.3 MP11 inventory and proxy input profile
+
+- added `scripts/build_p9_mp11_input_proxy_profile.py` to generate public-safe
+  candidate field/proxy profiles for the MP11 source-layer and THLB rebuild;
+- added `planning/tfl6_mp11_phase9_input_proxy_profile.md` with matching
+  CSV/JSON outputs covering `51` candidate profile rows;
+- profiled VRI/R1 candidate areas for non-forest, non-treed/water/null,
+  explicit non-productive, low-site, deciduous-leading, low-height,
+  low-volume, hemlock/balsam height-class-three, and
+  `for_mgmt_land_base_ind == N` QA signals;
+- profiled VDYP parquet table row/key summaries plus roads, hydrology, OGMA,
+  WHA, and UWR field/geometry summaries for later overlay review; and
+- kept every P9.3 row as candidate/profile/QA evidence only, with no accepted
+  final overlay rule, THLB output, model-input table, XML, Matrix Builder
+  output, or Patchworks runtime artifact generated.
+
 ## 2026-06-28 - Completed P9.2 MP11 public source-layer verification
 
 - added `scripts/build_p9_mp11_source_layer_manifest.py` to generate compact
