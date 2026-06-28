@@ -1,5 +1,99 @@
 # Change Log
 
+## 2026-06-28 - Closed Phase 10 MP11 AU/yield curve rebuild
+
+- added `planning/tfl6_mp11_phase10_closeout.md` to summarize the completed
+  Phase 10 issue tree, tracked outputs, validation, and Phase 11 handoff;
+- confirmed P10.1-P10.6 are complete and linked to issues `#79` through `#84`;
+- recorded that natural curves remain Phase 5 public VDYP comparison
+  candidates and that MP11 managed curve generation remains blocked pending
+  reviewed per-AU parsers for Tables 54, 55, and 57;
+- preserved the Phase 5 teaching runtime as the accepted baseline until future
+  MP11 source-layer, curve, model-input, XML, Matrix Builder, runtime, docs,
+  archive, and scenario-output gates pass; and
+- kept every Phase 10 generated surface public-safe and `not_model_input`, with
+  no private WFP curves, unpublished parameter tables, proprietary
+  LEFI/ITI/LiDAR attributes, XML, Matrix Builder outputs, Patchworks runtime
+  artifacts, or generated private scratch outputs tracked.
+
+## 2026-06-28 - Completed P10.5 MP11 managed-curve diagnostics
+
+- added `scripts/build_p10_mp11_managed_curve_diagnostics.py` to join the
+  P10.3 managed AU/lane crosswalk with existing Phase 5 MP10-derived managed
+  curve diagnostics;
+- added `planning/tfl6_mp11_managed_curve_diagnostics.md` with matching
+  CSV/JSON outputs covering `1,152` managed AU/lane rows;
+- recorded that MP11 managed curve generation remains blocked for Tables 54,
+  55, and 57 pending reviewed per-AU TIPSY row parsers;
+- preserved Phase 5 managed curves as comparison/fallback evidence only, not
+  MP11-equivalent curves; and
+- kept every P10.5 row as `not_model_input`, with zero new MP11 managed curves,
+  model-input tables, XML, Matrix Builder outputs, Patchworks runtime
+  artifacts, private WFP curves, or proprietary LEFI/ITI/LiDAR assumptions
+  tracked.
+
+## 2026-06-28 - Completed P10.4 MP11 natural-curve diagnostics
+
+- added `scripts/build_p10_mp11_natural_curve_diagnostics.py` to repackage the
+  accepted Phase 3/5 public VDYP first-growth evidence for the MP11 natural
+  curve lane;
+- added `planning/tfl6_mp11_natural_curve_diagnostics.md` with matching
+  CSV/JSON outputs covering `384` canonical AUs;
+- recorded the `77` selected top-area natural curve families, remap status for
+  non-selected AU bins, existing plot references, curve maxima, and review
+  statuses;
+- preserved existing Phase 5 curve values without rerunning VDYP or generating
+  new managed curves; and
+- kept every P10.4 row as `not_model_input`, with no model-input tables, XML,
+  Matrix Builder outputs, Patchworks runtime artifacts, private WFP curves, or
+  proprietary LEFI/ITI/LiDAR assumptions tracked.
+
+## 2026-06-28 - Completed P10.3 MP11 AU and curve-lane crosswalk
+
+- added `scripts/build_p10_mp11_au_curve_lane_crosswalk.py` to map the stable
+  FEMIC canonical AU universe to MP11 natural, early managed, recent managed,
+  and future managed curve lanes;
+- added `planning/tfl6_mp11_au_curve_lane_crosswalk.md` with matching CSV/JSON
+  outputs covering `384` canonical AUs and `1,536` AU/lane rows;
+- preserved existing Phase 5 natural-curve availability and MP10 managed-curve
+  fallback confidence as comparison evidence only;
+- flagged managed Table 54, 55, and 57 lanes as `parser_review_required` until
+  the large per-AU TIPSY tables are parsed and reviewed; and
+- kept treatment, operability, THLB status, and scenario membership out of
+  canonical AU identity, with every P10.3 row remaining `not_model_input`.
+
+## 2026-06-28 - Completed P10.2 MP11 managed-yield parameter library
+
+- added `scripts/build_p10_mp11_managed_yield_parameter_library.py` to extract
+  and normalize public-safe MP11 managed-yield parameter evidence from PDF
+  pages `358-377`;
+- added `planning/tfl6_mp11_managed_yield_parameter_library.md` with matching
+  CSV/JSON outputs covering Table 54-60 parameter evidence;
+- recorded deterministic parameter rows for future genetic gain, VRAF, NSR,
+  utilization, regeneration delay, default/low-productivity planting density,
+  early managed spacing density, and selected managed-stand narrative rules;
+- flagged the large multi-page per-AU TIPSY row tables in Tables 54, 55, and
+  57 as `requires_p10_5_parser_review` before managed-curve generation; and
+- kept every P10.2 row as `not_model_input`, with no generated curves,
+  model-input tables, XML, Matrix Builder outputs, Patchworks runtime
+  artifacts, private WFP curves, or proprietary LEFI/ITI/LiDAR assumptions
+  tracked.
+
+## 2026-06-28 - Launched Phase 10 MP11 AU/yield curve rebuild
+
+- created Phase 10 child issues `#79` through `#84` for launch planning,
+  managed-yield parameter extraction, AU/curve-lane crosswalk refresh, natural
+  curve diagnostics, managed curve diagnostics, and phase closeout;
+- added `planning/tfl6_mp11_phase10_execution_plan.md` to record the Phase 10
+  branch, issue tree, artifact layout, governing contracts, parameter-library
+  gates, curve-lane gates, no-fabrication rules, and validation expectations;
+- marked Phase 10 active and P10.1 complete in `ROADMAP.md`;
+- preserved MP10/Phase 5 curve artifacts as baseline and fallback/comparison
+  evidence only; and
+- did not generate or track new natural curves, managed curves, model-input
+  tables, XML, Matrix Builder outputs, Patchworks runtime artifacts, private
+  WFP curves, or proprietary LEFI/ITI/LiDAR assumptions.
+
 ## 2026-06-28 - Closed Phase 9 MP11 source-layer and THLB rebuild
 
 - added `planning/tfl6_mp11_phase9_closeout.md` to summarize the completed

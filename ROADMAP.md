@@ -534,11 +534,47 @@ checkpoints without force-fitting.
 
 ## Phase 10: MP11 AU/Yield Curve Rebuild (`#67`)
 
-Status: planned.
+Status: closed.
 
 Goal: extract reviewed MP11 managed-yield parameters, refresh AU/yield
 crosswalk surfaces, regenerate natural and managed curves with provenance and
 QA diagnostics, and isolate unavailable LEFI/ITI/LiDAR assumptions.
+
+- [x] P10.1 Launch MP11 AU/yield rebuild execution plan (`#79`).
+  - [x] P10.1a Audit governing contracts and existing curve artifacts.
+  - [x] P10.1b Define Phase 10 artifact layout and generated-output hygiene.
+  - [x] P10.1c Define curve-lane and parameter-library gates.
+  - [x] P10.1d Define validation commands for Phase 10 implementation tasks.
+- [x] P10.2 Extract MP11 managed-yield parameter library (`#80`).
+  - [x] P10.2a Identify source-page anchors and extraction scope for MP11
+    parameter tables/text.
+  - [x] P10.2b Build reviewed MP11 managed-yield parameter library generator.
+  - [x] P10.2c Emit Markdown/CSV/JSON parameter-library outputs.
+  - [x] P10.2d Classify row confidence and public/private dependency status.
+- [x] P10.3 Refresh MP11 AU and curve-lane crosswalk (`#81`).
+  - [x] P10.3a Audit existing Phase 3 static AU and curve crosswalk artifacts.
+  - [x] P10.3b Build MP11 AU/curve-lane crosswalk generator.
+  - [x] P10.3c Emit crosswalk Markdown/CSV/JSON and fallback diagnostics.
+  - [x] P10.3d Flag unsupported and non-public dependency mappings.
+- [x] P10.4 Regenerate MP11 natural curve diagnostics (`#82`).
+  - [x] P10.4a Review VDYP source/version and existing natural curve scripts.
+  - [x] P10.4b Run or adapt natural curve generation for MP11 crosswalks.
+  - [x] P10.4c Emit natural curve diagnostics, plots/manifests, and comparison
+    summaries.
+  - [x] P10.4d Flag sparse-support, fallback, or unsupported curve families.
+- [x] P10.5 Generate MP11 managed curve diagnostics (`#83`).
+  - [x] P10.5a Build reviewed MP11 BatchTIPSY/TIPSY handoff from P10.2/P10.3
+    outputs.
+  - [x] P10.5b Generate managed curve diagnostics for supported rows.
+  - [x] P10.5c Emit curve tables, diagnostics, plots/manifests, and fallback
+    reports.
+  - [x] P10.5d Classify unsupported and unavailable-dependency rows.
+- [x] P10.6 Close Phase 10 and hand off curve artifacts (`#84`).
+  - [x] P10.6a Audit Phase 10 artifacts and generated-output hygiene.
+  - [x] P10.6b Write Phase 10 closeout and Phase 11 handoff note.
+  - [x] P10.6c Run final validation and curve QA checks.
+  - [x] P10.6d Open and merge Phase 10 PR.
+  - [x] P10.6e Close parent and child issues with final links.
 
 ## Phase 11: MP11 Model-Input Bundle And ForestModel XML Rebuild (`#68`)
 
@@ -639,13 +675,12 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 
 ## Current Next Steps
 
-0. Phase 9 is closed. `planning/tfl6_mp11_phase9_closeout.md` records the
-   public-data source-layer and THLB handoff. P9.5 produced a compact
-   diagnostic public-data rebuild, not an accepted THLB replacement surface.
-   The diagnostic result confirms that partial-area overlay implementation and
-   unresolved shoreline, DEM/slope, WFP LBB/ITI/LEFI, and policy gaps must be
-   handled before model-input promotion. The next MP11 rebuild edge is Phase
-   10: MP11 AU/yield curve rebuild (`#67`).
+0. Phase 10 is closed. `planning/tfl6_mp11_phase10_closeout.md` records the
+   AU/yield handoff. Natural curves remain Phase 5 public VDYP comparison
+   candidates, and MP11 managed curve generation remains blocked pending
+   reviewed per-AU parsers for Tables 54, 55, and 57. The next MP11 rebuild
+   edge is Phase 11: MP11 model-input bundle and ForestModel XML rebuild
+   (`#68`).
 1. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
    closeout into `main`. The final closeout surface is
    `planning/tfl6_mp11_figure_extraction_closeout.md` with matching CSV/JSON.
