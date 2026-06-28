@@ -501,12 +501,12 @@ checkpoints without force-fitting.
   - [x] P9.1c Define source dependency checklist and current availability
     states.
   - [x] P9.1d Define no-force-fit and promotion gates for generated outputs.
-- [ ] P9.2 Materialize and verify public source layers (`#73`).
-  - [ ] P9.2a Verify accepted AOI, VRI/R1, and VDYP source artifacts.
-  - [ ] P9.2b Verify or materialize hydrography, shoreline, reserve, roads,
+- [x] P9.2 Materialize and verify public source layers (`#73`).
+  - [x] P9.2a Verify accepted AOI, VRI/R1, and VDYP source artifacts.
+  - [x] P9.2b Verify or materialize hydrography, shoreline, reserve, roads,
     recreation, and DEM/slope candidates.
-  - [ ] P9.2c Build source-layer schema and geometry QA summaries.
-  - [ ] P9.2d Record public/private/proxy status for each dependency.
+  - [x] P9.2c Build source-layer schema and geometry QA summaries.
+  - [x] P9.2d Record public/private/proxy status for each dependency.
 - [ ] P9.3 Profile inventory and proxy inputs (`#74`).
   - [ ] P9.3a Profile inventory/productivity fields and candidate MP11
     mappings.
@@ -640,11 +640,12 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 ## Current Next Steps
 
 0. Phase 9 is active on branch
-   `feature/p9-mp11-source-layer-thlb-rebuild`. P9.1 is complete:
-   `planning/tfl6_mp11_phase9_execution_plan.md` records the Phase 9 issue
-   tree, artifact layout, source dependency checklist, generated-output
-   hygiene, no-force-fit rules, and promotion gates. The active edge is P9.2:
-   materialize and verify public source layers (`#73`).
+   `feature/p9-mp11-source-layer-thlb-rebuild`. P9.1 and P9.2 are complete.
+   `planning/tfl6_mp11_phase9_source_layer_manifest.md` verifies `18` existing
+   public source artifacts, records `3` intentionally non-materialized
+   dependencies, and keeps shoreline, DEM/slope, and WFP LBB/ITI/LEFI behind
+   explicit proxy/unavailable gates. The active edge is P9.3: profile
+   inventory and proxy inputs (`#74`).
 1. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
    closeout into `main`. The final closeout surface is
    `planning/tfl6_mp11_figure_extraction_closeout.md` with matching CSV/JSON.

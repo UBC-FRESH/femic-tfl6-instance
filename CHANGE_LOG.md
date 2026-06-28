@@ -1,5 +1,21 @@
 # Change Log
 
+## 2026-06-28 - Completed P9.2 MP11 public source-layer verification
+
+- added `scripts/build_p9_mp11_source_layer_manifest.py` to generate compact
+  public-safe source-layer verification outputs for the MP11 source-layer and
+  THLB rebuild;
+- added `planning/tfl6_mp11_phase9_source_layer_manifest.md` with matching
+  CSV/JSON outputs covering `21` dependency rows;
+- verified `18` existing public source artifacts as readable, including AOI,
+  VRI/R1, VDYP parquet tables, roads, hydrology, legal reserve, recreation,
+  BEC, and landscape-unit inputs;
+- recorded shoreline and DEM/slope as not yet materialized public proxy
+  dependencies and WFP LBB/ITI/LEFI as unavailable non-public dependencies; and
+- kept P9.2 to source verification only, with no THLB overlays, generated
+  netdown outputs, model-input tables, XML, Matrix Builder outputs, or
+  Patchworks runtime artifacts generated.
+
 ## 2026-06-28 - Launched Phase 9 MP11 source-layer and THLB rebuild
 
 - created Phase 9 child issues `#72` through `#77` for launch planning,
