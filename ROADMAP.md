@@ -549,7 +549,7 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 
 ## Current Next Steps
 
-0. Phase 6 is ready for closeout on branch
+0. Phase 6 is complete and ready to merge from branch
    `feature/p6-mp11-ingestion-model-overhaul`.
    P6.1 is complete: `planning/tfl6_mp11_source_package_manifest.md` records
    the public MP11 source identity, verified SHA256, 475-page PDF structure,
@@ -568,8 +568,10 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    `planning/tfl6_mp11_model_behavior_scenario_endpoints.csv` carrying the
    comparison-ready scenario endpoint table. P6.6 is complete:
    `planning/tfl6_mp11_phase8_implementation_roadmap.md` defines the Phase 8+
-   implementation roadmap and issue tree. The next active edge is Phase 6
-   closeout: validation, PR reconciliation, and parent issue close after merge.
+   implementation roadmap and issue tree. The final closeout note is
+   `planning/tfl6_mp11_phase6_closeout.md`. After the Phase 6 PR merges, the
+   next active edge is Phase 8 P8.1 on branch
+   `feature/p8-mp11-public-data-implementation-foundation`.
 1. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
    closeout into `main`. The final closeout surface is
    `planning/tfl6_mp11_figure_extraction_closeout.md` with matching CSV/JSON.

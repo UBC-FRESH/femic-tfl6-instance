@@ -1,5 +1,17 @@
 # Change Log
 
+## 2026-06-28 - Closed Phase 6 MP11 ingestion and overhaul planning
+
+- added `planning/tfl6_mp11_phase6_closeout.md` summarizing the completed
+  Phase 6 issue tree, tracked outputs, headline MP11 findings, validation
+  checks, and Phase 8 handoff;
+- confirmed P6.1-P6.6 are complete and linked to issues `#43` through `#48`;
+- recorded the main Phase 6 conclusion that MP11 alignment requires a future
+  public-data implementation foundation before any THLB, yield, model-input,
+  XML, Matrix Builder, or runtime rebuild; and
+- preserved the Phase 5 teaching runtime as the accepted baseline until a
+  future MP11-aligned replacement passes direct QA.
+
 ## 2026-06-28 - Completed P6.6 MP11 implementation roadmap
 
 - added `planning/tfl6_mp11_phase8_implementation_roadmap.md` to convert
