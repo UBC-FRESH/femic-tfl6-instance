@@ -362,8 +362,20 @@ before the MP11 evidence is extracted, reviewed, and crosswalked.
     and boundary/tenure assumptions.
   - [x] P6.3c Separate directly reproducible public-layer deltas from
     proxy/sensitivity and model-constraint assumptions.
-- [ ] P6.4 Compare MP11 inventory, LiDAR/ITI, yield, operability, and
+- [x] P6.4 Compare MP11 inventory, LiDAR/ITI, yield, operability, and
   harvest-system assumptions (`#46`).
+  - [x] P6.4a Inspect VRI, LiDAR, ITI, physical operability, economic
+    operability, riparian, OGMA/WHA, terrain, karst, and future-retention
+    assumptions.
+  - [x] P6.4b Inspect analysis-unit, natural-yield, managed-yield, OAF,
+    utilization, non-recoverable-loss, forest-cover constraint,
+    minimum-harvest-age, harvest-rule, silvicultural-system, and
+    harvest-flow-objective assumptions.
+  - [x] P6.4c Compare MP11 assumptions against the Phase 5 AU/yield,
+    treatment, transition, runtime, and known-limitation surfaces.
+  - [x] P6.4d Classify deltas as public-data update, model-parameter update,
+    sensitivity candidate, model-constraint update, or unresolved
+    proprietary/WFP-model gap.
 - [ ] P6.5 Compare MP11 model behavior, sensitivities, AAC recommendation, and
   KPI outputs (`#47`).
 - [ ] P6.6 Write the Phase 7+ implementation roadmap for the MP11-aligned
@@ -483,9 +495,11 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    with `1870` candidate rows. P6.3 is complete:
    `planning/tfl6_mp11_land_base_crosswalk.md` records the headline land-base
    deltas and `planning/tfl6_mp11_netdown_delta_crosswalk.md` records the
-   source-layer/netdown reproducibility split. The active edge is P6.4
-   inventory, LiDAR/ITI, yield, operability, and harvest-system assumption
-   comparison.
+   source-layer/netdown reproducibility split. P6.4 is complete:
+   `planning/tfl6_mp11_inventory_yield_operability_crosswalk.md` records the
+   reviewed inventory, LiDAR/ITI, yield, operability, harvest-system,
+   harvest-rule, and model-constraint deltas. The active edge is P6.5 model
+   behavior, sensitivity, AAC recommendation, and KPI output comparison.
 1. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
    closeout into `main`. The final closeout surface is
    `planning/tfl6_mp11_figure_extraction_closeout.md` with matching CSV/JSON.

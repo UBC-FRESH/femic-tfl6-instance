@@ -158,6 +158,42 @@ review status:
   outputs that can be compared with or added to the Patchworks teaching
   reporting surface.
 
+## P6.4 Inventory, Yield, Operability, And Harvest-System Comparison
+
+The P6.4 comparison surfaces are:
+
+- `planning/tfl6_mp11_inventory_yield_operability_crosswalk.md`
+- `planning/tfl6_mp11_inventory_yield_operability_crosswalk.csv`
+- `planning/tfl6_mp11_inventory_yield_operability_crosswalk.json`
+
+The crosswalk contains `14` reviewed assumption-family rows, all classified as
+`reviewed_evidence`, `phase6_assumption_comparison_only`, and
+`not_model_input`. The rows cover:
+
+- VRI, LiDAR, LEFI, LBB, and ITI inventory inputs;
+- physical and economic operability;
+- MP11 AU definitions by era, BEC variant, site series, leading species, and
+  silvicultural treatments;
+- VDYP 7.33b and TIPSY 4.6 growth-and-yield software;
+- SIBEC/TEM/RESULTS/LEFI site-index assumptions;
+- managed-stand density, genetic gain, fertilization, and spacing inputs;
+- OAF, VRAF, retention, utilization, and non-recoverable loss assumptions;
+- 95% CMAI plus `350 m3/ha` minimum-harvest-age rules;
+- ground/cable/non-conventional harvest-system distributions; and
+- Patchworks spatial harvest rules and public/private resource-constraint
+  reproducibility gaps.
+
+The main P6.4 conclusion is that MP11 alignment is a model-overhaul problem,
+not a small Phase 5 parameter edit. At minimum, the follow-on implementation
+roadmap needs separate lanes for public inventory refresh, unavailable
+LiDAR/ITI/LBB gaps, AU/yield contract decisions, MP11 managed-yield table
+extraction, harvest-system classification, MHA rule extraction, OAF/VRAF and
+retention updates, NRL handling, and Patchworks constraint review.
+
+None of these rows change the Phase 5 teaching runtime package. They define
+what a later MP11-aligned implementation phase must decide, reproduce, proxy,
+or explicitly mark as unavailable from public inputs.
+
 ## Phase 5 Baseline Surfaces
 
 Phase 6 comparisons should start from the accepted Phase 5 surfaces, including:

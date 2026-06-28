@@ -1,5 +1,22 @@
 # Change Log
 
+## 2026-06-28 - Completed P6.4 MP11 inventory/yield/operability comparison
+
+- added `scripts/build_p6_mp11_assumption_crosswalk.py` to generate reviewed
+  Markdown/CSV/JSON comparison artifacts for MP11 inventory, LiDAR/ITI, yield,
+  operability, harvest-system, harvest-rule, and model-constraint assumptions;
+- added `planning/tfl6_mp11_inventory_yield_operability_crosswalk.md` with
+  `14` reviewed assumption-family rows and matching CSV/JSON outputs;
+- classified every row by delta class, implementation class, Phase 7+
+  follow-up lane, review status, downstream-use status, and model-input
+  status;
+- recorded that MP11 alignment requires a future source-layer, AU/yield,
+  managed-yield, harvest-system, MHA, retention/OAF/VRAF, NRL, and Patchworks
+  constraint overhaul rather than a small edit to the Phase 5 teaching
+  package; and
+- kept every P6.4 row as `reviewed_evidence`,
+  `phase6_assumption_comparison_only`, and `not_model_input`.
+
 ## 2026-06-28 - Completed P6.3 MP11 land-base comparison
 
 - added `scripts/build_p6_mp11_land_base_crosswalk.py` and
