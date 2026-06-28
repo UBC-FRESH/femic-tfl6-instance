@@ -461,11 +461,11 @@ Phase 5 runtime as the accepted baseline.
   - [x] P8.2b Define public proxy candidates and sensitivity lanes.
   - [x] P8.2c Define benchmark checkpoints and tolerances.
   - [x] P8.2d Write the reviewed source-layer/THLB rebuild contract.
-- [ ] P8.3 Decide MP11 AU/yield and managed-stand parameter strategy (`#61`).
-  - [ ] P8.3a Decide AU identity strategy.
-  - [ ] P8.3b Define MP11 managed-yield table extraction requirements.
-  - [ ] P8.3c Define public/private SI and inventory dependency boundaries.
-  - [ ] P8.3d Define yield-adjustment parameter surfaces.
+- [x] P8.3 Decide MP11 AU/yield and managed-stand parameter strategy (`#61`).
+  - [x] P8.3a Decide AU identity strategy.
+  - [x] P8.3b Define MP11 managed-yield table extraction requirements.
+  - [x] P8.3c Define public/private SI and inventory dependency boundaries.
+  - [x] P8.3d Define yield-adjustment parameter surfaces.
 - [ ] P8.4 Define operability, harvest-system, MHA, and scenario rules (`#62`).
   - [ ] P8.4a Define harvest-system classifier candidates and required public
     inputs.
@@ -550,13 +550,13 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 ## Current Next Steps
 
 0. Phase 8 is active on branch
-   `feature/p8-mp11-public-data-implementation-foundation`. P8.1 and P8.2 are
-   complete. `planning/tfl6_mp11_baseline_and_promotion_contract.md` preserves
-   the Phase 5 teaching runtime and defines MP11 evidence-promotion rules.
-   `planning/tfl6_mp11_source_layer_thlb_rebuild_contract.md` defines public
-   source-layer lanes, proxy/sensitivity boundaries, non-public WFP/LiDAR/LBB
-   gaps, THLB checkpoints, and ordered-overlay requirements. The active edge is
-   P8.3: decide the MP11 AU/yield and managed-stand parameter strategy.
+   `feature/p8-mp11-public-data-implementation-foundation`. P8.1, P8.2, and
+   P8.3 are complete. The newest contract,
+   `planning/tfl6_mp11_au_yield_strategy_contract.md`, preserves stable FEMIC
+   canonical AU identity while adding MP11 AU-era, site-series, treatment,
+   site-productivity, managed-yield, OAF/VRAF, utilization, and NRL surfaces as
+   reviewed crosswalk/parameter layers. The active edge is P8.4: define
+   operability, harvest-system, MHA, and scenario rules.
 1. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
    closeout into `main`. The final closeout surface is
    `planning/tfl6_mp11_figure_extraction_closeout.md` with matching CSV/JSON.

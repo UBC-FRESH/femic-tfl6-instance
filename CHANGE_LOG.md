@@ -1,5 +1,20 @@
 # Change Log
 
+## 2026-06-28 - Completed P8.3 MP11 AU/yield strategy contract
+
+- added `planning/tfl6_mp11_au_yield_strategy_contract.md` to decide the MP11
+  AU/yield and managed-stand parameter strategy before any curve regeneration;
+- preserved FEMIC's stable static canonical AU identity while adding MP11
+  AU-era, site-series, treatment, managed-stand, site-productivity, and
+  curve-parameter fields as reviewed crosswalk attributes;
+- defined public/private boundaries for public VRI/R1/VDYP, SIBEC/TEM,
+  RESULTS-derived site index, VDYP, BatchTIPSY, and unavailable LEFI/ITI/LiDAR
+  assumptions;
+- scoped MP11 managed-yield parameter-library requirements, OAF/VRAF,
+  utilization, genetic-gain, fertilization, spacing, and NRL surfaces; and
+- kept all P8.3 work in the planning/contract layer with no generated curves,
+  model-input bundle changes, or MP11 model-input promotion.
+
 ## 2026-06-28 - Completed P8.2 MP11 source-layer and THLB rebuild contract
 
 - added `planning/tfl6_mp11_source_layer_thlb_rebuild_contract.md` to convert
