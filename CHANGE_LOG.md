@@ -1,5 +1,19 @@
 # Change Log
 
+## 2026-06-28 - Completed P9.4 MP11 ordered overlay scaffold
+
+- added `config/tsr/mp11_thlb_rebuild.recipe.yaml` as the MP11 public-data
+  ordered-overlay THLB recipe scaffold;
+- added `scripts/build_p9_mp11_ordered_overlay_scaffold.py` to validate the
+  scaffold against the P9.2 source-layer manifest and P9.3 input/proxy profile;
+- added `planning/tfl6_mp11_phase9_ordered_overlay_scaffold.md` with matching
+  CSV/JSON outputs covering `13` ordered scaffold rows;
+- validated that every referenced source ID and candidate ID resolves against
+  the accepted Phase 9 manifests; and
+- kept P9.4 to scaffold validation only, with no overlay execution, THLB
+  output, model-input table, XML, Matrix Builder output, or Patchworks runtime
+  artifact generated.
+
 ## 2026-06-28 - Completed P9.3 MP11 inventory and proxy input profile
 
 - added `scripts/build_p9_mp11_input_proxy_profile.py` to generate public-safe

@@ -514,12 +514,12 @@ checkpoints without force-fitting.
   - [x] P9.3c Profile hydrography and legal/proposed reserve overlay
     attributes.
   - [x] P9.3d Define operability and low-site proxy variables with caveats.
-- [ ] P9.4 Implement ordered overlay THLB recipe scaffold (`#75`).
-  - [ ] P9.4a Define ordered overlay recipe/config from accepted P9.2/P9.3
+- [x] P9.4 Implement ordered overlay THLB recipe scaffold (`#75`).
+  - [x] P9.4a Define ordered overlay recipe/config from accepted P9.2/P9.3
     evidence.
-  - [ ] P9.4b Implement or wire bounded smoke-lane execution logic.
-  - [ ] P9.4c Emit checkpoint, overlap, diagnostic, and provenance outputs.
-  - [ ] P9.4d Run bounded smoke tests after source/profile gates pass.
+  - [x] P9.4b Implement or wire bounded smoke-lane execution logic.
+  - [x] P9.4c Emit checkpoint, overlap, diagnostic, and provenance outputs.
+  - [x] P9.4d Run bounded smoke tests after source/profile gates pass.
 - [ ] P9.5 Execute and compare public-data THLB rebuild (`#76`).
   - [ ] P9.5a Execute accepted THLB rebuild lane.
   - [ ] P9.5b Build checkpoint and residual comparison summaries.
@@ -640,11 +640,12 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 ## Current Next Steps
 
 0. Phase 9 is active on branch
-   `feature/p9-mp11-source-layer-thlb-rebuild`. P9.1 through P9.3 are
-   complete. `planning/tfl6_mp11_phase9_input_proxy_profile.md` profiles `51`
-   candidate inventory, join, hydrology, legal-reserve, roads, productivity,
-   species, operability-proxy, and QA rows. The active edge is P9.4: implement
-   the ordered overlay THLB recipe scaffold (`#75`).
+   `feature/p9-mp11-source-layer-thlb-rebuild`. P9.1 through P9.4 are
+   complete. `config/tsr/mp11_thlb_rebuild.recipe.yaml` and
+   `planning/tfl6_mp11_phase9_ordered_overlay_scaffold.md` define and validate
+   a `13`-row ordered overlay scaffold with all source and candidate references
+   resolving against P9.2/P9.3 manifests. The active edge is P9.5: execute and
+   compare the public-data THLB rebuild (`#76`).
 1. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
    closeout into `main`. The final closeout surface is
    `planning/tfl6_mp11_figure_extraction_closeout.md` with matching CSV/JSON.
