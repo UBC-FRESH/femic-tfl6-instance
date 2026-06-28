@@ -450,12 +450,12 @@ Goal: convert Phase 6/7 MP11 evidence into reviewed public-data contracts and
 implementation-ready recipes for the next model rebuild, while preserving the
 Phase 5 runtime as the accepted baseline.
 
-- [ ] P8.1 Preserve Phase 5 baseline and lock MP11 promotion rules (`#59`).
-  - [ ] P8.1a Summarize Phase 5 accepted baseline artifacts and QA evidence.
-  - [ ] P8.1b Define MP11 evidence-promotion states.
-  - [ ] P8.1c Define promotion requirements for text/table/figure-derived
+- [x] P8.1 Preserve Phase 5 baseline and lock MP11 promotion rules (`#59`).
+  - [x] P8.1a Summarize Phase 5 accepted baseline artifacts and QA evidence.
+  - [x] P8.1b Define MP11 evidence-promotion states.
+  - [x] P8.1c Define promotion requirements for text/table/figure-derived
     evidence.
-  - [ ] P8.1d Define rollback and non-replacement rules.
+  - [x] P8.1d Define rollback and non-replacement rules.
 - [ ] P8.2 Design MP11 public source-layer and THLB rebuild contract (`#60`).
   - [ ] P8.2a Classify source-layer categories by public reproducibility.
   - [ ] P8.2b Define public proxy candidates and sensitivity lanes.
@@ -549,29 +549,13 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 
 ## Current Next Steps
 
-0. Phase 6 is complete and ready to merge from branch
-   `feature/p6-mp11-ingestion-model-overhaul`.
-   P6.1 is complete: `planning/tfl6_mp11_source_package_manifest.md` records
-   the public MP11 source identity, verified SHA256, 475-page PDF structure,
-   document-component ranges, ignored source-copy policy, governance caveat,
-   and extraction-manifest field contract. The first P6.2 raw extraction
-   inventory is also recorded in `planning/tfl6_mp11_extraction_inventory.csv`
-   with `1870` candidate rows. P6.3 is complete:
-   `planning/tfl6_mp11_land_base_crosswalk.md` records the headline land-base
-   deltas and `planning/tfl6_mp11_netdown_delta_crosswalk.md` records the
-   source-layer/netdown reproducibility split. P6.4 is complete:
-   `planning/tfl6_mp11_inventory_yield_operability_crosswalk.md` records the
-   reviewed inventory, LiDAR/ITI, yield, operability, harvest-system,
-   harvest-rule, and model-constraint deltas. P6.5 is complete:
-   `planning/tfl6_mp11_model_behavior_crosswalk.md` records the reviewed
-   model-behavior, sensitivity, AAC recommendation, and KPI comparison, with
-   `planning/tfl6_mp11_model_behavior_scenario_endpoints.csv` carrying the
-   comparison-ready scenario endpoint table. P6.6 is complete:
-   `planning/tfl6_mp11_phase8_implementation_roadmap.md` defines the Phase 8+
-   implementation roadmap and issue tree. The final closeout note is
-   `planning/tfl6_mp11_phase6_closeout.md`. After the Phase 6 PR merges, the
-   next active edge is Phase 8 P8.1 on branch
-   `feature/p8-mp11-public-data-implementation-foundation`.
+0. Phase 8 is active on branch
+   `feature/p8-mp11-public-data-implementation-foundation`. P8.1 is complete:
+   `planning/tfl6_mp11_baseline_and_promotion_contract.md` preserves the
+   Phase 5 teaching runtime as the accepted baseline and defines MP11 evidence
+   promotion states, evidence classes, figure-evidence rules, non-public-data
+   rules, and rollback gates. The active edge is P8.2: design the MP11 public
+   source-layer and THLB rebuild contract.
 1. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
    closeout into `main`. The final closeout surface is
    `planning/tfl6_mp11_figure_extraction_closeout.md` with matching CSV/JSON.

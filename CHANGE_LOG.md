@@ -1,5 +1,20 @@
 # Change Log
 
+## 2026-06-28 - Completed P8.1 MP11 baseline and promotion contract
+
+- added `planning/tfl6_mp11_baseline_and_promotion_contract.md` to preserve
+  the Phase 5 teaching runtime as the accepted baseline;
+- defined MP11 promotion states from `planning_only` through
+  `accepted_model_input`, plus `rejected`, `deferred`, and
+  `unavailable_non_public`;
+- defined evidence classes and promotion requirements for MP11 text claims,
+  table values, recovered figures, public spatial layers, public proxies,
+  generated outputs, and non-public WFP references;
+- recorded figure-evidence rules, non-public-data rules, replacement gates,
+  rollback rules, and required issue closeout language; and
+- kept every current MP11 evidence surface as planning/comparison evidence,
+  with no promotion to model-input status.
+
 ## 2026-06-28 - Closed Phase 6 MP11 ingestion and overhaul planning
 
 - added `planning/tfl6_mp11_phase6_closeout.md` summarizing the completed
