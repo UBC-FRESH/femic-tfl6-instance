@@ -480,9 +480,14 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    is recorded in `planning/tfl6_mp11_figure2_extraction_pilot.md` and
    `planning/tfl6_mp11_figure2_extraction_pilot.json`; it produced 161 raw
    points from the base-case harvest-level chart and remains unaccepted
-   `raw_extraction` evidence pending overlay/value review. The active edge
-   remains P7.3/P7.4: convert the pilot into reviewed calibration practice,
-   then broaden extraction across the high-priority batch.
+   `raw_extraction` evidence pending overlay/value review. The first repeatable
+   crop-proposal pass is now recorded in
+   `planning/tfl6_mp11_priority_crop_proposals.md`,
+   `planning/tfl6_mp11_priority_crop_proposals.csv`, and
+   `planning/tfl6_mp11_priority_crop_proposals.json`, with 36 proposed crops
+   still marked `needs_manual_crop_review`. The active edge remains P7.3/P7.4:
+   tighten proposed bboxes, create reviewed calibration specs, and broaden
+   extraction across the high-priority batch.
 1. Phase 2 is closed. The instance `main` branch contains the Phase 2
    source-layer, THLB smoke, benchmark-tolerance, and Sphinx audit-trail
    surfaces; the parent FEMIC submodule pointer has been updated to the merged

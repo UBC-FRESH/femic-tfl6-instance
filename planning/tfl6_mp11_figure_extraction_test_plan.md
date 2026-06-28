@@ -94,6 +94,20 @@ remains `raw_extraction` evidence and must be reviewed against the QA overlay,
 axis labels, and related MP11 text/tables before it can be promoted to
 comparison-ready evidence.
 
+## Crop Proposal Pass
+
+The first repeatable crop-proposal pass is recorded in:
+
+- `planning/tfl6_mp11_priority_crop_proposals.md`
+- `planning/tfl6_mp11_priority_crop_proposals.csv`
+- `planning/tfl6_mp11_priority_crop_proposals.json`
+
+The instance-local script `scripts/build_p7_mp11_crop_proposals.py` detected
+coloured chart marks in the high-priority preliminary crops and wrote `36`
+ignored proposed crop images. The proposals are all marked
+`needs_manual_crop_review`; they are intended to make manual review faster, not
+to certify extraction-ready plot bounds.
+
 ## Runtime Artifact Boundary
 
 Generated figure-recovery artifacts belong under ignored runtime paths such as:

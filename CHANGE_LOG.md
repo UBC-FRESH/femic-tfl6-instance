@@ -1,5 +1,21 @@
 # Change Log
 
+## 2026-06-28 - Added repeatable MP11 crop proposal generation
+
+- added `scripts/build_p7_mp11_crop_proposals.py` to generate first-pass
+  high-priority chart crop proposals from the ignored preliminary crop queue;
+- ran the script across all `36` high-priority MP11 figures and wrote proposed
+  crop images under ignored
+  `runtime/document_ingestion/tfl6-mp11-full-figures/crops/priority_high_proposals/`;
+- added compact tracked proposal summaries in
+  `planning/tfl6_mp11_priority_crop_proposals.md`,
+  `planning/tfl6_mp11_priority_crop_proposals.csv`, and
+  `planning/tfl6_mp11_priority_crop_proposals.json`;
+- recorded proposed bboxes, dimensions, checksums, proposal status, and manual
+  review status for every high-priority row; and
+- kept all generated crop images and contact sheets out of tracked source
+  control.
+
 ## 2026-06-28 - Recorded the first MP11 Figure 2 extraction pilot
 
 - manually cropped and calibrated MP11 `Figure 2 Base Case Harvest Level` under
