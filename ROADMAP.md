@@ -602,7 +602,7 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 
 ## Current Next Steps
 
-0. Phase 8 is closed. PR `TBD` merges the MP11 implementation-foundation
+0. Phase 8 is closed. PR `#71` merges the MP11 implementation-foundation
    contracts and closeout note to `main`. The next planned edge is Phase 9:
    MP11 source-layer and THLB rebuild (`#66`).
 1. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
