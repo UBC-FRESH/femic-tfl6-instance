@@ -3192,3 +3192,24 @@
 - kept every row `not_model_input`; and
 - moved the active P10R.5 edge to updated VDYP/natural curve generation and
   AU-wise TIPSY-vs-VDYP diagnostic plots.
+
+## 2026-06-28 - Generated P10R TIPSY-vs-VDYP diagnostics
+
+- added `scripts/build_p10r_mp11_tipsy_vdyp_diagnostics.py` to build AU-wise
+  overlays between the tentatively reviewed MP11 Table 57 TIPSY curves and the
+  matching public VDYP `smoothed_bin_pchip` natural curves;
+- emitted `planning/tfl6_mp11_vdyp_natural_curve_slice.{csv,json}` with
+  `8,073` review-slice rows across `27` MP11 candidates and `20` public VDYP
+  natural AUs;
+- generated `27` ignored diagnostic PNGs under
+  `plots/mp11_tipsy_vdyp_diagnostics/`;
+- emitted
+  `planning/tfl6_mp11_tipsy_vdyp_diagnostic_manifest.{csv,json,md}` with
+  ratio, RMSE, diagnostic-class, plot-path, review-status, and
+  model-input-status fields;
+- classified the diagnostics as `13` TIPSY-above-VDYP rows, `4`
+  TIPSY-below-VDYP rows, `8` moderate-difference rows, and `2` close rows;
+- confirmed every manifest row has a non-empty plot and remains
+  `not_model_input`; and
+- marked P10R.5 complete, leaving P10R.6 closeout and Phase 11 unblock/defer
+  decision as the next edge.

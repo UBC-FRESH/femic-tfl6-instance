@@ -621,9 +621,12 @@ natural/managed curve plots or a maintainer-reviewable blocker package.
   - [x] P10R.4c Parse output curves to normalized tables.
   - [x] P10R.4d Emit diagnostics for failed or unsupported rows.
   - [x] P10R.4e Compare candidate outputs against Phase 5 fallback curves.
-- [ ] P10R.5 Regenerate natural and managed curve plots and overlays (`#97`).
+- [x] P10R.5 Regenerate natural and managed curve plots and overlays (`#97`) -
+  managed Phase 10R-vs-Phase 5 overlays, public VDYP curve slices, and
+  AU-wise MP11 TIPSY-vs-VDYP diagnostic plots complete. All rows remain
+  `not_model_input`.
   - [x] P10R.5a Inventory existing curve plot locations.
-  - [ ] P10R.5b Generate updated VDYP/natural curves and AU-wise
+  - [x] P10R.5b Generate updated VDYP/natural curves and AU-wise
     TIPSY-vs-VDYP diagnostic plots where inputs support it.
   - [x] P10R.5c Generate rebuilt managed curve plots from P10R.4 outputs.
   - [x] P10R.5d Emit plot manifests with source/provenance links.
@@ -894,9 +897,13 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    generated MP11 managed curves now carry review status
    `tentatively_passed_review` for sequencing into the updated VDYP diagnostic
    lane, while every parsed, compared, and plotted row remains
-   `not_model_input`. The active P10R.5 edge is updated VDYP/natural curve
-   generation plus AU-wise TIPSY-vs-VDYP diagnostic plots before Phase 10R
-   closeout. Phase 11 is planned and blocked until Phase 10R closes.
+   `not_model_input`. P10R.5 then emitted
+   `planning/tfl6_mp11_vdyp_natural_curve_slice.{csv,json}` and
+   `planning/tfl6_mp11_tipsy_vdyp_diagnostic_manifest.{csv,json,md}` with
+   `27` AU-wise MP11 TIPSY-vs-public-VDYP diagnostic plots under ignored
+   `plots/mp11_tipsy_vdyp_diagnostics/`. The active edge moves to P10R.6:
+   close the curve-rebuild phase and decide whether Phase 11 remains blocked
+   or may start from the accepted/tentative curve handoff.
 2. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
    closeout into `main`. The final closeout surface is
    `planning/tfl6_mp11_figure_extraction_closeout.md` with matching CSV/JSON.
