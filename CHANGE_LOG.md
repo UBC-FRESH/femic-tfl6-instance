@@ -1,5 +1,22 @@
 # Change Log
 
+## 2026-06-28 - Launched Phase 7 MP11 figure extraction test
+
+- opened Phase 7 parent issue `#49` and child issues `#50` through `#55` for a
+  full `figrecover`-backed MP11 figure-extraction test upstream of any
+  MP10-to-MP11 model upgrade;
+- added Phase 6 and Phase 7 sections to `ROADMAP.md`, linking the existing
+  MP11 ingestion issue tree and the new figure-extraction issue tree;
+- added `planning/tfl6_mp11_figure_extraction_test_plan.md` to define the
+  source package, runtime artifact boundary, review-status contract, Phase 6
+  handoff, first extraction priorities, and validation expectations;
+- added `planning/tfl6_mp11_full_figure_inventory.csv` with the 61 figures
+  listed in Appendix A's list of figures, including source SHA256, report/PDF
+  page anchors, captions, chart-family triage, extraction-priority tiers, and
+  downstream relevance notes; and
+- kept the first tranche public-safe: no rendered pages, crops, overlays, raw
+  recovered tables, prompt logs, or review bundles were tracked.
+
 ## 2026-06-23 - Bootstrapped the NICF FSP FRST 558 instance repository
 
 - created the FEMIC instance scaffold for `femic-tfl6-instance`;
