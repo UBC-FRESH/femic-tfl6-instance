@@ -485,9 +485,13 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    `planning/tfl6_mp11_priority_crop_proposals.md`,
    `planning/tfl6_mp11_priority_crop_proposals.csv`, and
    `planning/tfl6_mp11_priority_crop_proposals.json`, with 36 proposed crops
-   still marked `needs_manual_crop_review`. The active edge remains P7.3/P7.4:
-   tighten proposed bboxes, create reviewed calibration specs, and broaden
-   extraction across the high-priority batch.
+   still marked `needs_manual_crop_review`. The first repeatable six-figure
+   harvest-sensitivity extraction batch is recorded in
+   `planning/tfl6_mp11_harvest_sensitivity_extraction_summary.md` and related
+   CSV/JSON summaries; it remains `raw_extraction` evidence with a maximum
+   table cross-check error of `0.503%`. The active edge remains P7.4/P7.5:
+   review overlays, classify downstream use, and decide which raw extractions
+   can be promoted to Phase 6 comparison evidence.
 1. Phase 2 is closed. The instance `main` branch contains the Phase 2
    source-layer, THLB smoke, benchmark-tolerance, and Sphinx audit-trail
    surfaces; the parent FEMIC submodule pointer has been updated to the merged

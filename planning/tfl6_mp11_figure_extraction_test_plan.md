@@ -108,6 +108,24 @@ ignored proposed crop images. The proposals are all marked
 `needs_manual_crop_review`; they are intended to make manual review faster, not
 to certify extraction-ready plot bounds.
 
+## First Sensitivity Extraction Batch
+
+The first repeatable multi-figure extraction batch is recorded in:
+
+- `planning/tfl6_mp11_harvest_sensitivity_extraction_summary.md`
+- `planning/tfl6_mp11_harvest_sensitivity_extraction_summary.csv`
+- `planning/tfl6_mp11_harvest_sensitivity_extraction_summary.json`
+- `planning/tfl6_mp11_harvest_sensitivity_series_summary.csv`
+
+The batch extracts six simple harvest-level sensitivity line charts: Figures
+`29`, `30`, `31`, `35`, `36`, and `39`. It uses manual plot-frame calibrations
+and a long colour-component filter to avoid legend swatches and body text. The
+maximum absolute percent error against the adjacent MP11 table values is
+`0.503%`.
+
+These outputs remain `raw_extraction` evidence. The next step is full overlay
+review and reviewer provenance before any Phase 6 comparison handoff.
+
 ## Runtime Artifact Boundary
 
 Generated figure-recovery artifacts belong under ignored runtime paths such as:

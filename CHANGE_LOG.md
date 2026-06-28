@@ -1,5 +1,24 @@
 # Change Log
 
+## 2026-06-28 - Extracted the first MP11 harvest sensitivity batch
+
+- added `scripts/build_p7_mp11_harvest_sensitivity_extractions.py` for the
+  first repeatable multi-figure extraction batch;
+- extracted six simple MP11 harvest-level sensitivity line charts: Figures
+  `29`, `30`, `31`, `35`, `36`, and `39`;
+- wrote ignored detailed result JSON, recovered-point CSV, overlay PNG, and
+  metrics JSON artifacts under
+  `runtime/document_ingestion/tfl6-mp11-full-figures/`;
+- added compact public-safe summary outputs in
+  `planning/tfl6_mp11_harvest_sensitivity_extraction_summary.md`,
+  `planning/tfl6_mp11_harvest_sensitivity_extraction_summary.csv`,
+  `planning/tfl6_mp11_harvest_sensitivity_extraction_summary.json`, and
+  `planning/tfl6_mp11_harvest_sensitivity_series_summary.csv`;
+- cross-checked extracted mean series values against adjacent MP11 table values
+  and recorded a maximum absolute percent error of `0.503%`; and
+- kept the batch status as `raw_extraction`, requiring full overlay/value
+  review before Phase 6 comparison or model-upgrade use.
+
 ## 2026-06-28 - Added repeatable MP11 crop proposal generation
 
 - added `scripts/build_p7_mp11_crop_proposals.py` to generate first-pass
