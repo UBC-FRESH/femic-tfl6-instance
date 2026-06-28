@@ -1,5 +1,20 @@
 # Change Log
 
+## 2026-06-28 - Built MP11 TIPSY handoff candidates and blockers
+
+- added `scripts/build_p10r_mp11_tipsy_handoff.py` to convert P10R.2 parser
+  rows into conservative BatchTIPSY handoff candidates and row-level blocker
+  diagnostics;
+- emitted `planning/tfl6_mp11_tipsy_handoff.{csv,json,md}` and
+  `planning/tfl6_mp11_tipsy_handoff_map.csv`;
+- produced `27` future-managed candidate rows from Table 57 using decoded
+  public future-AU BEC signals, MP11 one-year regeneration delay, and MP11 OAF
+  defaults emitted as BTC factors `0.85` and `0.95`;
+- blocked `105` Table 54/55 existing/recent managed rows pending a public MP11
+  AU-code to BEC/site-series mapping; and
+- retained `9` parser-review rows from P10R.2 as non-promotable handoff
+  blockers.
+
 ## 2026-06-28 - Parsed MP11 TIPSY row tables for Phase 10R
 
 - added `scripts/build_p10r_mp11_tipsy_row_parse.py` to parse public MP11

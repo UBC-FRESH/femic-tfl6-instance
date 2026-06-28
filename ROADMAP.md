@@ -605,12 +605,12 @@ natural/managed curve plots or a maintainer-reviewable blocker package.
   - [x] P10R.2c Emit public-safe row tables with page/table provenance.
   - [x] P10R.2d Add QA summaries for missing, wrapped, or ambiguous rows.
   - [x] P10R.2e Review row counts and representative rows manually.
-- [ ] P10R.3 QA managed-yield rows and build BatchTIPSY handoff inputs (`#95`).
-  - [ ] P10R.3a Join parsed rows to the AU/curve-lane crosswalk.
-  - [ ] P10R.3b Validate density, regeneration delay, genetic gain, VRAF,
+- [x] P10R.3 QA managed-yield rows and build BatchTIPSY handoff inputs (`#95`).
+  - [x] P10R.3a Join parsed rows to the AU/curve-lane crosswalk.
+  - [x] P10R.3b Validate density, regeneration delay, genetic gain, VRAF,
     utilization, and site assumptions.
-  - [ ] P10R.3c Emit handoff CSV/JSON/Markdown manifests.
-  - [ ] P10R.3d Record unsupported rows and maintainer decisions required.
+  - [x] P10R.3c Emit handoff CSV/JSON/Markdown manifests.
+  - [x] P10R.3d Record unsupported rows and maintainer decisions required.
 - [ ] P10R.4 Run and parse MP11 managed curve generation (`#96`).
   - [ ] P10R.4a Run accepted BatchTIPSY/TIPSY or local-equivalent commands.
   - [ ] P10R.4b Capture tool versions, commands, inputs, outputs, and failures.
@@ -869,9 +869,14 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    `planning/tfl6_mp11_tipsy_row_parse.{csv,json,md}`: `141` rows total
    (`79` Table 54, `34` Table 55, `28` Table 57), with `132`
    high-confidence parser candidates and `9` rows retained as
-   review-required. The active edge is P10R.3: QA managed-yield rows and build
-   BatchTIPSY handoff inputs (`#95`). Phase 11 is planned and blocked until
-   Phase 10R closes.
+   review-required. P10R.3 emitted
+   `planning/tfl6_mp11_tipsy_handoff.{csv,json,md}` plus
+   `planning/tfl6_mp11_tipsy_handoff_map.csv`: `27` future-managed candidate
+   rows are handoff-ready, `105` existing/recent rows are blocked pending a
+   public MP11 AU-code to BEC/site-series mapping, and `9` rows remain parser
+   review-required. The active edge is P10R.4: run and parse MP11 managed curve
+   generation (`#96`) for accepted candidate rows or record toolchain
+   blockers. Phase 11 is planned and blocked until Phase 10R closes.
 2. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
    closeout into `main`. The final closeout surface is
    `planning/tfl6_mp11_figure_extraction_closeout.md` with matching CSV/JSON.

@@ -115,6 +115,27 @@ totals above 100 in the visible table text and two known page-break repairs
 the parsed rows to AU/curve lanes and either accept, repair, or explicitly
 quarantine review-required rows before handoff generation.
 
+## P10R.3 Handoff Closeout
+
+P10R.3 is complete as a handoff-candidate and blocker-diagnostic gate. The
+implemented generator is `scripts/build_p10r_mp11_tipsy_handoff.py`, which
+reads `planning/tfl6_mp11_tipsy_row_parse.csv` and emits:
+
+- `planning/tfl6_mp11_tipsy_handoff.csv`;
+- `planning/tfl6_mp11_tipsy_handoff_map.csv`;
+- `planning/tfl6_mp11_tipsy_handoff.json`;
+- `planning/tfl6_mp11_tipsy_handoff.md`.
+
+The generator produced `27` future-managed candidate rows suitable for the
+next curve-generation gate. It also recorded `105` existing/recent managed
+rows as blocked because MP11 Tables 54 and 55 use existing AU codes that do
+not carry enough public BEC/site-series information for direct BatchTIPSY
+handoff. The remaining `9` rows are parser-review rows inherited from P10R.2.
+
+The P10R.3 output is intentionally partial and auditable: P10R.4 may run only
+accepted candidate rows unless a maintainer accepts an additional public
+mapping or repair for blocked rows. No row is promoted to model input.
+
 ## Plot-Refresh Requirement
 
 P10R.5 is the task that updates curve plots. Plot outputs must distinguish:
