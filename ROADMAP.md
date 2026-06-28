@@ -629,6 +629,84 @@ natural/managed curve plots or a maintainer-reviewable blocker package.
   - [ ] P10R.6d Run final validation.
   - [ ] P10R.6e Unblock or explicitly defer Phase 11 based on accepted outputs.
 
+## Phase 9D: Public DEM Steep-Slope Proxy Repair (`#100`)
+
+Status: active and urgent.
+
+Goal: implement a public DEM steep-slope proxy for MP11 Table 12 Step 220 so
+the P9RF THLB lane no longer leaves an avoidable zero-deduction placeholder
+where a known public DEM source can at least support a reviewed proxy.
+
+This phase is a P9RF residual-repair lane. It does not claim equivalence to
+WFP's private LiDAR/DTSM/Patchworks implementation, but it must test the best
+available public DEM route before the MP11 THLB surface is promoted into
+model-input work.
+
+- [x] P9D.1 Launch public DEM steep-slope execution plan (`#101`).
+  - [x] P9D.1a Audit existing DEM/LiDAR/CDED/source-discovery notes.
+  - [x] P9D.1b Write
+    `planning/tfl6_mp11_public_dem_steep_slope_execution_plan.md`.
+  - [x] P9D.1c Define artifact paths for DEM, slope raster, zonal stats, and
+    Step 220 reports.
+  - [x] P9D.1d Define lock/defer criteria for Step 220.
+- [x] P9D.2 Materialize public DEM smoke-test source for TFL 6 (`#102`).
+  - [x] P9D.2a Resolve CDED source metadata and direct download root.
+  - [x] P9D.2b Determine AOI tile/archive requirements.
+  - [x] P9D.2c Materialize source archives under ignored/generated paths.
+  - [x] P9D.2d Build a DEM clip or mosaic for the TFL 6 AOI.
+  - [x] P9D.2e Write DEM QA summary Markdown/CSV/JSON.
+- [x] P9D.3 Derive percent-slope raster and zonal statistics (`#103`).
+  - [x] P9D.3a Implement or adapt a slope-raster derivation script.
+  - [x] P9D.3b Compute documented percent-slope raster outputs.
+  - [x] P9D.3c Compute zonal summaries and steep-area proportions.
+  - [x] P9D.3d Emit QA summaries for slope distributions and nodata coverage.
+- [x] P9D.4 Implement and compare Step 220 steep-slope scenarios (`#104`).
+  - [x] P9D.4a Implement Step 220 scenario runner.
+  - [x] P9D.4b Test multiple slope/proportion thresholds.
+  - [x] P9D.4c Compare results against MP11 Step 220 and Current THLB
+    residuals.
+  - [x] P9D.4d Emit Markdown/CSV/JSON scenario reports.
+  - [x] P9D.4e Recommend lock/defer with rationale.
+- [x] P9D.5 Lock or defer Step 220 and refresh P9RF outputs (`#105`).
+  - [x] P9D.5a Decide lock/defer for Step 220 with maintainer rationale.
+  - [x] P9D.5b Patch P9RF rebuild and contract if accepted.
+  - [x] P9D.5c Rerun P9RF and compare Steps 220, 280, 290, and 310.
+  - [x] P9D.5d Update generated reports, roadmap, changelog, and planning
+    notes.
+  - [x] P9D.5e Run validation and close the phase.
+
+## Phase 9E: Public TSM Terrain-Stability Step 210 Repair (`#106`)
+
+Status: complete.
+
+Goal: correct the Step 210 source gap after identifying the public BC Terrain
+Stability Mapping detailed polygon layer as a real candidate source for MP11
+Table 12 Step 210.
+
+This phase applies the public TSM source transparently but does not claim WFP
+DTSM/Patchworks equivalence. The result proves that the public layer exists and
+should not be skipped, while also showing that strict public Class V terrain
+coverage explains only a very small portion of the MP11 Step 210 netdown.
+
+- [x] P9E.1 Materialize public TSM source and evaluate Step 210 scenarios
+  (`#107`).
+  - [x] P9E.1a Fetch public TSM polygons from the BC ArcGIS REST layer.
+  - [x] P9E.1b Clip to TFL 6 and write
+    `data/source/tfl_6/terrain/tsm_detailed_polygons_tfl6.gpkg`.
+  - [x] P9E.1c Write source manifest Markdown/CSV/JSON.
+  - [x] P9E.1d Test strict Class V and broader diagnostic rules against the
+    Step 200 active P9RF surface.
+  - [x] P9E.1e Select strict `slope_stability_class_w_roads == "V"` as the
+    accepted public proxy.
+- [x] P9E.2 Apply public TSM Step 210 proxy and rerun P9RF (`#108`).
+  - [x] P9E.2a Patch Table 12 recipe and P9RF rebuild.
+  - [x] P9E.2b Add guard against stale Step 220 zonal tables after Step 210
+    geometry changes.
+  - [x] P9E.2c Regenerate Step 220 CDED zonal/scenario evidence on the
+    TSM-adjusted Step 210 surface.
+  - [x] P9E.2d Rerun P9RF through Step 310.
+  - [x] P9E.2e Record final endpoint deltas.
+
 ## Phase 11: MP11 Model-Input Bundle And ForestModel XML Rebuild (`#68`)
 
 Status: planned and blocked.
@@ -638,9 +716,10 @@ accepted source-layer, THLB, AU/yield, treatment, transition, MHA,
 harvest-system, and reporting contracts.
 
 Phase 11 must not proceed until Phase 10R closes with accepted curve candidates
-or an explicit maintainer-approved blocker path. Existing P11 issues `#86`
-through `#91` are retained as the future model-input/XML issue tree, but they
-are not active work.
+or an explicit maintainer-approved blocker path. Phase 9D is complete and
+Step 220 now has an accepted public CDED steep-slope proxy in the P9RF THLB
+surface. Existing P11 issues `#86` through `#91` are retained as the future
+model-input/XML issue tree, but they are not active work.
 
 - [ ] P11.1 Launch MP11 model-input/XML rebuild execution plan (`#86`).
   - [ ] P11.1a Audit governing contracts and handoff blockers.
@@ -739,12 +818,15 @@ approves a narrower independent slice:
     Tables 54, 55, and 57, builds BatchTIPSY/TIPSY handoff inputs, runs/parses
     managed curves where supported, and refreshes curve plots or records a
     blocker package.
-12. **MP11 model-input/XML rebuild**: Phase 11 (`#68`) promotes accepted
+12. **Public DEM steep-slope proxy repair**: Phase 9D (`#100`) materializes a
+    public DEM route, derives slope evidence, and locks or defers MP11 Table 12
+    Step 220 before THLB promotion.
+13. **MP11 model-input/XML rebuild**: Phase 11 (`#68`) promotes accepted
     source, curve, rule, and reporting contracts into model-input and
     ForestModel XML artifacts.
-13. **MP11 runtime smoke**: Phase 12 (`#69`) builds and smoke-tests Matrix
+14. **MP11 runtime smoke**: Phase 12 (`#69`) builds and smoke-tests Matrix
     Builder and Patchworks runtime artifacts.
-14. **MP11 comparison/release QA**: Phase 13 (`#70`) documents comparisons,
+15. **MP11 comparison/release QA**: Phase 13 (`#70`) documents comparisons,
     release readiness, and whether an MP11-aligned package replaces or
     supplements the Phase 5 teaching baseline.
 
@@ -767,14 +849,22 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 
 ## Current Next Steps
 
-0. Phase 10R is active on branch
+0. Phase 9D and Phase 9E are complete. Step 210 now applies the public TSM
+   strict Class V proxy, deducting `1.425 ha` against the MP11 Step 210 target
+   `1,993.000 ha`; this is an explicit public-source coverage/semantic gap, not
+   a skipped row. Step 220 applies the public CDED proxy, deducting
+   `1,801.705 ha` against the MP11 Step 220 target `1,820.000 ha`. After the
+   full P9RF rerun, Step 290 Current THLB is `122,763.421 ha` (`+2,664.421 ha`
+   versus MP11), and Step 310 Long-term Land Base is `121,336.593 ha`
+   (`+2,664.593 ha` versus MP11).
+1. Phase 10R is active on branch
    `feature/p10r-curve-rebuild-roadmap-correction`. P10R.1 is complete.
    `planning/tfl6_mp11_phase10r_curve_rebuild_execution_plan.md` records the
    actual curve-rebuild issue tree, artifact layout, parser gates,
    curve-generation gates, plot refresh expectations, and Phase 11 blocker.
    The active edge is P10R.2: parse MP11 Tables 54, 55, and 57 per-AU TIPSY
    rows (`#94`). Phase 11 is planned and blocked until Phase 10R closes.
-1. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
+2. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
    closeout into `main`. The final closeout surface is
    `planning/tfl6_mp11_figure_extraction_closeout.md` with matching CSV/JSON.
    Phase 7 inventoried `61` figures, reviewed all `36` high-priority figures,
@@ -783,11 +873,11 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    `5` context figures as inventory-only. Every row remains
    `not_model_input`. The next active edge is Phase 6 MP11 extraction and
    model-overhaul planning from the reviewed figure evidence.
-2. Phase 2 is closed. The instance `main` branch contains the Phase 2
+3. Phase 2 is closed. The instance `main` branch contains the Phase 2
    source-layer, THLB smoke, benchmark-tolerance, and Sphinx audit-trail
    surfaces; the parent FEMIC submodule pointer has been updated to the merged
    closeout commit.
-3. Continue Phase 3 on branch `feature/p3-model-design-assumptions`. P3.3
+4. Continue Phase 3 on branch `feature/p3-model-design-assumptions`. P3.3
    through P3.6 are complete: AU identity, untreated VDYP curves, treated
    BatchTIPSY curves, treatment options, and state-transition logic are locked
    for current design purposes. P3.4 still carries a non-blocking deferred
