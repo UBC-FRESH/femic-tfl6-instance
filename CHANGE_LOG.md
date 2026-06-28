@@ -1,5 +1,22 @@
 # Change Log
 
+## 2026-06-28 - Completed P6.5 MP11 model-behavior comparison
+
+- added `scripts/build_p6_mp11_model_behavior_crosswalk.py` to consolidate
+  MP11 base-case, alternate harvest-flow, sensitivity, AAC recommendation, and
+  KPI evidence from reviewed Phase 7 figure summaries and MP11 source-page
+  anchors;
+- added `planning/tfl6_mp11_model_behavior_crosswalk.md` with `8` reviewed
+  behavior/KPI rows and matching CSV/JSON outputs;
+- added `planning/tfl6_mp11_model_behavior_scenario_endpoints.csv` with `18`
+  comparison-ready scenario endpoints, all marked `not_model_input`;
+- recorded headline MP11 comparison targets of `1,061,600 m3/year` for the
+  Base Case and `1,252,700 m3/year` for the AAC recommendation; and
+- documented that the Phase 5 teaching runtime is structurally useful but not
+  MP11-behavior-equivalent because it lacks an AAC-calibrated base case,
+  MP11 sensitivity suite, harvest-system classifier, and MP11-style KPI
+  reporting surfaces.
+
 ## 2026-06-28 - Completed P6.4 MP11 inventory/yield/operability comparison
 
 - added `scripts/build_p6_mp11_assumption_crosswalk.py` to generate reviewed

@@ -194,6 +194,47 @@ None of these rows change the Phase 5 teaching runtime package. They define
 what a later MP11-aligned implementation phase must decide, reproduce, proxy,
 or explicitly mark as unavailable from public inputs.
 
+## P6.5 Model Behavior, Sensitivities, AAC, And KPI Comparison
+
+The P6.5 comparison surfaces are:
+
+- `planning/tfl6_mp11_model_behavior_crosswalk.md`
+- `planning/tfl6_mp11_model_behavior_crosswalk.csv`
+- `planning/tfl6_mp11_model_behavior_crosswalk.json`
+- `planning/tfl6_mp11_model_behavior_scenario_endpoints.csv`
+
+The crosswalk contains `8` reviewed behavior/KPI rows and `18` normalized
+scenario endpoint rows. All rows are `reviewed_evidence`,
+`phase6_model_behavior_comparison_only`, and `not_model_input`.
+
+Headline MP11 values recorded for comparison planning:
+
+- current AAC: `1,362,000 m3/year`;
+- MP11 Base Case: `1,061,600 m3/year`;
+- MP11 AAC recommendation: `1,252,700 m3/year`;
+- Phase 7 figure closeout status: `22` figures accepted for comparison, `14`
+  figures reviewed for planning only, `20` deferred, `5` qualitative context,
+  and `0` model inputs.
+
+The main P6.5 conclusion is that the Phase 5 teaching runtime is structurally
+useful but not MP11-behavior-equivalent. It has a launch-smoked Patchworks
+package and generic managed `CC` harvest signal, but no accepted
+AAC-equivalent base-case calibration, no MP11 sensitivity suite, no
+ground/cable/heli classifier, and no MP11-style growing-stock, species,
+elevation, cedar, age-class, or old-seral KPI reporting surface.
+
+Future implementation planning should use P6.5 to split the MP11-aligned
+overhaul into:
+
+- AAC/base-case calibration targets;
+- harvest-flow policy and objective definitions;
+- yield and policy sensitivity suites;
+- AAC-recommendation scenario design;
+- growing-stock and operational KPI reports;
+- harvest-system classifier and reports; and
+- cedar, age-class, and old-seral KPI validation before promotion beyond
+  planning evidence.
+
 ## Phase 5 Baseline Surfaces
 
 Phase 6 comparisons should start from the accepted Phase 5 surfaces, including:

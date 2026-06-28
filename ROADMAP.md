@@ -376,8 +376,17 @@ before the MP11 evidence is extracted, reviewed, and crosswalked.
   - [x] P6.4d Classify deltas as public-data update, model-parameter update,
     sensitivity candidate, model-constraint update, or unresolved
     proprietary/WFP-model gap.
-- [ ] P6.5 Compare MP11 model behavior, sensitivities, AAC recommendation, and
+- [x] P6.5 Compare MP11 model behavior, sensitivities, AAC recommendation, and
   KPI outputs (`#47`).
+  - [x] P6.5a Inventory MP11 base case, alternate harvest flows,
+    sensitivity analyses, AAC recommendation, and key reported outputs.
+  - [x] P6.5b Compare available Phase 5 Patchworks evidence against MP11
+    harvest-system, age/volume-class, cedar, old-cedar, elevation-band,
+    species-composition, and other KPI surfaces.
+  - [x] P6.5c Identify where a public-data prototype can align with MP11 and
+    where WFP's model remains non-public and must be approximated or caveated.
+  - [x] P6.5d Produce a prioritized gap list for Phase 7+ implementation
+    planning.
 - [ ] P6.6 Write the Phase 7+ implementation roadmap for the MP11-aligned
   model overhaul (`#48`).
 
@@ -498,8 +507,12 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    source-layer/netdown reproducibility split. P6.4 is complete:
    `planning/tfl6_mp11_inventory_yield_operability_crosswalk.md` records the
    reviewed inventory, LiDAR/ITI, yield, operability, harvest-system,
-   harvest-rule, and model-constraint deltas. The active edge is P6.5 model
-   behavior, sensitivity, AAC recommendation, and KPI output comparison.
+   harvest-rule, and model-constraint deltas. P6.5 is complete:
+   `planning/tfl6_mp11_model_behavior_crosswalk.md` records the reviewed
+   model-behavior, sensitivity, AAC recommendation, and KPI comparison, with
+   `planning/tfl6_mp11_model_behavior_scenario_endpoints.csv` carrying the
+   comparison-ready scenario endpoint table. The active edge is P6.6 Phase 7+
+   implementation-roadmap planning for the MP11-aligned model overhaul.
 1. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
    closeout into `main`. The final closeout surface is
    `planning/tfl6_mp11_figure_extraction_closeout.md` with matching CSV/JSON.
