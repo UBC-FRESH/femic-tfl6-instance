@@ -20,4 +20,5 @@ trail used to create it.
    phase5-scenario-teaching-workflows
    phase5-known-limitations-release-readiness
    phase7-mp11-figure-extraction
+   phase9-mp11-thlb-netdown
    teaching-challenges

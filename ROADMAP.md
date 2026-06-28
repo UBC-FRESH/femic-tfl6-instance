@@ -531,6 +531,9 @@ checkpoints without force-fitting.
   - [x] P9.6c Run final validation and THLB QA checks.
   - [x] P9.6d Open and merge Phase 9 PR.
   - [x] P9.6e Close parent and child issues with final links.
+  - [x] P9.6f Add user-facing Sphinx documentation for the accepted P9RF MP11
+    THLB netdown logic, public data sources, skipped/deferred rows, and MP11
+    cumulative deltas.
 
 ## Phase 10: MP11 AU/Yield Readiness And Curve-Rebuild Scoping (`#67`)
 

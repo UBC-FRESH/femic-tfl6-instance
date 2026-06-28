@@ -79,6 +79,16 @@ Use this workflow for active development from each phase boundary onward:
   phase gate completes. Do not advance to the next phase's first task until the
   current phase closeout checklist, parent issue state, PR state, roadmap,
   changelog, and issue comments are reconciled.
+- Before phase closeout, update all relevant user-facing Sphinx documentation
+  and any affected Python API docstrings. This is mandatory for every roadmap
+  phase, including phases that primarily produce planning, source-layer,
+  geospatial, model-input, runtime, or QA artifacts. If no Python API docstrings
+  are affected, say so explicitly in the closeout evidence. If user-facing docs
+  are not updated, the phase is not closed.
+- Phase PRs must include full QA/QC evidence: local validation commands,
+  Sphinx warning-clean build when docs exist or are touched, issue/roadmap/
+  changelog synchronization, and a clear statement of generated artifacts that
+  remain intentionally untracked.
 - Close the parent phase issue only after the phase PR has merged back to
   `main`, or after all child work is explicitly deferred with a recorded
   rationale.
@@ -98,6 +108,47 @@ Use this workflow for active development from each phase boundary onward:
 - The K3Z repository is a template/reference, not a blind copy target. Any
   copied assumption must be checked against the NICF FSP source payload and the
   FRST 558 teaching mission.
+
+## Critical Model-Building Quality Gates
+
+Some tasks control the credibility of every downstream model result. THLB
+netdown, AFLB/THLB/NTHLB area accounting, AU assignment, yield-curve generation,
+model-input bundle construction, ForestModel XML generation, Matrix Builder
+execution, and Patchworks runtime smoke are critical gates. Treat these as
+engineering and scientific accountability points, not as paperwork milestones.
+
+For critical gates:
+
+- Work one auditable step at a time unless the maintainer explicitly approves a
+  broader batch run.
+- State the checkpoint target, tolerance, source inputs, rule being applied,
+  and stop condition before running the step.
+- Emit compact evidence for each step: input paths, rule text, feature counts,
+  gross area, ordered/overlap-adjusted deduction, cumulative area, residual
+  against target, model-input status, and interpretation.
+- Prefer partial-area/resultant-fragment accounting for spatial deductions.
+  Never drop whole stands because they intersect a road, stream, reserve, or
+  buffer unless the governing rule explicitly requires whole-polygon removal.
+- Separate diagnostic scenarios from accepted deductions. Name scenarios as
+  `review_only`, `proposed`, `locked_for_current_run`, or `accepted`, and do
+  not blur those states.
+- Do not close a critical task as successful when the output misses its
+  checkpoint materially. Close it only as a failed diagnostic or blocker, and
+  immediately record the repair task/phase before advancing.
+- Do not advance to the next roadmap phase after a failed critical gate by
+  leaving a caveat in a note. A failed critical gate blocks downstream work
+  unless the maintainer explicitly accepts a blocker path.
+- If a result is benchmark-calibrated, say so plainly, document the rationale,
+  and keep it out of model-input status until it passes review.
+- When a result looks implausible, stop and diagnose the method before
+  producing more downstream artifacts.
+- Progress reporting must surface failed or questionable critical-gate results
+  immediately, with numbers. Do not bury them in closeout prose.
+
+The expected standard is the Step 0/10/10b/20/30 P9R THLB workflow: isolate one
+rule, compute a reviewable result, compare it to the published checkpoint,
+explain the residual, correct the method if needed, and stop before the next
+deduction until the current gate is defensible.
 
 ## Verification
 
