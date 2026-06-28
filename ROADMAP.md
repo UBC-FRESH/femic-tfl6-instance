@@ -545,12 +545,12 @@ QA diagnostics, and isolate unavailable LEFI/ITI/LiDAR assumptions.
   - [x] P10.1b Define Phase 10 artifact layout and generated-output hygiene.
   - [x] P10.1c Define curve-lane and parameter-library gates.
   - [x] P10.1d Define validation commands for Phase 10 implementation tasks.
-- [ ] P10.2 Extract MP11 managed-yield parameter library (`#80`).
-  - [ ] P10.2a Identify source-page anchors and extraction scope for MP11
+- [x] P10.2 Extract MP11 managed-yield parameter library (`#80`).
+  - [x] P10.2a Identify source-page anchors and extraction scope for MP11
     parameter tables/text.
-  - [ ] P10.2b Build reviewed MP11 managed-yield parameter library generator.
-  - [ ] P10.2c Emit Markdown/CSV/JSON parameter-library outputs.
-  - [ ] P10.2d Classify row confidence and public/private dependency status.
+  - [x] P10.2b Build reviewed MP11 managed-yield parameter library generator.
+  - [x] P10.2c Emit Markdown/CSV/JSON parameter-library outputs.
+  - [x] P10.2d Classify row confidence and public/private dependency status.
 - [ ] P10.3 Refresh MP11 AU and curve-lane crosswalk (`#81`).
   - [ ] P10.3a Audit existing Phase 3 static AU and curve crosswalk artifacts.
   - [ ] P10.3b Build MP11 AU/curve-lane crosswalk generator.
@@ -676,11 +676,10 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 ## Current Next Steps
 
 0. Phase 10 is active on branch
-   `feature/p10-mp11-au-yield-curve-rebuild`. P10.1 is complete.
-   `planning/tfl6_mp11_phase10_execution_plan.md` records the issue tree,
-   artifact layout, parameter-library gates, curve-lane gates, no-fabrication
-   rules, and validation expectations. The active edge is P10.2: extract the
-   MP11 managed-yield parameter library (`#80`).
+   `feature/p10-mp11-au-yield-curve-rebuild`. P10.1 and P10.2 are complete.
+   `planning/tfl6_mp11_managed_yield_parameter_library.md` records the
+   public-safe MP11 managed-yield parameter library for Tables 54-60. The
+   active edge is P10.3: refresh MP11 AU and curve-lane crosswalk (`#81`).
 1. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
    closeout into `main`. The final closeout surface is
    `planning/tfl6_mp11_figure_extraction_closeout.md` with matching CSV/JSON.

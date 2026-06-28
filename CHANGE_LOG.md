@@ -1,5 +1,22 @@
 # Change Log
 
+## 2026-06-28 - Completed P10.2 MP11 managed-yield parameter library
+
+- added `scripts/build_p10_mp11_managed_yield_parameter_library.py` to extract
+  and normalize public-safe MP11 managed-yield parameter evidence from PDF
+  pages `358-377`;
+- added `planning/tfl6_mp11_managed_yield_parameter_library.md` with matching
+  CSV/JSON outputs covering Table 54-60 parameter evidence;
+- recorded deterministic parameter rows for future genetic gain, VRAF, NSR,
+  utilization, regeneration delay, default/low-productivity planting density,
+  early managed spacing density, and selected managed-stand narrative rules;
+- flagged the large multi-page per-AU TIPSY row tables in Tables 54, 55, and
+  57 as `requires_p10_5_parser_review` before managed-curve generation; and
+- kept every P10.2 row as `not_model_input`, with no generated curves,
+  model-input tables, XML, Matrix Builder outputs, Patchworks runtime
+  artifacts, private WFP curves, or proprietary LEFI/ITI/LiDAR assumptions
+  tracked.
+
 ## 2026-06-28 - Launched Phase 10 MP11 AU/yield curve rebuild
 
 - created Phase 10 child issues `#79` through `#84` for launch planning,
