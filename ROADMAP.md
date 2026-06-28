@@ -488,12 +488,49 @@ Phase 5 runtime as the accepted baseline.
 
 ## Phase 9: MP11 Source-Layer And THLB Rebuild (`#66`)
 
-Status: planned.
+Status: closed.
 
 Goal: execute the accepted public-data source-layer and THLB rebuild contract,
 materialize/review public sources, implement ordered overlay and proxy logic,
 and compare GLB/AFLB/operable/THLB outputs against MP11 and Phase 5
 checkpoints without force-fitting.
+
+- [x] P9.1 Launch source-layer THLB rebuild execution plan (`#72`).
+  - [x] P9.1a Audit P8.2 contract and existing source-layer notes.
+  - [x] P9.1b Define Phase 9 execution plan and artifact layout.
+  - [x] P9.1c Define source dependency checklist and current availability
+    states.
+  - [x] P9.1d Define no-force-fit and promotion gates for generated outputs.
+- [x] P9.2 Materialize and verify public source layers (`#73`).
+  - [x] P9.2a Verify accepted AOI, VRI/R1, and VDYP source artifacts.
+  - [x] P9.2b Verify or materialize hydrography, shoreline, reserve, roads,
+    recreation, and DEM/slope candidates.
+  - [x] P9.2c Build source-layer schema and geometry QA summaries.
+  - [x] P9.2d Record public/private/proxy status for each dependency.
+- [x] P9.3 Profile inventory and proxy inputs (`#74`).
+  - [x] P9.3a Profile inventory/productivity fields and candidate MP11
+    mappings.
+  - [x] P9.3b Profile DEM/slope and road/access proxy inputs.
+  - [x] P9.3c Profile hydrography and legal/proposed reserve overlay
+    attributes.
+  - [x] P9.3d Define operability and low-site proxy variables with caveats.
+- [x] P9.4 Implement ordered overlay THLB recipe scaffold (`#75`).
+  - [x] P9.4a Define ordered overlay recipe/config from accepted P9.2/P9.3
+    evidence.
+  - [x] P9.4b Implement or wire bounded smoke-lane execution logic.
+  - [x] P9.4c Emit checkpoint, overlap, diagnostic, and provenance outputs.
+  - [x] P9.4d Run bounded smoke tests after source/profile gates pass.
+- [x] P9.5 Execute and compare public-data THLB rebuild (`#76`).
+  - [x] P9.5a Execute accepted THLB rebuild lane.
+  - [x] P9.5b Build checkpoint and residual comparison summaries.
+  - [x] P9.5c Build provenance and diagnostic manifests.
+  - [x] P9.5d Classify residual gaps and candidate outputs.
+- [x] P9.6 Close Phase 9 and hand off rebuild outputs (`#77`).
+  - [x] P9.6a Audit Phase 9 artifacts and generated-output hygiene.
+  - [x] P9.6b Write Phase 9 closeout and Phase 10/11 handoff note.
+  - [x] P9.6c Run final validation and THLB QA checks.
+  - [x] P9.6d Open and merge Phase 9 PR.
+  - [x] P9.6e Close parent and child issues with final links.
 
 ## Phase 10: MP11 AU/Yield Curve Rebuild (`#67`)
 
@@ -602,9 +639,13 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 
 ## Current Next Steps
 
-0. Phase 8 is closed. PR `#71` merges the MP11 implementation-foundation
-   contracts and closeout note to `main`. The next planned edge is Phase 9:
-   MP11 source-layer and THLB rebuild (`#66`).
+0. Phase 9 is closed. `planning/tfl6_mp11_phase9_closeout.md` records the
+   public-data source-layer and THLB handoff. P9.5 produced a compact
+   diagnostic public-data rebuild, not an accepted THLB replacement surface.
+   The diagnostic result confirms that partial-area overlay implementation and
+   unresolved shoreline, DEM/slope, WFP LBB/ITI/LEFI, and policy gaps must be
+   handled before model-input promotion. The next MP11 rebuild edge is Phase
+   10: MP11 AU/yield curve rebuild (`#67`).
 1. Phase 7 is closed. PR `#56` merged the MP11 figure-extraction test
    closeout into `main`. The final closeout surface is
    `planning/tfl6_mp11_figure_extraction_closeout.md` with matching CSV/JSON.

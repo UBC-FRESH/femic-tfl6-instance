@@ -1,5 +1,95 @@
 # Change Log
 
+## 2026-06-28 - Closed Phase 9 MP11 source-layer and THLB rebuild
+
+- added `planning/tfl6_mp11_phase9_closeout.md` to summarize the completed
+  Phase 9 issue tree, tracked outputs, validation, and Phase 10/11 handoff;
+- confirmed P9.1-P9.6 are complete and linked to issues `#72` through `#77`;
+- recorded the main Phase 9 conclusion that the public-data rebuild is a
+  diagnostic result, not an accepted replacement THLB surface or model input;
+- preserved the Phase 5 teaching runtime as the accepted baseline until a
+  future MP11-aligned replacement passes direct source-layer, partial-area
+  overlay, model-input, XML, Matrix Builder, runtime, docs, archive, and
+  scenario-output QA; and
+- kept every Phase 9 generated surface public-safe and `not_model_input`, with
+  no private WFP layers, unpublished source tables, XML, Matrix Builder output,
+  Patchworks runtime artifact, or proprietary assumption tracked.
+
+## 2026-06-28 - Completed P9.5 MP11 public-data THLB diagnostic rebuild
+
+- added `scripts/run_p9_mp11_public_thlb_rebuild.py` to execute a compact
+  public-data diagnostic rebuild from the P9.4 ordered overlay scaffold;
+- added `planning/tfl6_mp11_phase9_thlb_rebuild_summary.md` with matching
+  CSV/JSON outputs covering `13` ordered rebuild/checkpoint rows;
+- recorded a diagnostic current THLB of `24,762.768 ha` versus the MP11
+  comparison target of `120,099 ha`;
+- documented that this large negative residual is driven by intentionally
+  conservative full-stand-intersection road/riparian diagnostics, unresolved
+  shoreline and DEM/slope gaps, unavailable WFP LBB/ITI/LEFI dependencies, and
+  deferred WTRA/retention policy treatment; and
+- kept every P9.5 output as `not_model_input`, with no accepted THLB surface,
+  model-input table, XML, Matrix Builder output, or Patchworks runtime artifact
+  generated.
+
+## 2026-06-28 - Completed P9.4 MP11 ordered overlay scaffold
+
+- added `config/tsr/mp11_thlb_rebuild.recipe.yaml` as the MP11 public-data
+  ordered-overlay THLB recipe scaffold;
+- added `scripts/build_p9_mp11_ordered_overlay_scaffold.py` to validate the
+  scaffold against the P9.2 source-layer manifest and P9.3 input/proxy profile;
+- added `planning/tfl6_mp11_phase9_ordered_overlay_scaffold.md` with matching
+  CSV/JSON outputs covering `13` ordered scaffold rows;
+- validated that every referenced source ID and candidate ID resolves against
+  the accepted Phase 9 manifests; and
+- kept P9.4 to scaffold validation only, with no overlay execution, THLB
+  output, model-input table, XML, Matrix Builder output, or Patchworks runtime
+  artifact generated.
+
+## 2026-06-28 - Completed P9.3 MP11 inventory and proxy input profile
+
+- added `scripts/build_p9_mp11_input_proxy_profile.py` to generate public-safe
+  candidate field/proxy profiles for the MP11 source-layer and THLB rebuild;
+- added `planning/tfl6_mp11_phase9_input_proxy_profile.md` with matching
+  CSV/JSON outputs covering `51` candidate profile rows;
+- profiled VRI/R1 candidate areas for non-forest, non-treed/water/null,
+  explicit non-productive, low-site, deciduous-leading, low-height,
+  low-volume, hemlock/balsam height-class-three, and
+  `for_mgmt_land_base_ind == N` QA signals;
+- profiled VDYP parquet table row/key summaries plus roads, hydrology, OGMA,
+  WHA, and UWR field/geometry summaries for later overlay review; and
+- kept every P9.3 row as candidate/profile/QA evidence only, with no accepted
+  final overlay rule, THLB output, model-input table, XML, Matrix Builder
+  output, or Patchworks runtime artifact generated.
+
+## 2026-06-28 - Completed P9.2 MP11 public source-layer verification
+
+- added `scripts/build_p9_mp11_source_layer_manifest.py` to generate compact
+  public-safe source-layer verification outputs for the MP11 source-layer and
+  THLB rebuild;
+- added `planning/tfl6_mp11_phase9_source_layer_manifest.md` with matching
+  CSV/JSON outputs covering `21` dependency rows;
+- verified `18` existing public source artifacts as readable, including AOI,
+  VRI/R1, VDYP parquet tables, roads, hydrology, legal reserve, recreation,
+  BEC, and landscape-unit inputs;
+- recorded shoreline and DEM/slope as not yet materialized public proxy
+  dependencies and WFP LBB/ITI/LEFI as unavailable non-public dependencies; and
+- kept P9.2 to source verification only, with no THLB overlays, generated
+  netdown outputs, model-input tables, XML, Matrix Builder outputs, or
+  Patchworks runtime artifacts generated.
+
+## 2026-06-28 - Launched Phase 9 MP11 source-layer and THLB rebuild
+
+- created Phase 9 child issues `#72` through `#77` for launch planning,
+  source-layer verification, input/proxy profiling, ordered overlay scaffold,
+  full THLB rebuild comparison, and phase closeout;
+- added `planning/tfl6_mp11_phase9_execution_plan.md` to record the Phase 9
+  branch, issue tree, artifact layout, source dependency checklist,
+  generated-output hygiene, no-force-fit rules, and promotion gates;
+- marked Phase 9 active and P9.1 complete in `ROADMAP.md`;
+- kept MP11 current THLB `120,099 ha` as a comparison target only; and
+- did not generate or track new THLB outputs, model-input tables, XML, Matrix
+  Builder outputs, Patchworks runtime artifacts, or private WFP assumptions.
+
 ## 2026-06-28 - Closed Phase 8 MP11 implementation foundation
 
 - added `planning/tfl6_mp11_phase8_closeout.md` to summarize the completed
