@@ -201,6 +201,16 @@ implied NCLB area. The batch remains `raw_extraction`; panel-total deviations
 from the stated `187,425 ha` productive forest area reach `7.23%` for Figure
 `6` and `10.31%` for Figure `45`.
 
+The age-class batch was later reviewed in:
+
+- `planning/tfl6_mp11_age_class_review_manifest.md`
+- `planning/tfl6_mp11_age_class_review_manifest.csv`
+- `planning/tfl6_mp11_age_class_review_manifest.json`
+
+The promotion is limited to `reviewed_for_planning` with downstream use
+`phase6_mp11_age_class_planning_only`. The outputs remain explicitly
+`not_model_input` and are not `accepted_for_comparison`.
+
 ## Runtime Artifact Boundary
 
 Generated figure-recovery artifacts belong under ignored runtime paths such as:

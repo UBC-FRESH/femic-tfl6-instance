@@ -1,5 +1,20 @@
 # Change Log
 
+## 2026-06-28 - Reviewed MP11 age-class charts for planning use
+
+- added `scripts/build_p7_mp11_age_class_review_manifest.py` to produce a
+  compact review manifest for the MP11 age-class extraction batch;
+- promoted Figures `6` and `45` from `raw_extraction` to
+  `reviewed_for_planning`;
+- assigned downstream use `phase6_mp11_age_class_planning_only` and
+  model-input status `not_model_input` to both reviewed rows;
+- added `planning/tfl6_mp11_age_class_review_manifest.md`,
+  `planning/tfl6_mp11_age_class_review_manifest.csv`, and
+  `planning/tfl6_mp11_age_class_review_manifest.json`; and
+- explicitly did not promote the age-class batch to `accepted_for_comparison`
+  because panel-total deviations from the stated `187,425 ha` productive forest
+  area reach `7.23%` for Figure `6` and `10.31%` for Figure `45`.
+
 ## 2026-06-28 - Extracted MP11 age-class distribution charts
 
 - added `scripts/build_p7_mp11_age_class_extractions.py` for the first

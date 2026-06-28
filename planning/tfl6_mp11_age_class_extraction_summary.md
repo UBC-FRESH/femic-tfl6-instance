@@ -98,3 +98,13 @@ whether the y-axis calibration and slotting are adequate for planning use.
 These figures should not be accepted for comparison or model input without a
 stronger manual review because the chart contains many small stacked bars,
 rotated age-class labels, and top-row legends inside the panel area.
+
+The batch was subsequently reviewed in:
+
+- `planning/tfl6_mp11_age_class_review_manifest.md`
+- `planning/tfl6_mp11_age_class_review_manifest.csv`
+- `planning/tfl6_mp11_age_class_review_manifest.json`
+
+Both figures were promoted to `reviewed_for_planning` with downstream use
+`phase6_mp11_age_class_planning_only`, while remaining explicitly
+`not_model_input`. They were not promoted to `accepted_for_comparison`.
