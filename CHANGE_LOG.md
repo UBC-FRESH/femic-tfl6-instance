@@ -1,5 +1,22 @@
 # Change Log
 
+## 2026-06-28 - Completed P6.6 MP11 implementation roadmap
+
+- added `planning/tfl6_mp11_phase8_implementation_roadmap.md` to convert
+  reviewed Phase 6/7 MP11 evidence into the next implementation foundation
+  roadmap;
+- created Phase 8 parent issue `#58` and child issues `#59` through `#64`
+  for baseline preservation, source-layer/THLB contract, AU/yield strategy,
+  operability/harvest-system/MHA/scenario rules, KPI/QA targets, and Phase 8
+  closeout;
+- updated `ROADMAP.md` with the Phase 8 issue tree while marking P6.6
+  complete and keeping Phase 6 closeout as the next active edge;
+- recorded that Phase 8 is a contract and implementation-foundation phase, not
+  a one-step replacement runtime rebuild; and
+- kept the Phase 5 teaching runtime as the accepted baseline until a future
+  MP11-aligned package passes direct source, model-input, XML, Matrix Builder,
+  runtime, documentation, and scenario-output QA.
+
 ## 2026-06-28 - Completed P6.5 MP11 model-behavior comparison
 
 - added `scripts/build_p6_mp11_model_behavior_crosswalk.py` to consolidate

@@ -277,3 +277,37 @@ The phase should end with:
 - a model-behavior, sensitivity, AAC, and KPI comparison memo; and
 - a Phase 7+ roadmap with parent/child issue structure for any accepted
   MP11-aligned implementation overhaul.
+
+## P6.6 Phase 8+ Implementation Roadmap
+
+The P6.6 implementation-roadmap surface is:
+
+- `planning/tfl6_mp11_phase8_implementation_roadmap.md`
+
+The next implementation foundation phase has been scaffolded as:
+
+- Phase 8 parent: `#58` MP11-aligned public-data implementation foundation.
+- `#59` P8.1: preserve Phase 5 baseline and lock MP11 promotion rules.
+- `#60` P8.2: design MP11 public source-layer and THLB rebuild contract.
+- `#61` P8.3: decide MP11 AU/yield and managed-stand parameter strategy.
+- `#62` P8.4: define operability, harvest-system, MHA, and scenario rules.
+- `#63` P8.5: define MP11 KPI, QA, and reporting targets.
+- `#64` P8.6: close Phase 8 and split rebuild phases.
+
+The Phase 8 issue tree is deliberately an implementation-foundation phase, not
+a one-step runtime rebuild. It should lock the public-data contract, evidence
+promotion rules, model-rule contracts, and KPI targets before any source-layer,
+THLB, yield-curve, model-input, XML, Matrix Builder, or Patchworks runtime
+rebuild begins.
+
+Later phase sketches:
+
+- Phase 9: MP11 source-layer and THLB rebuild.
+- Phase 10: MP11 AU/yield curve rebuild.
+- Phase 11: MP11 model-input bundle and ForestModel XML rebuild.
+- Phase 12: MP11 Patchworks runtime, Matrix Builder, and launch/scenario
+  smoke.
+- Phase 13: MP11 comparison documentation, teaching update, and release QA.
+
+Phase 6 can close once the P6.6 roadmap, GitHub issue tree, roadmap, changelog,
+validation checks, PR, and closeout comments are synchronized.
