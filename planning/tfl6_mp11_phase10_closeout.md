@@ -16,7 +16,7 @@ row parsers.
 ## Branch And Issue Tree
 
 - Branch: `feature/p10-mp11-au-yield-curve-rebuild`
-- Pull request: pending at initial closeout
+- Pull request: `#85`
 - Parent issue: `#67`
 - Child issues:
   - P10.1 launch MP11 AU/yield rebuild execution plan: `#79`;
