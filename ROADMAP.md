@@ -755,10 +755,10 @@ public CDED steep-slope proxy in the P9RF THLB surface.
   - [x] P11.2c Classify blockers and required maintainer decisions.
   - [x] P11.2d Decide whether P11.3 may build a candidate scaffold or must
     remain blocked.
-- [ ] P11.3 Build MP11 model-input candidate manifest or stop report (`#88`).
+- [x] P11.3 Build MP11 model-input candidate manifest or stop report (`#88`).
   - [x] P11.3a Consume P11.2 readiness manifest.
   - [x] P11.3b Build candidate table/schema manifest or blocked stop report.
-  - [ ] P11.3c Record provenance and fallback policy for each candidate table.
+  - [x] P11.3c Record provenance and fallback policy for each candidate table.
 - [ ] P11.4 Generate MP11 ForestModel XML candidate or stop report (`#89`).
   - [ ] P11.4a Audit existing Phase 5 XML provenance and bridge notes.
   - [ ] P11.4b Build XML readiness manifest or stop report.
@@ -922,9 +922,14 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    caveats. `scripts/build_p11_mp11_candidate_manifest.py` emits
    `planning/tfl6_mp11_model_input_candidate_manifest.{csv,json,md}` with `13`
    table roles: `12` eligible for a later generated scaffold and `1` deferred
-   not eligible role (`harvest_system_table`). The next bounded move is
-   P11.3c: review the manifest provenance and fallback policy for each
-   candidate table without writing model-input bundle tables or XML outputs.
+   not eligible role (`harvest_system_table`).
+   `scripts/build_p11_mp11_candidate_provenance_review.py` emits
+   `planning/tfl6_mp11_model_input_candidate_provenance_review.{csv,json,md}`;
+   the P11.3c review records `12` passing candidate-scaffold roles, `1`
+   non-blocking deferred comparison-metadata role, `0` blocked roles, and
+   P11.4a unlock status `p11_4a_audit_eligible`. P11.3 is complete. The next
+   bounded move is P11.4a: audit existing Phase 5 XML provenance and bridge
+   notes before any ForestModel XML generation.
 0. Phase 9D and Phase 9E are complete. Step 210 now applies the public TSM
    strict Class V proxy, deducting `1.425 ha` against the MP11 Step 210 target
    `1,993.000 ha`; this is an explicit public-source coverage/semantic gap, not

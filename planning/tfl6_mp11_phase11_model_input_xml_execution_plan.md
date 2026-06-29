@@ -126,6 +126,11 @@ P11.2 readiness and schema-bridge inputs. The manifest records `13` table
 roles: `12` are eligible for a later generated scaffold and `1` is deferred
 not eligible (`harvest_system_table`).
 
-The next bounded move is P11.3c: review the candidate manifest provenance and
-fallback policy for each table without writing model-input bundle tables or
-ForestModel XML outputs.
+P11.3c emitted
+`planning/tfl6_mp11_model_input_candidate_provenance_review.{csv,json,md}`.
+The review records `12` passing candidate-scaffold roles, `1` non-blocking
+deferred comparison-metadata role, `0` blocked roles, and P11.4a unlock status
+`p11_4a_audit_eligible`.
+
+P11.3 is complete. The next bounded move is P11.4a: audit existing Phase 5 XML
+provenance and bridge notes before any ForestModel XML generation.

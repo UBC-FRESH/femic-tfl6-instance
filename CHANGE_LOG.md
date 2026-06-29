@@ -1,5 +1,19 @@
 # Change Log
 
+## 2026-06-29 - Reviewed Phase 11 candidate provenance and fallback policy
+
+- added `scripts/build_p11_mp11_candidate_provenance_review.py` to verify
+  source-artifact presence, required caveat fields, fallback/exclusion policy,
+  and P11.4a requirements for each P11.3 candidate table role;
+- emitted
+  `planning/tfl6_mp11_model_input_candidate_provenance_review.{csv,json,md}`
+  with `13` reviewed roles, including `12` passing candidate-scaffold roles,
+  `1` non-blocking deferred comparison-metadata role, and `0` blocked roles;
+- marked P11.3 complete in `ROADMAP.md` and moved the next bounded step to
+  P11.4a Phase 5 XML provenance and bridge-note audit; and
+- generated no model-input tables, ForestModel XML, Matrix Builder outputs, or
+  Patchworks runtime artifacts.
+
 ## 2026-06-28 - Built Phase 11 candidate model-input manifest
 
 - added `scripts/build_p11_mp11_candidate_manifest.py` to consume the P11.2
