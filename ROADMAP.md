@@ -953,8 +953,23 @@ Planning note:
   - [x] P14.4d Compare aggregate candidate area/volume against MP11 Table 73
     direct targets and normalized area/volume shares, preserving the caveat
     that WFP LBB geometry is unavailable.
-- [ ] P14.5 Rebuild MP11 model-input tables and ForestModel XML with split CC
+- [x] P14.5 Rebuild MP11 model-input tables and ForestModel XML with split CC
   lanes (`#143`).
+  - [x] P14.5a Add generated-root ignores for the harvest-system candidate
+    bundle and future runtime package.
+  - [x] P14.5b Add `scripts/build_p14_harvest_system_model_input_xml.py`.
+  - [x] P14.5c Build the ignored
+    `data/mp11_harvest_system_model_input_bundle/` candidate bundle by applying
+    P14.4 public-proxy harvest-system assignments to stand, harvest-system,
+    group, treatment, transition, and export-compat checkpoint surfaces.
+  - [x] P14.5d Generate ignored ForestModel XML/fragments under
+    `output/patchworks_tfl6_mp11_harvest_system_candidate/`.
+  - [x] P14.5e Split generic managed `CC` tracks and product selects into
+    `CC_GROUND`, `CC_CABLE`, and `CC_HELI` lanes keyed by the fragment `HVSYS`
+    field while retaining aggregate `.CC` product labels for all-system
+    reporting.
+  - [x] P14.5f Emit
+    `planning/tfl6_mp11_phase14_model_input_xml_build_summary.{csv,json,md}`.
 - [ ] P14.6 Run Matrix Builder and assemble harvest-system candidate runtime
   (`#144`).
 - [ ] P14.7 Smoke-test all-system and no-heli harvest scenarios (`#145`).
@@ -1081,12 +1096,22 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    against MP11 Table 73 are `+0.017` percentage points for ground, `+0.885`
    for cable, and `-0.902` for heli; direct residuals remain caveated because
    the candidate scaffold total is larger than the MP11 Table 73 total and WFP
-   LBB geometry is unavailable. The next bounded task is P14.5 (`#143`):
-   rebuild MP11 candidate model-input tables and ForestModel XML with split
-   clearcut lanes for the public-proxy ground/cable/heli assignments.
+   LBB geometry is unavailable. P14.5 (`#143`) is complete:
+   `scripts/build_p14_harvest_system_model_input_xml.py` creates the ignored
+   `data/mp11_harvest_system_model_input_bundle/` candidate bundle, generates
+   ignored ForestModel XML/fragments under
+   `output/patchworks_tfl6_mp11_harvest_system_candidate/`, and emits
+   `planning/tfl6_mp11_phase14_model_input_xml_build_summary.{csv,json,md}`.
+   The generated XML has `814` `CC_GROUND`, `814` `CC_CABLE`, and `814`
+   `CC_HELI` treatment nodes, `2,442` `HVSYS` split managed selects, `2,442`
+   split product selects, and zero remaining `treatment eq 'CC'` product
+   selects. Matrix Builder, runtime assembly, and scenarios remain
+   `not_performed`. The next bounded task is P14.6 (`#144`): run Matrix
+   Builder from the harvest-system candidate XML/fragments and assemble the
+   candidate runtime package.
 
 Historical leading-edge notes below are retained for audit context only; the
-active next step is P14.5.
+active next step is P14.6.
 
 0. Phase 11 is active on branch
    `feature/p11-model-input-xml-rebuild-plan`. P11.1 and P11.2 are complete.

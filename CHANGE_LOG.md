@@ -3857,3 +3857,27 @@
   larger than the MP11 Table 73 total; and
 - marked P14.4 complete in `ROADMAP.md`, leaving P14.5 split-lane model-input
   and ForestModel XML rebuild as the next bounded task.
+
+## 2026-06-29 - Built MP11 Phase 14 split-lane model input and XML
+
+- added generated-root ignores for
+  `data/mp11_harvest_system_model_input_bundle/` and the future
+  `models/tfl6_patchworks_model_mp11_harvest_system_candidate/` runtime
+  outputs;
+- added `scripts/build_p14_harvest_system_model_input_xml.py`;
+- generated the ignored
+  `data/mp11_harvest_system_model_input_bundle/` candidate bundle by applying
+  P14.4 public-proxy harvest-system assignments to stand, harvest-system,
+  group, treatment, transition, and export-compat checkpoint surfaces;
+- generated ignored ForestModel XML/fragments under
+  `output/patchworks_tfl6_mp11_harvest_system_candidate/`;
+- post-processed the XML to expose `CC_GROUND`, `CC_CABLE`, and `CC_HELI`
+  clearcut lanes keyed by fragment `HVSYS`, while retaining aggregate `.CC`
+  product labels for all-system reporting;
+- emitted
+  `planning/tfl6_mp11_phase14_model_input_xml_build_summary.{csv,json,md}`,
+  recording `814` treatment nodes for each split lane, `2,442` `HVSYS` split
+  managed selects, `2,442` split product selects, and zero remaining
+  `treatment eq 'CC'` product selects; and
+- marked P14.5 complete in `ROADMAP.md`, leaving P14.6 Matrix Builder and
+  harvest-system candidate runtime assembly as the next bounded task.
