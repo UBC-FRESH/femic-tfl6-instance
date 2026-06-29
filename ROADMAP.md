@@ -781,7 +781,8 @@ public CDED steep-slope proxy in the P9RF THLB surface.
 ## Phase 12: MP11 Patchworks Runtime And Scenario Smoke (`#69`)
 
 Status: active. P12.1 launched the runtime-build issue tree and added the MP11
-candidate Matrix Builder config. P12.2 is the first Matrix Builder run.
+candidate Matrix Builder config. P12.2 generated and inspected Matrix Builder
+tracks. P12.3 is the next runtime-assembly step.
 
 Goal: run Matrix Builder, assemble an MP11-aligned Patchworks runtime package,
 and smoke-test direct launch plus representative base and sensitivity
@@ -801,11 +802,13 @@ candidate runtime package.
     Matrix Builder run.
   - [x] P12.1d Confirm Phase 11 handoff inputs exist and runtime roots are
     absent before P12.2.
-- [ ] P12.2 Run Matrix Builder from the accepted MP11 ForestModel XML (`#115`).
-  - [ ] P12.2a Generate Matrix Builder tracks under
+- [x] P12.2 Run Matrix Builder from the accepted MP11 ForestModel XML (`#115`).
+  - [x] P12.2a Generate Matrix Builder tracks under
     `models/tfl6_patchworks_model_mp11_candidate/tracks/`.
-  - [ ] P12.2b Inspect accounts, protoaccounts, features, products, curves,
+  - [x] P12.2b Inspect accounts, protoaccounts, features, products, curves,
     groups, strata, treatments, and block references.
+  - [x] P12.2c Record Matrix Builder QA in
+    `planning/tfl6_mp11_matrix_builder_tracks_qa.{csv,json,md}`.
 - [ ] P12.3 Assemble MP11 candidate Patchworks runtime package (`#116`).
   - [ ] P12.3a Build blocks/topology and launch surfaces under
     `models/tfl6_patchworks_model_mp11_candidate/`.
@@ -1002,6 +1005,18 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    config/patchworks.runtime.mp11_candidate.windows.yaml --run-id
    tfl6_mp11_candidate_p12_2_matrix_build`, then inspect the generated
    `tracks/` surfaces before any runtime success claim.
+   P12.2 is complete on branch `feature/p12-2-mp11-matrix-builder`: Matrix
+   Builder generated 13 expected track CSV files under
+   `models/tfl6_patchworks_model_mp11_candidate/tracks/`, and
+   `scripts/build_p12_mp11_matrix_builder_tracks_qa.py` recorded
+   `planning/tfl6_mp11_matrix_builder_tracks_qa.{csv,json,md}` with status
+   `matrix_builder_tracks_generated_inspection_pass`. The QA records `86,574`
+   feature rows, `823` account/protoaccount rows with account sync equality,
+   `1,004,368` curve rows, `47,218` block rows, `0` message rows, no manifest
+   failures, and block area `191,168.565448 ha` versus Phase 11 fragment area
+   `191,168.566447 ha`. The next bounded move is P12.3: assemble the candidate
+   runtime package from the generated tracks without claiming release
+   readiness.
 0. Phase 9D and Phase 9E are complete. Step 210 now applies the public TSM
    strict Class V proxy, deducting `1.425 ha` against the MP11 Step 210 target
    `1,993.000 ha`; this is an explicit public-source coverage/semantic gap, not

@@ -1,0 +1,270 @@
+{
+  "summary": {
+    "generated_at_utc": "2026-06-29T04:22:20+00:00",
+    "qa_status": "matrix_builder_tracks_generated_inspection_pass",
+    "run_id": "tfl6_mp11_candidate_p12_2_matrix_build",
+    "matrix_builder_returncode": 0,
+    "matrix_builder_raw_returncode": 1,
+    "expected_track_files_present": true,
+    "track_file_count": 13,
+    "features_rows": 86574,
+    "accounts_rows": 823,
+    "protoaccounts_rows": 823,
+    "accounts_proto_equal": true,
+    "products_rows": 26085,
+    "curves_rows": 1004368,
+    "groups_rows": 24879,
+    "strata_rows": 28858,
+    "treatments_rows": 17390,
+    "blocks_rows": 47218,
+    "messages_rows": 0,
+    "block_area_ha": 191168.565448,
+    "phase11_fragment_area_ha": 191168.566447,
+    "block_fragment_area_delta_ha": -0.000999,
+    "manifest_failures_count": 0,
+    "manifest_warnings_count": 1,
+    "generic_warning_only": true,
+    "stdout_error_count": 0,
+    "stderr_error_count": 0,
+    "runtime_bundle_generation": "not_performed",
+    "direct_launch_smoke": "not_performed",
+    "scenario_smoke": "not_performed"
+  },
+  "tracks_root": "models/tfl6_patchworks_model_mp11_candidate/tracks",
+  "tracks": {
+    "features": {
+      "path": "models/tfl6_patchworks_model_mp11_candidate/tracks/features.csv",
+      "rows": 86574,
+      "columns": [
+        "TRACK",
+        "LABEL",
+        "METHOD",
+        "CURVE"
+      ],
+      "bytes": 3188444,
+      "track_nunique": 14429,
+      "label_nunique": 820,
+      "curve_nunique": 10491,
+      "managed_label_rows": 28858,
+      "harvested_volume_rows": 0
+    },
+    "protoaccounts": {
+      "path": "models/tfl6_patchworks_model_mp11_candidate/tracks/protoaccounts.csv",
+      "rows": 823,
+      "columns": [
+        "GROUP",
+        "ATTRIBUTE",
+        "ACCOUNT",
+        "SUM"
+      ],
+      "bytes": 60204,
+      "account_nunique": 823,
+      "attribute_nunique": 823,
+      "group_nunique": 3,
+      "area_account_rows": 818,
+      "harvested_volume_account_rows": 1
+    },
+    "accounts": {
+      "path": "models/tfl6_patchworks_model_mp11_candidate/tracks/accounts.csv",
+      "rows": 823,
+      "columns": [
+        "GROUP",
+        "ATTRIBUTE",
+        "ACCOUNT",
+        "SUM"
+      ],
+      "bytes": 60204,
+      "account_nunique": 823,
+      "attribute_nunique": 823,
+      "group_nunique": 3,
+      "area_account_rows": 818,
+      "harvested_volume_account_rows": 1
+    },
+    "products": {
+      "path": "models/tfl6_patchworks_model_mp11_candidate/tracks/products.csv",
+      "rows": 26085,
+      "columns": [
+        "TRACK",
+        "TREATMENT",
+        "LABEL",
+        "FUTURE",
+        "ADJUST",
+        "METHOD",
+        "CURVE"
+      ],
+      "bytes": 1321561,
+      "track_nunique": 8695,
+      "label_nunique": 3,
+      "treatment_nunique": 1,
+      "curve_nunique": 4842,
+      "managed_label_rows": 26085,
+      "harvested_volume_rows": 8695
+    },
+    "curves": {
+      "path": "models/tfl6_patchworks_model_mp11_candidate/tracks/curves.csv",
+      "rows": 1004368,
+      "columns": [
+        "CURVE",
+        "X",
+        "Y"
+      ],
+      "bytes": 15720364,
+      "curve_nunique": 15333
+    },
+    "groups": {
+      "path": "models/tfl6_patchworks_model_mp11_candidate/tracks/groups.csv",
+      "rows": 24879,
+      "columns": [
+        "BLOCK",
+        "GROUP"
+      ],
+      "bytes": 337266,
+      "group_nunique": 1,
+      "block_nunique": 24879
+    },
+    "strata": {
+      "path": "models/tfl6_patchworks_model_mp11_candidate/tracks/strata.csv",
+      "rows": 28858,
+      "columns": [
+        "TRACK",
+        "OFFSET",
+        "NEXTAGE",
+        "CYCLE",
+        "AU",
+        "IFM",
+        "ORIGIN",
+        "SILV_STATE",
+        "RETENTION"
+      ],
+      "bytes": 1819983,
+      "track_nunique": 14429
+    },
+    "treatments": {
+      "path": "models/tfl6_patchworks_model_mp11_candidate/tracks/treatments.csv",
+      "rows": 17390,
+      "columns": [
+        "TRACK",
+        "BEGIN",
+        "END",
+        "TREATMENT",
+        "MANUAL",
+        "NEWTRACK",
+        "ADJUST",
+        "OFFSET",
+        "RETAIN",
+        "CURVE",
+        "CYCLE",
+        "ELIGIBILITY"
+      ],
+      "bytes": 678650,
+      "track_nunique": 8695,
+      "treatment_nunique": 1,
+      "curve_nunique": 0
+    },
+    "blocks": {
+      "path": "models/tfl6_patchworks_model_mp11_candidate/tracks/blocks.csv",
+      "rows": 47218,
+      "columns": [
+        "BLOCK",
+        "TYPE",
+        "TRACK",
+        "OFFSET",
+        "AREA"
+      ],
+      "bytes": 1467082,
+      "track_nunique": 11277,
+      "block_nunique": 24879
+    },
+    "tracknames": {
+      "path": "models/tfl6_patchworks_model_mp11_candidate/tracks/tracknames.csv",
+      "rows": 14429,
+      "columns": [
+        "TRACK",
+        "STRATA"
+      ],
+      "bytes": 1674711,
+      "track_nunique": 14429,
+      "strata_nunique": 14429
+    },
+    "packages": {
+      "path": "models/tfl6_patchworks_model_mp11_candidate/tracks/packages.csv",
+      "rows": 0,
+      "columns": [
+        "TRACK",
+        "BEGIN",
+        "END",
+        "TREATMENT",
+        "CYCLE",
+        "PACKAGE",
+        "NEWTREATMENT",
+        "MANUAL"
+      ],
+      "bytes": 61,
+      "track_nunique": 0,
+      "treatment_nunique": 0
+    },
+    "packageSequences": {
+      "path": "models/tfl6_patchworks_model_mp11_candidate/tracks/packageSequences.csv",
+      "rows": 0,
+      "columns": [
+        "PACKAGE",
+        "TREATMENT",
+        "DELAY"
+      ],
+      "bytes": 25,
+      "treatment_nunique": 0
+    },
+    "messages": {
+      "path": "models/tfl6_patchworks_model_mp11_candidate/tracks/messages.csv",
+      "rows": 0,
+      "columns": [
+        "TYPE",
+        "ROTATION",
+        "treatment",
+        "AU",
+        "IFM",
+        "ORIGIN",
+        "SILV_STATE",
+        "RETENTION"
+      ],
+      "bytes": 60
+    }
+  },
+  "manifest": {
+    "path": "runtime/logs/patchworks_matrixbuilder_manifest-tfl6_mp11_candidate_p12_2_matrix_build.json",
+    "run_id": "tfl6_mp11_candidate_p12_2_matrix_build",
+    "returncode": 0,
+    "raw_returncode": 1,
+    "accounts_sync": {
+      "status": "synced",
+      "protoaccounts_path": "models/tfl6_patchworks_model_mp11_candidate/tracks/protoaccounts.csv",
+      "accounts_path": "models/tfl6_patchworks_model_mp11_candidate/tracks/accounts.csv",
+      "backup_path": null,
+      "excluded_patterns": [],
+      "excluded_row_count": 0,
+      "harvested_volume_utilization_by_treatment": {}
+    },
+    "warnings": [
+      "Processing completed.  Review warnings and exit when finished."
+    ],
+    "failures": []
+  },
+  "log_scan": {
+    "stdout": {
+      "path": "runtime/logs/patchworks_matrixbuilder_stdout-tfl6_mp11_candidate_p12_2_matrix_build.log",
+      "bytes": 0,
+      "error": 0,
+      "warning": 0,
+      "exception": 0,
+      "failed": 0
+    },
+    "stderr": {
+      "path": "runtime/logs/patchworks_matrixbuilder_stderr-tfl6_mp11_candidate_p12_2_matrix_build.log",
+      "bytes": 870,
+      "error": 0,
+      "warning": 1,
+      "exception": 0,
+      "failed": 0
+    }
+  }
+}

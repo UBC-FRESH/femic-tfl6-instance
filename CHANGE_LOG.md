@@ -3612,3 +3612,19 @@
   and
 - marked P12.1 complete in `ROADMAP.md`, leaving P12.2 as the first actual
   Matrix Builder run.
+
+## 2026-06-28 - Built MP11 Matrix Builder tracks
+
+- ran Matrix Builder with run ID `tfl6_mp11_candidate_p12_2_matrix_build`
+  against `config/patchworks.runtime.mp11_candidate.windows.yaml`;
+- generated the MP11 candidate Matrix Builder tracks under the ignored
+  `models/tfl6_patchworks_model_mp11_candidate/tracks/` root;
+- added `scripts/build_p12_mp11_matrix_builder_tracks_qa.py` and
+  `planning/tfl6_mp11_matrix_builder_tracks_qa.{csv,json,md}` to record direct
+  track inspection;
+- verified all 13 expected track CSV files were generated, `accounts.csv` and
+  `protoaccounts.csv` are identical, `messages.csv` is header-only, no manifest
+  failures were recorded, and the block area matches Phase 11 fragment area
+  within rounding tolerance; and
+- marked P12.2 complete in `ROADMAP.md`, leaving P12.3 runtime assembly as the
+  next build step.
