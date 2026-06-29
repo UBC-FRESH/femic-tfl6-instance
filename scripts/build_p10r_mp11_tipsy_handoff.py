@@ -59,6 +59,19 @@ SITE_INDEX_COLUMNS = {
     "Pl": "pl_si",
 }
 
+TARGET_AU_OVERRIDES = {
+    "FMH01": (
+        "cwhvm2_hw_ba_l",
+        "candidate_for_canonical_au_curve_reuse",
+        "maintainer_accepted_target_au_assignment",
+    ),
+    "FMH22": (
+        "cwhvm2_hw_ba_l",
+        "candidate_for_canonical_au_curve_reuse",
+        "maintainer_accepted_target_au_assignment",
+    ),
+}
+
 
 def _float_or_zero(value: Any) -> float:
     try:
@@ -132,8 +145,17 @@ def _bec_from_mp11_future_au(au_code: str) -> tuple[str, str, str]:
     if re.match(r"^Fvm[12]\d+", au_code):
         return "CWH", "vm", "decoded_from_fvm_future_au_code"
     if re.match(r"^FMH\d+", au_code):
-        return "MH", "mm", "decoded_from_fmh_future_au_code_review_required"
+        return "", "", "requires_target_au_assignment"
     return "", "", "missing_bec_decoder"
+
+
+def _canonical_au_by_id(canonical_au: pd.DataFrame, au_id: str) -> pd.Series:
+    matches = canonical_au[canonical_au["au_id"].astype(str).eq(au_id)]
+    if len(matches) != 1:
+        raise RuntimeError(
+            f"Expected exactly one canonical top-N AU row for {au_id}, got {len(matches)}"
+        )
+    return matches.iloc[0]
 
 
 def _canonical_au_match(
@@ -199,6 +221,21 @@ def _handoff_status(
             "",
             "Tables 54/55 use MP11 existing AU codes that do not carry enough public BEC/site-series information for direct BatchTIPSY handoff.",
             None,
+            weighted_si,
+        )
+    override = TARGET_AU_OVERRIDES.get(str(row["au_code"]))
+    if override is not None:
+        au_id, status, source = override
+        canonical_match = _canonical_au_by_id(canonical_au, au_id)
+        return (
+            status,
+            str(canonical_match["bec_zone_code"]),
+            str(canonical_match["bec_subzone"]),
+            (
+                f"{source}; target_au_vri_bec_and_median_si_policy; "
+                "canonical_top_n_au_match; reuse_existing_canonical_au_tipsy_curve"
+            ),
+            canonical_match,
             weighted_si,
         )
     bec_zone, bec_subzone, source = _bec_from_mp11_future_au(str(row["au_code"]))
@@ -364,17 +401,28 @@ def build_handoff() -> tuple[pd.DataFrame, pd.DataFrame, dict[str, Any]]:
         "oaf_policy": "MP11 narrative OAF defaults: OAF1=15% and OAF2=5%, emitted as BTC factors 0.85 and 0.95.",
         "regen_delay_policy": "Future managed candidate rows use one-year regeneration delay from MP11 Section 8.2.7.1.",
         "site_index_policy": (
-            "Candidate BTC rows use the matched canonical top-N AU VRI median SI "
+            "Candidate BTC rows use the target canonical top-N AU VRI median SI "
             "as the TIPSY site-index input for every planted species SI column. "
             "Parsed MP11 per-species SI values are retained only as provenance."
         ),
-        "join_boundary": (
-            "Table 57 rows can produce standalone future-managed curve-generation candidates. "
-            "They must first map to a canonical top-N FEMIC AU. Tables 54/55 remain "
-            "blocked pending a public MP11 existing/recent AU-code to BEC/site-series "
-            "mapping before BatchTIPSY handoff."
+        "bec_policy": (
+            "Candidate BTC rows use the target canonical top-N AU VRI BEC zone "
+            "and subzone. MP11 row-code decoders can help find a target AU, but "
+            "the emitted TIPSY BEC input is always read back from the target AU."
         ),
-        "use_boundary": "Rows are handoff candidates only and remain not_model_input.",
+        "join_boundary": (
+            "Table 57 rows must map to canonical top-N FEMIC AUs. Rows with "
+            "valid standalone MP11 parameters are emitted to BTC. Rows that "
+            "map to a canonical AU but would create invalid duplicate "
+            "row-derived TIPSY curves reuse the existing canonical AU TIPSY "
+            "curve instead. Tables 54/55 remain blocked pending a public MP11 "
+            "existing/recent AU-code to BEC/site-series mapping before "
+            "BatchTIPSY handoff."
+        ),
+        "use_boundary": (
+            "Rows are accepted Phase 11 curve-handoff candidates, but remain "
+            "not_model_input until Phase 11 writes explicit model-input tables."
+        ),
     }
     return handoff, mapping, summary
 
@@ -427,7 +475,7 @@ def write_outputs(
         "## Summary",
         "",
         f"- Parsed input rows: `{summary['parsed_row_count']}`",
-        f"- Handoff candidate rows: `{summary['handoff_candidate_count']}`",
+        f"- BTC handoff rows: `{summary['handoff_candidate_count']}`",
         f"- Handoff CSV: `{summary['output_handoff_csv']}`",
         f"- Handoff map CSV: `{summary['output_handoff_map_csv']}`",
         "",
@@ -441,13 +489,21 @@ def write_outputs(
         "",
         f"- OAF: {summary['oaf_policy']}",
         f"- Regeneration delay: {summary['regen_delay_policy']}",
+        f"- BEC input: {summary['bec_policy']}",
         f"- Site index: {summary['site_index_policy']}",
         f"- Join boundary: {summary['join_boundary']}",
         "",
         "## Candidate Rows",
         "",
         _markdown_table(
-            mapping[mapping["handoff_status"] == "candidate_for_curve_generation"],
+            mapping[
+                mapping["handoff_status"].isin(
+                    [
+                        "candidate_for_curve_generation",
+                        "candidate_for_canonical_au_curve_reuse",
+                    ]
+                )
+            ],
             [
                 "feature_id",
                 "mp11_au_code",
@@ -484,9 +540,14 @@ def write_outputs(
         "",
         "## Use Boundary",
         "",
-        "- All rows remain `not_model_input`.",
-        "- P10R.4 may run only the candidate rows unless a maintainer accepts a ",
-        "  repair or mapping for blocked rows.",
+        "- Table 57 candidate rows are accepted for the Phase 11 curve handoff.",
+        "- `candidate_for_curve_generation` rows are emitted to BTC.",
+        "- `candidate_for_canonical_au_curve_reuse` rows reuse the existing",
+        "  canonical AU TIPSY curve and are not emitted as duplicate BTC rows.",
+        "- All rows remain `not_model_input` until Phase 11 writes explicit",
+        "  model-input tables.",
+        "- P10R.4 may run only the candidate rows unless a maintainer accepts a",
+        "  repair or mapping for deferred rows.",
         "- Existing and recent managed rows require a public MP11 AU-code to ",
         "  BEC/site-series mapping before curve generation.",
     ]

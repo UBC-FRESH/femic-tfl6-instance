@@ -2,8 +2,8 @@
 
 ## Purpose
 
-This artifact builds AU-wise diagnostic overlays between the tentatively
-passed MP11 Table 57 TIPSY managed curves and the matching public VDYP
+This artifact builds AU-wise diagnostic overlays between the accepted
+Phase 11 handoff MP11 Table 57 TIPSY managed curves and the matching public VDYP
 natural curves from the existing FEMIC `smoothed_bin_pchip` first-growth
 curve table.
 
@@ -13,19 +13,19 @@ curve surface, not a model-input promotion. Every row remains
 
 ## Summary
 
-- diagnostic rows: `25`
-- plotted diagnostic rows: `25`
+- diagnostic rows: `27`
+- plotted diagnostic rows: `27`
 - blocked no-same-BEC rows: `0`
-- VDYP curve-slice rows: `7475`
-- unique MP11 TIPSY candidates: `25`
-- unique VDYP natural AUs: `17`
+- VDYP curve-slice rows: `8073`
+- unique MP11 TIPSY candidates: `27`
+- unique VDYP natural AUs: `18`
 - plot directory: `plots/mp11_tipsy_vdyp_diagnostics`
-- review status: `p10r5_tipsy_vdyp_diagnostic_review_required`
+- review status: `accepted_for_phase11_curve_handoff`
 - model-input status: `not_model_input`
 
 | diagnostic_class               |   row_count |
 |:-------------------------------|------------:|
-| tipsy_substantially_above_vdyp |          17 |
+| tipsy_substantially_above_vdyp |          19 |
 | tipsy_substantially_below_vdyp |           1 |
 | tipsy_vdyp_close               |           2 |
 | tipsy_vdyp_moderate_difference |           5 |
@@ -34,6 +34,8 @@ curve surface, not a model-input promotion. Every row remains
 
 | mp11_au_code   | vdyp_au_id     | diagnostic_class               |   tipsy_to_vdyp_max_ratio |   tipsy_to_vdyp_age_100_ratio |   common_age_rmse | plot_path                                                                       |
 |:---------------|:---------------|:-------------------------------|--------------------------:|------------------------------:|------------------:|:--------------------------------------------------------------------------------|
+| FMH01          | cwhvm2_hw_ba_l | tipsy_substantially_above_vdyp |                     1.498 |                         0.914 |           319.752 | plots/mp11_tipsy_vdyp_diagnostics/mp11-fmh01_tipsy-vs-vdyp-cwhvm2-hw-ba-l.png   |
+| FMH22          | cwhvm2_hw_ba_l | tipsy_substantially_above_vdyp |                     1.498 |                         0.914 |           319.752 | plots/mp11_tipsy_vdyp_diagnostics/mp11-fmh22_tipsy-vs-vdyp-cwhvm2-hw-ba-l.png   |
 | Fvh101         | cwhvh1_cw_hw_m | tipsy_vdyp_moderate_difference |                     1.168 |                         0.967 |           101.369 | plots/mp11_tipsy_vdyp_diagnostics/mp11-fvh101_tipsy-vs-vdyp-cwhvh1-cw-hw-m.png  |
 | Fvh103         | cwhvh1_cw_hw_l | tipsy_substantially_below_vdyp |                     0.882 |                         0.598 |           129.265 | plots/mp11_tipsy_vdyp_diagnostics/mp11-fvh103_tipsy-vs-vdyp-cwhvh1-cw-hw-l.png  |
 | Fvh104         | cwhvh1_hw_ss_m | tipsy_substantially_above_vdyp |                     1.364 |                         1.132 |           290.685 | plots/mp11_tipsy_vdyp_diagnostics/mp11-fvh104_tipsy-vs-vdyp-cwhvh1-hw-ss-m.png  |
@@ -62,8 +64,7 @@ curve surface, not a model-input promotion. Every row remains
 
 ## Use Boundary
 
-- TIPSY-vs-VDYP differences are diagnostic evidence for review, not
-  automatic rejection or acceptance.
-- The MP11 TIPSY curves remain only tentatively passed for sequencing.
-- Phase 11 must explicitly promote curve surfaces before model-input or
-  ForestModel XML work consumes them.
+- TIPSY-vs-VDYP differences are diagnostic evidence attached to the
+  accepted Phase 11 curve handoff.
+- Phase 11 must explicitly materialize curve surfaces before model-input
+  tables or ForestModel XML consume them.

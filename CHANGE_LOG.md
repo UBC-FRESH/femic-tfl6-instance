@@ -3338,3 +3338,20 @@
   blocked until the Phase 11 readiness audit decides `Fvh103`, Tables 54/55,
   and `FMH01` / `FMH22`; and
 - updated the Phase 10R closeout note with the same Phase 11 boundary.
+
+## 2026-06-28 - Corrected FMH curve handoff to canonical AU reuse
+
+- corrected the Phase 10R recipe so `FMH01` and `FMH22` are not emitted as
+  duplicate row-derived BTC curves;
+- mapped both FMH rows to target AU `cwhvm2_hw_ba_l`, retained target AU
+  `CWH/vm` BEC and median VRI SI `14.0`, and reused the existing valid
+  canonical future-managed TIPSY curve for that AU;
+- reran the locked recipe with `25` BTC-generated rows, `2` canonical curve
+  reuse rows, `27` accepted curve features, `972` managed-curve rows, `27`
+  managed comparison plots, `27` TIPSY-vs-VDYP diagnostic plots, `0` BEC
+  mismatches, and `0` SI-input mismatches;
+- confirmed the FMH diagnostic ratios now use the valid canonical AU curve:
+  max TIPSY/VDYP `1.498` and age-100 TIPSY/VDYP `0.914`; and
+- updated the Phase 10R recipe, closeout, and roadmap notes so Phase 11 can
+  proceed from the accepted 27-curve handoff while model-input tables remain
+  an explicit Phase 11 materialization step.

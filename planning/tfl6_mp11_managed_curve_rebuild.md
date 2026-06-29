@@ -9,19 +9,21 @@ keeping every row review-gated as `not_model_input`.
 
 ## Status
 
-- Handoff candidate rows: `25`
-- Blocked or review rows outside handoff: `116`
+- BTC handoff rows: `25`
+- Accepted curve count: `27`
+- Canonical curve reuse count: `2`
+- Blocked or review rows outside handoff: `114`
 - Curve-generation status: `generated_curve_output_inspected`
 - Found executables/runners: `1`
 - BTC manifest status: `ok`
 - BTC manifest exit code: `0`
 - BTC error rows: `0`
-- Parsed curve rows: `900`
-- Parsed curve feature count: `25`
+- Parsed curve rows: `972`
+- Parsed curve feature count: `27`
 
 ## Toolchain Finding
 
-FEMIC BTC generated real MP11 candidate outputs from the P10R.3 handoff. The parsed curves are retained as review surfaces only; they are not model inputs and have not yet been compared against Phase 5 fallback curves.
+FEMIC BTC generated real MP11 candidate outputs from the P10R.3 handoff. The parsed curves are accepted for the Phase 11 curve handoff; they are not model inputs until Phase 11 writes explicit model-input tables.
 
 ## Searched Paths
 
@@ -65,6 +67,8 @@ FEMIC BTC generated real MP11 candidate outputs from the P10R.3 handoff. The par
 | 611373 | Fvm207 | future_managed | generated_curve_output_inspected | 36 | 1688.1 | 350 |
 | 611383 | Fvm208 | future_managed | generated_curve_output_inspected | 36 | 1688.1 | 350 |
 | 611393 | Fvm211 | future_managed | generated_curve_output_inspected | 36 | 847.5 | 350 |
+| 611403 | FMH01 | future_managed | canonical_au_curve_reused | 36 | 1340.4 | 350 |
+| 611413 | FMH22 | future_managed | canonical_au_curve_reused | 36 | 1340.4 | 350 |
 
 ## Representative Curve Inspection
 
@@ -72,8 +76,8 @@ FEMIC BTC generated real MP11 candidate outputs from the P10R.3 handoff. The par
 |-------------:|:---------------|---------------------:|----------------------------:|------------------------:|------------------------:|------------------------:|-------------------------:|----------------------------------:|
 |       611283 | Fvm107         |               1791.7 |                         260 |                   433.6 |                   796.5 |                  1049.2 |                   1258.5 |                            1709.6 |
 |       611303 | Fvm111         |               1711.7 |                         320 |                   370.7 |                   715.3 |                   985.2 |                   1193.2 |                            1685.3 |
-|       611373 | Fvm207         |               1688.1 |                         350 |                   275.4 |                   577.1 |                   843.1 |                   1044.5 |                            1688.1 |
 |       611383 | Fvm208         |               1688.1 |                         350 |                   275.4 |                   577.1 |                   843.1 |                   1044.5 |                            1688.1 |
+|       611373 | Fvm207         |               1688.1 |                         350 |                   275.4 |                   577.1 |                   843.1 |                   1044.5 |                            1688.1 |
 |       611213 | Fvm101         |               1678   |                         330 |                   329.3 |                   649   |                   921.5 |                   1117.2 |                            1675.7 |
 |       611253 | Fvm105         |               1662.7 |                         290 |                   371.1 |                   708.9 |                   987.1 |                   1190.4 |                            1633.1 |
 |       611243 | Fvm104         |               1645.8 |                         350 |                   252.7 |                   538.8 |                   792   |                    987.6 |                            1645.8 |
@@ -83,8 +87,8 @@ FEMIC BTC generated real MP11 candidate outputs from the P10R.3 handoff. The par
 
 ## Required Next Action
 
-Compare the parsed P10R.4 candidate curves against Phase 5 fallback curves where useful, then keep any promotion decision review-gated.
+Use the accepted P10R managed curves as the Phase 11 curve-handoff surface, then materialize explicit model-input tables before XML or Patchworks consumption.
 
 ## Use Boundary
 
-These artifacts are review surfaces. They are generated MP11 candidate curves, but they remain not_model_input until reviewed and explicitly accepted.
+These artifacts are the accepted Phase 11 curve-handoff surface. They remain not_model_input until Phase 11 writes explicit model-input tables.

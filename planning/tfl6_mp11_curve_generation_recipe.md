@@ -5,9 +5,10 @@
 This note locks the reproducible Phase 10R managed-curve generation recipe for
 MP11 Table 57 future-managed candidates.
 
-The recipe is a review surface only. It does not promote any generated curve to
-model input. All generated rows remain `not_model_input` until a later
-maintainer decision explicitly accepts them for the next model lane.
+The recipe is the accepted Phase 10R managed-curve generation surface for the
+Phase 11 curve handoff. It does not itself write model-input tables or
+ForestModel XML, so generated rows remain `not_model_input` in these review
+artifacts until Phase 11 materializes the model-contract surface.
 
 ## Locked Recipe Runner
 
@@ -42,19 +43,23 @@ Candidate generation is limited to MP11 rows that map to canonical top-N TFL 6
 AUs:
 
 - accepted AUs are only the L/M/H site-index class splits of the top-N strata;
-- candidate rows must match canonical AU BEC zone/subzone;
+- emitted TIPSY BEC zone/subzone must come from the target canonical AU VRI
+  record;
 - candidate rows must have species overlap with the canonical AU species combo;
-- rows with no canonical top-N AU BEC match remain blocked; and
-- blocked rows are not emitted to the BTC handoff.
+- rows with no canonical top-N AU BEC match remain blocked;
+- rows with invalid duplicate row-derived parameters can reuse the existing
+  canonical AU TIPSY curve; and
+- blocked or reuse rows are not emitted to the BTC handoff.
 
-TIPSY site index is locked to the VRI-derived canonical AU median SI:
+TIPSY site index is locked to the VRI-derived target canonical AU median SI:
 
 - `tipsy_input_si` is copied from `tfl6_static_au_universe.csv:median_si`;
 - every positive planted-species SI column in the BTC input row must equal
   `tipsy_input_si`;
 - parsed MP11 per-species SI values are retained as
   `mp11_parsed_weighted_si` provenance only; and
-- generated curves remain review surfaces, not accepted model contracts.
+- generated curves are accepted for the Phase 11 curve handoff, but not yet
+  written to model-input contracts.
 
 ## Runtime Boundary
 
@@ -81,11 +86,10 @@ The recipe runner fails if any of these checks fail:
 - BTC manifest status is not `ok`;
 - BTC exit code is not `0`;
 - BTC error output has any rows;
-- handoff candidate count differs from the candidate map count;
+- BTC handoff row count differs from the generation-candidate map count;
 - any BTC handoff candidate uses `MH/mm`;
-- any managed curve, comparison, or diagnostic row contains blocked `FMH*`
-  curves;
 - any positive planted-species SI column differs from `tipsy_input_si`;
+- any candidate TIPSY BEC differs from the target canonical AU BEC;
 - any expected managed-curve comparison PNG is missing or empty;
 - any plotted TIPSY-vs-VDYP comparison has a BEC prefix mismatch; or
 - any expected diagnostic PNG is missing or empty.
@@ -96,9 +100,10 @@ The locked Phase 10R recipe currently emits:
 
 - `25` BTC handoff candidate rows;
 - `25` BTC output rows with `0` BTC error rows;
-- `900` managed-curve rows across `25` feature IDs;
-- `25` managed-curve comparison plots;
-- `25` TIPSY-vs-VDYP diagnostic plots;
+- `2` canonical AU curve reuse rows for `FMH01` and `FMH22`;
+- `972` managed-curve rows across `27` feature IDs;
+- `27` managed-curve comparison plots;
+- `27` TIPSY-vs-VDYP diagnostic plots;
 - no `MH/mm` handoff candidates;
 - no plotted BEC mismatches; and
-- one remaining substantially-below-VDYP diagnostic row, `Fvh103`.
+- no positive SI-column mismatches against target AU median VRI SI.

@@ -1,26 +1,78 @@
 {
-  "generated_at_utc": "2026-06-29T01:24:46+00:00",
+  "generated_at_utc": "2026-06-29T02:01:44+00:00",
   "source_tipsy_curve_table": "planning/tfl6_mp11_managed_curves.csv",
   "source_vdyp_curve_table": "planning/tfl6_first_growth_au_curves.csv",
   "plot_directory": "plots/mp11_tipsy_vdyp_diagnostics",
-  "row_count": 25,
+  "row_count": 27,
   "diagnostic_class_counts": {
-    "tipsy_substantially_above_vdyp": 17,
+    "tipsy_substantially_above_vdyp": 19,
     "tipsy_substantially_below_vdyp": 1,
     "tipsy_vdyp_close": 2,
     "tipsy_vdyp_moderate_difference": 5
   },
   "review_status_counts": {
-    "p10r5_tipsy_vdyp_diagnostic_review_required": 25
+    "accepted_for_phase11_curve_handoff": 27
   },
   "model_input_status_counts": {
-    "not_model_input": 25
+    "not_model_input": 27
   },
   "records": [
     {
+      "mp11_au_code": "FMH01",
+      "mp11_feature_id": 611403,
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
+      "mp11_tipsy_comparison_class": "low_difference",
+      "vdyp_au_id": "cwhvm2_hw_ba_l",
+      "vdyp_natural_curve_status": "selected_curve_family_available",
+      "vdyp_selected_path": "smoothed_bin_pchip",
+      "vdyp_source_stand_count": 434,
+      "tipsy_max_volume": 1340.4,
+      "vdyp_max_volume": 894.879,
+      "tipsy_to_vdyp_max_ratio": 1.498,
+      "tipsy_age_at_max_volume": 350,
+      "vdyp_age_at_max_volume": 155,
+      "tipsy_volume_age_100": 670.5,
+      "vdyp_volume_age_100": 733.267,
+      "tipsy_to_vdyp_age_100_ratio": 0.914,
+      "common_age_rmse": 319.752,
+      "common_age_mean_delta": 167.332,
+      "diagnostic_class": "tipsy_substantially_above_vdyp",
+      "review_status": "accepted_for_phase11_curve_handoff",
+      "model_input_status": "not_model_input",
+      "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fmh01_tipsy-vs-vdyp-cwhvm2-hw-ba-l.png",
+      "plot_exists": true,
+      "plot_size_bytes": 102080
+    },
+    {
+      "mp11_au_code": "FMH22",
+      "mp11_feature_id": 611413,
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
+      "mp11_tipsy_comparison_class": "low_difference",
+      "vdyp_au_id": "cwhvm2_hw_ba_l",
+      "vdyp_natural_curve_status": "selected_curve_family_available",
+      "vdyp_selected_path": "smoothed_bin_pchip",
+      "vdyp_source_stand_count": 434,
+      "tipsy_max_volume": 1340.4,
+      "vdyp_max_volume": 894.879,
+      "tipsy_to_vdyp_max_ratio": 1.498,
+      "tipsy_age_at_max_volume": 350,
+      "vdyp_age_at_max_volume": 155,
+      "tipsy_volume_age_100": 670.5,
+      "vdyp_volume_age_100": 733.267,
+      "tipsy_to_vdyp_age_100_ratio": 0.914,
+      "common_age_rmse": 319.752,
+      "common_age_mean_delta": 167.332,
+      "diagnostic_class": "tipsy_substantially_above_vdyp",
+      "review_status": "accepted_for_phase11_curve_handoff",
+      "model_input_status": "not_model_input",
+      "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fmh22_tipsy-vs-vdyp-cwhvm2-hw-ba-l.png",
+      "plot_exists": true,
+      "plot_size_bytes": 102313
+    },
+    {
       "mp11_au_code": "Fvh101",
       "mp11_feature_id": 611143,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "large_difference_review_required",
       "vdyp_au_id": "cwhvh1_cw_hw_m",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -37,16 +89,16 @@
       "common_age_rmse": 101.369,
       "common_age_mean_delta": 47.297,
       "diagnostic_class": "tipsy_vdyp_moderate_difference",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvh101_tipsy-vs-vdyp-cwhvh1-cw-hw-m.png",
       "plot_exists": true,
-      "plot_size_bytes": 99053
+      "plot_size_bytes": 99171
     },
     {
       "mp11_au_code": "Fvh103",
       "mp11_feature_id": 611153,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "large_difference_review_required",
       "vdyp_au_id": "cwhvh1_cw_hw_l",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -63,7 +115,7 @@
       "common_age_rmse": 129.265,
       "common_age_mean_delta": -90.478,
       "diagnostic_class": "tipsy_substantially_below_vdyp",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvh103_tipsy-vs-vdyp-cwhvh1-cw-hw-l.png",
       "plot_exists": true,
@@ -72,7 +124,7 @@
     {
       "mp11_au_code": "Fvh104",
       "mp11_feature_id": 611163,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "large_difference_review_required",
       "vdyp_au_id": "cwhvh1_hw_ss_m",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -89,16 +141,16 @@
       "common_age_rmse": 290.685,
       "common_age_mean_delta": 211.419,
       "diagnostic_class": "tipsy_substantially_above_vdyp",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvh104_tipsy-vs-vdyp-cwhvh1-hw-ss-m.png",
       "plot_exists": true,
-      "plot_size_bytes": 99684
+      "plot_size_bytes": 99312
     },
     {
       "mp11_au_code": "Fvh104s",
       "mp11_feature_id": 611173,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "moderate_difference_review_required",
       "vdyp_au_id": "cwhvh1_cw_hw_h",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -115,16 +167,16 @@
       "common_age_rmse": 250.931,
       "common_age_mean_delta": 201.798,
       "diagnostic_class": "tipsy_substantially_above_vdyp",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvh104s_tipsy-vs-vdyp-cwhvh1-cw-hw-h.png",
       "plot_exists": true,
-      "plot_size_bytes": 95768
+      "plot_size_bytes": 95519
     },
     {
       "mp11_au_code": "Fvh106",
       "mp11_feature_id": 611183,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "moderate_difference_review_required",
       "vdyp_au_id": "cwhvh1_hw_ba_h",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -141,16 +193,16 @@
       "common_age_rmse": 450.307,
       "common_age_mean_delta": 359.826,
       "diagnostic_class": "tipsy_substantially_above_vdyp",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvh106_tipsy-vs-vdyp-cwhvh1-hw-ba-h.png",
       "plot_exists": true,
-      "plot_size_bytes": 100394
+      "plot_size_bytes": 100572
     },
     {
       "mp11_au_code": "Fvh108",
       "mp11_feature_id": 611193,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "large_difference_review_required",
       "vdyp_au_id": "cwhvh1_hw_cw_h",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -167,16 +219,16 @@
       "common_age_rmse": 312.601,
       "common_age_mean_delta": 262.279,
       "diagnostic_class": "tipsy_vdyp_moderate_difference",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvh108_tipsy-vs-vdyp-cwhvh1-hw-cw-h.png",
       "plot_exists": true,
-      "plot_size_bytes": 100337
+      "plot_size_bytes": 100139
     },
     {
       "mp11_au_code": "Fvh113",
       "mp11_feature_id": 611203,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "large_difference_review_required",
       "vdyp_au_id": "cwhvh1_cw_hw_m",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -193,16 +245,16 @@
       "common_age_rmse": 91.89,
       "common_age_mean_delta": 35.811,
       "diagnostic_class": "tipsy_vdyp_close",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvh113_tipsy-vs-vdyp-cwhvh1-cw-hw-m.png",
       "plot_exists": true,
-      "plot_size_bytes": 97387
+      "plot_size_bytes": 97045
     },
     {
       "mp11_au_code": "Fvm101",
       "mp11_feature_id": 611213,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "low_difference",
       "vdyp_au_id": "cwhvm1_hw_cw_m",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -219,16 +271,16 @@
       "common_age_rmse": 454.92,
       "common_age_mean_delta": 396.327,
       "diagnostic_class": "tipsy_substantially_above_vdyp",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvm101_tipsy-vs-vdyp-cwhvm1-hw-cw-m.png",
       "plot_exists": true,
-      "plot_size_bytes": 98883
+      "plot_size_bytes": 98760
     },
     {
       "mp11_au_code": "Fvm101s",
       "mp11_feature_id": 611223,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "large_difference_review_required",
       "vdyp_au_id": "cwhvm1_cw_hw_h",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -245,16 +297,16 @@
       "common_age_rmse": 355.398,
       "common_age_mean_delta": 303.052,
       "diagnostic_class": "tipsy_substantially_above_vdyp",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvm101s_tipsy-vs-vdyp-cwhvm1-cw-hw-h.png",
       "plot_exists": true,
-      "plot_size_bytes": 97836
+      "plot_size_bytes": 97785
     },
     {
       "mp11_au_code": "Fvm103",
       "mp11_feature_id": 611233,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "moderate_difference_review_required",
       "vdyp_au_id": "cwhvm2_yc_hw_h",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -271,16 +323,16 @@
       "common_age_rmse": 167.488,
       "common_age_mean_delta": 104.581,
       "diagnostic_class": "tipsy_vdyp_moderate_difference",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvm103_tipsy-vs-vdyp-cwhvm2-yc-hw-h.png",
       "plot_exists": true,
-      "plot_size_bytes": 96181
+      "plot_size_bytes": 96152
     },
     {
       "mp11_au_code": "Fvm104",
       "mp11_feature_id": 611243,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "moderate_difference_review_required",
       "vdyp_au_id": "cwhvm1_ba_hw_m",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -297,16 +349,16 @@
       "common_age_rmse": 394.973,
       "common_age_mean_delta": 304.019,
       "diagnostic_class": "tipsy_substantially_above_vdyp",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvm104_tipsy-vs-vdyp-cwhvm1-ba-hw-m.png",
       "plot_exists": true,
-      "plot_size_bytes": 99097
+      "plot_size_bytes": 99237
     },
     {
       "mp11_au_code": "Fvm105",
       "mp11_feature_id": 611253,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "moderate_difference_review_required",
       "vdyp_au_id": "cwhvm1_hw_ss_m",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -323,16 +375,16 @@
       "common_age_rmse": 399.03,
       "common_age_mean_delta": 343.651,
       "diagnostic_class": "tipsy_substantially_above_vdyp",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvm105_tipsy-vs-vdyp-cwhvm1-hw-ss-m.png",
       "plot_exists": true,
-      "plot_size_bytes": 99900
+      "plot_size_bytes": 99934
     },
     {
       "mp11_au_code": "Fvm106",
       "mp11_feature_id": 611263,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "moderate_difference_review_required",
       "vdyp_au_id": "cwhvm1_ba_hw_m",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -349,16 +401,16 @@
       "common_age_rmse": 428.471,
       "common_age_mean_delta": 349.398,
       "diagnostic_class": "tipsy_substantially_above_vdyp",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvm106_tipsy-vs-vdyp-cwhvm1-ba-hw-m.png",
       "plot_exists": true,
-      "plot_size_bytes": 100216
+      "plot_size_bytes": 100031
     },
     {
       "mp11_au_code": "Fvm106s",
       "mp11_feature_id": 611273,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "large_difference_review_required",
       "vdyp_au_id": "cwhvm1_cw_hw_h",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -375,16 +427,16 @@
       "common_age_rmse": 355.398,
       "common_age_mean_delta": 303.052,
       "diagnostic_class": "tipsy_substantially_above_vdyp",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvm106s_tipsy-vs-vdyp-cwhvm1-cw-hw-h.png",
       "plot_exists": true,
-      "plot_size_bytes": 98606
+      "plot_size_bytes": 98562
     },
     {
       "mp11_au_code": "Fvm107",
       "mp11_feature_id": 611283,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "moderate_difference_review_required",
       "vdyp_au_id": "cwhvm1_hw_dr_h",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -401,16 +453,16 @@
       "common_age_rmse": 688.984,
       "common_age_mean_delta": 615.132,
       "diagnostic_class": "tipsy_substantially_above_vdyp",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvm107_tipsy-vs-vdyp-cwhvm1-hw-dr-h.png",
       "plot_exists": true,
-      "plot_size_bytes": 100517
+      "plot_size_bytes": 100581
     },
     {
       "mp11_au_code": "Fvm109",
       "mp11_feature_id": 611293,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "moderate_difference_review_required",
       "vdyp_au_id": "cwhvm1_hw_ss_l",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -427,16 +479,16 @@
       "common_age_rmse": 406.306,
       "common_age_mean_delta": 344.132,
       "diagnostic_class": "tipsy_substantially_above_vdyp",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvm109_tipsy-vs-vdyp-cwhvm1-hw-ss-l.png",
       "plot_exists": true,
-      "plot_size_bytes": 99254
+      "plot_size_bytes": 98869
     },
     {
       "mp11_au_code": "Fvm111",
       "mp11_feature_id": 611303,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "moderate_difference_review_required",
       "vdyp_au_id": "cwhvm1_hw_ss_m",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -453,16 +505,16 @@
       "common_age_rmse": 422.058,
       "common_age_mean_delta": 361.706,
       "diagnostic_class": "tipsy_substantially_above_vdyp",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvm111_tipsy-vs-vdyp-cwhvm1-hw-ss-m.png",
       "plot_exists": true,
-      "plot_size_bytes": 100727
+      "plot_size_bytes": 100658
     },
     {
       "mp11_au_code": "Fvm114",
       "mp11_feature_id": 611313,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "moderate_difference_review_required",
       "vdyp_au_id": "cwhvm2_yc_hw_h",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -479,16 +531,16 @@
       "common_age_rmse": 254.628,
       "common_age_mean_delta": 197.73,
       "diagnostic_class": "tipsy_substantially_above_vdyp",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvm114_tipsy-vs-vdyp-cwhvm2-yc-hw-h.png",
       "plot_exists": true,
-      "plot_size_bytes": 95615
+      "plot_size_bytes": 95287
     },
     {
       "mp11_au_code": "Fvm131",
       "mp11_feature_id": 611323,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "large_difference_review_required",
       "vdyp_au_id": "cwhvm1_hw_dr_l",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -505,16 +557,16 @@
       "common_age_rmse": 289.823,
       "common_age_mean_delta": 222.187,
       "diagnostic_class": "tipsy_substantially_above_vdyp",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvm131_tipsy-vs-vdyp-cwhvm1-hw-dr-l.png",
       "plot_exists": true,
-      "plot_size_bytes": 93287
+      "plot_size_bytes": 93297
     },
     {
       "mp11_au_code": "Fvm133",
       "mp11_feature_id": 611333,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "moderate_difference_review_required",
       "vdyp_au_id": "cwhvm1_cw_hw_m",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -531,16 +583,16 @@
       "common_age_rmse": 104.963,
       "common_age_mean_delta": 38.931,
       "diagnostic_class": "tipsy_vdyp_close",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvm133_tipsy-vs-vdyp-cwhvm1-cw-hw-m.png",
       "plot_exists": true,
-      "plot_size_bytes": 96126
+      "plot_size_bytes": 96266
     },
     {
       "mp11_au_code": "Fvm201",
       "mp11_feature_id": 611343,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "large_difference_review_required",
       "vdyp_au_id": "cwhvm1_cw_hw_h",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -557,16 +609,16 @@
       "common_age_rmse": 293.76,
       "common_age_mean_delta": 227.832,
       "diagnostic_class": "tipsy_substantially_above_vdyp",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvm201_tipsy-vs-vdyp-cwhvm1-cw-hw-h.png",
       "plot_exists": true,
-      "plot_size_bytes": 96109
+      "plot_size_bytes": 95864
     },
     {
       "mp11_au_code": "Fvm203",
       "mp11_feature_id": 611353,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "large_difference_review_required",
       "vdyp_au_id": "cwhvm1_hw_cw_l",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -583,16 +635,16 @@
       "common_age_rmse": 143.692,
       "common_age_mean_delta": -77.239,
       "diagnostic_class": "tipsy_vdyp_moderate_difference",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvm203_tipsy-vs-vdyp-cwhvm1-hw-cw-l.png",
       "plot_exists": true,
-      "plot_size_bytes": 105532
+      "plot_size_bytes": 105253
     },
     {
       "mp11_au_code": "Fvm207",
       "mp11_feature_id": 611373,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "low_difference",
       "vdyp_au_id": "cwhvm2_hw_cw_h",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -609,16 +661,16 @@
       "common_age_rmse": 473.49,
       "common_age_mean_delta": 403.252,
       "diagnostic_class": "tipsy_substantially_above_vdyp",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvm207_tipsy-vs-vdyp-cwhvm2-hw-cw-h.png",
       "plot_exists": true,
-      "plot_size_bytes": 98446
+      "plot_size_bytes": 98477
     },
     {
       "mp11_au_code": "Fvm208",
       "mp11_feature_id": 611383,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "low_difference",
       "vdyp_au_id": "cwhvm2_hw_cw_h",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -635,16 +687,16 @@
       "common_age_rmse": 473.49,
       "common_age_mean_delta": 403.252,
       "diagnostic_class": "tipsy_substantially_above_vdyp",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvm208_tipsy-vs-vdyp-cwhvm2-hw-cw-h.png",
       "plot_exists": true,
-      "plot_size_bytes": 99004
+      "plot_size_bytes": 99039
     },
     {
       "mp11_au_code": "Fvm211",
       "mp11_feature_id": 611393,
-      "mp11_tipsy_review_status": "p10r4e_comparison_review_required",
+      "mp11_tipsy_review_status": "accepted_for_phase11_curve_handoff",
       "mp11_tipsy_comparison_class": "large_difference_review_required",
       "vdyp_au_id": "cwhvm1_hw_cw_l",
       "vdyp_natural_curve_status": "selected_curve_family_available",
@@ -661,11 +713,11 @@
       "common_age_rmse": 143.383,
       "common_age_mean_delta": -80.528,
       "diagnostic_class": "tipsy_vdyp_moderate_difference",
-      "review_status": "p10r5_tipsy_vdyp_diagnostic_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input",
       "plot_path": "plots/mp11_tipsy_vdyp_diagnostics/mp11-fvm211_tipsy-vs-vdyp-cwhvm1-hw-cw-l.png",
       "plot_exists": true,
-      "plot_size_bytes": 104057
+      "plot_size_bytes": 103891
     }
   ]
 }

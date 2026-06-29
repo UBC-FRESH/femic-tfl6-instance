@@ -213,7 +213,7 @@ def _build_manifest(
                     phase5_curve, 100, "treated_volume"
                 ),
                 "comparison_class": row["comparison_class"],
-                "review_status": "p10r5_managed_plot_review_required",
+                "review_status": "accepted_for_phase11_curve_handoff",
                 "model_input_status": row["model_input_status"],
                 "plot_path": output_path.relative_to(INSTANCE_ROOT).as_posix(),
                 "plot_exists": output_path.exists(),
@@ -256,8 +256,9 @@ def _write_markdown(manifest: pd.DataFrame) -> None:
         "plot library is written under ignored `plots/` space; this manifest is the",
         "tracked review surface.",
         "",
-        "These plots are comparison evidence only. They do not promote any recovered",
-        "or regenerated value into model input contracts.",
+        "These plots support the accepted Phase 11 curve handoff. They do not",
+        "directly promote any recovered or regenerated value into model input",
+        "contracts.",
         "",
         "## Summary",
         "",
@@ -293,7 +294,11 @@ def main() -> None:
     if (manifest["plot_size_bytes"] <= 0).any():
         raise RuntimeError("At least one expected plot is empty")
 
-    MANIFEST_CSV_PATH.write_text(manifest.to_csv(index=False), encoding="utf-8")
+    MANIFEST_CSV_PATH.write_text(
+        manifest.to_csv(index=False),
+        encoding="utf-8",
+        newline="\n",
+    )
     payload = {
         "source_artifacts": {
             "comparison_csv": COMPARISON_PATH.relative_to(INSTANCE_ROOT).as_posix(),

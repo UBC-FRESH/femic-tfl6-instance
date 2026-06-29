@@ -7,19 +7,20 @@ review plots against the matched Phase 5 fallback managed curves. The PNG
 plot library is written under ignored `plots/` space; this manifest is the
 tracked review surface.
 
-These plots are comparison evidence only. They do not promote any recovered
-or regenerated value into model input contracts.
+These plots support the accepted Phase 11 curve handoff. They do not
+directly promote any recovered or regenerated value into model input
+contracts.
 
 ## Summary
 
-- generated plots: `25`
+- generated plots: `27`
 - plot directory: `plots/mp11_managed_curve_comparison`
-- generated UTC: `2026-06-29T01:24:30+00:00`
+- generated UTC: `2026-06-29T02:01:28+00:00`
 
 | comparison_class                    |   plot_count |
 |:------------------------------------|-------------:|
 | large_difference_review_required    |           11 |
-| low_difference                      |            3 |
+| low_difference                      |            5 |
 | moderate_difference_review_required |           11 |
 
 ## Review Index
@@ -37,6 +38,8 @@ or regenerated value into model input contracts.
 | Fvm201         | cwhvm1_cw_hw_h  | large_difference_review_required    |                 28.629 |                     33.82  | plots/mp11_managed_curve_comparison/mp11-fvm201_vs_phase5-cwhvm1-cw-hw-h.png  |
 | Fvm203         | cwhvm1_hw_cw_l  | large_difference_review_required    |                -53.991 |                    -60.58  | plots/mp11_managed_curve_comparison/mp11-fvm203_vs_phase5-cwhvm1-hw-cw-l.png  |
 | Fvm211         | cwhvm1_hw_cw_l  | large_difference_review_required    |                -54.754 |                    -60.673 | plots/mp11_managed_curve_comparison/mp11-fvm211_vs_phase5-cwhvm1-hw-cw-l.png  |
+| FMH01          | cwhvm2_hw_ba_l  | low_difference                      |                  0     |                      0     | plots/mp11_managed_curve_comparison/mp11-fmh01_vs_phase5-cwhvm2-hw-ba-l.png   |
+| FMH22          | cwhvm2_hw_ba_l  | low_difference                      |                  0     |                      0     | plots/mp11_managed_curve_comparison/mp11-fmh22_vs_phase5-cwhvm2-hw-ba-l.png   |
 | Fvm101         | cwhvm2_ba_hw_h  | low_difference                      |                 -8.7   |                      8.203 | plots/mp11_managed_curve_comparison/mp11-fvm101_vs_phase5-cwhvm2-ba-hw-h.png  |
 | Fvm207         | cwhvm2_hw_cw_h  | low_difference                      |                 -9.877 |                     -2.846 | plots/mp11_managed_curve_comparison/mp11-fvm207_vs_phase5-cwhvm2-hw-cw-h.png  |
 | Fvm208         | cwhvm2_hw_cw_h  | low_difference                      |                 -9.877 |                     -2.846 | plots/mp11_managed_curve_comparison/mp11-fvm208_vs_phase5-cwhvm2-hw-cw-h.png  |
