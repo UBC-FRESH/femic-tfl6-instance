@@ -4021,3 +4021,21 @@
 - emitted `planning/tfl6_mp11_phase15_materialization_qa.{csv,json,md}`; and
 - marked P15.4 complete in `ROADMAP.md`, leaving P15.5 archive-derived direct
   launch and scenario smoke as the next bounded task.
+
+## 2026-06-29 - Passed MP11 Phase 15 archive-derived runtime smoke
+
+- added `scripts/build_p15_materialized_runtime_smoke_qa.py` to inspect P15.5
+  Patchworks runs launched from the unpacked materialized archive payload;
+- handled Windows long-path saved-stage CSV inspection for archive-derived
+  Patchworks reports;
+- emitted
+  `planning/tfl6_mp11_phase15_materialized_runtime_smoke_qa.{csv,json,md}`
+  with status `materialized_runtime_smoke_pass`;
+- verified direct launch smoke from the materialized archive passed;
+- verified all-system 200,000-iteration scenario smoke passed with `76,693`
+  scheduled rows and treatment lanes `CC_CABLE`, `CC_GROUND`, and `CC_HELI`;
+- verified no-heli 200,000-iteration scenario smoke passed with `75,023`
+  scheduled rows, treatment lanes `CC_CABLE` and `CC_GROUND`, and no forbidden
+  `CC_HELI` treatment present; and
+- marked P15.5 complete in `ROADMAP.md`, leaving P15.6 publication docs and
+  caveat documentation as the next bounded task.

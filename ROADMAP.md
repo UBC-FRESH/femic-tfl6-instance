@@ -1061,8 +1061,19 @@ Publication artifacts:
     and unpack expected runtime files.
   - [x] P15.4e Emit
     `planning/tfl6_mp11_phase15_materialization_qa.{csv,json,md}`.
-- [ ] P15.5 Run direct launch and scenario smoke from materialized archive
+- [x] P15.5 Run direct launch and scenario smoke from materialized archive
   (`#152`).
+  - [x] P15.5a Run direct launch smoke from the unpacked materialized archive
+    `analysis/base.pin`.
+  - [x] P15.5b Run all-system 200,000-iteration scenario smoke from the
+    unpacked materialized archive.
+  - [x] P15.5c Run no-heli 200,000-iteration scenario smoke from the unpacked
+    materialized archive.
+  - [x] P15.5d Verify all-system schedule lanes include `CC_CABLE`,
+    `CC_GROUND`, and `CC_HELI`, and no-heli schedule lanes include only
+    `CC_CABLE` and `CC_GROUND`.
+  - [x] P15.5e Emit
+    `planning/tfl6_mp11_phase15_materialized_runtime_smoke_qa.{csv,json,md}`.
 - [ ] P15.6 Document publication, caveats, and replacement-candidate status
   (`#153`).
 - [ ] P15.7 Decide replacement-candidate readiness and close Phase 15 (`#154`).
@@ -1186,12 +1197,20 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    checksum `ok`, verified archive SHA256
    `fcf8d3615f8bba65419d1a401d818c5eb87e7d75d3aa6007cfa6ada773536362`
    against the manifest, unpacked the archive, and confirmed expected
-   all-system/no-heli runtime files are present. The next bounded task is P15.5
-   (`#152`): run direct launch plus all-system and no-heli scenario smoke from
-   the materialized archive.
+   all-system/no-heli runtime files are present. P15.5 (`#152`) is complete:
+   `scripts/build_p15_materialized_runtime_smoke_qa.py` inspected Patchworks
+   runs launched from the unpacked materialized archive payload and emitted
+   `planning/tfl6_mp11_phase15_materialized_runtime_smoke_qa.{csv,json,md}`.
+   Direct launch, all-system 200,000-iteration scenario smoke, and no-heli
+   200,000-iteration scenario smoke all passed. The all-system schedule has
+   `76,693` rows and includes `CC_CABLE`, `CC_GROUND`, and `CC_HELI`; the
+   no-heli schedule has `75,023` rows and includes only `CC_CABLE` and
+   `CC_GROUND`, with no forbidden `CC_HELI` treatment present. The next
+   bounded task is P15.6 (`#153`): document publication, caveats, exact
+   materialization/launch surfaces, and replacement-candidate status.
 
 Historical leading-edge notes below are retained for audit context only; the
-active next step is P15.5.
+active next step is P15.6.
 
 0. Phase 14 is active on branch
    `feature/tfl6-mp11-harvest-system-operability`. P14.1 (`#139`) is complete:
