@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-06-29T01:24:17.272510+00:00",
-  "row_count": 25,
-  "mp11_feature_count": 25,
-  "phase5_match_count": 25,
+  "generated_at_utc": "2026-06-29T02:01:16.111609+00:00",
+  "row_count": 27,
+  "mp11_feature_count": 27,
+  "phase5_match_count": 27,
   "phase5_match_status_counts": {
-    "same_bec_subzone_phase5_comparison": 25
+    "same_bec_subzone_phase5_comparison": 27
   },
   "comparison_class_counts": {
     "large_difference_review_required": 11,
-    "low_difference": 3,
+    "low_difference": 5,
     "moderate_difference_review_required": 11
   },
   "model_input_status_counts": {
-    "not_model_input": 25
+    "not_model_input": 27
   },
   "method": "Nearest Phase 5 future-managed comparison row selected only from the same BEC zone/subzone. Rows without a same-BEC/subzone comparison are blocked rather than falling back across BEC boundaries.",
   "records": [
@@ -66,7 +66,7 @@
       "age_curve_mean_delta": -219.431,
       "age_curve_rmse": 248.525,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -119,7 +119,7 @@
       "age_curve_mean_delta": -917.381,
       "age_curve_rmse": 1005.875,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -172,7 +172,7 @@
       "age_curve_mean_delta": 97.269,
       "age_curve_rmse": 117.464,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -225,7 +225,7 @@
       "age_curve_mean_delta": 60.197,
       "age_curve_rmse": 67.455,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -278,7 +278,7 @@
       "age_curve_mean_delta": -166.886,
       "age_curve_rmse": 214.303,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -331,7 +331,7 @@
       "age_curve_mean_delta": -227.414,
       "age_curve_rmse": 290.692,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -384,7 +384,7 @@
       "age_curve_mean_delta": -231.517,
       "age_curve_rmse": 262.005,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -437,7 +437,7 @@
       "age_curve_mean_delta": -4.558,
       "age_curve_rmse": 78.834,
       "comparison_class": "low_difference",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -490,7 +490,7 @@
       "age_curve_mean_delta": 280.789,
       "age_curve_rmse": 299.113,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -543,7 +543,7 @@
       "age_curve_mean_delta": -86.483,
       "age_curve_rmse": 125.28,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -596,7 +596,7 @@
       "age_curve_mean_delta": -83.114,
       "age_curve_rmse": 100.491,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -649,7 +649,7 @@
       "age_curve_mean_delta": -75.708,
       "age_curve_rmse": 156.641,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -702,7 +702,7 @@
       "age_curve_mean_delta": -49.361,
       "age_curve_rmse": 92.692,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -755,7 +755,7 @@
       "age_curve_mean_delta": 280.789,
       "age_curve_rmse": 299.113,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -808,7 +808,7 @@
       "age_curve_mean_delta": 5.431,
       "age_curve_rmse": 124.308,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -861,7 +861,7 @@
       "age_curve_mean_delta": -166.803,
       "age_curve_rmse": 211.176,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -914,7 +914,7 @@
       "age_curve_mean_delta": -52.417,
       "age_curve_rmse": 130.193,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -967,7 +967,7 @@
       "age_curve_mean_delta": 4.561,
       "age_curve_rmse": 75.529,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -1020,7 +1020,7 @@
       "age_curve_mean_delta": -557.589,
       "age_curve_rmse": 617.484,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -1073,7 +1073,7 @@
       "age_curve_mean_delta": -88.139,
       "age_curve_rmse": 110.168,
       "comparison_class": "moderate_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -1126,7 +1126,7 @@
       "age_curve_mean_delta": 221.669,
       "age_curve_rmse": 239.088,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -1179,7 +1179,7 @@
       "age_curve_mean_delta": -714.667,
       "age_curve_rmse": 778.639,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -1232,7 +1232,7 @@
       "age_curve_mean_delta": -76.361,
       "age_curve_rmse": 95.815,
       "comparison_class": "low_difference",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -1285,7 +1285,7 @@
       "age_curve_mean_delta": -76.361,
       "age_curve_rmse": 95.815,
       "comparison_class": "low_difference",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     },
     {
@@ -1338,7 +1338,113 @@
       "age_curve_mean_delta": -719.389,
       "age_curve_rmse": 784.456,
       "comparison_class": "large_difference_review_required",
-      "review_status": "p10r4e_comparison_review_required",
+      "review_status": "accepted_for_phase11_curve_handoff",
+      "model_input_status": "not_model_input"
+    },
+    {
+      "mp11_feature_id": 611403,
+      "mp11_au_code": "FMH01",
+      "mp11_curve_lane": "future_managed",
+      "mp11_thlb_area_ha": 939,
+      "mp11_bec_zone": "CWH",
+      "mp11_bec_subzone": "vm",
+      "canonical_au_id": "cwhvm2_hw_ba_l",
+      "canonical_stratum_code": "CWHvm2_HW+BA",
+      "canonical_species_combo": "HW+BA",
+      "canonical_mean_si": 13.79,
+      "canonical_median_si": 14.0,
+      "mp11_parsed_weighted_si": 14.23,
+      "tipsy_input_si": 14.0,
+      "tipsy_input_si_source": "canonical_top_n_au_vri_median_si",
+      "canonical_mean_si_abs_diff": 0.44,
+      "canonical_median_si_abs_diff": 0.23,
+      "mp11_species_combo": "HW+BA",
+      "mp11_weighted_si": 14.0,
+      "phase5_au_id": "cwhvm2_hw_ba_l",
+      "phase5_feature_id": 600123,
+      "phase5_stratum_code": "CWHvm2_HW+BA",
+      "phase5_species_combo": "HW+BA",
+      "phase5_mean_si": 13.790178,
+      "phase5_match_confidence": "medium",
+      "phase5_match_status": "same_bec_subzone_phase5_comparison",
+      "phase5_matched_legacy_au_code": 9510.0,
+      "species_overlap_ratio": 1.0,
+      "mean_si_abs_diff": 0.21,
+      "mp11_max_volume": 1340.4,
+      "phase5_max_volume": 1340.4,
+      "max_volume_delta": 0.0,
+      "max_volume_pct_delta": 0.0,
+      "mp11_age_at_max_volume": 350,
+      "phase5_age_at_max_volume": 350,
+      "mp11_volume_age_40": 127.4,
+      "phase5_volume_age_40": 127.4,
+      "mp11_volume_age_60": 330.5,
+      "phase5_volume_age_60": 330.5,
+      "mp11_volume_age_80": 518.3,
+      "phase5_volume_age_80": 518.3,
+      "mp11_volume_age_100": 670.5,
+      "phase5_volume_age_100": 670.5,
+      "volume_age_100_delta": 0.0,
+      "volume_age_100_pct_delta": 0.0,
+      "mp11_volume_age_350": 1340.4,
+      "phase5_volume_age_350": 1340.4,
+      "age_curve_mean_delta": 0.0,
+      "age_curve_rmse": 0.0,
+      "comparison_class": "low_difference",
+      "review_status": "accepted_for_phase11_curve_handoff",
+      "model_input_status": "not_model_input"
+    },
+    {
+      "mp11_feature_id": 611413,
+      "mp11_au_code": "FMH22",
+      "mp11_curve_lane": "future_managed",
+      "mp11_thlb_area_ha": 216,
+      "mp11_bec_zone": "CWH",
+      "mp11_bec_subzone": "vm",
+      "canonical_au_id": "cwhvm2_hw_ba_l",
+      "canonical_stratum_code": "CWHvm2_HW+BA",
+      "canonical_species_combo": "HW+BA",
+      "canonical_mean_si": 13.79,
+      "canonical_median_si": 14.0,
+      "mp11_parsed_weighted_si": 14.23,
+      "tipsy_input_si": 14.0,
+      "tipsy_input_si_source": "canonical_top_n_au_vri_median_si",
+      "canonical_mean_si_abs_diff": 0.44,
+      "canonical_median_si_abs_diff": 0.23,
+      "mp11_species_combo": "HW+BA",
+      "mp11_weighted_si": 14.0,
+      "phase5_au_id": "cwhvm2_hw_ba_l",
+      "phase5_feature_id": 600123,
+      "phase5_stratum_code": "CWHvm2_HW+BA",
+      "phase5_species_combo": "HW+BA",
+      "phase5_mean_si": 13.790178,
+      "phase5_match_confidence": "medium",
+      "phase5_match_status": "same_bec_subzone_phase5_comparison",
+      "phase5_matched_legacy_au_code": 9510.0,
+      "species_overlap_ratio": 1.0,
+      "mean_si_abs_diff": 0.21,
+      "mp11_max_volume": 1340.4,
+      "phase5_max_volume": 1340.4,
+      "max_volume_delta": 0.0,
+      "max_volume_pct_delta": 0.0,
+      "mp11_age_at_max_volume": 350,
+      "phase5_age_at_max_volume": 350,
+      "mp11_volume_age_40": 127.4,
+      "phase5_volume_age_40": 127.4,
+      "mp11_volume_age_60": 330.5,
+      "phase5_volume_age_60": 330.5,
+      "mp11_volume_age_80": 518.3,
+      "phase5_volume_age_80": 518.3,
+      "mp11_volume_age_100": 670.5,
+      "phase5_volume_age_100": 670.5,
+      "volume_age_100_delta": 0.0,
+      "volume_age_100_pct_delta": 0.0,
+      "mp11_volume_age_350": 1340.4,
+      "phase5_volume_age_350": 1340.4,
+      "age_curve_mean_delta": 0.0,
+      "age_curve_rmse": 0.0,
+      "comparison_class": "low_difference",
+      "review_status": "accepted_for_phase11_curve_handoff",
       "model_input_status": "not_model_input"
     }
   ]

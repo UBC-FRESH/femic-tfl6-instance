@@ -25,7 +25,7 @@ OUTPUT_MD = INSTANCE_ROOT / "planning" / "tfl6_mp11_managed_curve_comparison.md"
 
 BLOCKED_COMPARISON_CLASS = "no_same_bec_phase5_comparison_available"
 BLOCKED_REVIEW_STATUS = "blocked_bec_mismatch_no_valid_comparison"
-COMPARISON_REVIEW_STATUS = "p10r4e_comparison_review_required"
+COMPARISON_REVIEW_STATUS = "accepted_for_phase11_curve_handoff"
 MODEL_INPUT_STATUS = "not_model_input"
 
 BTC_SPECIES_TO_CANONICAL = {
@@ -97,6 +97,15 @@ def _phase5_species_set(species_combo: Any) -> set[str]:
         for part in str(species_combo).replace("/", "+").split("+")
         if part.strip()
     }
+
+
+def _metadata_species(row: pd.Series) -> tuple[list[str], float]:
+    species = [
+        _clean_species(part)
+        for part in str(row["canonical_species_combo"]).replace("/", "+").split("+")
+        if part.strip()
+    ]
+    return species, _float_or_nan(row["tipsy_input_si"])
 
 
 def _value_at_age(curve: pd.DataFrame, age: int) -> float:
@@ -207,8 +216,11 @@ def build_comparison() -> pd.DataFrame:
     rows: list[dict[str, object]] = []
     for feature_id, mp11_curve in sorted(mp11_by_feature.items()):
         metadata = mp11_curve.iloc[0]
-        handoff_row = handoff_by_feature[feature_id]
-        species, mean_si = _candidate_species(handoff_row)
+        handoff_row = handoff_by_feature.get(feature_id)
+        if handoff_row is None:
+            species, mean_si = _metadata_species(metadata)
+        else:
+            species, mean_si = _candidate_species(handoff_row)
         phase5_match = _select_phase5_match(
             candidate=metadata,
             candidate_species=species,
@@ -415,8 +427,9 @@ def write_outputs(comparison: pd.DataFrame) -> None:
         "",
         "This P10R.4e artifact compares the generated MP11 Table 57 future-managed",
         "candidate curves against the nearest available Phase 5 future-managed",
-        "fallback curves. It is a review surface only and does not promote any",
-        "curve to model input.",
+        "fallback curves. The 27 Table 57 managed curves are accepted for the",
+        "Phase 11 curve handoff, but this artifact does not itself write model",
+        "input tables.",
         "",
         "## Status",
         "",
@@ -473,8 +486,9 @@ def write_outputs(comparison: pd.DataFrame) -> None:
             "",
             "- Phase 5 curves are comparison/fallback evidence, not MP11-equivalent",
             "  curves.",
-            "- Generated MP11 curves remain `not_model_input` until reviewed and",
-            "  explicitly accepted.",
+            "- Generated MP11 curves are accepted for the Phase 11 curve handoff.",
+            "- They remain `not_model_input` here until Phase 11 writes explicit",
+            "  model-input tables, ForestModel XML, and Patchworks packages.",
             "- Downstream plots, model-input tables, ForestModel XML, and Patchworks",
             "  packages must not consume these rows without a later promotion step.",
             "",

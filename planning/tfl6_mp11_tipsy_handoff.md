@@ -9,7 +9,7 @@ not run curve-generation tools and does not promote any row to model input.
 ## Summary
 
 - Parsed input rows: `141`
-- Handoff candidate rows: `25`
+- BTC handoff rows: `25`
 - Handoff CSV: `planning\tfl6_mp11_tipsy_handoff.csv`
 - Handoff map CSV: `planning\tfl6_mp11_tipsy_handoff_map.csv`
 
@@ -21,7 +21,7 @@ not run curve-generation tools and does not promote any row to model input.
 | Table 54 | review_required_parser_warning | 6 |
 | Table 55 | blocked_missing_public_au_to_bec_mapping | 32 |
 | Table 55 | review_required_parser_warning | 2 |
-| Table 57 | blocked_no_canonical_top_n_au_for_bec | 2 |
+| Table 57 | candidate_for_canonical_au_curve_reuse | 2 |
 | Table 57 | candidate_for_curve_generation | 25 |
 | Table 57 | review_required_parser_warning | 1 |
 
@@ -29,8 +29,9 @@ not run curve-generation tools and does not promote any row to model input.
 
 - OAF: MP11 narrative OAF defaults: OAF1=15% and OAF2=5%, emitted as BTC factors 0.85 and 0.95.
 - Regeneration delay: Future managed candidate rows use one-year regeneration delay from MP11 Section 8.2.7.1.
-- Site index: Candidate BTC rows use the matched canonical top-N AU VRI median SI as the TIPSY site-index input for every planted species SI column. Parsed MP11 per-species SI values are retained only as provenance.
-- Join boundary: Table 57 rows can produce standalone future-managed curve-generation candidates. They must first map to a canonical top-N FEMIC AU. Tables 54/55 remain blocked pending a public MP11 existing/recent AU-code to BEC/site-series mapping before BatchTIPSY handoff.
+- BEC input: Candidate BTC rows use the target canonical top-N AU VRI BEC zone and subzone. MP11 row-code decoders can help find a target AU, but the emitted TIPSY BEC input is always read back from the target AU.
+- Site index: Candidate BTC rows use the target canonical top-N AU VRI median SI as the TIPSY site-index input for every planted species SI column. Parsed MP11 per-species SI values are retained only as provenance.
+- Join boundary: Table 57 rows must map to canonical top-N FEMIC AUs. Rows with valid standalone MP11 parameters are emitted to BTC. Rows that map to a canonical AU but would create invalid duplicate row-derived TIPSY curves reuse the existing canonical AU TIPSY curve instead. Tables 54/55 remain blocked pending a public MP11 existing/recent AU-code to BEC/site-series mapping before BatchTIPSY handoff.
 
 ## Candidate Rows
 
@@ -61,6 +62,8 @@ not run curve-generation tools and does not promote any row to model input.
 | 611373 | Fvm207 | future_managed | CWH | vm | cwhvm2_hw_cw_h | 26.0 | 26.4 | 26.0 | 0.4 | 1200 | 100 | 70 | candidate_for_curve_generation |
 | 611383 | Fvm208 | future_managed | CWH | vm | cwhvm2_hw_cw_h | 26.0 | 26.4 | 26.0 | 0.4 | 1200 | 100 | 192 | candidate_for_curve_generation |
 | 611393 | Fvm211 | future_managed | CWH | vm | cwhvm1_hw_cw_l | 16.0 | 15.78 | 16.0 | 0.22 | 1200 | 100 | 245 | candidate_for_curve_generation |
+| 611403 | FMH01 | future_managed | CWH | vm | cwhvm2_hw_ba_l | 14.0 | 14.23 | 14.0 | 0.23 | 1200 | 100 | 939 | candidate_for_canonical_au_curve_reuse |
+| 611413 | FMH22 | future_managed | CWH | vm | cwhvm2_hw_ba_l | 14.0 | 14.23 | 14.0 | 0.23 | 800 | 100 | 216 | candidate_for_canonical_au_curve_reuse |
 
 ## Blocked Or Review-Required Rows
 
@@ -99,8 +102,13 @@ not run curve-generation tools and does not promote any row to model input.
 
 ## Use Boundary
 
-- All rows remain `not_model_input`.
-- P10R.4 may run only the candidate rows unless a maintainer accepts a 
-  repair or mapping for blocked rows.
+- Table 57 candidate rows are accepted for the Phase 11 curve handoff.
+- `candidate_for_curve_generation` rows are emitted to BTC.
+- `candidate_for_canonical_au_curve_reuse` rows reuse the existing
+  canonical AU TIPSY curve and are not emitted as duplicate BTC rows.
+- All rows remain `not_model_input` until Phase 11 writes explicit
+  model-input tables.
+- P10R.4 may run only the candidate rows unless a maintainer accepts a
+  repair or mapping for deferred rows.
 - Existing and recent managed rows require a public MP11 AU-code to 
   BEC/site-series mapping before curve generation.

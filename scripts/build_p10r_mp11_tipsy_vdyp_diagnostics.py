@@ -40,7 +40,7 @@ MANIFEST_MD_PATH = (
     INSTANCE_ROOT / "planning" / "tfl6_mp11_tipsy_vdyp_diagnostic_manifest.md"
 )
 
-REVIEW_STATUS = "p10r5_tipsy_vdyp_diagnostic_review_required"
+REVIEW_STATUS = "accepted_for_phase11_curve_handoff"
 BLOCKED_REVIEW_STATUS = "blocked_bec_mismatch_no_valid_comparison"
 BLOCKED_DIAGNOSTIC_CLASS = "no_same_bec_vdyp_comparison_available"
 VDYP_REVIEW_STATUS = "p10r5_vdyp_curve_slice_for_diagnostic"
@@ -462,8 +462,8 @@ def _write_markdown(manifest: pd.DataFrame, vdyp_slice: pd.DataFrame) -> None:
         "",
         "## Purpose",
         "",
-        "This artifact builds AU-wise diagnostic overlays between the tentatively",
-        "passed MP11 Table 57 TIPSY managed curves and the matching public VDYP",
+        "This artifact builds AU-wise diagnostic overlays between the accepted",
+        "Phase 11 handoff MP11 Table 57 TIPSY managed curves and the matching public VDYP",
         "natural curves from the existing FEMIC `smoothed_bin_pchip` first-growth",
         "curve table.",
         "",
@@ -491,11 +491,10 @@ def _write_markdown(manifest: pd.DataFrame, vdyp_slice: pd.DataFrame) -> None:
         "",
         "## Use Boundary",
         "",
-        "- TIPSY-vs-VDYP differences are diagnostic evidence for review, not",
-        "  automatic rejection or acceptance.",
-        "- The MP11 TIPSY curves remain only tentatively passed for sequencing.",
-        "- Phase 11 must explicitly promote curve surfaces before model-input or",
-        "  ForestModel XML work consumes them.",
+        "- TIPSY-vs-VDYP differences are diagnostic evidence attached to the",
+        "  accepted Phase 11 curve handoff.",
+        "- Phase 11 must explicitly materialize curve surfaces before model-input",
+        "  tables or ForestModel XML consume them.",
         "",
     ]
     MANIFEST_MD_PATH.write_text("\n".join(lines), encoding="utf-8")

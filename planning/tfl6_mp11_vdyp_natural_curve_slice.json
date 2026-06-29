@@ -1,16 +1,16 @@
 {
-  "generated_at_utc": "2026-06-29T01:24:46+00:00",
+  "generated_at_utc": "2026-06-29T02:01:44+00:00",
   "records_policy": "The full age-by-curve review slice is tracked in the CSV. This JSON intentionally stores only the compact AU index.",
   "source_vdyp_curve_table": "planning/tfl6_first_growth_au_curves.csv",
   "source_comparison_table": "planning/tfl6_mp11_managed_curve_comparison.csv",
-  "row_count": 7475,
-  "mp11_candidate_count": 25,
-  "vdyp_au_count": 17,
+  "row_count": 8073,
+  "mp11_candidate_count": 27,
+  "vdyp_au_count": 18,
   "review_status_counts": {
-    "p10r5_vdyp_curve_slice_for_diagnostic": 7475
+    "p10r5_vdyp_curve_slice_for_diagnostic": 8073
   },
   "model_input_status_counts": {
-    "not_model_input": 7475
+    "not_model_input": 8073
   },
   "vdyp_au_index": [
     {
@@ -206,6 +206,19 @@
       "source_vdyp_method": "smoothed_bin_pchip",
       "source_vdyp_accepted": true,
       "source_stand_count": 99,
+      "natural_curve_status": "selected_curve_family_available"
+    },
+    {
+      "vdyp_au_id": "cwhvm2_hw_ba_l",
+      "mp11_candidate_count": 2,
+      "mp11_au_codes": "FMH01;FMH22",
+      "curve_point_count": 598,
+      "age_min": 1,
+      "age_max": 299,
+      "max_vdyp_volume": 894.879051,
+      "source_vdyp_method": "smoothed_bin_pchip",
+      "source_vdyp_accepted": true,
+      "source_stand_count": 461,
       "natural_curve_status": "selected_curve_family_available"
     },
     {

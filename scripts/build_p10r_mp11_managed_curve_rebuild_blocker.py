@@ -19,6 +19,7 @@ INSTANCE_ROOT = Path(__file__).resolve().parents[1]
 PARENT_REPO_ROOT = INSTANCE_ROOT.parents[1]
 HANDOFF_CSV = INSTANCE_ROOT / "planning" / "tfl6_mp11_tipsy_handoff.csv"
 HANDOFF_MAP_CSV = INSTANCE_ROOT / "planning" / "tfl6_mp11_tipsy_handoff_map.csv"
+PHASE5_CURVES_CSV = INSTANCE_ROOT / "planning" / "tfl6_tipsy_managed_curves.csv"
 OUTPUT_CSV = INSTANCE_ROOT / "planning" / "tfl6_mp11_managed_curve_rebuild.csv"
 OUTPUT_JSON = INSTANCE_ROOT / "planning" / "tfl6_mp11_managed_curve_rebuild.json"
 OUTPUT_MD = INSTANCE_ROOT / "planning" / "tfl6_mp11_managed_curve_rebuild.md"
@@ -37,6 +38,10 @@ BTC_MANIFEST_PATH = (
     / "logs"
     / "btc_manifest-p10r_mp11_candidate.json"
 )
+
+GENERATE_STATUS = "candidate_for_curve_generation"
+REUSE_STATUS = "candidate_for_canonical_au_curve_reuse"
+ACCEPTED_STATUSES = {GENERATE_STATUS, REUSE_STATUS}
 
 
 def _portable_path(path: str | Path) -> str:
@@ -205,14 +210,86 @@ def _parse_btc_output(candidate_map: pd.DataFrame) -> pd.DataFrame | None:
     )
 
 
+def _reuse_canonical_curves(reuse_map: pd.DataFrame) -> pd.DataFrame:
+    if reuse_map.empty:
+        return pd.DataFrame()
+    phase5 = pd.read_csv(PHASE5_CURVES_CSV)
+    rows: list[dict[str, object]] = []
+    metadata_columns = [
+        "feature_id",
+        "row_id",
+        "source_table",
+        "curve_lane",
+        "mp11_au_code",
+        "bec_zone",
+        "bec_subzone",
+        "canonical_au_id",
+        "canonical_stratum_code",
+        "canonical_species_combo",
+        "canonical_mean_si",
+        "canonical_median_si",
+        "mp11_parsed_weighted_si",
+        "tipsy_input_si",
+        "tipsy_input_si_source",
+        "mp11_weighted_si",
+        "canonical_mean_si_abs_diff",
+        "canonical_median_si_abs_diff",
+        "sph",
+        "species_count",
+        "species_percent_total",
+        "thlb_area_ha",
+        "parse_confidence",
+        "source_anchor",
+    ]
+    for _, map_row in reuse_map.iterrows():
+        source_curve = phase5[
+            phase5["au_id"].astype(str).eq(str(map_row["canonical_au_id"]))
+            & phase5["curve_lane"].astype(str).eq("future_managed")
+        ].copy()
+        if source_curve.empty:
+            raise RuntimeError(
+                "Missing canonical future-managed TIPSY curve for "
+                f"{map_row['mp11_au_code']} -> {map_row['canonical_au_id']}"
+            )
+        for _, curve_row in source_curve.sort_values("age").iterrows():
+            record = {
+                "feature_id": int(map_row["feature_id"]),
+                "mp11_au_code": map_row["mp11_au_code"],
+                "row_id": map_row["row_id"],
+                "source_table": map_row["source_table"],
+                "curve_lane": map_row["curve_lane"],
+                "age": int(curve_row["age"]),
+                "treated_volume": round(float(curve_row["treated_volume"]), 6),
+                "merch_conifer_volume": round(float(curve_row["treated_volume"]), 6),
+                "merch_deciduous_volume": 0.0,
+                "model_input_status": "not_model_input",
+            }
+            for column in metadata_columns:
+                if column not in record:
+                    record[column] = map_row[column]
+            record["curve_source"] = "canonical_phase5_future_managed_curve_reuse"
+            record["source_phase5_feature_id"] = int(curve_row["feature_id"])
+            rows.append(record)
+    return pd.DataFrame(rows)
+
+
 def build_blocker() -> tuple[pd.DataFrame, dict[str, object]]:
     handoff = pd.read_csv(HANDOFF_CSV)
     handoff_map = pd.read_csv(HANDOFF_MAP_CSV)
     found = _existing_executables()
-    candidate_map = handoff_map[
-        handoff_map["handoff_status"] == "candidate_for_curve_generation"
+    candidate_map = handoff_map[handoff_map["handoff_status"] == GENERATE_STATUS].copy()
+    reuse_map = handoff_map[handoff_map["handoff_status"] == REUSE_STATUS].copy()
+    accepted_map = handoff_map[
+        handoff_map["handoff_status"].isin(ACCEPTED_STATUSES)
     ].copy()
-    curves = _parse_btc_output(candidate_map)
+    generated_curves = _parse_btc_output(candidate_map)
+    reused_curves = _reuse_canonical_curves(reuse_map)
+    curve_parts = [
+        part
+        for part in [generated_curves, reused_curves]
+        if part is not None and not part.empty
+    ]
+    curves = pd.concat(curve_parts, ignore_index=True) if curve_parts else None
     manifest = _load_btc_manifest()
     error_count = _btc_error_count()
     rows = []
@@ -220,9 +297,9 @@ def build_blocker() -> tuple[pd.DataFrame, dict[str, object]]:
         status = "generated_curve_output_inspected"
         note = (
             "FEMIC BTC generated real MP11 candidate outputs from the P10R.3 "
-            "handoff. The parsed curves are retained as review surfaces only; "
-            "they are not model inputs and have not yet been compared against "
-            "Phase 5 fallback curves."
+            "handoff. The parsed curves are accepted for the Phase 11 curve "
+            "handoff; they are not model inputs until Phase 11 writes explicit "
+            "model-input tables."
         )
     elif found:
         status = "ready_for_manual_tool_execution_review"
@@ -246,9 +323,21 @@ def build_blocker() -> tuple[pd.DataFrame, dict[str, object]]:
         if curves is not None
         else {}
     )
-    for _, row in candidate_map.iterrows():
+    for _, row in accepted_map.iterrows():
         feature_id = int(row["feature_id"])
         curve = curves_by_feature.get(feature_id)
+        row_status = (
+            "canonical_au_curve_reused"
+            if row["handoff_status"] == REUSE_STATUS
+            else status
+        )
+        row_note = (
+            "This MP11 row maps to the canonical target AU but its row-derived "
+            "BTC parameters produced an invalid duplicate curve. The accepted "
+            "curve is the existing canonical future-managed AU TIPSY curve."
+            if row["handoff_status"] == REUSE_STATUS
+            else note
+        )
         output_curve_rows = 0 if curve is None else int(len(curve))
         max_treated_volume = None
         age_at_max_treated_volume = None
@@ -267,8 +356,8 @@ def build_blocker() -> tuple[pd.DataFrame, dict[str, object]]:
                 "source_table": row["source_table"],
                 "curve_lane": row["curve_lane"],
                 "handoff_status": row["handoff_status"],
-                "curve_generation_status": status,
-                "curve_generation_note": note,
+                "curve_generation_status": row_status,
+                "curve_generation_note": row_note,
                 "output_curve_rows": output_curve_rows,
                 "max_treated_volume": max_treated_volume,
                 "age_at_max_treated_volume": age_at_max_treated_volume,
@@ -323,8 +412,10 @@ def build_blocker() -> tuple[pd.DataFrame, dict[str, object]]:
         "generated_at_utc": datetime.now(UTC).isoformat(),
         "input_handoff_csv": str(HANDOFF_CSV.relative_to(INSTANCE_ROOT)),
         "input_handoff_map_csv": str(HANDOFF_MAP_CSV.relative_to(INSTANCE_ROOT)),
-        "handoff_candidate_count": int(len(handoff)),
-        "blocked_or_review_rows": int(len(handoff_map) - len(handoff)),
+        "btc_handoff_row_count": int(len(handoff)),
+        "accepted_curve_count": int(len(accepted_map)),
+        "canonical_curve_reuse_count": int(len(reuse_map)),
+        "blocked_or_review_rows": int(len(handoff_map) - len(accepted_map)),
         "searched_executable_candidates": [
             f"explicit --btc-exe / {DEFAULT_BATCHTIPSY_EXE_ENV}",
             str(DEFAULT_BATCHTIPSY_WINDOWS_EXE),
@@ -351,13 +442,14 @@ def build_blocker() -> tuple[pd.DataFrame, dict[str, object]]:
             0 if curves is None else int(curves["feature_id"].nunique())
         ),
         "accepted_next_action": (
-            "Compare the parsed P10R.4 candidate curves against Phase 5 fallback "
-            "curves where useful, then keep any promotion decision review-gated."
+            "Use the accepted P10R managed curves as the Phase 11 curve-handoff "
+            "surface, then materialize explicit model-input tables before XML "
+            "or Patchworks consumption."
         ),
         "use_boundary": (
-            "These artifacts are review surfaces. They are generated MP11 "
-            "candidate curves, but they remain not_model_input until reviewed "
-            "and explicitly accepted."
+            "These artifacts are the accepted Phase 11 curve-handoff surface. "
+            "They remain not_model_input until Phase 11 writes explicit "
+            "model-input tables."
         ),
     }
     return output, summary
@@ -398,7 +490,9 @@ def write_outputs(output: pd.DataFrame, summary: dict[str, object]) -> None:
         "",
         "## Status",
         "",
-        f"- Handoff candidate rows: `{summary['handoff_candidate_count']}`",
+        f"- BTC handoff rows: `{summary['btc_handoff_row_count']}`",
+        f"- Accepted curve count: `{summary['accepted_curve_count']}`",
+        f"- Canonical curve reuse count: `{summary['canonical_curve_reuse_count']}`",
         f"- Blocked or review rows outside handoff: `{summary['blocked_or_review_rows']}`",
         f"- Curve-generation status: `{summary['curve_generation_status']}`",
         f"- Found executables/runners: `{len(summary['found_executables_or_runners'])}`",

@@ -4,13 +4,14 @@
 
 This P10R.4e artifact compares the generated MP11 Table 57 future-managed
 candidate curves against the nearest available Phase 5 future-managed
-fallback curves. It is a review surface only and does not promote any
-curve to model input.
+fallback curves. The 27 Table 57 managed curves are accepted for the
+Phase 11 curve handoff, but this artifact does not itself write model
+input tables.
 
 ## Status
 
-- MP11 candidate rows compared: `25`
-- Phase 5 comparison matches: `25`
+- MP11 candidate rows compared: `27`
+- Phase 5 comparison matches: `27`
 - Model-input status: `not_model_input`
 
 ## Method
@@ -20,7 +21,7 @@ Nearest Phase 5 future-managed comparison row selected only from the same BEC zo
 ## Comparison Classes
 
 - `large_difference_review_required`: `11`
-- `low_difference`: `3`
+- `low_difference`: `5`
 - `moderate_difference_review_required`: `11`
 
 ## Largest Absolute Max-Volume Differences
@@ -33,8 +34,8 @@ Nearest Phase 5 future-managed comparison row selected only from the same BEC zo
 | Fvm131         | CW+HW+DR+PL+SS       | cwhvm1_hw_dr_l  | HW+DR                  |                   0.4   |              0.629 |            1077.1 |              1977.6 |                -45.535 | large_difference_review_required    |
 | Fvh113         | CW+YC+HW+PL          | cwhvh1_cw_hw_m  | CW+HW                  |                   0.5   |              0.279 |             750   |              1091.9 |                -31.312 | large_difference_review_required    |
 | Fvh101         | CW+YC+HW             | cwhvh1_cw_hw_m  | CW+HW                  |                   0.667 |              0.279 |             767.3 |              1091.9 |                -29.728 | large_difference_review_required    |
-| Fvm106s        | CW+HW                | cwhvm1_cw_hw_h  | CW+HW                  |                   1     |              0.791 |            1414.9 |              1091.9 |                 29.581 | large_difference_review_required    |
 | Fvm101s        | CW+HW                | cwhvm1_cw_hw_h  | CW+HW                  |                   1     |              0.791 |            1414.9 |              1091.9 |                 29.581 | large_difference_review_required    |
+| Fvm106s        | CW+HW                | cwhvm1_cw_hw_h  | CW+HW                  |                   1     |              0.791 |            1414.9 |              1091.9 |                 29.581 | large_difference_review_required    |
 | Fvm201         | HW+YC+BA+CW+FD       | cwhvm1_cw_hw_h  | CW+HW                  |                   0.4   |              0.791 |            1404.5 |              1091.9 |                 28.629 | large_difference_review_required    |
 | Fvh108         | SS+HW+CW+DR+BA       | cwhvh1_hw_cw_h  | HW+CW                  |                   0.4   |              0.773 |            1382.2 |              1873.1 |                -26.208 | large_difference_review_required    |
 | Fvh106         | CW+YC+HW+SS+BA       | cwhvh1_hw_ba_h  | HW+BA                  |                   0.4   |              0.288 |            1574.5 |              1977.6 |                -20.383 | moderate_difference_review_required |
@@ -45,29 +46,30 @@ Nearest Phase 5 future-managed comparison row selected only from the same BEC zo
 
 ## Review Rows
 
-| mp11_au_code   | phase5_au_id   | phase5_match_confidence   |   max_volume_delta |   max_volume_pct_delta |   volume_age_100_delta |   volume_age_100_pct_delta |   age_curve_rmse | comparison_class                    |
-|:---------------|:---------------|:--------------------------|-------------------:|-----------------------:|-----------------------:|---------------------------:|-----------------:|:------------------------------------|
-| Fvm101s        | cwhvm1_cw_hw_h | medium                    |              323   |                 29.581 |                  324.8 |                     51.572 |          299.113 | large_difference_review_required    |
-| Fvm106s        | cwhvm1_cw_hw_h | medium                    |              323   |                 29.581 |                  324.8 |                     51.572 |          299.113 | large_difference_review_required    |
-| Fvm201         | cwhvm1_cw_hw_h | medium                    |              312.6 |                 28.629 |                  213   |                     33.82  |          239.088 | large_difference_review_required    |
-| Fvh104         | cwhvh1_hw_ss_m | medium                    |               -6   |                 -0.448 |                  169.2 |                     25.235 |          117.464 | large_difference_review_required    |
-| Fvh108         | cwhvh1_hw_cw_h | high                      |             -490.9 |                -26.208 |                 -110.1 |                    -10.241 |          290.692 | large_difference_review_required    |
-| Fvh101         | cwhvh1_cw_hw_m | medium                    |             -324.6 |                -29.728 |                 -165   |                    -26.199 |          248.525 | large_difference_review_required    |
-| Fvh113         | cwhvh1_cw_hw_m | medium                    |             -341.9 |                -31.312 |                 -174.1 |                    -27.644 |          262.005 | large_difference_review_required    |
-| Fvm131         | cwhvm1_hw_dr_l | low                       |             -900.5 |                -45.535 |                 -434.9 |                    -39.368 |          617.484 | large_difference_review_required    |
-| Fvm203         | cwhvm1_hw_cw_l | low                       |            -1011.3 |                -53.991 |                 -651.3 |                    -60.58  |          778.639 | large_difference_review_required    |
-| Fvm211         | cwhvm1_hw_cw_l | low                       |            -1025.6 |                -54.754 |                 -652.3 |                    -60.673 |          784.456 | large_difference_review_required    |
-| Fvh103         | cwhvh1_hw_cw_l | fallback_review_required  |            -1331   |                -71.059 |                 -796.1 |                    -74.049 |         1005.88  | large_difference_review_required    |
-| Fvm101         | cwhvm2_ba_hw_h | medium                    |             -159.9 |                 -8.7   |                   84.7 |                      8.203 |           78.834 | low_difference                      |
-| Fvm207         | cwhvm2_hw_cw_h | high                      |             -185   |                 -9.877 |                  -30.6 |                     -2.846 |           95.815 | low_difference                      |
-| Fvm208         | cwhvm2_hw_cw_h | high                      |             -185   |                 -9.877 |                  -30.6 |                     -2.846 |           95.815 | low_difference                      |
-| Fvh104s        | cwhvh1_cw_hw_h | medium                    |               44   |                  4.03  |                   86.9 |                     13.798 |           67.455 | moderate_difference_review_required |
+| mp11_au_code   | phase5_au_id   | phase5_match_confidence   |   max_volume_delta |   max_volume_pct_delta |   volume_age_100_delta |   volume_age_100_pct_delta |   age_curve_rmse | comparison_class                 |
+|:---------------|:---------------|:--------------------------|-------------------:|-----------------------:|-----------------------:|---------------------------:|-----------------:|:---------------------------------|
+| Fvm101s        | cwhvm1_cw_hw_h | medium                    |              323   |                 29.581 |                  324.8 |                     51.572 |          299.113 | large_difference_review_required |
+| Fvm106s        | cwhvm1_cw_hw_h | medium                    |              323   |                 29.581 |                  324.8 |                     51.572 |          299.113 | large_difference_review_required |
+| Fvm201         | cwhvm1_cw_hw_h | medium                    |              312.6 |                 28.629 |                  213   |                     33.82  |          239.088 | large_difference_review_required |
+| Fvh104         | cwhvh1_hw_ss_m | medium                    |               -6   |                 -0.448 |                  169.2 |                     25.235 |          117.464 | large_difference_review_required |
+| Fvh108         | cwhvh1_hw_cw_h | high                      |             -490.9 |                -26.208 |                 -110.1 |                    -10.241 |          290.692 | large_difference_review_required |
+| Fvh101         | cwhvh1_cw_hw_m | medium                    |             -324.6 |                -29.728 |                 -165   |                    -26.199 |          248.525 | large_difference_review_required |
+| Fvh113         | cwhvh1_cw_hw_m | medium                    |             -341.9 |                -31.312 |                 -174.1 |                    -27.644 |          262.005 | large_difference_review_required |
+| Fvm131         | cwhvm1_hw_dr_l | low                       |             -900.5 |                -45.535 |                 -434.9 |                    -39.368 |          617.484 | large_difference_review_required |
+| Fvm203         | cwhvm1_hw_cw_l | low                       |            -1011.3 |                -53.991 |                 -651.3 |                    -60.58  |          778.639 | large_difference_review_required |
+| Fvm211         | cwhvm1_hw_cw_l | low                       |            -1025.6 |                -54.754 |                 -652.3 |                    -60.673 |          784.456 | large_difference_review_required |
+| Fvh103         | cwhvh1_hw_cw_l | fallback_review_required  |            -1331   |                -71.059 |                 -796.1 |                    -74.049 |         1005.88  | large_difference_review_required |
+| FMH01          | cwhvm2_hw_ba_l | medium                    |                0   |                  0     |                    0   |                      0     |            0     | low_difference                   |
+| FMH22          | cwhvm2_hw_ba_l | medium                    |                0   |                  0     |                    0   |                      0     |            0     | low_difference                   |
+| Fvm101         | cwhvm2_ba_hw_h | medium                    |             -159.9 |                 -8.7   |                   84.7 |                      8.203 |           78.834 | low_difference                   |
+| Fvm207         | cwhvm2_hw_cw_h | high                      |             -185   |                 -9.877 |                  -30.6 |                     -2.846 |           95.815 | low_difference                   |
 
 ## Use Boundary
 
 - Phase 5 curves are comparison/fallback evidence, not MP11-equivalent
   curves.
-- Generated MP11 curves remain `not_model_input` until reviewed and
-  explicitly accepted.
+- Generated MP11 curves are accepted for the Phase 11 curve handoff.
+- They remain `not_model_input` here until Phase 11 writes explicit
+  model-input tables, ForestModel XML, and Patchworks packages.
 - Downstream plots, model-input tables, ForestModel XML, and Patchworks
   packages must not consume these rows without a later promotion step.

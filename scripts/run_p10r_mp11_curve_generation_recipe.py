@@ -41,6 +41,10 @@ BTC_MANIFEST = (
 )
 LOCK_JSON = PLANNING_ROOT / "tfl6_mp11_curve_generation_recipe_lock.json"
 
+GENERATE_STATUS = "candidate_for_curve_generation"
+REUSE_STATUS = "candidate_for_canonical_au_curve_reuse"
+ACCEPTED_STATUSES = {GENERATE_STATUS, REUSE_STATUS}
+
 
 def _repo_path(path: Path) -> str:
     try:
@@ -139,23 +143,18 @@ def _validate() -> dict[str, Any]:
     if error_rows != 0:
         raise RuntimeError(f"BTC error rows present: {error_rows}")
 
-    candidate_map = handoff_map[
-        handoff_map["handoff_status"].eq("candidate_for_curve_generation")
+    candidate_map = handoff_map[handoff_map["handoff_status"].eq(GENERATE_STATUS)].copy()
+    reuse_map = handoff_map[handoff_map["handoff_status"].eq(REUSE_STATUS)].copy()
+    accepted_map = handoff_map[
+        handoff_map["handoff_status"].isin(ACCEPTED_STATUSES)
     ].copy()
     if len(handoff) != len(candidate_map):
         raise RuntimeError(
-            f"Handoff row count {len(handoff)} does not match candidates {len(candidate_map)}"
+            f"BTC handoff row count {len(handoff)} does not match generation candidates "
+            f"{len(candidate_map)}"
         )
     if ((handoff["bec_zone"] == "MH") | (handoff["bec_subzone"] == "mm")).any():
         raise RuntimeError("BTC handoff contains MH/mm candidate rows")
-    if curves["mp11_au_code"].astype(str).str.startswith("FMH").any():
-        raise RuntimeError("Managed curves contain blocked FMH rows")
-    if comparison["mp11_au_code"].astype(str).str.startswith("FMH").any():
-        raise RuntimeError("Comparison contains blocked FMH rows")
-    if managed_plot_manifest["mp11_au_code"].astype(str).str.startswith("FMH").any():
-        raise RuntimeError("Managed plot manifest contains blocked FMH rows")
-    if manifest["mp11_au_code"].astype(str).str.startswith("FMH").any():
-        raise RuntimeError("Diagnostic manifest contains blocked FMH rows")
 
     si_mismatch_count = 0
     for _, map_row in candidate_map.iterrows():
@@ -172,6 +171,39 @@ def _validate() -> dict[str, Any]:
     if si_mismatch_count:
         raise RuntimeError(
             f"Found {si_mismatch_count} positive SI columns not equal to tipsy_input_si"
+        )
+
+    emitted = candidate_map.merge(
+        handoff[["feature_id", "bec_zone", "bec_subzone"]],
+        on="feature_id",
+        suffixes=("_map", "_btc"),
+        validate="one_to_one",
+    )
+    candidate_bec_mismatch_count = int(
+        (
+            emitted["bec_zone_map"].astype(str).str.upper()
+            != emitted["bec_zone_btc"].astype(str).str.upper()
+        ).sum()
+        + (
+            emitted["bec_subzone_map"].astype(str).str.lower()
+            != emitted["bec_subzone_btc"].astype(str).str.lower()
+        ).sum()
+    )
+    canonical_prefix = (
+        accepted_map["bec_zone"].astype(str) + accepted_map["bec_subzone"].astype(str)
+    ).str.lower()
+    target_bec_ok = [
+        str(au).lower().startswith(prefix)
+        for au, prefix in zip(
+            accepted_map["canonical_au_id"], canonical_prefix, strict=True
+        )
+    ]
+    target_bec_mismatch_count = target_bec_ok.count(False)
+    if candidate_bec_mismatch_count or target_bec_mismatch_count:
+        raise RuntimeError(
+            "Candidate BEC validation failed: "
+            f"emitted={candidate_bec_mismatch_count} "
+            f"target={target_bec_mismatch_count}"
         )
 
     check = comparison.merge(
@@ -221,8 +253,10 @@ def _validate() -> dict[str, Any]:
         )
 
     return {
-        "handoff_rows": int(len(handoff)),
+        "btc_handoff_rows": int(len(handoff)),
         "candidate_rows": int(len(candidate_map)),
+        "canonical_curve_reuse_rows": int(len(reuse_map)),
+        "accepted_curve_rows": int(len(accepted_map)),
         "btc_manifest_status": btc_manifest.get("status"),
         "btc_exit_code": int(btc_manifest.get("exit_code", -1)),
         "btc_error_rows": int(error_rows),
@@ -234,6 +268,8 @@ def _validate() -> dict[str, Any]:
         "diagnostic_manifest_rows": int(len(manifest)),
         "diagnostic_plot_count": int(manifest["plot_exists"].sum()),
         "bec_mismatch_count": int(bec_mismatch_count),
+        "candidate_bec_mismatch_count": int(candidate_bec_mismatch_count),
+        "target_bec_mismatch_count": int(target_bec_mismatch_count),
         "si_mismatch_count": int(si_mismatch_count),
         "diagnostic_class_counts": {
             str(key): int(value)
@@ -331,13 +367,14 @@ def run_recipe(*, dry_run: bool = False) -> dict[str, Any]:
         "recipe_version": 1,
         "generated_at_utc": datetime.now(UTC).isoformat(),
         "site_index_policy": (
-            "Use the matched canonical top-N AU VRI median SI as the TIPSY input "
+            "Use the target canonical top-N AU VRI median SI as the TIPSY input "
             "for every planted species SI column; retain parsed MP11 SI only as provenance."
         ),
         "au_policy": (
-            "Generate only candidate rows that map to canonical top-N L/M/H AUs by "
-            "BEC zone/subzone and species overlap. Rows without a canonical top-N "
-            "BEC match remain blocked."
+            "Generate only candidate rows that map to canonical top-N L/M/H AUs. "
+            "TIPSY BEC zone/subzone and SI are emitted from the target AU VRI "
+            "record, not from a standalone MP11 row-code decoder. Rows without "
+            "a canonical top-N target AU remain blocked."
         ),
         "commands": results,
         "validation": validation,
