@@ -782,8 +782,8 @@ public CDED steep-slope proxy in the P9RF THLB surface.
 
 Status: active. P12.1 launched the runtime-build issue tree and added the MP11
 candidate Matrix Builder config. P12.2 generated and inspected Matrix Builder
-tracks. P12.3 assembled the candidate runtime package. P12.4 is the next direct
-launch-smoke step.
+tracks. P12.3 assembled the candidate runtime package. P12.4 passed direct
+launch smoke. P12.5 is the next representative scenario-smoke step.
 
 Goal: run Matrix Builder, assemble an MP11-aligned Patchworks runtime package,
 and smoke-test direct launch plus representative base and sensitivity
@@ -814,7 +814,13 @@ candidate runtime package.
   - [x] P12.3a Build blocks/topology and launch surfaces under
     `models/tfl6_patchworks_model_mp11_candidate/`.
   - [x] P12.3b Record runtime lineage and candidate package manifest.
-- [ ] P12.4 Smoke-test direct Patchworks launch (`#117`).
+- [x] P12.4 Smoke-test direct Patchworks launch (`#117`).
+  - [x] P12.4a Run headless direct launch from
+    `models/tfl6_patchworks_model_mp11_candidate/analysis/base.pin`.
+  - [x] P12.4b Inspect headless manifest, trace marker, saved-stage output,
+    and warning/error surfaces.
+  - [x] P12.4c Record launch QA in
+    `planning/tfl6_mp11_direct_launch_qa.{csv,json,md}`.
 - [ ] P12.5 Smoke-test representative base and sensitivity scenarios (`#118`).
 - [ ] P12.6 Close runtime smoke phase and hand off Phase 13 release/docs QA
   (`#119`).
@@ -1028,6 +1034,17 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    `candidate_runtime_package_assembled_pending_launch_smoke`. The next
    bounded move is P12.4: direct launch smoke from
    `models/tfl6_patchworks_model_mp11_candidate/analysis/base.pin`.
+   P12.4 is complete on branch `feature/p12-4-mp11-direct-launch`: direct
+   headless launch run `tfl6_mp11_candidate_p12_4_launch0` returned code `0`,
+   saved `3,359` stage files under
+   `models/tfl6_patchworks_model_mp11_candidate/analysis/p12_4_launch0`, and
+   recorded `planning/tfl6_mp11_direct_launch_qa.{csv,json,md}` with status
+   `direct_launch_smoke_pass`. The QA records terminal state `success`,
+   detected marker `[FEMIC headless] saveStage completed`, `824`
+   `targetStatus.csv` rows, `25,544` `targetSummary.csv` rows, `0`
+   `schedule.csv` rows for the no-iteration launch, and no stdout/stderr
+   warning or error matches. The next bounded move is P12.5: representative
+   base/sensitivity scenario smoke.
 0. Phase 9D and Phase 9E are complete. Step 210 now applies the public TSM
    strict Class V proxy, deducting `1.425 ha` against the MP11 Step 210 target
    `1,993.000 ha`; this is an explicit public-source coverage/semantic gap, not

@@ -1,0 +1,106 @@
+{
+  "summary": {
+    "generated_at_utc": "2026-06-29T04:39:31+00:00",
+    "qa_status": "direct_launch_smoke_pass",
+    "run_id": "tfl6_mp11_candidate_p12_4_launch0",
+    "raw_returncode": 0,
+    "returncode": 0,
+    "terminal_state": "success",
+    "detected_marker": "[FEMIC headless] saveStage completed",
+    "trace_save_stage_completed": true,
+    "stage_dir": "models/tfl6_patchworks_model_mp11_candidate/analysis/p12_4_launch0",
+    "saved_file_count": 3359,
+    "stage_file_count": 3359,
+    "target_status_rows": 824,
+    "target_summary_rows": 25544,
+    "schedule_rows": 0,
+    "scenario_mode": "none",
+    "iterations": 0,
+    "runtime_package_status": "candidate_runtime_package_assembled_pending_launch_smoke",
+    "stdout_error_count": 0,
+    "stderr_error_count": 0,
+    "stdout_warning_count": 0,
+    "stderr_warning_count": 0,
+    "scenario_smoke": "not_performed",
+    "release_qa": "not_performed"
+  },
+  "manifest": {
+    "run_id": "tfl6_mp11_candidate_p12_4_launch0",
+    "raw_returncode": 0,
+    "returncode": 0,
+    "mode": "headless_pin",
+    "failures": [],
+    "headless_automation": {
+      "terminal_state": "success",
+      "detected_marker": "[FEMIC headless] saveStage completed",
+      "monitor_killed_process_tree": true
+    },
+    "inputs": {
+      "stage_label": "p12_4_launch0",
+      "iterations": 0,
+      "scenario_mode": "none",
+      "scenario_target": null
+    },
+    "outputs": {
+      "stage_dir": "models/tfl6_patchworks_model_mp11_candidate/analysis/p12_4_launch0",
+      "saved_file_count": 3359
+    }
+  },
+  "stage_inventory": {
+    "path": "models/tfl6_patchworks_model_mp11_candidate/analysis/p12_4_launch0",
+    "total_file_count": 3359,
+    "total_bytes": 24753321,
+    "children": {
+      "html": {
+        "file_count": 34,
+        "bytes": 770356
+      },
+      "index-frames.html": {
+        "file_count": 1,
+        "bytes": 810
+      },
+      "index.csv": {
+        "file_count": 1,
+        "bytes": 195
+      },
+      "index.fld": {
+        "file_count": 1,
+        "bytes": 292
+      },
+      "index.html": {
+        "file_count": 1,
+        "bytes": 966
+      },
+      "scenario": {
+        "file_count": 16,
+        "bytes": 2636712
+      },
+      "targets": {
+        "file_count": 3305,
+        "bytes": 21343990
+      }
+    }
+  },
+  "log_scan": {
+    "stdout": {
+      "path": "runtime/logs/patchworks_headless_stdout-tfl6_mp11_candidate_p12_4_launch0.log",
+      "bytes": 155,
+      "error": 0,
+      "warning": 0,
+      "exception": 0,
+      "failed": 0
+    },
+    "stderr": {
+      "path": "runtime/logs/patchworks_headless_stderr-tfl6_mp11_candidate_p12_4_launch0.log",
+      "bytes": 86,
+      "error": 0,
+      "warning": 0,
+      "exception": 0,
+      "failed": 0
+    }
+  },
+  "source_manifests": {
+    "headless_manifest": "runtime/logs/patchworks_headless_manifest-tfl6_mp11_candidate_p12_4_launch0.json",
+    "runtime_package_manifest": "planning/tfl6_mp11_runtime_package_manifest.json"
+  }
+}

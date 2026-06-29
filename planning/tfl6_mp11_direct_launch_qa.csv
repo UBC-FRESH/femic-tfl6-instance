@@ -1,0 +1,24 @@
+metric,value
+generated_at_utc,2026-06-29T04:39:31+00:00
+qa_status,direct_launch_smoke_pass
+run_id,tfl6_mp11_candidate_p12_4_launch0
+raw_returncode,0
+returncode,0
+terminal_state,success
+detected_marker,[FEMIC headless] saveStage completed
+trace_save_stage_completed,True
+stage_dir,models/tfl6_patchworks_model_mp11_candidate/analysis/p12_4_launch0
+saved_file_count,3359
+stage_file_count,3359
+target_status_rows,824
+target_summary_rows,25544
+schedule_rows,0
+scenario_mode,none
+iterations,0
+runtime_package_status,candidate_runtime_package_assembled_pending_launch_smoke
+stdout_error_count,0
+stderr_error_count,0
+stdout_warning_count,0
+stderr_warning_count,0
+scenario_smoke,not_performed
+release_qa,not_performed
