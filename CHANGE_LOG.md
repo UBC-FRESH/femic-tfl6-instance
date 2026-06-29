@@ -3646,3 +3646,19 @@
   `candidate_runtime_package_assembled_pending_launch_smoke`; and
 - marked P12.3 complete in `ROADMAP.md`, leaving P12.4 direct launch smoke as
   the next build step.
+
+## 2026-06-28 - Passed MP11 direct launch smoke
+
+- ran headless direct launch from
+  `models/tfl6_patchworks_model_mp11_candidate/analysis/base.pin` with run ID
+  `tfl6_mp11_candidate_p12_4_launch0`;
+- verified raw and effective return code `0`, terminal state `success`, and the
+  trace marker `[FEMIC headless] saveStage completed`;
+- confirmed the ignored saved-stage directory contains `3,359` files,
+  `targetStatus.csv` has `824` rows, `targetSummary.csv` has `25,544` rows, and
+  `schedule.csv` has `0` rows as expected for a no-iteration direct launch;
+- added `scripts/build_p12_mp11_direct_launch_qa.py` and
+  `planning/tfl6_mp11_direct_launch_qa.{csv,json,md}` with status
+  `direct_launch_smoke_pass`; and
+- marked P12.4 complete in `ROADMAP.md`, leaving P12.5 representative scenario
+  smoke as the next build step.
