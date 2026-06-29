@@ -889,6 +889,52 @@ Execution plan:
   - [x] P13.5b Close Phase 13 only after docs, release QA, archive/materialization,
     roadmap, changelog, and issue comments are synchronized.
 
+## Phase 14: MP11 Harvest-System Operability Integration (`#138`)
+
+Status: active. Phase 14 converts the deferred MP11 harvest-system caveat into
+a runtime-visible public-proxy implementation lane. It starts from the Phase 13
+`supplement_phase5` decision: Phase 5 remains the accepted public
+teaching/runtime baseline, while the smoke-tested MP11 candidate is the working
+supplement for comparison and advanced teaching.
+
+Evidence basis:
+
+- WFP's Land Base Blocking (LBB) physical-operability dataset is not public or
+  queryable from the MP11 package.
+- MP11 assigns ground, cable, and non-conventional/helicopter systems from WFP's
+  LBB process using LiDAR, professional review, future block/road planning, and
+  post-harvest updates. FEMIC must not claim WFP LBB equivalence.
+- Public FEMIC assignments must therefore be explicit public proxies with
+  source, confidence, and caveat fields.
+- MP11 Table 20 and Table 73 harvest-system area/volume distributions are
+  comparison targets, not stand-level source truth.
+- MP11 helicopter economic-operability criteria from Tables 27-29 are usable
+  only where public age, volume, species-share, and access/flight-distance proxy
+  fields exist.
+
+Planning note:
+`planning/tfl6_mp11_phase14_harvest_system_operability_plan.md`.
+
+- [ ] P14.1 Launch MP11 harvest-system operability execution plan (`#139`).
+  - [ ] P14.1a Create and link the Phase 14 parent/child issue tree.
+  - [ ] P14.1b Record source anchors, generated-output boundaries, and
+    non-goals in the Phase 14 planning note.
+  - [ ] P14.1c Update `ROADMAP.md` and `CHANGE_LOG.md` without generating
+    model-input tables, XML, Matrix Builder outputs, or runtime artifacts.
+- [ ] P14.2 Mine MP11 and public-source evidence for harvest-system criteria
+  (`#140`).
+- [ ] P14.3 Build public proxy metrics for ground, cable, and heli assignment
+  (`#141`).
+- [ ] P14.4 Classify MP11 candidate stands by harvest system and QA against
+  MP11 targets (`#142`).
+- [ ] P14.5 Rebuild MP11 model-input tables and ForestModel XML with split CC
+  lanes (`#143`).
+- [ ] P14.6 Run Matrix Builder and assemble harvest-system candidate runtime
+  (`#144`).
+- [ ] P14.7 Smoke-test all-system and no-heli harvest scenarios (`#145`).
+- [ ] P14.8 Document Phase 14 caveats, comparison results, and closeout status
+  (`#146`).
+
 ## Dependency Order
 
 The next phases must proceed in this order unless the maintainer explicitly
@@ -951,6 +997,10 @@ approves a narrower independent slice:
 15. **MP11 comparison/release QA**: Phase 13 (`#70`) documents comparisons,
     release readiness, and whether an MP11-aligned package replaces or
     supplements the Phase 5 teaching baseline.
+16. **MP11 harvest-system operability integration**: Phase 14 (`#138`) builds a
+    public-proxy ground/cable/heli classifier, then rebuilds candidate
+    model-input, XML, Matrix Builder, runtime, and scenario-smoke surfaces only
+    after P14.1 records the plan and output boundaries.
 
 Guardrail: source extraction, THLB execution, cedar/expansion implementation,
 model-input generation, XML/Matrix Builder work, runtime packaging,
@@ -970,6 +1020,19 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
   bundle construction `#17`.
 
 ## Current Next Steps
+
+0. Phase 14 is active on branch
+   `feature/tfl6-mp11-harvest-system-operability`. P14.1 (`#139`) is the next
+   bounded task: launch the MP11 harvest-system operability execution plan,
+   link the parent issue `#138` and child issues `#139` through `#146`, record
+   source anchors and output boundaries in
+   `planning/tfl6_mp11_phase14_harvest_system_operability_plan.md`, and update
+   `CHANGE_LOG.md`. P14.1 must not generate model-input tables, ForestModel
+   XML, Matrix Builder outputs, Patchworks runtime artifacts, or scenario
+   outputs.
+
+Historical leading-edge notes below are retained for audit context only; the
+active next step is P14.1.
 
 0. Phase 11 is active on branch
    `feature/p11-model-input-xml-rebuild-plan`. P11.1 and P11.2 are complete.

@@ -3791,3 +3791,18 @@
   clean-checkout materialization is pending, maintainer base-scenario export
   remains unreproduced, and MP11 source/constraint caveats remain visible; and
 - marked P13.5 and Phase 13 complete in `ROADMAP.md`.
+
+## 2026-06-28 - Opened MP11 Phase 14 harvest-system operability lane
+
+- created branch `feature/tfl6-mp11-harvest-system-operability`;
+- opened parent issue `#138` and child issues `#139` through `#146` for the
+  Phase 14 harvest-system operability implementation sequence;
+- added
+  `planning/tfl6_mp11_phase14_harvest_system_operability_plan.md` with MP11 PDF
+  source anchors, WFP LBB/public-proxy boundaries, generated-output roots, and
+  non-goals;
+- updated `ROADMAP.md` with Phase 14 as the active lane and P14.1 (`#139`) as
+  the next bounded task; and
+- recorded that Phase 14 is intended to convert deferred harvest-system caveats
+  into runtime-visible public-proxy ground/cable/heli lanes without claiming
+  WFP LBB equivalence or replacing the Phase 5 baseline.
