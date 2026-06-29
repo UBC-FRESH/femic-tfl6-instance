@@ -862,7 +862,7 @@ Execution plan:
   - [x] P13.1a Record the maintainer screenshot interpretation and MP11 Figure
     2 context in
     `planning/tfl6_mp11_phase13_candidate_runtime_positioning.md`.
-  - [ ] P13.1b Convert screenshot-informed positioning into reproducible
+  - [x] P13.1b Convert screenshot-informed positioning into reproducible
     tracked scenario comparison tables (`#127`).
 - [ ] P13.2 Build MP11 KPI and caveat comparison report (`#128`).
   - [ ] P13.2a Compare land base, THLB, source-layer caveats, yield/curve
@@ -1120,8 +1120,12 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    rather than release QA or WFP model equivalence. Phase 13 now has an
    explicit execution plan in
    `planning/tfl6_mp11_phase13_comparison_release_qa_plan.md` and child issues
-   `#127` through `#131`. The next bounded move is P13.1b (`#127`): convert
-   this positioning into reproducible tracked scenario comparison tables.
+   `#127` through `#131`. P13.1b (`#127`) produced
+   `planning/tfl6_mp11_phase13_scenario_comparison.{csv,json,md}` and
+   `planning/tfl6_mp11_phase13_scenario_period_comparison.csv`, separating the
+   MP11 base-case target, adjusted-LRSY context, P12.5 tracked smoke output,
+   and maintainer interactive context. The next bounded move is P13.2 (`#128`):
+   build the broader MP11 KPI and caveat comparison report.
 0. Phase 9D and Phase 9E are complete. Step 210 now applies the public TSM
    strict Class V proxy, deducting `1.425 ha` against the MP11 Step 210 target
    `1,993.000 ha`; this is an explicit public-source coverage/semantic gap, not

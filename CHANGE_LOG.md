@@ -3723,3 +3723,14 @@
 - expanded `ROADMAP.md` so Phase 13 is governed by a concrete gated plan rather
   than a broad release-QA placeholder, with P13.1b (`#127`) as the next bounded
   comparison-table task.
+
+## 2026-06-28 - Built MP11 Phase 13 scenario comparison tables
+
+- added `scripts/build_p13_mp11_scenario_comparison.py`;
+- generated `planning/tfl6_mp11_phase13_scenario_comparison.{csv,json,md}` and
+  `planning/tfl6_mp11_phase13_scenario_period_comparison.csv`;
+- separated MP11 Figure 2/Table 11 base-case evidence, adjusted-LRSY context,
+  tracked P12.5 runtime-smoke output, and maintainer interactive context so the
+  comparison tables do not treat screenshot-only evidence as release QA; and
+- marked P13.1b complete in `ROADMAP.md`, leaving P13.2 KPI/caveat comparison
+  reporting as the next bounded Phase 13 step.
