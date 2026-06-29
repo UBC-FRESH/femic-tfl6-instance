@@ -780,7 +780,8 @@ public CDED steep-slope proxy in the P9RF THLB surface.
 
 ## Phase 12: MP11 Patchworks Runtime And Scenario Smoke (`#69`)
 
-Status: planned.
+Status: active. P12.1 launched the runtime-build issue tree and added the MP11
+candidate Matrix Builder config. P12.2 is the first Matrix Builder run.
 
 Goal: run Matrix Builder, assemble an MP11-aligned Patchworks runtime package,
 and smoke-test direct launch plus representative base and sensitivity
@@ -791,19 +792,28 @@ Phase 11 model-input/XML handoff and produces Matrix Builder tracks, blocks,
 topology, launch surfaces, scenario smoke outputs, runtime manifests, and a
 candidate runtime package.
 
-- [ ] P12.1 Launch runtime-build execution plan and child issues.
-- [ ] P12.2 Run Matrix Builder from the accepted MP11 ForestModel XML.
+- [x] P12.1 Launch runtime-build execution plan and child issues (`#114`).
+  - [x] P12.1a Create P12 child issues and link the issue tree.
+  - [x] P12.1b Add
+    `planning/tfl6_mp11_phase12_runtime_build_execution_plan.md`.
+  - [x] P12.1c Add
+    `config/patchworks.runtime.mp11_candidate.windows.yaml` for the P12.2
+    Matrix Builder run.
+  - [x] P12.1d Confirm Phase 11 handoff inputs exist and runtime roots are
+    absent before P12.2.
+- [ ] P12.2 Run Matrix Builder from the accepted MP11 ForestModel XML (`#115`).
   - [ ] P12.2a Generate Matrix Builder tracks under
     `models/tfl6_patchworks_model_mp11_candidate/tracks/`.
   - [ ] P12.2b Inspect accounts, protoaccounts, features, products, curves,
     groups, strata, treatments, and block references.
-- [ ] P12.3 Assemble MP11 candidate Patchworks runtime package.
+- [ ] P12.3 Assemble MP11 candidate Patchworks runtime package (`#116`).
   - [ ] P12.3a Build blocks/topology and launch surfaces under
     `models/tfl6_patchworks_model_mp11_candidate/`.
   - [ ] P12.3b Record runtime lineage and candidate package manifest.
-- [ ] P12.4 Smoke-test direct Patchworks launch.
-- [ ] P12.5 Smoke-test representative base and sensitivity scenarios.
-- [ ] P12.6 Close runtime smoke phase and hand off Phase 13 release/docs QA.
+- [ ] P12.4 Smoke-test direct Patchworks launch (`#117`).
+- [ ] P12.5 Smoke-test representative base and sensitivity scenarios (`#118`).
+- [ ] P12.6 Close runtime smoke phase and hand off Phase 13 release/docs QA
+  (`#119`).
 
 ## Phase 13: MP11 Comparison Documentation And Release QA (`#70`)
 
@@ -981,6 +991,17 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    the Phase 5 teaching/runtime baseline, and left Matrix Builder/runtime
    outputs uncreated. The next bounded move is P12.1/P12.2: launch the runtime
    build issues and run Matrix Builder from the candidate XML/fragments.
+   P12.1 is complete on branch `feature/p12-mp11-runtime-build`: child issues
+   `#114` through `#119` now define the Phase 12 runtime-build sequence,
+   `planning/tfl6_mp11_phase12_runtime_build_execution_plan.md` records the
+   execution plan, and `config/patchworks.runtime.mp11_candidate.windows.yaml`
+   points Matrix Builder at the MP11 candidate XML/fragments and candidate
+   tracks root. The next bounded move is P12.2: run
+   `python -m femic patchworks matrix-build --instance-root
+   external/femic-tfl6-instance --config
+   config/patchworks.runtime.mp11_candidate.windows.yaml --run-id
+   tfl6_mp11_candidate_p12_2_matrix_build`, then inspect the generated
+   `tracks/` surfaces before any runtime success claim.
 0. Phase 9D and Phase 9E are complete. Step 210 now applies the public TSM
    strict Class V proxy, deducting `1.425 ha` against the MP11 Step 210 target
    `1,993.000 ha`; this is an explicit public-source coverage/semantic gap, not

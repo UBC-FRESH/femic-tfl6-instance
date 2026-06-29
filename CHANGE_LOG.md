@@ -3598,3 +3598,17 @@
   created in Phase 11; and
 - marked P11.6 and Phase 11 complete in `ROADMAP.md`, leaving P12.1/P12.2 as
   the next runtime-build step.
+
+## 2026-06-28 - Launched Phase 12 runtime-build lane
+
+- created P12 child issues `#114` through `#119` under parent issue `#69`;
+- added `planning/tfl6_mp11_phase12_runtime_build_execution_plan.md` as the
+  P12.1 runtime-build execution plan;
+- added `config/patchworks.runtime.mp11_candidate.windows.yaml` so P12.2 can
+  run Matrix Builder from the MP11 candidate XML/fragments without mutating the
+  accepted Phase 5 runtime config;
+- verified the Phase 11 handoff inputs exist locally and that Matrix Builder
+  tracks, runtime blocks, and scenario-smoke roots have not yet been created;
+  and
+- marked P12.1 complete in `ROADMAP.md`, leaving P12.2 as the first actual
+  Matrix Builder run.
