@@ -1007,7 +1007,7 @@ Planning note:
 
 ## Phase 15: MP11 Harvest-System Runtime Publication And Replacement-Candidate QA (`#147`)
 
-Status: active. Phase 15 publishes and validates the Phase 14 MP11
+Status: complete. Phase 15 publishes and validates the Phase 14 MP11
 harvest-system candidate runtime as a replacement-candidate QA lane. It uses
 the existing TFL 6 `arbutus-s3` git-annex publication workflow, proves
 no-credential clean-checkout materialization, unpacks the materialized archive,
@@ -1082,7 +1082,14 @@ Publication artifacts:
     families, materialization commands, smoke-test evidence, and WFP LBB caveats.
   - [x] P15.6c Preserve the boundary that P15 is a replacement-candidate review
     lane, not an automatic Phase 5 replacement.
-- [ ] P15.7 Decide replacement-candidate readiness and close Phase 15 (`#154`).
+- [x] P15.7 Decide replacement-candidate readiness and close Phase 15 (`#154`).
+  - [x] P15.7a Add
+    `scripts/build_p15_replacement_candidate_decision.py`.
+  - [x] P15.7b Emit
+    `planning/tfl6_mp11_phase15_replacement_candidate_decision.{csv,json,md}`.
+  - [x] P15.7c Record status
+    `replacement_candidate_ready_for_review` while preserving the
+    `replace_phase5` value as `False`.
 
 ## Dependency Order
 
@@ -1216,12 +1223,20 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    documents the archive and manifest paths, SHA256, public-annex
    materialization commands, archive-derived direct launch and scenario-smoke
    evidence, WFP LBB/public-proxy caveats, teaching workflows, and maintainer
-   evidence order. The next bounded task is P15.7 (`#154`): emit the final
-   replacement-candidate readiness decision and close Phase 15 if all hard
-   gates pass.
+   evidence order. P15.7 (`#154`) is complete:
+   `scripts/build_p15_replacement_candidate_decision.py` emitted
+   `planning/tfl6_mp11_phase15_replacement_candidate_decision.{csv,json,md}`
+   with decision `replacement_candidate_ready_for_review`, `replace_phase5`
+   set to `False`, and `wfp_model_equivalence` set to `False`. Phase 15 is
+   complete. The MP11
+   harvest-system candidate runtime is ready for replacement review, but Phase
+   5 remains the accepted public teaching/runtime baseline until a later
+   explicit replacement acceptance decision.
 
 Historical leading-edge notes below are retained for audit context only; the
-active next step is P15.7.
+active next step is a future explicit replacement-acceptance lane if the
+maintainer decides to review whether the MP11 harvest-system candidate should
+replace the Phase 5 baseline.
 
 0. Phase 14 is active on branch
    `feature/tfl6-mp11-harvest-system-operability`. P14.1 (`#139`) is complete:

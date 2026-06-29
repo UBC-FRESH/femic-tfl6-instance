@@ -4053,3 +4053,15 @@
   replacement acceptance decision; and
 - marked P15.6 complete in `ROADMAP.md`, leaving P15.7 replacement-candidate
   readiness decision and Phase 15 closeout as the next bounded task.
+
+## 2026-06-29 - Closed MP11 Phase 15 replacement-candidate QA
+
+- added `scripts/build_p15_replacement_candidate_decision.py`;
+- emitted
+  `planning/tfl6_mp11_phase15_replacement_candidate_decision.{csv,json,md}`;
+- recorded decision `replacement_candidate_ready_for_review`;
+- recorded `replace_phase5: False` and `wfp_model_equivalence: False`;
+- verified the decision is supported by archive publication, no-credential
+  materialization, checksum validation, direct launch, all-system scenario
+  smoke, no-heli scenario smoke, and publication documentation hard gates; and
+- marked P15.7 and Phase 15 complete in `ROADMAP.md`.
