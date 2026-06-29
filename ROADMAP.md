@@ -1005,6 +1005,44 @@ Planning note:
   - [x] P14.8c Preserve Phase 5 as the accepted public teaching/runtime
     baseline and describe Phase 14 as a caveated MP11 candidate supplement.
 
+## Phase 15: MP11 Harvest-System Runtime Publication And Replacement-Candidate QA (`#147`)
+
+Status: active. Phase 15 publishes and validates the Phase 14 MP11
+harvest-system candidate runtime as a replacement-candidate QA lane. It uses
+the existing TFL 6 `arbutus-s3` git-annex publication workflow, proves
+no-credential clean-checkout materialization, unpacks the materialized archive,
+reruns direct launch plus all-system and no-heli scenario smoke from the archive
+payload, and records whether the runtime is ready for replacement review.
+
+Phase 15 does not silently replace Phase 5. Passing P15 means
+`replacement_candidate_ready_for_review`; Phase 5 remains the accepted public
+teaching/runtime baseline until a later explicit replacement acceptance
+decision.
+
+Planning note:
+`planning/tfl6_mp11_phase15_publication_replacement_candidate_plan.md`.
+
+Publication artifacts:
+
+- `releases/tfl6_mp11_harvest_system_candidate_runtime_p15_2.zip`;
+- `releases/tfl6_mp11_harvest_system_candidate_runtime_p15_2_manifest.yaml`.
+
+- [x] P15.1 Launch MP11 harvest-system publication and replacement-candidate
+  plan (`#148`).
+  - [x] P15.1a Create and link the Phase 15 parent/child issue tree.
+  - [x] P15.1b Record that P15 consumes the Phase 14 harvest-system runtime,
+    not the older P13 archive.
+  - [x] P15.1c Record artifact names, status vocabulary, WFP LBB caveats, and
+    Phase 5 baseline boundary.
+- [ ] P15.2 Build MP11 harvest-system runtime archive and manifest (`#149`).
+- [ ] P15.3 Annex and publish archive through `arbutus-s3` (`#150`).
+- [ ] P15.4 Prove no-credential clean-checkout materialization (`#151`).
+- [ ] P15.5 Run direct launch and scenario smoke from materialized archive
+  (`#152`).
+- [ ] P15.6 Document publication, caveats, and replacement-candidate status
+  (`#153`).
+- [ ] P15.7 Decide replacement-candidate readiness and close Phase 15 (`#154`).
+
 ## Dependency Order
 
 The next phases must proceed in this order unless the maintainer explicitly
@@ -1071,6 +1109,12 @@ approves a narrower independent slice:
     public-proxy ground/cable/heli classifier, then rebuilds candidate
     model-input, XML, Matrix Builder, runtime, and scenario-smoke surfaces only
     after P14.1 records the plan and output boundaries.
+17. **MP11 harvest-system runtime publication and replacement-candidate QA**:
+    Phase 15 (`#147`) publishes the Phase 14 harvest-system runtime archive,
+    proves no-credential clean-checkout materialization, reruns direct launch
+    and all-system/no-heli scenario smoke from the materialized archive, and
+    records whether the candidate is ready for replacement review without
+    silently replacing Phase 5.
 
 Guardrail: source extraction, THLB execution, cedar/expansion implementation,
 model-input generation, XML/Matrix Builder work, runtime packaging,
@@ -1090,6 +1134,20 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
   bundle construction `#17`.
 
 ## Current Next Steps
+
+0. Phase 15 is active on branch
+   `feature/tfl6-mp11-p15-runtime-publication`. P15.1 (`#148`) is complete:
+   the parent issue `#147` and child issues `#148` through `#154` are open,
+   `planning/tfl6_mp11_phase15_publication_replacement_candidate_plan.md`
+   records the Phase 14 source-runtime boundary, publication artifact names,
+   release-status vocabulary, hard validation gates, WFP LBB caveats, and Phase
+   5 baseline boundary. P15 consumes the completed Phase 14 harvest-system
+   runtime, not the older P13 candidate archive. The next bounded task is P15.2
+   (`#149`): build the MP11 harvest-system runtime archive and manifest without
+   publishing yet.
+
+Historical leading-edge notes below are retained for audit context only; the
+active next step is P15.2.
 
 0. Phase 14 is active on branch
    `feature/tfl6-mp11-harvest-system-operability`. P14.1 (`#139`) is complete:

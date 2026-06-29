@@ -3946,3 +3946,22 @@
   described the Phase 14 runtime as a caveated MP11 candidate supplement for
   comparison and advanced teaching; and
 - marked P14.8 and Phase 14 complete in `ROADMAP.md`.
+
+## 2026-06-29 - Opened MP11 Phase 15 runtime publication QA lane
+
+- created branch `feature/tfl6-mp11-p15-runtime-publication`;
+- created Phase 15 parent issue `#147` and child issues `#148` through `#154`;
+- added
+  `planning/tfl6_mp11_phase15_publication_replacement_candidate_plan.md`;
+- added Phase 15 to `ROADMAP.md` as the active MP11 harvest-system runtime
+  publication and replacement-candidate QA lane;
+- recorded that P15 consumes the completed Phase 14 harvest-system runtime, not
+  the older P13 archive;
+- locked publication artifact names
+  `releases/tfl6_mp11_harvest_system_candidate_runtime_p15_2.zip` and
+  `releases/tfl6_mp11_harvest_system_candidate_runtime_p15_2_manifest.yaml`;
+- recorded release-status vocabulary from `local_archive_built_not_published`
+  through `replacement_candidate_ready_for_review` or
+  `replacement_candidate_blocked`; and
+- kept Phase 5 as the accepted public teaching/runtime baseline until a later
+  explicit replacement acceptance decision.
