@@ -9,77 +9,59 @@ curve to model input.
 
 ## Status
 
-- MP11 candidate rows compared: `27`
-- Phase 5 comparison matches: `27`
+- MP11 candidate rows compared: `25`
+- Phase 5 comparison matches: `25`
 - Model-input status: `not_model_input`
-
-## Review Decision
-
-- Review status: `tentatively_passed_review`
-- Model-input status: `not_model_input`
-- Decision timestamp UTC: `2026-06-28T23:00:09+00:00`
-- Decision note: Maintainer requested tentative review pass so P10R can proceed to updated VDYP curve generation and AU-wise TIPSY-vs-VDYP diagnostics. This does not promote curves to model-input status.
 
 ## Method
 
-Nearest Phase 5 future-managed comparison row selected by matching BEC zone/subzone first, then maximizing species overlap and minimizing weighted site-index difference.
+Nearest Phase 5 future-managed comparison row selected only from the same BEC zone/subzone. Rows without a same-BEC/subzone comparison are blocked rather than falling back across BEC boundaries.
 
 ## Comparison Classes
 
-- `large_difference_review_required`: `13`
+- `large_difference_review_required`: `11`
 - `low_difference`: `3`
 - `moderate_difference_review_required`: `11`
 
 ## Largest Absolute Max-Volume Differences
 
-| mp11_au_code   | mp11_species_combo   | phase5_au_id   | phase5_species_combo   |   species_overlap_ratio |   mean_si_abs_diff |   mp11_max_volume |   phase5_max_volume |   max_volume_pct_delta | comparison_class                    |
-|:---------------|:---------------------|:---------------|:-----------------------|------------------------:|-------------------:|------------------:|--------------------:|-----------------------:|:------------------------------------|
-| Fvh103         | CW+YC+HW+BA+PL       | cwhvh1_cw_hw_l | CW+HW                  |                   0.4   |              3.739 |             220.3 |              1091.9 |                -79.824 | large_difference_review_required    |
-| Fvm211         | HW+CW+YC+BA          | cwhvm1_hw_cw_l | HW+CW                  |                   0.5   |              0.226 |             830.4 |              1873.1 |                -55.667 | large_difference_review_required    |
-| Fvm131         | CW+HW+DR+PL+SS       | cwhvm1_hw_dr_l | HW+DR                  |                   0.4   |              0.651 |            1044.5 |              1977.6 |                -47.183 | large_difference_review_required    |
-| FMH22          | HW+BA+YC             | cwhvm2_hw_ba_l | HW+BA                  |                   0.667 |              0.44  |             769.4 |              1340.4 |                -42.599 | large_difference_review_required    |
-| FMH01          | HW+BA+YC             | cwhvm2_hw_ba_l | HW+BA                  |                   0.667 |              0.44  |             783.1 |              1340.4 |                -41.577 | large_difference_review_required    |
-| Fvm106s        | CW+HW                | cwhvm1_cw_hw_h | CW+HW                  |                   1     |              0.206 |            1462.2 |              1091.9 |                 33.913 | large_difference_review_required    |
-| Fvm201         | HW+YC+BA+CW+FD       | cwhvm1_cw_hw_h | CW+HW                  |                   0.4   |              0.329 |            1459.3 |              1091.9 |                 33.648 | large_difference_review_required    |
-| Fvh113         | CW+YC+HW+PL          | cwhvh1_cw_hw_m | CW+HW                  |                   0.5   |              0.279 |             750   |              1091.9 |                -31.312 | large_difference_review_required    |
-| Fvm101s        | CW+HW                | cwhvm1_cw_hw_h | CW+HW                  |                   1     |              0.426 |            1429.6 |              1091.9 |                 30.928 | large_difference_review_required    |
-| Fvh108         | SS+HW+CW+DR+BA       | cwhvh1_hw_cw_h | HW+CW                  |                   0.4   |              0.427 |            1305.9 |              1873.1 |                -30.281 | large_difference_review_required    |
-| Fvh101         | CW+YC+HW             | cwhvh1_cw_hw_m | CW+HW                  |                   0.667 |              0.279 |             767.3 |              1091.9 |                -29.728 | large_difference_review_required    |
-| Fvm103         | CW+FD+HW+YC          | cwhvm2_yc_hw_h | YC+HW                  |                   0.5   |              0.681 |             922   |              1233.4 |                -25.247 | large_difference_review_required    |
-| Fvm105         | CW+FD+HW+SS          | cwhvm1_hw_ss_m | HW+SS                  |                   0.5   |              0.39  |            1494.9 |              1977.6 |                -24.408 | moderate_difference_review_required |
-| Fvh106         | CW+YC+HW+SS+BA       | cwhvh1_hw_ba_h | HW+BA                  |                   0.4   |              0.888 |            1496.5 |              1977.6 |                -24.327 | moderate_difference_review_required |
-| Fvm203         | HW+CW+BA+YC          | cwhvm2_cw_hw_m | CW+HW                  |                   0.5   |              0.138 |             827.6 |              1091.9 |                -24.206 | large_difference_review_required    |
+| mp11_au_code   | mp11_species_combo   | phase5_au_id    | phase5_species_combo   |   species_overlap_ratio |   mean_si_abs_diff |   mp11_max_volume |   phase5_max_volume |   max_volume_pct_delta | comparison_class                    |
+|:---------------|:---------------------|:----------------|:-----------------------|------------------------:|-------------------:|------------------:|--------------------:|-----------------------:|:------------------------------------|
+| Fvh103         | CW+YC+HW+BA+PL       | cwhvh1_hw_cw_l  | HW+CW                  |                   0.4   |              0.368 |             542.1 |              1873.1 |                -71.059 | large_difference_review_required    |
+| Fvm211         | HW+CW+YC+BA          | cwhvm1_hw_cw_l  | HW+CW                  |                   0.5   |              0.006 |             847.5 |              1873.1 |                -54.754 | large_difference_review_required    |
+| Fvm203         | HW+CW+BA+YC          | cwhvm1_hw_cw_l  | HW+CW                  |                   0.5   |              0.006 |             861.8 |              1873.1 |                -53.991 | large_difference_review_required    |
+| Fvm131         | CW+HW+DR+PL+SS       | cwhvm1_hw_dr_l  | HW+DR                  |                   0.4   |              0.629 |            1077.1 |              1977.6 |                -45.535 | large_difference_review_required    |
+| Fvh113         | CW+YC+HW+PL          | cwhvh1_cw_hw_m  | CW+HW                  |                   0.5   |              0.279 |             750   |              1091.9 |                -31.312 | large_difference_review_required    |
+| Fvh101         | CW+YC+HW             | cwhvh1_cw_hw_m  | CW+HW                  |                   0.667 |              0.279 |             767.3 |              1091.9 |                -29.728 | large_difference_review_required    |
+| Fvm106s        | CW+HW                | cwhvm1_cw_hw_h  | CW+HW                  |                   1     |              0.791 |            1414.9 |              1091.9 |                 29.581 | large_difference_review_required    |
+| Fvm101s        | CW+HW                | cwhvm1_cw_hw_h  | CW+HW                  |                   1     |              0.791 |            1414.9 |              1091.9 |                 29.581 | large_difference_review_required    |
+| Fvm201         | HW+YC+BA+CW+FD       | cwhvm1_cw_hw_h  | CW+HW                  |                   0.4   |              0.791 |            1404.5 |              1091.9 |                 28.629 | large_difference_review_required    |
+| Fvh108         | SS+HW+CW+DR+BA       | cwhvh1_hw_cw_h  | HW+CW                  |                   0.4   |              0.773 |            1382.2 |              1873.1 |                -26.208 | large_difference_review_required    |
+| Fvh106         | CW+YC+HW+SS+BA       | cwhvh1_hw_ba_h  | HW+BA                  |                   0.4   |              0.288 |            1574.5 |              1977.6 |                -20.383 | moderate_difference_review_required |
+| Fvm109         | HW+CW+SS+DR+FD       | cwhvm1_hw_fdc_l | HW+FDC                 |                   0.4   |              0.364 |            1582.7 |              1977.6 |                -19.969 | moderate_difference_review_required |
+| Fvm103         | CW+FD+HW+YC          | cwhvm2_yc_hw_h  | YC+HW                  |                   0.5   |              0.351 |            1016.8 |              1233.4 |                -17.561 | moderate_difference_review_required |
+| Fvm105         | CW+FD+HW+SS          | cwhvm1_hw_ss_m  | HW+SS                  |                   0.5   |              0     |            1662.7 |              1977.6 |                -15.923 | moderate_difference_review_required |
+| Fvm133         | CW+PL+HW+SS          | cwhvm1_cw_hw_m  | CW+HW                  |                   0.5   |              0.414 |             935.4 |              1091.9 |                -14.333 | moderate_difference_review_required |
 
 ## Review Rows
 
-| mp11_au_code   | phase5_au_id   | phase5_match_confidence   |   max_volume_delta |   max_volume_pct_delta |   volume_age_100_delta |   volume_age_100_pct_delta |   age_curve_rmse | comparison_class                 |
-|:---------------|:---------------|:--------------------------|-------------------:|-----------------------:|-----------------------:|---------------------------:|-----------------:|:---------------------------------|
-| Fvm106s        | cwhvm1_cw_hw_h | medium                    |              370.3 |                 33.913 |                  362.5 |                     57.558 |          340.551 | large_difference_review_required |
-| Fvm201         | cwhvm1_cw_hw_h | medium                    |              367.4 |                 33.648 |                  246.7 |                     39.171 |          277.123 | large_difference_review_required |
-| Fvm101s        | cwhvm1_cw_hw_h | medium                    |              337.7 |                 30.928 |                  338   |                     53.668 |          313.24  | large_difference_review_required |
-| Fvm203         | cwhvm2_cw_hw_m | medium                    |             -264.3 |                -24.206 |                 -226.7 |                    -35.996 |          247.697 | large_difference_review_required |
-| Fvm103         | cwhvm2_yc_hw_h | medium                    |             -311.4 |                -25.247 |                  -28.3 |                     -4.497 |          191.935 | large_difference_review_required |
-| Fvh101         | cwhvh1_cw_hw_m | medium                    |             -324.6 |                -29.728 |                 -165   |                    -26.199 |          248.525 | large_difference_review_required |
-| Fvh108         | cwhvh1_hw_cw_h | high                      |             -567.2 |                -30.281 |                 -171.8 |                    -15.98  |          352.143 | large_difference_review_required |
-| Fvh113         | cwhvh1_cw_hw_m | medium                    |             -341.9 |                -31.312 |                 -174.1 |                    -27.644 |          262.005 | large_difference_review_required |
-| FMH01          | cwhvm2_hw_ba_l | medium                    |             -557.3 |                -41.577 |                 -354.3 |                    -52.841 |          430.23  | large_difference_review_required |
-| FMH22          | cwhvm2_hw_ba_l | medium                    |             -571   |                -42.599 |                 -388.5 |                    -57.942 |          453.795 | large_difference_review_required |
-| Fvm131         | cwhvm1_hw_dr_l | low                       |             -933.1 |                -47.183 |                 -445.9 |                    -40.364 |          642.079 | large_difference_review_required |
-| Fvm211         | cwhvm1_hw_cw_l | low                       |            -1042.7 |                -55.667 |                 -662.6 |                    -61.631 |          796.976 | large_difference_review_required |
-| Fvh103         | cwhvh1_cw_hw_l | medium                    |             -871.6 |                -79.824 |                 -559.7 |                    -88.869 |          709.247 | large_difference_review_required |
-| Fvm207         | cwhvm1_hw_cw_m | high                      |             -165.7 |                 -8.846 |                  -22.7 |                     -2.111 |           85.29  | low_difference                   |
-| Fvm208         | cwhvm1_hw_cw_m | high                      |             -165.7 |                 -8.846 |                  -22.7 |                     -2.111 |           85.29  | low_difference                   |
-
-## Maintainer Plot Review
-
-- Passed TIPSY-vs-VDYP sanity rows: `24`
-- Failed TIPSY-vs-VDYP sanity rows: `3`
-- Failed AU codes: `FMH01`, `FMH22`, `Fvh103`
-- Failed review status: `failed_tipsy_below_vdyp_sanity_review`
-- Passed review status: `passed_tipsy_vdyp_sanity_review`
-- Model-input status: `not_model_input`
-- Review timestamp UTC: `2026-06-28T23:13:35+00:00`
-- Failed-row rationale: Maintainer plot review rejected this generated TIPSY curve because plantation yield should meet or beat the matched natural VDYP curve; observed TIPSY is substantially below VDYP.
+| mp11_au_code   | phase5_au_id   | phase5_match_confidence   |   max_volume_delta |   max_volume_pct_delta |   volume_age_100_delta |   volume_age_100_pct_delta |   age_curve_rmse | comparison_class                    |
+|:---------------|:---------------|:--------------------------|-------------------:|-----------------------:|-----------------------:|---------------------------:|-----------------:|:------------------------------------|
+| Fvm101s        | cwhvm1_cw_hw_h | medium                    |              323   |                 29.581 |                  324.8 |                     51.572 |          299.113 | large_difference_review_required    |
+| Fvm106s        | cwhvm1_cw_hw_h | medium                    |              323   |                 29.581 |                  324.8 |                     51.572 |          299.113 | large_difference_review_required    |
+| Fvm201         | cwhvm1_cw_hw_h | medium                    |              312.6 |                 28.629 |                  213   |                     33.82  |          239.088 | large_difference_review_required    |
+| Fvh104         | cwhvh1_hw_ss_m | medium                    |               -6   |                 -0.448 |                  169.2 |                     25.235 |          117.464 | large_difference_review_required    |
+| Fvh108         | cwhvh1_hw_cw_h | high                      |             -490.9 |                -26.208 |                 -110.1 |                    -10.241 |          290.692 | large_difference_review_required    |
+| Fvh101         | cwhvh1_cw_hw_m | medium                    |             -324.6 |                -29.728 |                 -165   |                    -26.199 |          248.525 | large_difference_review_required    |
+| Fvh113         | cwhvh1_cw_hw_m | medium                    |             -341.9 |                -31.312 |                 -174.1 |                    -27.644 |          262.005 | large_difference_review_required    |
+| Fvm131         | cwhvm1_hw_dr_l | low                       |             -900.5 |                -45.535 |                 -434.9 |                    -39.368 |          617.484 | large_difference_review_required    |
+| Fvm203         | cwhvm1_hw_cw_l | low                       |            -1011.3 |                -53.991 |                 -651.3 |                    -60.58  |          778.639 | large_difference_review_required    |
+| Fvm211         | cwhvm1_hw_cw_l | low                       |            -1025.6 |                -54.754 |                 -652.3 |                    -60.673 |          784.456 | large_difference_review_required    |
+| Fvh103         | cwhvh1_hw_cw_l | fallback_review_required  |            -1331   |                -71.059 |                 -796.1 |                    -74.049 |         1005.88  | large_difference_review_required    |
+| Fvm101         | cwhvm2_ba_hw_h | medium                    |             -159.9 |                 -8.7   |                   84.7 |                      8.203 |           78.834 | low_difference                      |
+| Fvm207         | cwhvm2_hw_cw_h | high                      |             -185   |                 -9.877 |                  -30.6 |                     -2.846 |           95.815 | low_difference                      |
+| Fvm208         | cwhvm2_hw_cw_h | high                      |             -185   |                 -9.877 |                  -30.6 |                     -2.846 |           95.815 | low_difference                      |
+| Fvh104s        | cwhvh1_cw_hw_h | medium                    |               44   |                  4.03  |                   86.9 |                     13.798 |           67.455 | moderate_difference_review_required |
 
 ## Use Boundary
 

@@ -1,16 +1,16 @@
 {
-  "generated_at_utc": "2026-06-28T23:06:45+00:00",
+  "generated_at_utc": "2026-06-29T01:24:46+00:00",
   "records_policy": "The full age-by-curve review slice is tracked in the CSV. This JSON intentionally stores only the compact AU index.",
   "source_vdyp_curve_table": "planning/tfl6_first_growth_au_curves.csv",
   "source_comparison_table": "planning/tfl6_mp11_managed_curve_comparison.csv",
-  "row_count": 8073,
-  "mp11_candidate_count": 27,
-  "vdyp_au_count": 20,
+  "row_count": 7475,
+  "mp11_candidate_count": 25,
+  "vdyp_au_count": 17,
   "review_status_counts": {
-    "p10r5_vdyp_curve_slice_for_diagnostic": 8073
+    "p10r5_vdyp_curve_slice_for_diagnostic": 7475
   },
   "model_input_status_counts": {
-    "not_model_input": 8073
+    "not_model_input": 7475
   },
   "vdyp_au_index": [
     {
@@ -20,10 +20,10 @@
       "curve_point_count": 299,
       "age_min": 1,
       "age_max": 299,
-      "max_vdyp_volume": 797.604556,
+      "max_vdyp_volume": 799.099622,
       "source_vdyp_method": "smoothed_bin_pchip",
       "source_vdyp_accepted": true,
-      "source_stand_count": 138,
+      "source_stand_count": 141,
       "natural_curve_status": "selected_curve_family_available"
     },
     {
@@ -33,10 +33,10 @@
       "curve_point_count": 299,
       "age_min": 1,
       "age_max": 299,
-      "max_vdyp_volume": 613.123038,
+      "max_vdyp_volume": 614.385026,
       "source_vdyp_method": "smoothed_bin_pchip",
       "source_vdyp_accepted": true,
-      "source_stand_count": 172,
+      "source_stand_count": 175,
       "natural_curve_status": "selected_curve_family_available"
     },
     {
@@ -59,10 +59,10 @@
       "curve_point_count": 299,
       "age_min": 1,
       "age_max": 299,
-      "max_vdyp_volume": 1069.18605,
+      "max_vdyp_volume": 1055.693758,
       "source_vdyp_method": "smoothed_bin_pchip",
       "source_vdyp_accepted": true,
-      "source_stand_count": 57,
+      "source_stand_count": 59,
       "natural_curve_status": "selected_curve_family_available"
     },
     {
@@ -75,7 +75,7 @@
       "max_vdyp_volume": 1040.455135,
       "source_vdyp_method": "smoothed_bin_pchip",
       "source_vdyp_accepted": true,
-      "source_stand_count": 96,
+      "source_stand_count": 100,
       "natural_curve_status": "selected_curve_family_available"
     },
     {
@@ -92,16 +92,29 @@
       "natural_curve_status": "selected_curve_family_available"
     },
     {
+      "vdyp_au_id": "cwhvm1_ba_hw_m",
+      "mp11_candidate_count": 2,
+      "mp11_au_codes": "Fvm104;Fvm106",
+      "curve_point_count": 598,
+      "age_min": 1,
+      "age_max": 299,
+      "max_vdyp_volume": 1056.205481,
+      "source_vdyp_method": "smoothed_bin_pchip",
+      "source_vdyp_accepted": true,
+      "source_stand_count": 37,
+      "natural_curve_status": "selected_curve_family_available"
+    },
+    {
       "vdyp_au_id": "cwhvm1_cw_hw_h",
       "mp11_candidate_count": 3,
       "mp11_au_codes": "Fvm101s;Fvm106s;Fvm201",
       "curve_point_count": 897,
       "age_min": 1,
       "age_max": 299,
-      "max_vdyp_volume": 943.689368,
+      "max_vdyp_volume": 944.666815,
       "source_vdyp_method": "smoothed_bin_pchip",
       "source_vdyp_accepted": true,
-      "source_stand_count": 694,
+      "source_stand_count": 741,
       "natural_curve_status": "selected_curve_family_available"
     },
     {
@@ -111,49 +124,49 @@
       "curve_point_count": 299,
       "age_min": 1,
       "age_max": 299,
-      "max_vdyp_volume": 830.561536,
+      "max_vdyp_volume": 841.775453,
       "source_vdyp_method": "smoothed_bin_pchip",
       "source_vdyp_accepted": true,
-      "source_stand_count": 544,
+      "source_stand_count": 600,
       "natural_curve_status": "selected_curve_family_available"
     },
     {
-      "vdyp_au_id": "cwhvm1_hw_cw_h",
+      "vdyp_au_id": "cwhvm1_hw_cw_l",
+      "mp11_candidate_count": 2,
+      "mp11_au_codes": "Fvm203;Fvm211",
+      "curve_point_count": 598,
+      "age_min": 1,
+      "age_max": 299,
+      "max_vdyp_volume": 834.315617,
+      "source_vdyp_method": "smoothed_bin_pchip",
+      "source_vdyp_accepted": true,
+      "source_stand_count": 1072,
+      "natural_curve_status": "selected_curve_family_available"
+    },
+    {
+      "vdyp_au_id": "cwhvm1_hw_cw_m",
+      "mp11_candidate_count": 1,
+      "mp11_au_codes": "Fvm101",
+      "curve_point_count": 299,
+      "age_min": 1,
+      "age_max": 299,
+      "max_vdyp_volume": 1049.23912,
+      "source_vdyp_method": "smoothed_bin_pchip",
+      "source_vdyp_accepted": true,
+      "source_stand_count": 1564,
+      "natural_curve_status": "selected_curve_family_available"
+    },
+    {
+      "vdyp_au_id": "cwhvm1_hw_dr_h",
       "mp11_candidate_count": 1,
       "mp11_au_codes": "Fvm107",
       "curve_point_count": 299,
       "age_min": 1,
       "age_max": 299,
-      "max_vdyp_volume": 1191.464499,
+      "max_vdyp_volume": 896.751981,
       "source_vdyp_method": "smoothed_bin_pchip",
       "source_vdyp_accepted": true,
-      "source_stand_count": 342,
-      "natural_curve_status": "selected_curve_family_available"
-    },
-    {
-      "vdyp_au_id": "cwhvm1_hw_cw_l",
-      "mp11_candidate_count": 1,
-      "mp11_au_codes": "Fvm211",
-      "curve_point_count": 299,
-      "age_min": 1,
-      "age_max": 299,
-      "max_vdyp_volume": 833.554668,
-      "source_vdyp_method": "smoothed_bin_pchip",
-      "source_vdyp_accepted": true,
-      "source_stand_count": 1059,
-      "natural_curve_status": "selected_curve_family_available"
-    },
-    {
-      "vdyp_au_id": "cwhvm1_hw_cw_m",
-      "mp11_candidate_count": 2,
-      "mp11_au_codes": "Fvm207;Fvm208",
-      "curve_point_count": 598,
-      "age_min": 1,
-      "age_max": 299,
-      "max_vdyp_volume": 1049.389612,
-      "source_vdyp_method": "smoothed_bin_pchip",
-      "source_vdyp_accepted": true,
-      "source_stand_count": 1562,
+      "source_stand_count": 161,
       "natural_curve_status": "selected_curve_family_available"
     },
     {
@@ -163,36 +176,23 @@
       "curve_point_count": 299,
       "age_min": 1,
       "age_max": 299,
-      "max_vdyp_volume": 740.151049,
+      "max_vdyp_volume": 730.385858,
       "source_vdyp_method": "smoothed_bin_pchip",
       "source_vdyp_accepted": true,
-      "source_stand_count": 147,
-      "natural_curve_status": "selected_curve_family_available"
-    },
-    {
-      "vdyp_au_id": "cwhvm1_hw_fdc_l",
-      "mp11_candidate_count": 1,
-      "mp11_au_codes": "Fvm109",
-      "curve_point_count": 299,
-      "age_min": 1,
-      "age_max": 299,
-      "max_vdyp_volume": 1153.230919,
-      "source_vdyp_method": "smoothed_bin_pchip",
-      "source_vdyp_accepted": true,
-      "source_stand_count": 108,
+      "source_stand_count": 183,
       "natural_curve_status": "selected_curve_family_available"
     },
     {
       "vdyp_au_id": "cwhvm1_hw_ss_l",
       "mp11_candidate_count": 1,
-      "mp11_au_codes": "Fvm106",
+      "mp11_au_codes": "Fvm109",
       "curve_point_count": 299,
       "age_min": 1,
       "age_max": 299,
-      "max_vdyp_volume": 1057.282887,
+      "max_vdyp_volume": 1042.801624,
       "source_vdyp_method": "smoothed_bin_pchip",
       "source_vdyp_accepted": true,
-      "source_stand_count": 449,
+      "source_stand_count": 480,
       "natural_curve_status": "selected_curve_family_available"
     },
     {
@@ -202,62 +202,23 @@
       "curve_point_count": 598,
       "age_min": 1,
       "age_max": 299,
-      "max_vdyp_volume": 1193.283601,
+      "max_vdyp_volume": 1170.456538,
       "source_vdyp_method": "smoothed_bin_pchip",
       "source_vdyp_accepted": true,
-      "source_stand_count": 72,
+      "source_stand_count": 99,
       "natural_curve_status": "selected_curve_family_available"
     },
     {
-      "vdyp_au_id": "cwhvm1_ss_hw_l",
-      "mp11_candidate_count": 1,
-      "mp11_au_codes": "Fvm104",
-      "curve_point_count": 299,
-      "age_min": 1,
-      "age_max": 299,
-      "max_vdyp_volume": 1099.62384,
-      "source_vdyp_method": "smoothed_bin_pchip",
-      "source_vdyp_accepted": true,
-      "source_stand_count": 49,
-      "natural_curve_status": "selected_curve_family_available"
-    },
-    {
-      "vdyp_au_id": "cwhvm2_ba_hw_h",
-      "mp11_candidate_count": 1,
-      "mp11_au_codes": "Fvm101",
-      "curve_point_count": 299,
-      "age_min": 1,
-      "age_max": 299,
-      "max_vdyp_volume": 1197.498764,
-      "source_vdyp_method": "smoothed_bin_pchip",
-      "source_vdyp_accepted": true,
-      "source_stand_count": 36,
-      "natural_curve_status": "selected_curve_family_available"
-    },
-    {
-      "vdyp_au_id": "cwhvm2_cw_hw_m",
-      "mp11_candidate_count": 1,
-      "mp11_au_codes": "Fvm203",
-      "curve_point_count": 299,
-      "age_min": 1,
-      "age_max": 299,
-      "max_vdyp_volume": 696.379602,
-      "source_vdyp_method": "smoothed_bin_pchip",
-      "source_vdyp_accepted": true,
-      "source_stand_count": 44,
-      "natural_curve_status": "selected_curve_family_available"
-    },
-    {
-      "vdyp_au_id": "cwhvm2_hw_ba_l",
+      "vdyp_au_id": "cwhvm2_hw_cw_h",
       "mp11_candidate_count": 2,
-      "mp11_au_codes": "FMH01;FMH22",
+      "mp11_au_codes": "Fvm207;Fvm208",
       "curve_point_count": 598,
       "age_min": 1,
       "age_max": 299,
-      "max_vdyp_volume": 920.31217,
+      "max_vdyp_volume": 986.978444,
       "source_vdyp_method": "smoothed_bin_pchip",
       "source_vdyp_accepted": true,
-      "source_stand_count": 434,
+      "source_stand_count": 126,
       "natural_curve_status": "selected_curve_family_available"
     },
     {
@@ -267,10 +228,10 @@
       "curve_point_count": 598,
       "age_min": 1,
       "age_max": 299,
-      "max_vdyp_volume": 832.912065,
+      "max_vdyp_volume": 815.71462,
       "source_vdyp_method": "smoothed_bin_pchip",
       "source_vdyp_accepted": true,
-      "source_stand_count": 33,
+      "source_stand_count": 71,
       "natural_curve_status": "selected_curve_family_available"
     }
   ]

@@ -41,6 +41,8 @@ MANIFEST_MD_PATH = (
 )
 
 REVIEW_STATUS = "p10r5_tipsy_vdyp_diagnostic_review_required"
+BLOCKED_REVIEW_STATUS = "blocked_bec_mismatch_no_valid_comparison"
+BLOCKED_DIAGNOSTIC_CLASS = "no_same_bec_vdyp_comparison_available"
 VDYP_REVIEW_STATUS = "p10r5_vdyp_curve_slice_for_diagnostic"
 MODEL_INPUT_STATUS = "not_model_input"
 
@@ -49,6 +51,24 @@ def _clean_identifier(value: object) -> str:
     text = str(value).strip().lower()
     text = re.sub(r"[^a-z0-9]+", "-", text)
     return text.strip("-") or "unknown"
+
+
+def _expected_bec_prefix(row: pd.Series) -> str:
+    zone = str(row["mp11_bec_zone"]).strip().lower()
+    subzone = str(row["mp11_bec_subzone"]).strip().lower()
+    return f"{zone}{subzone}"
+
+
+def _assert_same_bec(row: pd.Series) -> None:
+    vdyp_au_id = str(row["canonical_au_id"]).strip().lower()
+    expected_prefix = _expected_bec_prefix(row)
+    if not vdyp_au_id.startswith(expected_prefix):
+        raise RuntimeError(
+            "Refusing TIPSY-vs-VDYP plot with mismatched BEC: "
+            f"mp11_au_code={row['mp11_au_code']} "
+            f"tipsy_bec={row['mp11_bec_zone']}{row['mp11_bec_subzone']} "
+            f"vdyp_au_id={row['canonical_au_id']}"
+        )
 
 
 def _value_at_age(curve: pd.DataFrame, age: int, column: str) -> float:
@@ -121,7 +141,7 @@ def _plot_one(
         color="#3f3f46",
         linewidth=2.1,
         linestyle="--",
-        label=f"VDYP natural: {row['phase5_au_id']}",
+        label=f"VDYP natural: {row['canonical_au_id']}",
     )
     ax.plot(
         tipsy_curve["age"],
@@ -140,7 +160,7 @@ def _plot_one(
     ax.set_ylim(0, max(100.0, math.ceil(ymax / 100.0) * 100.0))
     ax.set_title(
         "MP11 TIPSY vs public VDYP natural diagnostic: "
-        f"{row['mp11_au_code']} -> {row['phase5_au_id']}\n"
+        f"{row['mp11_au_code']} -> {row['canonical_au_id']}\n"
         f"{metrics['diagnostic_class']} | "
         f"TIPSY/VDYP max {metrics['tipsy_to_vdyp_max_ratio']:.3f} | "
         f"age 100 {metrics['tipsy_to_vdyp_age_100_ratio']:.3f}",
@@ -184,7 +204,10 @@ def _build_vdyp_slice(
     diag_by_au = natural_diag.set_index("au_id").to_dict(orient="index")
     rows: list[dict[str, object]] = []
     for _, comp_row in comparison.sort_values(["mp11_au_code"]).iterrows():
-        vdyp_au_id = comp_row["phase5_au_id"]
+        if pd.isna(comp_row.get("canonical_au_id")):
+            continue
+        _assert_same_bec(comp_row)
+        vdyp_au_id = comp_row["canonical_au_id"]
         vdyp_curve = vdyp_curves[vdyp_curves["au_id"] == vdyp_au_id].sort_values("age")
         if vdyp_curve.empty:
             raise RuntimeError(f"Missing VDYP natural curve for {vdyp_au_id}")
@@ -233,11 +256,48 @@ def _build_manifest(
     diag_by_au = natural_diag.set_index("au_id").to_dict(orient="index")
     for _, row in comparison.sort_values(["mp11_au_code"]).iterrows():
         feature_id = int(row["mp11_feature_id"])
-        vdyp_au_id = str(row["phase5_au_id"])
         tipsy_curve = tipsy_by_feature.get(feature_id)
-        vdyp_curve = natural_by_au.get(vdyp_au_id)
         if tipsy_curve is None or tipsy_curve.empty:
             raise RuntimeError(f"Missing TIPSY curve for feature_id {feature_id}")
+        if pd.isna(row.get("canonical_au_id")):
+            manifest_rows.append(
+                {
+                    "mp11_au_code": row["mp11_au_code"],
+                    "mp11_feature_id": feature_id,
+                    "mp11_tipsy_review_status": row["review_status"],
+                    "mp11_tipsy_comparison_class": row["comparison_class"],
+                    "vdyp_au_id": "",
+                    "vdyp_natural_curve_status": "not_available_same_bec",
+                    "vdyp_selected_path": "",
+                    "vdyp_source_stand_count": 0,
+                    "tipsy_max_volume": round(
+                        float(tipsy_curve["treated_volume"].max()), 3
+                    ),
+                    "vdyp_max_volume": float("nan"),
+                    "tipsy_to_vdyp_max_ratio": float("nan"),
+                    "tipsy_age_at_max_volume": int(
+                        tipsy_curve.loc[tipsy_curve["treated_volume"].idxmax(), "age"]
+                    ),
+                    "vdyp_age_at_max_volume": -1,
+                    "tipsy_volume_age_100": _value_at_age(
+                        tipsy_curve, 100, "treated_volume"
+                    ),
+                    "vdyp_volume_age_100": float("nan"),
+                    "tipsy_to_vdyp_age_100_ratio": float("nan"),
+                    "common_age_rmse": float("nan"),
+                    "common_age_mean_delta": float("nan"),
+                    "diagnostic_class": BLOCKED_DIAGNOSTIC_CLASS,
+                    "review_status": BLOCKED_REVIEW_STATUS,
+                    "model_input_status": MODEL_INPUT_STATUS,
+                    "plot_path": "",
+                    "plot_exists": False,
+                    "plot_size_bytes": 0,
+                }
+            )
+            continue
+        _assert_same_bec(row)
+        vdyp_au_id = str(row["canonical_au_id"])
+        vdyp_curve = natural_by_au.get(vdyp_au_id)
         if vdyp_curve is None or vdyp_curve.empty:
             raise RuntimeError(f"Missing VDYP natural curve for {vdyp_au_id}")
         metrics = _curve_comparison_metrics(tipsy_curve, vdyp_curve)
@@ -283,25 +343,28 @@ def _build_manifest(
 
 def _write_json_outputs(vdyp_slice: pd.DataFrame, manifest: pd.DataFrame) -> None:
     generated_at = datetime.now(UTC).isoformat(timespec="seconds")
-    vdyp_index = (
-        vdyp_slice.groupby(["vdyp_au_id"], as_index=False)
-        .agg(
-            mp11_candidate_count=("mp11_au_code", "nunique"),
-            mp11_au_codes=(
-                "mp11_au_code",
-                lambda values: ";".join(sorted(set(values))),
-            ),
-            curve_point_count=("age", "count"),
-            age_min=("age", "min"),
-            age_max=("age", "max"),
-            max_vdyp_volume=("vdyp_volume", "max"),
-            source_vdyp_method=("source_vdyp_method", "first"),
-            source_vdyp_accepted=("source_vdyp_accepted", "first"),
-            source_stand_count=("source_stand_count", "first"),
-            natural_curve_status=("natural_curve_status", "first"),
+    if vdyp_slice.empty:
+        vdyp_index = pd.DataFrame()
+    else:
+        vdyp_index = (
+            vdyp_slice.groupby(["vdyp_au_id"], as_index=False)
+            .agg(
+                mp11_candidate_count=("mp11_au_code", "nunique"),
+                mp11_au_codes=(
+                    "mp11_au_code",
+                    lambda values: ";".join(sorted(set(values))),
+                ),
+                curve_point_count=("age", "count"),
+                age_min=("age", "min"),
+                age_max=("age", "max"),
+                max_vdyp_volume=("vdyp_volume", "max"),
+                source_vdyp_method=("source_vdyp_method", "first"),
+                source_vdyp_accepted=("source_vdyp_accepted", "first"),
+                source_stand_count=("source_stand_count", "first"),
+                natural_curve_status=("natural_curve_status", "first"),
+            )
+            .sort_values(["vdyp_au_id"])
         )
-        .sort_values(["vdyp_au_id"])
-    )
     VDYP_SLICE_JSON_PATH.write_text(
         json.dumps(
             {
@@ -317,8 +380,16 @@ def _write_json_outputs(vdyp_slice: pd.DataFrame, manifest: pd.DataFrame) -> Non
                     INSTANCE_ROOT
                 ).as_posix(),
                 "row_count": int(len(vdyp_slice)),
-                "mp11_candidate_count": int(vdyp_slice["mp11_au_code"].nunique()),
-                "vdyp_au_count": int(vdyp_slice["vdyp_au_id"].nunique()),
+                "mp11_candidate_count": (
+                    int(vdyp_slice["mp11_au_code"].nunique())
+                    if not vdyp_slice.empty
+                    else 0
+                ),
+                "vdyp_au_count": (
+                    int(vdyp_slice["vdyp_au_id"].nunique())
+                    if not vdyp_slice.empty
+                    else 0
+                ),
                 "review_status_counts": vdyp_slice["review_status"]
                 .value_counts()
                 .sort_index()
@@ -403,6 +474,8 @@ def _write_markdown(manifest: pd.DataFrame, vdyp_slice: pd.DataFrame) -> None:
         "## Summary",
         "",
         f"- diagnostic rows: `{len(manifest)}`",
+        f"- plotted diagnostic rows: `{int(manifest['plot_exists'].sum())}`",
+        f"- blocked no-same-BEC rows: `{int((manifest['review_status'] == BLOCKED_REVIEW_STATUS).sum())}`",
         f"- VDYP curve-slice rows: `{len(vdyp_slice)}`",
         f"- unique MP11 TIPSY candidates: `{manifest['mp11_au_code'].nunique()}`",
         f"- unique VDYP natural AUs: `{manifest['vdyp_au_id'].nunique()}`",
@@ -434,10 +507,9 @@ def main() -> None:
     vdyp_curves = pd.read_csv(VDYP_CURVES_PATH)
     vdyp_fit = pd.read_csv(VDYP_FIT_PATH)
     natural_diag = pd.read_csv(VDYP_NATURAL_DIAGNOSTICS_PATH)
-    if not (comparison["review_status"] == "tentatively_passed_review").all():
-        raise RuntimeError(
-            "All MP11 comparison rows must be tentatively reviewed first"
-        )
+    PLOTS_DIR.mkdir(parents=True, exist_ok=True)
+    for path in PLOTS_DIR.glob("*.png"):
+        path.unlink()
     vdyp_slice = _build_vdyp_slice(
         comparison=comparison,
         vdyp_curves=vdyp_curves,
@@ -454,9 +526,10 @@ def main() -> None:
         raise RuntimeError(
             f"Expected {len(comparison)} manifest rows, got {len(manifest)}"
         )
-    if not manifest["plot_exists"].all():
+    plotted = manifest[manifest["review_status"] != BLOCKED_REVIEW_STATUS]
+    if not plotted["plot_exists"].all():
         raise RuntimeError("At least one expected diagnostic plot was not written")
-    if (manifest["plot_size_bytes"] <= 0).any():
+    if (plotted["plot_size_bytes"] <= 0).any():
         raise RuntimeError("At least one diagnostic plot is empty")
     if not (manifest["model_input_status"] == MODEL_INPUT_STATUS).all():
         raise RuntimeError("Unexpected model-input promotion in diagnostic manifest")
@@ -467,7 +540,9 @@ def main() -> None:
     _write_markdown(manifest, vdyp_slice)
     print(
         "Generated P10R TIPSY-vs-VDYP diagnostics: "
-        f"plots={len(manifest)} vdyp_slice_rows={len(vdyp_slice)}"
+        f"plots={int(manifest['plot_exists'].sum())} "
+        f"blocked={int((manifest['review_status'] == BLOCKED_REVIEW_STATUS).sum())} "
+        f"vdyp_slice_rows={len(vdyp_slice)}"
     )
 
 

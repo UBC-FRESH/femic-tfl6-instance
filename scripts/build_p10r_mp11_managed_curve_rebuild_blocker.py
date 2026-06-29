@@ -31,8 +31,13 @@ BTC_ERROR_CSV = (
     INSTANCE_ROOT / "runtime" / "mp11_yield" / "p10r_mp11_candidate_04_error.csv"
 )
 BTC_MANIFEST_PATH = (
-    INSTANCE_ROOT / "runtime" / "mp11_yield" / "logs" / "btc_manifest-p10r_mp11_candidate.json"
+    INSTANCE_ROOT
+    / "runtime"
+    / "mp11_yield"
+    / "logs"
+    / "btc_manifest-p10r_mp11_candidate.json"
 )
+
 
 def _portable_path(path: str | Path) -> str:
     resolved = Path(path)
@@ -137,6 +142,17 @@ def _parse_btc_output(candidate_map: pd.DataFrame) -> pd.DataFrame | None:
         "mp11_au_code",
         "bec_zone",
         "bec_subzone",
+        "canonical_au_id",
+        "canonical_stratum_code",
+        "canonical_species_combo",
+        "canonical_mean_si",
+        "canonical_median_si",
+        "mp11_parsed_weighted_si",
+        "tipsy_input_si",
+        "tipsy_input_si_source",
+        "mp11_weighted_si",
+        "canonical_mean_si_abs_diff",
+        "canonical_median_si_abs_diff",
         "sph",
         "species_count",
         "species_percent_total",
@@ -163,6 +179,17 @@ def _parse_btc_output(candidate_map: pd.DataFrame) -> pd.DataFrame | None:
         "merch_deciduous_volume",
         "bec_zone",
         "bec_subzone",
+        "canonical_au_id",
+        "canonical_stratum_code",
+        "canonical_species_combo",
+        "canonical_mean_si",
+        "canonical_median_si",
+        "mp11_parsed_weighted_si",
+        "tipsy_input_si",
+        "tipsy_input_si_source",
+        "mp11_weighted_si",
+        "canonical_mean_si_abs_diff",
+        "canonical_median_si_abs_diff",
         "sph",
         "species_count",
         "species_percent_total",
@@ -171,8 +198,10 @@ def _parse_btc_output(candidate_map: pd.DataFrame) -> pd.DataFrame | None:
         "source_anchor",
         "model_input_status",
     ]
-    return curves[ordered_columns].sort_values(["feature_id", "age"]).reset_index(
-        drop=True
+    return (
+        curves[ordered_columns]
+        .sort_values(["feature_id", "age"])
+        .reset_index(drop=True)
     )
 
 
@@ -244,16 +273,24 @@ def build_blocker() -> tuple[pd.DataFrame, dict[str, object]]:
                 "max_treated_volume": max_treated_volume,
                 "age_at_max_treated_volume": age_at_max_treated_volume,
                 "treated_volume_age_40": (
-                    None if curve is None else _value_at_age(curve, 40, "treated_volume")
+                    None
+                    if curve is None
+                    else _value_at_age(curve, 40, "treated_volume")
                 ),
                 "treated_volume_age_60": (
-                    None if curve is None else _value_at_age(curve, 60, "treated_volume")
+                    None
+                    if curve is None
+                    else _value_at_age(curve, 60, "treated_volume")
                 ),
                 "treated_volume_age_80": (
-                    None if curve is None else _value_at_age(curve, 80, "treated_volume")
+                    None
+                    if curve is None
+                    else _value_at_age(curve, 80, "treated_volume")
                 ),
                 "treated_volume_age_100": (
-                    None if curve is None else _value_at_age(curve, 100, "treated_volume")
+                    None
+                    if curve is None
+                    else _value_at_age(curve, 100, "treated_volume")
                 ),
                 "terminal_treated_volume_age_350": terminal_treated_volume_age_350,
                 "btc_error_rows": error_count,
@@ -295,13 +332,19 @@ def build_blocker() -> tuple[pd.DataFrame, dict[str, object]]:
         "found_executables_or_runners": found,
         "curve_generation_status": status,
         "curve_generation_note": note,
-        "btc_output_csv": _portable_path(BTC_OUTPUT_CSV) if BTC_OUTPUT_CSV.exists() else None,
-        "btc_error_csv": _portable_path(BTC_ERROR_CSV) if BTC_ERROR_CSV.exists() else None,
+        "btc_output_csv": _portable_path(BTC_OUTPUT_CSV)
+        if BTC_OUTPUT_CSV.exists()
+        else None,
+        "btc_error_csv": _portable_path(BTC_ERROR_CSV)
+        if BTC_ERROR_CSV.exists()
+        else None,
         "btc_manifest_path": (
             _portable_path(BTC_MANIFEST_PATH) if BTC_MANIFEST_PATH.exists() else None
         ),
         "btc_manifest_status": None if manifest is None else manifest.get("status"),
-        "btc_manifest_exit_code": None if manifest is None else manifest.get("exit_code"),
+        "btc_manifest_exit_code": None
+        if manifest is None
+        else manifest.get("exit_code"),
         "btc_error_rows": error_count,
         "parsed_curve_rows": 0 if curves is None else int(len(curves)),
         "parsed_curve_feature_count": (
@@ -337,7 +380,9 @@ def _markdown_table(df: pd.DataFrame, columns: list[str], *, max_rows: int = 30)
 def write_outputs(output: pd.DataFrame, summary: dict[str, object]) -> None:
     output.to_csv(OUTPUT_CSV, index=False)
     OUTPUT_JSON.write_text(
-        json.dumps({"summary": summary, "rows": output.to_dict(orient="records")}, indent=2)
+        json.dumps(
+            {"summary": summary, "rows": output.to_dict(orient="records")}, indent=2
+        )
         + "\n",
         encoding="utf-8",
     )

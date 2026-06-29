@@ -14,6 +14,7 @@ import pandas as pd
 INSTANCE_ROOT = Path(__file__).resolve().parents[1]
 PARSED_ROWS_PATH = INSTANCE_ROOT / "planning" / "tfl6_mp11_tipsy_row_parse.csv"
 BTC_SCHEMA_FALLBACK_PATH = INSTANCE_ROOT / "data" / "03_input-tfl6.csv"
+CANONICAL_AU_PATH = INSTANCE_ROOT / "planning" / "tfl6_static_au_universe.csv"
 OUTPUT_CSV = INSTANCE_ROOT / "planning" / "tfl6_mp11_tipsy_handoff.csv"
 OUTPUT_MAP_CSV = INSTANCE_ROOT / "planning" / "tfl6_mp11_tipsy_handoff_map.csv"
 OUTPUT_JSON = INSTANCE_ROOT / "planning" / "tfl6_mp11_tipsy_handoff.json"
@@ -23,7 +24,9 @@ OUTPUT_MD = INSTANCE_ROOT / "planning" / "tfl6_mp11_tipsy_handoff.md"
 try:
     from femic.pipeline.tipsy import DEFAULT_BTC_MSYT_COLUMNS
 except ModuleNotFoundError:
-    DEFAULT_BTC_MSYT_COLUMNS = list(pd.read_csv(BTC_SCHEMA_FALLBACK_PATH, nrows=0).columns)
+    DEFAULT_BTC_MSYT_COLUMNS = list(
+        pd.read_csv(BTC_SCHEMA_FALLBACK_PATH, nrows=0).columns
+    )
 
 LANE_CODES = {
     "early_managed": 1,
@@ -105,6 +108,24 @@ def _species_for_btc(row: pd.Series) -> list[tuple[str, float, float, float]]:
     return species
 
 
+def _canonical_species_set(species_combo: Any) -> set[str]:
+    return {
+        str(part).strip().upper()
+        for part in str(species_combo).replace("/", "+").split("+")
+        if str(part).strip()
+    }
+
+
+def _weighted_si(species: list[tuple[str, float, float, float]]) -> float:
+    weighted = 0.0
+    weight_sum = 0.0
+    for _btc_species, percent, si, _genetic_gain in species:
+        if percent > 0 and si > 0:
+            weighted += percent * si
+            weight_sum += percent
+    return weighted / weight_sum if weight_sum else 0.0
+
+
 def _bec_from_mp11_future_au(au_code: str) -> tuple[str, str, str]:
     if re.match(r"^Fvh\d+", au_code):
         return "CWH", "vh", "decoded_from_fvh_future_au_code"
@@ -115,13 +136,61 @@ def _bec_from_mp11_future_au(au_code: str) -> tuple[str, str, str]:
     return "", "", "missing_bec_decoder"
 
 
-def _handoff_status(row: pd.Series) -> tuple[str, str, str, str]:
+def _canonical_au_match(
+    *,
+    row: pd.Series,
+    bec_zone: str,
+    bec_subzone: str,
+    canonical_au: pd.DataFrame,
+) -> tuple[pd.Series | None, str]:
+    species = _species_for_btc(row)
+    species_set = {item[0].upper() for item in species}
+    weighted_si = _weighted_si(species)
+    candidates = canonical_au[
+        (canonical_au["bec_zone_code"].astype(str).str.upper() == bec_zone)
+        & (canonical_au["bec_subzone"].astype(str).str.lower() == bec_subzone.lower())
+    ].copy()
+    if candidates.empty:
+        return None, "no_canonical_top_n_au_for_bec"
+    candidates["species_overlap_count"] = candidates["species_combo"].map(
+        lambda combo: len(species_set.intersection(_canonical_species_set(combo)))
+    )
+    candidates["species_overlap_ratio"] = candidates["species_overlap_count"].map(
+        lambda count: count / len(species_set) if species_set else 0.0
+    )
+    candidates["median_si_abs_diff"] = candidates["median_si"].map(
+        lambda value: (
+            abs(float(value) - weighted_si) if weighted_si > 0 else float("inf")
+        )
+    )
+    match = candidates.sort_values(
+        [
+            "species_overlap_count",
+            "species_overlap_ratio",
+            "median_si_abs_diff",
+            "area_ha",
+            "au_id",
+        ],
+        ascending=[False, False, True, False, True],
+    ).iloc[0]
+    if int(match["species_overlap_count"]) <= 0:
+        return None, "no_canonical_top_n_au_species_overlap"
+    return match, "canonical_top_n_au_match"
+
+
+def _handoff_status(
+    row: pd.Series, canonical_au: pd.DataFrame
+) -> tuple[str, str, str, str, pd.Series | None, float]:
+    species = _species_for_btc(row)
+    weighted_si = _weighted_si(species)
     if row["parse_confidence"] != "high":
         return (
             "review_required_parser_warning",
             "",
             "",
             str(row.get("parser_warnings", "")),
+            None,
+            weighted_si,
         )
     if row["source_table"] != "Table 57":
         return (
@@ -129,17 +198,48 @@ def _handoff_status(row: pd.Series) -> tuple[str, str, str, str]:
             "",
             "",
             "Tables 54/55 use MP11 existing AU codes that do not carry enough public BEC/site-series information for direct BatchTIPSY handoff.",
+            None,
+            weighted_si,
         )
     bec_zone, bec_subzone, source = _bec_from_mp11_future_au(str(row["au_code"]))
     if not bec_zone:
-        return ("blocked_missing_bec_decoder", "", "", source)
-    return ("candidate_for_curve_generation", bec_zone, bec_subzone, source)
+        return ("blocked_missing_bec_decoder", "", "", source, None, weighted_si)
+    canonical_match, canonical_note = _canonical_au_match(
+        row=row,
+        bec_zone=bec_zone,
+        bec_subzone=bec_subzone,
+        canonical_au=canonical_au,
+    )
+    if canonical_match is None:
+        return (
+            f"blocked_{canonical_note}",
+            bec_zone,
+            bec_subzone,
+            f"{source}; {canonical_note}",
+            None,
+            weighted_si,
+        )
+    return (
+        "candidate_for_curve_generation",
+        bec_zone,
+        bec_subzone,
+        f"{source}; {canonical_note}",
+        canonical_match,
+        weighted_si,
+    )
 
 
 def _btc_row(row: pd.Series, map_row: dict[str, Any]) -> dict[str, Any]:
     btc_row = {column: "" for column in DEFAULT_BTC_MSYT_COLUMNS}
     species = _species_for_btc(row)
-    density_values = _density_split(_float_or_zero(row["sph"]), [(s[0], s[1]) for s in species])
+    tipsy_input_si = _float_or_zero(map_row["tipsy_input_si"])
+    if tipsy_input_si <= 0:
+        raise RuntimeError(
+            f"Missing canonical AU median SI for BTC feature {map_row['feature_id']}"
+        )
+    density_values = _density_split(
+        _float_or_zero(row["sph"]), [(s[0], s[1]) for s in species]
+    )
     feature_id = map_row["feature_id"]
     btc_row.update(
         {
@@ -155,25 +255,37 @@ def _btc_row(row: pd.Series, map_row: dict[str, Any]) -> dict[str, Any]:
             "vri_ref_sph": 0,
         }
     )
-    for column in [column for column in DEFAULT_BTC_MSYT_COLUMNS if column.endswith("_si")]:
+    for column in [
+        column for column in DEFAULT_BTC_MSYT_COLUMNS if column.endswith("_si")
+    ]:
         btc_row[column] = 0
-    for index, ((btc_species, _percent, si, genetic_gain), density) in enumerate(
+    for index, (
+        (btc_species, _percent, _parsed_si, genetic_gain),
+        density,
+    ) in enumerate(
         zip(species, density_values, strict=True),
         start=1,
     ):
         btc_row[f"planted_species{index}"] = btc_species
         btc_row[f"planted_density{index}"] = density
         btc_row[f"genetic_worth{index}"] = genetic_gain
-        btc_row[SITE_INDEX_COLUMNS[btc_species]] = si
+        btc_row[SITE_INDEX_COLUMNS[btc_species]] = tipsy_input_si
     return btc_row
 
 
 def build_handoff() -> tuple[pd.DataFrame, pd.DataFrame, dict[str, Any]]:
     parsed = pd.read_csv(PARSED_ROWS_PATH)
+    canonical_au = pd.read_csv(CANONICAL_AU_PATH)
+    if (~canonical_au["selected_top_90_stratum"].astype(bool)).any():
+        raise RuntimeError(
+            "Canonical AU table contains non-top-N rows; refusing MP11 TIPSY handoff."
+        )
     mapping_rows: list[dict[str, Any]] = []
     handoff_rows: list[dict[str, Any]] = []
     for index, row in parsed.reset_index(drop=True).iterrows():
-        status, bec_zone, bec_subzone, note = _handoff_status(row)
+        status, bec_zone, bec_subzone, note, canonical_match, weighted_si = (
+            _handoff_status(row, canonical_au)
+        )
         feature_id = 610000 + (index + 1) * 10 + LANE_CODES[str(row["curve_lane"])]
         species = _species_for_btc(row)
         species_count = len(species)
@@ -185,6 +297,35 @@ def build_handoff() -> tuple[pd.DataFrame, pd.DataFrame, dict[str, Any]]:
             "mp11_au_code": row["au_code"],
             "bec_zone": bec_zone,
             "bec_subzone": bec_subzone,
+            "canonical_au_id": ""
+            if canonical_match is None
+            else str(canonical_match["au_id"]),
+            "canonical_stratum_code": ""
+            if canonical_match is None
+            else str(canonical_match["stratum_code"]),
+            "canonical_species_combo": ""
+            if canonical_match is None
+            else str(canonical_match["species_combo"]),
+            "canonical_mean_si": ""
+            if canonical_match is None
+            else round(float(canonical_match["mean_si"]), 3),
+            "canonical_median_si": ""
+            if canonical_match is None
+            else round(float(canonical_match["median_si"]), 3),
+            "mp11_parsed_weighted_si": round(weighted_si, 3) if weighted_si > 0 else "",
+            "tipsy_input_si": ""
+            if canonical_match is None
+            else round(float(canonical_match["median_si"]), 3),
+            "tipsy_input_si_source": ""
+            if canonical_match is None
+            else "canonical_top_n_au_vri_median_si",
+            "mp11_weighted_si": round(weighted_si, 3) if weighted_si > 0 else "",
+            "canonical_mean_si_abs_diff": ""
+            if canonical_match is None or weighted_si <= 0
+            else round(abs(float(canonical_match["mean_si"]) - weighted_si), 3),
+            "canonical_median_si_abs_diff": ""
+            if canonical_match is None or weighted_si <= 0
+            else round(abs(float(canonical_match["median_si"]) - weighted_si), 3),
             "sph": row["sph"],
             "species_count": species_count,
             "species_percent_total": row["species_percent_total"],
@@ -209,18 +350,29 @@ def build_handoff() -> tuple[pd.DataFrame, pd.DataFrame, dict[str, Any]]:
         "handoff_candidate_count": int(len(handoff)),
         "status_counts": {
             str(key): int(value)
-            for key, value in mapping["handoff_status"].value_counts().sort_index().items()
+            for key, value in mapping["handoff_status"]
+            .value_counts()
+            .sort_index()
+            .items()
         },
         "source_table_status_counts": {
             str(key): int(value)
-            for key, value in mapping.groupby(["source_table", "handoff_status"]).size().items()
+            for key, value in mapping.groupby(["source_table", "handoff_status"])
+            .size()
+            .items()
         },
         "oaf_policy": "MP11 narrative OAF defaults: OAF1=15% and OAF2=5%, emitted as BTC factors 0.85 and 0.95.",
         "regen_delay_policy": "Future managed candidate rows use one-year regeneration delay from MP11 Section 8.2.7.1.",
+        "site_index_policy": (
+            "Candidate BTC rows use the matched canonical top-N AU VRI median SI "
+            "as the TIPSY site-index input for every planted species SI column. "
+            "Parsed MP11 per-species SI values are retained only as provenance."
+        ),
         "join_boundary": (
             "Table 57 rows can produce standalone future-managed curve-generation candidates. "
-            "Tables 54/55 remain blocked pending a public MP11 existing/recent AU-code to "
-            "BEC/site-series mapping before BatchTIPSY handoff."
+            "They must first map to a canonical top-N FEMIC AU. Tables 54/55 remain "
+            "blocked pending a public MP11 existing/recent AU-code to BEC/site-series "
+            "mapping before BatchTIPSY handoff."
         ),
         "use_boundary": "Rows are handoff candidates only and remain not_model_input.",
     }
@@ -241,7 +393,9 @@ def _markdown_table(df: pd.DataFrame, columns: list[str], *, max_rows: int = 25)
     return "\n".join([header, separator, *rows])
 
 
-def write_outputs(handoff: pd.DataFrame, mapping: pd.DataFrame, summary: dict[str, Any]) -> None:
+def write_outputs(
+    handoff: pd.DataFrame, mapping: pd.DataFrame, summary: dict[str, Any]
+) -> None:
     handoff.to_csv(OUTPUT_CSV, index=False)
     mapping.to_csv(OUTPUT_MAP_CSV, index=False)
     OUTPUT_JSON.write_text(
@@ -279,12 +433,15 @@ def write_outputs(handoff: pd.DataFrame, mapping: pd.DataFrame, summary: dict[st
         "",
         "## Status Counts",
         "",
-        _markdown_table(status, ["source_table", "handoff_status", "row_count"], max_rows=50),
+        _markdown_table(
+            status, ["source_table", "handoff_status", "row_count"], max_rows=50
+        ),
         "",
         "## Candidate Policy",
         "",
         f"- OAF: {summary['oaf_policy']}",
         f"- Regeneration delay: {summary['regen_delay_policy']}",
+        f"- Site index: {summary['site_index_policy']}",
         f"- Join boundary: {summary['join_boundary']}",
         "",
         "## Candidate Rows",
@@ -297,6 +454,11 @@ def write_outputs(handoff: pd.DataFrame, mapping: pd.DataFrame, summary: dict[st
                 "curve_lane",
                 "bec_zone",
                 "bec_subzone",
+                "canonical_au_id",
+                "canonical_median_si",
+                "mp11_parsed_weighted_si",
+                "tipsy_input_si",
+                "canonical_median_si_abs_diff",
                 "sph",
                 "species_percent_total",
                 "thlb_area_ha",

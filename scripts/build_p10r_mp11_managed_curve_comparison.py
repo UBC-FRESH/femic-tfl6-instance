@@ -23,6 +23,11 @@ OUTPUT_CSV = INSTANCE_ROOT / "planning" / "tfl6_mp11_managed_curve_comparison.cs
 OUTPUT_JSON = INSTANCE_ROOT / "planning" / "tfl6_mp11_managed_curve_comparison.json"
 OUTPUT_MD = INSTANCE_ROOT / "planning" / "tfl6_mp11_managed_curve_comparison.md"
 
+BLOCKED_COMPARISON_CLASS = "no_same_bec_phase5_comparison_available"
+BLOCKED_REVIEW_STATUS = "blocked_bec_mismatch_no_valid_comparison"
+COMPARISON_REVIEW_STATUS = "p10r4e_comparison_review_required"
+MODEL_INPUT_STATUS = "not_model_input"
+
 BTC_SPECIES_TO_CANONICAL = {
     "BA": "BA",
     "CW": "CW",
@@ -151,8 +156,6 @@ def _select_phase5_match(
         & (phase5_future["phase5_comparison_curve_available"])
     ].copy()
     if candidates.empty:
-        candidates = phase5_future[phase5_future["phase5_comparison_curve_available"]].copy()
-    if candidates.empty:
         return None
 
     candidate_set = set(candidate_species)
@@ -196,7 +199,8 @@ def build_comparison() -> pd.DataFrame:
         for feature_id, group in phase5_curves.groupby("feature_id")
     }
     mp11_by_feature = {
-        int(feature_id): group.copy() for feature_id, group in mp11_curves.groupby("feature_id")
+        int(feature_id): group.copy()
+        for feature_id, group in mp11_curves.groupby("feature_id")
     }
     handoff_by_feature = {int(row["feature_id"]): row for _, row in handoff.iterrows()}
 
@@ -213,6 +217,7 @@ def build_comparison() -> pd.DataFrame:
         )
         mp11_metrics = _curve_metrics(mp11_curve)
         if phase5_match is None:
+            phase5_match_status = "blocked_no_same_bec_subzone_phase5_comparison"
             phase5_metrics: dict[str, float | int] = {
                 "max_volume": float("nan"),
                 "age_at_max_volume": -1,
@@ -227,7 +232,10 @@ def build_comparison() -> pd.DataFrame:
             age_mean_delta = float("nan")
             overlap_ratio = float("nan")
             si_diff = float("nan")
+            comparison_class = BLOCKED_COMPARISON_CLASS
+            review_status = BLOCKED_REVIEW_STATUS
         else:
+            phase5_match_status = "same_bec_subzone_phase5_comparison"
             phase5_feature_id = int(phase5_match["feature_id"])
             phase5_curve = phase5_curves_by_feature[phase5_feature_id]
             phase5_metrics = _curve_metrics(phase5_curve)
@@ -236,12 +244,16 @@ def build_comparison() -> pd.DataFrame:
                 on="age",
                 suffixes=("_mp11", "_phase5"),
             )
-            paired["delta"] = paired["treated_volume_mp11"] - paired["treated_volume_phase5"]
+            paired["delta"] = (
+                paired["treated_volume_mp11"] - paired["treated_volume_phase5"]
+            )
             age_rmse = round(float((paired["delta"].pow(2).mean()) ** 0.5), 3)
             age_mean_delta = round(float(paired["delta"].mean()), 3)
             phase_species = _phase5_species_set(phase5_match["species_combo"])
             overlap_ratio = (
-                round(len(set(species).intersection(phase_species)) / len(set(species)), 3)
+                round(
+                    len(set(species).intersection(phase_species)) / len(set(species)), 3
+                )
                 if species
                 else float("nan")
             )
@@ -250,6 +262,23 @@ def build_comparison() -> pd.DataFrame:
                 if not math.isnan(mean_si)
                 else float("nan")
             )
+            comparison_class = _difference_class(
+                _pct_delta(
+                    _delta(
+                        float(mp11_metrics["max_volume"]),
+                        float(phase5_metrics["max_volume"]),
+                    ),
+                    float(phase5_metrics["max_volume"]),
+                ),
+                _pct_delta(
+                    _delta(
+                        float(mp11_metrics["volume_age_100"]),
+                        float(phase5_metrics["volume_age_100"]),
+                    ),
+                    float(phase5_metrics["volume_age_100"]),
+                ),
+            )
+            review_status = COMPARISON_REVIEW_STATUS
 
         max_delta = _delta(
             float(mp11_metrics["max_volume"]),
@@ -260,7 +289,9 @@ def build_comparison() -> pd.DataFrame:
             float(mp11_metrics["volume_age_100"]),
             float(phase5_metrics["volume_age_100"]),
         )
-        age100_pct_delta = _pct_delta(age100_delta, float(phase5_metrics["volume_age_100"]))
+        age100_pct_delta = _pct_delta(
+            age100_delta, float(phase5_metrics["volume_age_100"])
+        )
         rows.append(
             {
                 "mp11_feature_id": feature_id,
@@ -269,8 +300,22 @@ def build_comparison() -> pd.DataFrame:
                 "mp11_thlb_area_ha": metadata["thlb_area_ha"],
                 "mp11_bec_zone": metadata["bec_zone"],
                 "mp11_bec_subzone": metadata["bec_subzone"],
+                "canonical_au_id": metadata["canonical_au_id"],
+                "canonical_stratum_code": metadata["canonical_stratum_code"],
+                "canonical_species_combo": metadata["canonical_species_combo"],
+                "canonical_mean_si": metadata["canonical_mean_si"],
+                "canonical_median_si": metadata["canonical_median_si"],
+                "mp11_parsed_weighted_si": metadata["mp11_parsed_weighted_si"],
+                "tipsy_input_si": metadata["tipsy_input_si"],
+                "tipsy_input_si_source": metadata["tipsy_input_si_source"],
+                "canonical_mean_si_abs_diff": metadata["canonical_mean_si_abs_diff"],
+                "canonical_median_si_abs_diff": metadata[
+                    "canonical_median_si_abs_diff"
+                ],
                 "mp11_species_combo": "+".join(species),
-                "mp11_weighted_si": round(mean_si, 3) if not math.isnan(mean_si) else None,
+                "mp11_weighted_si": round(mean_si, 3)
+                if not math.isnan(mean_si)
+                else None,
                 "phase5_au_id": None if phase5_match is None else phase5_match["au_id"],
                 "phase5_feature_id": phase5_feature_id,
                 "phase5_stratum_code": (
@@ -279,12 +324,19 @@ def build_comparison() -> pd.DataFrame:
                 "phase5_species_combo": (
                     None if phase5_match is None else phase5_match["species_combo"]
                 ),
-                "phase5_mean_si": None if phase5_match is None else phase5_match["mean_si"],
+                "phase5_mean_si": None
+                if phase5_match is None
+                else phase5_match["mean_si"],
                 "phase5_match_confidence": (
-                    None if phase5_match is None else phase5_match["phase5_mp10_match_confidence"]
+                    None
+                    if phase5_match is None
+                    else phase5_match["phase5_mp10_match_confidence"]
                 ),
+                "phase5_match_status": phase5_match_status,
                 "phase5_matched_legacy_au_code": (
-                    None if phase5_match is None else phase5_match["matched_legacy_au_code"]
+                    None
+                    if phase5_match is None
+                    else phase5_match["matched_legacy_au_code"]
                 ),
                 "species_overlap_ratio": overlap_ratio,
                 "mean_si_abs_diff": si_diff,
@@ -308,9 +360,9 @@ def build_comparison() -> pd.DataFrame:
                 "phase5_volume_age_350": phase5_metrics["volume_age_350"],
                 "age_curve_mean_delta": age_mean_delta,
                 "age_curve_rmse": age_rmse,
-                "comparison_class": _difference_class(max_pct_delta, age100_pct_delta),
-                "review_status": "p10r4e_comparison_review_required",
-                "model_input_status": "not_model_input",
+                "comparison_class": comparison_class,
+                "review_status": review_status,
+                "model_input_status": MODEL_INPUT_STATUS,
             }
         )
     return pd.DataFrame(rows).sort_values("mp11_feature_id").reset_index(drop=True)
@@ -323,6 +375,10 @@ def write_outputs(comparison: pd.DataFrame) -> None:
         "row_count": int(len(comparison)),
         "mp11_feature_count": int(comparison["mp11_feature_id"].nunique()),
         "phase5_match_count": int(comparison["phase5_feature_id"].notna().sum()),
+        "phase5_match_status_counts": comparison["phase5_match_status"]
+        .value_counts()
+        .sort_index()
+        .to_dict(),
         "comparison_class_counts": comparison["comparison_class"]
         .value_counts()
         .sort_index()
@@ -332,13 +388,15 @@ def write_outputs(comparison: pd.DataFrame) -> None:
         .sort_index()
         .to_dict(),
         "method": (
-            "Nearest Phase 5 future-managed comparison row selected by matching BEC "
-            "zone/subzone first, then maximizing species overlap and minimizing "
-            "weighted site-index difference."
+            "Nearest Phase 5 future-managed comparison row selected only from the "
+            "same BEC zone/subzone. Rows without a same-BEC/subzone comparison "
+            "are blocked rather than falling back across BEC boundaries."
         ),
     }
     OUTPUT_JSON.write_text(
-        json.dumps({**summary, "records": comparison.to_dict(orient="records")}, indent=2)
+        json.dumps(
+            {**summary, "records": comparison.to_dict(orient="records")}, indent=2
+        )
         + "\n",
         encoding="utf-8",
     )
@@ -432,7 +490,9 @@ def main() -> None:
         json.dumps(
             {
                 "row_count": int(len(comparison)),
-                "phase5_match_count": int(comparison["phase5_feature_id"].notna().sum()),
+                "phase5_match_count": int(
+                    comparison["phase5_feature_id"].notna().sum()
+                ),
                 "comparison_class_counts": comparison["comparison_class"]
                 .value_counts()
                 .sort_index()
