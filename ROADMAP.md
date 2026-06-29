@@ -768,9 +768,9 @@ public CDED steep-slope proxy in the P9RF THLB surface.
   - [x] P11.4e Generate candidate `forestmodel.xml` and fragments under
     `output/patchworks_tfl6_mp11_candidate/` if readiness passes.
   - [x] P11.4f Parse/check generated XML and record XML readiness QA.
-- [ ] P11.5 Define Phase 12 runtime handoff or blocker package (`#90`).
-  - [ ] P11.5a Build Phase 12 handoff or blocker summary.
-  - [ ] P11.5b Post/update Phase 12 issue handoff.
+- [x] P11.5 Define Phase 12 runtime handoff or blocker package (`#90`).
+  - [x] P11.5a Build Phase 12 handoff or blocker summary.
+  - [x] P11.5b Post/update Phase 12 issue handoff.
 - [ ] P11.6 Close Phase 11 and hand off model-input/XML status (`#91`).
   - [ ] P11.6a Audit Phase 11 artifacts and generated-output hygiene.
   - [ ] P11.6b Write Phase 11 closeout and Phase 12/13 handoff note.
@@ -964,6 +964,14 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    is complete. The next bounded move is P11.5: define the Phase 12 runtime
    handoff package for Matrix Builder/runtime work without running it in Phase
    11.
+   P11.5 is complete: `scripts/build_p11_mp11_phase12_runtime_handoff.py`
+   emits `planning/tfl6_mp11_phase12_runtime_handoff.{csv,json,md}` with
+   handoff status `phase12_runtime_handoff_ready`. The handoff points P12.2 to
+   `output/patchworks_tfl6_mp11_candidate/forestmodel.xml` and fragments,
+   records the generated candidate bundle/export bridge inputs, preserves the
+   candidate-scaffold caveats, and keeps Matrix Builder, runtime assembly,
+   scenario smoke, and release QA marked `not_performed`. The next bounded move
+   is P11.6: close Phase 11 and hand off model-input/XML status.
 0. Phase 9D and Phase 9E are complete. Step 210 now applies the public TSM
    strict Class V proxy, deducting `1.425 ha` against the MP11 Step 210 target
    `1,993.000 ha`; this is an explicit public-source coverage/semantic gap, not

@@ -185,3 +185,13 @@ fragment area.
 P11.4 is complete. Matrix Builder, Patchworks runtime assembly, scenario smoke,
 and release QA remain downstream. The next bounded move is P11.5: define the
 Phase 12 runtime handoff package.
+
+P11.5 emitted `planning/tfl6_mp11_phase12_runtime_handoff.{csv,json,md}` with
+handoff status `phase12_runtime_handoff_ready`. The handoff points Phase 12 to
+the generated MP11 candidate XML/fragments, records the generated candidate
+bundle/export bridge roots, preserves candidate-scaffold caveats, and leaves
+Matrix Builder, runtime assembly, scenario smoke, and release QA as downstream
+work.
+
+P11.5 is complete. The next bounded move is P11.6: close Phase 11 and hand off
+model-input/XML status.

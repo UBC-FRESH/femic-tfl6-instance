@@ -1,5 +1,19 @@
 # Change Log
 
+## 2026-06-29 - Packaged Phase 12 runtime handoff
+
+- added `scripts/build_p11_mp11_phase12_runtime_handoff.py` to verify generated
+  candidate bundle/XML inputs and emit a Phase 12 runtime handoff package;
+- emitted `planning/tfl6_mp11_phase12_runtime_handoff.{csv,json,md}` with
+  handoff status `phase12_runtime_handoff_ready`;
+- pointed Phase 12 Matrix Builder work at
+  `output/patchworks_tfl6_mp11_candidate/forestmodel.xml` and
+  `output/patchworks_tfl6_mp11_candidate/fragments/fragments.shp`;
+- recorded generated candidate bundle/export bridge inputs, candidate-scaffold
+  caveats, and the required Phase 12 sequence; and
+- left Matrix Builder, runtime assembly, scenario smoke, and release QA as
+  downstream work.
+
 ## 2026-06-29 - Corrected Phase 11 build path and generated MP11 candidate XML
 
 - reopened P11.4 issue `#89` after the initial XML readiness stop report proved
