@@ -1,0 +1,66 @@
+{
+  "decision": "supplement_phase5",
+  "phase5_baseline_status": "accepted_public_runtime_baseline",
+  "mp11_candidate_status": "candidate_supplement_for_teaching_and_comparison",
+  "replace_phase5": false,
+  "experimental_only": false,
+  "required_evidence_present": {
+    "scenario_comparison": true,
+    "kpi_caveat_report": true,
+    "candidate_runtime_docs": true,
+    "archive_materialization_qa": true,
+    "archive_manifest": true,
+    "phase12_runtime_closeout": true
+  },
+  "rows": [
+    {
+      "id": "release_decision",
+      "decision": "supplement_phase5",
+      "status": "present",
+      "evidence": "P13.1-P13.4 evidence surfaces",
+      "rationale": "MP11 candidate is smoke-tested, documented, and archive-manifested, but not published or clean-checkout materialized."
+    },
+    {
+      "id": "phase5_baseline",
+      "decision": "retain_as_accepted_baseline",
+      "status": "accepted",
+      "evidence": "Phase 5 release QA and public archive remain unchanged",
+      "rationale": "P13 does not replace the accepted Phase 5 public teaching runtime."
+    },
+    {
+      "id": "mp11_candidate_runtime",
+      "decision": "documented_candidate_supplement",
+      "status": "accepted_for_candidate_teaching_and_comparison",
+      "evidence": "Phase 12 smoke pass, P13 docs, P13 archive QA",
+      "rationale": "Candidate runtime is useful for MP11-aligned teaching and comparison without claiming WFP model equivalence."
+    },
+    {
+      "id": "replace_phase5",
+      "decision": "not_selected",
+      "status": "blocked_by_release_gates",
+      "evidence": "P13.2 caveats and P13.4 materialization boundary",
+      "rationale": "Candidate archive is local/unpublished, clean-checkout materialization is pending, maintainer base scenario lacks reproducible export, and MP11 caveats remain."
+    },
+    {
+      "id": "experimental_only",
+      "decision": "not_selected",
+      "status": "too_conservative_for_current_evidence",
+      "evidence": "Phase 12 smoke pass and P13 documentation/archive QA",
+      "rationale": "The candidate has enough build, launch, scheduling, docs, and archive QA evidence to supplement Phase 5 as a labelled candidate."
+    },
+    {
+      "id": "clean_checkout_materialization",
+      "decision": "defer_until_publication",
+      "status": "pending",
+      "evidence": "planning/tfl6_mp11_phase13_archive_materialization_qa.md",
+      "rationale": "Materialization is not required for the supplement decision because the candidate is not replacing the public Phase 5 runtime archive."
+    },
+    {
+      "id": "phase13_closeout",
+      "decision": "complete",
+      "status": "ready_after_pr_issue_sync",
+      "evidence": "roadmap, changelog, PR, and issue comments",
+      "rationale": "P13.1 through P13.5 are complete once this change is merged."
+    }
+  ]
+}

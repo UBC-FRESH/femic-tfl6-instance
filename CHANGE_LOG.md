@@ -3778,3 +3778,16 @@
   runtime baseline; and
 - marked P13.4 complete in `ROADMAP.md`, leaving P13.5 release-status decision
   and Phase 13 closeout as the next bounded task.
+
+## 2026-06-28 - Closed MP11 Phase 13 with supplement decision
+
+- added `scripts/build_p13_mp11_release_decision.py`;
+- emitted `planning/tfl6_mp11_phase13_release_decision.{csv,json,md}`;
+- selected `supplement_phase5` as the Phase 13 release decision;
+- recorded that the MP11 candidate runtime is a smoke-tested, documented
+  supplement for MP11 comparison and advanced teaching workflows;
+- preserved the Phase 5 runtime archive as the accepted public teaching/runtime
+  baseline because the MP11 candidate archive remains local/unpublished,
+  clean-checkout materialization is pending, maintainer base-scenario export
+  remains unreproduced, and MP11 source/constraint caveats remain visible; and
+- marked P13.5 and Phase 13 complete in `ROADMAP.md`.

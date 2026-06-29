@@ -841,13 +841,14 @@ candidate runtime package.
 
 ## Phase 13: MP11 Comparison Documentation And Release QA (`#70`)
 
-Status: active. Phase 13 starts from the P12.6 closeout package and decides
-whether the smoke-tested MP11 candidate runtime is suitable for comparison
-documentation, release packaging, teaching updates, and baseline
-replacement/supplement positioning. P13.1 records the initial candidate-runtime
-positioning: the local interactive MP11 candidate run is plausibly in the same
-model family as the WFP MP11 base-case evidence, but remains above WFP's base
-case for explainable public-data/scaffold reasons and is not yet release QA.
+Status: complete. Phase 13 started from the P12.6 closeout package and decided
+that the smoke-tested MP11 candidate runtime supplements the completed Phase 5
+baseline. The MP11 candidate is a labelled comparison and advanced teaching
+surface, not a replacement public release baseline. P13.1 recorded the initial
+candidate-runtime positioning: the local interactive MP11 candidate run is
+plausibly in the same model family as the WFP MP11 base-case evidence, but
+remains above WFP's base case for explainable public-data/scaffold reasons and
+is not WFP model equivalence or approved AAC evidence.
 
 Goal: publish MP11 comparison documentation, teaching updates, release archive
 QA, and replacement/supplement decision evidence after a rebuilt runtime passes
@@ -881,11 +882,11 @@ Execution plan:
     manifests, and logs are public-safe and publishable.
   - [x] P13.4b Build archive manifest, checksums, and clean-checkout
     materialization or blocker evidence.
-- [ ] P13.5 Decide MP11 release status and Phase 5 baseline relationship
+- [x] P13.5 Decide MP11 release status and Phase 5 baseline relationship
   (`#131`).
-  - [ ] P13.5a Decide `replace_phase5`, `supplement_phase5`, or
+  - [x] P13.5a Decide `replace_phase5`, `supplement_phase5`, or
     `experimental_only`.
-  - [ ] P13.5b Close Phase 13 only after docs, release QA, archive/materialization,
+  - [x] P13.5b Close Phase 13 only after docs, release QA, archive/materialization,
     roadmap, changelog, and issue comments are synchronized.
 
 ## Dependency Order
@@ -1138,10 +1139,14 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    `releases/tfl6_mp11_candidate_runtime_p13_4_manifest.yaml`. The candidate
    archive passed local ZIP integrity and checksum checks but remains
    unpublished, so clean-checkout materialization is pending publication or the
-   P13.5 release decision. The next bounded move is P13.5 (`#131`): decide
-   `replace_phase5`, `supplement_phase5`, or `experimental_only`, then close
-   Phase 13 if roadmap, changelog, archive QA, docs, and issue comments are
-   synchronized.
+   P13.5 release decision. P13.5 (`#131`) recorded
+   `planning/tfl6_mp11_phase13_release_decision.{csv,json,md}` and selected
+   `supplement_phase5`: the MP11 candidate runtime is a documented,
+   smoke-tested supplement for MP11 comparison and advanced teaching, while
+   Phase 5 remains the accepted public runtime baseline. Phase 13 is complete.
+   Future work should open a new issue/phase if the candidate archive is to be
+   annexed/published, no-credential materialization-tested, or promoted toward
+   replacing Phase 5.
 0. Phase 9D and Phase 9E are complete. Step 210 now applies the public TSM
    strict Class V proxy, deducting `1.425 ha` against the MP11 Step 210 target
    `1,993.000 ha`; this is an explicit public-source coverage/semantic gap, not
