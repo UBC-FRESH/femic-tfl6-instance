@@ -3999,3 +3999,25 @@
   `published_materialization_pending`; and
 - marked P15.3 complete in `ROADMAP.md`, leaving P15.4 no-credential
   clean-checkout materialization as the next bounded task.
+
+## 2026-06-29 - Proved MP11 Phase 15 no-credential materialization
+
+- created a fresh shallow single-branch clone of
+  `feature/tfl6-mp11-p15-runtime-publication`;
+- fetched the `git-annex` branch metadata before enabling `arbutus-s3`, which
+  is required for this clean-clone materialization path;
+- cleared AWS/S3 credential environment variables before materialization;
+- verified `git annex info arbutus-s3` reported `creds: not available`,
+  `public: yes`, the expected public URL, and `5` remote keys;
+- fetched
+  `releases/tfl6_mp11_harvest_system_candidate_runtime_p15_2.zip` and
+  `releases/tfl6_mp11_harvest_system_candidate_runtime_p15_2_manifest.yaml`
+  from `arbutus-s3` with git-annex checksum `ok`;
+- verified materialized archive SHA256
+  `fcf8d3615f8bba65419d1a401d818c5eb87e7d75d3aa6007cfa6ada773536362`
+  against the manifest;
+- unpacked the archive and confirmed expected `base.pin`, `no_heli.pin`,
+  all-system track, and no-heli track files are present;
+- emitted `planning/tfl6_mp11_phase15_materialization_qa.{csv,json,md}`; and
+- marked P15.4 complete in `ROADMAP.md`, leaving P15.5 archive-derived direct
+  launch and scenario smoke as the next bounded task.

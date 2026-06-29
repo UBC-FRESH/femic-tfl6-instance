@@ -1051,7 +1051,16 @@ Publication artifacts:
     copies for both artifacts.
   - [x] P15.3d Update archive QA status to
     `published_materialization_pending`.
-- [ ] P15.4 Prove no-credential clean-checkout materialization (`#151`).
+- [x] P15.4 Prove no-credential clean-checkout materialization (`#151`).
+  - [x] P15.4a Create a fresh shallow single-branch clone.
+  - [x] P15.4b Fetch `git-annex` branch metadata so `arbutus-s3` can be
+    enabled in the clean clone.
+  - [x] P15.4c Clear AWS/S3 credential environment variables before
+    materialization.
+  - [x] P15.4d Fetch the archive and manifest from `arbutus-s3`, verify SHA256,
+    and unpack expected runtime files.
+  - [x] P15.4e Emit
+    `planning/tfl6_mp11_phase15_materialization_qa.{csv,json,md}`.
 - [ ] P15.5 Run direct launch and scenario smoke from materialized archive
   (`#152`).
 - [ ] P15.6 Document publication, caveats, and replacement-candidate status
@@ -1170,11 +1179,19 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    to `arbutus-s3`, verified with `git annex whereis` as present both locally
    and on `arbutus-s3`, and the archive QA status was updated to
    `published_materialization_pending`. `git annex info arbutus-s3` reports
-   public remote metadata and `5` remote keys. The next bounded task is P15.4
-   (`#151`): prove no-credential clean-checkout materialization.
+   public remote metadata and `5` remote keys. P15.4 (`#151`) is complete:
+   a fresh shallow single-branch clone fetched the `git-annex` branch metadata,
+   enabled `arbutus-s3` with credentials cleared, reported `creds: not
+   available`, fetched the P15 archive and manifest from `arbutus-s3` with
+   checksum `ok`, verified archive SHA256
+   `fcf8d3615f8bba65419d1a401d818c5eb87e7d75d3aa6007cfa6ada773536362`
+   against the manifest, unpacked the archive, and confirmed expected
+   all-system/no-heli runtime files are present. The next bounded task is P15.5
+   (`#152`): run direct launch plus all-system and no-heli scenario smoke from
+   the materialized archive.
 
 Historical leading-edge notes below are retained for audit context only; the
-active next step is P15.4.
+active next step is P15.5.
 
 0. Phase 14 is active on branch
    `feature/tfl6-mp11-harvest-system-operability`. P14.1 (`#139`) is complete:
