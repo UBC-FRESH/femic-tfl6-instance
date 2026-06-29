@@ -23,4 +23,5 @@ trail used to create it.
    phase9-mp11-thlb-netdown
    phase13-mp11-candidate-runtime
    phase14-mp11-harvest-system-operability
+   phase15-mp11-runtime-publication
    teaching-challenges

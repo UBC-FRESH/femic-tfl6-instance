@@ -1074,8 +1074,14 @@ Publication artifacts:
     `CC_CABLE` and `CC_GROUND`.
   - [x] P15.5e Emit
     `planning/tfl6_mp11_phase15_materialized_runtime_smoke_qa.{csv,json,md}`.
-- [ ] P15.6 Document publication, caveats, and replacement-candidate status
+- [x] P15.6 Document publication, caveats, and replacement-candidate status
   (`#153`).
+  - [x] P15.6a Add Sphinx documentation for the P15 published/materialized
+    MP11 harvest-system candidate runtime.
+  - [x] P15.6b Document archive/manifest paths, SHA256, included runtime
+    families, materialization commands, smoke-test evidence, and WFP LBB caveats.
+  - [x] P15.6c Preserve the boundary that P15 is a replacement-candidate review
+    lane, not an automatic Phase 5 replacement.
 - [ ] P15.7 Decide replacement-candidate readiness and close Phase 15 (`#154`).
 
 ## Dependency Order
@@ -1206,11 +1212,16 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    `76,693` rows and includes `CC_CABLE`, `CC_GROUND`, and `CC_HELI`; the
    no-heli schedule has `75,023` rows and includes only `CC_CABLE` and
    `CC_GROUND`, with no forbidden `CC_HELI` treatment present. The next
-   bounded task is P15.6 (`#153`): document publication, caveats, exact
-   materialization/launch surfaces, and replacement-candidate status.
+   P15.6 (`#153`) is complete: `docs/phase15-mp11-runtime-publication.rst`
+   documents the archive and manifest paths, SHA256, public-annex
+   materialization commands, archive-derived direct launch and scenario-smoke
+   evidence, WFP LBB/public-proxy caveats, teaching workflows, and maintainer
+   evidence order. The next bounded task is P15.7 (`#154`): emit the final
+   replacement-candidate readiness decision and close Phase 15 if all hard
+   gates pass.
 
 Historical leading-edge notes below are retained for audit context only; the
-active next step is P15.6.
+active next step is P15.7.
 
 0. Phase 14 is active on branch
    `feature/tfl6-mp11-harvest-system-operability`. P14.1 (`#139`) is complete:

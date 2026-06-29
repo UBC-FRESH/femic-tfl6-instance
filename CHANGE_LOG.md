@@ -4039,3 +4039,17 @@
   `CC_HELI` treatment present; and
 - marked P15.5 complete in `ROADMAP.md`, leaving P15.6 publication docs and
   caveat documentation as the next bounded task.
+
+## 2026-06-29 - Documented MP11 Phase 15 runtime publication
+
+- added `docs/phase15-mp11-runtime-publication.rst`;
+- linked the Phase 15 page from `docs/index.rst`;
+- documented the published archive and manifest paths, archive SHA256,
+  included runtime payload families, public-annex materialization command
+  sequence, and archive-derived direct-launch/all-system/no-heli smoke results;
+- documented that WFP LBB remains unavailable and the harvest-system lanes are
+  public proxies, not WFP-model-equivalence claims;
+- preserved Phase 5 as the accepted public baseline until a later explicit
+  replacement acceptance decision; and
+- marked P15.6 complete in `ROADMAP.md`, leaving P15.7 replacement-candidate
+  readiness decision and Phase 15 closeout as the next bounded task.
