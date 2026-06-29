@@ -1,5 +1,22 @@
 # Change Log
 
+## 2026-06-28 - Defined Phase 11 promotion gates and stop conditions
+
+- added `planning/tfl6_mp11_phase11_promotion_gates.{csv,json,md}` to define
+  the hard and soft gates P11.2 must evaluate before any MP11 candidate
+  model-input bundle, export bridge, ForestModel XML, Matrix Builder output, or
+  Patchworks runtime artifact is generated;
+- required P11.2 to emit
+  `planning/tfl6_mp11_model_input_promotion_readiness.{csv,json,md}` with
+  gate-level decisions, blockers, caveats, and next-action ownership;
+- kept P11.3 model-input generation blocked unless all hard gates pass and
+  soft-gate deferrals are explicitly non-blocking;
+- updated `ROADMAP.md` and the Phase 11 execution plan so the next bounded
+  move is P11.2a promotion-readiness audit-generator work;
+- marked P11.1 complete after defining the final promotion-gate subtask; and
+- generated no model-input tables, ForestModel XML, Matrix Builder outputs, or
+  Patchworks runtime artifacts.
+
 ## 2026-06-28 - Recorded MP11 managed curve-generation blocker
 
 - added `scripts/build_p10r_mp11_managed_curve_rebuild_blocker.py` to inspect

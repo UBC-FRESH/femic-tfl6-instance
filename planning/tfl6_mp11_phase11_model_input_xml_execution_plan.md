@@ -98,9 +98,11 @@ P11.2 accepts the promotion-readiness manifest. When generated, they should use
 an explicit MP11 candidate namespace rather than overwriting the Phase 5
 accepted runtime surfaces without a separate replacement decision.
 
-## Next P11.1 Work
+## Current Phase 11 Edge
 
-P11.1b should inventory the existing Phase 5 model-input bundle, ForestModel
-XML, Matrix Builder, and runtime provenance surfaces so Phase 11 can define
-what is being replaced, supplemented, or held as the accepted teaching
-baseline.
+P11.1a through P11.1d are complete. The Phase 5 provenance inventory, artifact
+layout, and promotion-gates notes define the entry contract for P11.2.
+
+The next bounded move is P11.2a: build the promotion-readiness audit generator
+from `planning/tfl6_mp11_phase11_promotion_gates.{csv,json,md}` without writing
+candidate model-input bundle or ForestModel XML outputs.
