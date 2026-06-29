@@ -929,8 +929,17 @@ Planning note:
     20/Table 73 as aggregate comparison targets, P9D/VRI as public proxy
     inputs, DRA roads as an access candidate, and MP11 helicopter economics as
     candidate rules after metric build.
-- [ ] P14.3 Build public proxy metrics for ground, cable, and heli assignment
+- [x] P14.3 Build public proxy metrics for ground, cable, and heli assignment
   (`#141`).
+  - [x] P14.3a Add `scripts/build_p14_public_proxy_metrics.py`.
+  - [x] P14.3b Generate
+    `planning/tfl6_mp11_phase14_public_proxy_metrics.{csv,json,md}` with
+    stand-level public proxy metrics for age, volume, Cw/Fd/Yc species share,
+    P9D CDED slope context, nearest-DRA-road access distance, and helicopter
+    economic-operability threshold testing.
+  - [x] P14.3c Record that P14.3 does not classify stands, does not accept
+    WFP LBB equivalence, and does not generate model-input tables, ForestModel
+    XML, Matrix Builder outputs, Patchworks runtime artifacts, or scenarios.
 - [ ] P14.4 Classify MP11 candidate stands by harvest system and QA against
   MP11 targets (`#142`).
 - [ ] P14.5 Rebuild MP11 model-input tables and ForestModel XML with split CC
@@ -1041,13 +1050,21 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    MP11 Table 20 and Table 73 as aggregate comparison targets, P9D CDED slope
    and VRI/VDYP inventory attributes as public proxy inputs, DRA roads as an
    access-distance candidate needing review, and MP11 helicopter economic
-   thresholds as candidate rules after metric build. The next bounded task is
-   P14.3 (`#141`): build public proxy metric tables for ground, cable, and heli
-   assignment without yet generating model-input tables, XML, Matrix Builder
-   outputs, or Patchworks runtime artifacts.
+   thresholds as candidate rules after metric build. P14.3 (`#141`) is
+   complete:
+   `scripts/build_p14_public_proxy_metrics.py` emits
+   `planning/tfl6_mp11_phase14_public_proxy_metrics.{csv,json,md}` with
+   `25,019` stand-level metric rows, `22,614` managed-current-THLB rows,
+   `17,395` rows with P9D slope joins, all rows with nearest-DRA-road distance,
+   and `3,326` rows passing the public-proxy helicopter economic test. These
+   metrics are inputs to P14.4 only; they are not accepted harvest-system
+   classifications and they do not generate model-input tables, XML, Matrix
+   Builder outputs, Patchworks runtime artifacts, or scenarios. The next
+   bounded task is P14.4 (`#142`): classify candidate stands from the public
+   proxy metrics and QA area/volume results against MP11 Table 20 and Table 73.
 
 Historical leading-edge notes below are retained for audit context only; the
-active next step is P14.3.
+active next step is P14.4.
 
 0. Phase 11 is active on branch
    `feature/p11-model-input-xml-rebuild-plan`. P11.1 and P11.2 are complete.

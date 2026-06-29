@@ -3822,3 +3822,18 @@
   criteria; and
 - marked P14.2 complete in `ROADMAP.md`, leaving P14.3 public proxy metric
   construction as the next bounded task.
+
+## 2026-06-29 - Built MP11 Phase 14 harvest-system public proxy metrics
+
+- added `scripts/build_p14_public_proxy_metrics.py`;
+- generated
+  `planning/tfl6_mp11_phase14_public_proxy_metrics.{csv,json,md}` with
+  `25,019` stand-level public proxy metric rows;
+- recorded `22,614` managed-current-THLB rows, `17,395` rows with P9D CDED
+  slope joins, all rows with nearest-DRA-road access distance, and `3,326`
+  rows passing the public-proxy helicopter economic-operability test;
+- kept WFP LBB unavailable/private, P9D slope as non-LiDAR public slope
+  context, nearest-DRA-road distance as non-flight-distance access context, and
+  public VRI species/volume as non-WFP-ITI proxy evidence; and
+- marked P14.3 complete in `ROADMAP.md`, leaving P14.4 classification and
+  MP11 Table 20/Table 73 area-volume QA as the next bounded task.
