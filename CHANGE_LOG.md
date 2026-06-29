@@ -3904,3 +3904,27 @@
   status `harvest_system_candidate_runtime_assembled_pending_smoke`; and
 - marked P14.6 complete in `ROADMAP.md`, leaving P14.7 direct launch,
   all-system scenario, and no-heli scenario smoke as the next bounded task.
+
+## 2026-06-29 - Smoke-tested MP11 Phase 14 harvest-system scenarios
+
+- added `scripts/build_p14_no_heli_tracks.py` and
+  `models/tfl6_patchworks_model_mp11_harvest_system_candidate/analysis/no_heli.pin`;
+- generated the ignored
+  `models/tfl6_patchworks_model_mp11_harvest_system_candidate/tracks_no_heli/`
+  track variant from the P14.6 Matrix Builder tracks;
+- removed `892` `CC_HELI` treatment rows, `2,230` `CC_HELI` product rows, and
+  the two stale `CC_HELI` account/protoaccount rows that caused Patchworks to
+  define a missing `flow.even.product.HarvestedVolume.managed.Total.CC_HELI`
+  target during no-heli startup;
+- emitted `planning/tfl6_mp11_phase14_no_heli_tracks.{csv,json,md}`;
+- ran direct launch smoke, all-system 200,000-iteration harvest smoke, and
+  no-heli 200,000-iteration harvest smoke for the harvest-system candidate
+  runtime;
+- emitted `planning/tfl6_mp11_phase14_scenario_smoke_qa.{csv,json,md}` with
+  status `p14_7_smoke_pass`;
+- verified the all-system schedule contains `76,635` rows across `CC_CABLE`,
+  `CC_GROUND`, and `CC_HELI`, while the no-heli schedule contains `75,086`
+  rows across `CC_CABLE` and `CC_GROUND` with no `CC_HELI` scheduled
+  treatments; and
+- marked P14.7 complete in `ROADMAP.md`, leaving P14.8 Phase 14 caveats,
+  comparison results, and closeout documentation as the next bounded task.

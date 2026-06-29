@@ -984,7 +984,17 @@ Planning note:
     `models/tfl6_patchworks_model_mp11_harvest_system_candidate/`.
   - [x] P14.6f Emit
     `planning/tfl6_mp11_phase14_matrix_runtime_qa.{csv,json,md}`.
-- [ ] P14.7 Smoke-test all-system and no-heli harvest scenarios (`#145`).
+- [x] P14.7 Smoke-test all-system and no-heli harvest scenarios (`#145`).
+  - [x] P14.7a Add a no-heli PIN wrapper and generated ignored
+    `tracks_no_heli/` track variant.
+  - [x] P14.7b Remove `CC_HELI` treatment, product, account, and protoaccount
+    rows from the no-heli track variant while preserving aggregate `.CC`
+    harvested-volume products.
+  - [x] P14.7c Run direct launch smoke, all-system 200,000-iteration harvest
+    smoke, and no-heli 200,000-iteration harvest smoke.
+  - [x] P14.7d Emit
+    `planning/tfl6_mp11_phase14_no_heli_tracks.{csv,json,md}` and
+    `planning/tfl6_mp11_phase14_scenario_smoke_qa.{csv,json,md}`.
 - [ ] P14.8 Document Phase 14 caveats, comparison results, and closeout status
   (`#146`).
 
@@ -1130,11 +1140,21 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    Runtime blocks/topology were assembled under
    `models/tfl6_patchworks_model_mp11_harvest_system_candidate/` with `24,879`
    block rows, `191,168.566447 ha`, valid `EPSG:3005` geometry, and `170,759`
-   topology rows. The next bounded task is P14.7 (`#145`): direct launch smoke
-   plus all-system and no-heli harvest scenario smoke.
+   topology rows. P14.7 (`#145`) is complete:
+   `scripts/build_p14_no_heli_tracks.py` creates an ignored `tracks_no_heli/`
+   variant that removes `CC_HELI` treatment, product, account, and protoaccount
+   rows. The no-heli repair fixed the Patchworks startup failure where stale
+   account rows caused `flow.even.product.HarvestedVolume.managed.Total.CC_HELI`
+   to be defined after the matching product account was removed. Direct launch
+   smoke, all-system 200,000-iteration harvest smoke, and no-heli
+   200,000-iteration harvest smoke all passed. The all-system schedule recorded
+   `76,635` rows across `CC_CABLE`, `CC_GROUND`, and `CC_HELI`; the no-heli
+   schedule recorded `75,086` rows across `CC_CABLE` and `CC_GROUND`, with no
+   `CC_HELI` scheduled treatments. The next bounded task is P14.8 (`#146`):
+   document Phase 14 caveats, comparison results, and closeout status.
 
 Historical leading-edge notes below are retained for audit context only; the
-active next step is P14.7.
+active next step is P14.8.
 
 0. Phase 11 is active on branch
    `feature/p11-model-input-xml-rebuild-plan`. P11.1 and P11.2 are complete.
