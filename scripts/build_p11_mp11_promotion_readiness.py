@@ -74,21 +74,23 @@ GATE_SPECS: dict[str, GateSpec] = {
     ),
     "p11_gate_02_source_thlb": GateSpec(
         gate_id="p11_gate_02_source_thlb",
-        source_artifact_path="planning/tfl6_mp11_p9rf_table12_resultant_vs_p9r_comparison.md",
-        required_promotion_state="accepted_model_contract",
-        actual_promotion_state="implementation_candidate_with_review_gaps",
+        source_artifact_path="planning/tfl6_mp11_p11_2_candidate_scaffold_decisions.md",
+        required_promotion_state="accepted_candidate_scaffold_contract",
+        actual_promotion_state="accepted_candidate_scaffold_contract_with_caveats",
         required_qa_evidence=(
-            "P9RF resultant-fragment THLB must be assigned to geometry, managed "
-            "share, unmanaged share, area, and group-field roles with explicit "
-            "caveats for review-required and deferred steps."
+            "P9RF resultant-fragment THLB is assigned to candidate scaffold roles "
+            "for stand universe, THLB/NTHLB state, retained area, "
+            "managed/unmanaged area, and group-field source, with explicit "
+            "caveats for review-required, deferred, and sensitive-source steps."
         ),
-        decision="blocked",
+        decision="pass",
         blocker_or_caveat=(
-            "P9RF is the production candidate lane, but source/THLB table roles "
-            "are not yet accepted per model-input field and several steps remain "
-            "review-required, deferred, unavailable, or sensitive-source excluded."
+            "P9RF may support P11.3 candidate-manifest work only; proposed WHA, "
+            "uneconomic, archaeology, research-site, big-tree, karst, TUS, and "
+            "future stand-level reserve caveats remain visible and do not imply "
+            "runtime or release acceptance."
         ),
-        next_action_owner="P11.2b/P11.2c source-THLB role decision",
+        next_action_owner="P11.3 candidate manifest source/THLB caveat fields",
     ),
     "p11_gate_03_curve_handoff": GateSpec(
         gate_id="p11_gate_03_curve_handoff",
@@ -140,37 +142,39 @@ GATE_SPECS: dict[str, GateSpec] = {
     ),
     "p11_gate_06_rule_contracts": GateSpec(
         gate_id="p11_gate_06_rule_contracts",
-        source_artifact_path="planning/tfl6_mp11_operability_harvest_mha_scenario_contract.md",
-        required_promotion_state="accepted_model_contract",
-        actual_promotion_state="planning_contract_not_model_input",
+        source_artifact_path="planning/tfl6_mp11_p11_2_candidate_scaffold_decisions.md",
+        required_promotion_state="accepted_candidate_scaffold_contract",
+        actual_promotion_state="accepted_candidate_scaffold_with_deferred_rule_fields",
         required_qa_evidence=(
-            "Treatment, transition, MHA, harvest-system, operability, and scenario "
-            "fields must be classified as accepted, proxy, sensitivity, "
-            "unavailable, or deferred before table generation."
+            "Treatment and transition defaults reuse Phase 5 scaffold behavior; "
+            "MP11 MHA, helicopter economic operability, harvest-system assignment, "
+            "and scenario-policy fields are excluded from accepted model input "
+            "unless separately promoted."
         ),
-        decision="blocked",
+        decision="pass",
         blocker_or_caveat=(
-            "Phase 8/10 contracts define boundaries and comparison targets, but "
-            "stand-level MHA, harvest-system, economic-operability, and scenario "
-            "fields are not yet accepted model contracts."
+            "Rule fields may appear in P11.3 only as null, deferred, comparison, "
+            "proxy, QA, or unavailable metadata; this is not MP11 runtime-rule "
+            "acceptance."
         ),
-        next_action_owner="P11.2c rule-field maintainer decisions",
+        next_action_owner="P11.3 candidate manifest rule-status fields",
     ),
     "p11_gate_07_schema_bridge": GateSpec(
         gate_id="p11_gate_07_schema_bridge",
-        source_artifact_path="planning/tfl6_mp11_phase11_phase5_provenance_inventory.json",
-        required_promotion_state="accepted_model_contract",
-        actual_promotion_state="not_yet_defined_for_mp11_candidate",
+        source_artifact_path="planning/tfl6_mp11_p11_2_candidate_schema_bridge.md",
+        required_promotion_state="accepted_candidate_schema_bridge",
+        actual_promotion_state="accepted_candidate_schema_bridge_manifest_only",
         required_qa_evidence=(
-            "P11.2 must name candidate table roles and whether they reuse, replace, "
-            "or extend the Phase 5 schema/export bridge."
+            "P11.2 names candidate table roles and whether they reuse, replace, "
+            "extend, or defer the Phase 5 schema/export bridge."
         ),
-        decision="blocked",
+        decision="pass",
         blocker_or_caveat=(
-            "The Phase 5 inventory defines the baseline, but the MP11 candidate "
-            "schema bridge has not yet been specified."
+            "P11.3 may build a candidate manifest from the bridge, but generated "
+            "tables still require explicit P11.3 authorization and MP11 candidate "
+            "paths."
         ),
-        next_action_owner="P11.2b/P11.2c schema-role decision",
+        next_action_owner="P11.3 candidate model-input manifest",
     ),
     "p11_gate_08_private_data": GateSpec(
         gate_id="p11_gate_08_private_data",
@@ -203,7 +207,7 @@ GATE_SPECS: dict[str, GateSpec] = {
             "Runtime-only and docs-only reporting can defer to Phases 12/13 if "
             "P11.3 records that candidate table generation does not require them."
         ),
-        next_action_owner="P11.2d non-blocking deferral decision",
+        next_action_owner="P11.3 candidate manifest non-blocking KPI deferral",
     ),
     "p11_gate_10_xml_readiness": GateSpec(
         gate_id="p11_gate_10_xml_readiness",
@@ -297,7 +301,7 @@ def build_readiness_records(
             record.gate_type == "hard" and record.decision == "blocked"
             for record in records
         )
-        else "eligible_after_maintainer_review",
+        else "candidate_manifest_eligible",
         "scope_boundary": (
             "This audit writes planning readiness records only. It does not "
             "generate model-input tables, ForestModel XML, Matrix Builder "
@@ -365,7 +369,7 @@ def _write_markdown(
         "## Summary",
         "",
         f"- Rows: `{payload['row_count']}`",
-        f"- Decision counts: `{payload['decision_counts']}`",
+        f"- Decision counts: `{json.dumps(payload['decision_counts'], sort_keys=True)}`",
         f"- Blocked hard gates: `{payload['blocked_hard_gate_count']}`",
         f"- P11.3 unlock status: `{payload['p11_3_unlock_status']}`",
         "",

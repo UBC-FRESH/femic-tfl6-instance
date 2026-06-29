@@ -77,8 +77,11 @@ P11.3 may start only after the P11.2 readiness manifest records:
 - the Phase 5 baseline paths that must remain untouched; and
 - the exact candidate manifest paths P11.3 may write.
 
-## Next Step
+## Current Status
 
-P11.2 should build the promotion-readiness audit generator and emit
-`planning/tfl6_mp11_model_input_promotion_readiness.{csv,json,md}` from these
-gates before any candidate model-input table generation begins.
+P11.2 emitted
+`planning/tfl6_mp11_model_input_promotion_readiness.{csv,json,md}` and resolved
+the three former hard blockers through candidate-only scaffold decisions. P11.3
+may now consume the readiness manifest to build a candidate manifest, but this
+does not authorize generated model-input tables, ForestModel XML, Matrix
+Builder outputs, or Patchworks runtime artifacts.

@@ -743,11 +743,11 @@ now has an accepted public CDED steep-slope proxy in the P9RF THLB surface.
   - [x] P11.1b Inventory existing Phase 5 model-input/XML provenance surfaces.
   - [x] P11.1c Define Phase 11 artifact layout and generated-output hygiene.
   - [x] P11.1d Define promotion gates and stop conditions.
-- [ ] P11.2 Audit MP11 model-input promotion readiness (`#87`).
+- [x] P11.2 Audit MP11 model-input promotion readiness (`#87`).
   - [x] P11.2a Build promotion-readiness audit generator.
-  - [ ] P11.2b Emit readiness Markdown/CSV/JSON outputs.
-  - [ ] P11.2c Classify blockers and required maintainer decisions.
-  - [ ] P11.2d Decide whether P11.3 may build a candidate scaffold or must
+  - [x] P11.2b Emit readiness Markdown/CSV/JSON outputs.
+  - [x] P11.2c Classify blockers and required maintainer decisions.
+  - [x] P11.2d Decide whether P11.3 may build a candidate scaffold or must
     remain blocked.
 - [ ] P11.3 Build MP11 model-input candidate manifest or stop report (`#88`).
   - [ ] P11.3a Consume P11.2 readiness manifest.
@@ -867,12 +867,11 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
 ## Current Next Steps
 
 0. Phase 11 is active on branch
-   `feature/p11-model-input-xml-rebuild-plan`. P11.1a through P11.1d are
-   complete.
+   `feature/p11-model-input-xml-rebuild-plan`. P11.1 and P11.2 are complete.
    `planning/tfl6_mp11_phase11_model_input_xml_execution_plan.md` audits the
    governing MP11 promotion contracts, the repaired P9RF THLB endpoint, the
    accepted 27-curve Phase 10R handoff, the deferred Tables 54/55 boundary, and
-   the stop conditions that still prevent immediate model-input/XML generation.
+   the stop conditions that governed candidate-only readiness resolution.
    `planning/tfl6_mp11_phase11_phase5_provenance_inventory.{csv,json,md}`
    inventories the Phase 5 model-input bundle, export bridge, ForestModel XML,
    fragments, Matrix Builder tracks, runtime package, smoke evidence, and public
@@ -882,12 +881,16 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    `planning/tfl6_mp11_phase11_promotion_gates.{csv,json,md}` defines the
    hard and soft gates P11.2 must evaluate before P11.3 can write candidate
    model-input tables or P11.4 can attempt XML readiness.
-   `scripts/build_p11_mp11_promotion_readiness.py` is the P11.2a generator.
-   A dry run currently reports `11` gates, `3` blocked hard gates, `2`
-   deferred soft gates, `6` passing gates, and `0` missing source artifacts.
-   The next bounded move is P11.2b: emit
-   `planning/tfl6_mp11_model_input_promotion_readiness.{csv,json,md}` without
-   writing candidate model-input bundle or XML outputs.
+   `scripts/build_p11_mp11_promotion_readiness.py` emits
+   `planning/tfl6_mp11_model_input_promotion_readiness.{csv,json,md}`. P11.2
+   resolves the three former hard blockers through candidate-only source/THLB,
+   rule-field, and schema-bridge decisions in
+   `planning/tfl6_mp11_p11_2_candidate_scaffold_decisions.md` and
+   `planning/tfl6_mp11_p11_2_candidate_schema_bridge.{csv,json,md}`. The
+   readiness manifest reports `11` gates, `0` blocked hard gates, `2`
+   deferred soft gates, `9` passing gates, and P11.3 unlock status
+   `candidate_manifest_eligible`. The next bounded move is P11.3a: consume the
+   readiness manifest without writing model-input bundle tables or XML outputs.
 0. Phase 9D and Phase 9E are complete. Step 210 now applies the public TSM
    strict Class V proxy, deducting `1.425 ha` against the MP11 Step 210 target
    `1,993.000 ha`; this is an explicit public-source coverage/semantic gap, not

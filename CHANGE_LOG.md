@@ -1,5 +1,24 @@
 # Change Log
 
+## 2026-06-28 - Resolved Phase 11 readiness blockers for candidate scaffold
+
+- added `planning/tfl6_mp11_p11_2_candidate_scaffold_decisions.md` to accept
+  P9RF source/THLB and Phase 5 rule defaults only for P11.3 candidate-manifest
+  work, with MP11 caveats and deferred rule fields explicit;
+- added `planning/tfl6_mp11_p11_2_candidate_schema_bridge.{csv,json,md}` to
+  classify Phase 5 bundle table families as `reuse`, `replace`, `extend`, or
+  `defer` for the MP11 candidate schema bridge;
+- updated `scripts/build_p11_mp11_promotion_readiness.py` so the former
+  `source_thlb`, `rule_contracts`, and `schema_bridge` hard blockers pass only
+  through the candidate-only contracts;
+- emitted `planning/tfl6_mp11_model_input_promotion_readiness.{csv,json,md}`,
+  reporting `11` gates, `0` blocked hard gates, `2` deferred soft gates, `9`
+  passing gates, and P11.3 unlock status `candidate_manifest_eligible`;
+- marked P11.2 complete in `ROADMAP.md` and moved the next bounded step to
+  P11.3a readiness-manifest consumption; and
+- generated no model-input tables, ForestModel XML, Matrix Builder outputs, or
+  Patchworks runtime artifacts.
+
 ## 2026-06-28 - Added Phase 11 promotion-readiness audit generator
 
 - added `scripts/build_p11_mp11_promotion_readiness.py` to consume
