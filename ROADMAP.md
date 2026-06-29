@@ -970,8 +970,20 @@ Planning note:
     reporting.
   - [x] P14.5f Emit
     `planning/tfl6_mp11_phase14_model_input_xml_build_summary.{csv,json,md}`.
-- [ ] P14.6 Run Matrix Builder and assemble harvest-system candidate runtime
+- [x] P14.6 Run Matrix Builder and assemble harvest-system candidate runtime
   (`#144`).
+  - [x] P14.6a Add
+    `config/patchworks.runtime.mp11_harvest_system_candidate.windows.yaml`.
+  - [x] P14.6b Run Matrix Builder with run ID
+    `tfl6_mp11_harvest_system_p14_6_matrix_build`.
+  - [x] P14.6c Inspect track outputs directly and verify nonzero split
+    treatment/product surfaces, zero message rows, synced accounts, and managed
+    area restored after binding XML `HVSYS` to the fragment `HVSYS` column.
+  - [x] P14.6d Run `femic patchworks build-blocks` with topology radius `200`.
+  - [x] P14.6e Assemble tracked runtime launch surfaces under
+    `models/tfl6_patchworks_model_mp11_harvest_system_candidate/`.
+  - [x] P14.6f Emit
+    `planning/tfl6_mp11_phase14_matrix_runtime_qa.{csv,json,md}`.
 - [ ] P14.7 Smoke-test all-system and no-heli harvest scenarios (`#145`).
 - [ ] P14.8 Document Phase 14 caveats, comparison results, and closeout status
   (`#146`).
@@ -1106,12 +1118,23 @@ The Phase 1 follow-on issues are placed into the future roadmap as follows:
    `CC_HELI` treatment nodes, `2,442` `HVSYS` split managed selects, `2,442`
    split product selects, and zero remaining `treatment eq 'CC'` product
    selects. Matrix Builder, runtime assembly, and scenarios remain
-   `not_performed`. The next bounded task is P14.6 (`#144`): run Matrix
-   Builder from the harvest-system candidate XML/fragments and assemble the
-   candidate runtime package.
+   `not_performed`. P14.6 (`#144`) is complete:
+   `config/patchworks.runtime.mp11_harvest_system_candidate.windows.yaml`
+   points Matrix Builder to the harvest-system XML/fragments and tracks root.
+   Matrix Builder run `tfl6_mp11_harvest_system_p14_6_matrix_build` returned
+   `0`, generated `13` track files, `93,330` feature rows, `829` account rows,
+   `46,605` product rows, `18,642` treatment rows, `0` message rows, and
+   restored managed area to `139,995.785 ha` after the XML `HVSYS` field was
+   bound to the fragment `HVSYS` column. Split track evidence includes `10,790`
+   `CC_GROUND`, `6,960` `CC_CABLE`, and `892` `CC_HELI` treatment rows.
+   Runtime blocks/topology were assembled under
+   `models/tfl6_patchworks_model_mp11_harvest_system_candidate/` with `24,879`
+   block rows, `191,168.566447 ha`, valid `EPSG:3005` geometry, and `170,759`
+   topology rows. The next bounded task is P14.7 (`#145`): direct launch smoke
+   plus all-system and no-heli harvest scenario smoke.
 
 Historical leading-edge notes below are retained for audit context only; the
-active next step is P14.6.
+active next step is P14.7.
 
 0. Phase 11 is active on branch
    `feature/p11-model-input-xml-rebuild-plan`. P11.1 and P11.2 are complete.

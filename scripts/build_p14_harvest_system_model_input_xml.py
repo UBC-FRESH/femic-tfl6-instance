@@ -393,7 +393,7 @@ def _postprocess_xml() -> dict[str, Any]:
 
     define_fields = {node.get("field") for node in root.findall("define")}
     if "HVSYS" not in define_fields:
-        root.insert(0, ET.Element("define", {"field": "HVSYS"}))
+        root.insert(0, ET.Element("define", {"field": "HVSYS", "column": "HVSYS"}))
 
     children = list(root)
     track_replacements = 0

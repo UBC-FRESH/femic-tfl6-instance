@@ -4,7 +4,7 @@ This P14.5 output rebuilds an ignored MP11 harvest-system candidate model-input 
 
 ## Summary
 
-- generated_at_utc: `2026-06-29T06:29:43+00:00`
+- generated_at_utc: `2026-06-29T06:33:41+00:00`
 - candidate_bundle_root: `data/mp11_harvest_system_model_input_bundle`
 - patchworks_output_root: `output/patchworks_tfl6_mp11_harvest_system_candidate`
 - forestmodel_xml: `output/patchworks_tfl6_mp11_harvest_system_candidate/forestmodel.xml`

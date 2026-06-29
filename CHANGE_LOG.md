@@ -3881,3 +3881,26 @@
   `treatment eq 'CC'` product selects; and
 - marked P14.5 complete in `ROADMAP.md`, leaving P14.6 Matrix Builder and
   harvest-system candidate runtime assembly as the next bounded task.
+
+## 2026-06-29 - Assembled MP11 Phase 14 harvest-system candidate runtime
+
+- added
+  `config/patchworks.runtime.mp11_harvest_system_candidate.windows.yaml`;
+- fixed the P14.5 XML post-process so the `HVSYS` field is bound to the
+  fragment `HVSYS` column before Matrix Builder;
+- ran Matrix Builder with run ID
+  `tfl6_mp11_harvest_system_p14_6_matrix_build`;
+- generated `13` track files with `93,330` feature rows, `829` account rows,
+  `46,605` product rows, `18,642` treatment rows, and `0` message rows;
+- verified split track evidence for `10,790` `CC_GROUND`, `6,960` `CC_CABLE`,
+  and `892` `CC_HELI` treatment rows, plus system-specific harvested-volume
+  product rows and retained aggregate `.CC` product rows;
+- ran `femic patchworks build-blocks` with topology radius `200`, producing
+  `24,879` block rows, `191,168.566447 ha`, valid `EPSG:3005` geometry, and
+  `170,759` topology rows;
+- assembled tracked launch/provenance surfaces under
+  `models/tfl6_patchworks_model_mp11_harvest_system_candidate/`;
+- emitted `planning/tfl6_mp11_phase14_matrix_runtime_qa.{csv,json,md}` with
+  status `harvest_system_candidate_runtime_assembled_pending_smoke`; and
+- marked P14.6 complete in `ROADMAP.md`, leaving P14.7 direct launch,
+  all-system scenario, and no-heli scenario smoke as the next bounded task.

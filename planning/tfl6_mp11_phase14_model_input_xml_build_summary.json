@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generated_at_utc": "2026-06-29T06:29:43+00:00",
+    "generated_at_utc": "2026-06-29T06:33:41+00:00",
     "candidate_bundle_root": "data/mp11_harvest_system_model_input_bundle",
     "patchworks_output_root": "output/patchworks_tfl6_mp11_harvest_system_candidate",
     "forestmodel_xml": "output/patchworks_tfl6_mp11_harvest_system_candidate/forestmodel.xml",
@@ -69,7 +69,7 @@
   },
   "xml": {
     "xml_path": "output/patchworks_tfl6_mp11_harvest_system_candidate/forestmodel.xml",
-    "xml_sha256": "467f505403061e9fb27507b058e245ac1dcb5596112c070fabc5a1f7d0b77248",
+    "xml_sha256": "d895703182219ff70ff6b35f140fa03ac650805b6b871c09d5763690cdd93f2e",
     "xml_root": "ForestModel",
     "xml_tag_counts": {
       "ForestModel": 1,
