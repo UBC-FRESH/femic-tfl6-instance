@@ -1,0 +1,8 @@
+id,decision,status,evidence,rationale
+release_decision,supplement_phase5,present,P13.1-P13.4 evidence surfaces,"MP11 candidate is smoke-tested, documented, and archive-manifested, but not published or clean-checkout materialized."
+phase5_baseline,retain_as_accepted_baseline,accepted,Phase 5 release QA and public archive remain unchanged,P13 does not replace the accepted Phase 5 public teaching runtime.
+mp11_candidate_runtime,documented_candidate_supplement,accepted_for_candidate_teaching_and_comparison,"Phase 12 smoke pass, P13 docs, P13 archive QA",Candidate runtime is useful for MP11-aligned teaching and comparison without claiming WFP model equivalence.
+replace_phase5,not_selected,blocked_by_release_gates,P13.2 caveats and P13.4 materialization boundary,"Candidate archive is local/unpublished, clean-checkout materialization is pending, maintainer base scenario lacks reproducible export, and MP11 caveats remain."
+experimental_only,not_selected,too_conservative_for_current_evidence,Phase 12 smoke pass and P13 documentation/archive QA,"The candidate has enough build, launch, scheduling, docs, and archive QA evidence to supplement Phase 5 as a labelled candidate."
+clean_checkout_materialization,defer_until_publication,pending,planning/tfl6_mp11_phase13_archive_materialization_qa.md,Materialization is not required for the supplement decision because the candidate is not replacing the public Phase 5 runtime archive.
+phase13_closeout,complete,ready_after_pr_issue_sync,"roadmap, changelog, PR, and issue comments",P13.1 through P13.5 are complete once this change is merged.
