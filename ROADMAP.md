@@ -1878,11 +1878,11 @@ Phase 14 lane has no active next step.
   - [x] P16.1b Add repository annex policy for expanded model payloads.
   - [x] P16.1c Add every non-scenario-output file under `models/` to
     Git/git-annex tracking.
-- [ ] P16.2 Publish expanded model payloads to `arbutus-s3`.
-  - [ ] P16.2a Copy annexed `models/**` keys to `arbutus-s3`.
-  - [ ] P16.2b Verify no tracked `models/**` annex keys are missing from
+- [x] P16.2 Publish expanded model payloads to `arbutus-s3`.
+  - [x] P16.2a Copy annexed `models/**` keys to `arbutus-s3`.
+  - [x] P16.2b Verify no tracked `models/**` annex keys are missing from
     `arbutus-s3`.
-  - [ ] P16.2c Verify no local `models/**` files remain untracked.
+  - [x] P16.2c Verify no local `models/**` files remain untracked.
 - [ ] P16.3 Prove materialization and close the publication gap.
   - [ ] P16.3a Prove a fresh clone can materialize the expanded model tree.
   - [ ] P16.3b Record the verification in `CHANGE_LOG.md` and issue comments.
