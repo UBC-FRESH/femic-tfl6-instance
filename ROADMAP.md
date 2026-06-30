@@ -1883,10 +1883,10 @@ Phase 14 lane has no active next step.
   - [x] P16.2b Verify no tracked `models/**` annex keys are missing from
     `arbutus-s3`.
   - [x] P16.2c Verify no local `models/**` files remain untracked.
-- [ ] P16.3 Prove materialization and close the publication gap.
+- [x] P16.3 Prove materialization and close the publication gap.
   - [x] P16.3a Prove a fresh clone can materialize the expanded model tree.
   - [x] P16.3b Record the verification in `CHANGE_LOG.md` and issue comments.
-  - [ ] P16.3c Push the repaired instance branch and update the parent FEMIC
+  - [x] P16.3c Push the repaired instance branch and update the parent FEMIC
     submodule pointer.
 
 Phase 16 supersedes the Phase 5/15 archive-only runtime publication boundary
