@@ -4085,3 +4085,20 @@
 - proved a fresh clone can materialize the tracked model tree from
   `arbutus-s3` with `datalad get -r models`, leaving zero model annex keys
   missing locally.
+
+## 2026-07-01 - Added Phase 17 FreshForge model-build workflow scaffold
+
+- Opened issue `#158` for the TFL6 FreshForge model-build workflow scaffold.
+- Added `planning/phase17_freshforge_workflow_plan.md` to record the agreed
+  workflow sequence: model build, materialization, scenarios, THLB accepted
+  pipeline wrapper, TSR/THLB planning, source resolution/materialization, and
+  stepwise validation.
+- Added `workflows/freshforge/tfl6_model_build_workflow.yaml` using generic
+  `femic.*` provider stages and TFL6-owned MP11 harvest-system candidate
+  paths.
+- Added FreshForge validate, inspect, and plan commands to the docs and rebuild
+  runbook while recording that FreshForge `v0.1.0a4` does not expose
+  `freshforge run --dry-run`; full execution acceptance remains later scope.
+- Validated the workflow with FreshForge provider discovery, `validate`,
+  `inspect`, and `plan`; verified the rebuild spec; built TFL6 Sphinx docs
+  warning-clean; and confirmed no `runtime/freshforge/` artifacts are tracked.

@@ -1,0 +1,108 @@
+workflow:
+  id: tfl6_model_build
+  name: TFL6 FreshForge model-build workflow
+  description: >
+    Instance-owned FreshForge graph for the TFL6 MP11 harvest-system candidate
+    model-build lane using generic FEMIC provider stages.
+nodes:
+  - id: validate_case
+    provider: femic.validate_case
+    outputs:
+      case_validation: case_preflight_ok
+    parameters:
+      instance_root: .
+      run_config: config/run_profile.tfl6.yaml
+      rebuild_spec: config/rebuild.spec.yaml
+      tipsy_config_dir: config/tipsy
+
+  - id: geospatial_preflight
+    provider: femic.geospatial_preflight
+    needs:
+      - validate_case
+    inputs:
+      case_validation: validate_case.case_validation
+    outputs:
+      geospatial_runtime: geospatial_runtime_ok
+    parameters:
+      instance_root: .
+
+  - id: compile_upstream
+    provider: femic.compile_upstream
+    needs:
+      - geospatial_preflight
+    inputs:
+      geospatial_runtime: geospatial_preflight.geospatial_runtime
+    outputs:
+      btc_handoff: stage01a_btc_handoff
+    parameters:
+      instance_root: .
+      run_config: config/run_profile.tfl6.yaml
+      run_id: tfl6_freshforge_model_build
+      log_dir: runtime/logs
+    artifacts:
+      run_manifest: runtime/logs/run_manifest-tfl6_freshforge_model_build.json
+
+  - id: btc_post_tipsy
+    provider: femic.btc_post_tipsy
+    needs:
+      - compile_upstream
+    inputs:
+      btc_handoff: compile_upstream.btc_handoff
+    outputs:
+      model_input_bundle: data/model_input_bundle
+    parameters:
+      instance_root: .
+      run_config: config/run_profile.tfl6.yaml
+      tsa: tfl6
+      run_id: tfl6_freshforge_model_build
+      log_dir: runtime/logs
+    artifacts:
+      btc_manifest: runtime/logs/btc_manifest-tfl6_freshforge_model_build.json
+      post_tipsy_manifest: runtime/logs/run_manifest-post_tipsy_tfl6_freshforge_model_build.json
+
+  - id: export_patchworks
+    provider: femic.export_patchworks
+    needs:
+      - btc_post_tipsy
+    inputs:
+      model_input_bundle: btc_post_tipsy.model_input_bundle
+    outputs:
+      patchworks_package: output/patchworks_tfl6_mp11_harvest_system_candidate
+    parameters:
+      instance_root: .
+      run_config: config/run_profile.tfl6.yaml
+      tsa: tfl6
+      bundle_dir: data/mp11_harvest_system_model_input_bundle/export_compat
+      checkpoint: data/mp11_harvest_system_model_input_bundle/export_compat/aflb_current_export_compat.feather
+      output_dir: output/patchworks_tfl6_mp11_harvest_system_candidate
+    artifacts:
+      forestmodel_xml: output/patchworks_tfl6_mp11_harvest_system_candidate/forestmodel.xml
+      fragments: output/patchworks_tfl6_mp11_harvest_system_candidate/fragments/fragments.dbf
+
+  - id: patchworks_preflight
+    provider: femic.patchworks_preflight
+    needs:
+      - export_patchworks
+    inputs:
+      patchworks_package: export_patchworks.patchworks_package
+    outputs:
+      patchworks_runtime: patchworks_runtime_ok
+    parameters:
+      instance_root: .
+      patchworks_config: config/patchworks.runtime.mp11_harvest_system_candidate.windows.yaml
+
+  - id: matrix_build
+    provider: femic.matrix_build
+    needs:
+      - patchworks_preflight
+    inputs:
+      patchworks_runtime: patchworks_preflight.patchworks_runtime
+    outputs:
+      compiled_patchworks_model: models/tfl6_patchworks_model_mp11_harvest_system_candidate/tracks
+    parameters:
+      instance_root: .
+      patchworks_config: config/patchworks.runtime.mp11_harvest_system_candidate.windows.yaml
+      run_id: tfl6_freshforge_model_build
+      log_dir: runtime/logs
+    artifacts:
+      matrix_build_manifest: runtime/logs/patchworks_matrixbuilder_manifest-tfl6_freshforge_model_build.json
