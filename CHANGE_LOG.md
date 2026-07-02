@@ -4102,3 +4102,19 @@
 - Validated the workflow with FreshForge provider discovery, `validate`,
   `inspect`, and `plan`; verified the rebuild spec; built TFL6 Sphinx docs
   warning-clean; and confirmed no `runtime/freshforge/` artifacts are tracked.
+
+## 2026-07-01 - Added Phase 18 FreshForge materialization workflow overlay
+
+- Opened issue `#160` for the first TFL6-owned FreshForge materialization
+  workflow overlay.
+- Added `planning/phase18_freshforge_materialization_overlay.md`.
+- Added `workflows/freshforge/tfl6_materialization_overlay.yaml` and
+  `workflows/freshforge/tfl6_materialization_workflow.yaml` using the generic
+  parent FEMIC `femic.materialization.*` provider namespace.
+- Updated FreshForge docs and the rebuild runbook with parent-checkout
+  validation, inspection, planning, and explicit run commands.
+- Validated provider discovery, `freshforge validate`, `freshforge inspect`,
+  `freshforge plan`, and a bounded parent-checkout `freshforge run`.
+- Verified the run wrote only ignored `runtime/freshforge/` output and that
+  `git annex find --not --in arbutus-s3 -- models` reported no tracked model
+  payload gaps.

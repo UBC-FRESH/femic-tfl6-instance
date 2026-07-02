@@ -1932,3 +1932,29 @@ non-executing command-sequence checks use `freshforge plan` in this phase.
   - [x] Run the TFL6 Sphinx docs build.
   - [x] Confirm no `runtime/freshforge/` artifacts are tracked.
   - [x] Update `CHANGE_LOG.md`, post issue closeout, and push the branch.
+
+## Phase 18: FreshForge Materialization Workflow Overlay (`#160`)
+
+Status: active
+
+Goal: add the first TFL6-owned FreshForge materialization overlay and workflow
+that run from the parent FEMIC checkout through the generic
+`femic.materialization` provider.
+
+- [x] P18.1 Capture scope and lifecycle.
+  - [x] Open issue `#160`.
+  - [x] Create branch `feature/p18-freshforge-materialization-overlay`.
+  - [x] Add `planning/phase18_freshforge_materialization_overlay.md`.
+- [x] P18.2 Add workflow contract files.
+  - [x] Add `workflows/freshforge/tfl6_materialization_overlay.yaml`.
+  - [x] Add `workflows/freshforge/tfl6_materialization_workflow.yaml`.
+  - [x] Keep provider references under `femic.materialization.*`.
+- [x] P18.3 Document operator usage.
+  - [x] Update FreshForge docs/runbook commands for parent-checkout execution.
+  - [x] State that `freshforge plan` is non-mutating and `freshforge run`
+        performs real submodule/DataLad/git-annex work.
+- [ ] P18.4 Validate and close out.
+  - [x] Run FreshForge provider discovery, validate, inspect, and plan.
+  - [x] Run the bounded materialization workflow from the parent checkout.
+  - [x] Confirm no `runtime/freshforge/` reports are tracked.
+  - [ ] Update `CHANGE_LOG.md`, issue comments, and PR closeout records.

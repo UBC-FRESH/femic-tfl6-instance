@@ -46,9 +46,28 @@ freshforge plan workflows/freshforge/tfl6_model_build_workflow.yaml
 
 The Phase 17 workflow uses generic `femic.*` provider stages. It does not add a
 `tfl6.*` provider namespace and does not make FreshForge materialize DataLad
-payloads. FreshForge `v0.1.0a4` does not expose `freshforge run --dry-run`;
+payloads. The current FreshForge release does not expose `freshforge run --dry-run`;
 full execution through BTC and Patchworks should be treated as a separate
 acceptance step.
+
+## FreshForge Materialization Workflow
+
+Phase 18 adds a parent-checkout materialization workflow at
+`workflows/freshforge/tfl6_materialization_workflow.yaml`. Run it from the
+parent FEMIC checkout root, not from inside this instance directory:
+
+```bash
+freshforge providers
+freshforge validate external/femic-tfl6-instance/workflows/freshforge/tfl6_materialization_workflow.yaml
+freshforge inspect external/femic-tfl6-instance/workflows/freshforge/tfl6_materialization_workflow.yaml
+freshforge plan external/femic-tfl6-instance/workflows/freshforge/tfl6_materialization_workflow.yaml
+freshforge run external/femic-tfl6-instance/workflows/freshforge/tfl6_materialization_workflow.yaml --workdir runtime/freshforge --namespace tfl6/materialization --json
+```
+
+`freshforge plan` is non-mutating. `freshforge run` performs real submodule,
+Python environment, DataLad, and git-annex work, enables `arbutus-s3`,
+materializes the configured TFL6 paths, audits `models/` remote coverage, and
+writes a local report under the parent `runtime/freshforge/` tree.
 
 ## Evidence Refresh Step (Release Prep)
 ```bash
