@@ -31,6 +31,25 @@ femic instance rebuild \
 - `runtime/logs/instance_rebuild_report-<run_id>.json`
 - Referenced manifests/logs listed under `artifact_references`.
 
+## FreshForge Model-Build Workflow
+
+Phase 17 adds a FreshForge workflow document at
+`workflows/freshforge/tfl6_model_build_workflow.yaml`. Use it to validate,
+inspect, and plan the TFL6 model-build graph from the instance root:
+
+```bash
+freshforge providers
+freshforge validate workflows/freshforge/tfl6_model_build_workflow.yaml
+freshforge inspect workflows/freshforge/tfl6_model_build_workflow.yaml
+freshforge plan workflows/freshforge/tfl6_model_build_workflow.yaml
+```
+
+The Phase 17 workflow uses generic `femic.*` provider stages. It does not add a
+`tfl6.*` provider namespace and does not make FreshForge materialize DataLad
+payloads. FreshForge `v0.1.0a4` does not expose `freshforge run --dry-run`;
+full execution through BTC and Patchworks should be treated as a separate
+acceptance step.
+
 ## Evidence Refresh Step (Release Prep)
 ```bash
 femic instance refresh-reference-evidence --reference-root .

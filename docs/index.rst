@@ -24,4 +24,5 @@ trail used to create it.
    phase13-mp11-candidate-runtime
    phase14-mp11-harvest-system-operability
    phase15-mp11-runtime-publication
+   freshforge-workflows
    teaching-challenges

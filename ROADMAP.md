@@ -1896,3 +1896,39 @@ artifacts, but the runnable instance contract now requires the non-scenario
 DataLad/git-annex remote. Patchworks smoke/scenario output directories under
 `models/**/analysis/p*/` and `models/**/analysis/headless_runs/` remain local
 run evidence rather than required model inputs.
+
+## Phase 17: FreshForge Model-Build Workflow Scaffold (`#158`)
+
+Status: complete
+
+Goal: add the first TFL6-owned FreshForge workflow document for the model-build
+lane, using generic FEMIC provider stages for validation, inspection, and
+planning. FreshForge `v0.1.0a4` does not expose `freshforge run --dry-run`, so
+non-executing command-sequence checks use `freshforge plan` in this phase.
+
+- [x] P17.1 Capture FreshForge workflow strategy.
+  - [x] Record the agreed workflow sequence in
+        `planning/phase17_freshforge_workflow_plan.md`.
+  - [x] Keep generic instance materialization as a separate parent FEMIC P98
+        workflow family.
+  - [x] Defer scenario and THLB workflow families until after the model-build
+        scaffold is stable.
+- [x] P17.2 Add the TFL6 model-build workflow document.
+  - [x] Add `workflows/freshforge/tfl6_model_build_workflow.yaml`.
+  - [x] Use only generic `femic.*` provider references.
+  - [x] Point the graph at TFL6-owned run profile, rebuild spec, MP11
+        harvest-system bundle, Patchworks output, and runtime config.
+  - [x] Declare artifacts as metadata only.
+- [x] P17.3 Document FreshForge usage.
+  - [x] Add validation, inspection, and planning commands to the docs/runbook
+        surfaces.
+  - [x] Record that `freshforge run --dry-run` is not available in the current
+        FreshForge release and full execution is a later acceptance lane.
+  - [x] State that Phase 17 does not add a `tfl6.*` provider or full execution
+        acceptance.
+- [x] P17.4 Validate and close out.
+  - [x] Run FreshForge provider discovery, validate, inspect, and plan checks.
+  - [x] Run `femic instance validate-spec --spec config/rebuild.spec.yaml`.
+  - [x] Run the TFL6 Sphinx docs build.
+  - [x] Confirm no `runtime/freshforge/` artifacts are tracked.
+  - [x] Update `CHANGE_LOG.md`, post issue closeout, and push the branch.
