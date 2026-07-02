@@ -1,0 +1,24 @@
+instance:
+  root: external/femic-tfl6-instance
+  submodule_path: external/femic-tfl6-instance
+environment:
+  venv_path: .venv
+install:
+  requirements: []
+  editable_paths: []
+  extras:
+    - dev
+    - freshforge
+  packages: []
+annex:
+  special_remote: arbutus-s3
+materialization:
+  required_paths:
+    - models
+    - config
+    - workflows
+audit:
+  required_paths:
+    - models
+report:
+  path: runtime/freshforge/tfl6_materialization_report.json
