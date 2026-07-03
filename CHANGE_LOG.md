@@ -4181,8 +4181,8 @@
 - Re-ran the parent-checkout FreshForge model-build workflow through Matrix
   Builder using the accepted BTC handoff boundary.
 - Verified the BTC sub-run id is `tfl6_freshforge_model_build_tfl6`, the
-  Patchworks export and compiled tracks were rebuilt, and no `tsatfl` references
-  remain in the source/test/TFL6 workspace search.
+  Patchworks export and compiled tracks were rebuilt, and no invalid combined
+  TSA/TFL references remain in the source/test/TFL6 workspace search.
 - Inspected the Matrix Builder manifest and stderr log: the run returned
   `returncode=0`, synced `accounts.csv` from `protoaccounts.csv`, and reported
   final areas for total, managed, passive, and excluded area.

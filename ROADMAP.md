@@ -2014,6 +2014,7 @@ now resolves that blocker by using the accepted TFL6 managed-curve/BTC handoff
 artifacts as the executable model-build boundary. The required accepted input is
 the BTC input CSV, not the legacy TIPSY parameter spreadsheet. The clean
 acceptance run rebuilt the Patchworks export and Matrix Builder tracks with BTC
-sub-run id `tfl6_freshforge_model_build_tfl6` and no `tsatfl` source/test/TFL6
-matches remaining after cleanup. Production TIPSY config-rule reconstruction
+sub-run id `tfl6_freshforge_model_build_tfl6` and no invalid combined
+TSA/TFL source/test/TFL6 matches remaining after cleanup. Production TIPSY
+config-rule reconstruction
 from raw upstream inputs remains deferred to a later phase.
