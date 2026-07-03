@@ -10,9 +10,8 @@ nodes:
     outputs:
       case_validation: case_preflight_ok
     parameters:
-      instance_root: .
+      instance_root: external/femic-tfl6-instance
       run_config: config/run_profile.tfl6.yaml
-      rebuild_spec: config/rebuild.spec.yaml
       tipsy_config_dir: config/tipsy
 
   - id: geospatial_preflight
@@ -24,7 +23,7 @@ nodes:
     outputs:
       geospatial_runtime: geospatial_runtime_ok
     parameters:
-      instance_root: .
+      instance_root: external/femic-tfl6-instance
 
   - id: compile_upstream
     provider: femic.compile_upstream
@@ -35,7 +34,7 @@ nodes:
     outputs:
       btc_handoff: stage01a_btc_handoff
     parameters:
-      instance_root: .
+      instance_root: external/femic-tfl6-instance
       run_config: config/run_profile.tfl6.yaml
       run_id: tfl6_freshforge_model_build
       log_dir: runtime/logs
@@ -51,7 +50,7 @@ nodes:
     outputs:
       model_input_bundle: data/model_input_bundle
     parameters:
-      instance_root: .
+      instance_root: external/femic-tfl6-instance
       run_config: config/run_profile.tfl6.yaml
       tsa: tfl6
       run_id: tfl6_freshforge_model_build
@@ -69,7 +68,7 @@ nodes:
     outputs:
       patchworks_package: output/patchworks_tfl6_mp11_harvest_system_candidate
     parameters:
-      instance_root: .
+      instance_root: external/femic-tfl6-instance
       run_config: config/run_profile.tfl6.yaml
       tsa: tfl6
       bundle_dir: data/mp11_harvest_system_model_input_bundle/export_compat
@@ -88,7 +87,7 @@ nodes:
     outputs:
       patchworks_runtime: patchworks_runtime_ok
     parameters:
-      instance_root: .
+      instance_root: external/femic-tfl6-instance
       patchworks_config: config/patchworks.runtime.mp11_harvest_system_candidate.windows.yaml
 
   - id: matrix_build
@@ -100,7 +99,7 @@ nodes:
     outputs:
       compiled_patchworks_model: models/tfl6_patchworks_model_mp11_harvest_system_candidate/tracks
     parameters:
-      instance_root: .
+      instance_root: external/femic-tfl6-instance
       patchworks_config: config/patchworks.runtime.mp11_harvest_system_candidate.windows.yaml
       run_id: tfl6_freshforge_model_build
       log_dir: runtime/logs
