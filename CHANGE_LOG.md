@@ -4118,3 +4118,15 @@
 - Verified the run wrote only ignored `runtime/freshforge/` output and that
   `git annex find --not --in arbutus-s3 -- models` reported no tracked model
   payload gaps.
+
+## 2026-07-02 - Launched Phase 19 FreshForge executable model-build acceptance
+
+- Corrected the stale Phase 18 roadmap status to complete; issue `#160` and
+  the Phase 18 PR were already closed after validation.
+- Opened issue `#162` for the executable FreshForge model-build acceptance
+  lane.
+- Created branch `feature/p19-freshforge-executable-model-build`.
+- Added `planning/phase19_freshforge_executable_model_build.md`.
+- Added Phase 19 roadmap subtasks for parent-checkout workflow updates,
+  operator docs, executable `freshforge run` acceptance, direct output
+  inspection, and closeout.
