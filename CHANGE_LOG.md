@@ -4142,3 +4142,17 @@
   discovery, non-mutating validate/inspect/plan checks, and the released
   `freshforge run --workdir runtime/freshforge --namespace tfl6/model-build
   --json` command shape.
+
+## 2026-07-02 - Recorded Phase 19 executable model-build blocker
+
+- Parent-checkout FreshForge discovery, command rendering, validate, inspect,
+  plan, rebuild-spec validation, focused FreshForge tests, Ruff, and Sphinx
+  checks pass.
+- The explicit `freshforge run` reached `femic.compile_upstream` after
+  successful case preflight and geospatial preflight.
+- Legacy data prep then failed in TIPSY parameter generation because no TFL6
+  config rule matched AU `1000` (`leading_species=HW`, `BEC=CWH`,
+  `forest_type=1`).
+- Phase 19 remains active pending the TFL6 model-build decision: consume the
+  accepted managed curve/BTC handoff artifacts or add production TIPSY config
+  rules for the MP11 candidate rebuild.

@@ -1996,3 +1996,15 @@ Matrix Builder, using only generic FEMIC provider stages.
 - [ ] P19.5 Close out.
   - [ ] Update `CHANGE_LOG.md`, issue comments, and PR closeout records.
   - [ ] Merge the TFL6 PR before the parent submodule pointer update.
+
+Phase 19 executable acceptance is not complete yet. Parent-checkout workflow
+discovery, command rendering, validate, inspect, plan, rebuild-spec validation,
+focused FreshForge tests, Ruff, and Sphinx checks pass from the parent FEMIC
+checkout. The explicit `freshforge run` reaches the generic
+`femic.compile_upstream` stage after successful case preflight and geospatial
+preflight, but legacy data prep fails in TIPSY parameter generation because no
+TFL6 config rule matches AU `1000` (`leading_species=HW`, `BEC=CWH`,
+`forest_type=1`). The next P19 implementation step is to decide whether the
+executable model-build workflow should consume the already accepted TFL6 managed
+curve/BTC handoff artifacts or whether TFL6 needs production TIPSY config rules
+for the MP11 candidate rebuild.
