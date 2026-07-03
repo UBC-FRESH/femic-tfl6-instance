@@ -1935,7 +1935,7 @@ non-executing command-sequence checks use `freshforge plan` in this phase.
 
 ## Phase 18: FreshForge Materialization Workflow Overlay (`#160`)
 
-Status: active
+Status: complete
 
 Goal: add the first TFL6-owned FreshForge materialization overlay and workflow
 that run from the parent FEMIC checkout through the generic
@@ -1953,8 +1953,67 @@ that run from the parent FEMIC checkout through the generic
   - [x] Update FreshForge docs/runbook commands for parent-checkout execution.
   - [x] State that `freshforge plan` is non-mutating and `freshforge run`
         performs real submodule/DataLad/git-annex work.
-- [ ] P18.4 Validate and close out.
+- [x] P18.4 Validate and close out.
   - [x] Run FreshForge provider discovery, validate, inspect, and plan.
   - [x] Run the bounded materialization workflow from the parent checkout.
   - [x] Confirm no `runtime/freshforge/` reports are tracked.
+  - [x] Update `CHANGE_LOG.md`, issue comments, and PR closeout records.
+
+## Phase 19: FreshForge Executable Model-Build Acceptance (`#162`)
+
+Status: active
+
+Goal: promote the Phase 17 TFL6 model-build graph from validate/inspect/plan
+into a parent-checkout `freshforge run` acceptance path through Patchworks
+Matrix Builder, using only generic FEMIC provider stages.
+
+- [x] P19.1 Create lifecycle and planning surfaces.
+  - [x] Open issue `#162`.
+  - [x] Create branch `feature/p19-freshforge-executable-model-build`.
+  - [x] Add `planning/phase19_freshforge_executable_model_build.md`.
+- [x] P19.2 Update the model-build workflow for parent-checkout execution.
+  - [x] Change workflow `instance_root` parameters to
+        `external/femic-tfl6-instance`.
+  - [x] Keep run config, Patchworks config, bundle, checkpoint, output, log,
+        and artifact paths instance-relative.
+  - [x] Remove `rebuild_spec` from the `validate_case` node so the first node
+        runs the generic case preflight surface.
+- [x] P19.3 Update operator docs and runbook commands.
+  - [x] Use parent FEMIC workflow discovery commands as the entry point.
+  - [x] Document separate rebuild-spec validation before execution.
+  - [x] Document that `freshforge plan` is non-mutating and `freshforge run`
+        executes FEMIC, BTC, and Patchworks stages.
+  - [x] State that the materialization workflow should run first when the TFL6
+        submodule is thin or incomplete.
+- [x] P19.4 Validate and run acceptance.
+  - [x] Run parent workflow discovery, command rendering, validate, inspect,
+        and plan.
+  - [x] Replace the blocked upstream compile node with a generic accepted BTC
+        handoff preflight that consumes the reviewed TFL6 `03_input`,
+        `04_output`, and treated-curve artifacts.
+  - [x] Keep the accepted BTC handoff path CSV-only; do not require the legacy
+        TIPSY parameter spreadsheet for Phase 19 execution.
+  - [x] Run the parent-checkout FreshForge model-build workflow.
+  - [x] Inspect FreshForge run records, FEMIC runtime manifests, exported
+        Patchworks package, Matrix Builder manifest, and compiled tracks.
+  - [x] Inspect TFL6 Git status and treat changed tracked model outputs as
+        reviewable rebuild output.
+- [ ] P19.5 Close out.
   - [ ] Update `CHANGE_LOG.md`, issue comments, and PR closeout records.
+  - [ ] Merge the TFL6 PR before the parent submodule pointer update.
+
+Phase 19 executable acceptance has completed its first parent-checkout run
+through Patchworks Matrix Builder. Parent-checkout workflow
+discovery, command rendering, validate, inspect, plan, rebuild-spec validation,
+focused FreshForge tests, Ruff, and Sphinx checks pass from the parent FEMIC
+checkout. The earlier explicit `freshforge run` reached the generic
+`femic.compile_upstream` stage after successful case preflight and geospatial
+preflight, then failed in TIPSY parameter generation because no TFL6 config rule
+matches AU `1000` (`leading_species=HW`, `BEC=CWH`, `forest_type=1`). Phase 19
+now resolves that blocker by using the accepted TFL6 managed-curve/BTC handoff
+artifacts as the executable model-build boundary. The required accepted input is
+the BTC input CSV, not the legacy TIPSY parameter spreadsheet. The clean
+acceptance run rebuilt the Patchworks export and Matrix Builder tracks with BTC
+sub-run id `tfl6_freshforge_model_build_tfl6` and no `tsatfl` source/test/TFL6
+matches remaining after cleanup. Production TIPSY config-rule reconstruction
+from raw upstream inputs remains deferred to a later phase.

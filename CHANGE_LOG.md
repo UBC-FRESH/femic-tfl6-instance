@@ -4118,3 +4118,71 @@
 - Verified the run wrote only ignored `runtime/freshforge/` output and that
   `git annex find --not --in arbutus-s3 -- models` reported no tracked model
   payload gaps.
+
+## 2026-07-02 - Launched Phase 19 FreshForge executable model-build acceptance
+
+- Corrected the stale Phase 18 roadmap status to complete; issue `#160` and
+  the Phase 18 PR were already closed after validation.
+- Opened issue `#162` for the executable FreshForge model-build acceptance
+  lane.
+- Created branch `feature/p19-freshforge-executable-model-build`.
+- Added `planning/phase19_freshforge_executable_model_build.md`.
+- Added Phase 19 roadmap subtasks for parent-checkout workflow updates,
+  operator docs, executable `freshforge run` acceptance, direct output
+  inspection, and closeout.
+
+## 2026-07-02 - Updated Phase 19 model-build workflow for parent checkout
+
+- Updated `workflows/freshforge/tfl6_model_build_workflow.yaml` so all generic
+  FEMIC provider stages use `instance_root: external/femic-tfl6-instance`.
+- Removed `rebuild_spec` from the `validate_case` node so the first workflow
+  node runs generic case preflight; rebuild-spec validation remains a separate
+  documented operator check.
+- Updated FreshForge docs and the rebuild runbook to use parent FEMIC workflow
+  discovery, non-mutating validate/inspect/plan checks, and the released
+  `freshforge run --workdir runtime/freshforge --namespace tfl6/model-build
+  --json` command shape.
+
+## 2026-07-02 - Recorded Phase 19 executable model-build blocker
+
+- Parent-checkout FreshForge discovery, command rendering, validate, inspect,
+  plan, rebuild-spec validation, focused FreshForge tests, Ruff, and Sphinx
+  checks pass.
+- The explicit `freshforge run` reached `femic.compile_upstream` after
+  successful case preflight and geospatial preflight.
+- Legacy data prep then failed in TIPSY parameter generation because no TFL6
+  config rule matched AU `1000` (`leading_species=HW`, `BEC=CWH`,
+  `forest_type=1`).
+- Phase 19 remains active pending the TFL6 model-build decision: consume the
+  accepted managed curve/BTC handoff artifacts or add production TIPSY config
+  rules for the MP11 candidate rebuild.
+
+## 2026-07-02 - Switched Phase 19 to accepted BTC handoff execution
+
+- Replaced the blocked `femic.compile_upstream` node in
+  `workflows/freshforge/tfl6_model_build_workflow.yaml` with the generic
+  `femic.accepted_btc_handoff` preflight node.
+- Declared the accepted TFL6 BTC input/output, error, treated-curve,
+  diagnostics, parameter-crosswalk, and curve-id-map artifacts in the workflow.
+- Updated docs, runbook, and roadmap text so Phase 19 clearly uses the accepted
+  BTC handoff boundary and defers production TIPSY config-rule reconstruction.
+
+## 2026-07-02 - Clarified Phase 19 BTC handoff as CSV-only
+
+- Recorded that the Phase 19 accepted BTC handoff requires the canonical
+  `data/03_input-tfl6.csv` and accepted BatchTIPSY output, not the legacy TIPSY
+  parameter spreadsheet.
+- The parent FEMIC post-TIPSY guard now supports this CSV-only handoff path, so
+  TFL6 FreshForge execution can proceed from the accepted BTC artifacts without
+  regenerating or requiring the spreadsheet mirror.
+
+## 2026-07-02 - Completed Phase 19 FreshForge executable acceptance
+
+- Re-ran the parent-checkout FreshForge model-build workflow through Matrix
+  Builder using the accepted BTC handoff boundary.
+- Verified the BTC sub-run id is `tfl6_freshforge_model_build_tfl6`, the
+  Patchworks export and compiled tracks were rebuilt, and no `tsatfl` references
+  remain in the source/test/TFL6 workspace search.
+- Inspected the Matrix Builder manifest and stderr log: the run returned
+  `returncode=0`, synced `accounts.csv` from `protoaccounts.csv`, and reported
+  final areas for total, managed, passive, and excluded area.
