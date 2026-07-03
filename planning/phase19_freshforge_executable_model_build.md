@@ -38,6 +38,12 @@ check:
 python -m femic instance validate-spec --instance-root external/femic-tfl6-instance --spec config/rebuild.spec.yaml
 ```
 
+Phase 19 uses the accepted TFL6 BTC handoff artifacts as the executable
+model-build boundary. The workflow checks the declared `03_input`, `04_output`,
+and treated-curve artifacts with `femic.accepted_btc_handoff`, then resumes at
+`femic.btc_post_tipsy`. Production TIPSY parameter-rule reconstruction from raw
+upstream inputs is outside this phase.
+
 ## Operator Flow
 
 Operators should use the parent FEMIC workflow discovery helper first:
@@ -79,3 +85,23 @@ Phase 19 should inspect:
 
 If tracked model outputs changed, treat them as reviewable rebuild output rather
 than incidental runtime noise.
+
+## Acceptance Result
+
+The parent-checkout acceptance run completed on 2026-07-02 with:
+
+- `freshforge run ... --workdir runtime/freshforge --namespace tfl6/model-build --json`
+  returning `ok: true`;
+- all seven workflow nodes succeeding;
+- BTC sub-run id `tfl6_freshforge_model_build_tfl6`;
+- Matrix Builder manifest `returncode: 0`;
+- `accounts_sync.status: synced`;
+- Patchworks export rebuilt under
+  `output/patchworks_tfl6_mp11_harvest_system_candidate/`;
+- compiled tracks rebuilt under
+  `models/tfl6_patchworks_model_mp11_harvest_system_candidate/tracks`;
+- no `tsatfl` matches remaining in the source/test/TFL6 workspace search.
+
+The run intentionally uses the accepted BTC input CSV and accepted BatchTIPSY
+output. It does not require or regenerate the legacy TIPSY parameter
+spreadsheet.

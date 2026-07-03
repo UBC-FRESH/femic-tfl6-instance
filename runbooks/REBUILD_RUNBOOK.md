@@ -60,8 +60,10 @@ freshforge run external/femic-tfl6-instance/workflows/freshforge/tfl6_model_buil
 ```
 
 The workflow uses generic `femic.*` provider stages. It does not add a `tfl6.*`
-provider namespace. If this submodule is thin or incomplete, run the
-materialization workflow first.
+provider namespace. Phase 19 uses the accepted TFL6 BTC handoff artifacts
+already recorded in the instance instead of regenerating production TIPSY
+parameter rules from raw upstream inputs. If this submodule is thin or
+incomplete, run the materialization workflow first.
 
 ## FreshForge Materialization Workflow
 

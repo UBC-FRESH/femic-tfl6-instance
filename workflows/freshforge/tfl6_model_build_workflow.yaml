@@ -25,28 +25,34 @@ nodes:
     parameters:
       instance_root: external/femic-tfl6-instance
 
-  - id: compile_upstream
-    provider: femic.compile_upstream
+  - id: accepted_btc_handoff
+    provider: femic.accepted_btc_handoff
     needs:
       - geospatial_preflight
     inputs:
       geospatial_runtime: geospatial_preflight.geospatial_runtime
     outputs:
-      btc_handoff: stage01a_btc_handoff
+      btc_handoff: accepted_tfl6_btc_handoff
     parameters:
       instance_root: external/femic-tfl6-instance
-      run_config: config/run_profile.tfl6.yaml
-      run_id: tfl6_freshforge_model_build
-      log_dir: runtime/logs
+      btc_input: data/03_input-tfl6.csv
+      btc_output: data/04_output-tfl6.csv
+      treated_curves: planning/tfl6_tipsy_managed_curves.csv
+      btc_error: data/04_error-tfl6.csv
+      treated_curve_diagnostics: planning/tfl6_tipsy_managed_curve_diagnostics.csv
+      tipsy_parameter_crosswalk: planning/tfl6_tipsy_parameter_crosswalk.csv
+      curve_id_map: planning/tfl6_tipsy_btc_curve_id_map.csv
     artifacts:
-      run_manifest: runtime/logs/run_manifest-tfl6_freshforge_model_build.json
+      btc_input: data/03_input-tfl6.csv
+      btc_output: data/04_output-tfl6.csv
+      treated_curves: planning/tfl6_tipsy_managed_curves.csv
 
   - id: btc_post_tipsy
     provider: femic.btc_post_tipsy
     needs:
-      - compile_upstream
+      - accepted_btc_handoff
     inputs:
-      btc_handoff: compile_upstream.btc_handoff
+      btc_handoff: accepted_btc_handoff.btc_handoff
     outputs:
       model_input_bundle: data/model_input_bundle
     parameters:

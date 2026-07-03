@@ -48,11 +48,17 @@ The expected graph order is:
 
 1. validate case;
 2. geospatial preflight;
-3. compile upstream FEMIC inputs;
+3. accepted BTC handoff preflight;
 4. BTC/post-TIPSY bundle processing;
 5. Patchworks XML/fragments export;
 6. Patchworks preflight; and
 7. Matrix Builder.
+
+Phase 19 consumes the accepted TFL6 BTC handoff artifacts recorded in the
+instance. It does not regenerate production TIPSY parameter rules from raw
+upstream inputs. The accepted-handoff stage checks the declared ``03_input``,
+``04_output``, and treated-curve artifacts before post-TIPSY bundle assembly
+continues.
 
 ``freshforge plan`` is the non-mutating preview. The explicit run command
 executes FEMIC, BTC, and Patchworks stages:

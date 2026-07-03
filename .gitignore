@@ -25,12 +25,17 @@ output/
 # runnable model payload required for fresh-environment materialization.
 models/**/analysis/p*/
 models/**/analysis/headless_runs/
+models/**/tracks/accounts_backup_*.csv
 
 releases/
 plots/
 docs/_build/
+_build/
 
 # Legacy intermediate artifacts
+data/*.input_sha256
+data/tipsy_curves_*.csv
+data/tipsy_sppcomp_*.csv
 data/*.feather
 data/*.pkl
 data/model_input_bundle/
