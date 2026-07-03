@@ -4130,3 +4130,15 @@
 - Added Phase 19 roadmap subtasks for parent-checkout workflow updates,
   operator docs, executable `freshforge run` acceptance, direct output
   inspection, and closeout.
+
+## 2026-07-02 - Updated Phase 19 model-build workflow for parent checkout
+
+- Updated `workflows/freshforge/tfl6_model_build_workflow.yaml` so all generic
+  FEMIC provider stages use `instance_root: external/femic-tfl6-instance`.
+- Removed `rebuild_spec` from the `validate_case` node so the first workflow
+  node runs generic case preflight; rebuild-spec validation remains a separate
+  documented operator check.
+- Updated FreshForge docs and the rebuild runbook to use parent FEMIC workflow
+  discovery, non-mutating validate/inspect/plan checks, and the released
+  `freshforge run --workdir runtime/freshforge --namespace tfl6/model-build
+  --json` command shape.

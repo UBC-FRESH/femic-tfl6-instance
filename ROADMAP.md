@@ -1971,19 +1971,19 @@ Matrix Builder, using only generic FEMIC provider stages.
   - [x] Open issue `#162`.
   - [x] Create branch `feature/p19-freshforge-executable-model-build`.
   - [x] Add `planning/phase19_freshforge_executable_model_build.md`.
-- [ ] P19.2 Update the model-build workflow for parent-checkout execution.
-  - [ ] Change workflow `instance_root` parameters to
+- [x] P19.2 Update the model-build workflow for parent-checkout execution.
+  - [x] Change workflow `instance_root` parameters to
         `external/femic-tfl6-instance`.
-  - [ ] Keep run config, Patchworks config, bundle, checkpoint, output, log,
+  - [x] Keep run config, Patchworks config, bundle, checkpoint, output, log,
         and artifact paths instance-relative.
-  - [ ] Remove `rebuild_spec` from the `validate_case` node so the first node
+  - [x] Remove `rebuild_spec` from the `validate_case` node so the first node
         runs the generic case preflight surface.
-- [ ] P19.3 Update operator docs and runbook commands.
-  - [ ] Use parent FEMIC workflow discovery commands as the entry point.
-  - [ ] Document separate rebuild-spec validation before execution.
-  - [ ] Document that `freshforge plan` is non-mutating and `freshforge run`
+- [x] P19.3 Update operator docs and runbook commands.
+  - [x] Use parent FEMIC workflow discovery commands as the entry point.
+  - [x] Document separate rebuild-spec validation before execution.
+  - [x] Document that `freshforge plan` is non-mutating and `freshforge run`
         executes FEMIC, BTC, and Patchworks stages.
-  - [ ] State that the materialization workflow should run first when the TFL6
+  - [x] State that the materialization workflow should run first when the TFL6
         submodule is thin or incomplete.
 - [ ] P19.4 Validate and run acceptance.
   - [ ] Run parent workflow discovery, command rendering, validate, inspect,

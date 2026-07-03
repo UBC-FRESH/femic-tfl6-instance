@@ -33,22 +33,35 @@ femic instance rebuild \
 
 ## FreshForge Model-Build Workflow
 
-Phase 17 adds a FreshForge workflow document at
-`workflows/freshforge/tfl6_model_build_workflow.yaml`. Use it to validate,
-inspect, and plan the TFL6 model-build graph from the instance root:
+Phase 19 promotes the FreshForge model-build workflow at
+`workflows/freshforge/tfl6_model_build_workflow.yaml` to a parent-checkout
+execution acceptance lane. Start with the parent FEMIC discovery helper:
+
+```bash
+python -m femic freshforge workflows list
+python -m femic freshforge workflows commands external/femic-tfl6-instance/workflows/freshforge/tfl6_model_build_workflow.yaml
+```
+
+Run these non-mutating checks from the parent FEMIC checkout root:
 
 ```bash
 freshforge providers
-freshforge validate workflows/freshforge/tfl6_model_build_workflow.yaml
-freshforge inspect workflows/freshforge/tfl6_model_build_workflow.yaml
-freshforge plan workflows/freshforge/tfl6_model_build_workflow.yaml
+python -m femic instance validate-spec --instance-root external/femic-tfl6-instance --spec config/rebuild.spec.yaml
+freshforge validate external/femic-tfl6-instance/workflows/freshforge/tfl6_model_build_workflow.yaml
+freshforge inspect external/femic-tfl6-instance/workflows/freshforge/tfl6_model_build_workflow.yaml
+freshforge plan external/femic-tfl6-instance/workflows/freshforge/tfl6_model_build_workflow.yaml
 ```
 
-The Phase 17 workflow uses generic `femic.*` provider stages. It does not add a
-`tfl6.*` provider namespace and does not make FreshForge materialize DataLad
-payloads. The current FreshForge release does not expose `freshforge run --dry-run`;
-full execution through BTC and Patchworks should be treated as a separate
-acceptance step.
+`freshforge plan` is the non-mutating preview. The explicit run command executes
+FEMIC, BTC, and Patchworks stages:
+
+```bash
+freshforge run external/femic-tfl6-instance/workflows/freshforge/tfl6_model_build_workflow.yaml --workdir runtime/freshforge --namespace tfl6/model-build --json
+```
+
+The workflow uses generic `femic.*` provider stages. It does not add a `tfl6.*`
+provider namespace. If this submodule is thin or incomplete, run the
+materialization workflow first.
 
 ## FreshForge Materialization Workflow
 

@@ -26,14 +26,23 @@ from the parent FEMIC checkout:
 Model-Build Workflow
 --------------------
 
-Run these commands from the TFL6 instance root:
+Phase 19 promotes the model-build workflow to an executable parent-checkout
+acceptance lane. Use the parent FEMIC discovery helper first:
+
+.. code-block:: bash
+
+   python -m femic freshforge workflows list
+   python -m femic freshforge workflows commands external/femic-tfl6-instance/workflows/freshforge/tfl6_model_build_workflow.yaml
+
+Run these checks from the parent FEMIC checkout root:
 
 .. code-block:: bash
 
    freshforge providers
-   freshforge validate workflows/freshforge/tfl6_model_build_workflow.yaml
-   freshforge inspect workflows/freshforge/tfl6_model_build_workflow.yaml
-   freshforge plan workflows/freshforge/tfl6_model_build_workflow.yaml
+   python -m femic instance validate-spec --instance-root external/femic-tfl6-instance --spec config/rebuild.spec.yaml
+   freshforge validate external/femic-tfl6-instance/workflows/freshforge/tfl6_model_build_workflow.yaml
+   freshforge inspect external/femic-tfl6-instance/workflows/freshforge/tfl6_model_build_workflow.yaml
+   freshforge plan external/femic-tfl6-instance/workflows/freshforge/tfl6_model_build_workflow.yaml
 
 The expected graph order is:
 
@@ -45,9 +54,15 @@ The expected graph order is:
 6. Patchworks preflight; and
 7. Matrix Builder.
 
-Phase 17 validates and plans the orchestration surface. The current FreshForge
-release does not expose ``freshforge run --dry-run``; a full explicit
-``freshforge run`` through BTC and Patchworks is a later acceptance lane.
+``freshforge plan`` is the non-mutating preview. The explicit run command
+executes FEMIC, BTC, and Patchworks stages:
+
+.. code-block:: bash
+
+   freshforge run external/femic-tfl6-instance/workflows/freshforge/tfl6_model_build_workflow.yaml --workdir runtime/freshforge --namespace tfl6/model-build --json
+
+If the TFL6 submodule is thin or incomplete, run the materialization workflow
+before running the model-build workflow.
 
 Materialization Workflow
 ------------------------
@@ -77,8 +92,9 @@ performs real submodule, Python environment, DataLad, and git-annex work:
 Boundaries
 ----------
 
-- FreshForge validation, inspection, and planning are the primary Phase 17
-  checks.
+- FreshForge validation, inspection, and planning remain non-mutating checks.
+- The model-build ``freshforge run`` command executes FEMIC, BTC, and
+  Patchworks stages when run explicitly.
 - Workflow-declared artifacts are metadata until the launched FEMIC commands
   actually create or update them.
 - The Phase 18 materialization workflow is the first FreshForge path that
