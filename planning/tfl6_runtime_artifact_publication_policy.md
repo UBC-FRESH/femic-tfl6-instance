@@ -119,9 +119,9 @@ any selected large TFL 6 runtime artifacts:
 | --- | --- |
 | remote name | `arbutus-s3` |
 | bucket | `ubc-fresh-femic-tfl6-instance` |
-| endpoint | `object-arbutus.cloud.computecanada.ca` |
+| endpoint | `object-arbutus.alliancecan.ca` |
 | protocol / port | `https` / `443` |
-| public URL | `https://object-arbutus.cloud.computecanada.ca/ubc-fresh-femic-tfl6-instance` |
+| public URL | `https://object-arbutus.alliancecan.ca/a0d141b801c74d0a819c09b4bde9c3fb:ubc-fresh-femic-tfl6-instance` |
 | remote UUID | `861b7dd7-fff0-4637-b0a2-b9b4668dca71` |
 | publication status | release archive and manifest copied |
 
@@ -162,7 +162,7 @@ Proof summary:
 - `git annex info arbutus-s3` reported:
   - `creds: not available`;
   - `public: yes`;
-  - `publicurl: https://object-arbutus.cloud.computecanada.ca/ubc-fresh-femic-tfl6-instance`;
+  - `publicurl: https://object-arbutus.alliancecan.ca/a0d141b801c74d0a819c09b4bde9c3fb:ubc-fresh-femic-tfl6-instance`;
   - `remote annex keys: 2`; and
   - `remote annex size: 28.01 megabytes`.
 - `git annex get` fetched both release files from `arbutus-s3` and reported

@@ -104,7 +104,7 @@ parent_commit: null
 annex_remote:
   name: arbutus-s3
   bucket: ubc-fresh-femic-tfl6-instance
-  publicurl: https://object-arbutus.cloud.computecanada.ca/ubc-fresh-femic-tfl6-instance
+  publicurl: https://object-arbutus.alliancecan.ca/a0d141b801c74d0a819c09b4bde9c3fb:ubc-fresh-femic-tfl6-instance
   uuid: 861b7dd7-fff0-4637-b0a2-b9b4668dca71
 included_files: []
 excluded_patterns: []

@@ -125,9 +125,9 @@ reads:
 
 - remote type: S3
 - bucket: `ubc-fresh-femic-public-data`
-- endpoint: `object-arbutus.cloud.computecanada.ca`
+- endpoint: `object-arbutus.alliancecan.ca`
 - public URL:
-  `https://object-arbutus.cloud.computecanada.ca/ubc-fresh-femic-public-data`
+  `https://object-arbutus.alliancecan.ca/a0d141b801c74d0a819c09b4bde9c3fb:ubc-fresh-femic-public-data`
 - `public: yes`
 - remote annex keys reported by `git annex info arbutus-s3` after publication:
   `427`

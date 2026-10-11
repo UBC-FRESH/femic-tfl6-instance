@@ -71,7 +71,7 @@ The published remote metadata is:
    * - Bucket
      - ``ubc-fresh-femic-tfl6-instance``
    * - Public URL
-     - ``https://object-arbutus.cloud.computecanada.ca/ubc-fresh-femic-tfl6-instance``
+     - ``https://object-arbutus.alliancecan.ca/a0d141b801c74d0a819c09b4bde9c3fb:ubc-fresh-femic-tfl6-instance``
    * - Remote UUID
      - ``861b7dd7-fff0-4637-b0a2-b9b4668dca71``
 
