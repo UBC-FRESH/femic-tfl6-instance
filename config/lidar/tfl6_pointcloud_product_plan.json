@@ -1,0 +1,57 @@
+{
+  "schema_version": "femic.lidar.product_plan.v1",
+  "bundle_version": "2026.10.0-tfl6-pointcloud",
+  "processing_version": "femic-p79.8-tfl6-pointcloud",
+  "processing_lineage": [
+    "LidarBC point cloud index layer 4"
+  ],
+  "parameters": {
+    "aoi_bbox_epsg3005": [
+      881700,
+      627500,
+      882700,
+      628500
+    ],
+    "product": "point_cloud"
+  },
+  "products": [
+    {
+      "product": "point_cloud",
+      "path": "../../runtime/pointcloud/bc_092l062_2_3_4_xyes_8_utm9_20240316_20240317.laz",
+      "media_type": "application/vnd.laszip",
+      "crs": "EPSG:3156",
+      "resolution_m": null,
+      "vertical_datum": "Canadian Geodetic Vertical Datum of 2013",
+      "retrieved_utc": "2026-10-27T00:00:00+00:00",
+      "source_tile_ids": [
+        "lidarbc:4:139645"
+      ],
+      "source_layer_ids": [
+        4
+      ],
+      "derived": false,
+      "lineage": [
+        "LidarBC 2024 point cloud, 8 points/m2"
+      ]
+    },
+    {
+      "product": "point_cloud",
+      "path": "../../runtime/pointcloud/bc_092l062_4_1_2_xyes_8_utm9_20240316_20240317.laz",
+      "media_type": "application/vnd.laszip",
+      "crs": "EPSG:3156",
+      "resolution_m": null,
+      "vertical_datum": "Canadian Geodetic Vertical Datum of 2013",
+      "retrieved_utc": "2026-10-27T00:00:00+00:00",
+      "source_tile_ids": [
+        "lidarbc:4:140734"
+      ],
+      "source_layer_ids": [
+        4
+      ],
+      "derived": false,
+      "lineage": [
+        "LidarBC 2024 point cloud, 8 points/m2"
+      ]
+    }
+  ]
+}
