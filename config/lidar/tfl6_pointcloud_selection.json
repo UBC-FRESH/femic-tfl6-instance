@@ -1,0 +1,124 @@
+{
+  "aoi": {
+    "bbox_epsg3005": [
+      881700.0,
+      627500.0,
+      882700.0,
+      628500.0
+    ],
+    "crs": "EPSG:3005"
+  },
+  "generated_utc": "2026-10-27T00:00:00+00:00",
+  "products": [
+    "point_cloud"
+  ],
+  "request_urls": [
+    "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/LiDAR_BC_S3_Public/FeatureServer/4/query?where=1%3D1&geometry=881700.000%2C627500.000%2C882700.000%2C628500.000&geometryType=esriGeometryEnvelope&inSR=3005&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=3005&orderByFields=OBJECTID+ASC&resultOffset=0&resultRecordCount=2000&f=json"
+  ],
+  "schema_version": "femic.lidar.selection.v1",
+  "source": {
+    "catalogue_url": "https://catalogue.data.gov.bc.ca/dataset/lidarbc-open-lidar-data-portal",
+    "derived_products": [
+      "chm"
+    ],
+    "feature_service_url": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/LiDAR_BC_S3_Public/FeatureServer",
+    "index_item_url": "https://www.arcgis.com/home/item.html?id=5f6a1f31212a4cb2826743d2e52ef02a",
+    "licence_id": "OGL-BC",
+    "licence_url": "https://www2.gov.bc.ca/gov/content/data/open-data/open-government-licence-bc",
+    "metadata_caveat": "The BC Data Catalogue package wrapper records an Access Only licence because it fronts the ArcGIS portal application. The LidarBC portal, index item, and provincial open-data listing identify the data products as OGL-BC.",
+    "native_crs": "EPSG:3005",
+    "notes": [
+      "CHM and canopy structure metrics are FEMIC-derived products, not separate LidarBC tile-index layers.",
+      "Individual-tree products are consumed from LidarBC where a suitable public product exists; FEMIC does not invent a new segmentation algorithm in P79.",
+      "Native CRS, vertical datum, spacing, point classes, and accuracy report links travel with each selected tile."
+    ],
+    "portal_url": "https://lidar.gov.bc.ca/pages/download-discovery",
+    "source_id": "lidarbc",
+    "storage_boundary": "P79.1 discovery is metadata-only. Tile bytes require an explicit instance or external-data root in P79.2; no provincial mirror is created.",
+    "supported_products": [
+      "point_cloud",
+      "dem",
+      "dsm"
+    ],
+    "title": "LidarBC Open LiDAR Data Portal"
+  },
+  "summary": {
+    "tile_count": 2,
+    "total_area_m2": 4916663.584594727
+  },
+  "tiles": [
+    {
+      "accuracy_report_url": "https://nrs.objectstore.gov.bc.ca/gdwuts/metadata/accuracy_rpts/2024/op24bmrs001_summary.pdf",
+      "acquisition_year": 2024,
+      "area_m2": 2457989.851501465,
+      "bbox_epsg3005": [
+        881599.177,
+        626081.748999999,
+        883398.428,
+        627513.752
+      ],
+      "contract_id": "OP24BMRS001",
+      "download_url": "https://nrs.objectstore.gov.bc.ca/gdwuts/092/092l/2024/pointcloud/bc_092l062_2_3_4_xyes_8_utm9_20240316_20240317.laz",
+      "filename": "bc_092l062_2_3_4_xyes_8_utm9_20240316_20240317.laz",
+      "grid_scale": null,
+      "info_file": null,
+      "layer_id": 4,
+      "maptile": "092l062_2_3_4",
+      "object_id": 139645,
+      "operator_name": "LidarBC Program",
+      "operator_number": null,
+      "point_classes": [
+        1,
+        2,
+        7,
+        12
+      ],
+      "point_density_ppm2": 8,
+      "point_format": null,
+      "product": "point_cloud",
+      "projection": "utm9",
+      "source_id": "lidarbc",
+      "spacing": null,
+      "storage_path": "\\092\\092l\\2024\\pointcloud\\bc_092l062_2_3_4_xyes_8_utm9_20240316_20240317.laz",
+      "tile_id": "lidarbc:4:139645",
+      "vertical_datum": "Canadian Geodetic Vertical Datum of 2013"
+    },
+    {
+      "accuracy_report_url": "https://nrs.objectstore.gov.bc.ca/gdwuts/metadata/accuracy_rpts/2024/op24bmrs001_summary.pdf",
+      "acquisition_year": 2024,
+      "area_m2": 2458673.7330932617,
+      "bbox_epsg3005": [
+        881632.090999999,
+        627472.262999999,
+        883430.867000001,
+        628904.927999998
+      ],
+      "contract_id": "OP24BMRS001",
+      "download_url": "https://nrs.objectstore.gov.bc.ca/gdwuts/092/092l/2024/pointcloud/bc_092l062_4_1_2_xyes_8_utm9_20240316_20240317.laz",
+      "filename": "bc_092l062_4_1_2_xyes_8_utm9_20240316_20240317.laz",
+      "grid_scale": null,
+      "info_file": null,
+      "layer_id": 4,
+      "maptile": "092l062_4_1_2",
+      "object_id": 140734,
+      "operator_name": "LidarBC Program",
+      "operator_number": null,
+      "point_classes": [
+        1,
+        2,
+        7,
+        12
+      ],
+      "point_density_ppm2": 8,
+      "point_format": null,
+      "product": "point_cloud",
+      "projection": "utm9",
+      "source_id": "lidarbc",
+      "spacing": null,
+      "storage_path": "\\092\\092l\\2024\\pointcloud\\bc_092l062_4_1_2_xyes_8_utm9_20240316_20240317.laz",
+      "tile_id": "lidarbc:4:140734",
+      "vertical_datum": "Canadian Geodetic Vertical Datum of 2013"
+    }
+  ],
+  "warnings": []
+}
