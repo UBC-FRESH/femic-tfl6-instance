@@ -1,0 +1,8 @@
+feature_id,vri_species_combo,au_species_combo,match,leading_fraction,non_leading_fraction,au_present
+23339490,CW+YC,CW+YC,True,0.45,0.55,True
+23339461,CW+YC,CW+YC,True,0.4,0.6,True
+23339462,,,False,,,False
+23339458,CW+YC,CW+YC,True,0.45,0.55,True
+16625195,YC+CW,YC+CW,True,0.6,0.4,True
+16624698,HW+YC,HW+YC,True,0.5,0.5,True
+19212607,CW+YC,CW+YC,True,0.45,0.55,True
